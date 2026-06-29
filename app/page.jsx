@@ -26,7 +26,7 @@ const html = String.raw`
       </nav>
       <div class="nav-actions">
         <a class="btn btn-primary" href="contact.html">Get Free Quote</a>
-        <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">鈽?/button>
+        <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
       </div>
     </div>
   </header>
@@ -130,10 +130,10 @@ const html = String.raw`
           <p>We combine factory-direct production, flexible customization and responsive export support for B2B projects.</p>
         </div>
         <div class="why-grid">
-          <div class="why-item"><span class="icon-box">鉁?/span><strong>OEM / ODM Service</strong></div>
-          <div class="why-item"><span class="icon-box">鈫?/span><strong>Low MOQ</strong></div>
-          <div class="why-item"><span class="icon-box">鉁?/span><strong>Free Design Support</strong></div>
-          <div class="why-item"><span class="icon-box">鈫?/span><strong>Fast Sampling 3-7 Days</strong></div>
+          <div class="why-item"><span class="icon-box">✓</span><strong>OEM / ODM Service</strong></div>
+          <div class="why-item"><span class="icon-box">→</span><strong>Low MOQ</strong></div>
+          <div class="why-item"><span class="icon-box">✓</span><strong>Free Design Support</strong></div>
+          <div class="why-item"><span class="icon-box">→</span><strong>Fast Sampling 3-7 Days</strong></div>
           <div class="why-item"><span class="icon-box">20</span><strong>20+ Years Experience</strong></div>
           <div class="why-item"><span class="icon-box">QC</span><strong>100% Quality Inspection</strong></div>
         </div>
@@ -160,7 +160,7 @@ const html = String.raw`
       <div class="container split">
         <div>
           <h2>Factory Strength for Global Custom Orders</h2>
-          <p>Unique Pin operates a 6,000+ m虏 factory with 110+ team members, supporting custom metal gifts for importers, brands, military units, schools and event companies.</p>
+          <p>Unique Pin operates a 6,000+ m² factory with 110+ team members, supporting custom metal gifts for importers, brands, military units, schools and event companies.</p>
           <ul class="check-list">
             <li>Factory-direct OEM/ODM project support</li>
             <li>Die casting, enamel, printing, engraving and plating options</li>
@@ -179,9 +179,9 @@ const html = String.raw`
           <p>Feedback from repeat buyers highlights product detail, fast communication and reliable custom production.</p>
         </div>
         <div class="grid-3">
-          <article class="testimonial"><h3>Event Medals</h3><p>鈥淭he medals turned out absolutely fantastic. The team responded quickly to changes and helped us get exactly what we envisioned.鈥?/p></article>
-          <article class="testimonial"><h3>Repeat Orders</h3><p>鈥淭his was our 7th time ordering coins and keychains. The quality and communication have been consistently excellent.鈥?/p></article>
-          <article class="testimonial"><h3>Custom Pins</h3><p>鈥淐lean details, vivid colors and excellent quality. The proofing process made the final custom pins exactly what we needed.鈥?/p></article>
+          <article class="testimonial"><h3>Event Medals</h3><p>“The medals turned out absolutely fantastic. The team responded quickly to changes and helped us get exactly what we envisioned.”</p></article>
+          <article class="testimonial"><h3>Repeat Orders</h3><p>“This was our 7th time ordering coins and keychains. The quality and communication have been consistently excellent.”</p></article>
+          <article class="testimonial"><h3>Custom Pins</h3><p>“Clean details, vivid colors and excellent quality. The proofing process made the final custom pins exactly what we needed.”</p></article>
         </div>
       </div>
     </section>
@@ -209,7 +209,7 @@ const html = String.raw`
       <div><h4>Company</h4><a href="custom.html">How to Custom</a><a href="about.html">About Us</a><a href="blog.html">Blog</a><a href="assets/Uniquepin-Catalogue.pdf">Download Catalog</a></div>
       <div><h4>Contact</h4><a href="mailto:ceo@chinauniquepin.com">ceo@chinauniquepin.com</a><a href="contact.html">Get Free Quote</a><p>Building A, 1st Floor, No. 7 Xingyu Road, Xiaolan Town, Zhongshan City, Guangdong, China</p></div>
     </div>
-    <div class="container footer-bottom"><span>漏 2026 Unique Pin. All rights reserved.</span><span>OEM / ODM Custom Metal Gifts Manufacturer</span></div>
+    <div class="container footer-bottom"><span>© 2026 Unique Pin. All rights reserved.</span><span>OEM / ODM Custom Metal Gifts Manufacturer</span></div>
   </footer>`;
 
 export default function Page() {
