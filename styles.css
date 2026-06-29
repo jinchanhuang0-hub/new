@@ -566,6 +566,11 @@ a {
   max-height: 112px;
 }
 
+.brand-logo.logo-kfc img {
+  max-width: 112px;
+  max-height: 112px;
+}
+
 .brand-logo.logo-studio img {
   width: 220px;
   max-width: 220px;
