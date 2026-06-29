@@ -394,9 +394,14 @@ a {
 .hero-proof {
   margin-top: 34px;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
-  max-width: 560px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px 34px;
+  max-width: 520px;
+}
+
+.proof-column {
+  display: grid;
+  gap: 22px;
 }
 
 .proof-item {
@@ -1128,6 +1133,10 @@ a {
   .cert-grid,
   .form-row {
     grid-template-columns: 1fr;
+  }
+
+  .proof-column {
+    gap: 16px;
   }
 
   .section {
