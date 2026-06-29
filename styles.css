@@ -521,29 +521,55 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: clamp(150px, 12vw, 210px);
-  min-height: 72px;
+  min-width: clamp(172px, 13vw, 230px);
+  min-height: 92px;
   padding: 6px 0;
   filter: saturate(0.98);
 }
 
 .brand-logo img {
-  max-width: 152px;
-  max-height: 58px;
+  width: auto;
+  max-width: 178px;
+  max-height: 72px;
   object-fit: contain;
 }
 
 .brand-logo.logo-square img {
-  max-width: 78px;
-  max-height: 78px;
+  max-width: 94px;
+  max-height: 94px;
 }
 
 .brand-logo.logo-wide img {
-  max-width: 180px;
+  max-width: 210px;
+  max-height: 76px;
 }
 
 .brand-logo.logo-tall img {
-  max-height: 72px;
+  max-width: 160px;
+  max-height: 92px;
+}
+
+.brand-logo.logo-mercedes img {
+  width: 230px;
+  max-width: 230px;
+  max-height: 82px;
+}
+
+.brand-logo.logo-sephora img {
+  width: 230px;
+  max-width: 230px;
+  max-height: 82px;
+}
+
+.brand-logo.logo-roomy img {
+  max-width: 112px;
+  max-height: 112px;
+}
+
+.brand-logo.logo-studio img {
+  width: 220px;
+  max-width: 220px;
+  max-height: 82px;
 }
 
 .grid-3,

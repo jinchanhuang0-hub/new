@@ -61,26 +61,26 @@ const html = String.raw`
           <span class="brand-logo logo-wide"><img src="assets/images/brands/coca-cola.svg" alt="Coca-Cola logo"></span>
           <span class="brand-logo logo-square"><img src="assets/images/brands/lego.svg" alt="LEGO logo"></span>
           <span class="brand-logo"><img src="assets/images/brands/adidas.svg" alt="adidas logo"></span>
-          <span class="brand-logo logo-tall"><img src="assets/images/brands/mercedes.svg" alt="Mercedes-Benz logo"></span>
+          <span class="brand-logo logo-wide logo-mercedes"><img src="assets/images/brands/mercedes.svg" alt="Mercedes-Benz logo"></span>
           <span class="brand-logo logo-wide"><img src="assets/images/brands/marvel.svg" alt="MARVEL logo"></span>
           <span class="brand-logo logo-square"><img src="assets/images/brands/kfc.png" alt="KFC logo"></span>
-          <span class="brand-logo logo-wide"><img src="assets/images/brands/sephora.svg" alt="Sephora logo"></span>
+          <span class="brand-logo logo-wide logo-sephora"><img src="assets/images/brands/sephora.svg" alt="Sephora logo"></span>
           <span class="brand-logo logo-square"><img src="assets/images/brands/nbc.svg" alt="NBC logo"></span>
-          <span class="brand-logo logo-wide"><img src="assets/images/brands/american-greetings.svg" alt="American Greetings logo"></span>
-          <span class="brand-logo logo-wide"><img src="assets/images/brands/the-studio.svg" alt="THE/STUDIO logo"></span>
+          <span class="brand-logo logo-square logo-roomy"><img src="assets/images/brands/american-greetings.svg" alt="American Greetings logo"></span>
+          <span class="brand-logo logo-wide logo-studio"><img src="assets/images/brands/the-studio.svg" alt="THE/STUDIO logo"></span>
           <span class="brand-logo logo-wide"><img src="assets/images/brands/disney.svg" alt="Disney logo"></span>
           <span class="brand-logo"><img src="assets/images/brands/nike.svg" alt="Nike logo"></span>
           <span class="brand-logo logo-square"><img src="assets/images/brands/mcdonalds.svg" alt="McDonald’s logo"></span>
           <span class="brand-logo logo-wide"><img src="assets/images/brands/coca-cola.svg" alt="Coca-Cola logo"></span>
           <span class="brand-logo logo-square"><img src="assets/images/brands/lego.svg" alt="LEGO logo"></span>
           <span class="brand-logo"><img src="assets/images/brands/adidas.svg" alt="adidas logo"></span>
-          <span class="brand-logo logo-tall"><img src="assets/images/brands/mercedes.svg" alt="Mercedes-Benz logo"></span>
+          <span class="brand-logo logo-wide logo-mercedes"><img src="assets/images/brands/mercedes.svg" alt="Mercedes-Benz logo"></span>
           <span class="brand-logo logo-wide"><img src="assets/images/brands/marvel.svg" alt="MARVEL logo"></span>
           <span class="brand-logo logo-square"><img src="assets/images/brands/kfc.png" alt="KFC logo"></span>
-          <span class="brand-logo logo-wide"><img src="assets/images/brands/sephora.svg" alt="Sephora logo"></span>
+          <span class="brand-logo logo-wide logo-sephora"><img src="assets/images/brands/sephora.svg" alt="Sephora logo"></span>
           <span class="brand-logo logo-square"><img src="assets/images/brands/nbc.svg" alt="NBC logo"></span>
-          <span class="brand-logo logo-wide"><img src="assets/images/brands/american-greetings.svg" alt="American Greetings logo"></span>
-          <span class="brand-logo logo-wide"><img src="assets/images/brands/the-studio.svg" alt="THE/STUDIO logo"></span>
+          <span class="brand-logo logo-square logo-roomy"><img src="assets/images/brands/american-greetings.svg" alt="American Greetings logo"></span>
+          <span class="brand-logo logo-wide logo-studio"><img src="assets/images/brands/the-studio.svg" alt="THE/STUDIO logo"></span>
         </div>
       </div>
     </section>
