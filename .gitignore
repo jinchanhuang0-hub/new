@@ -1,4 +1,7 @@
 qa-*.png
+node_modules/
+.next/
+out/
 *.log
 .DS_Store
 Thumbs.db
