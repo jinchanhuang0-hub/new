@@ -333,7 +333,7 @@ a {
   display: flex;
   align-items: center;
   overflow: hidden;
-  background: #fff url("assets/images/hero-banner.png") center right / cover no-repeat;
+  background: #fff;
 }
 
 .hero::before {
@@ -365,17 +365,6 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  pointer-events: none;
-}
-
-@media (min-width: 901px) {
-  .hero-bg {
-    inset: 3% 0 auto auto;
-    width: 96%;
-    height: 94%;
-    object-fit: contain;
-    object-position: center right;
-  }
 }
 
 .hero-content {
