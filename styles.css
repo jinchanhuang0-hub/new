@@ -475,18 +475,66 @@ a {
 .brand-carousel {
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
-  background: #fff;
-  padding: 38px 0 34px;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(243, 198, 0, 0.08), rgba(255, 255, 255, 0) 34%),
+    #fff;
+  padding: 86px 0 42px;
   overflow: hidden;
+}
+
+.brand-heading {
+  text-align: center;
+  margin: 0 auto 40px;
+  max-width: 760px;
+  padding: 0 20px;
+}
+
+.brand-kicker {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 96px;
+  height: 14px;
+  margin-bottom: 26px;
+  position: relative;
+}
+
+.brand-kicker::before,
+.brand-kicker::after {
+  content: "";
+  display: block;
+  background: var(--yellow);
+}
+
+.brand-kicker::before {
+  width: 72px;
+  height: 8px;
+  border-radius: 999px;
+  box-shadow: 0 8px 20px rgba(243, 198, 0, 0.2);
+}
+
+.brand-kicker::after {
+  width: 10px;
+  height: 10px;
+  margin-left: 9px;
+  border-radius: 50%;
 }
 
 .brand-carousel h2 {
   display: block;
-  margin: 0 0 34px;
-  text-align: center;
+  margin: 0;
+  color: var(--navy);
+  font-size: clamp(36px, 3.8vw, 58px);
+  font-weight: 800;
+  line-height: 1.05;
+}
+
+.brand-heading p {
+  margin: 22px auto 0;
+  max-width: 680px;
   color: #5d6675;
-  font-size: clamp(26px, 2.4vw, 34px);
-  line-height: 1.12;
+  font-size: clamp(17px, 1.6vw, 22px);
+  line-height: 1.48;
 }
 
 .brand-marquee {
