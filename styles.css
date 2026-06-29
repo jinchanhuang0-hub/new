@@ -367,6 +367,16 @@ a {
   object-fit: cover;
 }
 
+@media (min-width: 901px) {
+  .hero-bg {
+    inset: 3% 0 auto auto;
+    width: 96%;
+    height: 94%;
+    object-fit: contain;
+    object-position: center right;
+  }
+}
+
 .hero-content {
   position: relative;
   z-index: 2;
