@@ -184,22 +184,6 @@ const html = String.raw`
       </div>
     </section>
 
-    <section class="section section-soft">
-      <div class="container split">
-        <div>
-          <h2>Factory Strength for Global Custom Orders</h2>
-          <p>Unique Pin operates a 6,000+ m² factory with 110+ team members, supporting custom metal gifts for importers, brands, military units, schools and event companies.</p>
-          <ul class="check-list">
-            <li>Factory-direct OEM/ODM project support</li>
-            <li>Die casting, enamel, printing, engraving and plating options</li>
-            <li>ISO, CE, ROHS, FSC and SMETA certificate materials available</li>
-          </ul>
-          <a class="btn btn-primary" href="about.html" style="margin-top: 28px;">About Our Factory</a>
-        </div>
-        <img src="assets/images/factory-1.png" alt="OEM metal crafts manufacturer production line">
-      </div>
-    </section>
-
     <section class="section reviews-section">
       <div class="container">
         <div class="center-head reviews-head">
