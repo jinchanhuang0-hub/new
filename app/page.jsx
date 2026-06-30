@@ -60,7 +60,6 @@ const html = String.raw`
       <div class="brand-heading">
         <span class="brand-kicker" aria-hidden="true"></span>
         <h2>Trusted by Global Brands</h2>
-        <p>We are proud to partner with world-renowned brands across industries for their custom metal craft needs.</p>
       </div>
       <div class="brand-marquee" aria-label="Trusted global brand logos">
         <div class="brand-marquee-track">
