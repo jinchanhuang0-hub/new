@@ -159,8 +159,10 @@ const html = String.raw`
           <a class="how-cta" href="contact.html">Start Your Free Design</a>
         </div>
         <div class="how-visual" aria-hidden="true">
-          <div class="proof-sketch"></div>
-          <img src="assets/images/product-coins.jpg" alt="">
+          <div class="process-art">
+            <img class="process-sketch" src="assets/images/process-coin-sketch.png" alt="">
+            <img class="process-coin" src="assets/images/process-coin-finished.png" alt="">
+          </div>
         </div>
       </div>
     </section>
