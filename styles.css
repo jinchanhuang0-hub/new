@@ -361,12 +361,12 @@ a {
 .hero-bg {
   position: absolute;
   top: 50%;
-  right: clamp(-110px, -5vw, -54px);
+  right: clamp(0px, 2vw, 28px);
   left: auto;
   bottom: auto;
   z-index: 0;
   width: auto;
-  height: 106%;
+  height: 104%;
   max-width: none;
   object-fit: contain;
   object-position: right center;
