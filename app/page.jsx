@@ -131,6 +131,40 @@ const html = String.raw`
       </div>
     </section>
 
+    <section class="section how-section">
+      <div class="container how-layout">
+        <div class="how-content">
+          <div class="how-heading">
+            <h2>How We Make It Happen</h2>
+            <p>From idea to delivery: a step-by-step guide to your custom metal craft design.</p>
+          </div>
+          <div class="how-steps">
+            <div class="how-step-card">
+              <span class="step-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h16v14H4z"/><path d="m7 16 3.5-4 2.5 3 2-2.5 2 3.5"/><circle cx="9" cy="9" r="1.5"/></svg></span>
+              <span>Send Us Your Ideas</span>
+            </div>
+            <div class="how-step-card">
+              <span class="step-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 19h14"/></svg></span>
+              <span>Receive Your Custom Proof</span>
+            </div>
+            <div class="how-step-card">
+              <span class="step-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="m8.5 12.2 2.2 2.2 4.8-5"/></svg></span>
+              <span>Approve and Production Begins</span>
+            </div>
+            <div class="how-step-card">
+              <span class="step-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 7h10v9H4z"/><path d="M14 10h3l3 3v3h-6z"/><circle cx="8" cy="18" r="1.5"/><circle cx="17" cy="18" r="1.5"/></svg></span>
+              <span>Your Order Gets Shipped</span>
+            </div>
+          </div>
+          <a class="how-cta" href="contact.html">Start Your Free Design</a>
+        </div>
+        <div class="how-visual" aria-hidden="true">
+          <div class="proof-sketch"></div>
+          <img src="assets/images/product-coins.jpg" alt="">
+        </div>
+      </div>
+    </section>
+
     <section class="section section-soft">
       <div class="container">
         <div class="center-head">
@@ -144,22 +178,6 @@ const html = String.raw`
           <div class="why-item"><span class="icon-box">→</span><strong>Fast Sampling 3-7 Days</strong></div>
           <div class="why-item"><span class="icon-box">20</span><strong>20+ Years Experience</strong></div>
           <div class="why-item"><span class="icon-box">QC</span><strong>100% Quality Inspection</strong></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="center-head">
-          <h2>How It Works</h2>
-          <p>From first idea to global delivery, our team keeps every step clear and production-ready.</p>
-        </div>
-        <div class="process-line">
-          <div class="process-card"><h3>Idea</h3><p>Send your logo, sketch, reference image or project brief.</p></div>
-          <div class="process-card"><h3>Design</h3><p>Receive a digital proof with shape, color and process suggestions.</p></div>
-          <div class="process-card"><h3>Sample</h3><p>Confirm details through fast sampling before mass production.</p></div>
-          <div class="process-card"><h3>Production</h3><p>Factory production with strict checks at key stages.</p></div>
-          <div class="process-card"><h3>Delivery</h3><p>Secure packaging and global shipping support for your order.</p></div>
         </div>
       </div>
     </section>
