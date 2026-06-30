@@ -1035,10 +1035,10 @@ a {
 .process-art::before {
   content: "";
   position: absolute;
-  width: min(76%, 460px);
+  width: min(92%, 560px);
   aspect-ratio: 1;
-  right: 4%;
-  top: 8%;
+  right: -4%;
+  top: 2%;
   border-radius: 50%;
   background:
     radial-gradient(circle at 62% 30%, rgba(243, 198, 0, 0.16), rgba(243, 198, 0, 0) 38%),
@@ -1049,9 +1049,9 @@ a {
 .process-sketch {
   position: absolute;
   z-index: 1;
-  width: min(58%, 330px);
-  right: 34%;
-  top: 6%;
+  width: min(67%, 380px);
+  right: 24%;
+  top: 0;
   opacity: 0.88;
   transform: rotate(-4deg);
   filter: drop-shadow(0 18px 28px rgba(11, 47, 99, 0.08));
@@ -1060,11 +1060,11 @@ a {
 .process-coin {
   position: absolute;
   z-index: 2;
-  width: min(48%, 300px);
-  right: 16%;
-  top: 28%;
+  width: min(65%, 405px);
+  right: 1%;
+  top: 19%;
   object-fit: contain;
-  filter: drop-shadow(0 28px 40px rgba(11, 47, 99, 0.26));
+  filter: drop-shadow(0 30px 46px rgba(11, 47, 99, 0.28));
 }
 
 .split {
@@ -1421,15 +1421,15 @@ a {
   }
 
   .process-sketch {
-    width: min(56%, 300px);
-    right: 40%;
-    top: 2%;
+    width: min(64%, 340px);
+    right: 30%;
+    top: 0;
   }
 
   .process-coin {
-    width: min(46%, 260px);
-    right: 18%;
-    top: 28%;
+    width: min(60%, 330px);
+    right: 5%;
+    top: 22%;
   }
 
   .hero {
@@ -1529,15 +1529,15 @@ a {
   }
 
   .process-sketch {
-    width: min(60%, 250px);
-    right: 34%;
-    top: 6%;
+    width: min(68%, 285px);
+    right: 24%;
+    top: 2%;
   }
 
   .process-coin {
-    width: min(48%, 210px);
-    right: 15%;
-    top: 31%;
+    width: min(62%, 275px);
+    right: 2%;
+    top: 26%;
   }
 
   .proof-column {
