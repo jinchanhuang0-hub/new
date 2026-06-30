@@ -95,9 +95,10 @@ const html = String.raw`
 
     <section class="section">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head product-heading">
           <div>
-            <h2>Hot Products</h2>
+            <span class="brand-kicker" aria-hidden="true"></span>
+            <h2>Popular Products</h2>
             <p>Factory-made custom metal products for global B2B buyers, promotional campaigns, awards and brand merchandise.</p>
           </div>
           <a class="btn btn-outline" href="products.html">View All Products</a>
