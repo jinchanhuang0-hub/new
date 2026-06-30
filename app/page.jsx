@@ -101,7 +101,6 @@ const html = String.raw`
             <h2>Popular Products</h2>
             <p>Choose a product and start customizing!</p>
           </div>
-          <a class="btn btn-outline" href="products.html">View All Products</a>
         </div>
         <div class="grid-3">
           <article class="product-card">
@@ -128,6 +127,9 @@ const html = String.raw`
               <a class="card-link" href="product-detail.html?product=coins">View Details</a>
             </div>
           </article>
+        </div>
+        <div class="product-actions">
+          <a class="btn btn-primary" href="products.html">View All Products</a>
         </div>
       </div>
     </section>

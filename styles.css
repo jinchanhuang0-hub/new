@@ -494,10 +494,10 @@ a {
   margin: 18px auto 0;
 }
 
-.product-heading .btn {
-  position: absolute;
-  right: 0;
-  bottom: 0;
+.product-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 34px;
 }
 
 .center-head {
@@ -1197,9 +1197,8 @@ a {
     flex-direction: column;
   }
 
-  .product-heading .btn {
-    position: static;
-    margin-top: 22px;
+  .product-actions {
+    margin-top: 26px;
   }
 }
 
