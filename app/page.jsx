@@ -200,16 +200,38 @@ const html = String.raw`
       </div>
     </section>
 
-    <section class="section">
+    <section class="section reviews-section">
       <div class="container">
-        <div class="center-head">
-          <h2>What B2B Buyers Say</h2>
-          <p>Feedback from repeat buyers highlights product detail, fast communication and reliable custom production.</p>
+        <div class="center-head reviews-head">
+          <span class="review-rating">&#9733;&#9733;&#9733;&#9733;&#9733; 5 out of 5 stars</span>
+          <h2>Reviews From Our Customers</h2>
+          <p>Real feedback from repeat buyers highlights product detail, fast communication and reliable custom production.</p>
         </div>
-        <div class="grid-3">
-          <article class="testimonial"><h3>Event Medals</h3><p>“The medals turned out absolutely fantastic. The team responded quickly to changes and helped us get exactly what we envisioned.”</p></article>
-          <article class="testimonial"><h3>Repeat Orders</h3><p>“This was our 7th time ordering coins and keychains. The quality and communication have been consistently excellent.”</p></article>
-          <article class="testimonial"><h3>Custom Pins</h3><p>“Clean details, vivid colors and excellent quality. The proofing process made the final custom pins exactly what we needed.”</p></article>
+        <div class="grid-3 testimonial-grid">
+          <article class="testimonial review-card">
+            <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <h3>Fantastic Medals & Fast Support</h3>
+            <p>The medals turned out absolutely fantastic. These will be a big hit with swimmers lucky enough to get their hands on one.</p>
+            <p class="review-more" hidden>Ada was great to deal with and responded very quickly to all of our changes and requests so that the medals ended exactly what we envisioned.</p>
+            <button class="show-more" type="button" aria-expanded="false">+ Show More</button>
+            <strong>Event Medals Buyer</strong>
+          </article>
+          <article class="testimonial review-card">
+            <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <h3>7th Repeat Order</h3>
+            <p>I honestly cannot say enough good things about the quality of the coins and keychains I have received from here.</p>
+            <p class="review-more" hidden>This was actually our 7th time ordering, and they have not missed a beat. The quality is very good and communication was excellent.</p>
+            <button class="show-more" type="button" aria-expanded="false">+ Show More</button>
+            <strong>Repeat B2B Customer</strong>
+          </article>
+          <article class="testimonial review-card">
+            <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <h3>Perfect Custom Lapel Pins</h3>
+            <p>The custom lapel pins turned out absolutely perfect - clean details, vivid colors, and excellent quality.</p>
+            <p class="review-more" hidden>Communication was fast and professional throughout the entire process. The supplier was very helpful with design adjustments and delivered exactly what I needed.</p>
+            <button class="show-more" type="button" aria-expanded="false">+ Show More</button>
+            <strong>Custom Pins Buyer</strong>
+          </article>
         </div>
       </div>
     </section>
