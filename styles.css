@@ -328,8 +328,8 @@ a {
 
 .hero {
   position: relative;
-  min-height: 530px;
-  height: clamp(540px, calc(90vh - 101px), 648px);
+  min-height: 560px;
+  height: clamp(600px, calc(88vh - 90px), 690px);
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -360,12 +360,13 @@ a {
 
 .hero-bg {
   position: absolute;
-  inset: 0;
+  inset: 0 0 0 auto;
   z-index: 0;
-  width: 100%;
+  width: auto;
   height: 100%;
-  object-fit: cover;
-  object-position: center bottom;
+  max-width: none;
+  object-fit: contain;
+  object-position: right center;
 }
 
 .hero-content {
@@ -373,7 +374,7 @@ a {
   z-index: 2;
   width: min(720px, 100%);
   padding: 14px 0 54px;
-  transform: translateY(-28px);
+  transform: translateY(-24px);
 }
 
 .hero h1 {
