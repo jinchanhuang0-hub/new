@@ -103,28 +103,25 @@ const html = String.raw`
           </div>
         </div>
         <div class="grid-3">
-          <article class="product-card">
+          <article class="product-card home-product-card">
             <img src="assets/images/product-pins.jpg" alt="Custom enamel pins manufacturer soft enamel detail">
             <div class="body">
               <h3>Custom Enamel Pins</h3>
               <p>Soft enamel, hard enamel, die struck and printed pins for brands, events and promotional campaigns.</p>
-              <a class="card-link" href="product-detail.html?product=pins">View Details</a>
             </div>
           </article>
-          <article class="product-card">
+          <article class="product-card home-product-card">
             <img src="assets/images/product-medals.jpg" alt="Custom medals factory ribbon and plating options">
             <div class="body">
               <h3>Custom Medals</h3>
               <p>Custom sports medals, award medals and event medals with ribbons, plating and 3D relief options.</p>
-              <a class="card-link" href="product-detail.html?product=medals">View Details</a>
             </div>
           </article>
-          <article class="product-card">
+          <article class="product-card home-product-card">
             <img src="assets/images/product-coins.jpg" alt="Custom challenge coins double sided die casting process">
             <div class="body">
               <h3>Challenge Coins</h3>
               <p>Custom military coins, police coins, commemorative coins and corporate coins with double-sided designs.</p>
-              <a class="card-link" href="product-detail.html?product=coins">View Details</a>
             </div>
           </article>
         </div>
