@@ -102,7 +102,7 @@ const html = String.raw`
             <p>Choose a product and start customizing!</p>
           </div>
         </div>
-        <div class="grid-3">
+        <div class="grid-3 home-products-grid">
           <article class="product-card home-product-card">
             <img src="assets/images/product-pins.jpg" alt="Custom enamel pins manufacturer soft enamel detail">
             <div class="body">

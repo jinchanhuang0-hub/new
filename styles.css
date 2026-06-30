@@ -704,6 +704,12 @@ a {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.home-products-grid {
+  max-width: 1120px;
+  margin: 0 auto;
+  gap: 24px;
+}
+
 .grid-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
@@ -735,6 +741,19 @@ a {
   position: relative;
   cursor: pointer;
   transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.home-product-card img {
+  height: 220px;
+  padding: 16px 22px;
+}
+
+.home-product-card .body {
+  padding: 22px 24px 26px;
+}
+
+.home-product-card h3 {
+  font-size: 19px;
 }
 
 .home-product-card::after {
