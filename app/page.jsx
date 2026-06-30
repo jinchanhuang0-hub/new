@@ -99,7 +99,7 @@ const html = String.raw`
           <div>
             <span class="brand-kicker" aria-hidden="true"></span>
             <h2>Popular Products</h2>
-            <p>Factory-made custom metal products for global B2B buyers, promotional campaigns, awards and brand merchandise.</p>
+            <p>Choose a product and start customizing!</p>
           </div>
           <a class="btn btn-outline" href="products.html">View All Products</a>
         </div>
