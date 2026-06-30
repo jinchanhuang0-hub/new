@@ -103,27 +103,27 @@ const html = String.raw`
           </div>
         </div>
         <div class="grid-3 home-products-grid">
-          <article class="product-card home-product-card">
+          <a class="product-card home-product-card" href="product-detail.html?product=pins" aria-label="View Custom Enamel Pins details">
             <img src="assets/images/product-pins.jpg" alt="Custom enamel pins manufacturer soft enamel detail">
             <div class="body">
               <h3>Custom Enamel Pins</h3>
               <p>Soft enamel, hard enamel, die struck and printed pins for brands, events and promotional campaigns.</p>
             </div>
-          </article>
-          <article class="product-card home-product-card">
+          </a>
+          <a class="product-card home-product-card" href="product-detail.html?product=medals" aria-label="View Custom Medals details">
             <img src="assets/images/product-medals.jpg" alt="Custom medals factory ribbon and plating options">
             <div class="body">
               <h3>Custom Medals</h3>
               <p>Custom sports medals, award medals and event medals with ribbons, plating and 3D relief options.</p>
             </div>
-          </article>
-          <article class="product-card home-product-card">
+          </a>
+          <a class="product-card home-product-card" href="product-detail.html?product=coins" aria-label="View Challenge Coins details">
             <img src="assets/images/product-coins.jpg" alt="Custom challenge coins double sided die casting process">
             <div class="body">
               <h3>Challenge Coins</h3>
               <p>Custom military coins, police coins, commemorative coins and corporate coins with double-sided designs.</p>
             </div>
-          </article>
+          </a>
         </div>
         <div class="product-actions">
           <a class="btn btn-primary" href="products.html">View All Products</a>
