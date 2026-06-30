@@ -85,6 +85,45 @@ document.querySelectorAll(".review-card .show-more").forEach((button) => {
   });
 });
 
+document.querySelectorAll("[data-review-carousel]").forEach((carousel) => {
+  const track = carousel.querySelector("[data-review-track]");
+  const cards = Array.from(carousel.querySelectorAll(".review-card"));
+  const dots = Array.from(carousel.querySelectorAll("[data-review-dot]"));
+  const prev = carousel.querySelector("[data-review-prev]");
+  const next = carousel.querySelector("[data-review-next]");
+  let current = 0;
+
+  const visibleCount = () => {
+    if (window.matchMedia("(max-width: 640px)").matches) return 1;
+    if (window.matchMedia("(max-width: 980px)").matches) return 2;
+    return 3;
+  };
+
+  const maxIndex = () => Math.max(0, cards.length - visibleCount());
+
+  const setReviewSlide = (index) => {
+    current = Math.min(Math.max(index, 0), maxIndex());
+    if (track && cards[0]) {
+      const gap = Number.parseFloat(window.getComputedStyle(track).gap) || 0;
+      const step = cards[0].getBoundingClientRect().width + gap;
+      track.style.transform = `translateX(-${current * step}px)`;
+    }
+    dots.forEach((dot, dotIndex) => {
+      const visible = dotIndex <= maxIndex();
+      dot.hidden = !visible;
+      dot.classList.toggle("is-active", dotIndex === current);
+    });
+  };
+
+  prev?.addEventListener("click", () => setReviewSlide(current - 1));
+  next?.addEventListener("click", () => setReviewSlide(current + 1));
+  dots.forEach((dot) => {
+    dot.addEventListener("click", () => setReviewSlide(Number(dot.dataset.reviewDot || 0)));
+  });
+  window.addEventListener("resize", () => setReviewSlide(current));
+  setReviewSlide(0);
+});
+
 document.querySelectorAll("[data-gallery]").forEach((gallery) => {
   const main = gallery.querySelector("[data-main-image]");
   gallery.querySelectorAll("[data-thumb]").forEach((button) => {

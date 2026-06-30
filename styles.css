@@ -845,8 +845,29 @@ a {
   margin: 34px auto 0;
 }
 
+.review-carousel {
+  position: relative;
+  max-width: 1180px;
+  margin: 34px auto 0;
+  padding: 0 46px 78px;
+}
+
+.review-viewport {
+  overflow: hidden;
+}
+
+.testimonial-grid.review-track {
+  max-width: none;
+  margin: 0;
+  display: flex;
+  gap: 22px;
+  transition: transform 360ms ease;
+  will-change: transform;
+}
+
 .review-card {
   min-height: 380px;
+  flex: 0 0 calc((100% - 44px) / 3);
   display: flex;
   flex-direction: column;
   padding: 30px;
@@ -911,6 +932,72 @@ a {
   color: var(--navy);
   font-size: 15px;
   font-weight: 900;
+}
+
+.review-nav {
+  position: absolute;
+  top: 44%;
+  z-index: 3;
+  width: 42px;
+  height: 42px;
+  border: 1px solid rgba(11, 47, 99, 0.14);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--navy);
+  background: rgba(255, 255, 255, 0.92);
+  font-size: 30px;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 12px 28px rgba(11, 47, 99, 0.14);
+}
+
+.review-prev {
+  left: 0;
+}
+
+.review-next {
+  right: 0;
+}
+
+.review-nav:hover {
+  color: #fff;
+  background: var(--navy);
+}
+
+.review-dots {
+  position: absolute;
+  left: 50%;
+  bottom: 24px;
+  display: flex;
+  gap: 9px;
+  transform: translateX(-50%);
+}
+
+.review-dots button {
+  width: 9px;
+  height: 9px;
+  border: 0;
+  border-radius: 50%;
+  padding: 0;
+  background: rgba(11, 47, 99, 0.24);
+  cursor: pointer;
+}
+
+.review-dots button.is-active {
+  width: 26px;
+  border-radius: 999px;
+  background: var(--yellow);
+}
+
+.all-reviews-btn {
+  position: absolute;
+  left: 50%;
+  bottom: -32px;
+  min-width: 150px;
+  justify-content: center;
+  transform: translateX(-50%);
 }
 
 .card-link {
@@ -1537,6 +1624,14 @@ a {
       linear-gradient(90deg, #fff 0%, rgba(255, 255, 255, 0.94) 52%, rgba(255, 255, 255, 0.34) 100%);
   }
 
+  .review-carousel {
+    padding-inline: 38px;
+  }
+
+  .review-card {
+    flex-basis: calc((100% - 22px) / 2);
+  }
+
   .grid-3,
   .grid-4,
   .why-grid,
@@ -1594,6 +1689,21 @@ a {
 
   .hero-bg {
     object-position: 72% 50%;
+  }
+
+  .review-carousel {
+    padding: 0 30px 76px;
+  }
+
+  .review-card {
+    flex-basis: 100%;
+    min-height: 340px;
+  }
+
+  .review-nav {
+    width: 36px;
+    height: 36px;
+    font-size: 26px;
   }
 
   .hero-proof,

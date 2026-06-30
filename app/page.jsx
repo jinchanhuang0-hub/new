@@ -191,31 +191,61 @@ const html = String.raw`
           <h2>Reviews From Our Customers</h2>
           <p>Real feedback from repeat buyers highlights product detail, fast communication and reliable custom production.</p>
         </div>
-        <div class="grid-3 testimonial-grid">
-          <article class="testimonial review-card">
-            <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            <h3>Fantastic Medals & Fast Support</h3>
-            <p>The medals turned out absolutely fantastic. These will be a big hit with swimmers lucky enough to get their hands on one.</p>
-            <p class="review-more" hidden>Ada was great to deal with and responded very quickly to all of our changes and requests so that the medals ended exactly what we envisioned.</p>
-            <button class="show-more" type="button" aria-expanded="false">+ Show More</button>
-            <strong>Event Medals Buyer</strong>
-          </article>
-          <article class="testimonial review-card">
-            <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            <h3>7th Repeat Order</h3>
-            <p>I honestly cannot say enough good things about the quality of the coins and keychains I have received from here.</p>
-            <p class="review-more" hidden>This was actually our 7th time ordering, and they have not missed a beat. The quality is very good and communication was excellent.</p>
-            <button class="show-more" type="button" aria-expanded="false">+ Show More</button>
-            <strong>Repeat B2B Customer</strong>
-          </article>
-          <article class="testimonial review-card">
-            <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            <h3>Perfect Custom Lapel Pins</h3>
-            <p>The custom lapel pins turned out absolutely perfect - clean details, vivid colors, and excellent quality.</p>
-            <p class="review-more" hidden>Communication was fast and professional throughout the entire process. The supplier was very helpful with design adjustments and delivered exactly what I needed.</p>
-            <button class="show-more" type="button" aria-expanded="false">+ Show More</button>
-            <strong>Custom Pins Buyer</strong>
-          </article>
+        <div class="review-carousel" data-review-carousel>
+          <button class="review-nav review-prev" type="button" data-review-prev aria-label="Previous reviews">‹</button>
+          <div class="review-viewport">
+            <div class="testimonial-grid review-track" data-review-track>
+              <article class="testimonial review-card">
+                <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <h3>Fantastic Medals & Fast Support</h3>
+                <p>The medals turned out absolutely fantastic. These will be a big hit with swimmers lucky enough to get their hands on one.</p>
+                <p class="review-more" hidden>Ada was great to deal with and responded very quickly to all of our changes and requests so that the medals ended exactly what we envisioned.</p>
+                <button class="show-more" type="button" aria-expanded="false">+ Show More</button>
+                <strong>Event Medals Buyer</strong>
+              </article>
+              <article class="testimonial review-card">
+                <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <h3>7th Repeat Order</h3>
+                <p>I honestly cannot say enough good things about the quality of the coins and keychains I have received from here.</p>
+                <p class="review-more" hidden>This was actually our 7th time ordering, and they have not missed a beat. The quality is very good and communication was excellent.</p>
+                <button class="show-more" type="button" aria-expanded="false">+ Show More</button>
+                <strong>Repeat B2B Customer</strong>
+              </article>
+              <article class="testimonial review-card">
+                <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <h3>Perfect Custom Lapel Pins</h3>
+                <p>The custom lapel pins turned out absolutely perfect - clean details, vivid colors, and excellent quality.</p>
+                <p class="review-more" hidden>Communication was fast and professional throughout the entire process. The supplier was very helpful with design adjustments and delivered exactly what I needed.</p>
+                <button class="show-more" type="button" aria-expanded="false">+ Show More</button>
+                <strong>Custom Pins Buyer</strong>
+              </article>
+              <article class="testimonial review-card">
+                <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <h3>Outstanding Quality & Detail</h3>
+                <p>Fantastic quality, attention to detail and packaging - just outstanding. Even better than I could have hoped for when I first designed them.</p>
+                <p class="review-more" hidden>This is my favourite supplier to work with, highly recommended. Eva is a great customer representative and answered all my questions with speed and grace.</p>
+                <button class="show-more" type="button" aria-expanded="false">+ Show More</button>
+                <strong>Custom Metal Crafts Buyer</strong>
+              </article>
+              <article class="testimonial review-card">
+                <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <h3>Helpful Long-Term Partner</h3>
+                <p>Eve is always very helpful. I have used this company for the past 4 years for challenge coins, pins and magnets.</p>
+                <p class="review-more" hidden>They are great at offering suggestions and problem solving, and all of the products have come out very nice.</p>
+                <button class="show-more" type="button" aria-expanded="false">+ Show More</button>
+                <strong>Long-Term B2B Buyer</strong>
+              </article>
+            </div>
+          </div>
+          <button class="review-nav review-next" type="button" data-review-next aria-label="Next reviews">›</button>
+          <div class="review-dots" aria-label="Review carousel pagination">
+            <button type="button" class="is-active" data-review-dot="0" aria-label="Review page 1"></button>
+            <button type="button" data-review-dot="1" aria-label="Review page 2"></button>
+            <button type="button" data-review-dot="2" aria-label="Review page 3"></button>
+            <button type="button" data-review-dot="3" aria-label="Review page 4"></button>
+            <button type="button" data-review-dot="4" aria-label="Review page 5"></button>
+          </div>
+          <a class="btn btn-primary all-reviews-btn" href="about.html">All Reviews</a>
         </div>
       </div>
     </section>
