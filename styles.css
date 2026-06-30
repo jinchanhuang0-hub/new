@@ -340,13 +340,13 @@ a {
   content: "";
   position: absolute;
   inset: 0 auto 0 0;
-  width: min(58vw, 900px);
+  width: min(78vw, 1240px);
   z-index: 1;
   pointer-events: none;
   background:
-    linear-gradient(122deg, rgba(11, 47, 99, 0.13) 0%, rgba(11, 47, 99, 0.08) 27%, rgba(243, 198, 0, 0.14) 48%, rgba(255, 255, 255, 0) 74%),
-    repeating-linear-gradient(132deg, rgba(11, 47, 99, 0.045) 0 1px, rgba(255, 255, 255, 0) 1px 18px);
-  clip-path: polygon(0 0, 80% 0, 58% 100%, 0 100%);
+    linear-gradient(122deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.64) 34%, rgba(243, 198, 0, 0.11) 52%, rgba(11, 47, 99, 0.04) 70%, rgba(255, 255, 255, 0) 100%),
+    repeating-linear-gradient(132deg, rgba(11, 47, 99, 0.032) 0 1px, rgba(255, 255, 255, 0) 1px 20px);
+  clip-path: polygon(0 0, 86% 0, 68% 100%, 0 100%);
 }
 
 .hero::after {
