@@ -235,6 +235,30 @@ const html = String.raw`
                 <button class="show-more" type="button" aria-expanded="false">+ Show More</button>
                 <strong>Long-Term B2B Buyer</strong>
               </article>
+              <article class="testimonial review-card">
+                <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <h3>Fast Turnaround & Proofing</h3>
+                <p>The turnaround time is incredibly fast, but my favorite part of the process is the communication.</p>
+                <p class="review-more" hidden>Their designers always send over a proof to make sure you are 100% happy with the design before production. That extra level of customer service keeps us coming back.</p>
+                <button class="show-more" type="button" aria-expanded="false">+ Show More</button>
+                <strong>Custom Work Buyer</strong>
+              </article>
+              <article class="testimonial review-card">
+                <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <h3>Amazing Coin Service</h3>
+                <p>The coin is amazing, and the customer service is excellent. Every time I have a question, the team is helpful.</p>
+                <p class="review-more" hidden>They work closely with me to create the coin design I want, and the process is smooth from design discussion to final production.</p>
+                <button class="show-more" type="button" aria-expanded="false">+ Show More</button>
+                <strong>Challenge Coin Buyer</strong>
+              </article>
+              <article class="testimonial review-card">
+                <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <h3>Excellent Communication</h3>
+                <p>The quality is very good. Communication was excellent, and the team understood my needs well.</p>
+                <p class="review-more" hidden>They worked to create the exact item I envisioned and made the custom ordering process clear and reliable.</p>
+                <button class="show-more" type="button" aria-expanded="false">+ Show More</button>
+                <strong>Custom Order Buyer</strong>
+              </article>
             </div>
           </div>
           <button class="review-nav review-next" type="button" data-review-next aria-label="Next reviews">›</button>
@@ -244,6 +268,9 @@ const html = String.raw`
             <button type="button" data-review-dot="2" aria-label="Review page 3"></button>
             <button type="button" data-review-dot="3" aria-label="Review page 4"></button>
             <button type="button" data-review-dot="4" aria-label="Review page 5"></button>
+            <button type="button" data-review-dot="5" aria-label="Review page 6"></button>
+            <button type="button" data-review-dot="6" aria-label="Review page 7"></button>
+            <button type="button" data-review-dot="7" aria-label="Review page 8"></button>
           </div>
           <a class="btn btn-primary all-reviews-btn" href="about.html">All Reviews</a>
         </div>
