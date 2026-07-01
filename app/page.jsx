@@ -167,13 +167,42 @@ const html = String.raw`
       </div>
     </section>
 
-    <section class="section section-soft">
+    <section class="section section-soft why-choice-section">
       <div class="container">
-        <div class="center-head">
-          <h2>Why Choose Unique Pin</h2>
-          <p>We combine factory-direct production, flexible customization and responsive export support for B2B projects.</p>
+        <div class="why-choice-head">
+          <h2>Why Choose Unique Pin for Your Custom Metal Crafts?</h2>
         </div>
         <div class="why-grid">
+          <div class="why-item why-choice-card">
+            <span class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m4 20 7-7"/><path d="m14 4 6 6"/><path d="m8 16-2-2 8-8 2 2z"/><path d="m15 11 3 3"/><path d="M3 7h4"/><path d="M5 5v4"/></svg></span>
+            <strong>Free Design Support</strong>
+            <p>Our professional design team creates production-ready artwork proofs for free.</p>
+          </div>
+          <div class="why-item why-choice-card">
+            <span class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 6c0-1.7 2.2-3 5-3s5 1.3 5 3-2.2 3-5 3-5-1.3-5-3z"/><path d="M7 6v6c0 1.7 2.2 3 5 3s5-1.3 5-3V6"/><path d="M7 12v6c0 1.7 2.2 3 5 3s5-1.3 5-3v-6"/></svg></span>
+            <strong>No Minimum Order</strong>
+            <p>Flexible quantities make it easy to test samples, small runs or large orders.</p>
+          </div>
+          <div class="why-item why-choice-card">
+            <span class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 7h16"/><path d="M6 7v13h12V7"/><path d="M9 7V4h6v3"/><path d="m9 14 2 2 4-5"/></svg></span>
+            <strong>Factory Direct Price</strong>
+            <p>Direct factory sales help reduce cost while keeping stable production quality.</p>
+          </div>
+          <div class="why-item why-choice-card">
+            <span class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.6 3.8 5.6 3.8 9S14.5 18.4 12 21"/><path d="M12 3C9.5 5.6 8.2 8.6 8.2 12S9.5 18.4 12 21"/></svg></span>
+            <strong>Global Service</strong>
+            <p>Serving 50+ countries with complete OEM/ODM support for global buyers.</p>
+          </div>
+          <div class="why-item why-choice-card">
+            <span class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 7h10v10H4z"/><path d="M14 10h3l3 3v4h-6z"/><path d="M6 17a2 2 0 1 0 4 0"/><path d="M16 17a2 2 0 1 0 4 0"/><path d="M4 4h8"/></svg></span>
+            <strong>Fast Delivery</strong>
+            <p>We produce and ship custom orders quickly without sacrificing quality.</p>
+          </div>
+          <div class="why-item why-choice-card">
+            <span class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 5 6v6c0 4.4 2.9 7.4 7 9 4.1-1.6 7-4.6 7-9V6z"/><path d="m8.5 12.4 2.2 2.2 4.8-5"/></svg></span>
+            <strong>Quality-First Guarantee</strong>
+            <p>If something is not right, we fix it with clear accountability.</p>
+          </div>
           <div class="why-item"><span class="icon-box">✓</span><strong>OEM / ODM Service</strong></div>
           <div class="why-item"><span class="icon-box">→</span><strong>Low MOQ</strong></div>
           <div class="why-item"><span class="icon-box">✓</span><strong>Free Design Support</strong></div>
@@ -187,7 +216,7 @@ const html = String.raw`
     <section class="section reviews-section">
       <div class="container">
         <div class="center-head reviews-head">
-          <span class="review-rating">&#9733;&#9733;&#9733;&#9733;&#9733; 5 out of 5 stars</span>
+          <span class="brand-kicker" aria-hidden="true"></span>
           <h2>Reviews From Our Customers</h2>
           <p>Real feedback from repeat buyers highlights product detail, fast communication and reliable custom production.</p>
         </div>
