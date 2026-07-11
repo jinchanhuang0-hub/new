@@ -17,3 +17,18 @@ Open `http://localhost:3000`.
 npm run build
 npm run start
 ```
+
+## Inquiry Email
+
+Inquiry forms submit to `/api/inquiry` and send email to `ceo@chinauniquepin.com` by default.
+Set these environment variables on the server or hosting platform:
+
+```bash
+INQUIRY_TO=ceo@chinauniquepin.com
+SMTP_HOST=smtp.example.com
+SMTP_PORT=587
+SMTP_SECURE=false
+SMTP_USER=your-smtp-username
+SMTP_PASS=your-smtp-password
+SMTP_FROM="Unique Pin <your-smtp-username>"
+```

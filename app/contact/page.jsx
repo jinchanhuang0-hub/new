@@ -6,7 +6,7 @@ export const metadata = {
 };
 
 const html = String.raw`
-  <div class="topbar"><div class="container"><span>Professional OEM/ODM Manufacturer Since 2003</span><span>Email: ceo@chinauniquepin.com | WhatsApp: +86 18895316752</span></div></div>
+  <div class="topbar"><div class="container"><span>Professional OEM/ODM Manufacturer Since 2003</span><span>Email: ceo@chinauniquepin.com | WhatsApp: +86 18895316838</span></div></div>
   <header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html"><img src="assets/images/logo.png" alt="Unique Pin logo"><span><strong>Unique Pin</strong><span>Custom Metal Gifts Factory</span></span></a><nav class="nav" aria-label="Main navigation"><a href="index.html">Home</a><div class="nav-item products-menu"><a href="products.html">Products</a><div class="mega-dropdown" role="menu" aria-label="Products mega menu"><div class="mega-panel"><div class="mega-featured"><a class="mega-product" href="product-detail.html?product=pins"><img src="assets/images/mega-lapel-pins-auburn.jpg" alt="Custom Auburn lapel pin"><span>Lapel Pins</span><small>Custom enamel pins for brands, events and clubs.</small></a><a class="mega-product" href="product-detail.html?product=medals"><img src="assets/images/mega-medals-butterfly.png" alt="Custom butterfly medal with ribbon"><span>Medals</span><small>Colorful award medals with ribbons and finishes.</small></a><a class="mega-product" href="product-detail.html?product=coins"><img src="assets/images/mega-challenge-coin-christmas.jpg" alt="Custom Christmas challenge coin"><span>Challenge Coins</span><small>Detailed coins for recognition and commemorations.</small></a></div><div class="mega-list"><a href="product-detail.html?product=pins">Lapel Pins</a><a href="product-detail.html?product=coins">Challenge Coins</a><a href="product-detail.html?product=medals">Medals</a><a href="product-detail.html?product=keychains">Keychains</a><a href="product-detail.html?product=buckles">Belt Buckles</a><a href="product-detail.html?product=golf-accessories">Golf Ball Markers &amp;Hat Clips</a><a href="product-detail.html?product=bottle-openers">Bottle Openers</a><a href="product-detail.html?product=cufflinks-tieclips">Cufflinks &amp; Tie Clips</a><a href="product-detail.html?product=magnets">Fridge Magnets</a></div><div class="mega-cta"><div><strong>Need a custom product quote?</strong><span>Send logo, quantity and deadline. We reply within 1 business day.</span></div><a class="btn btn-yellow" href="contact.html">Get Free Quote</a></div></div></div></div><a href="custom.html">Custom</a><a href="about.html">About Us</a><a href="blog.html">Blog</a><a class="active" href="contact.html">Contact Us</a></nav><div class="nav-actions"><a class="btn btn-primary" href="contact.html">Get Free Quote</a><button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">&#9776;</button></div></div></header>
   <main>
     <section class="section contact-section">
@@ -29,13 +29,13 @@ const html = String.raw`
                 <span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 10a6 6 0 0 1 12 0"></path><path d="M5 11h4v7H5z"></path><path d="M15 11h4v7h-4z"></path><path d="M9 18h4"></path></svg></span>
                 <span><strong>Phone</strong><small>+86 0760 22831989</small></span>
               </a>
-              <a class="contact-method" href="tel:+8618895316752">
+              <a class="contact-method" href="tel:+8618895316838">
                 <span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 5c1 6 6 11 12 12l-2 3c-8-1-14-7-15-15l3-2z"></path><path d="m14 5 5 5"></path><path d="M19 5v5h-5"></path></svg></span>
-                <span><strong>Mobile</strong><small>+86 18895316752</small></span>
+                <span><strong>Mobile</strong><small>+86 18895316838</small></span>
               </a>
-              <a class="contact-method" href="https://wa.me/8618895316752?text=Hello%2C%20I%20am%20interested%20in%20your%20products.%20Please%20send%20me%20more%20details." target="_blank" rel="noopener" title="Contact Unique Pin on WhatsApp">
+              <a class="contact-method" href="https://wa.me/8618895316838?text=Hello%2C%20I%20am%20interested%20in%20your%20products.%20Please%20send%20me%20more%20details." target="_blank" rel="noopener" title="Contact Unique Pin on WhatsApp">
                 <span class="contact-icon contact-icon-outline contact-icon-whatsapp" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 19 6.2 15.5A7 7 0 1 1 8.5 17z"></path><path d="M9 9c.8 2.3 2.5 4 5 5l1.2-1.1"></path></svg></span>
-                <span><strong>WhatsApp</strong><small>+86 18895316752</small></span>
+                <span><strong>WhatsApp</strong><small>+86 18895316838</small></span>
               </a>
             </div>
             <div class="contact-actions"><a class="btn btn-outline" href="assets/Uniquepin-Catalogue.pdf">Download Catalog</a></div>

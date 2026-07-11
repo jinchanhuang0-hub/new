@@ -293,14 +293,57 @@ if (productData && window.location.pathname.includes("product-detail")) {
   if (nameCell) nameCell.textContent = productData.name;
 }
 
+const getFormNotice = (form) => form.querySelector("[data-form-notice]")
+  || form.closest(".contact-card, .product-inquiry-card, .contact-layout")?.querySelector("[data-form-notice]");
+
 document.querySelectorAll("[data-inquiry-form]").forEach((inquiryForm) => {
-  inquiryForm.addEventListener("submit", (event) => {
+  inquiryForm.addEventListener("submit", async (event) => {
     event.preventDefault();
-    const notice = inquiryForm.querySelector("[data-form-notice]");
+
+    const notice = getFormNotice(inquiryForm);
+    const submitButton = inquiryForm.querySelector('button[type="submit"]');
+    const originalButtonText = submitButton?.textContent;
+    const formData = new FormData(inquiryForm);
+
+    formData.set("pageUrl", window.location.href);
+    formData.set("pageTitle", document.title);
+
     if (notice) {
-      notice.textContent = "Thank you for your inquiry. Our team will reply within 1 business day.";
+      notice.style.color = "var(--navy)";
+      notice.textContent = "Sending your inquiry...";
     }
-    inquiryForm.reset();
+    if (submitButton) {
+      submitButton.disabled = true;
+      submitButton.textContent = "Sending...";
+    }
+
+    try {
+      const response = await fetch("/api/inquiry", {
+        method: "POST",
+        body: formData,
+      });
+      const result = await response.json().catch(() => ({}));
+
+      if (!response.ok) {
+        throw new Error(result.message || "Inquiry could not be sent. Please email ceo@chinauniquepin.com directly.");
+      }
+
+      if (notice) {
+        notice.style.color = "var(--navy)";
+        notice.textContent = "Thank you for your inquiry. Our team will reply within 1 business day.";
+      }
+      inquiryForm.reset();
+    } catch (error) {
+      if (notice) {
+        notice.style.color = "#b42318";
+        notice.textContent = error.message || "Inquiry could not be sent. Please email ceo@chinauniquepin.com directly.";
+      }
+    } finally {
+      if (submitButton) {
+        submitButton.disabled = false;
+        submitButton.textContent = originalButtonText || "Submit Inquiry";
+      }
+    }
   });
 });
 
