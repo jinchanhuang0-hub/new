@@ -1,0 +1,239 @@
+import StaticPage from "../components/StaticPage";
+
+export const metadata = {
+  title: "Custom Soft Enamel Pins | Product Detail | Unique Pin",
+  description: "View custom soft enamel pin details, OEM options, production specifications and inquiry information from Unique Pin."
+};
+
+const html = String.raw`
+  <div class="topbar"><div class="container"><span>Professional OEM/ODM Manufacturer Since 2003</span><span>Email: ceo@chinauniquepin.com | WhatsApp: +86 18895316752</span></div></div>
+  <header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html"><img src="assets/images/logo.png" alt="Unique Pin logo"><span><strong>Unique Pin</strong><span>Custom Metal Gifts Factory</span></span></a><nav class="nav" aria-label="Main navigation"><a href="index.html">Home</a><div class="nav-item products-menu"><a class="active" href="products.html">Products</a><div class="mega-dropdown" role="menu" aria-label="Products mega menu"><div class="mega-panel"><div class="mega-featured"><a class="mega-product" href="product-detail.html?product=pins"><img src="assets/images/mega-lapel-pins-auburn.jpg" alt="Custom Auburn lapel pin"><span>Lapel Pins</span><small>Custom enamel pins for brands, events and clubs.</small></a><a class="mega-product" href="product-detail.html?product=medals"><img src="assets/images/mega-medals-butterfly.png" alt="Custom butterfly medal with ribbon"><span>Medals</span><small>Colorful award medals with ribbons and finishes.</small></a><a class="mega-product" href="product-detail.html?product=coins"><img src="assets/images/mega-challenge-coin-christmas.jpg" alt="Custom Christmas challenge coin"><span>Challenge Coins</span><small>Detailed coins for recognition and commemorations.</small></a></div><div class="mega-list"><a href="product-detail.html?product=pins">Lapel Pins</a><a href="product-detail.html?product=coins">Challenge Coins</a><a href="product-detail.html?product=medals">Medals</a><a href="product-detail.html?product=keychains">Keychains</a><a href="product-detail.html?product=buckles">Belt Buckles</a><a href="product-detail.html?product=golf-accessories">Golf Ball Markers &amp;Hat Clips</a><a href="product-detail.html?product=bottle-openers">Bottle Openers</a><a href="product-detail.html?product=cufflinks-tieclips">Cufflinks &amp; Tie Clips</a><a href="product-detail.html?product=magnets">Fridge Magnets</a></div><div class="mega-cta"><div><strong>Need a custom product quote?</strong><span>Send logo, quantity and deadline. We reply within 1 business day.</span></div><a class="btn btn-yellow" href="contact.html">Get Free Quote</a></div></div></div></div><a href="custom.html">Custom</a><a href="about.html">About Us</a><a href="blog.html">Blog</a><a href="contact.html">Contact Us</a></nav><div class="nav-actions"><a class="btn btn-primary" href="contact.html">Get Free Quote</a><button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">&#9776;</button></div></div></header>
+
+  <main class="single-product-page">
+    <section class="single-product-hero">
+      <div class="container single-product-layout">
+        <div class="single-product-gallery" aria-label="Soft enamel pin gallery">
+          <nav class="single-product-breadcrumbs" aria-label="Breadcrumb">
+            <a href="index.html">Home</a>
+            <span class="breadcrumb-separator" aria-hidden="true">&gt;</span>
+            <a href="products.html">Products</a>
+            <span class="breadcrumb-separator" aria-hidden="true">&gt;</span>
+            <a href="product-detail.html?product=pins">Lapel Pins</a>
+            <span class="breadcrumb-separator" aria-hidden="true">&gt;</span>
+            <span>Custom Soft Enamel Pins</span>
+          </nav>
+          <div class="single-product-main">
+            <img class="single-product-main-image" src="assets/images/soft-enamel-pins-main.png" alt="Custom soft enamel pin samples">
+          </div>
+          <div class="single-product-example-thumb" aria-hidden="true">
+            <img src="assets/images/soft-enamel-pins-main.png" alt="">
+          </div>
+        </div>
+
+        <div class="single-product-summary">
+          <h1>Custom Soft Enamel Pins</h1>
+          <p class="single-product-lead">The image shows custom soft enamel badge designs with raised metal outlines and colorful recessed enamel. These badges are ideal for brand merchandise, event giveaways, club rewards, fan collectibles, retail accessories and promotional campaigns.</p>
+          <div class="single-product-specs" aria-label="Product specifications">
+            <div><strong>Material</strong><span>Zinc alloy</span></div>
+            <div><strong>Product Process</strong><span>Die casting</span></div>
+            <div><strong>SKU</strong><span>UP-PIN-001</span></div>
+            <div><strong>Usage</strong><span>Brand events, clubs, retail gifts</span></div>
+            <div><strong>Categories</strong><span>Lapel Pins, Soft Enamel Pins</span></div>
+          </div>
+          <a class="single-product-inquiry" href="contact.html" data-product-inquiry-trigger data-product-inquiry-product="Lapel Pins">GET A QUOTE</a>
+          <div class="single-product-quote-benefits" aria-label="Quote benefits">
+            <div>
+              <span class="quote-benefit-icon quote-benefit-icon-moq" aria-hidden="true"></span>
+              <span>NO MOQ</span>
+            </div>
+            <div>
+              <span class="quote-benefit-icon quote-benefit-icon-design" aria-hidden="true"></span>
+              <span>FREE DESIGN</span>
+            </div>
+            <div>
+              <span class="quote-benefit-icon quote-benefit-icon-factory" aria-hidden="true"></span>
+              <span>FACTORY DIRECT</span>
+            </div>
+            <div>
+              <span class="quote-benefit-icon quote-benefit-icon-oem" aria-hidden="true"></span>
+              <span>OEM/ODM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="design-respect-section" aria-label="Customer design protection">
+      <div class="container">
+        <div class="design-respect-card">
+          <div class="design-respect-visual" aria-hidden="true">
+            <img class="design-respect-shield-image" src="assets/images/design-protection-shield.webp" alt="">
+          </div>
+          <div class="design-respect-copy">
+            <h2>Your Design, Your Ownership</h2>
+            <p>Every custom metal product we create is made exclusively for the customer who provides the concept, artwork, or specifications.</p>
+            <p>Our project gallery is intended only to demonstrate our manufacturing experience and craftsmanship. Customer designs, logos, and trademarks remain confidential and will not be copied or reused without permission.</p>
+            <p>Need a similar style? Our designers can develop a fresh and original design tailored to your brand identity and project goals.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="single-product-description">
+      <div class="container">
+        <div class="custom-solutions-layout">
+          <table class="custom-solutions-table">
+            <thead><tr><th colspan="3">CUSTOM SOLUTIONS</th></tr></thead>
+            <tbody>
+              <tr><td>1</td><td>Material</td><td>Zinc alloy, iron, brass or stainless steel for optional needs.</td></tr>
+              <tr><td>2</td><td>Process</td><td>Molding, casting, polishing, plating, enamel filling and packaging.</td></tr>
+              <tr><td>3</td><td>Plating color</td><td>Gold, silver, bronze, black nickel, antique or custom plating colors.</td></tr>
+              <tr><td>4</td><td>Logo</td><td>Customize with your own artwork, brand mark or event design.</td></tr>
+              <tr><td>5</td><td>Package</td><td>Poly bag, backing card, velvet box, gift box or retail package.</td></tr>
+              <tr><td>6</td><td>Shipment</td><td>DHL, FedEx, UPS, air freight, sea freight or your forwarder.</td></tr>
+            </tbody>
+          </table>
+          <div class="custom-solutions-visual">
+            <img src="assets/images/soft-enamel-pins-main.png" alt="Custom soft enamel pin samples">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="single-product-faq-section" aria-label="Frequently asked questions">
+      <div class="container">
+        <div class="single-product-faq-heading">
+          <span class="single-product-faq-icon" aria-hidden="true"></span>
+          <h2>Frequently Asked Questions</h2>
+        </div>
+        <div class="single-product-faq-list">
+          <details>
+            <summary><span class="faq-plus" aria-hidden="true"></span><span>What is your minimum order quantity?</span></summary>
+            <p>We do not have a fixed minimum order quantity. You can start from 1 piece.</p>
+          </details>
+          <details>
+            <summary><span class="faq-plus" aria-hidden="true"></span><span>Do you offer free art proofs?</span></summary>
+            <p>Yes. Every order includes a free digital art proof before production begins. You can request revisions until the design matches your vision. Production does not start until you approve the proof.</p>
+          </details>
+          <details>
+            <summary><span class="faq-plus" aria-hidden="true"></span><span>What file formats do you accept?</span></summary>
+            <p>Vector files such as AI, PDF, EPS, CDR and SVG are best. High-resolution PNG, JPG and PSD files can also be used when vector artwork is not available.</p>
+          </details>
+          <details>
+            <summary><span class="faq-plus" aria-hidden="true"></span><span>How to choose the suitable material?</span></summary>
+            <p>For designs that need a strong 3D effect, we usually recommend zinc alloy because it is easier to cast detailed raised shapes and dimensional surfaces. If your priority is reducing cost for a simple flat design, iron can be a more economical option.</p>
+          </details>
+          <details>
+            <summary><span class="faq-plus" aria-hidden="true"></span><span>Can urgent orders be expedited?</span></summary>
+            <p>We can review the schedule and prioritize urgent projects when production capacity allows. Share your event date as early as possible.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="single-product-related-section" aria-label="You may also like">
+      <div class="container">
+        <div class="single-product-related-heading">
+          <h2>YOU MAY ALSO LIKE</h2>
+          <p>Choose a product and start customizing!</p>
+        </div>
+        <div class="single-product-related-grid">
+          <article class="single-product-related-card">
+            <img src="assets/images/type-pins-printed.jpg" alt="Branded merch enamel pin examples">
+            <div>
+              <h3>BRANDED MERCH</h3>
+              <p>Custom pins for campaigns, fan drops and company giveaways.</p>
+            </div>
+            <a href="contact.html" data-product-inquiry-trigger data-product-inquiry-product="Lapel Pins">CUSTOMIZE NOW</a>
+          </article>
+          <article class="single-product-related-card">
+            <img src="assets/images/type-pins-hard-enamel.jpg" alt="Colored metal enamel pin example">
+            <div>
+              <h3>COLORED METAL</h3>
+              <p>Add an extra pop of color to any custom pin design.</p>
+            </div>
+            <a href="contact.html" data-product-inquiry-trigger data-product-inquiry-product="Lapel Pins">CUSTOMIZE NOW</a>
+          </article>
+          <article class="single-product-related-card">
+            <img src="assets/images/type-pins-die-struck.jpg" alt="Detailed edge pin example">
+            <div>
+              <h3>DETAILED EDGE PIN</h3>
+              <p>Capture every edge detail of your custom design.</p>
+            </div>
+            <a href="contact.html" data-product-inquiry-trigger data-product-inquiry-product="Lapel Pins">CUSTOMIZE NOW</a>
+          </article>
+          <article class="single-product-related-card">
+            <img src="assets/images/home-lapel-pins-cat.jpg" alt="Rainbow metal pin example">
+            <div>
+              <h3>RAINBOW METAL PIN</h3>
+              <p>Use bright plating colors for retail gifts and event merch.</p>
+            </div>
+            <a href="contact.html" data-product-inquiry-trigger data-product-inquiry-product="Lapel Pins">CUSTOMIZE NOW</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="product-inquiry-modal" data-product-inquiry-modal hidden>
+      <div class="product-inquiry-dialog" role="dialog" aria-modal="true" aria-labelledby="soft-enamel-quote-title">
+        <button class="product-inquiry-close" type="button" aria-label="Close inquiry form" data-product-inquiry-close>&times;</button>
+        <div class="contact-card product-inquiry-card">
+          <h2 id="soft-enamel-quote-title" class="contact-form-title">Request Your Free Quote</h2>
+          <p class="product-inquiry-note">Send your product details, artwork or deadline. Our team will reply with a clear custom quote.</p>
+          <form class="form" data-inquiry-form>
+            <div class="form-row">
+              <input type="text" name="name" placeholder="Name" required>
+              <input type="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="form-row">
+              <input type="text" name="country" placeholder="Country / Region" required>
+              <input type="text" name="whatsapp" placeholder="Phone Number">
+            </div>
+            <div class="form-row">
+              <select name="product" required>
+                <option value="">Product Type</option>
+                <option selected>Lapel Pins</option>
+                <option>Medals</option>
+                <option>Challenge Coins</option>
+                <option>Keychains</option>
+                <option>Belt Buckles</option>
+                <option>Golf Ball Markers</option>
+                <option>Fridge Magnets</option>
+                <option>Bottle Openers</option>
+                <option>Cufflinks &amp; Tie Clips</option>
+              </select>
+              <input type="text" name="quantity" placeholder="Quantity">
+            </div>
+            <div class="form-field form-field-full">
+              <label for="soft-enamel-quote-details">What can we help you with?</label>
+              <textarea id="soft-enamel-quote-details" name="details" placeholder="Notes, Comments, etc."></textarea>
+            </div>
+            <div class="form-field form-field-full">
+              <label for="soft-enamel-quote-artwork">Upload files</label>
+              <label class="upload-box" for="soft-enamel-quote-artwork">
+                <input id="soft-enamel-quote-artwork" type="file" name="artwork" aria-label="Upload artwork">
+                <span class="upload-icon" aria-hidden="true">&#8593;</span>
+                <span>Drag and drop a file here or click to choose</span>
+              </label>
+            </div>
+            <button class="btn btn-primary" type="submit">Submit Inquiry</button>
+            <p data-form-notice style="color: var(--navy); font-weight: 800;"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-logo-wrap"><img class="footer-logo" src="assets/images/logo.png" alt="Unique Pin logo"></div>
+      <div><h4>Products</h4><a href="products.html">Custom Enamel Pins</a><a href="products.html">Custom Medals</a><a href="products.html">Challenge Coins</a><a href="products.html">Keychains</a></div>
+      <div><h4>Get Started</h4><a href="custom.html">Custom</a><a href="about.html">About Us</a><a href="blog.html">Blog</a><a href="faq.html">FAQ</a></div>
+      <div><h4>Contact</h4><a href="mailto:ceo@chinauniquepin.com">ceo@chinauniquepin.com</a><a href="tel:+86076022831989">Phone: +86 0760 22831989</a><p>Building A, 1st Floor, No. 7 Xingyu Road, Xiaolan Town, Zhongshan City, Guangdong, China</p></div>
+    </div>
+    <div class="container footer-bottom"><span>&copy; 2026 Unique Pin. All rights reserved.</span><span class="footer-social"><a class="footer-social-facebook" href="https://www.facebook.com/profile.php?id=61583070933333&locale=zh_CN" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8.5h2.2V5.1c-.4-.1-1.7-.2-3.2-.2-3.2 0-5.3 1.9-5.3 5.5v3.1H4.2v3.8h3.5V24h4.3v-6.7h3.3l.6-3.8H12v-2.7c0-1.1.3-2.3 2-2.3Z"></path></svg></a><a class="footer-social-instagram" href="https://www.instagram.com/uniquepin/" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.2 2h9.6A5.2 5.2 0 0 1 22 7.2v9.6a5.2 5.2 0 0 1-5.2 5.2H7.2A5.2 5.2 0 0 1 2 16.8V7.2A5.2 5.2 0 0 1 7.2 2Zm0 2A3.2 3.2 0 0 0 4 7.2v9.6A3.2 3.2 0 0 0 7.2 20h9.6a3.2 3.2 0 0 0 3.2-3.2V7.2A3.2 3.2 0 0 0 16.8 4H7.2Zm4.8 3.7A4.3 4.3 0 1 1 7.7 12 4.3 4.3 0 0 1 12 7.7Zm0 2A2.3 2.3 0 1 0 14.3 12 2.3 2.3 0 0 0 12 9.7Zm4.6-3.2a1 1 0 1 1-1 1 1 1 0 0 1 1-1Z"></path></svg></a><a class="footer-social-youtube" href="https://www.youtube.com/@CustompinUnique" aria-label="YouTube" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.6 7.1a3 3 0 0 0-2.1-2.1C17.6 4.5 12 4.5 12 4.5s-5.6 0-7.5.5a3 3 0 0 0-2.1 2.1A31.2 31.2 0 0 0 2 12a31.2 31.2 0 0 0 .4 4.9A3 3 0 0 0 4.5 19c1.9.5 7.5.5 7.5.5s5.6 0 7.5-.5a3 3 0 0 0 2.1-2.1A31.2 31.2 0 0 0 22 12a31.2 31.2 0 0 0-.4-4.9ZM10 15.5v-7l6 3.5-6 3.5Z"></path></svg></a></span></div>
+  </footer>`;
+
+export default function Page() {
+  return <StaticPage html={html} />;
+}

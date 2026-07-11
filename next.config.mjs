@@ -1,10 +1,13 @@
 const htmlRouteMap = [
   ["index.html", "/"],
   ["products.html", "/products"],
+  ["product-item.html", "/product-item"],
+  ["soft-enamel-pins.html", "/soft-enamel-pins"],
   ["product-detail.html", "/product-detail"],
   ["custom.html", "/custom"],
   ["about.html", "/about"],
   ["blog.html", "/blog"],
+  ["faq.html", "/faq"],
   ["contact.html", "/contact"]
 ];
 

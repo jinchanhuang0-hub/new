@@ -124,6 +124,14 @@ document.querySelectorAll("[data-review-carousel]").forEach((carousel) => {
   setReviewSlide(0);
 });
 
+document.querySelectorAll(".upload-box input[type='file']").forEach((input) => {
+  input.addEventListener("change", () => {
+    const label = input.closest(".upload-box")?.querySelector("span:last-child");
+    if (!label) return;
+    label.textContent = input.files?.[0]?.name || "Drag and drop a file here or click to choose";
+  });
+});
+
 document.querySelectorAll("[data-gallery]").forEach((gallery) => {
   const main = gallery.querySelector("[data-main-image]");
   gallery.querySelectorAll("[data-thumb]").forEach((button) => {
@@ -135,7 +143,57 @@ document.querySelectorAll("[data-gallery]").forEach((gallery) => {
   });
 });
 
+const videoLightbox = document.querySelector("[data-video-lightbox]");
+const videoLightboxPlayer = videoLightbox?.querySelector(".video-lightbox-player");
+const closeVideoLightbox = () => {
+  if (!videoLightbox || !videoLightboxPlayer) return;
+  videoLightboxPlayer.pause();
+  videoLightboxPlayer.removeAttribute("src");
+  videoLightboxPlayer.load();
+  videoLightbox.hidden = true;
+  videoLightbox.setAttribute("aria-hidden", "true");
+  document.body.classList.remove("is-video-lightbox-open");
+};
+
+document.querySelectorAll("[data-video-lightbox-trigger]").forEach((trigger) => {
+  const openVideoLightbox = () => {
+    if (!videoLightbox || !videoLightboxPlayer) return;
+    const inlineVideo = trigger.querySelector("video");
+    inlineVideo?.pause();
+    videoLightboxPlayer.src = trigger.dataset.videoSrc || inlineVideo?.currentSrc || "";
+    videoLightboxPlayer.poster = trigger.dataset.videoPoster || inlineVideo?.poster || "";
+    videoLightbox.hidden = false;
+    videoLightbox.setAttribute("aria-hidden", "false");
+    document.body.classList.add("is-video-lightbox-open");
+    videoLightboxPlayer.focus();
+    videoLightboxPlayer.play().catch(() => {});
+  };
+
+  trigger.addEventListener("click", openVideoLightbox);
+  trigger.addEventListener("keydown", (event) => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      openVideoLightbox();
+    }
+  });
+});
+
+document.querySelectorAll("[data-video-lightbox-close]").forEach((button) => {
+  button.addEventListener("click", closeVideoLightbox);
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") closeVideoLightbox();
+});
+
 const productDetailData = {
+  magnets: {
+    title: "Custom Fridge Magnets Manufacturer",
+    name: "Custom Fridge Magnets",
+    image: "assets/images/product-keychains.jpg",
+    intro: "Custom metal fridge magnets for tourism souvenirs, retail gifts, brand campaigns, events and promotional merchandise.",
+    meta: "Order custom fridge magnets with OEM/ODM support, free artwork design, flexible quantities and global delivery."
+  },
   pins: {
     title: "Custom Enamel Pins Manufacturer",
     name: "Custom Enamel Pins",
@@ -149,6 +207,13 @@ const productDetailData = {
     image: "assets/images/product-medals.jpg",
     intro: "Custom sports medals, school medals, club awards and event medals with ribbons, plating, enamel and 3D relief options.",
     meta: "Order custom medals from Unique Pin with factory-direct OEM/ODM service, low MOQ, free design and strict quality inspection."
+  },
+  "bottle-openers": {
+    title: "Custom Bottle Openers Manufacturer",
+    name: "Custom Bottle Openers",
+    image: "assets/images/product-buckles.jpg",
+    intro: "Custom bottle openers with logo engraving, enamel color, plating, die casting and retail or gift packaging options.",
+    meta: "Order custom bottle openers from a factory-direct OEM/ODM metal crafts manufacturer with free artwork support."
   },
   coins: {
     title: "Challenge Coins / Commemorative Coins Manufacturer",
@@ -171,12 +236,26 @@ const productDetailData = {
     intro: "Custom metal belt buckles with 2D/3D relief, antique plating, enamel color and premium gift packaging options.",
     meta: "Order custom belt buckles from a China OEM metal crafts manufacturer with fast sampling and strict QC."
   },
+  "golf-accessories": {
+    title: "Custom Golf Divot Tools, Hat Clips & Ball Markers Manufacturer",
+    name: "Golf Divot Tools, Hat Clips & Ball Markers",
+    image: "assets/images/product-coins.jpg",
+    intro: "Custom golf divot tools, hat clips and ball markers for tournaments, clubs, courses, brand promotions and souvenir programs.",
+    meta: "Order custom golf divot tools, hat clips and ball markers with OEM/ODM support, free artwork design and factory-direct pricing."
+  },
   cufflinks: {
     title: "Custom Cufflinks Manufacturer",
     name: "Custom Cufflinks",
     image: "assets/images/product-cufflinks.jpg",
     intro: "Custom cufflinks for corporate gifts, clubs, uniforms, formal events and premium brand merchandise.",
     meta: "Order custom cufflinks with logo engraving, enamel fill, plating, gift box packaging and OEM/ODM service."
+  },
+  "cufflinks-tieclips": {
+    title: "Custom Cufflinks & Tie Clips Manufacturer",
+    name: "Custom Cufflinks & Tie Clips",
+    image: "assets/images/product-cufflinks.jpg",
+    intro: "Premium custom cufflinks and tie clips for corporate gift sets, clubs, uniforms, formal events and branded merchandise.",
+    meta: "Order custom cufflinks and tie clips with logo engraving, enamel fill, plating, gift box packaging and OEM/ODM service."
   },
   tieclips: {
     title: "Custom Tie Clips Manufacturer",
@@ -214,8 +293,7 @@ if (productData && window.location.pathname.includes("product-detail")) {
   if (nameCell) nameCell.textContent = productData.name;
 }
 
-const inquiryForm = document.querySelector("[data-inquiry-form]");
-if (inquiryForm) {
+document.querySelectorAll("[data-inquiry-form]").forEach((inquiryForm) => {
   inquiryForm.addEventListener("submit", (event) => {
     event.preventDefault();
     const notice = inquiryForm.querySelector("[data-form-notice]");
@@ -224,4 +302,285 @@ if (inquiryForm) {
     }
     inquiryForm.reset();
   });
+});
+
+const openProductInquiryModal = (productName = "") => {
+  const modal = document.querySelector("[data-product-inquiry-modal]");
+  if (!modal) return false;
+
+  const productSelect = modal.querySelector('select[name="product"]');
+  if (productSelect && productName) {
+    const normalizedProductName = productName.trim().toLowerCase();
+    const matchingOption = [...productSelect.options].find((option) => {
+      const optionText = option.textContent.trim().toLowerCase();
+      return optionText === normalizedProductName
+        || optionText.includes(normalizedProductName)
+        || normalizedProductName.includes(optionText);
+    });
+    if (matchingOption) productSelect.value = matchingOption.value || matchingOption.textContent;
+  }
+
+  modal.hidden = false;
+  modal.classList.add("is-open");
+  document.body.classList.add("quote-modal-open");
+  modal.querySelector(".product-inquiry-card input, .product-inquiry-card select, .product-inquiry-card textarea, .product-inquiry-card button")?.focus();
+  return true;
+};
+
+const closeProductInquiryModal = () => {
+  const modal = document.querySelector("[data-product-inquiry-modal]");
+  if (!modal) return;
+  modal.classList.remove("is-open");
+  modal.hidden = true;
+  document.body.classList.remove("quote-modal-open");
+};
+
+document.addEventListener("click", (event) => {
+  const trigger = event.target.closest?.("[data-product-inquiry-trigger], .home-product-card[href]");
+  if (!trigger) return;
+
+  const productName = trigger.dataset.productInquiryProduct
+    || trigger.querySelector?.("h3")?.textContent?.trim()
+    || trigger.textContent?.trim()
+    || "";
+
+  if (openProductInquiryModal(productName)) {
+    event.preventDefault();
+  }
+});
+
+document.addEventListener("click", (event) => {
+  if (event.target.closest?.("[data-product-inquiry-close]")) {
+    event.preventDefault();
+    closeProductInquiryModal();
+    return;
+  }
+
+  const modal = event.target.closest?.("[data-product-inquiry-modal]");
+  if (modal && event.target === modal) closeProductInquiryModal();
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") closeProductInquiryModal();
+});
+
+const activateProductContent = () => {
+  const productSections = document.querySelectorAll("[data-product-content]");
+  if (!productSections.length) return;
+
+  const params = new URLSearchParams(window.location.search);
+  const requestedProduct = params.get("product") || "pins";
+  const activeSection = document.querySelector(`[data-product-content="${requestedProduct}"]`)
+    || document.querySelector('[data-product-content="pins"]');
+
+  productSections.forEach((section) => {
+    section.hidden = section !== activeSection;
+  });
+  document.querySelectorAll(".products-category-nav [data-product-nav]").forEach((link) => {
+    link.classList.toggle("active", link.dataset.productNav === requestedProduct);
+  });
+};
+
+const switchProductContent = (product) => {
+  if (!product || product === "all") return false;
+  const productSections = document.querySelectorAll("[data-product-content]");
+  const activeSection = document.querySelector(`[data-product-content="${product}"]`);
+  if (!productSections.length || !activeSection) return false;
+
+  window.history.pushState(null, "", `${window.location.pathname}?product=${product}#custom-details`);
+  activateProductContent();
+  activeSection.scrollIntoView({ behavior: "smooth", block: "start" });
+  return true;
+};
+
+activateProductContent();
+
+document.addEventListener("click", (event) => {
+  const link = event.target.closest?.(".products-category-nav [data-product-nav]");
+  if (!link) return;
+
+  const product = link.dataset.productNav;
+  if (!product || product === "all") return;
+
+  event.preventDefault();
+  if (!switchProductContent(product)) window.location.assign(link.href);
+});
+
+const activateProductItemPage = () => {
+  const root = document.querySelector("[data-product-item-page]");
+  const dataNode = document.querySelector("[data-product-item-data]");
+  if (!root || !dataNode) return;
+
+  let products = {};
+  try {
+    products = JSON.parse(dataNode.textContent || "{}");
+  } catch {
+    return;
+  }
+
+  const params = new URLSearchParams(window.location.search);
+  const requestedItem = params.get("item") || Object.keys(products)[0];
+  const item = products[requestedItem] || products[Object.keys(products)[0]];
+  if (!item) return;
+
+  const setText = (selector, value) => {
+    root.querySelectorAll(selector).forEach((node) => {
+      node.textContent = value || "";
+    });
+  };
+  const setAttr = (selector, attr, value) => {
+    root.querySelectorAll(selector).forEach((node) => {
+      if (value) node.setAttribute(attr, value);
+    });
+  };
+
+  setText("[data-product-item-title]", item.title);
+  setText("[data-product-item-category]", item.categoryLabel);
+  setText("[data-product-item-lead]", item.lead);
+  setText('[data-product-spec="material"]', item.material);
+  setText('[data-product-spec="process"]', item.process);
+  setText('[data-product-spec="sku"]', item.sku);
+  setText('[data-product-spec="usage"]', item.usage);
+  setText('[data-product-spec="categories"]', item.categories);
+  setAttr("[data-product-item-image]", "src", item.image);
+  setAttr("[data-product-item-image]", "alt", item.alt || item.title);
+  setAttr("[data-product-item-category-link]", "href", item.categoryHref);
+  setAttr("[data-product-inquiry-trigger]", "data-product-inquiry-product", item.quoteProduct);
+  document.title = `${item.title} | Product Detail | Unique Pin`;
+};
+
+activateProductItemPage();
+
+const blogCategories = [
+  "Awareness",
+  "Custom Lapel Pins",
+  "Custom Medals",
+  "Custom Coins",
+  "Custom Keychains",
+  "Custom Belt Buckle",
+  "Custom Lanyards",
+  "Custom Poker Chips",
+  "Holidays",
+  "Uncategorized",
+];
+
+const getBlogCardCategories = (card) => {
+  const explicitCategories = (card.dataset.blogCategory || "")
+    .split(",")
+    .map((category) => category.trim())
+    .filter((category) => blogCategories.includes(category));
+  if (explicitCategories.length) return explicitCategories;
+  return ["Uncategorized"];
+};
+
+const applyBlogCategory = (category) => {
+  const cards = document.querySelectorAll(".blog-feature-card");
+  if (!cards.length) return;
+
+  cards.forEach((card) => {
+    const cardCategories = getBlogCardCategories(card);
+    const shouldShowCard = category === "All" || cardCategories.includes(category);
+    card.hidden = !shouldShowCard;
+    card.style.display = shouldShowCard ? "" : "none";
+  });
+};
+
+applyBlogCategory("All");
+
+document.addEventListener("click", (event) => {
+  const button = event.target.closest?.(".blog-category-filter button");
+  if (!button) return;
+
+  document.querySelectorAll(".blog-category-filter button").forEach((categoryButton) => {
+    categoryButton.classList.toggle("active", categoryButton === button);
+  });
+  applyBlogCategory(button.dataset.blogCategory || "All");
+});
+
+const productCategoryButtons = document.querySelectorAll(".products-category-nav [data-product-filter]");
+const productCards = document.querySelectorAll(".products-all-grid .product-type-card[data-product-category]");
+const productGrid = document.querySelector(".products-all-grid");
+const productsPerPage = 30;
+let selectedProductCategory = "all";
+let currentProductPage = 1;
+let productPagination = document.querySelector(".product-pagination");
+
+if (productGrid && !productPagination) {
+  productPagination = document.createElement("nav");
+  productPagination.className = "product-pagination";
+  productPagination.setAttribute("aria-label", "Product pages");
+  productGrid.insertAdjacentElement("afterend", productPagination);
 }
+
+const renderProductPagination = (pageCount) => {
+  if (!productPagination) return;
+
+  if (pageCount <= 1) {
+    productPagination.hidden = true;
+    productPagination.innerHTML = "";
+    return;
+  }
+
+  productPagination.hidden = false;
+  productPagination.innerHTML = Array.from({ length: pageCount }, (_, index) => {
+    const page = index + 1;
+    const isActive = page === currentProductPage;
+    return `<button type="button" class="${isActive ? "active" : ""}" data-product-page="${page}" aria-current="${isActive ? "page" : "false"}">${page}</button>`;
+  }).join("");
+};
+
+const applyProductFilter = (category, updateHash = false, page = 1) => {
+  if (!productCategoryButtons.length || !productCards.length) return;
+
+  selectedProductCategory = category || "all";
+  productCategoryButtons.forEach((button) => {
+    button.classList.toggle("active", button.dataset.productFilter === selectedProductCategory);
+  });
+
+  const matchingCards = [...productCards].filter((card) => (
+    selectedProductCategory === "all" || card.dataset.productCategory === selectedProductCategory
+  ));
+  const pageCount = Math.max(1, Math.ceil(matchingCards.length / productsPerPage));
+  currentProductPage = Math.min(Math.max(page, 1), pageCount);
+  const pageStart = (currentProductPage - 1) * productsPerPage;
+  const pageEnd = pageStart + productsPerPage;
+
+  productCards.forEach((card) => {
+    const matchedIndex = matchingCards.indexOf(card);
+    const shouldShowCard = matchedIndex >= pageStart && matchedIndex < pageEnd;
+    card.hidden = !shouldShowCard;
+    card.style.display = shouldShowCard ? "" : "none";
+  });
+  renderProductPagination(pageCount);
+
+  if (updateHash) {
+    const nextUrl = selectedProductCategory === "all"
+      ? `${window.location.pathname}${window.location.search}`
+      : `${window.location.pathname}${window.location.search}#${selectedProductCategory}`;
+    window.history.replaceState(null, "", nextUrl);
+  }
+};
+
+const productHash = window.location.hash.replace("#", "");
+const initialProductFilter = [...productCategoryButtons].some((button) => button.dataset.productFilter === productHash)
+  ? productHash
+  : "all";
+applyProductFilter(initialProductFilter);
+
+document.addEventListener("click", (event) => {
+  const button = event.target.closest?.(".products-category-nav [data-product-filter]");
+  if (!button) return;
+
+  event.preventDefault();
+  applyProductFilter(button.dataset.productFilter || "all", true);
+  document.querySelector(".products-all-section")?.scrollIntoView({ behavior: "smooth", block: "start" });
+});
+
+document.addEventListener("click", (event) => {
+  const button = event.target.closest?.(".product-pagination [data-product-page]");
+  if (!button) return;
+
+  event.preventDefault();
+  applyProductFilter(selectedProductCategory, false, Number(button.dataset.productPage) || 1);
+  document.querySelector(".products-all-section")?.scrollIntoView({ behavior: "smooth", block: "start" });
+});
