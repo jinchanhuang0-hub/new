@@ -2644,9 +2644,10 @@ body.quote-modal-open {
 
 @media (min-width: 981px) {
   .why-choice-card .why-copy-two-lines {
-    max-width: none;
-    font-size: 13px;
-    line-height: 1.65;
+    width: calc(100% + 44px);
+    max-width: 300px;
+    font-size: 16px;
+    line-height: 1.55;
   }
 
   .why-copy-two-lines span {
