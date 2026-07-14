@@ -2642,6 +2642,19 @@ body.quote-modal-open {
   line-height: 1.55;
 }
 
+@media (min-width: 981px) {
+  .why-choice-card .why-copy-two-lines {
+    max-width: none;
+    font-size: 13px;
+    line-height: 1.65;
+  }
+
+  .why-copy-two-lines span {
+    display: block;
+    white-space: nowrap;
+  }
+}
+
 .process-line {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
