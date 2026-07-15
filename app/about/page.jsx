@@ -94,7 +94,7 @@ const html = String.raw`
           <div class="why-item why-choice-card">
             <span class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3.5 20h17"/><path d="M5 20V9l7-4 7 4v11"/><path d="M8 20v-6h8v6"/><path d="M8.5 11h1.5"/><path d="M14 11h1.5"/><path d="M12 14v6"/><path d="M12 4V2.5"/><path d="M16.5 6.6 19 4.8"/><path d="M7.5 6.6 5 4.8"/></svg></span>
             <strong>Factory Direct Price</strong>
-            <p>Pricing through the OEM/ODM manufacturer, without middleman markup.</p>
+            <p>Pricing direct from the OEM/ODM manufacturer, with no middleman.</p>
           </div>
           <div class="why-item why-choice-card">
             <span class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.6 3.8 5.6 3.8 9S14.5 18.4 12 21"/><path d="M12 3C9.5 5.6 8.2 8.6 8.2 12S9.5 18.4 12 21"/></svg></span>
@@ -104,12 +104,12 @@ const html = String.raw`
           <div class="why-item why-choice-card">
             <span class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 7h10v10H4z"/><path d="M14 10h3l3 3v4h-6z"/><path d="M6 17a2 2 0 1 0 4 0"/><path d="M16 17a2 2 0 1 0 4 0"/><path d="M4 4h8"/></svg></span>
             <strong>Fast Delivery</strong>
-            <p>We produce and ship custom orders quickly without sacrificing quality.</p>
+            <p class="why-copy-two-lines">DHL, FedEx, UPS &amp; trusted global carriers.</p>
           </div>
           <div class="why-item why-choice-card">
             <span class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 5 6v6c0 4.4 2.9 7.4 7 9 4.1-1.6 7-4.6 7-9V6z"/><path d="m8.5 12.4 2.2 2.2 4.8-5"/></svg></span>
             <strong>Quality-First Guarantee</strong>
-            <p>If something is not right, we fix it with clear accountability.</p>
+            <p class="why-copy-two-lines">Careful inspection from production to delivery.</p>
           </div>
         </div>
       </div>
