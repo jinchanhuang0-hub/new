@@ -272,12 +272,12 @@ const html = String.raw`
           <div class="why-item why-choice-card">
             <span class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 7h10v10H4z"/><path d="M14 10h3l3 3v4h-6z"/><path d="M6 17a2 2 0 1 0 4 0"/><path d="M16 17a2 2 0 1 0 4 0"/><path d="M4 4h8"/></svg></span>
             <strong>Fast Delivery</strong>
-            <p class="why-copy-two-lines"><span>DHL, FedEx, UPS, and trusted partners</span> <span>provide secure worldwide shipping.</span></p>
+            <p class="why-copy-two-lines">Partnering with DHL, FedEx, UPS, and trusted logistics providers for secure global shipping.</p>
           </div>
           <div class="why-item why-choice-card">
             <span class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 5 6v6c0 4.4 2.9 7.4 7 9 4.1-1.6 7-4.6 7-9V6z"/><path d="m8.5 12.4 2.2 2.2 4.8-5"/></svg></span>
             <strong>Quality-First Guarantee</strong>
-            <p class="why-copy-two-lines"><span>Every product is carefully inspected</span> <span>for consistent quality before shipment.</span></p>
+            <p class="why-copy-two-lines">Every product is carefully inspected to maintain consistent quality from production to shipment.</p>
           </div>
         </div>
       </div>
