@@ -52,8 +52,6 @@ const html = String.raw`
     <section class="section about-profile-section" id="profile">
       <div class="container about-profile">
         <div class="about-profile-copy">
-          <h2>Who We Are</h2>
-          <p class="about-profile-subtitle">Over 20 Years of Crafting Quality Metal Products</p>
           <div class="about-profile-gallery" aria-label="Inside our factory">
             <div class="about-profile-video" data-video-lightbox-trigger data-video-src="assets/videos/factory-capability-web.mp4" data-video-poster="assets/images/factory-3.png" role="button" tabindex="0" aria-label="Watch factory capability video larger">
               <video class="factory-video-card" controls playsinline preload="metadata" poster="assets/images/factory-3.png" aria-label="Factory capability video">
@@ -68,6 +66,8 @@ const html = String.raw`
               <img src="assets/images/factory-automated-coloring.jpg" alt="Technicians operating automated coloring equipment inside the Unique Pin factory" loading="lazy">
             </figure>
           </div>
+          <h2>Who We Are</h2>
+          <p class="about-profile-subtitle">Over 20 Years of Crafting Quality Metal Products</p>
           <p>Unico Craft, a subsidiary of Caston founded in 2003, is a full-service manufacturer of custom metal art gifts, offering one-stop OEM and ODM solutions that encompass original design, mold development, mass production, and global logistics. Our main products include custom badges, double-sided challenge coins, medals, leather belt buckles, custom keychains, and more, which are widely used in international brand promotion, high-end corporate gifts, sporting events, military collections, and commemorative merchandise.</p>
           <p>We operate our own fully integrated manufacturing facility, equipped with CNC engraving, die-casting, hydraulic stamping, polishing, electroplating, automated enamel coloring, and a dedicated quality control laboratory to ensure end-to-end quality monitoring. The factory covers an area of 6,000 square meters and houses 34 sets of automated production equipment, enabling us to flexibly accommodate both small-batch customization and large-volume wholesale orders.</p>
           <p>For over two decades, we have supplied globally renowned brands such as Disney, LEGO, and McDonald's, and operate dual production bases in Zhongshan, China, and Bangladesh. We hold Sedex, FSC, CE, RoHS, and Disney FAMA certifications, offering factory-direct pricing and consistently exquisite craftsmanship to partners in North America, Europe, Australia, Southeast Asia, and the Middle East. Guided by our core philosophy of "Precision Craftsmanship Builds Trust," we combine proven manufacturing technologies, a stable global supply chain, and attentive after-sales service to meticulously craft high-end metal souvenirs that blend artistic detail with lasting durability.</p>
