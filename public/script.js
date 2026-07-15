@@ -169,7 +169,10 @@ document.querySelectorAll("[data-video-lightbox-trigger]").forEach((trigger) => 
     videoLightboxPlayer.play().catch(() => {});
   };
 
-  trigger.addEventListener("click", openVideoLightbox);
+  trigger.addEventListener("click", (event) => {
+    if (event.target.closest("video")) return;
+    openVideoLightbox();
+  });
   trigger.addEventListener("keydown", (event) => {
     if (event.key === "Enter" || event.key === " ") {
       event.preventDefault();

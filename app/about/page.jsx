@@ -55,9 +55,9 @@ const html = String.raw`
           <h2>Who We Are</h2>
           <p class="about-profile-subtitle">Over 20 Years of Crafting Quality Metal Products</p>
           <div class="about-profile-gallery" aria-label="Inside our factory">
-            <div class="about-profile-video" data-video-lightbox-trigger data-video-src="assets/videos/factory-capability.mp4" data-video-poster="assets/images/factory-3.png" role="button" tabindex="0" aria-label="Watch factory capability video larger">
-              <video class="factory-video-card" controls preload="metadata" poster="assets/images/factory-3.png" aria-label="Factory capability video">
-                <source src="assets/videos/factory-capability.mp4" type="video/mp4">
+            <div class="about-profile-video" data-video-lightbox-trigger data-video-src="assets/videos/factory-capability-web.mp4" data-video-poster="assets/images/factory-3.png" role="button" tabindex="0" aria-label="Watch factory capability video larger">
+              <video class="factory-video-card" controls playsinline preload="metadata" poster="assets/images/factory-3.png" aria-label="Factory capability video">
+                <source src="assets/videos/factory-capability-web.mp4" type="video/mp4">
               </video>
               <span class="video-expand-hint" aria-hidden="true">Watch larger</span>
             </div>
