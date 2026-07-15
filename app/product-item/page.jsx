@@ -1,10 +1,5 @@
 import StaticPage from "../components/StaticPage";
 
-export const metadata = {
-  title: "Custom Product Detail | Unique Pin",
-  description: "View custom metal product details, specifications and inquiry options from Unique Pin."
-};
-
 const productItems = {
   "green-character-soft-enamel-pin-set": {
     title: "Green Character Soft Enamel Pin Set",
@@ -455,6 +450,17 @@ const productItems = {
     lead: "This city landmark magnet presents local architecture and destination details in a compact gift format. It is well suited for tourist shops, city promotions, museums and travel retail."
   }
 };
+
+export async function generateMetadata({ searchParams }) {
+  const params = await searchParams;
+  const requestedItem = params?.item || Object.keys(productItems)[0];
+  const item = productItems[requestedItem] || productItems[Object.keys(productItems)[0]];
+
+  return {
+    title: `${item.title} | Product Detail | Unique Pin`,
+    description: item.lead
+  };
+}
 
 const html = String.raw`
   <script type="application/json" data-product-item-data>${JSON.stringify(productItems)}</script>

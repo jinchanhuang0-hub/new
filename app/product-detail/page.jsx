@@ -2,10 +2,49 @@ import StaticPage from "../components/StaticPage";
 
 import { productCategoryNavHtml } from "../components/productCategoryNav";
 
-export const metadata = {
-  title: "Custom Enamel Pins Manufacturer | OEM/ODM Factory, Low MOQ",
-  description: "Order custom enamel pins from Unique Pin, a China OEM/ODM metal crafts manufacturer with free artwork design, low MOQ, fast sampling and strict QC."
+const productDetailMetadata = {
+  pins: {
+    title: "Custom Enamel Pins Manufacturer | OEM/ODM Factory, Low MOQ",
+    description: "Order custom enamel pins from Unique Pin, a China OEM/ODM metal crafts manufacturer with free artwork design, low MOQ, fast sampling and strict QC."
+  },
+  coins: {
+    title: "Custom Challenge Coins Manufacturer | OEM/ODM Metal Coins",
+    description: "Create custom challenge coins and commemorative coins with antique plating, 3D relief, double-sided artwork and factory-direct OEM/ODM support."
+  },
+  medals: {
+    title: "Custom Medals Manufacturer | Sports, Award & Ribbon Medals",
+    description: "Order custom sports medals, award medals and ribbon medals from Unique Pin with OEM/ODM manufacturing, free artwork support and strict quality control."
+  },
+  keychains: {
+    title: "Custom Metal Keychains Manufacturer | Enamel & Logo Keychains",
+    description: "Create custom metal keychains, enamel keychains and promotional keychains for retail gifts, events, souvenirs and brand merchandise."
+  },
+  buckles: {
+    title: "Custom Belt Buckles Manufacturer | Western & Logo Buckles",
+    description: "Design custom belt buckles for clubs, fashion brands, Western themes, awards and promotional merchandise with factory-direct OEM/ODM service."
+  },
+  "golf-accessories": {
+    title: "Custom Golf Ball Markers, Hat Clips & Divot Tools | OEM Factory",
+    description: "Order custom golf ball markers, hat clips and divot tools for tournaments, clubs, resorts and corporate golf events."
+  },
+  "bottle-openers": {
+    title: "Custom Bottle Openers Manufacturer | Metal & Keychain Openers",
+    description: "Create custom bottle openers and keychain bottle openers that combine practical use with logo promotion, event gifts and retail packaging."
+  },
+  "cufflinks-tieclips": {
+    title: "Custom Cufflinks & Tie Clips Manufacturer | Logo Formal Gifts",
+    description: "Design custom cufflinks and tie clips for corporate gifts, retail collections, clubs, formal events and branded accessories."
+  },
+  magnets: {
+    title: "Custom Fridge Magnets Manufacturer | Metal, Enamel & Souvenir Magnets",
+    description: "Order custom fridge magnets for tourist souvenirs, city gifts, event merchandise and retail gift programs with OEM/ODM support."
+  }
 };
+
+export async function generateMetadata({ searchParams }) {
+  const params = await searchParams;
+  return productDetailMetadata[params?.product] || productDetailMetadata.pins;
+}
 
 const html = String.raw`
   <div class="topbar"><div class="container"><span>Professional OEM/ODM Manufacturer Since 2003</span><span>Email: ceo@chinauniquepin.com | WhatsApp: +86 18895316838</span></div></div>

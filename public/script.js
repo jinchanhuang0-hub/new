@@ -192,59 +192,67 @@ document.addEventListener("keydown", (event) => {
 const productDetailData = {
   magnets: {
     title: "Custom Fridge Magnets Manufacturer",
+    pageTitle: "Custom Fridge Magnets Manufacturer | Metal, Enamel & Souvenir Magnets",
     name: "Custom Fridge Magnets",
     image: "assets/images/product-keychains.jpg",
     intro: "Custom metal fridge magnets for tourism souvenirs, retail gifts, brand campaigns, events and promotional merchandise.",
-    meta: "Order custom fridge magnets with OEM/ODM support, free artwork design, flexible quantities and global delivery."
+    meta: "Order custom fridge magnets for tourist souvenirs, city gifts, event merchandise and retail gift programs with OEM/ODM support."
   },
   pins: {
     title: "Custom Enamel Pins Manufacturer",
+    pageTitle: "Custom Enamel Pins Manufacturer | OEM/ODM Factory, Low MOQ",
     name: "Custom Enamel Pins",
     image: "assets/images/product-pins.jpg",
     intro: "Custom soft enamel, hard enamel, die struck and printed pins for brands, events, schools and promotional campaigns.",
-    meta: "Order custom enamel pins from Unique Pin with OEM/ODM support, low MOQ, free artwork design and fast sampling."
+    meta: "Order custom enamel pins from Unique Pin, a China OEM/ODM metal crafts manufacturer with free artwork design, low MOQ, fast sampling and strict QC."
   },
   medals: {
     title: "Custom Medals Manufacturer",
+    pageTitle: "Custom Medals Manufacturer | Sports, Award & Ribbon Medals",
     name: "Custom Medals",
     image: "assets/images/product-medals.jpg",
     intro: "Custom sports medals, school medals, club awards and event medals with ribbons, plating, enamel and 3D relief options.",
-    meta: "Order custom medals from Unique Pin with factory-direct OEM/ODM service, low MOQ, free design and strict quality inspection."
+    meta: "Order custom sports medals, award medals and ribbon medals from Unique Pin with OEM/ODM manufacturing, free artwork support and strict quality control."
   },
   "bottle-openers": {
     title: "Custom Bottle Openers Manufacturer",
+    pageTitle: "Custom Bottle Openers Manufacturer | Metal & Keychain Openers",
     name: "Custom Bottle Openers",
     image: "assets/images/product-buckles.jpg",
     intro: "Custom bottle openers with logo engraving, enamel color, plating, die casting and retail or gift packaging options.",
-    meta: "Order custom bottle openers from a factory-direct OEM/ODM metal crafts manufacturer with free artwork support."
+    meta: "Create custom bottle openers and keychain bottle openers that combine practical use with logo promotion, event gifts and retail packaging."
   },
   coins: {
-    title: "Challenge Coins / Commemorative Coins Manufacturer",
+    title: "Custom Challenge Coins Manufacturer",
+    pageTitle: "Custom Challenge Coins Manufacturer | OEM/ODM Metal Coins",
     name: "Challenge Coins / Commemorative Coins",
     image: "assets/images/product-coins.jpg",
     intro: "Custom military coins, police coins, government coins, corporate coins and commemorative coins with double-sided designs.",
-    meta: "Order custom challenge coins and commemorative coins with double-sided design, die casting, plating and enamel options."
+    meta: "Create custom challenge coins and commemorative coins with antique plating, 3D relief, double-sided artwork and factory-direct OEM/ODM support."
   },
   keychains: {
-    title: "Custom Keychains Manufacturer",
+    title: "Custom Metal Keychains Manufacturer",
+    pageTitle: "Custom Metal Keychains Manufacturer | Enamel & Logo Keychains",
     name: "Custom Keychains",
     image: "assets/images/product-keychains.jpg",
     intro: "Custom metal keychains for promotional gifts, tourism souvenirs, retail merchandise and brand campaigns.",
-    meta: "Order custom keychains with OEM/ODM support, low MOQ, free artwork design and global delivery."
+    meta: "Create custom metal keychains, enamel keychains and promotional keychains for retail gifts, events, souvenirs and brand merchandise."
   },
   buckles: {
     title: "Custom Belt Buckles Manufacturer",
+    pageTitle: "Custom Belt Buckles Manufacturer | Western & Logo Buckles",
     name: "Custom Belt Buckles",
     image: "assets/images/product-buckles.jpg",
     intro: "Custom metal belt buckles with 2D/3D relief, antique plating, enamel color and premium gift packaging options.",
-    meta: "Order custom belt buckles from a China OEM metal crafts manufacturer with fast sampling and strict QC."
+    meta: "Design custom belt buckles for clubs, fashion brands, Western themes, awards and promotional merchandise with factory-direct OEM/ODM service."
   },
   "golf-accessories": {
-    title: "Custom Golf Divot Tools, Hat Clips & Ball Markers Manufacturer",
+    title: "Custom Golf Ball Markers, Hat Clips & Divot Tools",
+    pageTitle: "Custom Golf Ball Markers, Hat Clips & Divot Tools | OEM Factory",
     name: "Golf Divot Tools, Hat Clips & Ball Markers",
     image: "assets/images/product-coins.jpg",
     intro: "Custom golf divot tools, hat clips and ball markers for tournaments, clubs, courses, brand promotions and souvenir programs.",
-    meta: "Order custom golf divot tools, hat clips and ball markers with OEM/ODM support, free artwork design and factory-direct pricing."
+    meta: "Order custom golf ball markers, hat clips and divot tools for tournaments, clubs, resorts and corporate golf events."
   },
   cufflinks: {
     title: "Custom Cufflinks Manufacturer",
@@ -255,10 +263,11 @@ const productDetailData = {
   },
   "cufflinks-tieclips": {
     title: "Custom Cufflinks & Tie Clips Manufacturer",
+    pageTitle: "Custom Cufflinks & Tie Clips Manufacturer | Logo Formal Gifts",
     name: "Custom Cufflinks & Tie Clips",
     image: "assets/images/product-cufflinks.jpg",
     intro: "Premium custom cufflinks and tie clips for corporate gift sets, clubs, uniforms, formal events and branded merchandise.",
-    meta: "Order custom cufflinks and tie clips with logo engraving, enamel fill, plating, gift box packaging and OEM/ODM service."
+    meta: "Design custom cufflinks and tie clips for corporate gifts, retail collections, clubs, formal events and branded accessories."
   },
   tieclips: {
     title: "Custom Tie Clips Manufacturer",
@@ -274,7 +283,7 @@ const productKey = productParams.get("product");
 const productData = productDetailData[productKey];
 
 if (productData && window.location.pathname.includes("product-detail")) {
-  document.title = `${productData.title} | OEM/ODM Factory, Low MOQ`;
+  document.title = productData.pageTitle || `${productData.title} | OEM/ODM Factory, Low MOQ`;
   const metaDescription = document.querySelector('meta[name="description"]');
   if (metaDescription) metaDescription.setAttribute("content", productData.meta);
 
