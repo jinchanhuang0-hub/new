@@ -5690,7 +5690,8 @@ body.quote-modal-open {
   opacity: 0;
   transform: translateY(-4px);
   transition: opacity 0.18s ease, transform 0.18s ease;
-  pointer-events: none;
+  pointer-events: auto;
+  cursor: zoom-in;
 }
 
 .about-profile-video:hover .video-expand-hint,
