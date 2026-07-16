@@ -33,7 +33,7 @@ const html = String.raw`
                 <span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 5c1 6 6 11 12 12l-2 3c-8-1-14-7-15-15l3-2z"></path><path d="m14 5 5 5"></path><path d="M19 5v5h-5"></path></svg></span>
                 <span><strong>Mobile</strong><small>+86 18895316838</small></span>
               </a>
-              <a class="contact-method" href="https://wa.me/8618895316838?text=Hello%2C%20I%20am%20interested%20in%20your%20products.%20Please%20send%20me%20more%20details." target="_blank" rel="noopener" title="Contact Unique Pin on WhatsApp">
+              <a class="contact-method" href="https://api.whatsapp.com/send?phone=8618895316838&amp;text=Hello%2C%20I%20am%20interested%20in%20your%20products.%20Please%20send%20me%20more%20details." target="_blank" rel="noopener" title="Contact Unique Pin on WhatsApp">
                 <span class="contact-icon contact-icon-outline contact-icon-whatsapp" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 19 6.2 15.5A7 7 0 1 1 8.5 17z"></path><path d="M9 9c.8 2.3 2.5 4 5 5l1.2-1.1"></path></svg></span>
                 <span><strong>WhatsApp</strong><small>+86 18895316838</small></span>
               </a>
