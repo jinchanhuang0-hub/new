@@ -80,11 +80,11 @@ const html = String.raw`
     <section class="section about-mission-section" id="mission">
       <div class="container about-mission-layout">
         <figure class="about-mission-media">
-          <img src="assets/images/factory-1.png" alt="Unique Pin metal gifts manufacturing facility" loading="lazy">
+          <img src="assets/images/factory-customer-visit.png" alt="Customers visiting the Unique Pin factory and reviewing custom products with our team" loading="lazy">
         </figure>
         <div class="about-mission-copy">
           <h2>Our Mission</h2>
-          <p>We empower brands to turn creative ideas into lasting metal products through dependable manufacturing, thoughtful customization, and responsive service. From the first design conversation to final delivery, our team works closely with every customer to make the entire custom production process clear, efficient, and reliable.</p>
+          <p>We believe every successful project starts with clear communication and professional support. Our team works closely with customers to understand their needs, optimize solutions, and deliver high-quality custom metal products.</p>
           <div class="about-mission-values" aria-label="Our mission commitments">
             <div class="about-mission-value">
               <span class="about-mission-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 5 6v6c0 4.4 2.9 7.4 7 9 4.1-1.6 7-4.6 7-9V6z"/><path d="m8.5 12.4 2.2 2.2 4.8-5"/></svg></span>
@@ -103,10 +103,10 @@ const html = String.raw`
               <strong>Fast Service</strong>
             </div>
           </div>
-          <div class="about-mission-social" aria-label="Follow Unique Pin">
-            <a href="https://www.instagram.com/uniquepin/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.2 2h9.6A5.2 5.2 0 0 1 22 7.2v9.6a5.2 5.2 0 0 1-5.2 5.2H7.2A5.2 5.2 0 0 1 2 16.8V7.2A5.2 5.2 0 0 1 7.2 2Z"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.2" cy="6.8" r="1"/></svg></a>
-            <a href="https://www.facebook.com/profile.php?id=61583070933333&locale=zh_CN" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8.5h2.2V5.1c-.4-.1-1.7-.2-3.2-.2-3.2 0-5.3 1.9-5.3 5.5v3.1H9v3.8h3V24h4.3v-6.7h3.3l.6-3.8h-3.9v-2.7c0-1.1.3-2.3 2-2.3Z"/></svg></a>
-            <a href="https://www.youtube.com/@CustompinUnique" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.6 7.1a3 3 0 0 0-2.1-2.1C17.6 4.5 12 4.5 12 4.5s-5.6 0-7.5.5a3 3 0 0 0-2.1 2.1A31.2 31.2 0 0 0 2 12a31.2 31.2 0 0 0 .4 4.9A3 3 0 0 0 4.5 19c1.9.5 7.5.5 7.5.5s5.6 0 7.5-.5a3 3 0 0 0 2.1-2.1A31.2 31.2 0 0 0 22 12a31.2 31.2 0 0 0-.4-4.9ZM10 15.5v-7l6 3.5-6 3.5Z"/></svg></a>
+          <div class="about-mission-social footer-social" aria-label="Follow Unique Pin">
+            <a class="footer-social-instagram" href="https://www.instagram.com/uniquepin/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.2 2h9.6A5.2 5.2 0 0 1 22 7.2v9.6a5.2 5.2 0 0 1-5.2 5.2H7.2A5.2 5.2 0 0 1 2 16.8V7.2A5.2 5.2 0 0 1 7.2 2Zm0 2A3.2 3.2 0 0 0 4 7.2v9.6A3.2 3.2 0 0 0 7.2 20h9.6a3.2 3.2 0 0 0 3.2-3.2V7.2A3.2 3.2 0 0 0 16.8 4H7.2Zm4.8 3.7A4.3 4.3 0 1 1 7.7 12 4.3 4.3 0 0 1 12 7.7Zm0 2A2.3 2.3 0 1 0 14.3 12 2.3 2.3 0 0 0 12 9.7Zm4.6-3.2a1 1 0 1 1-1 1 1 1 0 0 1 1-1Z"/></svg></a>
+            <a class="footer-social-facebook" href="https://www.facebook.com/profile.php?id=61583070933333&locale=zh_CN" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8.5h2.2V5.1c-.4-.1-1.7-.2-3.2-.2-3.2 0-5.3 1.9-5.3 5.5v3.1H4.2v3.8h3.5V24h4.3v-6.7h3.3l.6-3.8H12v-2.7c0-1.1.3-2.3 2-2.3Z"/></svg></a>
+            <a class="footer-social-youtube" href="https://www.youtube.com/@CustompinUnique" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.6 7.1a3 3 0 0 0-2.1-2.1C17.6 4.5 12 4.5 12 4.5s-5.6 0-7.5.5a3 3 0 0 0-2.1 2.1A31.2 31.2 0 0 0 2 12a31.2 31.2 0 0 0 .4 4.9A3 3 0 0 0 4.5 19c1.9.5 7.5.5 7.5.5s5.6 0 7.5-.5a3 3 0 0 0 2.1-2.1A31.2 31.2 0 0 0 22 12a31.2 31.2 0 0 0-.4-4.9ZM10 15.5v-7l6 3.5-6 3.5Z"/></svg></a>
           </div>
         </div>
       </div>
