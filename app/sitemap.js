@@ -3,7 +3,6 @@ const LAST_MODIFIED = new Date("2026-07-15T00:00:00.000Z");
 
 const staticPages = [
   { path: "/", priority: 1 },
-  { path: "/index.html", priority: 1 },
   { path: "/products.html", priority: 0.9 },
   { path: "/custom.html", priority: 0.85 },
   { path: "/about.html", priority: 0.8 },
