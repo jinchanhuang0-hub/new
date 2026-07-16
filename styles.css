@@ -5756,14 +5756,13 @@ body.quote-modal-open {
   height: 58px;
   place-items: center;
   overflow: hidden;
-  border: 1px solid rgba(67, 104, 145, 0.14);
+  border: 1px solid rgba(95, 119, 148, 0.08);
   border-radius: 44% 56% 62% 38% / 40% 42% 58% 60%;
-  background: linear-gradient(145deg, #e7f1fb 0%, #c9dced 100%);
-  color: #245a88;
+  background: linear-gradient(145deg, #fbfdff 0%, #eef5fb 100%);
+  color: #4b86b8;
   box-shadow:
-    inset 0 2px 3px rgba(255, 255, 255, 0.72),
-    inset 0 -5px 12px rgba(73, 112, 151, 0.1),
-    0 9px 18px rgba(67, 100, 135, 0.13);
+    inset 0 1px 2px rgba(255, 255, 255, 0.9),
+    0 6px 14px rgba(67, 100, 135, 0.09);
   transform: translateZ(0);
 }
 
@@ -5779,44 +5778,68 @@ body.quote-modal-open {
 
 .about-mission-value:nth-child(2) .about-mission-icon {
   border-radius: 58% 42% 38% 62% / 46% 60% 40% 54%;
-  background: linear-gradient(145deg, #f7efd9 0%, #e7d3a2 100%);
-  color: #9a7624;
+  background: linear-gradient(145deg, #fffdf7 0%, #faf2dc 100%);
+  color: #d6a52f;
   box-shadow:
-    inset 0 2px 3px rgba(255, 255, 255, 0.76),
-    inset 0 -5px 12px rgba(141, 105, 31, 0.09),
-    0 9px 18px rgba(132, 107, 55, 0.13);
+    inset 0 1px 2px rgba(255, 255, 255, 0.9),
+    0 6px 14px rgba(132, 107, 55, 0.09);
 }
 
 .about-mission-value:nth-child(3) .about-mission-icon {
   border-radius: 38% 62% 55% 45% / 58% 38% 62% 42%;
-  background: linear-gradient(145deg, #f0e9f6 0%, #d9c8e6 100%);
-  color: #76568f;
+  background: linear-gradient(145deg, #fdfbff 0%, #f2eaf8 100%);
+  color: #9873b5;
   box-shadow:
-    inset 0 2px 3px rgba(255, 255, 255, 0.75),
-    inset 0 -5px 12px rgba(102, 74, 124, 0.09),
-    0 9px 18px rgba(103, 82, 119, 0.13);
+    inset 0 1px 2px rgba(255, 255, 255, 0.9),
+    0 6px 14px rgba(103, 82, 119, 0.09);
 }
 
 .about-mission-value:nth-child(4) .about-mission-icon {
   border-radius: 62% 38% 48% 52% / 39% 56% 44% 61%;
-  background: linear-gradient(145deg, #e3f1ee 0%, #bfdcd5 100%);
-  color: #397e77;
+  background: linear-gradient(145deg, #fbfefd 0%, #e8f5f1 100%);
+  color: #4c9990;
   box-shadow:
-    inset 0 2px 3px rgba(255, 255, 255, 0.75),
-    inset 0 -5px 12px rgba(50, 111, 104, 0.09),
-    0 9px 18px rgba(66, 115, 110, 0.13);
+    inset 0 1px 2px rgba(255, 255, 255, 0.9),
+    0 6px 14px rgba(66, 115, 110, 0.09);
 }
 
 .about-mission-icon svg {
   position: relative;
   z-index: 1;
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   fill: none;
   stroke: currentColor;
   stroke-width: 1.8;
   stroke-linecap: round;
   stroke-linejoin: round;
+}
+
+.about-mission-icon .icon-fill {
+  fill: currentColor;
+  stroke: none;
+  opacity: 0.22;
+}
+
+.about-mission-icon .icon-outline,
+.about-mission-icon .icon-accent,
+.about-mission-icon .icon-rays {
+  fill: none;
+  stroke: currentColor;
+}
+
+.about-mission-icon .icon-outline {
+  stroke-width: 1.55;
+}
+
+.about-mission-icon .icon-accent,
+.about-mission-icon .icon-rays {
+  stroke-width: 1.8;
+}
+
+.about-mission-icon .icon-neutral {
+  fill: #a7adb5;
+  stroke: none;
 }
 
 .about-mission-value strong {

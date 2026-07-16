@@ -87,19 +87,19 @@ const html = String.raw`
           <p>We believe every successful project starts with clear communication and professional support. Our team works closely with customers to understand their needs, optimize solutions, and deliver high-quality custom metal products.</p>
           <div class="about-mission-values" aria-label="Our mission commitments">
             <div class="about-mission-value">
-              <span class="about-mission-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 5 6v6c0 4.4 2.9 7.4 7 9 4.1-1.6 7-4.6 7-9V6z"/><path d="m8.5 12.4 2.2 2.2 4.8-5"/></svg></span>
+              <span class="about-mission-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path class="icon-fill" d="M12 2.8 4.8 6v6.1c0 4.5 3 7.7 7.2 9.3 4.2-1.6 7.2-4.8 7.2-9.3V6L12 2.8Z"/><path class="icon-outline" d="M12 5.2 7 7.4v4.4c0 3.1 1.9 5.4 5 6.8 3.1-1.4 5-3.7 5-6.8V7.4L12 5.2Z"/><path class="icon-accent" d="m9.1 11.9 2 2 4-4.4"/></svg></span>
               <strong>Highest Quality</strong>
             </div>
             <div class="about-mission-value">
-              <span class="about-mission-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20h16"/><path d="M7 17 17.5 6.5a2.1 2.1 0 0 1 3 3L10 20H7z"/><path d="m15 9 3 3"/></svg></span>
+              <span class="about-mission-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path class="icon-fill" d="m6.2 16.7 10.6-10.6a2.5 2.5 0 0 1 3.5 3.5L9.7 20.2l-4.4.9.9-4.4Z"/><path class="icon-outline" d="m7.2 16.8 10.2-10.2a1.7 1.7 0 0 1 2.4 2.4L9.6 19.2l-3.3.7.9-3.1Z"/><path class="icon-accent" d="m15.3 8.7 3 3M4 21h16"/></svg></span>
               <strong>Expert Customization</strong>
             </div>
             <div class="about-mission-value">
-              <span class="about-mission-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M8.5 14.5C7.6 13.7 7 12.4 7 11a5 5 0 0 1 10 0c0 1.4-.6 2.7-1.5 3.5-.8.7-1.3 1.4-1.5 2.5h-4c-.2-1.1-.7-1.8-1.5-2.5Z"/><path d="M12 2V1"/><path d="m5.6 4.6-.8-.8"/><path d="m18.4 4.6.8-.8"/></svg></span>
+              <span class="about-mission-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path class="icon-rays" d="M12 2V.8M5.7 4.6l-.9-.9M18.3 4.6l.9-.9M3.3 10H2M22 10h-1.3"/><path class="icon-fill" d="M7.1 10.5a4.9 4.9 0 0 1 9.8 0c0 1.8-.8 3.1-2 4.3-.8.8-1.1 1.5-1.2 2.3h-3.4c-.1-.8-.4-1.5-1.2-2.3-1.2-1.2-2-2.5-2-4.3Z"/><path class="icon-outline" d="M8.2 10.5a3.8 3.8 0 0 1 7.6 0c0 1.4-.7 2.5-1.6 3.4-.8.8-1.2 1.6-1.3 2.3h-1.8c-.1-.7-.5-1.5-1.3-2.3-.9-.9-1.6-2-1.6-3.4Z"/><path class="icon-neutral" d="M9.8 17.2h4.4v2.1H9.8zM10.5 20h3v1.4h-3z"/></svg></span>
               <strong>Designed For You</strong>
             </div>
             <div class="about-mission-value">
-              <span class="about-mission-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 12h18"/><path d="M12 3a9 9 0 1 0 9 9"/><path d="m16 4 5 1-1 5"/><path d="M21 5c-2.8 3.2-5.8 5.3-9 7"/></svg></span>
+              <span class="about-mission-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path class="icon-fill" d="M12 3.2A8.8 8.8 0 1 0 20.8 12H18a6 6 0 1 1-1.8-4.3L13.5 10H21V2.8l-2.6 2.5A8.7 8.7 0 0 0 12 3.2Z"/><path class="icon-outline" d="M12 5.3a6.7 6.7 0 1 0 6.7 6.7M15.7 5.6 21 5v5.3"/><path class="icon-accent" d="M21 5c-2.9 3.3-5.9 5.6-9.3 7.1"/></svg></span>
               <strong>Fast Service</strong>
             </div>
           </div>
