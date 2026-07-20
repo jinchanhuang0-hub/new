@@ -455,19 +455,33 @@ const activateProductContent = () => {
   });
 };
 
+const productCategoryPaths = {
+  pins: "/products/custom-enamel-pins",
+  coins: "/products/custom-challenge-coins",
+  medals: "/products/custom-medals",
+  keychains: "/products/custom-metal-keychains",
+  buckles: "/products/custom-belt-buckles",
+  "golf-accessories": "/products/custom-golf-accessories",
+  "bottle-openers": "/products/custom-bottle-openers",
+  "cufflinks-tieclips": "/products/custom-cufflinks-tie-clips",
+  magnets: "/products/custom-fridge-magnets",
+};
+
 const switchProductContent = (product) => {
   if (!product || product === "all") return false;
   const productSections = document.querySelectorAll("[data-product-content]");
   const activeSection = document.querySelector(`[data-product-content="${product}"]`);
   if (!productSections.length || !activeSection) return false;
 
-  window.history.pushState(null, "", `${window.location.pathname}?product=${product}#custom-details`);
-  activateProductContent();
-  activeSection.scrollIntoView({ behavior: "smooth", block: "start" });
+  window.location.assign(productCategoryPaths[product] || "/products");
   return true;
 };
 
 activateProductContent();
+
+if (window.location.hash === "#custom-details") {
+  window.history.replaceState(null, "", `${window.location.pathname}${window.location.search}`);
+}
 
 const activateProductItemPage = () => {
   const root = document.querySelector("[data-product-item-page]");
@@ -632,6 +646,9 @@ const applyProductFilter = (category, updateHash = false, page = 1) => {
 };
 
 const productHash = window.location.hash.replace("#", "");
+if (window.location.pathname === "/products" && productHash) {
+  window.location.replace(productHash === "all" ? "/products" : productCategoryPaths[productHash] || "/products");
+}
 const initialProductFilter = [...productCategoryButtons].some((button) => button.dataset.productFilter === productHash)
   ? productHash
   : "all";
@@ -640,6 +657,9 @@ applyProductFilter(initialProductFilter);
 document.addEventListener("click", (event) => {
   const button = event.target.closest?.(".products-category-nav [data-product-filter]");
   if (!button) return;
+
+  const href = button.getAttribute("href") || "";
+  if (href.startsWith("/") && !href.includes("#")) return;
 
   event.preventDefault();
   applyProductFilter(button.dataset.productFilter || "all", true);

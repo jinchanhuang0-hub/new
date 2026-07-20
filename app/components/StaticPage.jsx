@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-import { normalizeSiteHtml } from "../lib/siteRoutes";
+import { getCategoryPath, normalizeSiteHtml } from "../lib/siteRoutes";
 
 export default function StaticPage({ html }) {
   const normalizedHtml = normalizeSiteHtml(html);
@@ -13,11 +13,29 @@ export default function StaticPage({ html }) {
       const articleLink = document.querySelector(`.blog-feature-card[href="/blog/${slug}"]`);
       const articleHashLink = document.querySelector(`.blog-feature-card[href="/blog/${slug}#${slug}"]`);
       if (articleLink || articleHashLink) {
-        window.location.replace(`/blog/${slug}#${slug}`);
+        window.location.replace(`/blog/${slug}`);
       }
     };
 
     redirectBlogHashToArticle();
+
+    const redirectProductHashToCategory = () => {
+      if (window.location.pathname !== "/products" || !window.location.hash) return;
+
+      const category = window.location.hash.slice(1);
+      if (category === "all") {
+        window.location.replace("/products");
+        return;
+      }
+
+      const categoryLink = document.querySelector(`.products-category-nav [data-product-filter="${category}"]`);
+      const cleanHref = categoryLink?.getAttribute("href");
+      if (cleanHref && cleanHref.startsWith("/products/") && !cleanHref.includes("#")) {
+        window.location.replace(cleanHref);
+      }
+    };
+
+    redirectProductHashToCategory();
 
     const activateProductContent = () => {
       const productSections = document.querySelectorAll("[data-product-content]");
@@ -81,6 +99,7 @@ export default function StaticPage({ html }) {
       if (window.location.hash === "#custom-details") {
         window.requestAnimationFrame(() => {
           activeSection.querySelector(".product-custom-detail")?.scrollIntoView({ block: "start" });
+          window.history.replaceState(null, "", `${window.location.pathname}${window.location.search}`);
         });
       }
     };
@@ -91,11 +110,8 @@ export default function StaticPage({ html }) {
       const activeSection = document.querySelector(`[data-product-content="${product}"]`);
       if (!productSections.length || !activeSection) return false;
 
-      const nextUrl = `${window.location.pathname}?product=${product}#custom-details`;
-      window.history.pushState(null, "", nextUrl);
-      lastProductUrl = window.location.href;
-      activateProductContent();
-      activeSection.scrollIntoView({ behavior: "smooth", block: "start" });
+      const nextUrl = getCategoryPath(product);
+      window.location.assign(nextUrl);
       return true;
     };
 
@@ -383,7 +399,7 @@ export default function StaticPage({ html }) {
       if (updateHash) {
         const nextUrl = selectedCategory === "all"
           ? `${window.location.pathname}${window.location.search}`
-          : `${window.location.pathname}${window.location.search}#${selectedCategory}`;
+          : getCategoryPath(selectedCategory);
         window.history.replaceState(null, "", nextUrl);
       }
     };
@@ -391,6 +407,9 @@ export default function StaticPage({ html }) {
     const handleProductCategoryClick = (event) => {
       const button = event.target.closest?.(".products-category-nav [data-product-filter]");
       if (!button) return;
+
+      const href = button.getAttribute("href") || "";
+      if (href.startsWith("/") && !href.includes("#")) return;
 
       event.preventDefault();
       applyProductFilter(button.dataset.productFilter || "all", true);

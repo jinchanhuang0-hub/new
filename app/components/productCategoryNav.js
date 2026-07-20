@@ -1,3 +1,5 @@
+import { getCategoryPath } from "../lib/siteRoutes";
+
 const productCategories = [
   { label: "Lapel Pins", slug: "pins" },
   { label: "Challenge Coins", slug: "coins" },
@@ -12,10 +14,10 @@ const productCategories = [
 
 export function productCategoryNavHtml({ active = "all", mode = "links", variant = "section" } = {}) {
   const isFilterMode = mode === "filter";
-  const allHref = isFilterMode ? "#all" : "products.html";
+  const allHref = isFilterMode ? "/products" : "products.html";
   const allData = isFilterMode ? ' data-product-filter="all"' : ' data-product-nav="all"';
   const categoryLinks = productCategories.map(({ label, slug }) => {
-    const href = isFilterMode ? `#${slug}` : `product-detail.html?product=${slug}#custom-details`;
+    const href = isFilterMode ? getCategoryPath(slug) : `product-detail.html?product=${slug}`;
     const data = isFilterMode ? ` data-product-filter="${slug}"` : ` data-product-nav="${slug}"`;
     const activeClass = active === slug ? ' class="active"' : "";
     return `<a${activeClass} href="${href}"${data}>${label}</a>`;
