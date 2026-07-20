@@ -36,7 +36,10 @@ export const buildBlogArticleHtml = (html, articleSlug) => {
   const articlePattern = new RegExp(
     `<article id="${articleSlug}" class="section blog-article-section">[\\s\\S]*?<\\/article>`,
   );
-  const article = html.match(articlePattern)?.[0] || "";
+  const article = (html.match(articlePattern)?.[0] || "").replace(
+    'class="section blog-article-section"',
+    'class="section blog-article-section is-active"',
+  );
 
   return `${shell.beforeMain}<main>${article}</main>${shell.afterMain}`;
 };
