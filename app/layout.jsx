@@ -1,7 +1,10 @@
 import Script from "next/script";
+import JsonLd from "./components/JsonLd";
+import { SITE_URL } from "./lib/siteRoutes";
 import "./globals.css";
 
 export const metadata = {
+  metadataBase: new URL(SITE_URL),
   title: "Unique Pin | Custom Metal Gifts Factory",
   description:
     "Unique Pin is a China OEM/ODM custom metal gifts manufacturer for custom enamel pins, medals, challenge coins and promotional metal crafts.",
@@ -9,7 +12,17 @@ export const metadata = {
     icon: "/assets/images/logo.png",
     shortcut: "/assets/images/logo.png",
     apple: "/assets/images/logo.png"
-  }
+  },
+  openGraph: {
+    type: "website",
+    siteName: "Unique Pin",
+    locale: "en_US",
+    images: ["/assets/images/hero-banner.png"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/assets/images/hero-banner.png"],
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -29,6 +42,40 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         {/* End Google Tag Manager */}
       </head>
       <body>
+        <JsonLd
+          data={{
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            name: "Unique Pin",
+            legalName: "Zhongshan Unique Metal Gift Co., Ltd.",
+            url: SITE_URL,
+            logo: `${SITE_URL}/assets/images/logo.png`,
+            foundingDate: "2003",
+            email: "ceo@chinauniquepin.com",
+            telephone: "+86-188-9531-6838",
+            address: {
+              "@type": "PostalAddress",
+              streetAddress: "Building A, 1st Floor, No. 7 Xingyu Road",
+              addressLocality: "Xiaolan Town, Zhongshan City",
+              addressRegion: "Guangdong",
+              addressCountry: "CN",
+            },
+            sameAs: [
+              "https://www.facebook.com/profile.php?id=61583070933333",
+              "https://www.instagram.com/uniquepin/",
+              "https://www.youtube.com/@CustompinUnique",
+            ],
+          }}
+        />
+        <JsonLd
+          data={{
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            name: "Unique Pin",
+            url: SITE_URL,
+            inLanguage: "en",
+          }}
+        />
         {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe

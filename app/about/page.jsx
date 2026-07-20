@@ -1,8 +1,11 @@
 import StaticPage from "../components/StaticPage";
 
 export const metadata = {
-  title: "About Unique Pin | Custom Metal Gifts OEM/ODM Manufacturer Since 2003",
-  description: "Learn about Unique Pin, Zhongshan Unique Metal Gift Co., LTD, a custom metal gifts OEM/ODM manufacturer with 20+ years of experience, factory capability and global delivery."
+  title: "About Unique Pin | Custom Metal Gifts Manufacturer",
+  description: "Meet Unique Pin, a custom metal gifts OEM/ODM manufacturer founded in 2003 with integrated production, quality control and global delivery.",
+  alternates: {
+    canonical: "/about",
+  },
 };
 
 const html = String.raw`

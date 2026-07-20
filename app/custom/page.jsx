@@ -2,7 +2,10 @@ import StaticPage from "../components/StaticPage";
 
 export const metadata = {
   title: "Custom Metal Gifts | Unique Pin OEM/ODM Custom Options",
-  description: "Customize medals, enamel pins, challenge coins, keychains and metal gifts with Unique Pin. Choose shape, ribbon, material, plating, technique, packaging, payment and shipping options."
+  description: "Customize medals, pins, coins, keychains and metal gifts by shape, material, plating, technique, packaging and delivery requirements.",
+  alternates: {
+    canonical: "/custom",
+  },
 };
 
 const html = String.raw`

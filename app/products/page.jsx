@@ -3,7 +3,10 @@ import { productCategoryNavHtml } from "../components/productCategoryNav";
 
 export const metadata = {
   title: "Custom Metal Products | Pins, Medals, Challenge Coins, Keychains & More",
-  description: "Explore Unique Pin custom metal products including fridge magnets, enamel pins, medals, bottle openers, belt buckles, golf accessories, challenge coins, cufflinks, tie clips and keychains."
+  description: "Explore custom enamel pins, medals, challenge coins, keychains, buckles, golf accessories and other OEM metal gifts from Unique Pin.",
+  alternates: {
+    canonical: "/products",
+  },
 };
 
 const html = String.raw`
@@ -22,6 +25,7 @@ const html = String.raw`
 
     <section class="product-type-section products-all-section" id="all">
       <div class="container product-type-content">
+        <h2 class="product-type-grid-title">Custom Metal Product Categories</h2>
         <div class="product-type-grid products-all-grid">
           <article class="product-type-card" id="pins" data-product-category="pins"><img src="assets/images/type-pins-soft-enamel.jpg" alt="Green character soft enamel pin set"><h3>Green Character Soft Enamel Pin Set</h3><div class="product-type-actions"><a class="product-type-btn product-type-btn-outline" href="product-item.html?item=green-character-soft-enamel-pin-set">View More</a><a class="product-type-btn product-type-btn-primary" href="contact.html">GET QUOTE NOW</a></div></article>
           <article class="product-type-card" data-product-category="pins"><img src="assets/images/type-pins-hard-enamel.jpg" alt="Box cat and umbrella cat hard enamel pins"><h3>Box Cat and Umbrella Cat Enamel Pins</h3><div class="product-type-actions"><a class="product-type-btn product-type-btn-outline" href="product-item.html?item=box-cat-and-umbrella-cat-enamel-pins">View More</a><a class="product-type-btn product-type-btn-primary" href="contact.html">GET QUOTE NOW</a></div></article>

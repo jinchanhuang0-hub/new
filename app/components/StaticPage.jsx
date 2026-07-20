@@ -1,8 +1,10 @@
 "use client";
 
 import { useEffect } from "react";
+import { normalizeSiteHtml } from "../lib/siteRoutes";
 
 export default function StaticPage({ html }) {
+  const normalizedHtml = normalizeSiteHtml(html);
   useEffect(() => {
     const activateProductContent = () => {
       const productSections = document.querySelectorAll("[data-product-content]");
@@ -425,5 +427,5 @@ export default function StaticPage({ html }) {
     };
   }, []);
 
-  return <div dangerouslySetInnerHTML={{ __html: html }} />;
+  return <div dangerouslySetInnerHTML={{ __html: normalizedHtml }} />;
 }

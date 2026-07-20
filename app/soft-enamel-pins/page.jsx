@@ -2,7 +2,10 @@ import StaticPage from "../components/StaticPage";
 
 export const metadata = {
   title: "Custom Soft Enamel Pins | Product Detail | Unique Pin",
-  description: "View custom soft enamel pin details, OEM options, production specifications and inquiry information from Unique Pin."
+  description: "View custom soft enamel pin materials, processes, applications, OEM options and inquiry information from Unique Pin.",
+  alternates: {
+    canonical: "/soft-enamel-pins",
+  },
 };
 
 const html = String.raw`

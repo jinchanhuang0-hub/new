@@ -2,7 +2,10 @@ import StaticPage from "../components/StaticPage";
 
 export const metadata = {
   title: "Contact Unique Pin | Request a Custom Metal Gifts Quote",
-  description: "Contact Unique Pin for custom enamel pins, medals, challenge coins and OEM metal gifts. Submit your inquiry, quantity and artwork for a fast quote."
+  description: "Contact Unique Pin for custom pins, medals, coins and OEM metal gifts. Send your quantity, artwork and deadline for a clear quotation.",
+  alternates: {
+    canonical: "/contact",
+  },
 };
 
 const html = String.raw`
@@ -13,7 +16,7 @@ const html = String.raw`
       <div class="container product-heading contact-heading">
         <div>
           <span class="brand-kicker" aria-hidden="true"></span>
-          <h2>Contact Us</h2>
+          <h1>Contact Us</h1>
           <p>Send your product details, artwork or deadline. Our team will reply with a clear custom quote.</p>
         </div>
       </div>

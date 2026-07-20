@@ -1,9 +1,13 @@
 import StaticPage from "../components/StaticPage";
+import JsonLd from "../components/JsonLd";
 
 export const metadata = {
   title: "FAQ | Custom Metal Crafts Questions | Unique Pin",
   description:
-    "Frequently asked questions about custom metal crafts, enamel pins, medals, challenge coins, artwork, production, payment, shipping, packaging, and after-sales service."
+    "Answers about custom metal crafts, artwork, materials, MOQ, production, payment, packaging, shipping and after-sales service.",
+  alternates: {
+    canonical: "/faq",
+  },
 };
 
 const header = String.raw`
@@ -148,5 +152,27 @@ const html = String.raw`
   ${footer}`;
 
 export default function Page() {
-  return <StaticPage html={html} />;
+  const mainEntity = faqGroups.flatMap((group) =>
+    group.items.map(([name, text]) => ({
+      "@type": "Question",
+      name,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text,
+      },
+    })),
+  );
+
+  return (
+    <>
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity,
+        }}
+      />
+      <StaticPage html={html} />
+    </>
+  );
 }
