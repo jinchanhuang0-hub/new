@@ -150,8 +150,9 @@ export const normalizeSiteHtml = (html) => {
 
   for (const slug of Object.keys(blogArticles)) {
     normalized = normalized
-      .replaceAll(`href="blog.html#${slug}"`, `href="/blog/${slug}"`)
-      .replaceAll(`href="/blog#${slug}"`, `href="/blog/${slug}"`);
+      .replaceAll(`href="blog.html#${slug}"`, `href="/blog/${slug}#${slug}"`)
+      .replaceAll(`href="/blog#${slug}"`, `href="/blog/${slug}#${slug}"`)
+      .replaceAll(`href="/blog/${slug}"`, `href="/blog/${slug}#${slug}"`);
   }
 
   return normalized;

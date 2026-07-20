@@ -1,9 +1,9 @@
 import { notFound } from "next/navigation";
+import BlogArticleRepair from "./BlogArticleRepair";
 import JsonLd from "../../components/JsonLd";
-import StaticPage from "../../components/StaticPage";
 import { blogHtml } from "../content";
 import { buildBlogArticleHtml } from "../../lib/htmlSections";
-import { blogArticles, SITE_URL } from "../../lib/siteRoutes";
+import { blogArticles, normalizeSiteHtml, SITE_URL } from "../../lib/siteRoutes";
 
 export const dynamicParams = false;
 
@@ -29,6 +29,7 @@ export default async function BlogArticlePage({ params }) {
   const { slug } = await params;
   const article = blogArticles[slug];
   if (!article) notFound();
+  const articleHtml = normalizeSiteHtml(buildBlogArticleHtml(blogHtml, slug));
 
   return (
     <>
@@ -79,7 +80,11 @@ export default async function BlogArticlePage({ params }) {
           ],
         }}
       />
-      <StaticPage html={buildBlogArticleHtml(blogHtml, slug)} />
+      <div
+        suppressHydrationWarning
+        dangerouslySetInnerHTML={{ __html: articleHtml }}
+      />
+      <BlogArticleRepair slug={slug} />
     </>
   );
 }

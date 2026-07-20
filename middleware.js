@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import {
+  blogArticles,
   getCategoryPath,
   productCategories,
   productItemCategoryKey,
@@ -26,6 +27,15 @@ export function middleware(request) {
         : "/products";
   }
 
+  if (pathname === "/blog.html") {
+    destination = "/blog";
+  }
+
+  if (pathname.startsWith("/blog.html/")) {
+    const blogSlug = pathname.replace("/blog.html/", "").replace(/\/$/, "");
+    destination = blogArticles[blogSlug] ? `/blog/${blogSlug}` : "/blog";
+  }
+
   if (!destination) {
     return NextResponse.next();
   }
@@ -36,5 +46,5 @@ export function middleware(request) {
 }
 
 export const config = {
-  matcher: ["/product-detail.html", "/product-item.html"],
+  matcher: ["/product-detail.html", "/product-item.html", "/blog.html", "/blog.html/:path*"],
 };

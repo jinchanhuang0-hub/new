@@ -32,7 +32,7 @@ export const blogHtml = String.raw`
           <button type="button" data-blog-category="Uncategorized">Uncategorized</button>
         </div>
         <div class="blog-card-grid">
-          <a class="blog-feature-card" href="blog.html#custom-metal-crafts-guide" data-blog-category="Awareness, Custom Lapel Pins, Custom Medals, Custom Coins, Custom Keychains, Custom Belt Buckle" aria-label="Read Complete Guide to Custom Metal Crafts">
+          <a class="blog-feature-card" href="/blog/custom-metal-crafts-guide#custom-metal-crafts-guide" data-blog-category="Awareness, Custom Lapel Pins, Custom Medals, Custom Coins, Custom Keychains, Custom Belt Buckle" aria-label="Read Complete Guide to Custom Metal Crafts">
             <img src="assets/images/blog-custom-metal-crafts.jpg" alt="custom metal crafts manufacturer producing pins medals and coins">
             <div class="blog-feature-body">
               <div class="blog-feature-meta"><span>Awareness</span><span>Multi Category</span></div>
@@ -41,7 +41,7 @@ export const blogHtml = String.raw`
               <span class="blog-feature-link">Read More</span>
             </div>
           </a>
-          <a class="blog-feature-card" href="blog.html#soft-enamel-vs-hard-enamel-pins" data-blog-category="Custom Lapel Pins" aria-label="Read Soft Enamel vs Hard Enamel Pins">
+          <a class="blog-feature-card" href="/blog/soft-enamel-vs-hard-enamel-pins#soft-enamel-vs-hard-enamel-pins" data-blog-category="Custom Lapel Pins" aria-label="Read Soft Enamel vs Hard Enamel Pins">
             <img src="assets/images/blog-soft-enamel-pins.jpg" alt="custom soft enamel pins with colorful character designs">
             <div class="blog-feature-body">
               <div class="blog-feature-meta"><span>Custom Lapel Pins</span><span>Buyer Guide</span></div>
@@ -50,7 +50,7 @@ export const blogHtml = String.raw`
               <span class="blog-feature-link">Read More</span>
             </div>
           </a>
-          <a class="blog-feature-card" href="blog.html#custom-medals-vs-challenge-coins" data-blog-category="Custom Medals, Custom Coins" aria-label="Read Custom Medals vs Challenge Coins">
+          <a class="blog-feature-card" href="/blog/custom-medals-vs-challenge-coins#custom-medals-vs-challenge-coins" data-blog-category="Custom Medals, Custom Coins" aria-label="Read Custom Medals vs Challenge Coins">
             <img src="assets/images/blog-medal-xball-front-back.png" alt="custom medal front and back with ribbon">
             <div class="blog-feature-body">
               <div class="blog-feature-meta"><span>Custom Medals</span><span>Custom Coins</span></div>

@@ -6,6 +6,19 @@ import { normalizeSiteHtml } from "../lib/siteRoutes";
 export default function StaticPage({ html }) {
   const normalizedHtml = normalizeSiteHtml(html);
   useEffect(() => {
+    const redirectBlogHashToArticle = () => {
+      if (window.location.pathname !== "/blog" || !window.location.hash) return;
+
+      const slug = window.location.hash.slice(1);
+      const articleLink = document.querySelector(`.blog-feature-card[href="/blog/${slug}"]`);
+      const articleHashLink = document.querySelector(`.blog-feature-card[href="/blog/${slug}#${slug}"]`);
+      if (articleLink || articleHashLink) {
+        window.location.replace(`/blog/${slug}#${slug}`);
+      }
+    };
+
+    redirectBlogHashToArticle();
+
     const activateProductContent = () => {
       const productSections = document.querySelectorAll("[data-product-content]");
       if (!productSections.length) return;
@@ -150,6 +163,12 @@ export default function StaticPage({ html }) {
       if (!card) return;
 
       const href = card.getAttribute("href") || "";
+      if (href.startsWith("/blog/")) {
+        event.preventDefault();
+        window.location.assign(card.href);
+        return;
+      }
+
       const hashIndex = href.indexOf("#");
       if (hashIndex === -1) return;
 
