@@ -423,16 +423,13 @@ const activateProductContent = () => {
   const productSections = document.querySelectorAll("[data-product-content]");
   if (!productSections.length) return;
 
-  const params = new URLSearchParams(window.location.search);
-  const requestedProduct = params.get("product") || "pins";
-  const activeSection = document.querySelector(`[data-product-content="${requestedProduct}"]`)
-    || document.querySelector('[data-product-content="pins"]');
-
-  productSections.forEach((section) => {
-    section.hidden = section !== activeSection;
-  });
+  const requestedProduct = new URLSearchParams(window.location.search).get("product");
+  const activeSection = requestedProduct
+    ? document.querySelector(`[data-product-content="${requestedProduct}"]`)
+    : productSections.item(0);
+  const activeProduct = activeSection?.dataset.productContent;
   document.querySelectorAll(".products-category-nav [data-product-nav]").forEach((link) => {
-    link.classList.toggle("active", link.dataset.productNav === requestedProduct);
+    link.classList.toggle("active", link.dataset.productNav === activeProduct);
   });
 };
 
@@ -449,17 +446,6 @@ const switchProductContent = (product) => {
 };
 
 activateProductContent();
-
-document.addEventListener("click", (event) => {
-  const link = event.target.closest?.(".products-category-nav [data-product-nav]");
-  if (!link) return;
-
-  const product = link.dataset.productNav;
-  if (!product || product === "all") return;
-
-  event.preventDefault();
-  if (!switchProductContent(product)) window.location.assign(link.href);
-});
 
 const activateProductItemPage = () => {
   const root = document.querySelector("[data-product-item-page]");

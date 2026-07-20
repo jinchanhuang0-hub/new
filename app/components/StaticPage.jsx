@@ -50,14 +50,13 @@ export default function StaticPage({ html }) {
       };
 
       const params = new URLSearchParams(window.location.search);
-      const requestedProduct = params.get("product") || "pins";
-      const activeSection = document.querySelector(`[data-product-content="${requestedProduct}"]`)
-        || document.querySelector('[data-product-content="pins"]');
+      const requestedProduct = params.get("product");
+      const activeSection = productSections.length === 1
+        ? productSections.item(0)
+        : document.querySelector(`[data-product-content="${requestedProduct}"]`)
+          || productSections.item(0);
       const activeProduct = activeSection?.dataset.productContent || "pins";
 
-      productSections.forEach((section) => {
-        section.hidden = section !== activeSection;
-      });
       document.querySelectorAll(".products-category-nav [data-product-nav]").forEach((link) => {
         link.classList.toggle("active", link.dataset.productNav === activeProduct);
       });
@@ -382,15 +381,6 @@ export default function StaticPage({ html }) {
     const handleProductNavClick = (event) => {
       const link = event.target.closest?.(".products-category-nav [data-product-nav]");
       if (!link) return;
-
-      const productSections = document.querySelectorAll("[data-product-content]");
-      const product = link.dataset.productNav;
-      if (!productSections.length || product === "all") return;
-
-      event.preventDefault();
-      if (!switchProductContent(product)) {
-        window.location.assign(link.href);
-      }
     };
 
     const handleProductPaginationClick = (event) => {
@@ -425,7 +415,7 @@ export default function StaticPage({ html }) {
       window.removeEventListener("popstate", activateProductItemPage);
       window.clearInterval(productWatcher);
     };
-  }, []);
+  }, [normalizedHtml]);
 
   return <div dangerouslySetInnerHTML={{ __html: normalizedHtml }} />;
 }

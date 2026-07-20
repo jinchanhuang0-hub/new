@@ -16,7 +16,7 @@ export const buildCategoryHtml = (html, categoryKey, categoryLabel) => {
     `<section class="product-type-section" data-product-content="${categoryKey}"(?: hidden)?>[\\s\\S]*?<\\/section>`,
   );
   const section = (
-    html.match(sectionPattern)?.[0]?.replace(" hidden>", ">") || ""
+    html.match(sectionPattern)?.[0]?.replace(/\s+hidden(?=[\s>])/i, "") || ""
   ).replace(
     '<div class="product-type-grid',
     `<h2 class="product-type-grid-title">Available ${categoryLabel} Styles</h2><div class="product-type-grid`,
