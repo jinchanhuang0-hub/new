@@ -2,7 +2,7 @@ import JsonLd from "../components/JsonLd";
 import StaticPage from "../components/StaticPage";
 import { blogHtml } from "./content";
 import { buildBlogIndexHtml } from "../lib/htmlSections";
-import { SITE_URL } from "../lib/siteRoutes";
+import { blogArticles, SITE_URL } from "../lib/siteRoutes";
 
 export const metadata = {
   title: "Custom Metal Crafts Manufacturing Guides | Unique Pin",
@@ -24,7 +24,7 @@ export default function BlogPage() {
           url: `${SITE_URL}/blog`,
         }}
       />
-      <StaticPage html={buildBlogIndexHtml(blogHtml)} />
+      <StaticPage html={buildBlogIndexHtml(blogHtml, blogArticles)} />
     </>
   );
 }

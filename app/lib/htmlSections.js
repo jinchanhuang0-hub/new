@@ -25,21 +25,78 @@ export const buildCategoryHtml = (html, categoryKey, categoryLabel) => {
   return `${shell.beforeMain}<main class="product-types-page" id="custom-details">${section}</main>${shell.afterMain}`;
 };
 
-export const buildBlogIndexHtml = (html) =>
+const formatArticleDate = (date) => {
+  if (!date) return "";
+  const [year, month, day] = date.split("-");
+  const monthNames = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+
+  return `${monthNames[Number(month) - 1] || month} ${Number(day)}, ${year}`;
+};
+
+const addBlogCardMeta = (html, articles = {}) =>
   html.replace(
-    /<article id="[^"]+" class="section blog-article-section">[\s\S]*?<\/article>/g,
-    "",
+    /(<a class="blog-feature-card" href="\/blog\/([^"#]+)(?:#[^"]*)?"[\s\S]*?<p>[\s\S]*?<\/p>)\s*<span class="blog-feature-link">Read More<\/span>/g,
+    (match, cardContent, slug) => {
+      const article = articles[slug];
+      if (!article) return match;
+
+      const author = article.author || "sunny";
+      const date = article.datePublished || "";
+
+      return `${cardContent}
+              <div class="blog-feature-footer">
+                <span class="blog-feature-author"><span class="blog-author-avatar" aria-hidden="true">${author.charAt(0).toUpperCase()}</span>${author}</span>
+                <time datetime="${date}">${formatArticleDate(date)}</time>
+              </div>
+              <span class="blog-feature-link">Read More</span>`;
+    },
   );
 
-export const buildBlogArticleHtml = (html, articleSlug) => {
+export const buildBlogIndexHtml = (html, articles = {}) =>
+  addBlogCardMeta(html.replace(
+    /<article id="[^"]+" class="section blog-article-section">[\s\S]*?<\/article>/g,
+    "",
+  ), articles);
+
+const addBlogArticleMeta = (articleHtml, articleMeta) => {
+  const author = articleMeta?.author;
+  const datePublished = articleMeta?.datePublished;
+  if (!author && !datePublished) return articleHtml;
+
+  const metaItems = [
+    author ? `<span>By ${author}</span>` : "",
+    datePublished ? `<time datetime="${datePublished}">${formatArticleDate(datePublished)}</time>` : "",
+  ].filter(Boolean).join("");
+
+  return articleHtml.replace(
+    /(<header class="blog-article-header">[\s\S]*?<h1>[\s\S]*?<\/h1>)/,
+    `$1
+          <div class="blog-article-meta">${metaItems}</div>`,
+  );
+};
+
+export const buildBlogArticleHtml = (html, articleSlug, articleMeta = {}) => {
   const shell = getPageShell(html);
   const articlePattern = new RegExp(
     `<article id="${articleSlug}" class="section blog-article-section">[\\s\\S]*?<\\/article>`,
   );
-  const article = (html.match(articlePattern)?.[0] || "").replace(
+  const article = addBlogArticleMeta((html.match(articlePattern)?.[0] || "").replace(
     'class="section blog-article-section"',
     'class="section blog-article-section is-active"',
-  );
+  ), articleMeta);
 
   return `${shell.beforeMain}<main>${article}</main>${shell.afterMain}`;
 };

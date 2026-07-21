@@ -313,17 +313,119 @@ export default function StaticPage({ html }) {
       return inferredCategories.length ? inferredCategories : ["Uncategorized"];
     };
 
-    const applyBlogCategory = (category) => {
-      const cards = document.querySelectorAll(".blog-feature-card");
-      if (!cards.length) return;
+    const blogGrid = document.querySelector(".blog-card-grid");
+    const blogCards = [...document.querySelectorAll(".blog-feature-card")];
+    const blogItemsPerPage = 12;
+    let activeBlogCategory = "All";
+    let currentBlogPage = 1;
+    let blogPagination = document.querySelector(".blog-pagination");
+    let blogEmptyState = document.querySelector(".blog-empty-state");
 
-      cards.forEach((card) => {
-        const cardCategories = getBlogCardCategories(card);
-        const shouldShowCard = category === "All" || cardCategories.includes(category);
-        card.dataset.blogCategory = cardCategories.join(", ");
-        card.hidden = !shouldShowCard;
-        card.style.display = shouldShowCard ? "" : "none";
+    blogCards.forEach((card) => {
+      card.dataset.blogCategory = getBlogCardCategories(card).join(", ");
+    });
+
+    if (blogGrid && !blogEmptyState) {
+      blogEmptyState = document.createElement("p");
+      blogEmptyState.className = "blog-empty-state";
+      blogEmptyState.hidden = true;
+      blogEmptyState.textContent = "No articles found in this category.";
+      blogGrid.insertAdjacentElement("afterend", blogEmptyState);
+    }
+
+    if (blogGrid && !blogPagination) {
+      blogPagination = document.createElement("nav");
+      blogPagination.className = "blog-pagination";
+      blogPagination.setAttribute("aria-label", "Blog pages");
+      (blogEmptyState || blogGrid).insertAdjacentElement("afterend", blogPagination);
+    }
+
+    const getBlogCardsForCategory = (category) =>
+      blogCards.filter((card) => {
+        if (category === "All") return true;
+        return (card.dataset.blogCategory || "")
+          .split(",")
+          .map((cardCategory) => cardCategory.trim())
+          .includes(category);
       });
+
+    const getBlogPageItems = (currentPage, totalPages) => {
+      if (totalPages <= 7) {
+        return Array.from({ length: totalPages }, (_, index) => index + 1);
+      }
+
+      const items = [1];
+      const start = Math.max(2, currentPage - 1);
+      const end = Math.min(totalPages - 1, currentPage + 1);
+
+      if (start > 2) items.push("ellipsis-start");
+      for (let page = start; page <= end; page += 1) items.push(page);
+      if (end < totalPages - 1) items.push("ellipsis-end");
+      items.push(totalPages);
+      return items;
+    };
+
+    const renderBlogPagination = (totalPages) => {
+      if (!blogPagination) return;
+
+      if (totalPages <= 1) {
+        blogPagination.hidden = true;
+        blogPagination.innerHTML = "";
+        return;
+      }
+
+      const pageItems = getBlogPageItems(currentBlogPage, totalPages)
+        .map((page) => {
+          if (typeof page === "string") {
+            return '<span class="blog-pagination-ellipsis" aria-hidden="true">...</span>';
+          }
+
+          const isActive = page === currentBlogPage;
+          return `<button type="button" class="${isActive ? "active" : ""}" data-blog-page="${page}" aria-current="${isActive ? "page" : "false"}">${page}</button>`;
+        })
+        .join("");
+
+      blogPagination.hidden = false;
+      blogPagination.innerHTML = `
+        <button type="button" data-blog-page="prev" ${currentBlogPage === 1 ? "disabled" : ""}>Previous</button>
+        ${pageItems}
+        <button type="button" data-blog-page="next" ${currentBlogPage === totalPages ? "disabled" : ""}>Next</button>`;
+    };
+
+    const applyBlogCategory = (category = activeBlogCategory, page = 1, scrollToList = false) => {
+      if (!blogGrid || !blogCards.length) return;
+
+      activeBlogCategory = category || "All";
+      const filteredCards = getBlogCardsForCategory(activeBlogCategory);
+      const totalPages = Math.ceil(filteredCards.length / blogItemsPerPage);
+      currentBlogPage = totalPages
+        ? Math.min(Math.max(page, 1), totalPages)
+        : 1;
+      const startIndex = (currentBlogPage - 1) * blogItemsPerPage;
+      const visibleCards = new Set(filteredCards.slice(startIndex, startIndex + blogItemsPerPage));
+
+      blogGrid.classList.add("is-updating");
+      window.requestAnimationFrame(() => {
+        blogCards.forEach((card) => {
+          const shouldShowCard = visibleCards.has(card);
+          card.hidden = !shouldShowCard;
+          card.style.display = shouldShowCard ? "" : "none";
+        });
+
+        if (blogEmptyState) {
+          blogEmptyState.hidden = filteredCards.length > 0;
+        }
+
+        renderBlogPagination(totalPages);
+
+        window.requestAnimationFrame(() => {
+          blogGrid.classList.remove("is-updating");
+        });
+      });
+
+      if (scrollToList) {
+        blogGrid.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
     };
 
     const handleBlogCategoryClick = (event) => {
@@ -333,11 +435,27 @@ export default function StaticPage({ html }) {
       document.querySelectorAll(".blog-category-filter button").forEach((categoryButton) => {
         categoryButton.classList.toggle("active", categoryButton === button);
       });
-      applyBlogCategory(button.dataset.blogCategory || "All");
+      applyBlogCategory(button.dataset.blogCategory || "All", 1, true);
+    };
+
+    const handleBlogPaginationClick = (event) => {
+      const button = event.target.closest?.(".blog-pagination [data-blog-page]");
+      if (!button || button.disabled) return;
+
+      event.preventDefault();
+      const pageAction = button.dataset.blogPage;
+      const nextPage = pageAction === "prev"
+        ? currentBlogPage - 1
+        : pageAction === "next"
+          ? currentBlogPage + 1
+          : Number(pageAction) || 1;
+
+      applyBlogCategory(activeBlogCategory, nextPage, true);
     };
 
     applyBlogCategory("All");
     document.addEventListener("click", handleBlogCategoryClick);
+    document.addEventListener("click", handleBlogPaginationClick);
 
     const productCategoryButtons = document.querySelectorAll(".products-category-nav [data-product-filter]");
     const productCards = document.querySelectorAll(".products-all-grid .product-type-card[data-product-category]");
@@ -446,6 +564,7 @@ export default function StaticPage({ html }) {
       document.removeEventListener("click", handleProductInquiryModalClick);
       document.removeEventListener("keydown", handleProductInquiryModalKeydown);
       document.removeEventListener("click", handleBlogCategoryClick);
+      document.removeEventListener("click", handleBlogPaginationClick);
       document.removeEventListener("click", handleProductCategoryClick);
       document.removeEventListener("click", handleProductNavClick);
       document.removeEventListener("click", handleProductPaginationClick);

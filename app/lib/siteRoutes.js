@@ -99,23 +99,60 @@ export const productItemCategoryKey = {
   "city-landmark-souvenir-fridge-magnet": "magnets",
 };
 
-export const blogArticles = {
+const DEFAULT_BLOG_AUTHOR = "sunny";
+
+const getTodayInShanghai = () =>
+  new Intl.DateTimeFormat("en-CA", {
+    timeZone: "Asia/Shanghai",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).format(new Date());
+
+const withBlogArticleDefaults = (article) => {
+  const datePublished = article.datePublished || getTodayInShanghai();
+
+  return {
+    author: DEFAULT_BLOG_AUTHOR,
+    ...article,
+    datePublished,
+    dateModified: article.dateModified || datePublished,
+  };
+};
+
+const blogArticleData = {
   "custom-metal-crafts-guide": {
     title: "Complete Guide to Custom Metal Crafts: From Design to Production",
     description:
       "Learn how custom metal crafts are designed, manufactured, inspected and sourced for global B2B orders.",
+    datePublished: "2026-07-15",
+    dateModified: "2026-07-15",
+    image: "/assets/images/blog-custom-metal-crafts.jpg",
   },
   "soft-enamel-vs-hard-enamel-pins": {
     title: "Soft Enamel vs Hard Enamel Pins: Buyer Guide",
     description:
       "Compare soft enamel and hard enamel pins by finish, durability, cost, application and production requirements.",
+    datePublished: "2026-07-15",
+    dateModified: "2026-07-15",
+    image: "/assets/images/blog-soft-enamel-pins.jpg",
   },
   "custom-medals-vs-challenge-coins": {
     title: "Custom Medals vs Challenge Coins: Buyer Guide",
     description:
       "Compare custom medals and challenge coins by purpose, presentation, materials, finishes and ideal applications.",
+    datePublished: "2026-07-15",
+    dateModified: "2026-07-15",
+    image: "/assets/images/blog-medal-xball-front-back.png",
   },
 };
+
+export const blogArticles = Object.fromEntries(
+  Object.entries(blogArticleData).map(([slug, article]) => [
+    slug,
+    withBlogArticleDefaults(article),
+  ]),
+);
 
 export const normalizeSiteHtml = (html) => {
   let normalized = html

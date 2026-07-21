@@ -29,7 +29,7 @@ export default async function BlogArticlePage({ params }) {
   const { slug } = await params;
   const article = blogArticles[slug];
   if (!article) notFound();
-  const articleHtml = normalizeSiteHtml(buildBlogArticleHtml(blogHtml, slug));
+  const articleHtml = normalizeSiteHtml(buildBlogArticleHtml(blogHtml, slug, article));
 
   return (
     <>
@@ -39,10 +39,13 @@ export default async function BlogArticlePage({ params }) {
           "@type": "Article",
           headline: article.title,
           description: article.description,
+          image: article.image ? `${SITE_URL}${article.image}` : undefined,
+          datePublished: article.datePublished,
+          dateModified: article.dateModified || article.datePublished,
           mainEntityOfPage: `${SITE_URL}/blog/${slug}`,
           author: {
             "@type": "Organization",
-            name: "Unique Pin",
+            name: article.author || "Unique Pin",
           },
           publisher: {
             "@type": "Organization",
