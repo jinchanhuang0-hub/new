@@ -1,28 +1,6 @@
 const nav = document.querySelector(".nav");
 const toggle = document.querySelector(".menu-toggle");
 
-const scrollBlogArticleToTop = () => {
-  if (!/^\/blog\/[^/]+\/?$/.test(window.location.pathname)) return;
-
-  if ("scrollRestoration" in window.history) {
-    window.history.scrollRestoration = "manual";
-  }
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
-    document.documentElement.scrollTop = 0;
-    document.body.scrollTop = 0;
-  };
-
-  scrollToTop();
-  [0, 100, 300, 800, 1500].forEach((delay) => {
-    window.setTimeout(scrollToTop, delay);
-  });
-};
-
-scrollBlogArticleToTop();
-window.addEventListener("pageshow", scrollBlogArticleToTop);
-
 if (toggle && nav) {
   toggle.addEventListener("click", () => {
     nav.classList.toggle("open");

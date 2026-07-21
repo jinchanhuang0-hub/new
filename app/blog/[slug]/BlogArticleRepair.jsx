@@ -6,23 +6,6 @@ export default function BlogArticleRepair({ slug }) {
   useEffect(() => {
     let cancelled = false;
 
-    if ("scrollRestoration" in window.history) {
-      window.history.scrollRestoration = "manual";
-    }
-
-    const scrollToTop = () => {
-      window.scrollTo({ top: 0, left: 0, behavior: "auto" });
-      document.documentElement.scrollTop = 0;
-      document.body.scrollTop = 0;
-    };
-
-    scrollToTop();
-    [0, 100, 300, 800].forEach((delay) => {
-      window.setTimeout(() => {
-        if (!cancelled) scrollToTop();
-      }, delay);
-    });
-
     const restoreArticleMain = async () => {
       const article = document.getElementById(slug);
       if (article?.textContent?.trim().length > 100) return;
@@ -39,7 +22,6 @@ export default function BlogArticleRepair({ slug }) {
         const restoredMain = doc.querySelector("main");
         if (restoredMain?.textContent?.trim().length > 100) {
           currentMain.replaceWith(document.importNode(restoredMain, true));
-          scrollToTop();
         }
       } catch {
         // Leave the server-rendered output in place if the repair fetch fails.
