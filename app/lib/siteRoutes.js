@@ -137,6 +137,12 @@ const blogArticleData = {
     dateModified: "2026-07-15",
     image: "/assets/images/blog-soft-enamel-pins.jpg",
   },
+  "how-to-make-your-own-custom-lapel-pins": {
+    title: "How to Make Your Own Custom Lapel Pins | Buyer Guide",
+    description:
+      "Learn how to make your own custom lapel pins, from artwork and material selection to sample approval, quality inspection, packaging and shipment.",
+    image: "/assets/images/blog-lapel-pin-animal-samples.webp",
+  },
   "custom-medals-vs-challenge-coins": {
     title: "Custom Medals vs Challenge Coins: Buyer Guide",
     description:

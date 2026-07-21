@@ -65,11 +65,37 @@ const addBlogCardMeta = (html, articles = {}) =>
     },
   );
 
+const sortBlogCardsByDate = (html, articles = {}) =>
+  html.replace(
+    /(<div class="blog-card-grid">\s*)([\s\S]*?)(\s*<\/div>\s*<\/div>\s*<\/section>)/,
+    (match, opening, cardsHtml, closing) => {
+      const cards = [...cardsHtml.matchAll(/<a class="blog-feature-card" href="\/blog\/([^"#]+)(?:#[^"]*)?"[\s\S]*?<\/a>/g)]
+        .map((cardMatch, index) => {
+          const slug = cardMatch[1];
+          const articleDate = articles[slug]?.datePublished || "";
+          return {
+            html: cardMatch[0],
+            index,
+            timestamp: articleDate ? Date.parse(articleDate) : 0,
+          };
+        });
+
+      if (!cards.length) return match;
+
+      const sortedCards = cards
+        .sort((a, b) => b.timestamp - a.timestamp || a.index - b.index)
+        .map((card) => card.html)
+        .join("\n          ");
+
+      return `${opening}${sortedCards}${closing}`;
+    },
+  );
+
 export const buildBlogIndexHtml = (html, articles = {}) =>
-  addBlogCardMeta(html.replace(
+  addBlogCardMeta(sortBlogCardsByDate(html.replace(
     /<article id="[^"]+" class="section blog-article-section">[\s\S]*?<\/article>/g,
     "",
-  ), articles);
+  ), articles), articles);
 
 const addBlogArticleMeta = (articleHtml, articleMeta) => {
   const author = articleMeta?.author;

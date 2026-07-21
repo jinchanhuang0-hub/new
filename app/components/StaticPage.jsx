@@ -325,6 +325,19 @@ export default function StaticPage({ html }) {
       card.dataset.blogCategory = getBlogCardCategories(card).join(", ");
     });
 
+    const getBlogCardTimestamp = (card) => {
+      const publishedDate = card.querySelector("time")?.getAttribute("datetime") || "";
+      const timestamp = Date.parse(publishedDate);
+      return Number.isNaN(timestamp) ? 0 : timestamp;
+    };
+
+    const sortedBlogCards = [...blogCards].sort((a, b) => {
+      const dateDelta = getBlogCardTimestamp(b) - getBlogCardTimestamp(a);
+      return dateDelta || blogCards.indexOf(a) - blogCards.indexOf(b);
+    });
+
+    sortedBlogCards.forEach((card) => blogGrid?.appendChild(card));
+
     if (blogGrid && !blogEmptyState) {
       blogEmptyState = document.createElement("p");
       blogEmptyState.className = "blog-empty-state";
@@ -341,7 +354,7 @@ export default function StaticPage({ html }) {
     }
 
     const getBlogCardsForCategory = (category) =>
-      blogCards.filter((card) => {
+      sortedBlogCards.filter((card) => {
         if (category === "All") return true;
         return (card.dataset.blogCategory || "")
           .split(",")
@@ -406,7 +419,7 @@ export default function StaticPage({ html }) {
 
       blogGrid.classList.add("is-updating");
       window.requestAnimationFrame(() => {
-        blogCards.forEach((card) => {
+        sortedBlogCards.forEach((card) => {
           const shouldShowCard = visibleCards.has(card);
           card.hidden = !shouldShowCard;
           card.style.display = shouldShowCard ? "" : "none";

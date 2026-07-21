@@ -7564,6 +7564,22 @@ body.is-video-lightbox-open {
   background: #fff;
 }
 
+.blog-article-hero-image.blog-lapel-pin-hero-image img {
+  width: 100%;
+  height: clamp(360px, 42vw, 520px);
+  max-height: none;
+  padding: 0;
+  object-fit: cover;
+  object-position: center 52%;
+}
+
+.blog-article-contain-image.blog-lapel-pin-options-image img,
+.blog-article-contain-image.blog-lapel-pin-badge-types-image img {
+  width: min(760px, 100%);
+  max-height: none;
+  padding: 16px;
+}
+
 .blog-list {
   max-width: 980px;
   gap: 10px;
