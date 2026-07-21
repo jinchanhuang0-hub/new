@@ -104,8 +104,8 @@ export const blogHtml = String.raw`
         <p><a href="product-detail.html?product=keychains">Custom metal keychains</a> work well as promotional gifts, tourism souvenirs and retail accessories. They are easy to distribute, useful in daily life and can be produced in many shapes. Options include soft enamel, printed inserts with epoxy, die cast 3D designs, bottle opener functions and different chain attachments.</p>
 
         <figure class="blog-article-image blog-article-image-split">
-          <img src="assets/images/blog-custom-medals.png" alt="custom medals supplier producing event medals">
-          <img src="assets/images/blog-challenge-coins.png" alt="challenge coin manufacturer producing custom coins">
+          <img src="assets/images/blog-custom-medals.webp" alt="custom medals supplier producing event medals">
+          <img src="assets/images/blog-challenge-coins.webp" alt="challenge coin manufacturer producing custom coins">
         </figure>
 
         <h2>How Are Custom Metal Crafts Made?</h2>
@@ -132,7 +132,7 @@ export const blogHtml = String.raw`
         <p>Before shipment, a professional factory checks appearance, color, dimensions, plating quality, attachment strength and packaging. For B2B orders, consistency is often more important than one perfect sample. Buyers need products that look uniform across hundreds or thousands of pieces. Packaging may include poly bags, velvet pouches, acrylic boxes, paper boxes, display cards, ribbon assembly or retail-ready sets.</p>
 
         <figure class="blog-article-image">
-          <img src="assets/images/factory-1.png" alt="custom metal crafts production process">
+          <img src="assets/images/factory-1.webp" alt="custom metal crafts production process">
         </figure>
 
         <h2>How to Choose a Reliable Custom Metal Crafts Manufacturer?</h2>

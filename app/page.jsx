@@ -36,7 +36,7 @@ const html = String.raw`
 
   <main>
     <section class="hero">
-      <img class="hero-bg" src="assets/images/hero-banner.png" alt="Custom enamel pins medals and challenge coins hero banner">
+      <img class="hero-bg" src="assets/images/hero-banner.webp" width="1749" height="899" fetchpriority="high" alt="Custom enamel pins medals and challenge coins hero banner">
       <div class="container">
         <div class="hero-content">
           <h1><span class="hero-title-line">Custom Metal Crafts</span><span class="hero-title-line">Made for Your Brand</span></h1>
@@ -120,7 +120,7 @@ const html = String.raw`
             </div>
           </a>
           <a class="product-card home-product-card" href="product-detail.html?product=medals#custom-details" aria-label="View Custom Medals details" data-product-inquiry-trigger data-product-inquiry-product="Medals">
-            <img src="assets/images/home-medals-floral.png" alt="Custom medal with floral enamel and ribbon">
+            <img src="assets/images/home-medals-floral.webp" alt="Custom medal with floral enamel and ribbon">
             <div class="body">
               <h3>Medals</h3>
               <p>A meaningful award piece that celebrates achievement with lasting visual impact.</p>

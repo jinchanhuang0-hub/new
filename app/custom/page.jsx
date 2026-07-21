@@ -100,7 +100,7 @@ const html = String.raw`
             <p>From concept to mass production, our OEM/ODM factory delivers reliable, efficient, and high-quality custom manufacturing services for global buyers.</p>
           </div>
           <div class="custom-overview-image">
-            <img src="assets/images/custom-metal-options.png" alt="Custom metal craft options including shape, ribbon, material, plating, technology and packaging">
+            <img src="assets/images/custom-metal-options.webp" alt="Custom metal craft options including shape, ribbon, material, plating, technology and packaging">
           </div>
         </div>
 

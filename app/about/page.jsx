@@ -56,8 +56,8 @@ const html = String.raw`
       <div class="container about-profile">
         <div class="about-profile-copy">
           <div class="about-profile-gallery" aria-label="Inside our factory">
-            <div class="about-profile-video" data-video-lightbox-trigger data-video-src="assets/videos/factory-capability-web.mp4" data-video-poster="assets/images/factory-3.png" role="button" tabindex="0" aria-label="Watch factory capability video larger">
-              <video class="factory-video-card" controls playsinline preload="metadata" poster="assets/images/factory-3.png" aria-label="Factory capability video">
+            <div class="about-profile-video" data-video-lightbox-trigger data-video-src="assets/videos/factory-capability-web.mp4" data-video-poster="assets/images/factory-3.webp" role="button" tabindex="0" aria-label="Watch factory capability video larger">
+              <video class="factory-video-card" controls playsinline preload="metadata" poster="assets/images/factory-3.webp" aria-label="Factory capability video">
                 <source src="assets/videos/factory-capability-web.mp4" type="video/mp4">
               </video>
               <span class="video-expand-hint" aria-hidden="true">Watch larger</span>
@@ -83,7 +83,7 @@ const html = String.raw`
     <section class="section about-mission-section" id="mission">
       <div class="container about-mission-layout">
         <figure class="about-mission-media">
-          <img src="assets/images/factory-customer-visit.png" alt="Customers visiting the Unique Pin factory and reviewing custom products with our team" loading="lazy">
+          <img src="assets/images/factory-customer-visit.webp" alt="Customers visiting the Unique Pin factory and reviewing custom products with our team" loading="lazy">
         </figure>
         <div class="about-mission-copy">
           <h2>Our Mission</h2>
