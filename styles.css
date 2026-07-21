@@ -3092,6 +3092,10 @@ body.quote-modal-open {
     linear-gradient(180deg, #f4f7fb 0%, #edf2f8 100%);
 }
 
+.blog-feature-section .container {
+  width: min(var(--max), calc(100% - 20px));
+}
+
 .blog-category-filter {
   display: flex;
   flex-wrap: wrap;
@@ -3130,8 +3134,8 @@ body.quote-modal-open {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   align-items: stretch;
   justify-content: stretch;
-  gap: 32px;
-  max-width: 1120px;
+  gap: 37px;
+  max-width: 1288px;
   margin: 0 auto;
   opacity: 1;
   transition: opacity 180ms ease;
@@ -3150,11 +3154,11 @@ body.quote-modal-open {
   min-height: 0;
   overflow: hidden;
   border: 1px solid rgba(11, 47, 99, 0.08);
-  border-radius: 18px;
+  border-radius: 21px;
   background: #fff;
   color: var(--navy);
   text-decoration: none;
-  box-shadow: 0 18px 42px rgba(11, 47, 99, 0.08);
+  box-shadow: 0 21px 48px rgba(11, 47, 99, 0.08);
   transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -3163,9 +3167,9 @@ body.quote-modal-open {
 }
 
 .blog-feature-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
   border-color: rgba(11, 47, 99, 0.16);
-  box-shadow: 0 28px 58px rgba(11, 47, 99, 0.14);
+  box-shadow: 0 32px 67px rgba(11, 47, 99, 0.14);
 }
 
 .blog-feature-card img {
@@ -3180,8 +3184,8 @@ body.quote-modal-open {
   display: flex;
   flex-direction: column;
   flex: 1;
-  gap: 10px;
-  padding: 14px;
+  gap: 12px;
+  padding: 16px;
 }
 
 .blog-feature-meta {
@@ -3191,18 +3195,18 @@ body.quote-modal-open {
 .blog-feature-card h2 {
   margin: 0;
   color: var(--navy);
-  font-size: 17px;
+  font-size: 19.5px;
   line-height: 1.24;
   text-transform: none;
 }
 
 .blog-feature-card p {
   display: -webkit-box;
-  min-height: 60px;
+  min-height: 69px;
   overflow: hidden;
   margin: 0;
   color: #40516a;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.42;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
@@ -3216,18 +3220,18 @@ body.quote-modal-open {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 14px;
+  gap: 16px;
   margin-top: auto;
-  padding-top: 10px;
+  padding-top: 12px;
   color: #40516a;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .blog-feature-author {
   display: inline-flex;
   align-items: center;
   min-width: 0;
-  gap: 10px;
+  gap: 12px;
   color: var(--navy);
   font-weight: 800;
 }
@@ -3237,12 +3241,12 @@ body.quote-modal-open {
   flex: 0 0 auto;
   align-items: center;
   justify-content: center;
-  width: 34px;
-  height: 34px;
+  width: 39px;
+  height: 39px;
   border-radius: 50%;
   color: #fff;
   background: linear-gradient(135deg, var(--navy), #1f75bb);
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 900;
 }
 
