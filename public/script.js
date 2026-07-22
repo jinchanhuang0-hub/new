@@ -314,6 +314,9 @@ const pushAnalyticsEvent = (eventName, eventParams = {}) => {
     event: eventName,
     ...eventParams,
   });
+  if (typeof window.gtag === "function") {
+    window.gtag("event", eventName, eventParams);
+  }
 };
 
 document.querySelectorAll("[data-inquiry-form]").forEach((inquiryForm) => {
