@@ -1,4 +1,49 @@
 @import "../styles.css";
+
+.not-found-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 48px 20px;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(243, 198, 0, 0.18), transparent 30%),
+    radial-gradient(circle at 88% 20%, rgba(24, 136, 214, 0.16), transparent 32%),
+    #f7fbff;
+}
+
+.not-found-panel {
+  max-width: 680px;
+  text-align: center;
+}
+
+.not-found-kicker {
+  margin: 0 0 10px;
+  color: var(--yellow);
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.not-found-panel h1 {
+  margin: 0 0 14px;
+  color: var(--navy);
+  font-size: clamp(42px, 7vw, 76px);
+  line-height: 1;
+}
+
+.not-found-panel p {
+  margin: 0 auto 26px;
+  max-width: 560px;
+  color: #40516a;
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+.not-found-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
 .product-type-grid-title {
   margin: 0 0 24px;
   color: var(--navy);

@@ -308,15 +308,49 @@ if (productData && window.location.pathname.includes("product-detail")) {
 const getFormNotice = (form) => form.querySelector("[data-form-notice]")
   || form.closest(".contact-card, .product-inquiry-card, .contact-layout")?.querySelector("[data-form-notice]");
 
+const GA4_MEASUREMENT_ID = "G-4BPKLZFWYH";
+let ga4LoadPromise;
+
+const loadGa4DirectEvents = () => {
+  if (typeof window === "undefined") return Promise.resolve(false);
+  if (typeof window.gtag === "function") return Promise.resolve(true);
+
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function(){ window.dataLayer.push(arguments); };
+  window.gtag("js", new Date());
+  window.gtag("config", GA4_MEASUREMENT_ID, { send_page_view: false });
+
+  if (!ga4LoadPromise) {
+    ga4LoadPromise = new Promise((resolve) => {
+      const existingScript = document.querySelector(`script[src*="${GA4_MEASUREMENT_ID}"]`);
+      if (existingScript) {
+        resolve(true);
+        return;
+      }
+
+      const script = document.createElement("script");
+      script.async = true;
+      script.src = `https://www.googletagmanager.com/gtag/js?id=${GA4_MEASUREMENT_ID}`;
+      script.onload = () => resolve(true);
+      script.onerror = () => resolve(false);
+      document.head.appendChild(script);
+    });
+  }
+
+  return ga4LoadPromise;
+};
+
 const pushAnalyticsEvent = (eventName, eventParams = {}) => {
   window.dataLayer = window.dataLayer || [];
   window.dataLayer.push({
     event: eventName,
     ...eventParams,
   });
-  if (typeof window.gtag === "function") {
-    window.gtag("event", eventName, eventParams);
-  }
+  loadGa4DirectEvents().then((loaded) => {
+    if (loaded && typeof window.gtag === "function") {
+      window.gtag("event", eventName, eventParams);
+    }
+  });
 };
 
 document.querySelectorAll("[data-inquiry-form]").forEach((inquiryForm) => {

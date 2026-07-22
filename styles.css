@@ -2129,6 +2129,12 @@ body.quote-modal-open {
 }
 
 @media (max-width: 640px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
   .product-type-section {
     padding: 48px 0 38px;
   }
@@ -7100,7 +7106,7 @@ body.is-video-lightbox-open {
 
 @media (max-width: 640px) {
   .container {
-    width: min(100% - 28px, var(--max));
+    width: min(var(--max), calc(100% - 28px));
   }
 
   .about-profile-copy {
@@ -7738,5 +7744,50 @@ body.is-video-lightbox-open {
 
   .blog-article-cta {
     padding: 26px 22px;
+  }
+}
+
+@media (max-width: 640px) {
+  .topbar .container {
+    max-width: calc(100vw - 28px);
+    overflow-wrap: anywhere;
+  }
+
+  .products-page-hero {
+    overflow: hidden;
+    padding: 56px 0 40px;
+  }
+
+  .products-page-hero .container {
+    width: calc(100vw - 28px) !important;
+    max-width: calc(100vw - 28px) !important;
+  }
+
+  .products-page-hero p {
+    width: 100%;
+    max-width: 100%;
+    overflow-wrap: break-word;
+  }
+
+  .products-page-hero .products-category-section-inline {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 34px;
+  }
+
+  .products-page-hero .products-category-nav,
+  .products-category-nav {
+    width: calc(100vw - 28px) !important;
+    max-width: calc(100vw - 28px) !important;
+    padding: 0;
+    gap: 10px 8px;
+  }
+
+  .products-category-nav a {
+    justify-content: center;
+    max-width: calc(100vw - 32px);
+    padding: 10px 14px;
+    white-space: normal;
+    text-align: center;
   }
 }

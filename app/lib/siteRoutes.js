@@ -162,5 +162,21 @@ export const blogArticles = Object.fromEntries(
 
 export const normalizeSiteHtml = (html) =>
   html
+    .replace(
+      /(<a class="mega-product"[^>]*>\s*)<img(?![^>]*\bloading=)(?![^>]*\bfetchpriority=)/g,
+      '$1<img loading="lazy" decoding="async"',
+    )
+    .replace(
+      /(<article class="product-type-card"[^>]*>\s*)<img(?![^>]*\bloading=)(?![^>]*\bfetchpriority=)/g,
+      '$1<img loading="lazy" decoding="async"',
+    )
+    .replace(
+      /(<a class="single-product-related-media"[^>]*>\s*)<img(?![^>]*\bloading=)(?![^>]*\bfetchpriority=)/g,
+      '$1<img loading="lazy" decoding="async"',
+    )
+    .replace(
+      /(<div class="cert">\s*)<img(?![^>]*\bloading=)(?![^>]*\bfetchpriority=)/g,
+      '$1<img loading="lazy" decoding="async"',
+    )
     .replaceAll('src="assets/', 'src="/assets/')
     .replaceAll('href="assets/', 'href="/assets/');
