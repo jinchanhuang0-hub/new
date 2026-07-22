@@ -308,6 +308,14 @@ if (productData && window.location.pathname.includes("product-detail")) {
 const getFormNotice = (form) => form.querySelector("[data-form-notice]")
   || form.closest(".contact-card, .product-inquiry-card, .contact-layout")?.querySelector("[data-form-notice]");
 
+const pushAnalyticsEvent = (eventName, eventParams = {}) => {
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({
+    event: eventName,
+    ...eventParams,
+  });
+};
+
 document.querySelectorAll("[data-inquiry-form]").forEach((inquiryForm) => {
   inquiryForm.addEventListener("submit", async (event) => {
     event.preventDefault();
@@ -344,6 +352,12 @@ document.querySelectorAll("[data-inquiry-form]").forEach((inquiryForm) => {
         notice.style.color = "var(--navy)";
         notice.textContent = "Thank you for your inquiry. Our team will reply within 1 business day.";
       }
+      pushAnalyticsEvent("generate_lead", {
+        form_location: inquiryForm.closest(".product-inquiry-card") ? "product_quote_modal" : "contact_page",
+        product_name: String(formData.get("product") || ""),
+        page_location: window.location.href,
+        page_title: document.title,
+      });
       inquiryForm.reset();
     } catch (error) {
       if (notice) {
@@ -378,6 +392,11 @@ const openProductInquiryModal = (productName = "") => {
   modal.hidden = false;
   modal.classList.add("is-open");
   document.body.classList.add("quote-modal-open");
+  pushAnalyticsEvent("quote_modal_open", {
+    product_name: productName,
+    page_location: window.location.href,
+    page_title: document.title,
+  });
   modal.querySelector(".product-inquiry-card input, .product-inquiry-card select, .product-inquiry-card textarea, .product-inquiry-card button")?.focus();
   return true;
 };
