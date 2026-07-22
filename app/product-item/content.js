@@ -1,4 +1,5 @@
 import StaticPage from "../components/StaticPage";
+import { getProductPath } from "../lib/siteRoutes";
 
 export const productItems = {
   "green-character-soft-enamel-pin-set": {
@@ -451,6 +452,19 @@ export const productItems = {
   }
 };
 
+const trimMetaDescription = (value) => {
+  if (value.length <= 158) return value;
+  return `${value.slice(0, 155).replace(/\s+\S*$/, "")}...`;
+};
+
+export const getProductItemMetaDescription = (item) => {
+  const category = (item.quoteProduct || item.categoryLabel || "metal gifts").toLowerCase();
+  const usage = item.usage ? item.usage.toLowerCase() : "brand and event orders";
+  const description = `${item.title} custom ${category} for ${usage}. OEM/ODM support, artwork review and export quotation from Unique Pin.`;
+
+  return trimMetaDescription(description);
+};
+
 export async function generateMetadata({ searchParams }) {
   const params = await searchParams;
   const requestedItem = params?.item || Object.keys(productItems)[0];
@@ -458,7 +472,7 @@ export async function generateMetadata({ searchParams }) {
 
   return {
     title: `${item.title} | Product Detail | Unique Pin`,
-    description: item.lead
+    description: getProductItemMetaDescription(item)
   };
 }
 
@@ -602,12 +616,16 @@ const buildRelatedProductsHtml = (currentSlug, item) => {
 
   return relatedProducts.map(([slug, product]) => {
     const description = product.lead.split(".")[0] + ".";
+    const productPath = getProductPath(slug, product);
     return `
           <article class="single-product-related-card">
-            <img src="${escapeHtml(product.image)}" alt="${escapeHtml(product.alt || product.title)}">
-            <h3>${escapeHtml(product.title)}</h3>
+            <a class="single-product-related-media" href="${escapeHtml(productPath)}"><img src="${escapeHtml(product.image)}" alt="${escapeHtml(product.alt || product.title)}"></a>
+            <h3><a href="${escapeHtml(productPath)}">${escapeHtml(product.title)}</a></h3>
             <p>${escapeHtml(description)}</p>
-            <a href="/contact" data-product-inquiry-trigger data-product-inquiry-product="${escapeHtml(product.quoteProduct || product.categoryLabel)}">CUSTOMIZE NOW</a>
+            <div class="single-product-related-actions">
+              <a href="${escapeHtml(productPath)}">View Details</a>
+              <a href="/contact" data-product-inquiry-trigger data-product-inquiry-product="${escapeHtml(product.quoteProduct || product.categoryLabel)}">CUSTOMIZE NOW</a>
+            </div>
           </article>`;
   }).join("");
 };

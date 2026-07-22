@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import JsonLd from "../../../components/JsonLd";
 import StaticPage from "../../../components/StaticPage";
 import {
+  getProductItemMetaDescription,
   productItems,
   renderProductItemHtml,
 } from "../../../product-item/content";
@@ -32,7 +33,7 @@ export async function generateMetadata({ params }) {
 
   return {
     title: `${item.title} | Unique Pin`,
-    description: item.lead,
+    description: getProductItemMetaDescription(item),
     alternates: {
       canonical: getProductPath(itemSlug, item),
     },

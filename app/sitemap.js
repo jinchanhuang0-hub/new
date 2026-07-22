@@ -59,7 +59,6 @@ const staticPageFiles = {
   "/contact": ["app/contact/page.jsx"],
   "/blog": ["app/blog/content.js", "app/blog/page.jsx"],
   "/faq": ["app/faq/page.jsx"],
-  "/soft-enamel-pins": ["app/soft-enamel-pins/page.jsx"],
 };
 
 const categoryPageFiles = [
@@ -90,7 +89,6 @@ const staticPages = [
   { path: "/contact", priority: 0.8 },
   { path: "/blog", priority: 0.7 },
   { path: "/faq", priority: 0.65 },
-  { path: "/soft-enamel-pins", priority: 0.75 },
 ];
 
 export default function sitemap() {

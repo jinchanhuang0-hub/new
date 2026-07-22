@@ -75,7 +75,7 @@ export default function StaticPage({ html }) {
           description: "Design custom cufflinks and tie clips for corporate gifts, retail collections, clubs, formal events and branded accessories."
         },
         magnets: {
-          title: "Custom Fridge Magnets Manufacturer | Metal, Enamel & Souvenir Magnets",
+          title: "Custom Fridge Magnets Manufacturer | Souvenir Magnets",
           description: "Order custom fridge magnets for tourist souvenirs, city gifts, event merchandise and retail gift programs with OEM/ODM support."
         }
       };

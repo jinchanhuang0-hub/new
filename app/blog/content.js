@@ -76,7 +76,7 @@ export const blogHtml = String.raw`
         <header class="blog-article-header">
           <a class="blog-back-link" href="/blog">Back to Blog</a>
           <h1>How to Make Your Own Custom Lapel Pins: From Idea to Finished Product</h1>
-          <p>Making your own <a href="/products/custom-enamel-pins">custom lapel pins</a> is not just a design task. For overseas buyers, brand teams, event organizers and promotional distributors, it usually means commissioning a manufacturer rather than making pins by hand. It is a sourcing decision that affects appearance, budget, delivery time and customer satisfaction. A good pin project starts with a clear purpose, practical artwork, suitable materials and a production process that includes sample approval, in-production quality checks and secure export packing.</p>
+          <p>Making your own custom lapel pins is not just a design task. For overseas buyers, brand teams, event organizers and promotional distributors, it usually means commissioning a manufacturer rather than making pins by hand. It is a sourcing decision that affects appearance, budget, delivery time and customer satisfaction. A good pin project starts with a clear purpose, practical artwork, suitable materials and a production process that includes sample approval, in-production quality checks and secure export packing. For commercial styles and quote options, use the <a href="/products/custom-enamel-pins">custom enamel pins manufacturer page</a>.</p>
           <figure class="blog-article-image blog-article-hero-image blog-article-contain-image blog-lapel-pin-hero-image">
             <img src="assets/images/blog-lapel-pin-animal-samples.webp" alt="custom animal enamel lapel pin samples for production review">
           </figure>
@@ -105,10 +105,10 @@ export const blogHtml = String.raw`
 
         <h2>Step 3: Choose the Right Pin Type</h2>
         <h3>Soft Enamel Pins</h3>
-        <p><a href="/products/custom-enamel-pins">Soft enamel pins</a> have raised metal lines and recessed color areas. They are widely used for promotional events, fan merchandise, school clubs and brand campaigns. The textured surface makes the metal details easy to feel by hand. Soft enamel is also practical when buyers need good visual impact at a controlled unit price.</p>
+        <p>Soft enamel pins have raised metal lines and recessed color areas. They are widely used for promotional events, fan merchandise, school clubs and brand campaigns. The textured surface makes the metal details easy to feel by hand. Soft enamel is also practical when buyers need good visual impact at a controlled unit price. See the <a href="/products/custom-enamel-pins">custom enamel pin options</a> page when you are ready to compare styles for a real order.</p>
 
         <h3>Hard Enamel Pins</h3>
-        <p><a href="/products/custom-enamel-pins">Hard enamel pins</a> are filled and polished until the color sits level with the metal. The surface is smooth and usually offers better surface resistance during daily handling. This option is often chosen for retail products, corporate gifts and premium recognition pins. It usually costs more than soft enamel because of the additional polishing process.</p>
+        <p>Hard enamel pins are filled and polished until the color sits level with the metal. The surface is smooth and usually offers better surface resistance during daily handling. This option is often chosen for retail products, corporate gifts and premium recognition pins. It usually costs more than soft enamel because of the additional polishing process.</p>
 
         <h3>Die-Struck and Printed Pins</h3>
         <p>Die-struck pins use raised and recessed metal without enamel color. They are suitable for formal logos, commemorative badges and clean corporate designs. Printed pins are useful for gradients, photographs, QR codes or artwork that is not practical to separate with metal lines. For complex designs, a factory may combine printing with epoxy coating for surface protection.</p>
@@ -138,7 +138,7 @@ export const blogHtml = String.raw`
             <h2>Need a Production Check Before Ordering?</h2>
             <p>Send your logo, target size, quantity and deadline. We can review whether your artwork is suitable for soft enamel, hard enamel, die-struck or printed pins.</p>
           </div>
-          <div class="blog-cta-actions"><a class="btn btn-yellow" href="/contact">Send Your Requirements</a></div>
+          <div class="blog-cta-actions"><a class="btn btn-yellow" href="/contact">Send Your Requirements</a><a class="btn btn-primary" href="/products/custom-enamel-pins">View Enamel Pin Styles</a></div>
         </section>
 
         <h2>Step 5: Confirm MOQ, Sample Lead Time and Production Time</h2>
@@ -190,7 +190,7 @@ export const blogHtml = String.raw`
             <h2>Ready to Make Your Own Custom Lapel Pins?</h2>
             <p>Send your artwork, quantity and delivery deadline. Unique Pin can review the design, recommend suitable materials and prepare a clear quotation for custom lapel pins.</p>
           </div>
-          <div class="blog-cta-actions"><a class="btn btn-yellow" href="/contact">Get a Quote</a><a class="btn btn-primary" href="/contact">Ask for Product Catalog</a></div>
+          <div class="blog-cta-actions"><a class="btn btn-yellow" href="/contact">Get a Quote</a><a class="btn btn-primary" href="/products/custom-enamel-pins">View Enamel Pin Options</a></div>
         </section>
       </div>
     </article>
@@ -371,7 +371,7 @@ export const blogHtml = String.raw`
 
         <h2>Artwork Preparation Before Production</h2>
         <p>Artwork quality affects the final result. Buyers should prepare logo files, size, quantity, plating preference, Pantone colors, back attachment and packaging requirements before requesting a quote. Thin lines, small text and complex gradients may need adjustment before mold creation.</p>
-        <p>A reliable custom enamel pin manufacturer should review the artwork before production, explain any technical limits and recommend a practical process. This helps prevent problems such as color bleeding, unclear letters or weak metal lines.</p>
+        <p>A reliable manufacturer should review the artwork before production, explain any technical limits and recommend a practical process. This helps prevent problems such as color bleeding, unclear letters or weak metal lines. For production styles, materials and quote details, start from the <a href="/products/custom-enamel-pins">custom enamel pins category page</a>.</p>
 
         <h2>Factory Quality Checks and Pre-Shipment Inspection</h2>
         <p>During production, factory quality checks should cover enamel filling, plating quality, surface cleanliness and back attachment strength. A pre-shipment inspection should review color consistency, scratches, metal edges, packaging condition, quantity and carton labels.</p>
@@ -381,7 +381,7 @@ export const blogHtml = String.raw`
             <h2>Need Help Choosing the Right Enamel Finish?</h2>
             <p>Send your design, quantity, target price and product application. We can recommend soft enamel, hard enamel or epoxy options based on your order requirements.</p>
           </div>
-          <div class="blog-cta-actions"><a class="btn btn-yellow" href="/contact">Get a Quote</a></div>
+          <div class="blog-cta-actions"><a class="btn btn-yellow" href="/contact">Get a Quote</a><a class="btn btn-primary" href="/products/custom-enamel-pins">View Pin Styles</a></div>
         </section>
 
         <h2>Conclusion</h2>
@@ -442,7 +442,7 @@ export const blogHtml = String.raw`
         <p>A pre-shipment inspection should verify plating consistency, enamel filling, edge quality, ribbon assembly, packaging accuracy, quantity and carton condition. Event orders require careful schedule control because missing pieces or damaged packaging can affect the ceremony.</p>
 
         <h2>Conclusion</h2>
-        <p>Medals are ideal for achievement, events and ceremonies. Challenge coins are better suited to identity, service, membership and collectible value. The right product should match the purpose, recipient and delivery schedule.</p>
+        <p>Medals are ideal for achievement, events and ceremonies. Challenge coins are better suited to identity, service, membership and collectible value. The right product should match the purpose, recipient and delivery schedule. For commercial options, compare our <a href="/products/custom-medals">custom medals</a> and <a href="/products/custom-challenge-coins">custom challenge coins</a> category pages.</p>
 
         <section class="blog-article-cta">
           <div class="blog-cta-copy">

@@ -1,6 +1,6 @@
 const staticHtmlRedirects = [
   ["products.html", "/products"],
-  ["soft-enamel-pins.html", "/soft-enamel-pins"],
+  ["soft-enamel-pins.html", "/products/custom-enamel-pins"],
   ["custom.html", "/custom"],
   ["about.html", "/about"],
   ["blog.html", "/blog"],
@@ -19,6 +19,11 @@ const nextConfig = {
       {
         source: "/index.html",
         destination: "/",
+        statusCode: 301
+      },
+      {
+        source: "/soft-enamel-pins",
+        destination: "/products/custom-enamel-pins",
         statusCode: 301
       },
       ...staticHtmlRedirects,

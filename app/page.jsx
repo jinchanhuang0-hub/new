@@ -1,7 +1,7 @@
 import StaticPage from "./components/StaticPage";
 
 export const metadata = {
-  title: "Custom Metal Gifts Manufacturer | Enamel Pins, Medals & Challenge Coins",
+  title: "Custom Metal Gifts Manufacturer | Pins, Medals & Coins",
   description: "Unique Pin is a China OEM/ODM custom metal gifts manufacturer with 20+ years of experience, low MOQ, free artwork support, fast sampling and global delivery.",
   alternates: {
     canonical: "https://uccrafts.com/"
