@@ -2,6 +2,20 @@ import StaticPage from "../components/StaticPage";
 import { getProductPath } from "../lib/siteRoutes";
 
 export const productItems = {
+  "christmas-enamel-pin-set": {
+    title: "Christmas Enamel Pin Set",
+    image: "assets/images/latest-christmas-enamel-pins.jpg",
+    alt: "Christmas enamel pin set",
+    categoryLabel: "Lapel Pins",
+    categoryHref: "/products/custom-enamel-pins",
+    material: "Zinc alloy",
+    process: "Die casting and enamel filling",
+    sku: "UP-PIN-105",
+    usage: "Holiday promotions, retail gifts, events",
+    categories: "Lapel Pins, Christmas Enamel Pins",
+    quoteProduct: "Christmas Enamel Pins",
+    lead: "This Christmas enamel pin set includes festive pin designs for holiday retail programs, brand campaigns, gift boxes and seasonal event merchandise."
+  },
   "green-character-soft-enamel-pin-set": {
     title: "Green Character Soft Enamel Pin Set",
     image: "assets/images/type-pins-soft-enamel.jpg",
@@ -85,6 +99,20 @@ export const productItems = {
     categories: "Challenge Coins, Double Sided Coins",
     quoteProduct: "Challenge Coins",
     lead: "This double sided challenge coin carries detailed artwork on both faces with antique metal finishing. It fits anniversary events, recognition ceremonies, unit gifts and collector programs."
+  },
+  "christmas-bell-challenge-coin": {
+    title: "Christmas Bell Challenge Coin",
+    image: "assets/images/latest-christmas-bell-challenge-coin.jpg",
+    alt: "Christmas bell challenge coin",
+    categoryLabel: "Challenge Coins",
+    categoryHref: "/products/custom-challenge-coins",
+    material: "Zinc alloy",
+    process: "Die casting",
+    sku: "UP-COIN-105",
+    usage: "Holiday gifts, commemorations, brand campaigns",
+    categories: "Challenge Coins, Christmas Coins",
+    quoteProduct: "Christmas Challenge Coins",
+    lead: "This Christmas bell challenge coin uses festive raised relief and plated metal details for holiday gifts, commemorative campaigns, seasonal collections and presentation sets."
   },
   "cut-shape-route-map-challenge-coin": {
     title: "Cut Shape Route Map Challenge Coin",

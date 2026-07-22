@@ -65,12 +65,14 @@ export const getProductPath = (itemSlug, item) =>
   `${getCategoryPath(getCategoryKeyForItem(item))}/${itemSlug}`;
 
 export const productItemCategoryKey = {
+  "christmas-enamel-pin-set": "pins",
   "green-character-soft-enamel-pin-set": "pins",
   "box-cat-and-umbrella-cat-enamel-pins": "pins",
   "antique-silver-guitar-crest-enamel-pin": "pins",
   "glitter-tour-truck-printed-enamel-pin": "pins",
   "3d-antique-firefighter-challenge-coins": "coins",
   "double-sided-anniversary-challenge-coin": "coins",
+  "christmas-bell-challenge-coin": "coins",
   "cut-shape-route-map-challenge-coin": "coins",
   "antique-military-squadron-challenge-coins": "coins",
   "silver-basketball-sports-medal-with-ribbon": "medals",
