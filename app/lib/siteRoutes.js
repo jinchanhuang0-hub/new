@@ -160,43 +160,7 @@ export const blogArticles = Object.fromEntries(
   ]),
 );
 
-export const normalizeSiteHtml = (html) => {
-  let normalized = html
+export const normalizeSiteHtml = (html) =>
+  html
     .replaceAll('src="assets/', 'src="/assets/')
-    .replaceAll('href="assets/', 'href="/assets/')
-    .replaceAll('href="products.html"', 'href="/products"')
-    .replaceAll('href="custom.html"', 'href="/custom"')
-    .replaceAll('href="about.html"', 'href="/about"')
-    .replaceAll('href="blog.html"', 'href="/blog"')
-    .replaceAll('href="faq.html"', 'href="/faq"')
-    .replaceAll('href="contact.html"', 'href="/contact"')
-    .replaceAll('href="soft-enamel-pins.html"', 'href="/soft-enamel-pins"');
-
-  for (const [key, category] of Object.entries(productCategories)) {
-    normalized = normalized
-      .replaceAll(
-        `href="product-detail.html?product=${key}#custom-details"`,
-        `href="/products/${category.slug}"`,
-      )
-      .replaceAll(
-        `href="product-detail.html?product=${key}"`,
-        `href="/products/${category.slug}"`,
-      );
-  }
-
-  for (const [slug, categoryKey] of Object.entries(productItemCategoryKey)) {
-    normalized = normalized.replaceAll(
-      `href="product-item.html?item=${slug}"`,
-      `href="${getCategoryPath(categoryKey)}/${slug}"`,
-    );
-  }
-
-  for (const slug of Object.keys(blogArticles)) {
-    normalized = normalized
-      .replaceAll(`href="blog.html#${slug}"`, `href="/blog/${slug}"`)
-      .replaceAll(`href="/blog#${slug}"`, `href="/blog/${slug}"`)
-      .replaceAll(`href="/blog/${slug}#${slug}"`, `href="/blog/${slug}"`);
-  }
-
-  return normalized;
-};
+    .replaceAll('href="assets/', 'href="/assets/');

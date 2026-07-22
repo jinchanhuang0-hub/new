@@ -6,7 +6,7 @@ export const productItems = {
     image: "assets/images/type-pins-soft-enamel.jpg",
     alt: "Green character soft enamel pin set",
     categoryLabel: "Lapel Pins",
-    categoryHref: "product-detail.html?product=pins",
+    categoryHref: "/products/custom-enamel-pins",
     material: "Zinc alloy",
     process: "Die casting",
     sku: "UP-PIN-101",
@@ -20,7 +20,7 @@ export const productItems = {
     image: "assets/images/type-pins-hard-enamel.jpg",
     alt: "Box cat and umbrella cat hard enamel pins",
     categoryLabel: "Lapel Pins",
-    categoryHref: "product-detail.html?product=pins",
+    categoryHref: "/products/custom-enamel-pins",
     material: "Zinc alloy",
     process: "Die casting",
     sku: "UP-PIN-102",
@@ -34,7 +34,7 @@ export const productItems = {
     image: "assets/images/type-pins-die-struck.jpg",
     alt: "Antique silver guitar crest enamel pin",
     categoryLabel: "Lapel Pins",
-    categoryHref: "product-detail.html?product=pins",
+    categoryHref: "/products/custom-enamel-pins",
     material: "Zinc alloy",
     process: "Die casting",
     sku: "UP-PIN-103",
@@ -48,7 +48,7 @@ export const productItems = {
     image: "assets/images/type-pins-printed.jpg",
     alt: "Glitter tour truck printed enamel pin",
     categoryLabel: "Lapel Pins",
-    categoryHref: "product-detail.html?product=pins",
+    categoryHref: "/products/custom-enamel-pins",
     material: "Zinc alloy",
     process: "Printing and enamel filling",
     sku: "UP-PIN-104",
@@ -62,7 +62,7 @@ export const productItems = {
     image: "assets/images/type-coins-3d.jpg",
     alt: "3D antique firefighter challenge coins",
     categoryLabel: "Challenge Coins",
-    categoryHref: "product-detail.html?product=coins",
+    categoryHref: "/products/custom-challenge-coins",
     material: "Zinc alloy",
     process: "Die casting",
     sku: "UP-COIN-101",
@@ -76,7 +76,7 @@ export const productItems = {
     image: "assets/images/type-coins-double-sided.jpg",
     alt: "Double sided anniversary challenge coin",
     categoryLabel: "Challenge Coins",
-    categoryHref: "product-detail.html?product=coins",
+    categoryHref: "/products/custom-challenge-coins",
     material: "Zinc alloy",
     process: "Die casting",
     sku: "UP-COIN-102",
@@ -90,7 +90,7 @@ export const productItems = {
     image: "assets/images/type-coins-cut-shape.jpg",
     alt: "Cut shape route map challenge coin",
     categoryLabel: "Challenge Coins",
-    categoryHref: "product-detail.html?product=coins",
+    categoryHref: "/products/custom-challenge-coins",
     material: "Zinc alloy",
     process: "Die casting",
     sku: "UP-COIN-103",
@@ -104,7 +104,7 @@ export const productItems = {
     image: "assets/images/type-coins-antique.jpg",
     alt: "Antique military squadron challenge coins",
     categoryLabel: "Challenge Coins",
-    categoryHref: "product-detail.html?product=coins",
+    categoryHref: "/products/custom-challenge-coins",
     material: "Zinc alloy",
     process: "Die casting",
     sku: "UP-COIN-104",
@@ -118,7 +118,7 @@ export const productItems = {
     image: "assets/images/type-medals-sports.png",
     alt: "Silver basketball sports medal with ribbon",
     categoryLabel: "Medals",
-    categoryHref: "product-detail.html?product=medals",
+    categoryHref: "/products/custom-medals",
     material: "Zinc alloy",
     process: "Die casting",
     sku: "UP-MEDAL-101",
@@ -132,7 +132,7 @@ export const productItems = {
     image: "assets/images/type-medals-3d.png",
     alt: "3D shield logo award medal",
     categoryLabel: "Medals",
-    categoryHref: "product-detail.html?product=medals",
+    categoryHref: "/products/custom-medals",
     material: "Zinc alloy",
     process: "Die casting",
     sku: "UP-MEDAL-102",
@@ -146,7 +146,7 @@ export const productItems = {
     image: "assets/images/type-medals-award.png",
     alt: "Silver race award medal with ribbon",
     categoryLabel: "Medals",
-    categoryHref: "product-detail.html?product=medals",
+    categoryHref: "/products/custom-medals",
     material: "Zinc alloy",
     process: "Die casting",
     sku: "UP-MEDAL-103",
@@ -160,7 +160,7 @@ export const productItems = {
     image: "assets/images/type-medals-ribbon.png",
     alt: "Blue marathon ribbon medal",
     categoryLabel: "Medals",
-    categoryHref: "product-detail.html?product=medals",
+    categoryHref: "/products/custom-medals",
     material: "Zinc alloy",
     process: "Die casting",
     sku: "UP-MEDAL-104",
@@ -174,7 +174,7 @@ export const productItems = {
     image: "assets/images/type-keychains-metal.jpg",
     alt: "Colorful flower metal keychains",
     categoryLabel: "Keychains",
-    categoryHref: "product-detail.html?product=keychains",
+    categoryHref: "/products/custom-metal-keychains",
     material: "Zinc alloy",
     process: "Die casting",
     sku: "UP-KEY-101",
@@ -188,7 +188,7 @@ export const productItems = {
     image: "assets/images/type-keychains-enamel.jpg",
     alt: "Palm island enamel keychain",
     categoryLabel: "Keychains",
-    categoryHref: "product-detail.html?product=keychains",
+    categoryHref: "/products/custom-metal-keychains",
     material: "Zinc alloy",
     process: "Die casting",
     sku: "UP-KEY-102",
@@ -202,7 +202,7 @@ export const productItems = {
     image: "assets/images/type-keychains-opener.jpg",
     alt: "Round school logo keychain",
     categoryLabel: "Keychains",
-    categoryHref: "product-detail.html?product=keychains",
+    categoryHref: "/products/custom-metal-keychains",
     material: "Zinc alloy",
     process: "Die casting",
     sku: "UP-KEY-103",
@@ -216,7 +216,7 @@ export const productItems = {
     image: "assets/images/type-keychains-spinner.jpg",
     alt: "Travel charm spinner keychain",
     categoryLabel: "Keychains",
-    categoryHref: "product-detail.html?product=keychains",
+    categoryHref: "/products/custom-metal-keychains",
     material: "Zinc alloy",
     process: "Die casting",
     sku: "UP-KEY-104",
@@ -230,7 +230,7 @@ export const productItems = {
     image: "assets/images/type-buckles-western.jpg",
     alt: "Western skull relief belt buckle",
     categoryLabel: "Belt Buckles",
-    categoryHref: "product-detail.html?product=buckles",
+    categoryHref: "/products/custom-belt-buckles",
     material: "Zinc alloy",
     process: "Die casting",
     sku: "UP-BUCKLE-101",
@@ -244,7 +244,7 @@ export const productItems = {
     image: "assets/images/type-buckles-logo.jpg",
     alt: "Oval relief logo metal belt buckle",
     categoryLabel: "Belt Buckles",
-    categoryHref: "product-detail.html?product=buckles",
+    categoryHref: "/products/custom-belt-buckles",
     material: "Zinc alloy",
     process: "Die casting",
     sku: "UP-BUCKLE-102",
@@ -258,7 +258,7 @@ export const productItems = {
     image: "assets/images/type-buckles-antique.jpg",
     alt: "Antique silver rectangle logo belt buckle",
     categoryLabel: "Belt Buckles",
-    categoryHref: "product-detail.html?product=buckles",
+    categoryHref: "/products/custom-belt-buckles",
     material: "Zinc alloy",
     process: "Die casting",
     sku: "UP-BUCKLE-103",
@@ -272,7 +272,7 @@ export const productItems = {
     image: "assets/images/type-buckles-enamel.jpg",
     alt: "Oval club logo enamel belt buckle",
     categoryLabel: "Belt Buckles",
-    categoryHref: "product-detail.html?product=buckles",
+    categoryHref: "/products/custom-belt-buckles",
     material: "Zinc alloy",
     process: "Die casting",
     sku: "UP-BUCKLE-104",
@@ -286,7 +286,7 @@ export const productItems = {
     image: "assets/images/type-golf-ball-marker.jpg",
     alt: "Antique golf club divot tool ball marker",
     categoryLabel: "Golf Ball Markers & Hat Clips",
-    categoryHref: "product-detail.html?product=golf-accessories",
+    categoryHref: "/products/custom-golf-accessories",
     material: "Zinc alloy",
     process: "Die casting",
     sku: "UP-GOLF-101",
@@ -300,7 +300,7 @@ export const productItems = {
     image: "assets/images/type-golf-hat-clip.jpg",
     alt: "Avocado golf hat clip ball marker",
     categoryLabel: "Golf Ball Markers & Hat Clips",
-    categoryHref: "product-detail.html?product=golf-accessories",
+    categoryHref: "/products/custom-golf-accessories",
     material: "Zinc alloy",
     process: "Die casting",
     sku: "UP-GOLF-102",
@@ -314,7 +314,7 @@ export const productItems = {
     image: "assets/images/type-golf-divot-tool.jpg",
     alt: "Color logo golf divot tool set",
     categoryLabel: "Golf Ball Markers & Hat Clips",
-    categoryHref: "product-detail.html?product=golf-accessories",
+    categoryHref: "/products/custom-golf-accessories",
     material: "Zinc alloy",
     process: "Die casting",
     sku: "UP-GOLF-103",
@@ -328,7 +328,7 @@ export const productItems = {
     image: "assets/images/type-openers-coin.jpg",
     alt: "Playing card metal bottle opener",
     categoryLabel: "Bottle Openers",
-    categoryHref: "product-detail.html?product=bottle-openers",
+    categoryHref: "/products/custom-bottle-openers",
     material: "Zinc alloy",
     process: "Die casting",
     sku: "UP-OPEN-101",
@@ -342,7 +342,7 @@ export const productItems = {
     image: "assets/images/type-openers-keychain.jpg",
     alt: "Skull coin keychain bottle opener",
     categoryLabel: "Bottle Openers",
-    categoryHref: "product-detail.html?product=bottle-openers",
+    categoryHref: "/products/custom-bottle-openers",
     material: "Zinc alloy",
     process: "Die casting",
     sku: "UP-OPEN-102",
@@ -356,7 +356,7 @@ export const productItems = {
     image: "assets/images/type-cufflinks-metal.jpg",
     alt: "Blue carbon fiber metal cufflinks",
     categoryLabel: "Cufflinks & Tie Clips",
-    categoryHref: "product-detail.html?product=cufflinks-tieclips",
+    categoryHref: "/products/custom-cufflinks-tie-clips",
     material: "Stainless steel",
     process: "Polishing and inlay",
     sku: "UP-CUFF-101",
@@ -370,7 +370,7 @@ export const productItems = {
     image: "assets/images/type-cufflinks-enamel.jpg",
     alt: "Color plated metal tie clips",
     categoryLabel: "Cufflinks & Tie Clips",
-    categoryHref: "product-detail.html?product=cufflinks-tieclips",
+    categoryHref: "/products/custom-cufflinks-tie-clips",
     material: "Stainless steel",
     process: "Stamping and plating",
     sku: "UP-CUFF-102",
@@ -384,7 +384,7 @@ export const productItems = {
     image: "assets/images/type-tie-clips-logo.jpg",
     alt: "Black skull logo cufflinks",
     categoryLabel: "Cufflinks & Tie Clips",
-    categoryHref: "product-detail.html?product=cufflinks-tieclips",
+    categoryHref: "/products/custom-cufflinks-tie-clips",
     material: "Stainless steel",
     process: "Polishing and plating",
     sku: "UP-CUFF-103",
@@ -398,7 +398,7 @@ export const productItems = {
     image: "assets/images/type-magnets-enamel.png",
     alt: "Ornate building enamel fridge magnet",
     categoryLabel: "Fridge Magnets",
-    categoryHref: "product-detail.html?product=magnets",
+    categoryHref: "/products/custom-fridge-magnets",
     material: "Zinc alloy",
     process: "Die casting",
     sku: "UP-MAG-101",
@@ -412,7 +412,7 @@ export const productItems = {
     image: "assets/images/type-magnets-3d.png",
     alt: "Ferris wheel 3D metal fridge magnet",
     categoryLabel: "Fridge Magnets",
-    categoryHref: "product-detail.html?product=magnets",
+    categoryHref: "/products/custom-fridge-magnets",
     material: "Zinc alloy",
     process: "Die casting",
     sku: "UP-MAG-102",
@@ -426,7 +426,7 @@ export const productItems = {
     image: "assets/images/type-magnets-soft-pvc.png",
     alt: "Cartoon character soft fridge magnet",
     categoryLabel: "Fridge Magnets",
-    categoryHref: "product-detail.html?product=magnets",
+    categoryHref: "/products/custom-fridge-magnets",
     material: "Soft PVC",
     process: "PVC molding",
     sku: "UP-MAG-103",
@@ -440,7 +440,7 @@ export const productItems = {
     image: "assets/images/type-magnets-souvenir.png",
     alt: "City landmark souvenir fridge magnet",
     categoryLabel: "Fridge Magnets",
-    categoryHref: "product-detail.html?product=magnets",
+    categoryHref: "/products/custom-fridge-magnets",
     material: "Zinc alloy",
     process: "Die casting",
     sku: "UP-MAG-104",
@@ -465,7 +465,7 @@ export async function generateMetadata({ searchParams }) {
 const html = String.raw`
   <script type="application/json" data-product-item-data>${JSON.stringify(productItems)}</script>
   <div class="topbar"><div class="container"><span>Professional OEM/ODM Manufacturer Since 2003</span><span>Email: ceo@chinauniquepin.com | WhatsApp: +86 18895316838</span></div></div>
-  <header class="site-header"><div class="container nav-wrap"><a class="brand" href="/"><img src="assets/images/logo.png" alt="Unique Pin logo"><span><strong>Unique Pin</strong><span>Custom Metal Gifts Factory</span></span></a><nav class="nav" aria-label="Main navigation"><a href="/">Home</a><div class="nav-item products-menu"><a class="active" href="products.html">Products</a></div><a href="custom.html">Custom</a><a href="about.html">About Us</a><a href="blog.html">Blog</a><a href="contact.html">Contact Us</a></nav><div class="nav-actions"><a class="btn btn-primary" href="contact.html">Get Free Quote</a><button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">&#9776;</button></div></div></header>
+  <header class="site-header"><div class="container nav-wrap"><a class="brand" href="/"><img src="assets/images/logo.png" alt="Unique Pin logo"><span><strong>Unique Pin</strong><span>Custom Metal Gifts Factory</span></span></a><nav class="nav" aria-label="Main navigation"><a href="/">Home</a><div class="nav-item products-menu"><a class="active" href="/products">Products</a></div><a href="/custom">Custom</a><a href="/about">About Us</a><a href="/blog">Blog</a><a href="/contact">Contact Us</a></nav><div class="nav-actions"><a class="btn btn-primary" href="/contact">Get Free Quote</a><button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">&#9776;</button></div></div></header>
 
   <main class="single-product-page" data-product-item-page>
     <section class="single-product-hero">
@@ -474,9 +474,9 @@ const html = String.raw`
           <nav class="single-product-breadcrumbs" aria-label="Breadcrumb">
             <a href="/">Home</a>
             <span class="breadcrumb-separator" aria-hidden="true">&gt;</span>
-            <a href="products.html">Products</a>
+            <a href="/products">Products</a>
             <span class="breadcrumb-separator" aria-hidden="true">&gt;</span>
-            <a href="product-detail.html?product=pins" data-product-item-category-link><span data-product-item-category>Lapel Pins</span></a>
+            <a href="/products/custom-enamel-pins" data-product-item-category-link><span data-product-item-category>Lapel Pins</span></a>
             <span class="breadcrumb-separator" aria-hidden="true">&gt;</span>
             <span data-product-item-title>Green Character Soft Enamel Pin Set</span>
           </nav>
@@ -498,7 +498,7 @@ const html = String.raw`
             <div><strong>Usage</strong><span data-product-spec="usage">Brand events, clubs, retail gifts</span></div>
             <div><strong>Categories</strong><span data-product-spec="categories">Lapel Pins, Soft Enamel Pins</span></div>
           </div>
-          <a class="single-product-inquiry" href="contact.html" data-product-inquiry-trigger data-product-inquiry-product="Lapel Pins">GET A QUOTE</a>
+          <a class="single-product-inquiry" href="/contact" data-product-inquiry-trigger data-product-inquiry-product="Lapel Pins">GET A QUOTE</a>
           <div class="single-product-quote-benefits" aria-label="Quote benefits">
             <div><span class="quote-benefit-icon quote-benefit-icon-moq" aria-hidden="true"></span><span>NO MOQ</span></div>
             <div><span class="quote-benefit-icon quote-benefit-icon-design" aria-hidden="true"></span><span>FREE DESIGN</span></div>
@@ -587,7 +587,7 @@ const html = String.raw`
     </div>
   </main>
 
-  <footer class="site-footer"><div class="container footer-grid"><div class="footer-logo-wrap"><img class="footer-logo" src="assets/images/logo.png" alt="Unique Pin logo"></div><div><h4>Products</h4><a href="products.html">Custom Enamel Pins</a><a href="products.html">Custom Medals</a><a href="products.html">Challenge Coins</a><a href="products.html">Keychains</a></div><div><h4>Get Started</h4><a href="custom.html">Custom</a><a href="about.html">About Us</a><a href="blog.html">Blog</a><a href="faq.html">FAQ</a></div><div><h4>Contact</h4><a href="mailto:ceo@chinauniquepin.com">Email: ceo@chinauniquepin.com</a><a href="tel:+86076022831989">Phone: +86 0760 22831989</a><p>Building A, 1st Floor, No. 7 Xingyu Road, Xiaolan Town, Zhongshan City, Guangdong, China</p></div></div><div class="container footer-bottom"><span>&copy; 2026 Unique Pin. All rights reserved.</span></div></footer>`;
+  <footer class="site-footer"><div class="container footer-grid"><div class="footer-logo-wrap"><img class="footer-logo" src="assets/images/logo.png" alt="Unique Pin logo"></div><div><h4>Products</h4><a href="/products">Custom Enamel Pins</a><a href="/products">Custom Medals</a><a href="/products">Challenge Coins</a><a href="/products">Keychains</a></div><div><h4>Get Started</h4><a href="/custom">Custom</a><a href="/about">About Us</a><a href="/blog">Blog</a><a href="/faq">FAQ</a></div><div><h4>Contact</h4><a href="mailto:ceo@chinauniquepin.com">Email: ceo@chinauniquepin.com</a><a href="tel:+86076022831989">Phone: +86 0760 22831989</a><p>Building A, 1st Floor, No. 7 Xingyu Road, Xiaolan Town, Zhongshan City, Guangdong, China</p></div></div><div class="container footer-bottom"><span>&copy; 2026 Unique Pin. All rights reserved.</span></div></footer>`;
 
 const escapeHtml = (value = "") => String(value)
   .replaceAll("&", "&amp;")
@@ -607,7 +607,7 @@ const buildRelatedProductsHtml = (currentSlug, item) => {
             <img src="${escapeHtml(product.image)}" alt="${escapeHtml(product.alt || product.title)}">
             <h3>${escapeHtml(product.title)}</h3>
             <p>${escapeHtml(description)}</p>
-            <a href="contact.html" data-product-inquiry-trigger data-product-inquiry-product="${escapeHtml(product.quoteProduct || product.categoryLabel)}">CUSTOMIZE NOW</a>
+            <a href="/contact" data-product-inquiry-trigger data-product-inquiry-product="${escapeHtml(product.quoteProduct || product.categoryLabel)}">CUSTOMIZE NOW</a>
           </article>`;
   }).join("");
 };

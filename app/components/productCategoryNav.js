@@ -14,10 +14,10 @@ const productCategories = [
 
 export function productCategoryNavHtml({ active = "all", mode = "links", variant = "section" } = {}) {
   const isFilterMode = mode === "filter";
-  const allHref = isFilterMode ? "/products" : "products.html";
+  const allHref = "/products";
   const allData = isFilterMode ? ' data-product-filter="all"' : ' data-product-nav="all"';
   const categoryLinks = productCategories.map(({ label, slug }) => {
-    const href = isFilterMode ? getCategoryPath(slug) : `product-detail.html?product=${slug}`;
+    const href = getCategoryPath(slug);
     const data = isFilterMode ? ` data-product-filter="${slug}"` : ` data-product-nav="${slug}"`;
     const activeClass = active === slug ? ' class="active"' : "";
     return `<a${activeClass} href="${href}"${data}>${label}</a>`;

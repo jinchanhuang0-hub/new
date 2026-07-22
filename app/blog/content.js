@@ -7,7 +7,7 @@ export const metadata = {
 
 export const blogHtml = String.raw`
   <div class="topbar"><div class="container"><span>Professional OEM/ODM Manufacturer Since 2003</span><span>Email: ceo@chinauniquepin.com | WhatsApp: +86 18895316838</span></div></div>
-  <header class="site-header"><div class="container nav-wrap"><a class="brand" href="/"><img src="assets/images/logo.png" alt="Unique Pin logo"><span><strong>Unique Pin</strong><span>Custom Metal Gifts Factory</span></span></a><nav class="nav" aria-label="Main navigation"><a href="/">Home</a><div class="nav-item products-menu"><a href="products.html">Products</a><div class="mega-dropdown" role="menu" aria-label="Products mega menu"><div class="mega-panel"><div class="mega-featured"><a class="mega-product" href="product-detail.html?product=pins"><img src="assets/images/mega-lapel-pins-auburn.jpg" alt="Custom Auburn lapel pin"><span>Lapel Pins</span><small>Custom enamel pins for brands, events and clubs.</small></a><a class="mega-product" href="product-detail.html?product=medals"><img src="assets/images/mega-medals-butterfly.png" alt="Custom butterfly medal with ribbon"><span>Medals</span><small>Colorful award medals with ribbons and finishes.</small></a><a class="mega-product" href="product-detail.html?product=coins"><img src="assets/images/mega-challenge-coin-christmas.jpg" alt="Custom Christmas challenge coin"><span>Challenge Coins</span><small>Detailed coins for recognition and commemorations.</small></a></div><div class="mega-list"><a href="product-detail.html?product=pins">Lapel Pins</a><a href="product-detail.html?product=coins">Challenge Coins</a><a href="product-detail.html?product=medals">Medals</a><a href="product-detail.html?product=keychains">Keychains</a><a href="product-detail.html?product=buckles">Belt Buckles</a><a href="product-detail.html?product=golf-accessories">Golf Ball Markers &amp;Hat Clips</a><a href="product-detail.html?product=bottle-openers">Bottle Openers</a><a href="product-detail.html?product=cufflinks-tieclips">Cufflinks &amp; Tie Clips</a><a href="product-detail.html?product=magnets">Fridge Magnets</a></div><div class="mega-cta"><div><strong>Need a custom product quote?</strong><span>Send logo, quantity and deadline. We reply within 1 business day.</span></div><a class="btn btn-yellow" href="contact.html">Get Free Quote</a></div></div></div></div><a href="custom.html">Custom</a><a href="about.html">About Us</a><a class="active" href="blog.html">Blog</a><a href="contact.html">Contact Us</a></nav><div class="nav-actions"><a class="btn btn-primary" href="contact.html">Get Free Quote</a><button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">&#9776;</button></div></div></header>
+  <header class="site-header"><div class="container nav-wrap"><a class="brand" href="/"><img src="assets/images/logo.png" alt="Unique Pin logo"><span><strong>Unique Pin</strong><span>Custom Metal Gifts Factory</span></span></a><nav class="nav" aria-label="Main navigation"><a href="/">Home</a><div class="nav-item products-menu"><a href="/products">Products</a><div class="mega-dropdown" role="menu" aria-label="Products mega menu"><div class="mega-panel"><div class="mega-featured"><a class="mega-product" href="/products/custom-enamel-pins"><img src="assets/images/mega-lapel-pins-auburn.jpg" alt="Custom Auburn lapel pin"><span>Lapel Pins</span><small>Custom enamel pins for brands, events and clubs.</small></a><a class="mega-product" href="/products/custom-medals"><img src="assets/images/mega-medals-butterfly.png" alt="Custom butterfly medal with ribbon"><span>Medals</span><small>Colorful award medals with ribbons and finishes.</small></a><a class="mega-product" href="/products/custom-challenge-coins"><img src="assets/images/mega-challenge-coin-christmas.jpg" alt="Custom Christmas challenge coin"><span>Challenge Coins</span><small>Detailed coins for recognition and commemorations.</small></a></div><div class="mega-list"><a href="/products/custom-enamel-pins">Lapel Pins</a><a href="/products/custom-challenge-coins">Challenge Coins</a><a href="/products/custom-medals">Medals</a><a href="/products/custom-metal-keychains">Keychains</a><a href="/products/custom-belt-buckles">Belt Buckles</a><a href="/products/custom-golf-accessories">Golf Ball Markers &amp;Hat Clips</a><a href="/products/custom-bottle-openers">Bottle Openers</a><a href="/products/custom-cufflinks-tie-clips">Cufflinks &amp; Tie Clips</a><a href="/products/custom-fridge-magnets">Fridge Magnets</a></div><div class="mega-cta"><div><strong>Need a custom product quote?</strong><span>Send logo, quantity and deadline. We reply within 1 business day.</span></div><a class="btn btn-yellow" href="/contact">Get Free Quote</a></div></div></div></div><a href="/custom">Custom</a><a href="/about">About Us</a><a class="active" href="/blog">Blog</a><a href="/contact">Contact Us</a></nav><div class="nav-actions"><a class="btn btn-primary" href="/contact">Get Free Quote</a><button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">&#9776;</button></div></div></header>
   <main>
     <section class="page-hero blog-page-hero">
       <div class="container">
@@ -74,7 +74,7 @@ export const blogHtml = String.raw`
     <article id="how-to-make-your-own-custom-lapel-pins" class="section blog-article-section">
       <div class="container blog-article">
         <header class="blog-article-header">
-          <a class="blog-back-link" href="blog.html">Back to Blog</a>
+          <a class="blog-back-link" href="/blog">Back to Blog</a>
           <h1>How to Make Your Own Custom Lapel Pins: From Idea to Finished Product</h1>
           <p>Making your own <a href="/products/custom-enamel-pins">custom lapel pins</a> is not just a design task. For overseas buyers, brand teams, event organizers and promotional distributors, it usually means commissioning a manufacturer rather than making pins by hand. It is a sourcing decision that affects appearance, budget, delivery time and customer satisfaction. A good pin project starts with a clear purpose, practical artwork, suitable materials and a production process that includes sample approval, in-production quality checks and secure export packing.</p>
           <figure class="blog-article-image blog-article-hero-image blog-article-contain-image blog-lapel-pin-hero-image">
@@ -138,7 +138,7 @@ export const blogHtml = String.raw`
             <h2>Need a Production Check Before Ordering?</h2>
             <p>Send your logo, target size, quantity and deadline. We can review whether your artwork is suitable for soft enamel, hard enamel, die-struck or printed pins.</p>
           </div>
-          <div class="blog-cta-actions"><a class="btn btn-yellow" href="contact.html">Send Your Requirements</a></div>
+          <div class="blog-cta-actions"><a class="btn btn-yellow" href="/contact">Send Your Requirements</a></div>
         </section>
 
         <h2>Step 5: Confirm MOQ, Sample Lead Time and Production Time</h2>
@@ -190,14 +190,14 @@ export const blogHtml = String.raw`
             <h2>Ready to Make Your Own Custom Lapel Pins?</h2>
             <p>Send your artwork, quantity and delivery deadline. Unique Pin can review the design, recommend suitable materials and prepare a clear quotation for custom lapel pins.</p>
           </div>
-          <div class="blog-cta-actions"><a class="btn btn-yellow" href="contact.html">Get a Quote</a><a class="btn btn-primary" href="contact.html">Ask for Product Catalog</a></div>
+          <div class="blog-cta-actions"><a class="btn btn-yellow" href="/contact">Get a Quote</a><a class="btn btn-primary" href="/contact">Ask for Product Catalog</a></div>
         </section>
       </div>
     </article>
     <article id="custom-metal-crafts-guide" class="section blog-article-section">
       <div class="container blog-article">
         <header class="blog-article-header">
-          <a class="blog-back-link" href="blog.html">Back to Blog</a>
+          <a class="blog-back-link" href="/blog">Back to Blog</a>
           <h1>Complete Guide to Custom Metal Crafts: From Design to Production</h1>
           <p>Custom metal products are no longer simple giveaway items. For brand promotion, corporate gifts, sports events, military recognition, school programs and souvenir markets, they help organizations turn a message into something durable and collectible. Working with an experienced <strong>custom metal crafts manufacturer</strong> matters because small decisions about artwork, material, plating, color and packaging can affect appearance, cost, delivery time and customer satisfaction. This guide explains how custom metal crafts are made, which product types fit different business needs, and what global B2B buyers should check before placing a bulk order.</p>
           <figure class="blog-article-image blog-article-hero-image">
@@ -224,16 +224,16 @@ export const blogHtml = String.raw`
 
         <h2>Popular Metal Products for Business Orders</h2>
         <h3>Enamel Pins for Brands and Events</h3>
-        <p><a href="product-detail.html?product=pins">Custom enamel pins</a> are one of the most flexible products for brands, clubs, events and retail programs. Soft enamel pins have recessed color areas and a textured hand feel, making them practical for bold logos and cost-conscious campaigns. Hard enamel pins are polished smooth and often chosen for premium retail or corporate merchandise. Die-struck pins use raised and recessed metal without enamel color, creating a classic result for awards and formal recognition.</p>
+        <p><a href="/products/custom-enamel-pins">Custom enamel pins</a> are one of the most flexible products for brands, clubs, events and retail programs. Soft enamel pins have recessed color areas and a textured hand feel, making them practical for bold logos and cost-conscious campaigns. Hard enamel pins are polished smooth and often chosen for premium retail or corporate merchandise. Die-struck pins use raised and recessed metal without enamel color, creating a classic result for awards and formal recognition.</p>
 
         <h3>Medals for Awards and Competitions</h3>
-        <p><a href="product-detail.html?product=medals">Custom medals</a> are used for sports competitions, award ceremonies, charity events, schools, universities and commemorative programs. Buyers usually focus on size, weight, ribbon quality, plating color and whether the design needs 2D or 3D relief. A reliable custom medals supplier should help adjust the artwork so important details remain clear after molding and plating.</p>
+        <p><a href="/products/custom-medals">Custom medals</a> are used for sports competitions, award ceremonies, charity events, schools, universities and commemorative programs. Buyers usually focus on size, weight, ribbon quality, plating color and whether the design needs 2D or 3D relief. A reliable custom medals supplier should help adjust the artwork so important details remain clear after molding and plating.</p>
 
         <h3>Challenge Coins for Recognition Programs</h3>
-        <p><a href="product-detail.html?product=coins">Challenge coins</a> are popular with military groups, police and fire departments, corporate teams and membership organizations. They often include double-sided artwork, antique plating, edge text, numbering and presentation packaging. Because challenge coins are frequently kept for years, buyers should pay close attention to metal thickness, relief depth, enamel accuracy and edge finishing.</p>
+        <p><a href="/products/custom-challenge-coins">Challenge coins</a> are popular with military groups, police and fire departments, corporate teams and membership organizations. They often include double-sided artwork, antique plating, edge text, numbering and presentation packaging. Because challenge coins are frequently kept for years, buyers should pay close attention to metal thickness, relief depth, enamel accuracy and edge finishing.</p>
 
         <h3>Metal Keychains for Promotions and Retail</h3>
-        <p><a href="product-detail.html?product=keychains">Custom metal keychains</a> work well as promotional gifts, tourism souvenirs and retail accessories. They are easy to distribute, useful in daily life and can be produced in many shapes. Options include soft enamel, printed inserts with epoxy, die cast 3D designs, bottle opener functions and different chain attachments.</p>
+        <p><a href="/products/custom-metal-keychains">Custom metal keychains</a> work well as promotional gifts, tourism souvenirs and retail accessories. They are easy to distribute, useful in daily life and can be produced in many shapes. Options include soft enamel, printed inserts with epoxy, die cast 3D designs, bottle opener functions and different chain attachments.</p>
 
         <figure class="blog-article-image blog-article-image-split">
           <img src="assets/images/blog-custom-medals.webp" alt="custom medals supplier producing event medals">
@@ -315,7 +315,7 @@ export const blogHtml = String.raw`
             <h2>Ready to Start a Custom Metal Crafts Project?</h2>
             <p>Send your logo, reference image, size, quantity and deadline. Our team can review the design, recommend a suitable process and prepare a clear quotation.</p>
           </div>
-          <div class="blog-cta-actions"><a class="btn btn-yellow" href="contact.html">Request a Quote</a></div>
+          <div class="blog-cta-actions"><a class="btn btn-yellow" href="/contact">Request a Quote</a></div>
         </section>
 
       </div>
@@ -323,7 +323,7 @@ export const blogHtml = String.raw`
     <article id="soft-enamel-vs-hard-enamel-pins" class="section blog-article-section">
       <div class="container blog-article">
         <header class="blog-article-header">
-          <a class="blog-back-link" href="blog.html">Back to Blog</a>
+          <a class="blog-back-link" href="/blog">Back to Blog</a>
           <h1>Soft Enamel vs Hard Enamel Pins: Which Is Better for Your Custom Pin Order?</h1>
           <p>Soft enamel and hard enamel pins are two of the most common choices for custom pin orders. For overseas buyers, the better option depends on budget, surface feel, brand positioning, delivery schedule and how the product will be used. A trade show giveaway, a school club pin and a premium retail collectible do not require the same production approach.</p>
           <div class="blog-article-image-pair" aria-label="Soft enamel and hard enamel pin examples">
@@ -381,7 +381,7 @@ export const blogHtml = String.raw`
             <h2>Need Help Choosing the Right Enamel Finish?</h2>
             <p>Send your design, quantity, target price and product application. We can recommend soft enamel, hard enamel or epoxy options based on your order requirements.</p>
           </div>
-          <div class="blog-cta-actions"><a class="btn btn-yellow" href="contact.html">Get a Quote</a></div>
+          <div class="blog-cta-actions"><a class="btn btn-yellow" href="/contact">Get a Quote</a></div>
         </section>
 
         <h2>Conclusion</h2>
@@ -392,7 +392,7 @@ export const blogHtml = String.raw`
     <article id="custom-medals-vs-challenge-coins" class="section blog-article-section">
       <div class="container blog-article">
         <header class="blog-article-header">
-          <a class="blog-back-link" href="blog.html">Back to Blog</a>
+          <a class="blog-back-link" href="/blog">Back to Blog</a>
           <h1>Custom Medals vs Challenge Coins: How to Choose the Right Recognition Product</h1>
           <p>Custom medals and challenge coins are both used for recognition, but they serve different purposes. Medals are usually associated with achievement, competition and ceremonies. Challenge coins are more often associated with identity, service, membership and long-term collection.</p>
           <figure class="blog-article-image blog-article-hero-image blog-article-contain-image">
@@ -449,7 +449,7 @@ export const blogHtml = String.raw`
             <h2>Medals or Coins? Let Us Review Your Project</h2>
             <p>Tell us your event type, audience, quantity and deadline. We can recommend a suitable recognition product, finish and packaging option.</p>
           </div>
-          <div class="blog-cta-actions"><a class="btn btn-yellow" href="contact.html">Contact Us</a></div>
+          <div class="blog-cta-actions"><a class="btn btn-yellow" href="/contact">Contact Us</a></div>
         </section>
       </div>
     </article>
@@ -457,8 +457,8 @@ export const blogHtml = String.raw`
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-logo-wrap"><img class="footer-logo" src="assets/images/logo.png" alt="Unique Pin logo"></div>
-      <div><h4>Products</h4><a href="products.html">Custom Enamel Pins</a><a href="products.html">Custom Medals</a><a href="products.html">Challenge Coins</a><a href="products.html">Keychains</a></div>
-      <div><h4>Get Started</h4><a href="custom.html">Custom</a><a href="about.html">About Us</a><a href="blog.html">Blog</a><a href="faq.html">FAQ</a></div>
+      <div><h4>Products</h4><a href="/products">Custom Enamel Pins</a><a href="/products">Custom Medals</a><a href="/products">Challenge Coins</a><a href="/products">Keychains</a></div>
+      <div><h4>Get Started</h4><a href="/custom">Custom</a><a href="/about">About Us</a><a href="/blog">Blog</a><a href="/faq">FAQ</a></div>
       <div><h4>Contact</h4><a href="mailto:ceo@chinauniquepin.com">Email: ceo@chinauniquepin.com</a><a href="tel:+86076022831989">Phone: +86 0760 22831989</a><p>Building A, 1st Floor, No. 7 Xingyu Road, Xiaolan Town, Zhongshan City, Guangdong, China</p></div>
     </div>
     <div class="container footer-bottom"><span>&copy; 2026 Unique Pin. All rights reserved.</span><span class="footer-social"><a class="footer-social-facebook" href="https://www.facebook.com/profile.php?id=61583070933333&locale=zh_CN" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8.5h2.2V5.1c-.4-.1-1.7-.2-3.2-.2-3.2 0-5.3 1.9-5.3 5.5v3.1H4.2v3.8h3.5V24h4.3v-6.7h3.3l.6-3.8H12v-2.7c0-1.1.3-2.3 2-2.3Z"></path></svg></a><a class="footer-social-instagram" href="https://www.instagram.com/uniquepin/" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.2 2h9.6A5.2 5.2 0 0 1 22 7.2v9.6a5.2 5.2 0 0 1-5.2 5.2H7.2A5.2 5.2 0 0 1 2 16.8V7.2A5.2 5.2 0 0 1 7.2 2Zm0 2A3.2 3.2 0 0 0 4 7.2v9.6A3.2 3.2 0 0 0 7.2 20h9.6a3.2 3.2 0 0 0 3.2-3.2V7.2A3.2 3.2 0 0 0 16.8 4H7.2Zm4.8 3.7A4.3 4.3 0 1 1 7.7 12 4.3 4.3 0 0 1 12 7.7Zm0 2A2.3 2.3 0 1 0 14.3 12 2.3 2.3 0 0 0 12 9.7Zm4.6-3.2a1 1 0 1 1-1 1 1 1 0 0 1 1-1Z"></path></svg></a><a class="footer-social-youtube" href="https://www.youtube.com/@CustompinUnique" aria-label="YouTube" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.6 7.1a3 3 0 0 0-2.1-2.1C17.6 4.5 12 4.5 12 4.5s-5.6 0-7.5.5a3 3 0 0 0-2.1 2.1A31.2 31.2 0 0 0 2 12a31.2 31.2 0 0 0 .4 4.9A3 3 0 0 0 4.5 19c1.9.5 7.5.5 7.5.5s5.6 0 7.5-.5a3 3 0 0 0 2.1-2.1A31.2 31.2 0 0 0 22 12a31.2 31.2 0 0 0-.4-4.9ZM10 15.5v-7l6 3.5-6 3.5Z"></path></svg></a></span></div>

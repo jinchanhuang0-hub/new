@@ -55,35 +55,6 @@ export default async function ProductItemPage({ params }) {
       <JsonLd
         data={{
           "@context": "https://schema.org",
-          "@type": "Product",
-          name: item.title,
-          image: `${SITE_URL}/${item.image}`,
-          description: item.lead,
-          sku: item.sku,
-          material: item.material,
-          category: item.categoryLabel,
-          brand: {
-            "@type": "Brand",
-            name: "Unique Pin",
-          },
-          additionalProperty: [
-            {
-              "@type": "PropertyValue",
-              name: "Process",
-              value: item.process,
-            },
-            {
-              "@type": "PropertyValue",
-              name: "Usage",
-              value: item.usage,
-            },
-          ],
-          url: pageUrl,
-        }}
-      />
-      <JsonLd
-        data={{
-          "@context": "https://schema.org",
           "@type": "BreadcrumbList",
           itemListElement: [
             {

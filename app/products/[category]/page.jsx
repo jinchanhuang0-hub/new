@@ -48,20 +48,6 @@ export default async function ProductCategoryPage({ params }) {
       <JsonLd
         data={{
           "@context": "https://schema.org",
-          "@type": "Product",
-          name: categoryDetails.label,
-          description: metadata.description,
-          category: "Custom Metal Gifts",
-          brand: {
-            "@type": "Brand",
-            name: "Unique Pin",
-          },
-          url: pageUrl,
-        }}
-      />
-      <JsonLd
-        data={{
-          "@context": "https://schema.org",
           "@type": "BreadcrumbList",
           itemListElement: [
             {

@@ -22,13 +22,13 @@ const html = String.raw`
         <span><strong>Unique Pin</strong><span>Custom Metal Gifts Factory</span></span>
       </a>
       <nav class="nav" aria-label="Main navigation">
-        <a class="active" href="/">Home</a><div class="nav-item products-menu"><a href="products.html">Products</a><div class="mega-dropdown" role="menu" aria-label="Products mega menu"><div class="mega-panel"><div class="mega-featured"><a class="mega-product" href="product-detail.html?product=pins"><img src="assets/images/mega-lapel-pins-auburn.jpg" alt="Custom Auburn lapel pin"><span>Lapel Pins</span><small>Custom enamel pins for brands, events and clubs.</small></a><a class="mega-product" href="product-detail.html?product=medals"><img src="assets/images/mega-medals-butterfly.png" alt="Custom butterfly medal with ribbon"><span>Medals</span><small>Colorful award medals with ribbons and finishes.</small></a><a class="mega-product" href="product-detail.html?product=coins"><img src="assets/images/mega-challenge-coin-christmas.jpg" alt="Custom Christmas challenge coin"><span>Challenge Coins</span><small>Detailed coins for recognition and commemorations.</small></a></div><div class="mega-list"><a href="product-detail.html?product=pins">Lapel Pins</a><a href="product-detail.html?product=coins">Challenge Coins</a><a href="product-detail.html?product=medals">Medals</a><a href="product-detail.html?product=keychains">Keychains</a><a href="product-detail.html?product=buckles">Belt Buckles</a><a href="product-detail.html?product=golf-accessories">Golf Ball Markers &amp;Hat Clips</a><a href="product-detail.html?product=bottle-openers">Bottle Openers</a><a href="product-detail.html?product=cufflinks-tieclips">Cufflinks &amp; Tie Clips</a><a href="product-detail.html?product=magnets">Fridge Magnets</a></div><div class="mega-cta"><div><strong>Need a custom product quote?</strong><span>Send logo, quantity and deadline. We reply within 1 business day.</span></div><a class="btn btn-yellow" href="contact.html">Get Free Quote</a></div></div></div></div><a href="custom.html">Custom</a>
-        <a href="about.html">About Us</a>
-        <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact Us</a>
+        <a class="active" href="/">Home</a><div class="nav-item products-menu"><a href="/products">Products</a><div class="mega-dropdown" role="menu" aria-label="Products mega menu"><div class="mega-panel"><div class="mega-featured"><a class="mega-product" href="/products/custom-enamel-pins"><img src="assets/images/mega-lapel-pins-auburn.jpg" alt="Custom Auburn lapel pin"><span>Lapel Pins</span><small>Custom enamel pins for brands, events and clubs.</small></a><a class="mega-product" href="/products/custom-medals"><img src="assets/images/mega-medals-butterfly.png" alt="Custom butterfly medal with ribbon"><span>Medals</span><small>Colorful award medals with ribbons and finishes.</small></a><a class="mega-product" href="/products/custom-challenge-coins"><img src="assets/images/mega-challenge-coin-christmas.jpg" alt="Custom Christmas challenge coin"><span>Challenge Coins</span><small>Detailed coins for recognition and commemorations.</small></a></div><div class="mega-list"><a href="/products/custom-enamel-pins">Lapel Pins</a><a href="/products/custom-challenge-coins">Challenge Coins</a><a href="/products/custom-medals">Medals</a><a href="/products/custom-metal-keychains">Keychains</a><a href="/products/custom-belt-buckles">Belt Buckles</a><a href="/products/custom-golf-accessories">Golf Ball Markers &amp;Hat Clips</a><a href="/products/custom-bottle-openers">Bottle Openers</a><a href="/products/custom-cufflinks-tie-clips">Cufflinks &amp; Tie Clips</a><a href="/products/custom-fridge-magnets">Fridge Magnets</a></div><div class="mega-cta"><div><strong>Need a custom product quote?</strong><span>Send logo, quantity and deadline. We reply within 1 business day.</span></div><a class="btn btn-yellow" href="/contact">Get Free Quote</a></div></div></div></div><a href="/custom">Custom</a>
+        <a href="/about">About Us</a>
+        <a href="/blog">Blog</a>
+        <a href="/contact">Contact Us</a>
       </nav>
       <div class="nav-actions">
-        <a class="btn btn-primary" href="contact.html">Get Free Quote</a>
+        <a class="btn btn-primary" href="/contact">Get Free Quote</a>
         <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">&#9776;</button>
       </div>
     </div>
@@ -42,8 +42,8 @@ const html = String.raw`
           <h1><span class="hero-title-line">Custom Metal Crafts</span><span class="hero-title-line">Made for Your Brand</span></h1>
           <p>OEM/ODM custom metal crafts with 20+ years of expertise.<br>From design to delivery, quality you can trust.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="contact.html">Get Free Quote</a>
-            <a class="btn btn-outline" href="contact.html">Contact Us</a>
+            <a class="btn btn-primary" href="/contact">Get Free Quote</a>
+            <a class="btn btn-outline" href="/contact">Contact Us</a>
           </div>
           <div class="hero-proof">
             <div class="proof-column">
@@ -112,42 +112,42 @@ const html = String.raw`
           </div>
         </div>
         <div class="grid-3 home-products-grid">
-          <a class="product-card home-product-card" href="product-detail.html?product=pins#custom-details" aria-label="View Custom Enamel Pins details" data-product-inquiry-trigger data-product-inquiry-product="Lapel Pins">
+          <a class="product-card home-product-card" href="/products/custom-enamel-pins" aria-label="View Custom Enamel Pins details" data-product-inquiry-trigger data-product-inquiry-product="Lapel Pins">
             <img src="assets/images/home-lapel-pins-cat.jpg" alt="Custom lapel pin with cat and colorful umbrella">
             <div class="body">
               <h3>Lapel Pins</h3>
               <p>An exquisite accessory that captures your brand's identity and sparks conversation.</p>
             </div>
           </a>
-          <a class="product-card home-product-card" href="product-detail.html?product=medals#custom-details" aria-label="View Custom Medals details" data-product-inquiry-trigger data-product-inquiry-product="Medals">
+          <a class="product-card home-product-card" href="/products/custom-medals" aria-label="View Custom Medals details" data-product-inquiry-trigger data-product-inquiry-product="Medals">
             <img src="assets/images/home-medals-floral.webp" alt="Custom medal with floral enamel and ribbon">
             <div class="body">
               <h3>Medals</h3>
               <p>A meaningful award piece that celebrates achievement with lasting visual impact.</p>
             </div>
           </a>
-          <a class="product-card home-product-card" href="product-detail.html?product=coins#custom-details" aria-label="View Challenge Coins details" data-product-inquiry-trigger data-product-inquiry-product="Challenge Coins">
+          <a class="product-card home-product-card" href="/products/custom-challenge-coins" aria-label="View Challenge Coins details" data-product-inquiry-trigger data-product-inquiry-product="Challenge Coins">
             <img src="assets/images/home-challenge-coins-police.jpg" alt="Custom challenge coins with police emblems">
             <div class="body">
               <h3>Challenge Coins</h3>
               <p>A premium keepsake that honors teams, milestones and shared stories.</p>
             </div>
           </a>
-          <a class="product-card home-product-card" href="product-detail.html?product=keychains#custom-details" aria-label="View Custom Keychains details" data-product-inquiry-trigger data-product-inquiry-product="Keychains">
+          <a class="product-card home-product-card" href="/products/custom-metal-keychains" aria-label="View Custom Keychains details" data-product-inquiry-trigger data-product-inquiry-product="Keychains">
             <img src="assets/images/home-keychains-charms.jpg" alt="Custom metal keychain with enamel charms">
             <div class="body">
               <h3>Keychains</h3>
               <p>A practical everyday gift that keeps your brand close at hand.</p>
             </div>
           </a>
-          <a class="product-card home-product-card" href="product-detail.html?product=buckles#custom-details" aria-label="View Custom Belt Buckles details" data-product-inquiry-trigger data-product-inquiry-product="Belt Buckles">
+          <a class="product-card home-product-card" href="/products/custom-belt-buckles" aria-label="View Custom Belt Buckles details" data-product-inquiry-trigger data-product-inquiry-product="Belt Buckles">
             <img src="assets/images/home-belt-buckles-arizona.jpg" alt="Custom antique belt buckle with Arizona design">
             <div class="body">
               <h3>Belt Buckles</h3>
               <p>A bold statement piece that turns custom detail into wearable style.</p>
             </div>
           </a>
-          <a class="product-card home-product-card" href="product-detail.html?product=golf-accessories#custom-details" aria-label="View Custom Golf Ball Markers details" data-product-inquiry-trigger data-product-inquiry-product="Golf Accessories">
+          <a class="product-card home-product-card" href="/products/custom-golf-accessories" aria-label="View Custom Golf Ball Markers details" data-product-inquiry-trigger data-product-inquiry-product="Golf Accessories">
             <img src="assets/images/home-golf-ball-marker.jpg" alt="Custom golf ball marker and divot tool">
             <div class="body">
               <h3>Golf Ball Markers</h3>
@@ -156,7 +156,7 @@ const html = String.raw`
           </a>
         </div>
         <div class="product-actions">
-          <a class="btn btn-primary" href="products.html">View All Products</a>
+          <a class="btn btn-primary" href="/products">View All Products</a>
         </div>
       </div>
     </section>
@@ -235,7 +235,7 @@ const html = String.raw`
               <span>Your Order Gets Shipped</span>
             </div>
           </div>
-          <a class="how-cta" href="contact.html">Start Your Free Design</a>
+          <a class="how-cta" href="/contact">Start Your Free Design</a>
         </div>
         <div class="how-visual" aria-hidden="true">
           <div class="process-art">
@@ -410,8 +410,8 @@ const html = String.raw`
             <p>Send us your idea, logo or reference image. Our team will help turn it into a production-ready design.</p>
           </div>
           <div class="hero-actions">
-            <a class="btn btn-yellow" href="contact.html">Request Quote</a>
-            <a class="btn btn-outline" href="custom.html">Start Custom Order</a>
+            <a class="btn btn-yellow" href="/contact">Request Quote</a>
+            <a class="btn btn-outline" href="/custom">Start Custom Order</a>
           </div>
         </div>
       </div>
@@ -421,8 +421,8 @@ const html = String.raw`
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-logo-wrap"><img class="footer-logo" src="assets/images/logo.png" alt="Unique Pin logo"></div>
-      <div><h4>Products</h4><a href="products.html">Custom Enamel Pins</a><a href="products.html">Custom Medals</a><a href="products.html">Challenge Coins</a><a href="products.html">Keychains</a></div>
-      <div><h4>Get Started</h4><a href="custom.html">Custom</a><a href="about.html">About Us</a><a href="blog.html">Blog</a><a href="faq.html">FAQ</a></div>
+      <div><h4>Products</h4><a href="/products">Custom Enamel Pins</a><a href="/products">Custom Medals</a><a href="/products">Challenge Coins</a><a href="/products">Keychains</a></div>
+      <div><h4>Get Started</h4><a href="/custom">Custom</a><a href="/about">About Us</a><a href="/blog">Blog</a><a href="/faq">FAQ</a></div>
       <div><h4>Contact</h4><a href="mailto:ceo@chinauniquepin.com">Email: ceo@chinauniquepin.com</a><a href="tel:+86076022831989">Phone: +86 0760 22831989</a><p>Building A, 1st Floor, No. 7 Xingyu Road, Xiaolan Town, Zhongshan City, Guangdong, China</p></div>
     </div>
     <div class="container footer-bottom"><span>&copy; 2026 Unique Pin. All rights reserved.</span><span class="footer-social"><a class="footer-social-facebook" href="https://www.facebook.com/profile.php?id=61583070933333&locale=zh_CN" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8.5h2.2V5.1c-.4-.1-1.7-.2-3.2-.2-3.2 0-5.3 1.9-5.3 5.5v3.1H4.2v3.8h3.5V24h4.3v-6.7h3.3l.6-3.8H12v-2.7c0-1.1.3-2.3 2-2.3Z"></path></svg></a><a class="footer-social-instagram" href="https://www.instagram.com/uniquepin/" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.2 2h9.6A5.2 5.2 0 0 1 22 7.2v9.6a5.2 5.2 0 0 1-5.2 5.2H7.2A5.2 5.2 0 0 1 2 16.8V7.2A5.2 5.2 0 0 1 7.2 2Zm0 2A3.2 3.2 0 0 0 4 7.2v9.6A3.2 3.2 0 0 0 7.2 20h9.6a3.2 3.2 0 0 0 3.2-3.2V7.2A3.2 3.2 0 0 0 16.8 4H7.2Zm4.8 3.7A4.3 4.3 0 1 1 7.7 12 4.3 4.3 0 0 1 12 7.7Zm0 2A2.3 2.3 0 1 0 14.3 12 2.3 2.3 0 0 0 12 9.7Zm4.6-3.2a1 1 0 1 1-1 1 1 1 0 0 1 1-1Z"></path></svg></a><a class="footer-social-youtube" href="https://www.youtube.com/@CustompinUnique" aria-label="YouTube" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.6 7.1a3 3 0 0 0-2.1-2.1C17.6 4.5 12 4.5 12 4.5s-5.6 0-7.5.5a3 3 0 0 0-2.1 2.1A31.2 31.2 0 0 0 2 12a31.2 31.2 0 0 0 .4 4.9A3 3 0 0 0 4.5 19c1.9.5 7.5.5 7.5.5s5.6 0 7.5-.5a3 3 0 0 0 2.1-2.1A31.2 31.2 0 0 0 22 12a31.2 31.2 0 0 0-.4-4.9ZM10 15.5v-7l6 3.5-6 3.5Z"></path></svg></a></span></div>
