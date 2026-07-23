@@ -3000,6 +3000,11 @@ body.quote-modal-open {
   stroke-linejoin: round;
 }
 
+.how-step-card:nth-child(4) .step-icon svg {
+  transform: translateY(-1px) scale(1.08);
+  transform-origin: center;
+}
+
 .how-step-card:nth-child(2) .step-icon,
 .how-step-card:nth-child(4) .step-icon {
   background:
@@ -3012,6 +3017,10 @@ body.quote-modal-open {
 }
 
 .how-step-card span:last-child {
+  min-height: calc(17px * 1.28 * 2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #0d1f3b;
   font-size: 17px;
   font-weight: 800;
