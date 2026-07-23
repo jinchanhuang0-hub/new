@@ -865,6 +865,7 @@ a {
   display: flex;
   flex-direction: column;
   min-height: 0;
+  border-radius: 18px;
   --card-accent: var(--yellow);
   --card-tint: rgba(243, 198, 0, 0.12);
   color: inherit;
@@ -877,6 +878,7 @@ a {
 .home-product-card img {
   height: 270px;
   padding: 18px 24px;
+  border-radius: 18px 18px 0 0;
   background: #fff;
 }
 
