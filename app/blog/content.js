@@ -456,7 +456,7 @@ export const blogHtml = String.raw`
 </main>
   <footer class="site-footer">
     <div class="container footer-grid">
-      <div class="footer-logo-wrap"><img class="footer-logo" src="assets/images/logo.png" alt="Unique Pin logo"></div>
+      <div class="footer-logo-wrap"><img class="footer-logo" src="assets/images/logo.png" alt="Unique Pin logo"><img class="footer-payment-image" src="assets/images/payment-methods.svg" alt="Accepted payment methods: T/T, PayPal, Visa, Mastercard, e-Checking and Western Union"></div>
       <div><h4>Products</h4><a href="/products">Custom Enamel Pins</a><a href="/products">Custom Medals</a><a href="/products">Challenge Coins</a><a href="/products">Keychains</a></div>
       <div><h4>Get Started</h4><a href="/custom">Custom</a><a href="/about">About Us</a><a href="/blog">Blog</a><a href="/faq">FAQ</a></div>
       <div><h4>Contact</h4><a href="mailto:ceo@chinauniquepin.com">Email: ceo@chinauniquepin.com</a><a href="tel:+86076022831989">Phone: +86 0760 22831989</a><p>Building A, 1st Floor, No. 7 Xingyu Road, Xiaolan Town, Zhongshan City, Guangdong, China</p></div>

@@ -370,7 +370,7 @@ a {
 .hero {
   position: relative;
 
-  height: clamp(500px, calc(72vh - 70px), 540px);
+  height:clamp(660px, calc(72vh - 70px), 680px);
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -6843,20 +6843,31 @@ body.is-video-lightbox-open {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.1fr 1.15fr 1fr 1.7fr;
-  gap: 72px;
-  max-width: 1120px;
+  grid-template-columns: minmax(430px, 1.7fr) 1fr 0.9fr 1.35fr;
+  gap: 42px;
+  max-width: 1220px;
   align-items: start;
 }
 
 .footer-logo-wrap {
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  gap: 24px;
+  padding-top: 34px;
 }
 
 .footer-logo {
-  width: 150px;
+  width: 220px;
+  height: auto;
+  display: block;
+  transform: translateY(-30px);
+}
+
+.footer-payment-image {
+  width: 520px;
+  max-width: calc(100vw - 40px);
   height: auto;
   display: block;
 }
@@ -6947,8 +6958,8 @@ body.is-video-lightbox-open {
 }
 
 .footer-bottom {
-  max-width: 1120px;
-  margin-top: 44px;
+  max-width: 1220px;
+  margin-top: 10px;
   padding-top: 30px;
   border-top: 1px solid rgba(6, 11, 63, 0.12);
   display: grid;
@@ -6956,6 +6967,7 @@ body.is-video-lightbox-open {
   align-items: center;
   gap: 40px;
   font-size: 14px;
+  position: relative;
   color: #060b3f;
 }
 
@@ -6963,6 +6975,9 @@ body.is-video-lightbox-open {
   display: inline-flex;
   gap: 12px;
   justify-content: flex-end;
+  position: absolute;
+  right: 0;
+  bottom: calc(100% + 6px);
 }
 
 .footer-social a {
@@ -7665,6 +7680,8 @@ body.is-video-lightbox-open {
 
   .footer-social {
     justify-content: flex-start;
+    right: auto;
+    left: 0;
   }
 }
 
