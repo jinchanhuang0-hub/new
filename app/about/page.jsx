@@ -115,6 +115,31 @@ const html = String.raw`
       </div>
     </section>
 
+    <section class="section about-visit-gallery-section" id="customer-visits" aria-label="Customer visits and exhibitions">
+      <div class="container">
+        <div class="about-visit-gallery">
+          <figure class="about-visit-shot about-visit-shot-large about-visit-shot-left">
+            <img src="assets/images/about-visit-left.jpg" alt="Customer visiting the Unique Pin office with our team" loading="lazy">
+          </figure>
+          <figure class="about-visit-shot">
+            <img src="assets/images/about-visit-center-1.jpg" alt="International customers visiting the Unique Pin showroom" loading="lazy">
+          </figure>
+          <figure class="about-visit-shot">
+            <img src="assets/images/about-visit-center-2.jpg" alt="Customer photo in front of custom metal gift display cases" loading="lazy">
+          </figure>
+          <figure class="about-visit-shot">
+            <img src="assets/images/about-visit-center-3.jpg" alt="Unique Pin trade show booth with product displays" loading="lazy">
+          </figure>
+          <figure class="about-visit-shot">
+            <img src="assets/images/about-visit-center-4.jpg" alt="Unique Pin exhibition booth with custom metal gift samples" loading="lazy">
+          </figure>
+          <figure class="about-visit-shot about-visit-shot-large about-visit-shot-right">
+            <img src="assets/images/about-visit-right.jpg" alt="Customers visiting Unique Pin and meeting our factory team" loading="lazy">
+          </figure>
+        </div>
+      </div>
+    </section>
+
     <section class="section section-soft why-choice-section about-features-section" id="features">
       <div class="container">
         <div class="why-choice-head">
