@@ -73,18 +73,6 @@ document.querySelectorAll("[data-brand-carousel]").forEach((carousel) => {
   start();
 });
 
-document.querySelectorAll(".review-card .show-more").forEach((button) => {
-  button.addEventListener("click", () => {
-    const card = button.closest(".review-card");
-    const more = card?.querySelector(".review-more");
-    if (!more) return;
-    const expanded = button.getAttribute("aria-expanded") === "true";
-    more.hidden = expanded;
-    button.setAttribute("aria-expanded", expanded ? "false" : "true");
-    button.textContent = expanded ? "+ Show More" : "- Show Less";
-  });
-});
-
 document.querySelectorAll("[data-review-carousel]").forEach((carousel) => {
   const track = carousel.querySelector("[data-review-track]");
   const cards = Array.from(carousel.querySelectorAll(".review-card"));

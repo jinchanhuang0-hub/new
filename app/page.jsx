@@ -301,8 +301,7 @@ const html = String.raw`
                 <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                 <h3>Fantastic Medals & Fast Support</h3>
                 <p>The medals turned out absolutely fantastic. These will be a big hit with swimmers lucky enough to get their hands on one.</p>
-                <p class="review-more" hidden>Ada was great to deal with and responded very quickly to all of our changes and requests so that the medals ended exactly what we envisioned.</p>
-                <button class="show-more" type="button" aria-expanded="false">+ Show More</button>
+                <p class="review-more">Ada was great to deal with and responded very quickly to all of our changes and requests so that the medals ended exactly what we envisioned.</p>
                 <div class="review-author">
                   <img src="https://i.pravatar.cc/96?img=12" alt="Michael Turner" loading="lazy" />
                   <span><strong>Michael Turner</strong></span>
@@ -312,8 +311,7 @@ const html = String.raw`
                 <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                 <h3>7th Repeat Order</h3>
                 <p>I honestly cannot say enough good things about the quality of the coins and keychains I have received from here.</p>
-                <p class="review-more" hidden>This was actually our 7th time ordering, and they have not missed a beat. The quality is very good and communication was excellent.</p>
-                <button class="show-more" type="button" aria-expanded="false">+ Show More</button>
+                <p class="review-more">This was actually our 7th time ordering, and they have not missed a beat. The quality is very good and communication was excellent.</p>
                 <div class="review-author">
                   <img src="https://i.pravatar.cc/96?img=32" alt="Sarah Mitchell" loading="lazy" />
                   <span><strong>Sarah Mitchell</strong></span>
@@ -323,8 +321,7 @@ const html = String.raw`
                 <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                 <h3>Perfect Custom Lapel Pins</h3>
                 <p>The custom lapel pins turned out absolutely perfect - clean details, vivid colors, and excellent quality.</p>
-                <p class="review-more" hidden>Communication was fast and professional throughout the entire process. The supplier was very helpful with design adjustments and delivered exactly what I needed.</p>
-                <button class="show-more" type="button" aria-expanded="false">+ Show More</button>
+                <p class="review-more">Communication was fast and professional throughout the entire process. The supplier was very helpful with design adjustments and delivered exactly what I needed.</p>
                 <div class="review-author">
                   <img src="https://i.pravatar.cc/96?img=56" alt="David Parker" loading="lazy" />
                   <span><strong>David Parker</strong></span>
@@ -334,8 +331,7 @@ const html = String.raw`
                 <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                 <h3>Outstanding Quality & Detail</h3>
                 <p>Fantastic quality, attention to detail and packaging - just outstanding. Even better than I could have hoped for when I first designed them.</p>
-                <p class="review-more" hidden>This is my favourite supplier to work with, highly recommended. Eva is a great customer representative and answered all my questions with speed and grace.</p>
-                <button class="show-more" type="button" aria-expanded="false">+ Show More</button>
+                <p class="review-more">This is my favourite supplier to work with, highly recommended. Eva is a great customer representative and answered all my questions with speed and grace.</p>
                 <div class="review-author">
                   <img src="https://i.pravatar.cc/96?img=47" alt="Emily Carter" loading="lazy" />
                   <span><strong>Emily Carter</strong></span>
@@ -345,8 +341,7 @@ const html = String.raw`
                 <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                 <h3>Helpful Long-Term Partner</h3>
                 <p>Eve is always very helpful. I have used this company for the past 4 years for challenge coins, pins and magnets.</p>
-                <p class="review-more" hidden>They are great at offering suggestions and problem solving, and all of the products have come out very nice.</p>
-                <button class="show-more" type="button" aria-expanded="false">+ Show More</button>
+                <p class="review-more">They are great at offering suggestions and problem solving, and all of the products have come out very nice.</p>
                 <div class="review-author">
                   <img src="https://i.pravatar.cc/96?img=15" alt="Mark Wilson" loading="lazy" />
                   <span><strong>Mark Wilson</strong></span>
@@ -356,8 +351,7 @@ const html = String.raw`
                 <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                 <h3>Fast Turnaround & Proofing</h3>
                 <p>The turnaround time is incredibly fast, but my favorite part of the process is the communication.</p>
-                <p class="review-more" hidden>Their designers always send over a proof to make sure you are 100% happy with the design before production. That extra level of customer service keeps us coming back.</p>
-                <button class="show-more" type="button" aria-expanded="false">+ Show More</button>
+                <p class="review-more">Their designers always send over a proof to make sure you are 100% happy with the design before production. That extra level of customer service keeps us coming back.</p>
                 <div class="review-author">
                   <img src="https://i.pravatar.cc/96?img=45" alt="Jessica Brown" loading="lazy" />
                   <span><strong>Jessica Brown</strong></span>
@@ -367,8 +361,7 @@ const html = String.raw`
                 <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                 <h3>Amazing Coin Service</h3>
                 <p>The coin is amazing, and the customer service is excellent. Every time I have a question, the team is helpful.</p>
-                <p class="review-more" hidden>They work closely with me to create the coin design I want, and the process is smooth from design discussion to final production.</p>
-                <button class="show-more" type="button" aria-expanded="false">+ Show More</button>
+                <p class="review-more">They work closely with me to create the coin design I want, and the process is smooth from design discussion to final production.</p>
                 <div class="review-author">
                   <img src="https://i.pravatar.cc/96?img=18" alt="Robert Miller" loading="lazy" />
                   <span><strong>Robert Miller</strong></span>
@@ -378,8 +371,7 @@ const html = String.raw`
                 <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                 <h3>Excellent Communication</h3>
                 <p>The quality is very good. Communication was excellent, and the team understood my needs well.</p>
-                <p class="review-more" hidden>They worked to create the exact item I envisioned and made the custom ordering process clear and reliable.</p>
-                <button class="show-more" type="button" aria-expanded="false">+ Show More</button>
+                <p class="review-more">They worked to create the exact item I envisioned and made the custom ordering process clear and reliable.</p>
                 <div class="review-author">
                   <img src="https://i.pravatar.cc/96?img=49" alt="Amanda Lewis" loading="lazy" />
                   <span><strong>Amanda Lewis</strong></span>
