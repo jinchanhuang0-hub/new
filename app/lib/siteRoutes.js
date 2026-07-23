@@ -124,6 +124,14 @@ const withBlogArticleDefaults = (article) => {
 };
 
 const blogArticleData = {
+  "custom-enamel-pins-no-moq-guide": {
+    title: "No MOQ Custom Enamel Pins: Flexible Solutions for Every Order Size",
+    description:
+      "Learn how no MOQ custom enamel pin orders work for samples, small batches and bulk orders, including artwork review, mold setup, unit cost, inspection and shipment preparation.",
+    datePublished: "2026-07-23",
+    dateModified: "2026-07-23",
+    image: "/assets/images/blog-custom-enamel-pins-no-moq-products.png",
+  },
   "custom-metal-crafts-guide": {
     title: "Complete Guide to Custom Metal Crafts: From Design to Production",
     description:
@@ -144,6 +152,8 @@ const blogArticleData = {
     title: "How to Make Your Own Custom Lapel Pins | Buyer Guide",
     description:
       "Learn how to make your own custom lapel pins, from artwork and material selection to sample approval, quality inspection, packaging and shipment.",
+    datePublished: "2026-07-22",
+    dateModified: "2026-07-22",
     image: "/assets/images/blog-lapel-pin-animal-samples.webp",
   },
   "custom-medals-vs-challenge-coins": {

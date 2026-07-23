@@ -3400,6 +3400,12 @@ body.quote-modal-open {
   background: #fff;
 }
 
+.blog-feature-card[data-card-image-fit="contain"] img {
+  padding: 10px;
+  object-fit: contain;
+  box-sizing: border-box;
+}
+
 .blog-feature-body {
   display: flex;
   flex-direction: column;
@@ -3713,6 +3719,14 @@ body.quote-modal-open {
   border-radius: 8px;
   object-fit: cover;
   box-shadow: 0 24px 58px rgba(11, 47, 99, 0.12);
+}
+
+.blog-article-image figcaption {
+  margin-top: 10px;
+  color: #6b7b92;
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: center;
 }
 
 .blog-article-contain-image {
