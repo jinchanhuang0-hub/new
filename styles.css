@@ -2761,7 +2761,7 @@ body.quote-modal-open {
 
 .why-choice-section .why-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 24px;
+  gap: 26px;
 }
 
 .why-choice-section .why-grid > .why-item:not(.why-choice-card) {
@@ -2795,8 +2795,8 @@ body.quote-modal-open {
 }
 
 .why-choice-card {
-  min-height: 214px;
-  padding: 32px 30px;
+  min-height: 227px;
+  padding: 34px 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2809,9 +2809,9 @@ body.quote-modal-open {
 }
 
 .why-choice-card .icon-box {
-  width: 72px;
-  height: 72px;
-  margin-bottom: 20px;
+  width: 76px;
+  height: 76px;
+  margin-bottom: 21px;
   color: var(--navy);
   background:
     linear-gradient(145deg, rgba(255, 255, 255, 0.42), rgba(255, 255, 255, 0) 46%),
@@ -2829,8 +2829,8 @@ body.quote-modal-open {
 }
 
 .why-choice-card .icon-box svg {
-  width: 39px;
-  height: 39px;
+  width: 41px;
+  height: 41px;
   fill: none;
   stroke: currentColor;
   stroke-width: 2.1;
@@ -2840,24 +2840,24 @@ body.quote-modal-open {
 
 .why-choice-card strong {
   color: var(--navy);
-  font-size: 19px;
+  font-size: 20px;
   font-weight: 850;
   line-height: 1.18;
 }
 
 .why-choice-card p {
-  margin: 16px 0 0;
-  max-width: 310px;
+  margin: 17px 0 0;
+  max-width: 329px;
   color: #223653;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.55;
 }
 
 @media (min-width: 981px) {
   .why-choice-card .why-copy-two-lines {
-    width: calc(100% + 44px);
-    max-width: 300px;
-    font-size: 16px;
+    width: calc(100% + 47px);
+    max-width: 318px;
+    font-size: 17px;
     line-height: 1.55;
   }
 
@@ -2956,17 +2956,17 @@ body.quote-modal-open {
 .how-steps {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 20px;
+  gap: 22px;
 }
 
 .how-step-card {
-  min-height: 128px;
+  min-height: 141px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 14px;
-  padding: 24px 20px;
+  gap: 15px;
+  padding: 26px 22px;
   text-align: center;
   background: rgba(255, 255, 255, 0.88);
   border: 1px solid #dbe4f0;
@@ -2975,8 +2975,8 @@ body.quote-modal-open {
 }
 
 .step-icon {
-  width: 58px;
-  height: 58px;
+  width: 64px;
+  height: 64px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -2991,8 +2991,8 @@ body.quote-modal-open {
 }
 
 .step-icon svg {
-  width: 30px;
-  height: 30px;
+  width: 33px;
+  height: 33px;
   fill: none;
   stroke: currentColor;
   stroke-width: 2.15;
@@ -3013,7 +3013,7 @@ body.quote-modal-open {
 
 .how-step-card span:last-child {
   color: #0d1f3b;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 800;
   line-height: 1.28;
 }
@@ -7425,8 +7425,8 @@ body.is-video-lightbox-open {
   }
 
   .why-choice-card {
-    min-height: 190px;
-    padding: 26px 22px;
+    min-height: 201px;
+    padding: 28px 23px;
   }
 
   .about-hero {
@@ -7600,7 +7600,7 @@ body.is-video-lightbox-open {
   }
 
   .how-step-card {
-    min-height: 104px;
+    min-height: 114px;
   }
 
   .customizable-grid {
