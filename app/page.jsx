@@ -80,8 +80,11 @@ const html = String.raw`
           <span class="brand-logo logo-square"><img src="assets/images/brands/bmw.png" alt="BMW logo"></span>
           <span class="brand-logo"><img src="assets/images/brands/marvel.svg" alt="MARVEL logo"></span>
           <span class="brand-logo logo-square logo-kfc"><img src="assets/images/brands/kfc.png" alt="KFC logo"></span>
+          <span class="brand-logo logo-square logo-roomy"><img src="assets/images/brands/american-greetings.png" alt="American Greetings logo"></span>
+          <span class="brand-logo logo-square"><img src="assets/images/brands/teal-s-logo.png" alt="Teal S brand logo"></span>
+          <span class="brand-logo logo-square"><img src="assets/images/brands/lions-international.png" alt="Lions International logo"></span>
+          <span class="brand-logo logo-wide"><img src="assets/images/brands/turbovets.png" alt="Turbovets Tech For Heroes logo"></span>
           <span class="brand-logo logo-square"><img src="assets/images/brands/nbc.svg" alt="NBC logo"></span>
-          <span class="brand-logo logo-square logo-roomy"><img src="assets/images/brands/american-greetings.svg" alt="American Greetings logo"></span>
           <span class="brand-logo"><img src="assets/images/brands/coca-cola.svg" alt="Coca-Cola logo"></span>
           <span class="brand-logo logo-square"><img src="assets/images/brands/mcdonalds.svg" alt="McDonald's logo"></span>
           <span class="brand-logo"><img src="assets/images/brands/disney.svg" alt="Disney logo"></span>
@@ -96,8 +99,11 @@ const html = String.raw`
           <span class="brand-logo logo-square"><img src="assets/images/brands/bmw.png" alt="BMW logo"></span>
           <span class="brand-logo"><img src="assets/images/brands/marvel.svg" alt="MARVEL logo"></span>
           <span class="brand-logo logo-square logo-kfc"><img src="assets/images/brands/kfc.png" alt="KFC logo"></span>
+          <span class="brand-logo logo-square logo-roomy"><img src="assets/images/brands/american-greetings.png" alt="American Greetings logo"></span>
+          <span class="brand-logo logo-square"><img src="assets/images/brands/teal-s-logo.png" alt="Teal S brand logo"></span>
+          <span class="brand-logo logo-square"><img src="assets/images/brands/lions-international.png" alt="Lions International logo"></span>
+          <span class="brand-logo logo-wide"><img src="assets/images/brands/turbovets.png" alt="Turbovets Tech For Heroes logo"></span>
           <span class="brand-logo logo-square"><img src="assets/images/brands/nbc.svg" alt="NBC logo"></span>
-          <span class="brand-logo logo-square logo-roomy"><img src="assets/images/brands/american-greetings.svg" alt="American Greetings logo"></span>
         </div>
       </div>
     </section>
