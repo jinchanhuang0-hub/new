@@ -51,7 +51,7 @@ const html = String.raw`
               <div class="proof-item"><strong>100%</strong><span>Satisfaction</span></div>
             </div>
             <div class="proof-column">
-              <div class="proof-item"><strong>No Minimum Qty</strong><span>Flexible Custom Orders</span></div>
+              <div class="proof-item"><strong>NO MOQ</strong><span>Flexible Custom Orders</span></div>
               <div class="proof-item"><strong>Affordable Prices</strong><span>Competitive Factory Price</span></div>
             </div>
           </div>
