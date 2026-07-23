@@ -79,6 +79,7 @@ export const productItemCategoryKey = {
   "3d-shield-logo-award-medal": "medals",
   "silver-race-award-medal-with-ribbon": "medals",
   "blue-marathon-ribbon-medal": "medals",
+  "gold-scn-ribbon-medal": "medals",
   "colorful-flower-metal-keychains": "keychains",
   "palm-island-enamel-keychain": "keychains",
   "round-school-logo-bottle-opener-keychain": "keychains",

@@ -198,6 +198,20 @@ export const productItems = {
     quoteProduct: "Medals",
     lead: "This marathon medal pairs detailed metal casting with a blue event ribbon. It works well for running events, charity races, sports clubs and finisher recognition."
   },
+  "gold-scn-ribbon-medal": {
+    title: "Gold SCN Ribbon Medal",
+    image: "assets/images/latest-gold-scn-ribbon-medal.png",
+    alt: "Gold SCN ribbon medal",
+    categoryLabel: "Medals",
+    categoryHref: "/products/custom-medals",
+    material: "Zinc alloy",
+    process: "Die casting and plating",
+    sku: "UP-MEDAL-105",
+    usage: "Sports events, awards, finisher medals",
+    categories: "Medals, Ribbon Medals",
+    quoteProduct: "Gold SCN Ribbon Medal",
+    lead: "This gold SCN ribbon medal combines polished gold plating, bold black enamel details and a red, white and blue ribbon. It is suitable for race events, sports awards, commemorative programs and branded finisher medals."
+  },
   "colorful-flower-metal-keychains": {
     title: "Colorful Flower Metal Keychains",
     image: "assets/images/type-keychains-metal.jpg",

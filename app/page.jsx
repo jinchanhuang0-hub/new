@@ -424,13 +424,13 @@ const html = String.raw`
           </article>
           <article class="latest-product-card">
             <span class="latest-product-badge">NEW</span>
-            <a class="latest-product-media" href="/products/custom-medals/blue-marathon-ribbon-medal" aria-label="View Blue Marathon Ribbon Medal">
-              <img src="assets/images/type-medals-ribbon.png" alt="Blue marathon ribbon medal" loading="lazy">
+            <a class="latest-product-media" href="/products/custom-medals/gold-scn-ribbon-medal" aria-label="View Gold SCN Ribbon Medal">
+              <img src="assets/images/latest-gold-scn-ribbon-medal.png" alt="Gold SCN ribbon medal" loading="lazy">
             </a>
             <div class="latest-product-body">
-              <h3><a href="/products/custom-medals/blue-marathon-ribbon-medal">Blue Marathon Ribbon Medal</a></h3>
+              <h3><a href="/products/custom-medals/gold-scn-ribbon-medal">Gold SCN Ribbon Medal</a></h3>
             </div>
-            <a class="latest-product-quote" href="/contact" data-product-inquiry-trigger data-product-inquiry-product="Medals">Get a Quote</a>
+            <a class="latest-product-quote" href="/contact" data-product-inquiry-trigger data-product-inquiry-product="Gold SCN Ribbon Medal">Get a Quote</a>
           </article>
           <article class="latest-product-card">
             <span class="latest-product-badge">NEW FINISH</span>
