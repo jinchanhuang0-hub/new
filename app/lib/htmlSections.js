@@ -166,9 +166,12 @@ const formatArticleDate = (date) => {
   return `${monthNames[Number(month) - 1] || month} ${Number(day)}, ${year}`;
 };
 
+export const normalizeBlogArticleLinks = (html) =>
+  html.replace(/href="\/blog\/([a-z0-9-]+)#\1"/g, 'href="/blog/$1"');
+
 const addBlogCardMeta = (html, articles = {}) =>
   html.replace(
-    /(<a class="blog-feature-card" href="\/blog\/([^"#]+)(?:#[^"]*)?"[\s\S]*?<p>[\s\S]*?<\/p>)\s*<span class="blog-feature-link">Read More<\/span>/g,
+    /(<a class="blog-feature-card" href="\/blog\/([^"#]+)"[\s\S]*?<p>[\s\S]*?<\/p>)\s*<span class="blog-feature-link">Read More<\/span>/g,
     (match, cardContent, slug) => {
       const article = articles[slug];
       if (!article) return match;
@@ -189,7 +192,7 @@ const sortBlogCardsByDate = (html, articles = {}) =>
   html.replace(
     /(<div class="blog-card-grid">\s*)([\s\S]*?)(\s*<\/div>\s*<\/div>\s*<\/section>)/,
     (match, opening, cardsHtml, closing) => {
-      const cards = [...cardsHtml.matchAll(/<a class="blog-feature-card" href="\/blog\/([^"#]+)(?:#[^"]*)?"[\s\S]*?<\/a>/g)]
+      const cards = [...cardsHtml.matchAll(/<a class="blog-feature-card" href="\/blog\/([^"#]+)"[\s\S]*?<\/a>/g)]
         .map((cardMatch, index) => {
           const slug = cardMatch[1];
           const articleDate = articles[slug]?.datePublished || "";
@@ -212,10 +215,10 @@ const sortBlogCardsByDate = (html, articles = {}) =>
   );
 
 export const buildBlogIndexHtml = (html, articles = {}) =>
-  addBlogCardMeta(sortBlogCardsByDate(html.replace(
+  addBlogCardMeta(sortBlogCardsByDate(normalizeBlogArticleLinks(html.replace(
     /<article id="[^"]+" class="section blog-article-section">[\s\S]*?<\/article>/g,
     "",
-  ), articles), articles);
+  )), articles), articles);
 
 const addBlogArticleMeta = (articleHtml, articleMeta) => {
   const author = articleMeta?.author;
@@ -244,5 +247,5 @@ export const buildBlogArticleHtml = (html, articleSlug, articleMeta = {}) => {
     'class="section blog-article-section is-active"',
   ), articleMeta);
 
-  return `${shell.beforeMain}<main>${article}</main>${shell.afterMain}`;
+  return normalizeBlogArticleLinks(`${shell.beforeMain}<main>${article}</main>${shell.afterMain}`);
 };

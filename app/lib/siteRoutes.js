@@ -175,6 +175,7 @@ export const blogArticles = Object.fromEntries(
 
 export const normalizeSiteHtml = (html) =>
   html
+    .replace(/href="\/blog\/([a-z0-9-]+)#\1"/g, 'href="/blog/$1"')
     .replace(
       /(<a class="mega-product"[^>]*>\s*)<img(?![^>]*\bloading=)(?![^>]*\bfetchpriority=)/g,
       '$1<img loading="lazy" decoding="async"',

@@ -6,19 +6,6 @@ import { getCategoryPath, normalizeSiteHtml } from "../lib/siteRoutes";
 export default function StaticPage({ html }) {
   const normalizedHtml = normalizeSiteHtml(html);
   useEffect(() => {
-    const redirectBlogHashToArticle = () => {
-      if (window.location.pathname !== "/blog" || !window.location.hash) return;
-
-      const slug = window.location.hash.slice(1);
-      const articleLink = document.querySelector(`.blog-feature-card[href="/blog/${slug}"]`);
-      const articleHashLink = document.querySelector(`.blog-feature-card[href="/blog/${slug}#${slug}"]`);
-      if (articleLink || articleHashLink) {
-        window.location.replace(`/blog/${slug}`);
-      }
-    };
-
-    redirectBlogHashToArticle();
-
     const redirectProductHashToCategory = () => {
       if (window.location.pathname !== "/products" || !window.location.hash) return;
 
