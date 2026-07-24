@@ -32,6 +32,15 @@ export const blogHtml = String.raw`
           <button type="button" data-blog-category="Uncategorized">Uncategorized</button>
         </div>
         <div class="blog-card-grid">
+          <a class="blog-feature-card" href="/blog/how-custom-challenge-coins-are-made" data-card-image-fit="contain" data-blog-category="Custom Coins" aria-label="Read How Custom Challenge Coins Are Made">
+            <img src="/assets/images/blog-how-challenge-coins-made-card.webp" alt="custom challenge coins with antique plating gift box and 3D designs">
+            <div class="blog-feature-body">
+              <div class="blog-feature-meta"><span>Custom Coins</span><span>Manufacturing Guide</span></div>
+              <h2>How Are Custom Challenge Coins Made? A Step-by-Step Manufacturing Guide</h2>
+              <p>Learn the custom challenge coin manufacturing process from artwork proofing and tooling to finishing, inspection and shipment preparation.</p>
+              <span class="blog-feature-link">Read More</span>
+            </div>
+          </a>
           <a class="blog-feature-card" href="/blog/custom-enamel-pins-no-moq-guide" data-card-image-fit="contain" data-blog-category="Custom Lapel Pins" aria-label="Read Custom Enamel Pins No MOQ Buyer Guide">
             <img src="/assets/images/blog-custom-enamel-pins-no-moq-products.png" alt="custom baseball enamel pin samples for small and bulk orders">
             <div class="blog-feature-body">
@@ -80,6 +89,148 @@ export const blogHtml = String.raw`
         </div>
       </div>
     </section>
+    <article id="how-custom-challenge-coins-are-made" class="section blog-article-section">
+      <div class="container blog-article">
+        <header class="blog-article-header">
+          <a class="blog-back-link" href="/blog">Back to Blog</a>
+          <h1>How Are Custom Challenge Coins Made?</h1>
+          <p>Custom challenge coins are made through a controlled manufacturing process that turns a logo, badge, sketch, or idea into a finished metal coin. For overseas buyers, the useful part is not only knowing the steps. It is knowing which details must be confirmed before tooling starts, because unclear artwork, weak relief, color mistakes, and late packaging changes can all affect the final order.</p>
+          <p>This guide explains the challenge coin manufacturing process from artwork preparation and digital proofing to tooling, die-striking or die-casting, finishing, color filling, final inspection, and shipment preparation. Each step has a practical effect on weight, surface detail, color clarity, delivery planning, and the way the finished coin is presented to the recipient.</p>
+          <p>For related buying decisions, review our <a href="/products/custom-challenge-coins">custom challenge coins</a> page, <a href="/blog/custom-metal-crafts-guide">custom metal crafts guide</a>, and <a href="/blog/custom-medals-vs-challenge-coins">custom medals vs challenge coins</a> comparison.</p>
+          <figure class="blog-article-image blog-article-hero-image blog-article-contain-image">
+            <img src="/assets/images/blog-how-challenge-coins-made-card.webp" alt="custom challenge coins with antique plating gift box and 3D designs">
+            <figcaption>Finished custom challenge coins can combine raised metal relief, enamel color, antique finishes, 3D detail and presentation boxes.</figcaption>
+          </figure>
+        </header>
+
+        <h2>Step 1 - Submit Your Design or Idea</h2>
+        <p>The process starts when the customer sends a logo, badge, sketch, text, reference image, or rough concept. Some buyers already have a clean vector file. Others begin with a screenshot, department emblem, event name, or hand-drawn idea that needs to be rebuilt before production.</p>
+        <p>At this stage, a custom challenge coin manufacturer is not simply redrawing a file. The artwork must be adjusted for raised metal lines, recessed color areas, coin edge, back-side layout, tooling depth, and the selected metal finish.</p>
+        <p>The application also matters. A military recognition coin, police department coin, corporate anniversary coin, and collector coin may need different choices for finish, presentation box, color contrast, and delivery timing. A coin used at a formal ceremony, for example, usually needs more attention to box presentation and surface consistency than a simple giveaway order.</p>
+        <figure class="blog-article-image blog-article-contain-image">
+          <img src="/assets/images/blog-challenge-coin-artwork-proof.webp" alt="custom challenge coin artwork proof prepared on design software before production">
+          <figcaption>Production artwork should define the coin size, front and back design, color references, finish and manufacturing notes before tooling begins.</figcaption>
+        </figure>
+
+        <h2>Step 2 - Confirm Size, Thickness and Specifications</h2>
+        <p>Before digital proofing, the main specifications need to be fixed. Common challenge coin sizes are usually around 1.5 to 2.5 inches, with 1.75 inches and 2 inches being practical choices for many projects. Larger coins can show more detail, but they also use more metal and increase shipping weight.</p>
+        <p>Thickness affects both cost and perceived quality. The order confirmation should also cover 2D or 3D design, one-sided or double-sided artwork, color filling, metal finish, edge style, numbering, and presentation option. These details make the quotation more accurate and reduce the risk of changes after tooling has started.</p>
+        <p>For export orders, it is useful to keep these specifications in the quotation or production confirmation. A small difference in thickness, finish, or presentation box can change the unit cost, carton volume, and final delivery plan. Clear specifications also give the factory a stable standard for sample checking and mass production inspection.</p>
+
+        <h2>Step 3 - Create and Approve the Digital Proof</h2>
+        <p>After the specifications are clear, the factory prepares a digital proof. This proof shows how the custom challenge coin will be produced, including the front design, back design, size, metal finish, color references, edge style, and any special details.</p>
+        <p>Proof approval is the point where small problems are still easy to correct. Check spelling, dates, logo position, text readability, Pantone references, border balance, front and back alignment, and final size. Small text or thin lines may need adjustment before tooling begins.</p>
+        <p>If a design includes fine badge details, curved text, gradients, QR codes, or photo-like artwork, the manufacturer should explain whether color filling, printing, 2D relief, or 3D relief is more practical.</p>
+        <p>A useful production proof should also show which areas are raised metal, which areas are recessed, and where enamel or printing will be applied. This helps the buyer approve the real manufacturing structure instead of looking only at a flat graphic image.</p>
+
+        <h2>Step 4 - Create the Mold</h2>
+        <p>Once the digital proof is approved, the factory prepares the production tooling. The mold or die determines the raised and recessed metal areas of the coin. For detailed designs, tooling accuracy is critical because it controls the final relief, texture, and overall shape.</p>
+        <p>Tooling development may involve CNC engraving or other precision equipment. Complex shapes, deep 3D relief, cutout areas, multiple levels, or detailed artwork take more time to convert into a workable production structure.</p>
+        <p>Design changes after tooling starts may require adjustment or a new mold, which can add cost and delay the schedule. This is why proof review should be treated as a production decision, not only a visual check.</p>
+        <p>For designs with deep relief or very small lettering, the tooling review should focus on practical readability. A coin may look dramatic in a rendering, but the die still needs to allow clean metal flow, stable edges, and details that can survive polishing and surface finishing.</p>
+        <figure class="blog-article-image">
+          <img src="/assets/images/blog-challenge-coin-mold-making.webp" alt="challenge coin mold detail being checked before mass production">
+          <figcaption>Mold accuracy controls the final relief, lettering, recessed areas and edge detail of a custom challenge coin.</figcaption>
+        </figure>
+
+        <h2>Step 5 - Die-Striking or Die-Casting</h2>
+        <p>Challenge coins are commonly produced by die-striking or die-casting. The right method depends on the design, metal material, shape, relief depth, budget, and how the coin needs to feel in hand.</p>
+        <p>Die-struck challenge coins are made by pressing the design into metal using a die. This method is suitable for traditional coins with clean relief, strong metal detail, and a premium hand feel. It works well for military coins, police coins, corporate recognition coins, and classic emblem designs.</p>
+        <p>Die-cast challenge coins are made by injecting molten metal into a casting tool. This method is useful for complex shapes, deep 3D relief, cutout designs, and irregular outlines. It gives more flexibility for sculpted details, but the final effect still depends on tooling quality and finishing.</p>
+        <p>The choice between die-striking and die-casting affects detail, cost, texture, production time, and final appearance, so it should be decided before pricing is treated as final.</p>
+        <p>In factory review, die-striking is often preferred when the buyer wants a classic coin structure with crisp borders and strong raised metal lines. Die-casting is often considered when the coin shape is not round, when the design includes cutout areas, or when the 3D relief is too deep for a simpler stamped structure.</p>
+        <figure class="blog-article-image">
+          <img src="/assets/images/blog-challenge-coin-die-striking.webp" alt="die striking equipment used in custom challenge coin production">
+          <figcaption>Die-striking uses pressure and tooling to form raised and recessed coin details before finishing.</figcaption>
+        </figure>
+
+        <section class="blog-article-cta">
+          <div class="blog-cta-copy">
+            <h2>Need Help Reviewing a Challenge Coin Design?</h2>
+            <p>Send your logo, quantity, size, finish preference and deadline. We can review the best production method before quoting.</p>
+          </div>
+          <div class="blog-cta-actions"><a class="btn btn-yellow" href="/contact">Send Your Requirements</a><a class="btn btn-primary" href="/products/custom-challenge-coins">View Challenge Coin Options</a></div>
+        </section>
+
+        <h2>Step 6 - Trimming, Polishing and Edge Finishing</h2>
+        <p>After the coin body is formed, excess metal and rough edges are removed. Trimming and polishing help the coin reach its final shape before surface finishing. Edge options may include plain edge, rope edge, reeded edge, wave edge, diamond-cut edge, edge text, or numbering.</p>
+        <p>A clean edge makes the coin feel more professional in hand and helps the finished product match the approved proof.</p>
+
+        <h2>Step 7 - Plating and Enamel Coloring</h2>
+        <p>Plating gives the coin its visible metal tone. Common options include gold, silver, copper, bronze, black nickel, antique gold, antique silver, and antique bronze. Antique finishes are often used for 3D challenge coins because they highlight depth and relief. Bright gold or silver can look clean and formal, while black nickel creates strong contrast with bright colors.</p>
+        <p>After plating, color may be added to recessed areas. Soft enamel is widely used for colorful challenge coins, while hard enamel can create a smoother surface. For gradients, photos, or very fine details, printing may be more practical than enamel filling.</p>
+        <p>Metal finish and coloring should be checked under normal lighting because bright finishes and antique finishes can look different from digital previews. For brand or unit colors, Pantone references help reduce misunderstanding, but buyers should still allow a reasonable tolerance because metal, enamel, and screen colors do not behave exactly the same.</p>
+        <figure class="blog-article-image">
+          <img src="/assets/images/blog-challenge-coin-coloring.webp" alt="factory enamel coloring process for custom challenge coins">
+          <figcaption>Coloring and finish choices affect color contrast, surface texture, durability and the final presentation of the coin.</figcaption>
+        </figure>
+
+        <h2>Step 8 - Baking and Final Polishing</h2>
+        <p>After enamel coloring, the coins may go through baking or curing so the color can harden properly. Without enough curing time, colored areas are more likely to mark during later polishing or handling.</p>
+        <p>Final polishing cleans the surface and improves appearance. Bright finishes need careful handling because small marks can be more visible, while antique finishes should keep darker recessed areas and clear raised details.</p>
+
+        <h2>Step 9 - Quality Inspection</h2>
+        <p>Quality inspection should be done before packing and shipment. For overseas orders, it is usually cheaper to slow down at this stage than to discover surface defects or quantity errors after the cartons arrive.</p>
+        <p>Inspection usually includes size and thickness, artwork clarity, front and back alignment, color accuracy, finish consistency, surface scratches, edge smoothness, color overflow, packing accuracy, and quantity confirmation.</p>
+        <p>If the coins are for an event, ceremony, or official presentation, leave enough time for final inspection before shipment.</p>
+        <p>For bulk orders, inspection should include both appearance checks and packing checks. The factory should compare finished coins against the approved proof, review several cartons from the batch, and confirm that labels, quantities, and packing methods match the customer requirements.</p>
+        <figure class="blog-article-image">
+          <img src="/assets/images/blog-challenge-coin-quality-inspection.webp" alt="custom challenge coins being inspected before packaging">
+          <figcaption>Final inspection checks coin appearance, surface quality, color consistency, quantity and packing before shipment.</figcaption>
+        </figure>
+
+        <h2>Step 10 - Packaging and Shipping</h2>
+        <p>Packaging depends on how the coins will be used. Simple poly bags may be suitable for internal distribution or bulk handouts. Velvet pouches, acrylic capsules, paper boxes, or gift boxes are better for formal recognition, corporate gifts, collector coins, and retail products.</p>
+        <p>The packing method should be confirmed before mass production because it affects cost, carton size, and shipment planning. Retail orders may require barcode labels, SKU labels, backing cards, inner cartons, or specific export carton markings.</p>
+        <p>Production time depends on artwork approval, mold complexity, order quantity, finish, color work, packaging requirements, and factory schedule. If the order is tied to a ceremony, trade show, or launch date, share the deadline at the first inquiry.</p>
+        <p>Before shipping, the packing list, carton marks, gross weight, carton size, destination country, and delivery method should be checked. This step is simple, but it helps avoid shipment delays caused by missing labels, incorrect carton information, or unclear delivery instructions.</p>
+        <figure class="blog-article-image">
+          <img src="/assets/images/blog-challenge-coin-packaging-shipping.webp" alt="export cartons prepared for custom challenge coin shipment">
+          <figcaption>Shipment preparation should confirm packing details, carton labels, quantity and delivery schedule before dispatch.</figcaption>
+        </figure>
+
+        <h2>Die-Struck vs Die-Cast Challenge Coins</h2>
+        <p>Both methods can produce professional results when the process matches the artwork. The table below gives a practical comparison before confirming production.</p>
+        <figure class="blog-article-image blog-article-contain-image">
+          <img src="/assets/images/blog-challenge-coin-2d-vs-3d.webp" alt="2D and 3D custom challenge coin examples with different finishes">
+          <figcaption>2D and 3D challenge coin designs can use different finishes, relief depths, colors and edge treatments.</figcaption>
+        </figure>
+        <div class="blog-table-wrap">
+          <table class="blog-table">
+            <thead><tr><th>Item</th><th>Die-Struck Challenge Coins</th><th>Die-Cast Challenge Coins</th></tr></thead>
+            <tbody>
+              <tr><td>Best for</td><td>Traditional coins, badges, clean relief, text-based designs</td><td>Complex shapes, cutouts, deep 3D forms, irregular outlines</td></tr>
+              <tr><td>Appearance</td><td>Crisp metal relief and classic coin feel</td><td>Flexible shape and stronger sculpted effects</td></tr>
+              <tr><td>Detail style</td><td>Clear raised and recessed areas</td><td>More suitable for complex dimensional forms</td></tr>
+              <tr><td>Common use</td><td>Military coins, police coins, corporate recognition coins</td><td>Collector coins, shaped coins, 3D designs, specialty coins</td></tr>
+              <tr><td>Buyer note</td><td>Good for premium traditional presentation</td><td>Good when the design needs shape flexibility</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>Frequently Asked Questions</h2>
+        <h3>How long does it take to manufacture challenge coins?</h3>
+        <p>Manufacturing time depends on artwork approval, mold complexity, quantity, finish, color work, packing method, and shipping route. Share the required delivery date at the first inquiry.</p>
+
+        <h3>What artwork files should I submit?</h3>
+        <p>Vector files such as AI, PDF, EPS, or SVG are helpful, but a logo, sketch, reference image, or clear concept can also be used for initial review.</p>
+
+        <h3>Can both sides of a challenge coin be customized?</h3>
+        <p>Yes. Many custom challenge coins use both front and back designs. The back side can include a motto, date, unit name, event name, serial number, QR code, or secondary logo.</p>
+
+        <h2>Conclusion</h2>
+        <p>Custom challenge coins are made through a detailed process, from design submission and digital proofing to tooling, die-striking or die-casting, surface finishing, color work, polishing, inspection, packing, and shipment.</p>
+        <p>The strongest orders usually start with clear artwork, confirmed specifications, a careful proof review, the right production method, and agreed packing details before mass production. Those decisions help the finished coins match the intended application instead of simply looking acceptable in a digital preview.</p>
+
+        <section class="blog-article-cta">
+          <div class="blog-cta-copy">
+            <h2>Ready to Make Custom Challenge Coins?</h2>
+            <p>Send your artwork and requirements to Unique Pin. We will review your design, recommend the right manufacturing process, and prepare a practical factory quotation.</p>
+          </div>
+          <div class="blog-cta-actions"><a class="btn btn-yellow" href="/contact">Get a Quote</a><a class="btn btn-primary" href="/products/custom-challenge-coins">View Challenge Coins</a></div>
+        </section>
+      </div>
+    </article>
     <article id="custom-enamel-pins-no-moq-guide" class="section blog-article-section">
       <div class="container blog-article">
         <header class="blog-article-header">
@@ -372,7 +523,7 @@ export const blogHtml = String.raw`
         <p><a href="/products/custom-medals">Custom medals</a> are used for sports competitions, award ceremonies, charity events, schools, universities and commemorative programs. Buyers usually focus on size, weight, ribbon quality, plating color and whether the design needs 2D or 3D relief. A reliable custom medals supplier should help adjust the artwork so important details remain clear after molding and plating.</p>
 
         <h3>Challenge Coins for Recognition Programs</h3>
-        <p><a href="/products/custom-challenge-coins">Challenge coins</a> are popular with military groups, police and fire departments, corporate teams and membership organizations. They often include double-sided artwork, antique plating, edge text, numbering and presentation packaging. Because challenge coins are frequently kept for years, buyers should pay close attention to metal thickness, relief depth, enamel accuracy and edge finishing.</p>
+        <p><a href="/products/custom-challenge-coins">Challenge coins</a> are popular with military groups, police and fire departments, corporate teams and membership organizations. They often include double-sided artwork, antique plating, edge text, numbering and presentation packaging. Because challenge coins are frequently kept for years, buyers should pay close attention to metal thickness, relief depth, enamel accuracy and edge finishing. If you want to understand the dedicated coin workflow, read our guide on <a href="/blog/how-custom-challenge-coins-are-made">how custom challenge coins are made</a>.</p>
 
         <h3>Metal Keychains for Promotions and Retail</h3>
         <p><a href="/products/custom-metal-keychains">Custom metal keychains</a> work well as promotional gifts, tourism souvenirs and retail accessories. They are easy to distribute, useful in daily life and can be produced in many shapes. Options include soft enamel, printed inserts with epoxy, die cast 3D designs, bottle opener functions and different chain attachments.</p>
@@ -553,7 +704,7 @@ export const blogHtml = String.raw`
 
         <h2>What Are Challenge Coins?</h2>
         <p>Challenge coins are custom metal coins used by military units, public safety departments, corporate teams, clubs and associations. Unlike medals, they are usually not worn. They are carried, displayed, gifted or collected.</p>
-        <p>Challenge coins often include double-sided artwork, antique plating, edge text, enamel colors, numbering and presentation boxes. They work well when the product needs physical weight, tradition and long-term keepsake value.</p>
+        <p>Challenge coins often include double-sided artwork, antique plating, edge text, enamel colors, numbering and presentation boxes. They work well when the product needs physical weight, tradition and long-term keepsake value. For a deeper process view, see our step-by-step guide on <a href="/blog/how-custom-challenge-coins-are-made">how custom challenge coins are made</a>.</p>
         <figure class="blog-article-image blog-article-image-split blog-article-contain-image">
           <img src="assets/images/blog-challenge-coin-police.jpg" alt="custom challenge coins with antique plating and enamel colors">
           <img src="assets/images/blog-challenge-coin-anniversary.jpg" alt="double sided custom challenge coins with raised metal detail">

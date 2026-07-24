@@ -124,6 +124,14 @@ const withBlogArticleDefaults = (article) => {
 };
 
 const blogArticleData = {
+  "how-custom-challenge-coins-are-made": {
+    title: "How Are Custom Challenge Coins Made? A Step-by-Step Manufacturing Guide",
+    description:
+      "Learn how custom challenge coins are made, from artwork and tooling to die-striking, finishing, color filling, quality inspection and shipment preparation.",
+    datePublished: "2026-07-24",
+    dateModified: "2026-07-24",
+    image: "/assets/images/blog-how-challenge-coins-made-card.webp",
+  },
   "custom-enamel-pins-no-moq-guide": {
     title: "Custom Enamel Pins with No Minimum Order: A Complete Guide",
     description:
