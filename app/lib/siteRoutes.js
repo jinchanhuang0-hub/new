@@ -125,7 +125,7 @@ const withBlogArticleDefaults = (article) => {
 
 const blogArticleData = {
   "custom-enamel-pins-no-moq-guide": {
-    title: "No MOQ Custom Enamel Pins: Flexible Solutions for Every Order Size",
+    title: "Custom Enamel Pins with No Minimum Order: A Complete Guide",
     description:
       "Learn how no MOQ custom enamel pin orders work for samples, small batches and bulk orders, including artwork review, mold setup, unit cost, inspection and shipment preparation.",
     datePublished: "2026-07-23",
