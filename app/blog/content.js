@@ -94,7 +94,7 @@ export const blogHtml = String.raw`
         <header class="blog-article-header">
           <a class="blog-back-link" href="/blog">Back to Blog</a>
           <h1>How Are Custom Challenge Coins Made?</h1>
-          <p>Custom challenge coins are made through a controlled manufacturing process that turns a logo, badge, sketch, or idea into a finished metal coin. For overseas buyers, the useful part is not only knowing the steps. It is knowing which details must be confirmed before tooling starts, because unclear artwork, weak relief, color mistakes, and late packaging changes can all affect the final order.</p>
+          <p>Custom challenge coins are made through a controlled manufacturing process that turns a logo, badge, sketch, or idea into a finished metal coin. For buyers, the useful part is not only knowing the steps. It is knowing which details must be confirmed before tooling starts, because unclear artwork, weak relief, color mistakes, and late packaging changes can all affect the final order.</p>
           <p>This guide explains the challenge coin manufacturing process from artwork preparation and digital proofing to tooling, die-striking or die-casting, finishing, color filling, final inspection, and shipment preparation. Each step has a practical effect on weight, surface detail, color clarity, delivery planning, and the way the finished coin is presented to the recipient.</p>
           <p>For related buying decisions, review our <a href="/products/custom-challenge-coins">custom challenge coins</a> page, <a href="/blog/custom-metal-crafts-guide">custom metal crafts guide</a>, and <a href="/blog/custom-medals-vs-challenge-coins">custom medals vs challenge coins</a> comparison.</p>
           <figure class="blog-article-image blog-article-hero-image blog-article-contain-image">
@@ -170,7 +170,7 @@ export const blogHtml = String.raw`
         <p>Final polishing cleans the surface and improves appearance. Bright finishes need careful handling because small marks can be more visible, while antique finishes should keep darker recessed areas and clear raised details.</p>
 
         <h2>Step 9 - Quality Inspection</h2>
-        <p>Quality inspection should be done before packing and shipment. For overseas orders, it is usually cheaper to slow down at this stage than to discover surface defects or quantity errors after the cartons arrive.</p>
+        <p>Quality inspection should be done before packing and shipment. For export orders, it is usually cheaper to slow down at this stage than to discover surface defects or quantity errors after the cartons arrive.</p>
         <p>Inspection usually includes size and thickness, artwork clarity, front and back alignment, color accuracy, finish consistency, surface scratches, edge smoothness, color overflow, packing accuracy, and quantity confirmation.</p>
         <p>If the coins are for an event, ceremony, or official presentation, leave enough time for final inspection before shipment.</p>
         <p>For bulk orders, inspection should include both appearance checks and packing checks. The factory should compare finished coins against the approved proof, review several cartons from the batch, and confirm that labels, quantities, and packing methods match the customer requirements.</p>
