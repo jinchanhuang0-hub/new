@@ -216,7 +216,7 @@ const html = String.raw`
       </div>
     </div>
 
-    <section class="section how-section">
+    <section class="section how-section how-section-no-visual">
       <div class="container how-layout">
         <div class="how-content">
           <div class="how-heading">
@@ -242,12 +242,6 @@ const html = String.raw`
             </div>
           </div>
           <a class="how-cta" href="/contact">Start Your Free Design</a>
-        </div>
-        <div class="how-visual" aria-hidden="true">
-          <div class="process-art">
-            <img class="process-sketch" src="assets/images/process-coin-sketch.png" alt="">
-            <img class="process-coin" src="assets/images/process-coin-finished.png" alt="">
-          </div>
         </div>
       </div>
     </section>

@@ -2898,6 +2898,11 @@ body.quote-modal-open {
   align-items: center;
 }
 
+.how-section-no-visual .how-layout {
+  grid-template-columns: minmax(0, 760px);
+  justify-content: center;
+}
+
 .how-heading {
   position: relative;
   text-align: center;
