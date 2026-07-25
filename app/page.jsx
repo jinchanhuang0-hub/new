@@ -220,21 +220,21 @@ const html = String.raw`
       <div class="container how-layout">
         <div class="how-content">
           <div class="how-heading">
-            <h2>How We Make It Happen</h2>
-            <p>From idea to delivery: a step-by-step guide to your custom metal craft design.</p>
+            <h2>How It Works</h2>
+            <p>we make custom metal crafts simple and reliable.</p>
           </div>
           <div class="how-steps">
             <div class="how-step-card">
               <span class="step-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h16v14H4z"/><path d="m7 16 3.5-4 2.5 3 2-2.5 2 3.5"/><circle cx="9" cy="9" r="1.5"/></svg></span>
-              <span>Send Us Your Ideas</span>
+              <span>Share Your Ideas</span>
             </div>
             <div class="how-step-card">
               <span class="step-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 19h14"/></svg></span>
-              <span>Receive Your Custom Proof</span>
+              <span>Review artwork and confirm details.</span>
             </div>
             <div class="how-step-card">
               <span class="step-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="m8.5 12.2 2.2 2.2 4.8-5"/></svg></span>
-              <span>Approve and Production Begins</span>
+              <span>Craft Your Products</span>
             </div>
             <div class="how-step-card">
               <span class="step-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 7h10v9H4z"/><path d="M14 10h3l3 3v3h-6z"/><circle cx="8" cy="18" r="1.5"/><circle cx="17" cy="18" r="1.5"/></svg></span>
