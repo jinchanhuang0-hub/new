@@ -216,7 +216,7 @@ const html = String.raw`
       </div>
     </div>
 
-    <section class="section how-section how-section-no-visual">
+    <section class="section how-section">
       <div class="container how-layout">
         <div class="how-content">
           <div class="how-heading">
@@ -242,6 +242,9 @@ const html = String.raw`
             </div>
           </div>
           <a class="how-cta" href="/contact">Start Your Free Design</a>
+        </div>
+        <div class="how-visual" aria-hidden="true">
+          <img class="process-steps-showcase" src="assets/images/home-how-process-steps.webp" alt="">
         </div>
       </div>
     </section>

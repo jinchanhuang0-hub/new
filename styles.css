@@ -2893,14 +2893,9 @@ body.quote-modal-open {
 
 .how-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(360px, 0.9fr);
-  gap: clamp(42px, 6vw, 88px);
+  grid-template-columns: minmax(0, 0.92fr) minmax(430px, 1.08fr);
+  gap: clamp(38px, 5vw, 72px);
   align-items: center;
-}
-
-.how-section-no-visual .how-layout {
-  grid-template-columns: minmax(0, 760px);
-  justify-content: center;
 }
 
 .how-heading {
@@ -3040,10 +3035,20 @@ body.quote-modal-open {
 
 .how-visual {
   position: relative;
-  min-height: 360px;
+  min-height: 330px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.process-steps-showcase {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 700px);
+  height: auto;
+  display: block;
+  object-fit: contain;
+  filter: drop-shadow(0 22px 38px rgba(11, 47, 99, 0.15));
 }
 
 .process-art {
