@@ -2950,6 +2950,10 @@ body.quote-modal-open {
   gap: 22px;
 }
 
+.how-section:not(.custom-how-section) .how-steps {
+  transform: translateX(10px);
+}
+
 .how-step-card {
   min-height: 141px;
   display: flex;
