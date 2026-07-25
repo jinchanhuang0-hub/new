@@ -2906,6 +2906,13 @@ body.quote-modal-open {
   padding-top: 34px;
 }
 
+@media (min-width: 981px) {
+  .how-section:not(.custom-how-section) .how-content {
+    transform: scale(1.1);
+    transform-origin: top left;
+  }
+}
+
 .how-heading::before,
 .how-heading::after {
   content: "";
