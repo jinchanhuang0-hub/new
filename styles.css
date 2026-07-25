@@ -3035,20 +3035,63 @@ body.quote-modal-open {
 
 .how-visual {
   position: relative;
-  min-height: 330px;
+  min-height: 520px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.process-steps-showcase {
+.process-flow {
+  width: min(100%, 240px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9px;
+}
+
+.process-flow-card {
   position: relative;
-  z-index: 1;
-  width: min(100%, 700px);
-  height: auto;
-  display: block;
+  width: 164px;
+  height: 164px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  overflow: hidden;
+  border: 2px solid rgba(0, 136, 217, 0.72);
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 12px 26px rgba(11, 47, 99, 0.1);
+}
+
+.process-flow-card img {
+  width: 100%;
+  height: 100%;
   object-fit: contain;
-  filter: drop-shadow(0 22px 38px rgba(11, 47, 99, 0.15));
+  display: block;
+  filter: drop-shadow(0 12px 20px rgba(11, 47, 99, 0.1));
+}
+
+.process-flow-arrow {
+  width: 34px;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #fff;
+  background: #ff4d4f;
+  box-shadow: 0 10px 20px rgba(255, 77, 79, 0.2);
+}
+
+.process-flow-arrow svg {
+  width: 21px;
+  height: 21px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .process-art {

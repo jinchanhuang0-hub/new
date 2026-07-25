@@ -244,7 +244,23 @@ const html = String.raw`
           <a class="how-cta" href="/contact">Start Your Free Design</a>
         </div>
         <div class="how-visual" aria-hidden="true">
-          <img class="process-steps-showcase" src="assets/images/home-how-process-steps.webp" alt="">
+          <div class="process-flow">
+            <div class="process-flow-card">
+              <img src="assets/images/home-process-step-1.webp" alt="">
+            </div>
+            <span class="process-flow-arrow">
+              <svg viewBox="0 0 24 24"><path d="M12 4v15"/><path d="m6 13 6 6 6-6"/></svg>
+            </span>
+            <div class="process-flow-card">
+              <img src="assets/images/home-process-step-2.webp" alt="">
+            </div>
+            <span class="process-flow-arrow">
+              <svg viewBox="0 0 24 24"><path d="M12 4v15"/><path d="m6 13 6 6 6-6"/></svg>
+            </span>
+            <div class="process-flow-card">
+              <img src="assets/images/home-process-step-3.webp" alt="">
+            </div>
+          </div>
         </div>
       </div>
     </section>
