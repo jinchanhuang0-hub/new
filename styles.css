@@ -3061,8 +3061,8 @@ body.quote-modal-open {
 }
 
 .process-flow-card:first-child {
-  width: 180px;
-  height: 180px;
+  width: 200px;
+  height: 200px;
 }
 
 .process-flow-card img {
@@ -3074,23 +3074,32 @@ body.quote-modal-open {
 }
 
 .process-flow-arrow {
-  width: 34px;
-  height: 34px;
+  width: 48px;
+  height: 58px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
-  color: #fff;
-  background: #ff4d4f;
-  box-shadow: 0 10px 20px rgba(255, 77, 79, 0.2);
+  color: var(--navy);
+  background: transparent;
+  filter: drop-shadow(0 9px 10px rgba(11, 47, 99, 0.2));
 }
 
 .process-flow-arrow svg {
-  width: 21px;
-  height: 21px;
+  width: 40px;
+  height: 54px;
   fill: none;
+}
+
+.process-flow-arrow .arrow-main {
   stroke: currentColor;
-  stroke-width: 2.6;
+  stroke-width: 9;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.process-flow-arrow .arrow-highlight {
+  stroke: rgba(255, 255, 255, 0.68);
+  stroke-width: 3;
   stroke-linecap: round;
   stroke-linejoin: round;
 }

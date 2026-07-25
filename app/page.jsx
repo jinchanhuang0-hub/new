@@ -249,13 +249,13 @@ const html = String.raw`
               <img src="assets/images/home-process-step-1.webp" alt="">
             </div>
             <span class="process-flow-arrow">
-              <svg viewBox="0 0 24 24"><path d="M12 4v15"/><path d="m6 13 6 6 6-6"/></svg>
+              <svg viewBox="0 0 48 64"><path class="arrow-main" d="M24 6v38M10 34l14 22 14-22"/><path class="arrow-highlight" d="M19 9v30M15 36l9 14"/></svg>
             </span>
             <div class="process-flow-card">
               <img src="assets/images/home-process-step-2.webp" alt="">
             </div>
             <span class="process-flow-arrow">
-              <svg viewBox="0 0 24 24"><path d="M12 4v15"/><path d="m6 13 6 6 6-6"/></svg>
+              <svg viewBox="0 0 48 64"><path class="arrow-main" d="M24 6v38M10 34l14 22 14-22"/><path class="arrow-highlight" d="M19 9v30M15 36l9 14"/></svg>
             </span>
             <div class="process-flow-card">
               <img src="assets/images/home-process-step-3.webp" alt="">
