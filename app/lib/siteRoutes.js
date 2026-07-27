@@ -65,6 +65,13 @@ export const getProductPath = (itemSlug, item) =>
   `${getCategoryPath(getCategoryKeyForItem(item))}/${itemSlug}`;
 
 export const productItemCategoryKey = {
+  "halloween-letter-s-soft-enamel-pin": "pins",
+  "fire-breathing-queen-soft-enamel-pin": "pins",
+  "winged-anime-character-soft-enamel-pin-set": "pins",
+  "wizard-bunny-soft-enamel-pin-set": "pins",
+  "horror-guts-soft-enamel-pin": "pins",
+  "rosemount-irish-soft-enamel-pin": "pins",
+  "tiger-face-soft-enamel-pin": "pins",
   "christmas-enamel-pin-set": "pins",
   "lost-my-way-floral-hard-enamel-pin": "pins",
   "yellow-character-hard-enamel-pin": "pins",
