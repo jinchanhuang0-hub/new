@@ -457,10 +457,10 @@ export default function StaticPage({ html }) {
     document.addEventListener("click", handleBlogCategoryClick);
     document.addEventListener("click", handleBlogPaginationClick);
 
+    const productsPerPage = 30;
     const productCategoryButtons = document.querySelectorAll(".products-category-nav [data-product-filter]");
     const productCards = document.querySelectorAll(".products-all-grid .product-type-card[data-product-category]");
     const productGrid = document.querySelector(".products-all-grid");
-    const productsPerPage = 30;
     let selectedProductCategory = "all";
     let currentProductPage = 1;
     let productPagination = document.querySelector(".product-pagination");
@@ -557,6 +557,82 @@ export default function StaticPage({ html }) {
     document.addEventListener("click", handleProductNavClick);
     document.addEventListener("click", handleProductPaginationClick);
 
+    const paginatedProductGrids = [...document.querySelectorAll(".product-type-grid:not(.products-all-grid)")];
+    const categoryPaginationStates = paginatedProductGrids
+      .map((grid, index) => {
+        const cards = [...grid.querySelectorAll(":scope > .product-type-card")];
+        if (cards.length <= productsPerPage) return null;
+
+        let pagination = grid.nextElementSibling?.classList?.contains("product-pagination")
+          ? grid.nextElementSibling
+          : null;
+        if (!pagination) {
+          pagination = document.createElement("nav");
+          pagination.className = "product-pagination";
+          pagination.setAttribute("aria-label", "Product pages");
+          grid.insertAdjacentElement("afterend", pagination);
+        }
+
+        return {
+          cards,
+          grid,
+          page: 1,
+          pagination,
+          id: `product-category-grid-${index}`,
+        };
+      })
+      .filter(Boolean);
+
+    const renderCategoryPagination = (state, pageCount) => {
+      if (!state.pagination) return;
+
+      if (pageCount <= 1) {
+        state.pagination.hidden = true;
+        state.pagination.innerHTML = "";
+        return;
+      }
+
+      state.pagination.hidden = false;
+      state.pagination.innerHTML = Array.from({ length: pageCount }, (_, index) => {
+        const page = index + 1;
+        const isActive = page === state.page;
+        return `<button type="button" class="${isActive ? "active" : ""}" data-product-grid="${state.id}" data-product-category-page="${page}" aria-current="${isActive ? "page" : "false"}">${page}</button>`;
+      }).join("");
+    };
+
+    const applyCategoryPagination = (state, page = 1, scrollToGrid = false) => {
+      const pageCount = Math.max(1, Math.ceil(state.cards.length / productsPerPage));
+      state.page = Math.min(Math.max(page, 1), pageCount);
+      const startIndex = (state.page - 1) * productsPerPage;
+      const endIndex = startIndex + productsPerPage;
+
+      state.cards.forEach((card, index) => {
+        const shouldShowCard = index >= startIndex && index < endIndex;
+        card.hidden = !shouldShowCard;
+        card.style.display = shouldShowCard ? "" : "none";
+      });
+
+      renderCategoryPagination(state, pageCount);
+
+      if (scrollToGrid) {
+        state.grid.closest(".product-type-section")?.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    };
+
+    const handleCategoryPaginationClick = (event) => {
+      const button = event.target.closest?.(".product-pagination [data-product-category-page]");
+      if (!button) return;
+
+      event.preventDefault();
+      const state = categoryPaginationStates.find((paginationState) => paginationState.id === button.dataset.productGrid);
+      if (!state) return;
+
+      applyCategoryPagination(state, Number(button.dataset.productCategoryPage) || 1, true);
+    };
+
+    categoryPaginationStates.forEach((state) => applyCategoryPagination(state));
+    document.addEventListener("click", handleCategoryPaginationClick);
+
     return () => {
       document.removeEventListener("click", handleBlogCardClick);
       document.removeEventListener("click", handleHomeProductClick);
@@ -568,6 +644,7 @@ export default function StaticPage({ html }) {
       document.removeEventListener("click", handleProductCategoryClick);
       document.removeEventListener("click", handleProductNavClick);
       document.removeEventListener("click", handleProductPaginationClick);
+      document.removeEventListener("click", handleCategoryPaginationClick);
       window.removeEventListener("popstate", activateProductContent);
       window.removeEventListener("popstate", activateProductItemPage);
       window.clearInterval(productWatcher);

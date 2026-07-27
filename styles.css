@@ -4132,6 +4132,7 @@ body.quote-modal-open {
 
 .product-pagination {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
   margin-top: 34px;
@@ -4144,6 +4145,7 @@ body.quote-modal-open {
 .product-pagination button {
   min-width: 42px;
   height: 42px;
+  padding: 0 14px;
   border: 1px solid rgba(11, 47, 99, 0.14);
   border-radius: 999px;
   background: #fff;
