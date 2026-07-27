@@ -66,6 +66,9 @@ export const getProductPath = (itemSlug, item) =>
 
 export const productItemCategoryKey = {
   "christmas-enamel-pin-set": "pins",
+  "lost-my-way-floral-hard-enamel-pin": "pins",
+  "yellow-character-hard-enamel-pin": "pins",
+  "auburn-proud-soft-enamel-pin": "pins",
   "green-character-soft-enamel-pin-set": "pins",
   "box-cat-and-umbrella-cat-enamel-pins": "pins",
   "antique-silver-guitar-crest-enamel-pin": "pins",

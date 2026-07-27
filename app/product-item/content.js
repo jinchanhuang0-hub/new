@@ -1,5 +1,6 @@
 import StaticPage from "../components/StaticPage";
 import { getProductPath } from "../lib/siteRoutes";
+import { compareProductEntriesBySkuDesc } from "../lib/productSorting";
 
 export const productItems = {
   "christmas-enamel-pin-set": {
@@ -15,6 +16,48 @@ export const productItems = {
     categories: "Lapel Pins, Christmas Enamel Pins",
     quoteProduct: "Christmas Enamel Pins",
     lead: "This Christmas enamel pin set includes festive pin designs for holiday retail programs, brand campaigns, gift boxes and seasonal event merchandise."
+  },
+  "lost-my-way-floral-hard-enamel-pin": {
+    title: "Lost My Way Floral Hard Enamel Pin",
+    image: "assets/images/type-pins-lost-my-way-floral.jpg",
+    alt: "Lost My Way floral hard enamel pin",
+    categoryLabel: "Lapel Pins",
+    categoryHref: "/products/custom-enamel-pins",
+    material: "Zinc alloy",
+    process: "Die casting and hard enamel filling",
+    sku: "UP-PIN-008",
+    usage: "Inspirational gifts, retail collections, events",
+    categories: "Lapel Pins, Hard Enamel Pins",
+    quoteProduct: "Lapel Pins",
+    lead: "This Lost My Way floral hard enamel pin combines a purple compass-style background, floral artwork and polished smooth enamel for inspirational gifts, retail collections, event merchandise and club campaigns."
+  },
+  "yellow-character-hard-enamel-pin": {
+    title: "Yellow Character Hard Enamel Pin",
+    image: "assets/images/type-pins-yellow-character.jpg",
+    alt: "Yellow character hard enamel pin",
+    categoryLabel: "Lapel Pins",
+    categoryHref: "/products/custom-enamel-pins",
+    material: "Zinc alloy",
+    process: "Die casting and hard enamel filling",
+    sku: "UP-PIN-007",
+    usage: "Character merchandise, events, retail gifts",
+    categories: "Lapel Pins, Hard Enamel Pins",
+    quoteProduct: "Lapel Pins",
+    lead: "This yellow character hard enamel pin features bright enamel color, polished smooth surfaces and playful character artwork for event merchandise, retail collections, club campaigns and promotional gifts."
+  },
+  "auburn-proud-soft-enamel-pin": {
+    title: "Auburn Proud Soft Enamel Pin",
+    image: "assets/images/type-pins-auburn-proud.jpg",
+    alt: "Auburn Proud green soft enamel pin",
+    categoryLabel: "Lapel Pins",
+    categoryHref: "/products/custom-enamel-pins",
+    material: "Zinc alloy",
+    process: "Die casting and soft enamel filling",
+    sku: "UP-PIN-006",
+    usage: "School spirit, alumni events, retail gifts",
+    categories: "Lapel Pins, Soft Enamel Pins",
+    quoteProduct: "Lapel Pins",
+    lead: "This Auburn Proud soft enamel pin uses green enamel, raised metal outlines and bold lettering for school spirit programs, alumni events, club merchandise and retail gift collections."
   },
   "green-character-soft-enamel-pin-set": {
     title: "Green Character Soft Enamel Pin Set",
@@ -654,6 +697,7 @@ const escapeHtml = (value = "") => String(value)
 const buildRelatedProductsHtml = (currentSlug, item) => {
   const relatedProducts = Object.entries(productItems)
     .filter(([slug, product]) => slug !== currentSlug && product.categoryLabel === item.categoryLabel)
+    .sort(compareProductEntriesBySkuDesc)
     .slice(0, 4);
 
   return relatedProducts.map(([slug, product]) => {

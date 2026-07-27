@@ -1,3 +1,5 @@
+import { replaceProductTypeSectionCards } from "./productCards";
+
 const getPageShell = (html) => {
   const mainStart = html.indexOf("<main");
   const mainOpenEnd = html.indexOf(">", mainStart) + 1;
@@ -135,9 +137,9 @@ export const buildCategoryHtml = (html, categoryKey, categoryLabel) => {
   const sectionPattern = new RegExp(
     `<section class="product-type-section" data-product-content="${categoryKey}"(?: hidden)?>[\\s\\S]*?<\\/section>`,
   );
-  const section = (
+  const section = replaceProductTypeSectionCards((
     html.match(sectionPattern)?.[0]?.replace(/\s+hidden(?=[\s>])/i, "") || ""
-  ).replace(
+  ), categoryKey).replace(
     /(\s*<\/div>\s*<\/section>)$/,
     `${categorySeoContent[categoryKey] || ""}$1`,
   );

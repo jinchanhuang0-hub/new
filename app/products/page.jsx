@@ -1,5 +1,6 @@
 import StaticPage from "../components/StaticPage";
 import { productCategoryNavHtml } from "../components/productCategoryNav";
+import { replaceProductsAllGridCards } from "../lib/productCards";
 
 export const metadata = {
   title: "Custom Metal Products | Pins, Medals, Coins & Keychains",
@@ -25,6 +26,8 @@ const html = String.raw`
     <section class="product-type-section products-all-section" id="all">
       <div class="container product-type-content">
         <div class="product-type-grid products-all-grid">
+          <article class="product-type-card" data-product-category="pins"><img src="assets/images/type-pins-yellow-character.jpg" alt="Yellow character hard enamel pin"><h2>Yellow Character Hard Enamel Pin</h2><div class="product-type-actions"><a class="product-type-btn product-type-btn-outline" href="/products/custom-enamel-pins/yellow-character-hard-enamel-pin">View More</a><a class="product-type-btn product-type-btn-primary" href="/contact">GET QUOTE NOW</a></div></article>
+          <article class="product-type-card" data-product-category="pins"><img src="assets/images/type-pins-auburn-proud.jpg" alt="Auburn Proud green soft enamel pin"><h2>Auburn Proud Soft Enamel Pin</h2><div class="product-type-actions"><a class="product-type-btn product-type-btn-outline" href="/products/custom-enamel-pins/auburn-proud-soft-enamel-pin">View More</a><a class="product-type-btn product-type-btn-primary" href="/contact">GET QUOTE NOW</a></div></article>
           <article class="product-type-card" id="pins" data-product-category="pins"><img src="assets/images/type-pins-soft-enamel.jpg" alt="Green character soft enamel pin set"><h2>Green Character Soft Enamel Pin Set</h2><div class="product-type-actions"><a class="product-type-btn product-type-btn-outline" href="/products/custom-enamel-pins/green-character-soft-enamel-pin-set">View More</a><a class="product-type-btn product-type-btn-primary" href="/contact">GET QUOTE NOW</a></div></article>
           <article class="product-type-card" data-product-category="pins"><img src="assets/images/type-pins-hard-enamel.jpg" alt="Box cat and umbrella cat hard enamel pins"><h2>Box Cat and Umbrella Cat Enamel Pins</h2><div class="product-type-actions"><a class="product-type-btn product-type-btn-outline" href="/products/custom-enamel-pins/box-cat-and-umbrella-cat-enamel-pins">View More</a><a class="product-type-btn product-type-btn-primary" href="/contact">GET QUOTE NOW</a></div></article>
           <article class="product-type-card" data-product-category="pins"><img src="assets/images/type-pins-die-struck.jpg" alt="Antique silver guitar crest enamel pin"><h2>Antique Silver Guitar Crest Enamel Pin</h2><div class="product-type-actions"><a class="product-type-btn product-type-btn-outline" href="/products/custom-enamel-pins/antique-silver-guitar-crest-enamel-pin">View More</a><a class="product-type-btn product-type-btn-primary" href="/contact">GET QUOTE NOW</a></div></article>
@@ -82,5 +85,5 @@ const html = String.raw`
   </footer>`;
 
 export default function Page() {
-  return <StaticPage html={html} />;
+  return <StaticPage html={replaceProductsAllGridCards(html)} />;
 }

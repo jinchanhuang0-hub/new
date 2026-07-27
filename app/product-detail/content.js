@@ -1,6 +1,7 @@
 import StaticPage from "../components/StaticPage";
 
 import { productCategoryNavHtml } from "../components/productCategoryNav";
+import { replaceAllProductTypeSectionCards } from "../lib/productCards";
 
 export const productDetailMetadata = {
   pins: {
@@ -56,6 +57,8 @@ export const productDetailHtml = String.raw`
         <div class="product-type-head"><h1>Custom Enamel Pin Types</h1><p>Choose from soft enamel, hard enamel, die struck, printed and specialty enamel pin styles for brand promotion, events, clubs and retail programs.</p></div>
         ${productCategoryNavHtml({ active: "pins", variant: "inline" })}
         <div class="product-type-grid">
+          <article class="product-type-card"><img src="assets/images/type-pins-yellow-character.jpg" alt="Yellow character hard enamel pin"><h2>Yellow Character Hard Enamel Pin</h2><div class="product-type-actions"><a class="product-type-btn product-type-btn-outline" href="/products/custom-enamel-pins/yellow-character-hard-enamel-pin">View More</a><a class="product-type-btn product-type-btn-primary" href="/contact">GET QUOTE NOW</a></div></article>
+          <article class="product-type-card"><img src="assets/images/type-pins-auburn-proud.jpg" alt="Auburn Proud green soft enamel pin"><h2>Auburn Proud Soft Enamel Pin</h2><div class="product-type-actions"><a class="product-type-btn product-type-btn-outline" href="/products/custom-enamel-pins/auburn-proud-soft-enamel-pin">View More</a><a class="product-type-btn product-type-btn-primary" href="/contact">GET QUOTE NOW</a></div></article>
           <article class="product-type-card"><img src="assets/images/type-pins-soft-enamel.jpg" alt="Custom soft enamel pins"><h2>Green Character Soft Enamel Pin Set</h2><div class="product-type-actions"><a class="product-type-btn product-type-btn-outline" href="/products/custom-enamel-pins/green-character-soft-enamel-pin-set">View More</a><a class="product-type-btn product-type-btn-primary" href="/contact">GET QUOTE NOW</a></div></article>
           <article class="product-type-card"><img src="assets/images/type-pins-hard-enamel.jpg" alt="Custom hard enamel pins"><h2>Box Cat and Umbrella Cat Enamel Pins</h2><div class="product-type-actions"><a class="product-type-btn product-type-btn-outline" href="/products/custom-enamel-pins/box-cat-and-umbrella-cat-enamel-pins">View More</a><a class="product-type-btn product-type-btn-primary" href="/contact">GET QUOTE NOW</a></div></article>
           <article class="product-type-card"><img src="assets/images/type-pins-die-struck.jpg" alt="Die struck custom metal pins"><h2>Antique Silver Guitar Crest Enamel Pin</h2><div class="product-type-actions"><a class="product-type-btn product-type-btn-outline" href="/products/custom-enamel-pins/antique-silver-guitar-crest-enamel-pin">View More</a><a class="product-type-btn product-type-btn-primary" href="/contact">GET QUOTE NOW</a></div></article>
@@ -142,7 +145,7 @@ export const productDetailHtml = String.raw`
 
     <section class="product-type-section" data-product-content="golf-accessories" hidden>
       <div class="container product-type-content">
-        <div class="product-type-head"><h1>Golf Divot Tool, Hat Clip & Ball Marker Types</h1><p>Custom golf accessories for tournaments, clubs, resort gifts, corporate golf events and retail sets.</p></div>
+        <div class="product-type-head"><h1>Custom Golf Ball Markers, Divot Tools & Hat Clips</h1><p>Custom golf accessories for tournaments, clubs, resort gifts, corporate golf events and retail sets.</p></div>
         ${productCategoryNavHtml({ active: "pins", variant: "inline" })}
         <div class="product-type-grid compact">
           <article class="product-type-card"><img src="assets/images/type-golf-ball-marker.jpg" alt="Custom golf ball markers"><h2>Antique Golf Club Divot Tool Ball Marker</h2><div class="product-type-actions"><a class="product-type-btn product-type-btn-outline" href="/products/custom-golf-accessories/antique-golf-club-divot-tool-ball-marker">View More</a><a class="product-type-btn product-type-btn-primary" href="/contact">GET QUOTE NOW</a></div></article>
@@ -184,5 +187,5 @@ export const productDetailHtml = String.raw`
   </footer>`;
 
 export default function Page() {
-  return <StaticPage html={productDetailHtml} />;
+  return <StaticPage html={replaceAllProductTypeSectionCards(productDetailHtml)} />;
 }

@@ -1343,8 +1343,8 @@ body.quote-modal-open {
 }
 
 .product-type-grid.compact {
-  max-width: 1058px;
-  margin: 0 auto;
+  max-width: none;
+  margin: 0;
 }
 
 .product-type-card {
