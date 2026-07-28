@@ -326,7 +326,7 @@ const blogArticleData = {
       "Compare soft enamel and hard enamel pins by finish, durability, cost, application and production requirements.",
     datePublished: "2026-07-15",
     dateModified: "2026-07-15",
-    image: "/assets/images/blog-soft-enamel-pins.jpg",
+    image: "/assets/images/blog-soft-hard-enamel-pins-v2.webp",
   },
   "how-to-make-your-own-custom-lapel-pins": {
     title: "How to Make Your Own Custom Lapel Pins | Buyer Guide",

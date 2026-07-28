@@ -70,7 +70,7 @@ export const blogHtml = String.raw`
             </div>
           </a>
           <a class="blog-feature-card" href="/blog/soft-enamel-vs-hard-enamel-pins" data-blog-category="Custom Lapel Pins" aria-label="Read Soft Enamel vs Hard Enamel Pins">
-            <img src="assets/images/blog-soft-enamel-pins.jpg" alt="custom soft enamel pins with colorful character designs">
+            <img src="/assets/images/blog-soft-hard-enamel-pins-v2.webp" width="1200" height="720" alt="two custom enamel pins with detailed sports and character artwork">
             <div class="blog-feature-body">
               <div class="blog-feature-meta"><span>Custom Lapel Pins</span><span>Buyer Guide</span></div>
               <h2>Soft Enamel vs Hard Enamel Pins: Which Is Better for Your Order?</h2>
@@ -812,14 +812,10 @@ export const blogHtml = String.raw`
           <a class="blog-back-link" href="/blog">Back to Blog</a>
           <h1>Soft Enamel vs Hard Enamel Pins: Which Is Better for Your Custom Pin Order?</h1>
           <p>Soft enamel and hard enamel pins are two of the most common choices for custom pin orders. For overseas buyers, the better option depends on budget, surface feel, brand positioning, delivery schedule and how the product will be used. A trade show giveaway, a school club pin and a premium retail collectible do not require the same production approach.</p>
-          <div class="blog-article-image-pair" aria-label="Soft enamel and hard enamel pin examples">
-            <figure class="blog-article-image blog-article-hero-image blog-article-contain-image blog-article-cropped-image">
-              <img src="assets/images/blog-soft-enamel-pins.jpg" alt="custom soft enamel pins with colorful character designs">
-            </figure>
-            <figure class="blog-article-image blog-article-hero-image blog-article-contain-image blog-article-cropped-image">
-              <img src="assets/images/blog-hard-enamel-pins.jpg" alt="hard enamel imitation enamel pins with smooth polished finish">
-            </figure>
-          </div>
+          <figure class="blog-article-image blog-article-hero-image">
+            <img src="/assets/images/blog-soft-hard-enamel-pins-v2.webp" width="1200" height="720" alt="two custom enamel pins with detailed sports and character artwork">
+            <figcaption>Custom enamel pins can combine detailed artwork, raised metal borders and contrasting color finishes.</figcaption>
+          </figure>
         </header>
 
         <h2>What Are Soft Enamel Pins?</h2>
