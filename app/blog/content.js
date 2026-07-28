@@ -42,7 +42,7 @@ export const blogHtml = String.raw`
               <span class="blog-feature-link">Read More</span>
             </div>
           </a>
-          <a class="blog-feature-card" href="/blog/how-custom-challenge-coins-are-made" data-card-image-fit="contain" data-blog-category="Custom Coins" aria-label="Read How Custom Challenge Coins Are Made">
+          <a class="blog-feature-card" href="/blog/how-custom-challenge-coins-are-made" data-blog-category="Custom Coins" aria-label="Read How Custom Challenge Coins Are Made">
             <img src="/assets/images/blog-how-challenge-coins-made-card-v2.webp" width="1200" height="720" alt="three custom challenge coins with blue red and gold enamel finishes">
             <div class="blog-feature-body">
               <div class="blog-feature-meta"><span>Custom Coins</span><span>Manufacturing Guide</span></div>
@@ -290,9 +290,9 @@ export const blogHtml = String.raw`
           <p>Custom challenge coins are made through a controlled manufacturing process that turns a logo, badge, sketch, or idea into a finished metal coin. For buyers, the useful part is not only knowing the steps. It is knowing which details must be confirmed before tooling starts, because unclear artwork, weak relief, color mistakes, and late packaging changes can all affect the final order.</p>
           <p>This guide explains the challenge coin manufacturing process from artwork preparation and digital proofing to tooling, die-striking or die-casting, finishing, color filling, final inspection, and shipment preparation. Each step has a practical effect on weight, surface detail, color clarity, delivery planning, and the way the finished coin is presented to the recipient.</p>
           <p>For related buying decisions, review our <a href="/products/custom-challenge-coins">custom challenge coins</a> page, <a href="/blog/custom-metal-crafts-guide">custom metal crafts guide</a>, and <a href="/blog/custom-medals-vs-challenge-coins">custom medals vs challenge coins</a> comparison.</p>
-          <figure class="blog-article-image blog-article-hero-image blog-article-contain-image">
-            <img src="/assets/images/blog-how-challenge-coins-made-card.webp" alt="custom challenge coins with antique plating gift box and 3D designs">
-            <figcaption>Finished custom challenge coins can combine raised metal relief, enamel color, antique finishes, 3D detail and presentation boxes.</figcaption>
+          <figure class="blog-article-image blog-article-hero-image">
+            <img src="/assets/images/blog-how-challenge-coins-made-card-v2.webp" width="1200" height="720" alt="three custom challenge coins with blue red and gold enamel finishes">
+            <figcaption>Finished custom challenge coins can combine raised metal relief, enamel color and antique finishes.</figcaption>
           </figure>
         </header>
 
