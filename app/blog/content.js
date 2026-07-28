@@ -43,7 +43,7 @@ export const blogHtml = String.raw`
             </div>
           </a>
           <a class="blog-feature-card" href="/blog/how-custom-challenge-coins-are-made" data-card-image-fit="contain" data-blog-category="Custom Coins" aria-label="Read How Custom Challenge Coins Are Made">
-            <img src="/assets/images/blog-how-challenge-coins-made-card.webp" alt="custom challenge coins with antique plating gift box and 3D designs">
+            <img src="/assets/images/blog-how-challenge-coins-made-card-v2.webp" width="1200" height="720" alt="three custom challenge coins with blue red and gold enamel finishes">
             <div class="blog-feature-body">
               <div class="blog-feature-meta"><span>Custom Coins</span><span>Manufacturing Guide</span></div>
               <h2>How Are Custom Challenge Coins Made? A Step-by-Step Manufacturing Guide</h2>
