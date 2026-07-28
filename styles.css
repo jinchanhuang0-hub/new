@@ -3468,6 +3468,7 @@ body.quote-modal-open {
 
 .blog-feature-card img {
   width: 100%;
+  height: auto;
   aspect-ratio: 5 / 3;
   object-fit: cover;
   object-position: center;
@@ -7997,6 +7998,21 @@ body.is-video-lightbox-open {
   max-width: none;
   margin-left: calc(var(--article-pad, 56px) * -1);
   margin-right: calc(var(--article-pad, 56px) * -1);
+}
+
+.blog-article-hero-image.blog-article-main-width-image {
+  width: calc(100% - 2px);
+  max-width: 978px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blog-article-image.blog-article-hero-image.blog-article-main-width-image.blog-article-full-product-image img {
+  height: auto;
+  max-height: none;
+  aspect-ratio: 16 / 13;
+  object-fit: cover;
+  object-position: center 44%;
 }
 
 .blog-article-contain-image img {

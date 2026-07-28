@@ -83,7 +83,7 @@ const categorySeoContent = {
             <h2>Custom Golf Accessories for Tournaments, Clubs and Resort Gifts</h2>
             <p>Custom golf accessories are useful for tournaments, club shops, resort gifts, sponsor promotions, corporate golf days and premium retail sets. This range covers custom golf ball markers, hat clips, divot tools and packaged golf accessory sets.</p>
             <p>Unique Pin can produce golf ball markers, hat clip markers, divot tools and gift sets with custom logos, enamel colors, antique plating, magnetic parts and presentation packaging. We help buyers choose a practical structure based on the use case: a simple ball marker for event giveaways, a hat clip marker for club shops or a divot tool set for higher-value corporate gifts.</p>
-            <p>Golf projects often involve sponsor marks, tournament dates and packaging for presentation, so the artwork layout should leave enough space for readable logos. Buyers building a broader gift campaign can compare golf accessories with coins, keychains and bottle openers in our <a href="/blog/custom-metal-crafts-guide">custom metal crafts guide</a>. Share event date, quantity and logo files through the <a href="/contact">quote form</a> for structure and packaging suggestions.</p>
+            <p>Golf projects often involve sponsor marks, tournament dates and presentation packaging, so the artwork layout should leave enough space for readable logos. Buyers comparing sizes, materials, finishes and packaging can use our <a href="/blog/how-to-choose-personalized-golf-ball-markers">personalized golf ball marker buyer's guide</a>. For a broader gift campaign, compare golf accessories with coins, keychains and bottle openers in the <a href="/blog/custom-metal-crafts-guide">custom metal crafts guide</a>. Share the event date, quantity and logo files through the <a href="/contact">quote form</a> for structure and packaging suggestions.</p>
             <h3>Golf Accessory Options</h3>
             <ul class="category-seo-list">
               <li>Golf ball markers, magnetic hat clips, divot tools, coin markers and packaged golf gift sets.</li>
@@ -224,11 +224,14 @@ export const buildBlogIndexHtml = (html, articles = {}) =>
 
 const addBlogArticleMeta = (articleHtml, articleMeta) => {
   const author = articleMeta?.author;
+  const authorUrl = articleMeta?.authorUrl;
   const datePublished = articleMeta?.datePublished;
   if (!author && !datePublished) return articleHtml;
 
   const metaItems = [
-    author ? `<span>By ${author}</span>` : "",
+    author
+      ? `<span>By ${authorUrl ? `<a href="${authorUrl}">${author}</a>` : author}</span>`
+      : "",
     datePublished ? `<time datetime="${datePublished}">${formatArticleDate(datePublished)}</time>` : "",
   ].filter(Boolean).join("");
 

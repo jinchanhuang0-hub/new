@@ -22,6 +22,23 @@ export async function generateMetadata({ params }) {
     alternates: {
       canonical: `/blog/${slug}`,
     },
+    openGraph: {
+      title: article.title,
+      description: article.description,
+      url: `${SITE_URL}/blog/${slug}`,
+      type: "article",
+      publishedTime: article.datePublished,
+      modifiedTime: article.dateModified || article.datePublished,
+      ...(article.image
+        ? { images: [{ url: `${SITE_URL}${article.image}` }] }
+        : {}),
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: article.title,
+      description: article.description,
+      ...(article.image ? { images: [`${SITE_URL}${article.image}`] } : {}),
+    },
   };
 }
 
@@ -44,8 +61,11 @@ export default async function BlogArticlePage({ params }) {
           dateModified: article.dateModified || article.datePublished,
           mainEntityOfPage: `${SITE_URL}/blog/${slug}`,
           author: {
-            "@type": "Organization",
+            "@type": article.authorType || "Organization",
             name: article.author || "Unique Pin",
+            ...(article.authorUrl
+              ? { url: new URL(article.authorUrl, SITE_URL).toString() }
+              : {}),
           },
           publisher: {
             "@type": "Organization",
@@ -83,6 +103,22 @@ export default async function BlogArticlePage({ params }) {
           ],
         }}
       />
+      {article.faq?.length ? (
+        <JsonLd
+          data={{
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: article.faq.map((item) => ({
+              "@type": "Question",
+              name: item.question,
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: item.answer,
+              },
+            })),
+          }}
+        />
+      ) : null}
       <div
         suppressHydrationWarning
         dangerouslySetInnerHTML={{ __html: articleHtml }}

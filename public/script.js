@@ -557,6 +557,7 @@ const blogCategories = [
   "Custom Coins",
   "Custom Keychains",
   "Custom Belt Buckle",
+  "Golf Accessories",
   "Custom Lanyards",
   "Custom Poker Chips",
   "Holidays",
