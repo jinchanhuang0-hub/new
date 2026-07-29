@@ -339,7 +339,7 @@ const blogArticleData = {
       "Learn how custom challenge coins are made, from artwork and tooling to die-striking, finishing, color filling, quality inspection and shipment preparation.",
     datePublished: "2026-07-24",
     dateModified: "2026-07-24",
-    image: "/assets/images/blog-how-challenge-coins-made-card-v2.webp",
+    image: "/assets/images/blog-how-challenge-coins-made-card-v3.webp",
   },
   "custom-enamel-pins-no-moq-guide": {
     title: "Custom Enamel Pins with No Minimum Order: A Complete Guide",

@@ -52,7 +52,7 @@ export const blogHtml = String.raw`
             </div>
           </a>
           <a class="blog-feature-card" href="/blog/how-custom-challenge-coins-are-made" data-blog-category="Custom Coins" aria-label="Read How Custom Challenge Coins Are Made">
-            <img src="/assets/images/blog-how-challenge-coins-made-card-v2.webp" width="1200" height="720" alt="three custom challenge coins with blue red and gold enamel finishes">
+            <img src="/assets/images/blog-how-challenge-coins-made-card-v3.webp" width="1200" height="720" alt="three custom challenge coins with blue red and gold enamel finishes">
             <div class="blog-feature-body">
               <div class="blog-feature-meta"><span>Custom Coins</span><span>Manufacturing Guide</span></div>
               <h2>How Are Custom Challenge Coins Made? A Step-by-Step Manufacturing Guide</h2>
@@ -496,7 +496,7 @@ export const blogHtml = String.raw`
           <p>This guide explains the challenge coin manufacturing process from artwork preparation and digital proofing to tooling, die-striking or die-casting, finishing, color filling, final inspection, and shipment preparation. Each step has a practical effect on weight, surface detail, color clarity, delivery planning, and the way the finished coin is presented to the recipient.</p>
           <p>For related buying decisions, review our <a href="/blog/2d-vs-3d-challenge-coins">2D vs 3D challenge coin comparison</a>, <a href="/products/custom-challenge-coins">custom challenge coins</a> page, <a href="/blog/custom-metal-crafts-guide">custom metal crafts guide</a>, and <a href="/blog/custom-medals-vs-challenge-coins">custom medals vs challenge coins</a> comparison.</p>
           <figure class="blog-article-image blog-article-hero-image">
-            <img src="/assets/images/blog-how-challenge-coins-made-card-v2.webp" width="1200" height="720" alt="three custom challenge coins with blue red and gold enamel finishes">
+            <img src="/assets/images/blog-how-challenge-coins-made-hero.webp" width="1600" height="759" alt="three custom challenge coins with blue red and gold enamel finishes">
             <figcaption>Finished custom challenge coins can combine raised metal relief, enamel color and antique finishes.</figcaption>
           </figure>
         </header>
