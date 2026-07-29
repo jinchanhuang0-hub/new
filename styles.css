@@ -3831,6 +3831,12 @@ body.quote-modal-open {
   box-shadow: none;
 }
 
+.blog-article-hero-image.blog-article-natural-image img {
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+}
+
 .blog-article-hero-image.blog-article-contain-image {
   border-left: 0;
   border-right: 0;
@@ -3942,7 +3948,9 @@ body.quote-modal-open {
 .blog-faq {
   display: grid;
   gap: 12px;
-  margin-top: 22px;
+  width: 100%;
+  max-width: 980px;
+  margin: 22px auto 0;
 }
 
 .blog-faq details {
@@ -8019,6 +8027,12 @@ body.is-video-lightbox-open {
   padding: 22px;
 }
 
+.blog-article-contain-image.blog-article-edge-to-edge-image img {
+  width: 100%;
+  max-width: none;
+  padding: 0;
+}
+
 .blog-article-contain-image:not(.blog-article-image-split) img {
   max-height: 560px;
 }
@@ -8147,6 +8161,14 @@ body.is-video-lightbox-open {
 
   .blog-article-header p {
     font-size: 16.5px;
+  }
+
+  #\32 d-vs-3d-challenge-coins > .blog-article > p,
+  #\32 d-vs-3d-challenge-coins .blog-article-header p,
+  #\32 d-vs-3d-challenge-coins .blog-list li {
+    text-align: left;
+    text-align-last: auto;
+    hyphens: none;
   }
 
   .blog-list {

@@ -269,6 +269,43 @@ const withBlogArticleDefaults = (article) => {
 };
 
 const blogArticleData = {
+  "2d-vs-3d-challenge-coins": {
+    title: "2D vs 3D Challenge Coins: Which Is Right for Your Design?",
+    description:
+      "Compare 2D and 3D challenge coins by relief, detail, enamel color, cost and best uses. Learn which option fits your custom coin design.",
+    author: "sunny",
+    authorType: "Person",
+    datePublished: "2026-07-29",
+    dateModified: "2026-07-29",
+    image: "/assets/images/2d-vs-3d-challenge-coins.webp",
+    faq: [
+      {
+        question: "What is the main difference between 2D and 3D challenge coins?",
+        answer:
+          "A 2D challenge coin uses clearly separated raised and recessed levels. A 3D challenge coin uses gradual, sculpted transitions that create rounded surfaces and more natural depth. Both have physical relief, but they interpret artwork differently.",
+      },
+      {
+        question: "Can 3D challenge coins include enamel color?",
+        answer:
+          "Yes. Enamel can be placed in defined recessed areas or surrounding 2D sections. It is less suitable for continuous sculpted contours because it may cover or reduce the visible relief.",
+      },
+      {
+        question: "Is 2D or 3D better for a company logo?",
+        answer:
+          "Most flat company logos work well in 2D because the 2D format preserves clean outlines, lettering and brand colors. A dimensional crest or emblem may benefit from partial 3D relief.",
+      },
+      {
+        question: "Can one side be 2D and the other side be 3D?",
+        answer:
+          "Yes. One side can feature sculpted artwork while the reverse uses 2D text, enamel colors or a secondary logo. This is a practical option when the two sides have different visual purposes.",
+      },
+      {
+        question: "Do I need to provide a finished 3D model?",
+        answer:
+          "Not always. Clear artwork and high-resolution reference images may be enough to prepare a relief rendering. Complex portraits, vehicles and buildings benefit from references showing more than one angle.",
+      },
+    ],
+  },
   "how-to-choose-personalized-golf-ball-markers": {
     title: "Personalized Golf Ball Markers with Hat Clips: Buyer Guide",
     description:
