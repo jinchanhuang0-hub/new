@@ -255,7 +255,7 @@ export const productItemCategoryKey = {
   "city-landmark-souvenir-fridge-magnet": "magnets",
 };
 
-const DEFAULT_BLOG_AUTHOR = "sunny";
+const DEFAULT_BLOG_AUTHOR = "Sunny Huang";
 
 const getTodayInShanghai = () =>
   new Intl.DateTimeFormat("en-CA", {
@@ -281,7 +281,7 @@ const blogArticleData = {
     title: "2D vs 3D Challenge Coins: Which Is Better for Your Design?",
     description:
       "Compare 2D and 3D challenge coins by relief, detail, enamel color, cost and best uses. Learn which option fits your custom coin design.",
-    author: "sunny",
+    author: "Sunny Huang",
     authorType: "Person",
     datePublished: "2026-07-29",
     dateModified: "2026-07-29",
@@ -318,7 +318,7 @@ const blogArticleData = {
     title: "Personalized Golf Ball Markers with Hat Clips: Buyer Guide",
     description:
       "Compare sizes, materials, logo methods, magnetic hat clips, packaging and inspection requirements before ordering personalized golf ball markers.",
-    author: "sunny",
+    author: "Sunny Huang",
     authorType: "Person",
     datePublished: "2026-07-28",
     dateModified: "2026-07-28",

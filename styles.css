@@ -3426,6 +3426,7 @@ body.quote-modal-open {
 .blog-card-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-auto-rows: 1fr;
   align-items: stretch;
   justify-content: stretch;
   gap: 37px;
@@ -3494,16 +3495,22 @@ body.quote-modal-open {
 }
 
 .blog-feature-card h2 {
+  display: -webkit-box;
+  min-height: calc(3 * 1.24em);
+  overflow: hidden;
   margin: 0;
   color: var(--navy);
   font-size: 19.5px;
   line-height: 1.24;
   text-transform: none;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
 }
 
 .blog-feature-card p {
   display: -webkit-box;
-  min-height: 69px;
+  min-height: calc(3 * 1.42em);
   overflow: hidden;
   margin: 0;
   color: #40516a;
@@ -3511,6 +3518,7 @@ body.quote-modal-open {
   line-height: 1.42;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
+  line-clamp: 3;
 }
 
 .blog-feature-card[href^="/blog/custom-medals-vs-challenge-coins"] img {

@@ -178,7 +178,7 @@ const addBlogCardMeta = (html, articles = {}) =>
       const article = articles[slug];
       if (!article) return match;
 
-      const author = article.author || "sunny";
+      const author = article.author || "Sunny Huang";
       const date = article.datePublished || "";
 
       return `${cardContent}
