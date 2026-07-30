@@ -69,6 +69,7 @@ a {
 }
 
 .nav-wrap {
+  position: relative;
   height: 76px;
   display: flex;
   align-items: center;
@@ -103,6 +104,9 @@ a {
 }
 
 .nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   align-items: center;
   gap: 36px;
@@ -370,7 +374,7 @@ a {
 .hero {
   position: relative;
 
-  height:clamp(660px, calc(72vh - 70px), 680px);
+  height: 727px;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -400,13 +404,13 @@ a {
 .hero-bg {
   position: absolute;
   top: 50%;
-  right: -160px;
+  right: 0;
   bottom: auto;
   left: auto;
   transform: translateY(-50%);
   z-index: 0;
   width: auto;
-  height: 108%;
+  height: 100%;
   max-width: none;
   object-fit: contain;
   object-position: right center;
@@ -7369,6 +7373,7 @@ body.is-video-lightbox-open {
     top: 116px;
     left: 20px;
     right: 20px;
+    transform: none;
     display: none;
     flex-direction: column;
     align-items: stretch;
