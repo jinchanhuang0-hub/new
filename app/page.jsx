@@ -37,7 +37,7 @@ const html = String.raw`
 
   <main>
     <section class="hero">
-      <img class="hero-bg" src="assets/images/hero-banner.webp" width="1749" height="899" fetchpriority="high" alt="Custom enamel pins medals and challenge coins hero banner">
+      <img class="hero-bg" src="assets/images/hero-banner.webp" width="2048" height="683" fetchpriority="high" alt="Custom enamel pins medals and challenge coins hero banner">
       <div class="container">
         <div class="hero-content">
           <h1><span class="hero-title-line">Custom Metal Crafts</span><span class="hero-title-line">Made for Your Brand</span></h1>
