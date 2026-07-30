@@ -278,7 +278,7 @@ const withBlogArticleDefaults = (article) => {
 
 const blogArticleData = {
   "2d-vs-3d-challenge-coins": {
-    title: "2D vs 3D Challenge Coins: Which Is Right for Your Design?",
+    title: "2D vs 3D Challenge Coins: Which Is Better for Your Design?",
     description:
       "Compare 2D and 3D challenge coins by relief, detail, enamel color, cost and best uses. Learn which option fits your custom coin design.",
     author: "sunny",

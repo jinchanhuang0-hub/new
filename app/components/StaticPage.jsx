@@ -313,6 +313,22 @@ export default function StaticPage({ html }) {
       card.dataset.blogCategory = getBlogCardCategories(card).join(", ");
     });
 
+    const availableBlogCategories = new Set(
+      blogCards.flatMap((card) =>
+        (card.dataset.blogCategory || "")
+          .split(",")
+          .map((category) => category.trim())
+          .filter(Boolean)
+      )
+    );
+
+    document.querySelectorAll(".blog-category-filter button").forEach((button) => {
+      const category = button.dataset.blogCategory || "All";
+      const shouldShow = category === "All" || availableBlogCategories.has(category);
+      button.hidden = !shouldShow;
+      button.setAttribute("aria-hidden", shouldShow ? "false" : "true");
+    });
+
     const getBlogCardTimestamp = (card) => {
       const publishedDate = card.querySelector("time")?.getAttribute("datetime") || "";
       const timestamp = Date.parse(publishedDate);
