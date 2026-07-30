@@ -379,7 +379,7 @@ a {
   display: flex;
   align-items: center;
   overflow: hidden;
-  background: #fff;
+  background: #f5f7fa;
 }
 
 .hero::before {
@@ -415,8 +415,8 @@ a {
   inset: 0;
   z-index: 1;
   background:
-    linear-gradient(90deg, rgba(255, 255, 255, 0.82) 0%, rgba(255, 255, 255, 0.58) 26%, rgba(255, 255, 255, 0.08) 42%, rgba(255, 255, 255, 0) 54%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.54) 0%, rgba(255, 255, 255, 0) 16%, rgba(255, 255, 255, 0) 86%, rgba(255, 255, 255, 0.56) 100%);
+    linear-gradient(90deg, rgba(245, 247, 250, 0.76) 0%, rgba(245, 247, 250, 0.48) 26%, rgba(245, 247, 250, 0.08) 42%, rgba(245, 247, 250, 0) 54%),
+    linear-gradient(180deg, rgba(247, 248, 251, 0.5) 0%, rgba(247, 248, 251, 0) 16%, rgba(247, 248, 251, 0) 86%, rgba(247, 248, 251, 0.5) 100%);
   pointer-events: none;
 }
 
