@@ -1,4 +1,5 @@
 import StaticPage from "../components/StaticPage";
+import { footerHtml } from "../components/footerHtml";
 
 export const metadata = {
   title: "About Unique Pin | Custom Metal Gifts Manufacturer",
@@ -75,7 +76,7 @@ const html = String.raw`
           <p>Our product range includes custom enamel pins, badges, challenge coins, medals, belt buckles, metal keychains, and other customized metal accessories. These products are widely used for brand promotions, corporate gifting, sports events, military collections, commemorative programs, and retail applications worldwide.</p>
           <p>With a fully integrated manufacturing facility, we manage every stage of production in-house, including CNC engraving, die casting, stamping, polishing, electroplating, automated enamel coloring, and quality inspection. Our 6,000-square-meter factory is equipped with 34 sets of advanced production machines, allowing us to efficiently handle both small customized projects and large-scale production orders.</p>
           <p>With more than 20 years of manufacturing experience, we have supported projects for international brands and organizations across different industries. Our production capabilities are backed by certifications including Sedex, FSC, CE, RoHS, and Disney FAMA. Operating manufacturing facilities in China and Bangladesh, we provide flexible production solutions and stable supply chain support for customers in North America, Europe, Australia, Southeast Asia, and the Middle East.</p>
-          <p>Driven by our philosophy of “Precision Craftsmanship Builds Trust,” we combine advanced manufacturing technology, strict quality control, and responsive customer service to create durable, high-quality metal products that help brands turn creative ideas into lasting products.</p>
+          <p>Driven by our philosophy of 鈥淧recision Craftsmanship Builds Trust,鈥?we combine advanced manufacturing technology, strict quality control, and responsive customer service to create durable, high-quality metal products that help brands turn creative ideas into lasting products.</p>
         </div>
       </div>
     </section>
@@ -136,63 +137,6 @@ const html = String.raw`
           <figure class="about-visit-shot about-visit-shot-large about-visit-shot-right">
             <img src="assets/images/about-visit-right.jpg" alt="Customers visiting Unique Pin and meeting our factory team" loading="lazy">
           </figure>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-soft why-choice-section about-features-section" id="features">
-      <div class="container">
-        <div class="why-choice-head">
-          <h2>Why Choose Us?</h2>
-        </div>
-        <div class="why-grid">
-          <div class="why-item why-choice-card">
-            <span class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20h16"/><path d="M7 17 17.5 6.5a2.1 2.1 0 0 1 3 3L10 20H7z"/><path d="m15 9 3 3"/><path d="M5 4.5h3"/><path d="M6.5 3v3"/><path d="M12 3.5h2"/><path d="M13 2.5v2"/></svg></span>
-            <strong>Free Design Support</strong>
-            <p>Our professional design team creates production-ready artwork proofs for free.</p>
-          </div>
-          <div class="why-item why-choice-card">
-            <span class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 6c0-1.7 2.2-3 5-3s5 1.3 5 3-2.2 3-5 3-5-1.3-5-3z"/><path d="M7 6v6c0 1.7 2.2 3 5 3s5-1.3 5-3V6"/><path d="M7 12v6c0 1.7 2.2 3 5 3s5-1.3 5-3v-6"/></svg></span>
-            <strong>No Minimum Order</strong>
-            <p>Flexible quantities make it easy to order small runs or large orders.</p>
-          </div>
-          <div class="why-item why-choice-card">
-            <span class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3.5 20h17"/><path d="M5 20V9l7-4 7 4v11"/><path d="M8 20v-6h8v6"/><path d="M8.5 11h1.5"/><path d="M14 11h1.5"/><path d="M12 14v6"/><path d="M12 4V2.5"/><path d="M16.5 6.6 19 4.8"/><path d="M7.5 6.6 5 4.8"/></svg></span>
-            <strong>Factory Direct Price</strong>
-            <p>Pricing direct from the OEM/ODM manufacturer, with no middleman.</p>
-          </div>
-          <div class="why-item why-choice-card">
-            <span class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.6 3.8 5.6 3.8 9S14.5 18.4 12 21"/><path d="M12 3C9.5 5.6 8.2 8.6 8.2 12S9.5 18.4 12 21"/></svg></span>
-            <strong>Global Service</strong>
-            <p>Global OEM/ODM service for buyers in 50+ countries.</p>
-          </div>
-          <div class="why-item why-choice-card">
-            <span class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 7h10v10H4z"/><path d="M14 10h3l3 3v4h-6z"/><path d="M6 17a2 2 0 1 0 4 0"/><path d="M16 17a2 2 0 1 0 4 0"/><path d="M4 4h8"/></svg></span>
-            <strong>Fast Delivery</strong>
-            <p class="why-copy-two-lines">DHL, FedEx, UPS &amp; trusted global carriers.</p>
-          </div>
-          <div class="why-item why-choice-card">
-            <span class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 5 6v6c0 4.4 2.9 7.4 7 9 4.1-1.6 7-4.6 7-9V6z"/><path d="m8.5 12.4 2.2 2.2 4.8-5"/></svg></span>
-            <strong>Quality-First Guarantee</strong>
-            <p class="why-copy-two-lines">Careful inspection from production to delivery.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section about-cert-section" id="certificates">
-      <div class="container">
-        <div class="center-head about-heading">
-          <span class="heading-mark" aria-hidden="true"></span>
-          <h2>Certificates</h2>
-        </div>
-        <div class="cert-grid">
-          <div class="cert"><img src="assets/images/cert-iso9001.png" alt="Unique Pin ISO9001 certificate"></div>
-          <div class="cert"><img src="assets/images/cert-iso14001.png" alt="Unique Pin ISO14001 certificate"></div>
-          <div class="cert"><img src="assets/images/cert-ce.png" alt="Unique Pin CE certificate"></div>
-          <div class="cert"><img src="assets/images/cert-rohs.png" alt="Unique Pin ROHS certificate"></div>
-          <div class="cert"><img src="assets/images/cert-fsc.png" alt="Unique Pin FSC certificate"></div>
-          <div class="cert"><img src="assets/images/cert-smeta.png" alt="Unique Pin SMETA certificate"></div>
         </div>
       </div>
     </section>
@@ -328,16 +272,7 @@ const html = String.raw`
       <video class="video-lightbox-player" controls playsinline></video>
     </div>
   </div>
-
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div class="footer-logo-wrap"><img class="footer-logo" src="assets/images/logo.png" alt="Unique Pin logo"><img class="footer-payment-image" src="assets/images/payment-methods.svg" alt="Accepted payment methods: T/T, PayPal, Visa, Mastercard, e-Checking and Western Union"></div>
-      <div><h4>Products</h4><a href="/products">Custom Enamel Pins</a><a href="/products">Custom Medals</a><a href="/products">Challenge Coins</a><a href="/products">Keychains</a></div>
-      <div><h4>Get Started</h4><a href="/custom">Custom</a><a href="/about">About Us</a><a href="/blog">Blog</a><a href="/faq">FAQ</a></div>
-      <div><h4>Contact</h4><a href="mailto:ceo@chinauniquepin.com">Email: ceo@chinauniquepin.com</a><a href="tel:+86076022831989">Phone: +86 0760 22831989</a><p>Building A, 1st Floor, No. 7 Xingyu Road, Xiaolan Town, Zhongshan City, Guangdong, China</p></div>
-    </div>
-    <div class="container footer-bottom"><span>&copy; 2026 Unique Pin. All rights reserved.</span><span class="footer-social"><a class="footer-social-facebook" href="https://www.facebook.com/profile.php?id=61583070933333&locale=zh_CN" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8.5h2.2V5.1c-.4-.1-1.7-.2-3.2-.2-3.2 0-5.3 1.9-5.3 5.5v3.1H4.2v3.8h3.5V24h4.3v-6.7h3.3l.6-3.8H12v-2.7c0-1.1.3-2.3 2-2.3Z"></path></svg></a><a class="footer-social-instagram" href="https://www.instagram.com/uniquepin/" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.2 2h9.6A5.2 5.2 0 0 1 22 7.2v9.6a5.2 5.2 0 0 1-5.2 5.2H7.2A5.2 5.2 0 0 1 2 16.8V7.2A5.2 5.2 0 0 1 7.2 2Zm0 2A3.2 3.2 0 0 0 4 7.2v9.6A3.2 3.2 0 0 0 7.2 20h9.6a3.2 3.2 0 0 0 3.2-3.2V7.2A3.2 3.2 0 0 0 16.8 4H7.2Zm4.8 3.7A4.3 4.3 0 1 1 7.7 12 4.3 4.3 0 0 1 12 7.7Zm0 2A2.3 2.3 0 1 0 14.3 12 2.3 2.3 0 0 0 12 9.7Zm4.6-3.2a1 1 0 1 1-1 1 1 1 0 0 1 1-1Z"></path></svg></a><a class="footer-social-youtube" href="https://www.youtube.com/@CustompinUnique" aria-label="YouTube" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.6 7.1a3 3 0 0 0-2.1-2.1C17.6 4.5 12 4.5 12 4.5s-5.6 0-7.5.5a3 3 0 0 0-2.1 2.1A31.2 31.2 0 0 0 2 12a31.2 31.2 0 0 0 .4 4.9A3 3 0 0 0 4.5 19c1.9.5 7.5.5 7.5.5s5.6 0 7.5-.5a3 3 0 0 0 2.1-2.1A31.2 31.2 0 0 0 22 12a31.2 31.2 0 0 0-.4-4.9ZM10 15.5v-7l6 3.5-6 3.5Z"></path></svg></a></span></div>
-  </footer>`;
+  ${footerHtml}`;
 
 export default function Page() {
   return <StaticPage html={html} />;

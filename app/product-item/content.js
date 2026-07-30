@@ -1,4 +1,5 @@
 import StaticPage from "../components/StaticPage";
+import { footerHtml } from "../components/footerHtml";
 import { getProductPath } from "../lib/siteRoutes";
 import { compareProductEntriesBySkuDesc } from "../lib/productSorting";
 
@@ -2774,7 +2775,7 @@ const html = String.raw`
             <div class="form-row"><input type="text" name="name" placeholder="Name" required><input type="email" name="email" placeholder="Email" required></div>
             <div class="form-row"><input type="text" name="country" placeholder="Country / Region" required><input type="text" name="whatsapp" placeholder="Phone Number"></div>
             <div class="form-row">
-              <select name="product" required><option value="">Product Type</option><option>Lapel Pins</option><option>Medals</option><option>Challenge Coins</option><option>Keychains</option><option>Belt Buckles</option><option>Golf Ball Markers</option><option>Fridge Magnets</option><option>Bottle Openers</option><option>Cufflinks &amp; Tie Clips</option></select>
+              <select name="product" required><option value="">Product Type</option><option>Lapel Pins</option><option>Medals</option><option>Challenge Coins</option><option>Keychains</option><option>Belt Buckles</option><option>Golf Ball Markers</option><option>Fridge Magnets</option><option>Bottle Openers</option><option>Cufflinks &amp; Tie Clips</option><option>Other</option></select>
               <input type="text" name="quantity" placeholder="Quantity">
             </div>
             <div class="form-field form-field-full"><label for="product-item-quote-details">What can we help you with?</label><textarea id="product-item-quote-details" name="details" placeholder="Notes, Comments, etc."></textarea></div>
@@ -2785,8 +2786,7 @@ const html = String.raw`
       </div>
     </div>
   </main>
-
-  <footer class="site-footer"><div class="container footer-grid"><div class="footer-logo-wrap"><img class="footer-logo" src="assets/images/logo.png" alt="Unique Pin logo"><img class="footer-payment-image" src="assets/images/payment-methods.svg" alt="Accepted payment methods: T/T, PayPal, Visa, Mastercard, e-Checking and Western Union"></div><div><h4>Products</h4><a href="/products">Custom Enamel Pins</a><a href="/products">Custom Medals</a><a href="/products">Challenge Coins</a><a href="/products">Keychains</a></div><div><h4>Get Started</h4><a href="/custom">Custom</a><a href="/about">About Us</a><a href="/blog">Blog</a><a href="/faq">FAQ</a></div><div><h4>Contact</h4><a href="mailto:ceo@chinauniquepin.com">Email: ceo@chinauniquepin.com</a><a href="tel:+86076022831989">Phone: +86 0760 22831989</a><p>Building A, 1st Floor, No. 7 Xingyu Road, Xiaolan Town, Zhongshan City, Guangdong, China</p></div></div><div class="container footer-bottom"><span>&copy; 2026 Unique Pin. All rights reserved.</span></div></footer>`;
+  ${footerHtml}`;
 
 const escapeHtml = (value = "") => String(value)
   .replaceAll("&", "&amp;")

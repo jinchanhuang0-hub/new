@@ -1,4 +1,5 @@
 import StaticPage from "./components/StaticPage";
+import { footerHtml } from "./components/footerHtml";
 
 export const metadata = {
   title: "Custom Metal Gifts Manufacturer | Pins, Medals & Coins",
@@ -194,6 +195,7 @@ const html = String.raw`
                 <option>Fridge Magnets</option>
                 <option>Bottle Openers</option>
                 <option>Cufflinks &amp; Tie Clips</option>
+                <option>Other</option>
               </select>
               <input type="text" name="quantity" placeholder="Quantity">
             </div>
@@ -413,6 +415,41 @@ const html = String.raw`
       </div>
     </section>
 
+    <section class="section about-cert-section" id="certificates">
+      <div class="container">
+        <div class="center-head about-heading">
+          <span class="heading-mark" aria-hidden="true"></span>
+          <h2>Certificates</h2>
+        </div>
+        <div class="cert-grid">
+          <figure class="cert" tabindex="0" aria-label="View ISO 9001 certificate">
+            <img src="assets/images/cert-iso9001.png" alt="Unique Pin ISO9001 certificate">
+            <figcaption class="cert-name">ISO 9001</figcaption>
+          </figure>
+          <figure class="cert" tabindex="0" aria-label="View ISO 14001 certificate">
+            <img src="assets/images/cert-iso14001.png" alt="Unique Pin ISO14001 certificate">
+            <figcaption class="cert-name">ISO 14001</figcaption>
+          </figure>
+          <figure class="cert" tabindex="0" aria-label="View CE certificate">
+            <img src="assets/images/cert-ce.png" alt="Unique Pin CE certificate">
+            <figcaption class="cert-name">CE</figcaption>
+          </figure>
+          <figure class="cert" tabindex="0" aria-label="View RoHS certificate">
+            <img src="assets/images/cert-rohs.png" alt="Unique Pin RoHS certificate">
+            <figcaption class="cert-name">RoHS</figcaption>
+          </figure>
+          <figure class="cert" tabindex="0" aria-label="View FSC certificate">
+            <img src="assets/images/cert-fsc.png" alt="Unique Pin FSC certificate">
+            <figcaption class="cert-name">FSC</figcaption>
+          </figure>
+          <figure class="cert" tabindex="0" aria-label="View SMETA certificate">
+            <img src="assets/images/cert-smeta.png" alt="Unique Pin SMETA certificate">
+            <figcaption class="cert-name">SMETA</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
     <section class="section latest-products-section" aria-labelledby="latest-products-title">
       <div class="container latest-products-wrap">
         <div class="latest-products-head product-heading">
@@ -467,31 +504,8 @@ const html = String.raw`
       </div>
     </section>
 
-    <section class="section cta-section">
-      <div class="container">
-        <div class="cta-band">
-          <div>
-            <h2>Ready to Start Your Custom Metal Gift Project?</h2>
-            <p>Send us your idea, logo or reference image. Our team will help turn it into a production-ready design.</p>
-          </div>
-          <div class="hero-actions">
-            <a class="btn btn-yellow" href="/contact">Request Quote</a>
-            <a class="btn btn-outline" href="/custom">Start Custom Order</a>
-          </div>
-        </div>
-      </div>
-    </section>
   </main>
-
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div class="footer-logo-wrap"><img class="footer-logo" src="assets/images/logo.png" alt="Unique Pin logo"><img class="footer-payment-image" src="assets/images/payment-methods.svg" alt="Accepted payment methods: T/T, PayPal, Visa, Mastercard, e-Checking and Western Union"></div>
-      <div><h4>Products</h4><a href="/products">Custom Enamel Pins</a><a href="/products">Custom Medals</a><a href="/products">Challenge Coins</a><a href="/products">Keychains</a></div>
-      <div><h4>Get Started</h4><a href="/custom">Custom</a><a href="/about">About Us</a><a href="/blog">Blog</a><a href="/faq">FAQ</a></div>
-      <div><h4>Contact</h4><a href="mailto:ceo@chinauniquepin.com">Email: ceo@chinauniquepin.com</a><a href="tel:+86076022831989">Phone: +86 0760 22831989</a><p>Building A, 1st Floor, No. 7 Xingyu Road, Xiaolan Town, Zhongshan City, Guangdong, China</p></div>
-    </div>
-    <div class="container footer-bottom"><span>&copy; 2026 Unique Pin. All rights reserved.</span><span class="footer-social"><a class="footer-social-facebook" href="https://www.facebook.com/profile.php?id=61583070933333&locale=zh_CN" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8.5h2.2V5.1c-.4-.1-1.7-.2-3.2-.2-3.2 0-5.3 1.9-5.3 5.5v3.1H4.2v3.8h3.5V24h4.3v-6.7h3.3l.6-3.8H12v-2.7c0-1.1.3-2.3 2-2.3Z"></path></svg></a><a class="footer-social-instagram" href="https://www.instagram.com/uniquepin/" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.2 2h9.6A5.2 5.2 0 0 1 22 7.2v9.6a5.2 5.2 0 0 1-5.2 5.2H7.2A5.2 5.2 0 0 1 2 16.8V7.2A5.2 5.2 0 0 1 7.2 2Zm0 2A3.2 3.2 0 0 0 4 7.2v9.6A3.2 3.2 0 0 0 7.2 20h9.6a3.2 3.2 0 0 0 3.2-3.2V7.2A3.2 3.2 0 0 0 16.8 4H7.2Zm4.8 3.7A4.3 4.3 0 1 1 7.7 12 4.3 4.3 0 0 1 12 7.7Zm0 2A2.3 2.3 0 1 0 14.3 12 2.3 2.3 0 0 0 12 9.7Zm4.6-3.2a1 1 0 1 1-1 1 1 1 0 0 1 1-1Z"></path></svg></a><a class="footer-social-youtube" href="https://www.youtube.com/@CustompinUnique" aria-label="YouTube" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.6 7.1a3 3 0 0 0-2.1-2.1C17.6 4.5 12 4.5 12 4.5s-5.6 0-7.5.5a3 3 0 0 0-2.1 2.1A31.2 31.2 0 0 0 2 12a31.2 31.2 0 0 0 .4 4.9A3 3 0 0 0 4.5 19c1.9.5 7.5.5 7.5.5s5.6 0 7.5-.5a3 3 0 0 0 2.1-2.1A31.2 31.2 0 0 0 22 12a31.2 31.2 0 0 0-.4-4.9ZM10 15.5v-7l6 3.5-6 3.5Z"></path></svg></a></span></div>
-  </footer>`;
+  ${footerHtml}`;
 
 export default function Page() {
   return <StaticPage html={html} />;
