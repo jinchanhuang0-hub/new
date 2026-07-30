@@ -3,7 +3,7 @@ export const footerHtml = String.raw`
     <div class="container footer-quote">
       <div class="footer-quote-copy">
         <h2>Ready to Start Your Custom Metal Gift Project?</h2>
-        <p>Send us your idea, logo or reference image. Our team will help turn it into a production-ready design.</p>
+        <p>Send us your idea, logo or reference image.<br>Our team will help turn it into a production-ready design.</p>
       </div>
       <form class="footer-quote-form" data-inquiry-form>
         <div class="footer-form-grid">

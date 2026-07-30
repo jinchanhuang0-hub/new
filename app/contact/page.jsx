@@ -101,7 +101,7 @@ const html = String.raw`
       </div>
     </section>
 
-    <section class="section section-soft">
+    <section class="section section-soft contact-products-cta-section">
       <div class="container">
         <div class="cta-band">
           <div><h2>Send Your Idea, Logo or Reference Image</h2><p>We can help create the design proof and recommend suitable material, technology and packaging.</p></div>
