@@ -472,7 +472,7 @@ a {
 .hero h1 {
   margin: 0;
   max-width: 720px;
-  font-size: 64px;
+  font-size: 58px;
   line-height: 1.18;
   font-weight: 950;
   letter-spacing: 0;
@@ -560,6 +560,44 @@ a {
 
   .hero h1 {
     font-size: 58px;
+  }
+}
+
+@media (min-width: 981px) and (max-width: 1500px) {
+  .hero {
+    height: clamp(520px, 35.5vw, 575px);
+  }
+
+  .hero-bg {
+    object-fit: contain;
+    object-position: center;
+  }
+
+  .hero-content {
+    width: min(500px, 44vw);
+    padding: 30px 0;
+  }
+
+  .hero h1 {
+    max-width: 100%;
+    font-size: clamp(44px, 3.35vw, 52px);
+    line-height: 1.12;
+  }
+
+  .hero p {
+    margin-top: 22px;
+    max-width: 480px;
+    font-size: 16px;
+    line-height: 1.55;
+  }
+
+  .hero-actions {
+    margin-top: 24px;
+  }
+
+  .hero-proof {
+    margin-top: 28px;
+    gap: 18px 20px;
   }
 }
 
