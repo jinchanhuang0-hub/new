@@ -113,7 +113,7 @@ export const productItems = {
     sku: "UP-PIN-005",
     usage: "Holiday promotions, retail gifts, events",
     categories: "Lapel Pins, Christmas Enamel Pins",
-    quoteProduct: "Christmas Enamel Pins",
+    quoteProduct: "Lapel Pins",
     lead: "This Christmas enamel pin set includes festive pin designs for holiday retail programs, brand campaigns, gift boxes and seasonal event merchandise."
   },
   "lost-my-way-floral-hard-enamel-pin": {
@@ -128,7 +128,7 @@ export const productItems = {
     usage: "Inspirational gifts, retail collections, events",
     categories: "Lapel Pins, Hard Enamel Pins",
     quoteProduct: "Lapel Pins",
-    lead: "This Lost My Way floral hard enamel pin combines a purple compass-style background, floral artwork and polished smooth enamel for inspirational gifts, retail collections, event merchandise and club campaigns."
+    lead: "This Lost My Way floral hard enamel pin combines a purple compass-style background, floral artwork and smooth enamel for gifts, retail collections, events and club campaigns."
   },
   "yellow-character-hard-enamel-pin": {
     title: "Yellow Character Hard Enamel Pin",
@@ -217,7 +217,7 @@ export const productItems = {
   "victoria-police-st-michael-challenge-coin": {
     title: "Victoria Police St. Michael Challenge Coin",
     image: "assets/images/type-coins-victoria-police-st-michael.png",
-    alt: "Victoria Police St. Michael double sided challenge coin",
+    alt: "Victoria Police St. Michael double-sided challenge coin",
     categoryLabel: "Challenge Coins",
     categoryHref: "/products/custom-challenge-coins",
     material: "Zinc alloy",
@@ -226,12 +226,12 @@ export const productItems = {
     usage: "Police units, patron saint gifts, recognition",
     categories: "Challenge Coins, Double Sided Coins",
     quoteProduct: "Challenge Coins",
-    lead: "This Victoria Police St. Michael challenge coin combines antique silver relief, double sided police emblem artwork and detailed plating for law enforcement recognition, commemorative gifts and collector programs."
+    lead: "This Victoria Police St. Michael challenge coin combines antique silver relief, double-sided police artwork and detailed plating for recognition, commemorative gifts and collector programs."
   },
   "jennifer-jo-cobb-racing-challenge-coin": {
     title: "Jennifer Jo Cobb Racing Challenge Coin",
     image: "assets/images/type-coins-jennifer-jo-cobb-racing.png",
-    alt: "Jennifer Jo Cobb Racing double sided challenge coin",
+    alt: "Jennifer Jo Cobb Racing double-sided challenge coin",
     categoryLabel: "Challenge Coins",
     categoryHref: "/products/custom-challenge-coins",
     material: "Zinc alloy",
@@ -245,7 +245,7 @@ export const productItems = {
   "marine-nationale-commandant-challenge-coin": {
     title: "Marine Nationale Commandant Challenge Coin",
     image: "assets/images/type-coins-marine-nationale-commandant.png",
-    alt: "Marine Nationale Commandant double sided challenge coin",
+    alt: "Marine Nationale Commandant double-sided challenge coin",
     categoryLabel: "Challenge Coins",
     categoryHref: "/products/custom-challenge-coins",
     material: "Zinc alloy",
@@ -259,7 +259,7 @@ export const productItems = {
   "houston-community-college-emt-challenge-coin": {
     title: "Houston Community College EMT Challenge Coin",
     image: "assets/images/type-coins-houston-community-college-emt.png",
-    alt: "Houston Community College EMT double sided challenge coin",
+    alt: "Houston Community College EMT double-sided challenge coin",
     categoryLabel: "Challenge Coins",
     categoryHref: "/products/custom-challenge-coins",
     material: "Zinc alloy",
@@ -273,7 +273,7 @@ export const productItems = {
   "dice-dungeons-inspiration-challenge-coin": {
     title: "Dice Dungeons Inspiration Challenge Coin",
     image: "assets/images/type-coins-dice-dungeons-inspiration.png",
-    alt: "Dice Dungeons Inspiration double sided challenge coin",
+    alt: "Dice Dungeons Inspiration double-sided challenge coin",
     categoryLabel: "Challenge Coins",
     categoryHref: "/products/custom-challenge-coins",
     material: "Zinc alloy",
@@ -287,7 +287,7 @@ export const productItems = {
   "ibew-eastern-wyoming-challenge-coin": {
     title: "IBEW Eastern Wyoming Challenge Coin",
     image: "assets/images/type-coins-ibew-eastern-wyoming.png",
-    alt: "IBEW Eastern Wyoming double sided challenge coin",
+    alt: "IBEW Eastern Wyoming double-sided challenge coin",
     categoryLabel: "Challenge Coins",
     categoryHref: "/products/custom-challenge-coins",
     material: "Zinc alloy",
@@ -301,7 +301,7 @@ export const productItems = {
   "marine-corps-daniel-joseph-moran-challenge-coin": {
     title: "Marine Corps Daniel Joseph Moran Challenge Coin",
     image: "assets/images/type-coins-marine-corps-daniel-joseph-moran.png",
-    alt: "Marine Corps Daniel Joseph Moran double sided challenge coin",
+    alt: "Marine Corps Daniel Joseph Moran double-sided challenge coin",
     categoryLabel: "Challenge Coins",
     categoryHref: "/products/custom-challenge-coins",
     material: "Zinc alloy",
@@ -310,12 +310,12 @@ export const productItems = {
     usage: "Marine Corps gifts, memorials, recognition",
     categories: "Challenge Coins, Double Sided Coins",
     quoteProduct: "Challenge Coins",
-    lead: "This Marine Corps Daniel Joseph Moran challenge coin features antique metal relief, rope edge detail and double sided memorial artwork for Marine Corps gifts, recognition, remembrance events and collector sets."
+    lead: "This Marine Corps Daniel Joseph Moran challenge coin features antique relief, a rope edge and double-sided memorial artwork for recognition, remembrance events and collector sets."
   },
   "queensland-fire-emergency-service-challenge-coin": {
     title: "Queensland Fire Emergency Service Challenge Coin",
     image: "assets/images/type-coins-queensland-fire-emergency-service.png",
-    alt: "Queensland Fire Emergency Service double sided challenge coin",
+    alt: "Queensland Fire Emergency Service double-sided challenge coin",
     categoryLabel: "Challenge Coins",
     categoryHref: "/products/custom-challenge-coins",
     material: "Zinc alloy",
@@ -329,7 +329,7 @@ export const productItems = {
   "wenatchee-ibew-local-191-challenge-coin": {
     title: "Wenatchee IBEW Local 191 Challenge Coin",
     image: "assets/images/type-coins-wenatchee-ibew-local-191.png",
-    alt: "Wenatchee IBEW Local 191 double sided challenge coin",
+    alt: "Wenatchee IBEW Local 191 double-sided challenge coin",
     categoryLabel: "Challenge Coins",
     categoryHref: "/products/custom-challenge-coins",
     material: "Zinc alloy",
@@ -343,7 +343,7 @@ export const productItems = {
   "canada-border-services-pacific-region-challenge-coin": {
     title: "Canada Border Services Pacific Region Challenge Coin",
     image: "assets/images/type-coins-canada-border-services-pacific-region.png",
-    alt: "Canada Border Services Pacific Region double sided challenge coin",
+    alt: "Canada Border Services Pacific Region double-sided challenge coin",
     categoryLabel: "Challenge Coins",
     categoryHref: "/products/custom-challenge-coins",
     material: "Zinc alloy",
@@ -352,12 +352,12 @@ export const productItems = {
     usage: "Border services, enforcement teams, recognition",
     categories: "Challenge Coins, Double Sided Coins",
     quoteProduct: "Challenge Coins",
-    lead: "This Canada Border Services Pacific Region challenge coin features official style emblem artwork, international airport detail and double sided enamel color for enforcement teams, recognition gifts and ceremonies."
+    lead: "This Canada Border Services Pacific Region challenge coin uses official-style emblem artwork, airport details and double-sided enamel color for team recognition, gifts and ceremonies."
   },
   "pow-mia-you-are-not-forgotten-challenge-coin": {
     title: "POW MIA You Are Not Forgotten Challenge Coin",
     image: "assets/images/type-coins-pow-mia-you-are-not-forgotten.png",
-    alt: "POW MIA You Are Not Forgotten double sided challenge coin",
+    alt: "POW MIA You Are Not Forgotten double-sided challenge coin",
     categoryLabel: "Challenge Coins",
     categoryHref: "/products/custom-challenge-coins",
     material: "Zinc alloy",
@@ -371,7 +371,7 @@ export const productItems = {
   "norwegian-defense-family-legion-challenge-coin": {
     title: "Norwegian Defense Family Legion Challenge Coin",
     image: "assets/images/type-coins-norwegian-defense-family-legion.png",
-    alt: "Norwegian Defense Family Legion double sided challenge coin",
+    alt: "Norwegian Defense Family Legion double-sided challenge coin",
     categoryLabel: "Challenge Coins",
     categoryHref: "/products/custom-challenge-coins",
     material: "Zinc alloy",
@@ -385,7 +385,7 @@ export const productItems = {
   "vancouver-police-retired-challenge-coin": {
     title: "Vancouver Police Retired Challenge Coin",
     image: "assets/images/type-coins-vancouver-police-retired.png",
-    alt: "Vancouver Police Retired double sided challenge coin",
+    alt: "Vancouver Police Retired double-sided challenge coin",
     categoryLabel: "Challenge Coins",
     categoryHref: "/products/custom-challenge-coins",
     material: "Zinc alloy",
@@ -399,7 +399,7 @@ export const productItems = {
   "marina-de-guerra-peru-challenge-coin": {
     title: "Marina De Guerra Del Peru Challenge Coin",
     image: "assets/images/type-coins-marina-de-guerra-peru.png",
-    alt: "Marina De Guerra Del Peru double sided challenge coin",
+    alt: "Marina De Guerra Del Peru double-sided challenge coin",
     categoryLabel: "Challenge Coins",
     categoryHref: "/products/custom-challenge-coins",
     material: "Zinc alloy",
@@ -413,7 +413,7 @@ export const productItems = {
   "punish-blue-errors-aggressors-challenge-coin": {
     title: "Punish Blue Errors Aggressors Challenge Coin",
     image: "assets/images/type-coins-punish-blue-errors-aggressors.png",
-    alt: "Punish Blue Errors Aggressors double sided challenge coin",
+    alt: "Punish Blue Errors Aggressors double-sided challenge coin",
     categoryLabel: "Challenge Coins",
     categoryHref: "/products/custom-challenge-coins",
     material: "Zinc alloy",
@@ -427,7 +427,7 @@ export const productItems = {
   "hmcs-bras-dor-royal-canadian-navy-challenge-coin": {
     title: "HMCS Bras D'Or Royal Canadian Navy Challenge Coin",
     image: "assets/images/type-coins-hmcs-bras-dor-royal-canadian-navy.png",
-    alt: "HMCS Bras D'Or Royal Canadian Navy double sided challenge coin",
+    alt: "HMCS Bras D'Or Royal Canadian Navy double-sided challenge coin",
     categoryLabel: "Challenge Coins",
     categoryHref: "/products/custom-challenge-coins",
     material: "Zinc alloy",
@@ -455,7 +455,7 @@ export const productItems = {
   "40-years-port-authority-challenge-coin": {
     title: "40 Years Port Authority Challenge Coin",
     image: "assets/images/type-coins-40-years-port-authority.jpg",
-    alt: "40 years port authority double sided challenge coin",
+    alt: "40 years port authority double-sided challenge coin",
     categoryLabel: "Challenge Coins",
     categoryHref: "/products/custom-challenge-coins",
     material: "Zinc alloy",
@@ -469,7 +469,7 @@ export const productItems = {
   "stay-sharp-excellence-challenge-coin": {
     title: "Stay Sharp Excellence Challenge Coin",
     image: "assets/images/type-coins-stay-sharp-excellence.jpg",
-    alt: "Stay Sharp Excellence double sided challenge coin",
+    alt: "Stay Sharp Excellence double-sided challenge coin",
     categoryLabel: "Challenge Coins",
     categoryHref: "/products/custom-challenge-coins",
     material: "Zinc alloy",
@@ -483,7 +483,7 @@ export const productItems = {
   "congressman-stephen-womack-challenge-coin": {
     title: "Congressman Stephen A. Womack Challenge Coin",
     image: "assets/images/type-coins-congressman-stephen-womack.jpg",
-    alt: "Congressman Stephen A. Womack double sided challenge coin",
+    alt: "Congressman Stephen A. Womack double-sided challenge coin",
     categoryLabel: "Challenge Coins",
     categoryHref: "/products/custom-challenge-coins",
     material: "Zinc alloy",
@@ -497,7 +497,7 @@ export const productItems = {
   "marine-corps-forces-north-challenge-coin": {
     title: "U.S. Marine Corps Forces North Challenge Coin",
     image: "assets/images/type-coins-marine-corps-forces-north.jpg",
-    alt: "U.S. Marine Corps Forces North double sided challenge coin",
+    alt: "U.S. Marine Corps Forces North double-sided challenge coin",
     categoryLabel: "Challenge Coins",
     categoryHref: "/products/custom-challenge-coins",
     material: "Zinc alloy",
@@ -511,7 +511,7 @@ export const productItems = {
   "united-states-space-force-challenge-coin": {
     title: "United States Space Force Challenge Coin",
     image: "assets/images/type-coins-united-states-space-force.jpg",
-    alt: "United States Space Force double sided challenge coin",
+    alt: "United States Space Force double-sided challenge coin",
     categoryLabel: "Challenge Coins",
     categoryHref: "/products/custom-challenge-coins",
     material: "Zinc alloy",
@@ -525,7 +525,7 @@ export const productItems = {
   "cocoa-fire-department-challenge-coin": {
     title: "Cocoa Fire Department Challenge Coin",
     image: "assets/images/type-coins-cocoa-fire-department.jpg",
-    alt: "Cocoa Fire Department double sided challenge coin",
+    alt: "Cocoa Fire Department double-sided challenge coin",
     categoryLabel: "Challenge Coins",
     categoryHref: "/products/custom-challenge-coins",
     material: "Zinc alloy",
@@ -539,7 +539,7 @@ export const productItems = {
   "arikara-horns-up-front-challenge-coin": {
     title: "Arikara Horns Up Front Challenge Coin",
     image: "assets/images/type-coins-arikara-horns-up-front.jpg",
-    alt: "Arikara Horns Up Front double sided challenge coin",
+    alt: "Arikara Horns Up Front double-sided challenge coin",
     categoryLabel: "Challenge Coins",
     categoryHref: "/products/custom-challenge-coins",
     material: "Zinc alloy",
@@ -553,7 +553,7 @@ export const productItems = {
   "dod-cyber-red-team-conference-challenge-coin": {
     title: "DOD Cyber Red Team Conference Challenge Coin",
     image: "assets/images/type-coins-dod-cyber-red-team-conference.jpg",
-    alt: "DOD Cyber Red Team Conference double sided challenge coin",
+    alt: "DOD Cyber Red Team Conference double-sided challenge coin",
     categoryLabel: "Challenge Coins",
     categoryHref: "/products/custom-challenge-coins",
     material: "Zinc alloy",
@@ -567,7 +567,7 @@ export const productItems = {
   "storm-troopers-highway-patrol-challenge-coin": {
     title: "Storm Troopers Highway Patrol Challenge Coin",
     image: "assets/images/type-coins-storm-troopers-highway-patrol.jpg",
-    alt: "Storm Troopers Highway Patrol double sided challenge coin",
+    alt: "Storm Troopers Highway Patrol double-sided challenge coin",
     categoryLabel: "Challenge Coins",
     categoryHref: "/products/custom-challenge-coins",
     material: "Zinc alloy",
@@ -581,7 +581,7 @@ export const productItems = {
   "vancouver-police-service-challenge-coin": {
     title: "Vancouver Police Service Challenge Coin",
     image: "assets/images/type-coins-vancouver-police-service.jpg",
-    alt: "Vancouver Police Service double sided challenge coin",
+    alt: "Vancouver Police Service double-sided challenge coin",
     categoryLabel: "Challenge Coins",
     categoryHref: "/products/custom-challenge-coins",
     material: "Zinc alloy",
@@ -595,7 +595,7 @@ export const productItems = {
   "emergency-task-force-challenge-coin": {
     title: "Emergency Task Force Challenge Coin",
     image: "assets/images/type-coins-emergency-task-force.jpg",
-    alt: "Emergency Task Force double sided challenge coin",
+    alt: "Emergency Task Force double-sided challenge coin",
     categoryLabel: "Challenge Coins",
     categoryHref: "/products/custom-challenge-coins",
     material: "Zinc alloy",
@@ -609,7 +609,7 @@ export const productItems = {
   "enlisted-advisor-military-challenge-coin": {
     title: "Enlisted Advisor Military Challenge Coin",
     image: "assets/images/type-coins-enlisted-advisor.jpg",
-    alt: "Enlisted Advisor military double sided challenge coin",
+    alt: "Enlisted Advisor military double-sided challenge coin",
     categoryLabel: "Challenge Coins",
     categoryHref: "/products/custom-challenge-coins",
     material: "Zinc alloy",
@@ -623,7 +623,7 @@ export const productItems = {
   "information-warfare-capabilities-challenge-coin": {
     title: "Information Warfare Capabilities Challenge Coin",
     image: "assets/images/type-coins-information-warfare.jpg",
-    alt: "Information Warfare Capabilities double sided challenge coin",
+    alt: "Information Warfare Capabilities double-sided challenge coin",
     categoryLabel: "Challenge Coins",
     categoryHref: "/products/custom-challenge-coins",
     material: "Zinc alloy",
@@ -637,7 +637,7 @@ export const productItems = {
   "musee-de-larmee-1670-challenge-coin": {
     title: "Musee De L'Armee 1670 Challenge Coin",
     image: "assets/images/type-coins-musee-de-larmee-1670.jpg",
-    alt: "Musee De L'Armee 1670 double sided challenge coin",
+    alt: "Musee De L'Armee 1670 double-sided challenge coin",
     categoryLabel: "Challenge Coins",
     categoryHref: "/products/custom-challenge-coins",
     material: "Zinc alloy",
@@ -651,7 +651,7 @@ export const productItems = {
   "50-years-of-service-challenge-coin": {
     title: "50 Years of Service Challenge Coin",
     image: "assets/images/type-coins-50-years-service.jpg",
-    alt: "50 years of service double sided challenge coin",
+    alt: "50 years of service double-sided challenge coin",
     categoryLabel: "Challenge Coins",
     categoryHref: "/products/custom-challenge-coins",
     material: "Zinc alloy",
@@ -663,9 +663,9 @@ export const productItems = {
     lead: "This 50 Years of Service challenge coin pairs anniversary artwork with double sided enamel detail for service awards, organization milestones, recognition programs and commemorative gifts."
   },
   "3d-antique-firefighter-challenge-coins": {
-    title: "3D Antique Firefighter Challenge Coins",
+    title: "3D Antique Firefighter Challenge Coin",
     image: "assets/images/type-coins-3d.jpg",
-    alt: "3D antique firefighter challenge coins",
+    alt: "3D antique firefighter challenge coin",
     categoryLabel: "Challenge Coins",
     categoryHref: "/products/custom-challenge-coins",
     material: "Zinc alloy",
@@ -688,7 +688,7 @@ export const productItems = {
     usage: "Anniversaries, recognition, ceremonies",
     categories: "Challenge Coins, Double Sided Coins",
     quoteProduct: "Challenge Coins",
-    lead: "This double sided challenge coin carries detailed artwork on both faces with antique metal finishing. It fits anniversary events, recognition ceremonies, unit gifts and collector programs."
+    lead: "This double-sided challenge coin carries detailed artwork on both faces with antique metal finishing. It fits anniversary events, recognition ceremonies, unit gifts and collector programs."
   },
   "christmas-bell-challenge-coin": {
     title: "Christmas Bell Challenge Coin",
@@ -701,7 +701,7 @@ export const productItems = {
     sku: "UP-COIN-005",
     usage: "Holiday gifts, commemorations, brand campaigns",
     categories: "Challenge Coins, Christmas Coins",
-    quoteProduct: "Christmas Challenge Coins",
+    quoteProduct: "Challenge Coins",
     lead: "This Christmas bell challenge coin uses festive raised relief and plated metal details for holiday gifts, commemorative campaigns, seasonal collections and presentation sets."
   },
   "cut-shape-route-map-challenge-coin": {
@@ -719,9 +719,9 @@ export const productItems = {
     lead: "This custom shaped route coin highlights map artwork with cut edges and colored details. It is useful for travel campaigns, race events, commemorative routes and destination souvenirs."
   },
   "antique-military-squadron-challenge-coins": {
-    title: "Antique Military Squadron Challenge Coins",
+    title: "Antique Military Squadron Challenge Coin",
     image: "assets/images/type-coins-antique.jpg",
-    alt: "Antique military squadron challenge coins",
+    alt: "Antique military squadron challenge coin",
     categoryLabel: "Challenge Coins",
     categoryHref: "/products/custom-challenge-coins",
     material: "Zinc alloy",
@@ -1317,8 +1317,8 @@ export const productItems = {
     sku: "UP-MEDAL-005",
     usage: "Sports events, awards, finisher medals",
     categories: "Medals, Ribbon Medals",
-    quoteProduct: "Gold SCN Ribbon Medal",
-    lead: "This gold SCN ribbon medal combines polished gold plating, bold black enamel details and a red, white and blue ribbon. It is suitable for race events, sports awards, commemorative programs and branded finisher medals."
+    quoteProduct: "Medals",
+    lead: "This gold SCN ribbon medal combines polished gold plating, black enamel details and a red, white and blue ribbon for race events, sports awards and branded finisher programs."
   },
   "oval-office-leather-emblem-keychain": {
     title: "Oval Office Leather Emblem Keychain",
@@ -1797,9 +1797,9 @@ export const productItems = {
     lead: "This San Andres shark enamel keychain features a playful mascot, wave banner and colored enamel for tourism gifts, resort shops, travel souvenirs and destination merchandise."
   },
   "colorful-flower-metal-keychains": {
-    title: "Colorful Flower Metal Keychains",
+    title: "Colorful Flower Metal Keychain Set",
     image: "assets/images/type-keychains-metal.jpg",
-    alt: "Colorful flower metal keychains",
+    alt: "Colorful flower metal keychain set",
     categoryLabel: "Keychains",
     categoryHref: "/products/custom-metal-keychains",
     material: "Zinc alloy",
@@ -2136,266 +2136,266 @@ export const productItems = {
     title: "World's Okayist Golfer Golf Hat Clip",
     image: "assets/images/type-golf-okayist-golfer-hat-clip.jpg",
     alt: "World's Okayist Golfer golf hat clip ball marker",
-    categoryLabel: "Golf Ball Markers & Hat Clips",
+    categoryLabel: "Golf Accessories",
     categoryHref: "/products/custom-golf-accessories",
     material: "Zinc alloy",
     process: "Die casting",
     sku: "UP-GOLF-019",
     usage: "Golf gifts, club shops, tournaments",
     categories: "Golf Accessories, Hat Clip Markers",
-    quoteProduct: "Golf Ball Markers",
+    quoteProduct: "Golf Accessories",
     lead: "This round golf hat clip marker uses a humorous quote design with clean black-and-white artwork. It is a practical choice for golf gifts, tournament giveaways, club shops and casual retail sets."
   },
   "just-tap-it-in-golf-hat-clip": {
     title: "Just Tap It In Golf Hat Clip",
     image: "assets/images/type-golf-just-tap-it-in-hat-clip.jpg",
     alt: "Just Tap It In golf hat clip ball marker",
-    categoryLabel: "Golf Ball Markers & Hat Clips",
+    categoryLabel: "Golf Accessories",
     categoryHref: "/products/custom-golf-accessories",
     material: "Zinc alloy",
     process: "Die casting",
     sku: "UP-GOLF-018",
     usage: "Golf outings, retail gifts, events",
     categories: "Golf Accessories, Hat Clip Markers",
-    quoteProduct: "Golf Ball Markers",
+    quoteProduct: "Golf Accessories",
     lead: "This golf hat clip marker features bold typography and a simple ball graphic for easy recognition. It works well for golf outings, sponsor gifts, club merchandise and retail accessories."
   },
   "hole-in-one-club-golf-hat-clip": {
     title: "Hole In One Club Golf Hat Clip",
     image: "assets/images/type-golf-hole-in-one-club-hat-clip.jpg",
     alt: "Hole In One Club golf hat clip ball marker",
-    categoryLabel: "Golf Ball Markers & Hat Clips",
+    categoryLabel: "Golf Accessories",
     categoryHref: "/products/custom-golf-accessories",
     material: "Zinc alloy",
     process: "Die casting",
     sku: "UP-GOLF-017",
     usage: "Golf awards, clubs, retail gifts",
     categories: "Golf Accessories, Hat Clip Markers",
-    quoteProduct: "Golf Ball Markers",
+    quoteProduct: "Golf Accessories",
     lead: "This black and gold hat clip marker highlights a Hole In One Club design with strong contrast. It is suited for golf award programs, club gifts, tournament prizes and premium retail sets."
   },
   "golfing-bad-golf-hat-clip": {
     title: "Golfing Bad Golf Hat Clip",
     image: "assets/images/type-golf-golfing-bad-hat-clip.jpg",
     alt: "Golfing Bad golf hat clip ball marker",
-    categoryLabel: "Golf Ball Markers & Hat Clips",
+    categoryLabel: "Golf Accessories",
     categoryHref: "/products/custom-golf-accessories",
     material: "Zinc alloy",
     process: "Die casting",
     sku: "UP-GOLF-016",
     usage: "Golf gifts, club shops, promotions",
     categories: "Golf Accessories, Hat Clip Markers",
-    quoteProduct: "Golf Ball Markers",
+    quoteProduct: "Golf Accessories",
     lead: "This custom golf hat clip uses a playful wordmark layout on a round marker. It is useful for novelty golf gifts, club shop displays, promotional campaigns and event merchandise."
   },
   "weekend-forecast-golf-hat-clip": {
     title: "Weekend Forecast Golf Hat Clip",
     image: "assets/images/type-golf-weekend-forecast-hat-clip.jpg",
     alt: "Weekend Forecast golf hat clip ball marker",
-    categoryLabel: "Golf Ball Markers & Hat Clips",
+    categoryLabel: "Golf Accessories",
     categoryHref: "/products/custom-golf-accessories",
     material: "Zinc alloy",
     process: "Die casting",
     sku: "UP-GOLF-015",
     usage: "Golf gifts, outings, retail",
     categories: "Golf Accessories, Hat Clip Markers",
-    quoteProduct: "Golf Ball Markers",
+    quoteProduct: "Golf Accessories",
     lead: "This weekend forecast golf marker combines a fun beer and golf message with a round hat clip format. It is a good fit for golf outings, social tournaments, retail gifts and brand promotions."
   },
   "usa-flag-golf-divot-tool": {
     title: "USA Flag Golf Divot Tool",
     image: "assets/images/type-golf-usa-flag-divot-tool.jpg",
     alt: "USA flag golf divot tool with ball marker",
-    categoryLabel: "Golf Ball Markers & Hat Clips",
+    categoryLabel: "Golf Accessories",
     categoryHref: "/products/custom-golf-accessories",
     material: "Zinc alloy",
     process: "Die casting",
     sku: "UP-GOLF-014",
     usage: "Golf clubs, patriotic events, gifts",
     categories: "Golf Accessories, Divot Tools",
-    quoteProduct: "Golf Ball Markers",
+    quoteProduct: "Golf Accessories",
     lead: "This silver golf divot tool includes a round USA flag marker for course use. It is suitable for patriotic golf events, club gifts, tournaments and souvenir retail."
   },
   "jk-logo-golf-divot-tool-marker": {
     title: "JK Logo Golf Divot Tool Marker",
     image: "assets/images/type-golf-jk-divot-tool-marker.jpg",
     alt: "JK logo golf divot tool ball marker",
-    categoryLabel: "Golf Ball Markers & Hat Clips",
+    categoryLabel: "Golf Accessories",
     categoryHref: "/products/custom-golf-accessories",
     material: "Zinc alloy",
     process: "Die casting",
     sku: "UP-GOLF-013",
     usage: "Golf clubs, corporate gifts, events",
     categories: "Golf Accessories, Divot Tools",
-    quoteProduct: "Golf Ball Markers",
+    quoteProduct: "Golf Accessories",
     lead: "This gold-tone divot tool pairs a textured handle with a removable round logo marker. It supports custom club marks, event branding, corporate gifts and premium golf sets."
   },
   "golf-player-divot-tool-gift-set": {
     title: "Golf Player Divot Tool Gift Set",
     image: "assets/images/type-golf-player-divot-tool-set.jpg",
     alt: "Golf player divot tool gift set with ball markers",
-    categoryLabel: "Golf Ball Markers & Hat Clips",
+    categoryLabel: "Golf Accessories",
     categoryHref: "/products/custom-golf-accessories",
     material: "Zinc alloy",
     process: "Die casting",
     sku: "UP-GOLF-012",
     usage: "Corporate golf, tournaments, gift boxes",
     categories: "Golf Accessories, Divot Tool Sets",
-    quoteProduct: "Golf Ball Markers",
+    quoteProduct: "Golf Accessories",
     lead: "This golf gift set combines a player-shaped divot tool with matching markers and presentation packaging. It is designed for tournament gifts, resort shops, corporate golf days and sponsor promotions."
   },
   "price-is-wrong-golf-hat-clip": {
     title: "Price Is Wrong Golf Hat Clip",
     image: "assets/images/type-golf-price-is-wrong-hat-clip.jpg",
     alt: "Price Is Wrong golf hat clip ball marker",
-    categoryLabel: "Golf Ball Markers & Hat Clips",
+    categoryLabel: "Golf Accessories",
     categoryHref: "/products/custom-golf-accessories",
     material: "Zinc alloy",
     process: "Die casting",
     sku: "UP-GOLF-011",
     usage: "Golf gifts, club shops, events",
     categories: "Golf Accessories, Hat Clip Markers",
-    quoteProduct: "Golf Ball Markers",
+    quoteProduct: "Golf Accessories",
     lead: "This golf hat clip marker uses colorful character artwork and a bold novelty message. It is suitable for golf gift programs, club shops, social events and custom retail merchandise."
   },
   "bogey-king-logo-golf-hat-clip": {
     title: "Bogey King Logo Golf Hat Clip",
     image: "assets/images/type-golf-bogey-king-logo-hat-clip.jpg",
     alt: "Bogey King logo golf hat clip ball marker",
-    categoryLabel: "Golf Ball Markers & Hat Clips",
+    categoryLabel: "Golf Accessories",
     categoryHref: "/products/custom-golf-accessories",
     material: "Zinc alloy",
     process: "Die casting",
     sku: "UP-GOLF-010",
     usage: "Golf shops, tournaments, gifts",
     categories: "Golf Accessories, Hat Clip Markers",
-    quoteProduct: "Golf Ball Markers",
+    quoteProduct: "Golf Accessories",
     lead: "This Bogey King hat clip marker presents a clean logo-style design in red, blue and yellow. It fits golf shop merchandise, tournament giveaways, member gifts and promotional accessories."
   },
   "donut-golf-hat-clip-ball-marker": {
     title: "Donut Golf Hat Clip Ball Marker",
     image: "assets/images/type-golf-donut-hat-clip.jpg",
     alt: "Donut golf hat clip ball marker",
-    categoryLabel: "Golf Ball Markers & Hat Clips",
+    categoryLabel: "Golf Accessories",
     categoryHref: "/products/custom-golf-accessories",
     material: "Zinc alloy",
     process: "Die casting",
     sku: "UP-GOLF-009",
     usage: "Golf gifts, retail, events",
     categories: "Golf Accessories, Hat Clip Markers",
-    quoteProduct: "Golf Ball Markers",
+    quoteProduct: "Golf Accessories",
     lead: "This donut-shaped golf hat clip marker adds playful color to practical course accessories. It is suited for novelty golf gifts, event merchandise, club shops and retail promotions."
   },
   "animal-character-golf-ball-marker-set": {
     title: "Animal Character Golf Ball Marker Set",
     image: "assets/images/type-golf-animal-marker-set.jpg",
     alt: "Animal character golf ball marker set",
-    categoryLabel: "Golf Ball Markers & Hat Clips",
+    categoryLabel: "Golf Accessories",
     categoryHref: "/products/custom-golf-accessories",
     material: "Zinc alloy",
     process: "Die casting",
     sku: "UP-GOLF-008",
     usage: "Golf gifts, clubs, retail sets",
     categories: "Golf Accessories, Ball Marker Sets",
-    quoteProduct: "Golf Ball Markers",
+    quoteProduct: "Golf Accessories",
     lead: "This golf marker set includes multiple animal character designs with bright enamel color. It is useful for club shop assortments, themed gifts, tournament packs and souvenir retail."
   },
   "tap-tap-taparoo-golf-hat-clip": {
     title: "Tap Tap Taparoo Golf Hat Clip",
     image: "assets/images/type-golf-tap-taparoo-hat-clip.jpg",
     alt: "Tap Tap Taparoo golf hat clip ball marker",
-    categoryLabel: "Golf Ball Markers & Hat Clips",
+    categoryLabel: "Golf Accessories",
     categoryHref: "/products/custom-golf-accessories",
     material: "Zinc alloy",
     process: "Die casting",
     sku: "UP-GOLF-007",
     usage: "Golf events, club shops, gifts",
     categories: "Golf Accessories, Hat Clip Markers",
-    quoteProduct: "Golf Ball Markers",
+    quoteProduct: "Golf Accessories",
     lead: "This round golf hat clip marker uses illustrated player artwork and bright enamel fields. It is suited for golf events, club shops, team gifts and casual golf merchandise."
   },
   "bogey-king-golf-hat-clip": {
     title: "Bogey King Golf Hat Clip",
     image: "assets/images/type-golf-bogey-king-hat-clip.jpg",
     alt: "Bogey King golf hat clip ball marker",
-    categoryLabel: "Golf Ball Markers & Hat Clips",
+    categoryLabel: "Golf Accessories",
     categoryHref: "/products/custom-golf-accessories",
     material: "Zinc alloy",
     process: "Die casting",
     sku: "UP-GOLF-006",
     usage: "Golf gifts, tournaments, shops",
     categories: "Golf Accessories, Hat Clip Markers",
-    quoteProduct: "Golf Ball Markers",
+    quoteProduct: "Golf Accessories",
     lead: "This Bogey King golf hat clip features raised enamel logo artwork on a round marker. It is a strong option for golf gifts, tournament merchandise, club shops and promotional campaigns."
   },
   "born-to-golf-ball-marker": {
     title: "Born To Golf Ball Marker",
     image: "assets/images/type-golf-born-to-golf-ball-marker.jpg",
     alt: "Born To Golf ball marker with golf quote",
-    categoryLabel: "Golf Ball Markers & Hat Clips",
+    categoryLabel: "Golf Accessories",
     categoryHref: "/products/custom-golf-accessories",
     material: "Zinc alloy",
     process: "Die casting",
     sku: "UP-GOLF-005",
     usage: "Golf clubs, events, retail gifts",
     categories: "Golf Accessories, Ball Markers",
-    quoteProduct: "Golf Ball Markers",
+    quoteProduct: "Golf Accessories",
     lead: "This round golf ball marker uses a clean white quote design with black artwork. It is suitable for golf clubs, tournament gift bags, resort shops and promotional retail programs."
   },
   "life-is-always-good-golf-ball-marker": {
     title: "Life Is Always Good Golf Ball Marker",
     image: "assets/images/type-golf-life-good-ball-marker.jpg",
     alt: "Life Is Always Good golf ball marker",
-    categoryLabel: "Golf Ball Markers & Hat Clips",
+    categoryLabel: "Golf Accessories",
     categoryHref: "/products/custom-golf-accessories",
     material: "Zinc alloy",
     process: "Die casting",
     sku: "UP-GOLF-004",
     usage: "Golf clubs, resort gifts, tournaments",
     categories: "Golf Accessories, Ball Markers",
-    quoteProduct: "Golf Ball Markers",
+    quoteProduct: "Golf Accessories",
     lead: "This black and gold golf ball marker highlights a course-themed message with crisp custom artwork. It is ideal for golf clubs, resort gifts, event giveaways and retail accessory sets."
   },
   "antique-golf-club-divot-tool-ball-marker": {
     title: "Antique Golf Club Divot Tool Ball Marker",
     image: "assets/images/type-golf-ball-marker.jpg",
     alt: "Antique golf club divot tool ball marker",
-    categoryLabel: "Golf Ball Markers & Hat Clips",
+    categoryLabel: "Golf Accessories",
     categoryHref: "/products/custom-golf-accessories",
     material: "Zinc alloy",
     process: "Die casting",
     sku: "UP-GOLF-001",
     usage: "Golf clubs, tournaments, gifts",
     categories: "Golf Accessories, Ball Markers",
-    quoteProduct: "Golf Ball Markers",
+    quoteProduct: "Golf Accessories",
     lead: "This antique golf divot tool includes a custom ball marker for practical course use. It is ideal for golf clubs, tournaments, sponsor gifts and premium retail sets."
   },
   "avocado-golf-hat-clip-ball-marker": {
     title: "Avocado Golf Hat Clip Ball Marker",
     image: "assets/images/type-golf-hat-clip.jpg",
     alt: "Avocado golf hat clip ball marker",
-    categoryLabel: "Golf Ball Markers & Hat Clips",
+    categoryLabel: "Golf Accessories",
     categoryHref: "/products/custom-golf-accessories",
     material: "Zinc alloy",
     process: "Die casting",
     sku: "UP-GOLF-002",
     usage: "Golf events, retail, club gifts",
     categories: "Golf Accessories, Hat Clip Markers",
-    quoteProduct: "Golf Ball Markers",
+    quoteProduct: "Golf Accessories",
     lead: "This avocado hat clip marker adds playful artwork to a practical golf accessory. It is suited for golf events, club shops, promotional gifts and branded merchandise."
   },
   "color-logo-golf-divot-tool-set": {
     title: "Color Logo Golf Divot Tool Set",
     image: "assets/images/type-golf-divot-tool.jpg",
     alt: "Color logo golf divot tool set",
-    categoryLabel: "Golf Ball Markers & Hat Clips",
+    categoryLabel: "Golf Accessories",
     categoryHref: "/products/custom-golf-accessories",
     material: "Zinc alloy",
     process: "Die casting",
     sku: "UP-GOLF-003",
     usage: "Golf tournaments, resorts, gifts",
     categories: "Golf Accessories, Divot Tool Sets",
-    quoteProduct: "Golf Ball Markers",
+    quoteProduct: "Golf Accessories",
     lead: "This golf divot tool set features custom logo color inserts and useful accessories. It is a good fit for tournaments, resort shops, membership gifts and sponsor promotions."
   },
   "playing-card-metal-bottle-opener": {
@@ -2522,7 +2522,7 @@ export const productItems = {
     usage: "Promotions, giveaways, outdoor events",
     categories: "Bottle Openers, Aluminum Openers",
     quoteProduct: "Bottle Openers",
-    lead: "This colorful aluminum keychain bottle opener is lightweight, practical and available in multiple anodized colors. It is a strong option for promotional giveaways, outdoor events and retail accessory programs."
+    lead: "This colorful aluminum keychain bottle opener is lightweight, practical and available in multiple anodized colors for promotional giveaways, outdoor events and retail programs."
   },
   "souvenir-shape-bottle-opener": {
     title: "Souvenir Shape Bottle Opener",
@@ -2664,7 +2664,7 @@ export async function generateMetadata({ searchParams }) {
 
 const html = String.raw`
   <script type="application/json" data-product-item-data>${JSON.stringify(productItems)}</script>
-  <div class="topbar"><div class="container"><span>Professional OEM/ODM Manufacturer Since 2003</span><span>Email: ceo@chinauniquepin.com | WhatsApp: +86 18895316838</span></div></div>
+  <div class="topbar"><div class="container"><span>Team Industry Experience Since 2003</span><span>Email: ceo@chinauniquepin.com | WhatsApp: +86 18895316838</span></div></div>
   <header class="site-header"><div class="container nav-wrap"><a class="brand" href="/"><img src="assets/images/logo.png" alt="Unique Pin logo"><span><strong>Unique Pin</strong><span>Custom Metal Gifts Factory</span></span></a><nav class="nav" aria-label="Main navigation"><a href="/">Home</a><div class="nav-item products-menu"><a class="active" href="/products">Products</a></div><a href="/custom">Custom</a><a href="/about">About Us</a><a href="/blog">Blog</a><a href="/contact">Contact Us</a></nav><div class="nav-actions"><a class="btn btn-primary" href="/contact">Get Free Quote</a><button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">&#9776;</button></div></div></header>
 
   <main class="single-product-page" data-product-item-page>
@@ -2775,12 +2775,14 @@ const html = String.raw`
             <div class="form-row"><input type="text" name="name" placeholder="Name" required><input type="email" name="email" placeholder="Email" required></div>
             <div class="form-row"><input type="text" name="country" placeholder="Country / Region" required><input type="text" name="whatsapp" placeholder="Phone Number"></div>
             <div class="form-row">
-              <select name="product" required><option value="">Product Type</option><option>Lapel Pins</option><option>Medals</option><option>Challenge Coins</option><option>Keychains</option><option>Belt Buckles</option><option>Golf Ball Markers</option><option>Fridge Magnets</option><option>Bottle Openers</option><option>Cufflinks &amp; Tie Clips</option><option>Other</option></select>
+              <select name="product" required><option value="">Product Type</option><option>Lapel Pins</option><option>Medals</option><option>Challenge Coins</option><option>Keychains</option><option>Belt Buckles</option><option>Golf Accessories</option><option>Fridge Magnets</option><option>Bottle Openers</option><option>Cufflinks &amp; Tie Clips</option><option>Other</option></select>
               <input type="text" name="quantity" placeholder="Quantity">
             </div>
             <div class="form-field form-field-full"><label for="product-item-quote-details">What can we help you with?</label><textarea id="product-item-quote-details" name="details" placeholder="Notes, Comments, etc."></textarea></div>
-            <div class="form-field form-field-full"><label for="product-item-quote-artwork">Upload files</label><label class="upload-box" for="product-item-quote-artwork"><input id="product-item-quote-artwork" type="file" name="artwork" aria-label="Upload artwork"><span class="upload-icon" aria-hidden="true">&#8593;</span><span>Drag and drop a file here or click to choose</span></label></div>
-            <button class="btn btn-primary" type="submit">Submit Inquiry</button><p data-form-notice style="color: var(--navy); font-weight: 800;"></p>
+            <div class="form-field form-field-full"><label for="product-item-quote-artwork">Upload files</label><label class="upload-box" for="product-item-quote-artwork"><input id="product-item-quote-artwork" type="file" name="artwork" accept=".jpg,.jpeg,.png,.pdf,.ai,.eps,.psd,.cdr" aria-label="Upload artwork"><span class="upload-icon" aria-hidden="true">&#8593;</span><span>Drag and drop a file here or click to choose</span></label></div>
+            <button class="btn btn-primary" type="submit">Submit Inquiry</button>
+            <p class="form-privacy-note">We use the information you submit to respond to your inquiry. See our <a href="/privacy-policy">Privacy Policy</a>.</p>
+            <p data-form-notice aria-live="polite" style="color: var(--navy); font-weight: 800;"></p>
           </form>
         </div>
       </div>
@@ -2803,6 +2805,8 @@ const buildRelatedProductsHtml = (currentSlug, item) => {
   return relatedProducts.map(([slug, product]) => {
     const description = product.lead.split(".")[0] + ".";
     const productPath = getProductPath(slug, product);
+    const quoteProduct = product.quoteProduct || product.categoryLabel;
+    const quotePath = `/contact?product=${encodeURIComponent(quoteProduct)}&item=${encodeURIComponent(product.title)}`;
     return `
           <article class="single-product-related-card">
             <a class="single-product-related-media" href="${escapeHtml(productPath)}"><img src="${escapeHtml(product.image)}" alt="${escapeHtml(product.alt || product.title)}"></a>
@@ -2810,7 +2814,7 @@ const buildRelatedProductsHtml = (currentSlug, item) => {
             <p>${escapeHtml(description)}</p>
             <div class="single-product-related-actions">
               <a href="${escapeHtml(productPath)}">View Details</a>
-              <a href="/contact" data-product-inquiry-trigger data-product-inquiry-product="${escapeHtml(product.quoteProduct || product.categoryLabel)}">CUSTOMIZE NOW</a>
+              <a href="${escapeHtml(quotePath)}" data-product-inquiry-trigger data-product-inquiry-product="${escapeHtml(quoteProduct)}" data-product-inquiry-title="${escapeHtml(product.title)}">CUSTOMIZE NOW</a>
             </div>
           </article>`;
   }).join("");
@@ -2820,6 +2824,8 @@ export const renderProductItemHtml = (item, currentSlug) => {
   const safe = Object.fromEntries(
     Object.entries(item).map(([key, value]) => [key, escapeHtml(value)])
   );
+  const quoteProduct = item.quoteProduct || item.categoryLabel;
+  const quotePath = escapeHtml(`/contact?product=${encodeURIComponent(quoteProduct)}&item=${encodeURIComponent(item.title)}`);
 
   return html
     .replace(/^\s*<script type="application\/json" data-product-item-data>[\s\S]*?<\/script>\s*/, "")
@@ -2834,9 +2840,10 @@ export const renderProductItemHtml = (item, currentSlug) => {
     .replace(/<span data-product-spec="usage">[^<]*<\/span>/g, `<span data-product-spec="usage">${safe.usage}</span>`)
     .replace(/<span data-product-spec="categories">[^<]*<\/span>/g, `<span data-product-spec="categories">${safe.categories}</span>`)
     .replace(/<img([^>]*data-product-item-image[^>]*)src="[^"]*"([^>]*)alt="[^"]*"/g, `<img$1src="${safe.image}"$2alt="${safe.alt || safe.title}"`)
+    .replace(/<a class="single-product-inquiry" href="[^"]*"[^>]*>/, `<a class="single-product-inquiry" href="${quotePath}" data-product-inquiry-trigger data-product-inquiry-product="${escapeHtml(quoteProduct)}" data-product-inquiry-title="${safe.title}">`)
     .replace(/<div class="single-product-related-grid" data-product-related-content><\/div>/, `<div class="single-product-related-grid" data-product-related-content>${buildRelatedProductsHtml(currentSlug, item)}
         </div>`)
-    .replace(/data-product-inquiry-product="[^"]*"/g, `data-product-inquiry-product="${safe.quoteProduct}"`);
+    .replace(/data-product-inquiry-product="[^"]*"/g, `data-product-inquiry-product="${escapeHtml(quoteProduct)}"`);
 };
 
 export default async function Page({ searchParams }) {

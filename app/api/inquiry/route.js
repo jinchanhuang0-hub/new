@@ -1,9 +1,38 @@
 import nodemailer from "nodemailer";
+import path from "node:path";
 
 export const runtime = "nodejs";
 
 const inquiryTo = process.env.INQUIRY_TO || "ceo@chinauniquepin.com";
 const maxAttachmentBytes = 10 * 1024 * 1024;
+const rateLimitWindowMs = 10 * 60 * 1000;
+const rateLimitMaxRequests = 5;
+const rateLimitStore = globalThis.__uniquePinInquiryRateLimit || new Map();
+
+globalThis.__uniquePinInquiryRateLimit = rateLimitStore;
+
+const fieldLimits = {
+  name: 120,
+  email: 254,
+  country: 120,
+  whatsapp: 80,
+  product: 120,
+  quantity: 80,
+  details: 5000,
+  pageUrl: 2048,
+  pageTitle: 300,
+};
+
+const uploadRules = {
+  ".jpg": { mime: ["image/jpeg"], signature: "jpeg" },
+  ".jpeg": { mime: ["image/jpeg"], signature: "jpeg" },
+  ".png": { mime: ["image/png"], signature: "png" },
+  ".pdf": { mime: ["application/pdf"], signature: "pdf" },
+  ".ai": { mime: ["application/pdf", "application/postscript", "application/illustrator", "application/octet-stream"], signature: "ai" },
+  ".eps": { mime: ["application/postscript", "application/eps", "application/octet-stream"], signature: "postscript" },
+  ".psd": { mime: ["image/vnd.adobe.photoshop", "application/octet-stream"], signature: "psd" },
+  ".cdr": { mime: ["application/cdr", "application/x-cdr", "application/vnd.corel-draw", "application/octet-stream"], signature: "cdr" },
+};
 
 const escapeHtml = (value = "") => String(value)
   .replaceAll("&", "&amp;")
@@ -15,6 +44,69 @@ const escapeHtml = (value = "") => String(value)
 const getFormValue = (formData, key) => {
   const value = formData.get(key);
   return typeof value === "string" ? value.trim() : "";
+};
+
+const getClientAddress = (request) => {
+  const forwardedFor = request.headers.get("x-forwarded-for");
+  return forwardedFor?.split(",")[0]?.trim()
+    || request.headers.get("x-real-ip")
+    || "unknown";
+};
+
+const exceedsRateLimit = (request) => {
+  const now = Date.now();
+  const clientAddress = getClientAddress(request);
+  const recentRequests = (rateLimitStore.get(clientAddress) || [])
+    .filter((timestamp) => now - timestamp < rateLimitWindowMs);
+
+  if (recentRequests.length >= rateLimitMaxRequests) {
+    rateLimitStore.set(clientAddress, recentRequests);
+    return true;
+  }
+
+  recentRequests.push(now);
+  rateLimitStore.set(clientAddress, recentRequests);
+
+  if (rateLimitStore.size > 1000) {
+    for (const [address, timestamps] of rateLimitStore.entries()) {
+      if (!timestamps.some((timestamp) => now - timestamp < rateLimitWindowMs)) {
+        rateLimitStore.delete(address);
+      }
+    }
+  }
+
+  return false;
+};
+
+const hasValidEmailFormat = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+
+const getOversizedField = (fields) => Object.entries(fieldLimits)
+  .find(([key, limit]) => fields[key]?.length > limit)?.[0];
+
+const matchesSignature = (buffer, signature) => {
+  const asciiStart = buffer.subarray(0, 16).toString("ascii");
+
+  if (signature === "jpeg") return buffer[0] === 0xff && buffer[1] === 0xd8 && buffer[2] === 0xff;
+  if (signature === "png") return buffer.subarray(0, 8).equals(Buffer.from([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a]));
+  if (signature === "pdf") return asciiStart.startsWith("%PDF-");
+  if (signature === "postscript") return asciiStart.startsWith("%!PS-Adobe-");
+  if (signature === "ai") return asciiStart.startsWith("%PDF-") || asciiStart.startsWith("%!PS-Adobe-");
+  if (signature === "psd") return asciiStart.startsWith("8BPS");
+  if (signature === "cdr") {
+    return asciiStart.startsWith("RIFF") && buffer.subarray(8, 12).toString("ascii").toUpperCase().startsWith("CDR");
+  }
+
+  return false;
+};
+
+const sanitizeFilename = (filename, extension) => {
+  const base = path.basename(filename, extension)
+    .normalize("NFKC")
+    .replace(/[^a-zA-Z0-9._-]+/g, "-")
+    .replace(/^-+|-+$/g, "")
+    .slice(0, 80);
+
+  return `${base || "artwork-file"}${extension}`;
 };
 
 const hasSmtpConfig = () => Boolean(
@@ -48,7 +140,29 @@ export async function POST(request) {
     );
   }
 
-  const formData = await request.formData();
+  if (exceedsRateLimit(request)) {
+    return Response.json(
+      { message: "Too many inquiry attempts. Please wait 10 minutes and try again." },
+      { status: 429, headers: { "Retry-After": "600" } },
+    );
+  }
+
+  if (!request.headers.get("content-type")?.toLowerCase().startsWith("multipart/form-data")) {
+    return Response.json(
+      { message: "Invalid inquiry form submission." },
+      { status: 415 },
+    );
+  }
+
+  let formData;
+  try {
+    formData = await request.formData();
+  } catch {
+    return Response.json(
+      { message: "The inquiry form could not be read. Please check the file and try again." },
+      { status: 400 },
+    );
+  }
   const fields = {
     name: getFormValue(formData, "name"),
     email: getFormValue(formData, "email"),
@@ -68,6 +182,21 @@ export async function POST(request) {
     );
   }
 
+  if (!hasValidEmailFormat(fields.email)) {
+    return Response.json(
+      { message: "Please enter a valid email address." },
+      { status: 400 },
+    );
+  }
+
+  const oversizedField = getOversizedField(fields);
+  if (oversizedField) {
+    return Response.json(
+      { message: `The ${oversizedField} field is too long.` },
+      { status: 400 },
+    );
+  }
+
   const upload = formData.get("artwork");
   const attachments = [];
   if (upload && typeof upload === "object" && typeof upload.arrayBuffer === "function" && upload.size > 0) {
@@ -78,10 +207,30 @@ export async function POST(request) {
       );
     }
 
+    const originalName = upload.name || "";
+    const extension = path.extname(originalName).toLowerCase();
+    const rule = uploadRules[extension];
+    const contentType = (upload.type || "").toLowerCase();
+
+    if (!rule || (contentType && !rule.mime.includes(contentType))) {
+      return Response.json(
+        { message: "Unsupported artwork file. Upload JPG, PNG, PDF, AI, EPS, PSD or CDR files only." },
+        { status: 400 },
+      );
+    }
+
+    const content = Buffer.from(await upload.arrayBuffer());
+    if (!matchesSignature(content, rule.signature)) {
+      return Response.json(
+        { message: "The artwork file content does not match its filename. Please export it again and retry." },
+        { status: 400 },
+      );
+    }
+
     attachments.push({
-      filename: upload.name || "artwork-file",
-      content: Buffer.from(await upload.arrayBuffer()),
-      contentType: upload.type || undefined,
+      filename: sanitizeFilename(originalName, extension),
+      content,
+      contentType: contentType || rule.mime[0],
     });
   }
 

@@ -1,6 +1,3 @@
-import { execFileSync } from "node:child_process";
-import { existsSync, statSync } from "node:fs";
-import path from "node:path";
 import {
   blogArticles,
   getCategoryPath,
@@ -9,77 +6,13 @@ import {
   SITE_URL,
 } from "./lib/siteRoutes";
 
-const projectRoot = process.cwd();
+const CONTENT_LAST_MODIFIED = new Date("2026-07-31T00:00:00.000Z");
 
-const toUnixPath = (filePath) => filePath.replaceAll(path.sep, "/");
-
-const getGitLastModified = (filePath) => {
-  try {
-    const output = execFileSync(
-      "git",
-      ["log", "-1", "--format=%cI", "--", toUnixPath(filePath)],
-      {
-        cwd: projectRoot,
-        encoding: "utf8",
-        stdio: ["ignore", "pipe", "ignore"],
-      },
-    ).trim();
-
-    return output ? new Date(output) : null;
-  } catch {
-    return null;
-  }
+const getArticleLastModified = (article) => {
+  const value = article.dateModified || article.datePublished;
+  const date = value ? new Date(`${value}T00:00:00.000Z`) : CONTENT_LAST_MODIFIED;
+  return Number.isNaN(date.getTime()) ? CONTENT_LAST_MODIFIED : date;
 };
-
-const getFileLastModified = (filePath) => {
-  const absolutePath = path.join(projectRoot, filePath);
-  if (!existsSync(absolutePath)) return null;
-
-  const gitDate = getGitLastModified(filePath);
-  if (gitDate && !Number.isNaN(gitDate.getTime())) return gitDate;
-
-  const modifiedAt = statSync(absolutePath).mtime;
-  return Number.isNaN(modifiedAt.getTime()) ? null : modifiedAt;
-};
-
-const latestDate = (filePaths) => {
-  const timestamps = filePaths
-    .map(getFileLastModified)
-    .filter(Boolean)
-    .map((date) => date.getTime());
-
-  return new Date(Math.max(...timestamps, 0));
-};
-
-const staticPageFiles = {
-  "/": ["app/page.jsx"],
-  "/products": ["app/products/page.jsx", "app/components/productCategoryNav.js"],
-  "/custom": ["app/custom/page.jsx"],
-  "/about": ["app/about/page.jsx"],
-  "/contact": ["app/contact/page.jsx"],
-  "/blog": ["app/blog/content.js", "app/blog/page.jsx"],
-  "/faq": ["app/faq/page.jsx"],
-};
-
-const categoryPageFiles = [
-  "app/product-detail/content.js",
-  "app/products/[category]/page.jsx",
-  "app/components/productCategoryNav.js",
-];
-
-const itemPageFiles = [
-  "app/product-item/content.js",
-  "app/products/[category]/[item]/page.jsx",
-];
-
-const articlePageFiles = [
-  "app/blog/content.js",
-  "app/blog/[slug]/page.jsx",
-  "app/blog/[slug]/BlogArticleRepair.jsx",
-];
-
-const getRouteLastModified = (...routeFiles) =>
-  latestDate(routeFiles);
 
 const staticPages = [
   { path: "/", priority: 1 },
@@ -89,19 +22,22 @@ const staticPages = [
   { path: "/contact", priority: 0.8 },
   { path: "/blog", priority: 0.7 },
   { path: "/faq", priority: 0.65 },
+  { path: "/privacy-policy", priority: 0.3 },
+  { path: "/terms", priority: 0.3 },
+  { path: "/cookie-policy", priority: 0.3 },
 ];
 
 export default function sitemap() {
   const staticEntries = staticPages.map(({ path, priority }) => ({
     url: `${SITE_URL}${path}`,
-    lastModified: getRouteLastModified(...(staticPageFiles[path] || [])),
+    lastModified: CONTENT_LAST_MODIFIED,
     changeFrequency: "weekly",
     priority,
   }));
 
   const categoryEntries = Object.keys(productCategories).map((categoryKey) => ({
     url: `${SITE_URL}${getCategoryPath(categoryKey)}`,
-    lastModified: getRouteLastModified(...categoryPageFiles),
+    lastModified: CONTENT_LAST_MODIFIED,
     changeFrequency: "weekly",
     priority: 0.8,
   }));
@@ -109,15 +45,15 @@ export default function sitemap() {
   const itemEntries = Object.entries(productItemCategoryKey).map(
     ([itemSlug, categoryKey]) => ({
       url: `${SITE_URL}${getCategoryPath(categoryKey)}/${itemSlug}`,
-      lastModified: getRouteLastModified(...itemPageFiles),
+      lastModified: CONTENT_LAST_MODIFIED,
       changeFrequency: "monthly",
       priority: 0.65,
     }),
   );
 
-  const articleEntries = Object.keys(blogArticles).map((slug) => ({
+  const articleEntries = Object.entries(blogArticles).map(([slug, article]) => ({
     url: `${SITE_URL}/blog/${slug}`,
-    lastModified: getRouteLastModified(...articlePageFiles),
+    lastModified: getArticleLastModified(article),
     changeFrequency: "monthly",
     priority: 0.7,
   }));

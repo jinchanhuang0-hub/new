@@ -12,7 +12,7 @@ export const metadata = {
 const html = String.raw`
   <div class="topbar">
     <div class="container">
-      <span>Professional OEM/ODM Manufacturer Since 2003</span>
+      <span>Team Industry Experience Since 2003</span>
       <span>Email: ceo@chinauniquepin.com | WhatsApp: +86 18895316838</span>
     </div>
   </div>
@@ -23,7 +23,7 @@ const html = String.raw`
         <span><strong>Unique Pin</strong><span>Custom Metal Gifts Factory</span></span>
       </a>
       <nav class="nav" aria-label="Main navigation">
-        <a class="active" href="/">Home</a><div class="nav-item products-menu"><a href="/products">Products</a><div class="mega-dropdown" role="menu" aria-label="Products mega menu"><div class="mega-panel"><div class="mega-featured"><a class="mega-product" href="/products/custom-enamel-pins"><img src="assets/images/mega-lapel-pins-auburn.jpg" alt="Custom Auburn lapel pin"><span>Lapel Pins</span><small>Custom enamel pins for brands, events and clubs.</small></a><a class="mega-product" href="/products/custom-medals"><img src="assets/images/mega-medals-butterfly.png" alt="Custom butterfly medal with ribbon"><span>Medals</span><small>Colorful award medals with ribbons and finishes.</small></a><a class="mega-product" href="/products/custom-challenge-coins"><img src="assets/images/mega-challenge-coin-christmas.jpg" alt="Custom Christmas challenge coin"><span>Challenge Coins</span><small>Detailed coins for recognition and commemorations.</small></a></div><div class="mega-list"><a href="/products/custom-enamel-pins">Lapel Pins</a><a href="/products/custom-challenge-coins">Challenge Coins</a><a href="/products/custom-medals">Medals</a><a href="/products/custom-metal-keychains">Keychains</a><a href="/products/custom-belt-buckles">Belt Buckles</a><a href="/products/custom-golf-accessories">Golf Ball Markers &amp;Hat Clips</a><a href="/products/custom-bottle-openers">Bottle Openers</a><a href="/products/custom-cufflinks-tie-clips">Cufflinks &amp; Tie Clips</a><a href="/products/custom-fridge-magnets">Fridge Magnets</a></div><div class="mega-cta"><div><strong>Need a custom product quote?</strong><span>Send logo, quantity and deadline. We reply within 1 business day.</span></div><a class="btn btn-yellow" href="/contact">Get Free Quote</a></div></div></div></div><a href="/custom">Custom</a>
+        <a class="active" href="/">Home</a><div class="nav-item products-menu"><a href="/products">Products</a><div class="mega-dropdown" role="menu" aria-label="Products mega menu"><div class="mega-panel"><div class="mega-featured"><a class="mega-product" href="/products/custom-enamel-pins"><img src="assets/images/mega-lapel-pins-auburn.jpg" alt="Custom Auburn lapel pin"><span>Lapel Pins</span><small>Custom enamel pins for brands, events and clubs.</small></a><a class="mega-product" href="/products/custom-medals"><img src="assets/images/mega-medals-butterfly.png" alt="Custom butterfly medal with ribbon"><span>Medals</span><small>Colorful award medals with ribbons and finishes.</small></a><a class="mega-product" href="/products/custom-challenge-coins"><img src="assets/images/mega-challenge-coin-christmas.jpg" alt="Custom Christmas challenge coin"><span>Challenge Coins</span><small>Detailed coins for recognition and commemorations.</small></a></div><div class="mega-list"><a href="/products/custom-enamel-pins">Lapel Pins</a><a href="/products/custom-challenge-coins">Challenge Coins</a><a href="/products/custom-medals">Medals</a><a href="/products/custom-metal-keychains">Keychains</a><a href="/products/custom-belt-buckles">Belt Buckles</a><a href="/products/custom-golf-accessories">Golf Accessories</a><a href="/products/custom-bottle-openers">Bottle Openers</a><a href="/products/custom-cufflinks-tie-clips">Cufflinks &amp; Tie Clips</a><a href="/products/custom-fridge-magnets">Fridge Magnets</a></div><div class="mega-cta"><div><strong>Need a custom product quote?</strong><span>Send logo, quantity and deadline. We reply within 1 business day.</span></div><a class="btn btn-yellow" href="/contact">Get Free Quote</a></div></div></div></div><a href="/custom">Custom</a>
         <a href="/about">About Us</a>
         <a href="/blog">Blog</a>
         <a href="/contact">Contact Us</a>
@@ -191,7 +191,7 @@ const html = String.raw`
                 <option>Challenge Coins</option>
                 <option>Keychains</option>
                 <option>Belt Buckles</option>
-                <option>Golf Ball Markers</option>
+                <option>Golf Accessories</option>
                 <option>Fridge Magnets</option>
                 <option>Bottle Openers</option>
                 <option>Cufflinks &amp; Tie Clips</option>
@@ -206,13 +206,14 @@ const html = String.raw`
             <div class="form-field form-field-full">
               <label for="home-quote-artwork">Upload files</label>
               <label class="upload-box" for="home-quote-artwork">
-                <input id="home-quote-artwork" type="file" name="artwork" aria-label="Upload artwork">
+                <input id="home-quote-artwork" type="file" name="artwork" accept=".jpg,.jpeg,.png,.pdf,.ai,.eps,.psd,.cdr" aria-label="Upload artwork">
                 <span class="upload-icon" aria-hidden="true">&#8593;</span>
                 <span>Drag and drop a file here or click to choose</span>
               </label>
             </div>
             <button class="btn btn-primary" type="submit">Submit Inquiry</button>
-            <p data-form-notice style="color: var(--navy); font-weight: 800;"></p>
+            <p class="form-privacy-note">We use the information you submit to respond to your inquiry. See our <a href="/privacy-policy">Privacy Policy</a>.</p>
+            <p data-form-notice aria-live="polite" style="color: var(--navy); font-weight: 800;"></p>
           </form>
         </div>
       </div>
@@ -468,7 +469,7 @@ const html = String.raw`
             <div class="latest-product-body">
               <h3><a href="/products/custom-enamel-pins/christmas-enamel-pin-set">Christmas Enamel Pin Set</a></h3>
             </div>
-            <a class="latest-product-quote" href="/contact" data-product-inquiry-trigger data-product-inquiry-product="Christmas Enamel Pins">Get a Quote</a>
+            <a class="latest-product-quote" href="/contact" data-product-inquiry-trigger data-product-inquiry-product="Lapel Pins" data-product-inquiry-title="Christmas Enamel Pin Set">Get a Quote</a>
           </article>
           <article class="latest-product-card">
             <span class="latest-product-badge">NEW</span>
@@ -478,7 +479,7 @@ const html = String.raw`
             <div class="latest-product-body">
               <h3><a href="/products/custom-medals/gold-scn-ribbon-medal">Gold SCN Ribbon Medal</a></h3>
             </div>
-            <a class="latest-product-quote" href="/contact" data-product-inquiry-trigger data-product-inquiry-product="Gold SCN Ribbon Medal">Get a Quote</a>
+            <a class="latest-product-quote" href="/contact" data-product-inquiry-trigger data-product-inquiry-product="Medals" data-product-inquiry-title="Gold SCN Ribbon Medal">Get a Quote</a>
           </article>
           <article class="latest-product-card">
             <span class="latest-product-badge">NEW FINISH</span>
@@ -488,7 +489,7 @@ const html = String.raw`
             <div class="latest-product-body">
               <h3><a href="/products/custom-challenge-coins/christmas-bell-challenge-coin">Christmas Bell Challenge Coin</a></h3>
             </div>
-            <a class="latest-product-quote" href="/contact" data-product-inquiry-trigger data-product-inquiry-product="Christmas Challenge Coins">Get a Quote</a>
+            <a class="latest-product-quote" href="/contact" data-product-inquiry-trigger data-product-inquiry-product="Challenge Coins" data-product-inquiry-title="Christmas Bell Challenge Coin">Get a Quote</a>
           </article>
           <article class="latest-product-card">
             <span class="latest-product-badge">NEW</span>
@@ -498,7 +499,7 @@ const html = String.raw`
             <div class="latest-product-body">
               <h3><a href="/products/custom-metal-keychains/travel-charm-spinner-keychain">Travel Charm Spinner Keychain</a></h3>
             </div>
-            <a class="latest-product-quote" href="/contact" data-product-inquiry-trigger data-product-inquiry-product="Keychains">Get a Quote</a>
+            <a class="latest-product-quote" href="/contact" data-product-inquiry-trigger data-product-inquiry-product="Keychains" data-product-inquiry-title="Travel Charm Spinner Keychain">Get a Quote</a>
           </article>
         </div>
       </div>

@@ -6,7 +6,7 @@ const productCategories = [
   { label: "Medals", slug: "medals" },
   { label: "Keychains", slug: "keychains" },
   { label: "Belt Buckles", slug: "buckles" },
-  { label: "Golf Ball Markers &amp;Hat Clips", slug: "golf-accessories" },
+  { label: "Golf Accessories", slug: "golf-accessories" },
   { label: "Bottle Openers", slug: "bottle-openers" },
   { label: "Cufflinks & Tie Clips", slug: "cufflinks-tieclips" },
   { label: "Fridge Magnets", slug: "magnets" },

@@ -30,11 +30,20 @@ const getProductEntriesForCategory = (categoryKey) =>
 export const renderProductTypeCards = (categoryKey, options = {}) =>
   getProductEntriesForCategory(categoryKey).map(([slug, product], index) => {
     const productPath = getProductPath(slug, product);
+    const quoteProduct = product.quoteProduct || product.categoryLabel;
+    const quotePath = `/contact?product=${encodeURIComponent(quoteProduct)}&item=${encodeURIComponent(product.title)}`;
     const categoryAttrs = options.includeCategoryData
       ? `${index === 0 ? ` id="${escapeHtml(categoryKey)}"` : ""} data-product-category="${escapeHtml(categoryKey)}"`
       : "";
 
-    return `          <article class="product-type-card"${categoryAttrs}><img src="${escapeHtml(product.image)}" alt="${escapeHtml(product.alt || product.title)}"><h2>${escapeHtml(product.title)}</h2><div class="product-type-actions"><a class="product-type-btn product-type-btn-outline" href="${escapeHtml(productPath)}">View More</a><a class="product-type-btn product-type-btn-primary" href="/contact">GET QUOTE NOW</a></div></article>`;
+    return `          <article class="product-type-card"${categoryAttrs}>
+            <a class="product-type-media" href="${escapeHtml(productPath)}"><img src="${escapeHtml(product.image)}" alt="${escapeHtml(product.alt || product.title)}"></a>
+            <h2><a href="${escapeHtml(productPath)}">${escapeHtml(product.title)}</a></h2>
+            <div class="product-type-actions">
+              <a class="product-type-btn product-type-btn-outline" href="${escapeHtml(productPath)}">View Details</a>
+              <a class="product-type-btn product-type-btn-primary" href="${escapeHtml(quotePath)}" data-product-inquiry-trigger data-product-inquiry-product="${escapeHtml(quoteProduct)}" data-product-inquiry-title="${escapeHtml(product.title)}">GET A QUOTE</a>
+            </div>
+          </article>`;
   }).join("\n");
 
 export const renderAllProductTypeCards = () =>

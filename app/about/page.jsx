@@ -3,7 +3,7 @@ import { footerHtml } from "../components/footerHtml";
 
 export const metadata = {
   title: "About Unique Pin | Custom Metal Gifts Manufacturer",
-  description: "Meet Unique Pin, a custom metal gifts OEM/ODM manufacturer founded in 2003 with integrated production, quality control and global delivery.",
+  description: "Meet Unique Pin, an international custom metal gifts business established in 2018 and supported by a team with industry experience dating to 2003.",
   alternates: {
     canonical: "/about",
   },
@@ -12,7 +12,7 @@ export const metadata = {
 const html = String.raw`
   <div class="topbar">
     <div class="container">
-      <span>Professional OEM/ODM Manufacturer Since 2003</span>
+      <span>Team Industry Experience Since 2003</span>
       <span>Email: ceo@chinauniquepin.com | WhatsApp: +86 18895316838</span>
     </div>
   </div>
@@ -45,8 +45,8 @@ const html = String.raw`
           <h1>About Us</h1>
           <p>Are you looking for a supplier of custom products? Then you've hit the jackpot by choosing Unique. Choosing us means choosing quality, originality, affordable prices, and fast turnaround times.</p>
           <div class="about-hero-highlights" aria-label="Unique Pin factory highlights">
-            <span>Since 2003</span>
-            <span>20+ Years Experience</span>
+            <span>International Trade Since 2018</span>
+            <span>Team Experience Since 2003</span>
             <span>Global Delivery</span>
           </div>
         </div>
@@ -72,11 +72,11 @@ const html = String.raw`
           </div>
           <h2>Who We Are</h2>
           <p class="about-profile-subtitle">Over 20 Years of Crafting Quality Metal Products</p>
-          <p>Zhongshan Unique Metal Gift Co., Ltd. has its roots in Kaston, which was founded in 2003. It is a professional manufacturer specializing in custom metal gifts and promotional products. We provide complete OEM and ODM solutions, covering product design, mold development, manufacturing, finishing processes, quality inspection, and global delivery.</p>
+          <p>Zhongshan Unique Metal Gift Co., Ltd. was established in 2018 to develop international markets, building on the custom metal gift experience of Kaston, which was established in 2003. Through Unique Pin, our team provides OEM and ODM solutions covering product design, mold development, manufacturing, finishing, quality inspection, and global delivery.</p>
           <p>Our product range includes custom enamel pins, badges, challenge coins, medals, belt buckles, metal keychains, and other customized metal accessories. These products are widely used for brand promotions, corporate gifting, sports events, military collections, commemorative programs, and retail applications worldwide.</p>
           <p>With a fully integrated manufacturing facility, we manage every stage of production in-house, including CNC engraving, die casting, stamping, polishing, electroplating, automated enamel coloring, and quality inspection. Our 6,000-square-meter factory is equipped with 34 sets of advanced production machines, allowing us to efficiently handle both small customized projects and large-scale production orders.</p>
-          <p>With more than 20 years of manufacturing experience, we have supported projects for international brands and organizations across different industries. Our production capabilities are backed by certifications including Sedex, FSC, CE, RoHS, and Disney FAMA. Operating manufacturing facilities in China and Bangladesh, we provide flexible production solutions and stable supply chain support for customers in North America, Europe, Australia, Southeast Asia, and the Middle East.</p>
-          <p>Driven by our philosophy of 鈥淧recision Craftsmanship Builds Trust,鈥?we combine advanced manufacturing technology, strict quality control, and responsive customer service to create durable, high-quality metal products that help brands turn creative ideas into lasting products.</p>
+          <p>Our team's industry experience dates to 2003, and we have supported projects for international brands and organizations across different industries. Our production capabilities are backed by certifications including Sedex, FSC, CE, RoHS, and Disney FAMA. Our manufacturing network includes facilities in Zhongshan, China, and Bangladesh, providing flexible production solutions and supply chain support for customers in North America, Europe, Australia, Southeast Asia, and the Middle East.</p>
+          <p>Driven by our philosophy of "Precision Craftsmanship Builds Trust," we combine advanced manufacturing technology, strict quality control, and responsive customer service to create durable, high-quality metal products that help brands turn creative ideas into lasting products.</p>
         </div>
       </div>
     </section>

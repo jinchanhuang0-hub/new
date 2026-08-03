@@ -1,10 +1,15 @@
 qa-*.png
 node_modules/
 .next/
+.next-*/
 out/
 .env
 .env.local
 .env*.local
 *.log
+.lighthouse*.json
+.codex-*.png
+tmp/
+tmp-*.png
 .DS_Store
 Thumbs.db

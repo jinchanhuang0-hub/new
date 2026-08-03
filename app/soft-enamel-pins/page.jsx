@@ -10,7 +10,7 @@ export const metadata = {
 };
 
 const html = String.raw`
-  <div class="topbar"><div class="container"><span>Professional OEM/ODM Manufacturer Since 2003</span><span>Email: ceo@chinauniquepin.com | WhatsApp: +86 18895316838</span></div></div>
+  <div class="topbar"><div class="container"><span>Team Industry Experience Since 2003</span><span>Email: ceo@chinauniquepin.com | WhatsApp: +86 18895316838</span></div></div>
   <header class="site-header"><div class="container nav-wrap"><a class="brand" href="/"><img src="assets/images/logo.png" alt="Unique Pin logo"><span><strong>Unique Pin</strong><span>Custom Metal Gifts Factory</span></span></a><nav class="nav" aria-label="Main navigation"><a href="/">Home</a><div class="nav-item products-menu"><a class="active" href="/products">Products</a><div class="mega-dropdown" role="menu" aria-label="Products mega menu"><div class="mega-panel"><div class="mega-featured"><a class="mega-product" href="/products/custom-enamel-pins"><img src="assets/images/mega-lapel-pins-auburn.jpg" alt="Custom Auburn lapel pin"><span>Lapel Pins</span><small>Custom enamel pins for brands, events and clubs.</small></a><a class="mega-product" href="/products/custom-medals"><img src="assets/images/mega-medals-butterfly.png" alt="Custom butterfly medal with ribbon"><span>Medals</span><small>Colorful award medals with ribbons and finishes.</small></a><a class="mega-product" href="/products/custom-challenge-coins"><img src="assets/images/mega-challenge-coin-christmas.jpg" alt="Custom Christmas challenge coin"><span>Challenge Coins</span><small>Detailed coins for recognition and commemorations.</small></a></div><div class="mega-list"><a href="/products/custom-enamel-pins">Lapel Pins</a><a href="/products/custom-challenge-coins">Challenge Coins</a><a href="/products/custom-medals">Medals</a><a href="/products/custom-metal-keychains">Keychains</a><a href="/products/custom-belt-buckles">Belt Buckles</a><a href="/products/custom-golf-accessories">Golf Ball Markers &amp;Hat Clips</a><a href="/products/custom-bottle-openers">Bottle Openers</a><a href="/products/custom-cufflinks-tie-clips">Cufflinks &amp; Tie Clips</a><a href="/products/custom-fridge-magnets">Fridge Magnets</a></div><div class="mega-cta"><div><strong>Need a custom product quote?</strong><span>Send logo, quantity and deadline. We reply within 1 business day.</span></div><a class="btn btn-yellow" href="/contact">Get Free Quote</a></div></div></div></div><a href="/custom">Custom</a><a href="/about">About Us</a><a href="/blog">Blog</a><a href="/contact">Contact Us</a></nav><div class="nav-actions"><a class="btn btn-primary" href="/contact">Get Free Quote</a><button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">&#9776;</button></div></div></header>
 
   <main class="single-product-page">
@@ -216,13 +216,14 @@ const html = String.raw`
             <div class="form-field form-field-full">
               <label for="soft-enamel-quote-artwork">Upload files</label>
               <label class="upload-box" for="soft-enamel-quote-artwork">
-                <input id="soft-enamel-quote-artwork" type="file" name="artwork" aria-label="Upload artwork">
+                <input id="soft-enamel-quote-artwork" type="file" name="artwork" accept=".jpg,.jpeg,.png,.pdf,.ai,.eps,.psd,.cdr" aria-label="Upload artwork">
                 <span class="upload-icon" aria-hidden="true">&#8593;</span>
                 <span>Drag and drop a file here or click to choose</span>
               </label>
             </div>
             <button class="btn btn-primary" type="submit">Submit Inquiry</button>
-            <p data-form-notice style="color: var(--navy); font-weight: 800;"></p>
+            <p class="form-privacy-note">We use the information you submit to respond to your inquiry. See our <a href="/privacy-policy">Privacy Policy</a>.</p>
+            <p data-form-notice aria-live="polite" style="color: var(--navy); font-weight: 800;"></p>
           </form>
         </div>
       </div>

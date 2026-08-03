@@ -6,6 +6,19 @@ if (toggle && nav) {
     nav.classList.toggle("open");
     toggle.setAttribute("aria-expanded", nav.classList.contains("open") ? "true" : "false");
   });
+
+  nav.addEventListener("click", (event) => {
+    if (!event.target.closest("a")) return;
+    nav.classList.remove("open");
+    toggle.setAttribute("aria-expanded", "false");
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key !== "Escape" || !nav.classList.contains("open")) return;
+    nav.classList.remove("open");
+    toggle.setAttribute("aria-expanded", "false");
+    toggle.focus();
+  });
 }
 
 document.querySelectorAll(".products-menu").forEach((menu) => {
@@ -296,50 +309,31 @@ if (productData && window.location.pathname.includes("product-detail")) {
 const getFormNotice = (form) => form.querySelector("[data-form-notice]")
   || form.closest(".contact-card, .product-inquiry-card, .contact-layout")?.querySelector("[data-form-notice]");
 
-const GA4_MEASUREMENT_ID = "G-4BPKLZFWYH";
-let ga4LoadPromise;
+const prefillInquiryFormsFromUrl = () => {
+  const params = new URLSearchParams(window.location.search);
+  const productName = params.get("product")?.trim() || "";
+  const productTitle = params.get("item")?.trim() || "";
+  if (!productName && !productTitle) return;
 
-const loadGa4DirectEvents = () => {
-  if (typeof window === "undefined") return Promise.resolve(false);
-  if (typeof window.gtag === "function") return Promise.resolve(true);
+  document.querySelectorAll("[data-inquiry-form]").forEach((form) => {
+    const productSelect = form.querySelector('select[name="product"]');
+    if (productSelect && productName) {
+      const normalizedProductName = productName.toLowerCase();
+      const matchingOption = [...productSelect.options].find(
+        (option) => option.textContent.trim().toLowerCase() === normalizedProductName,
+      );
+      if (matchingOption) productSelect.value = matchingOption.value || matchingOption.textContent;
+    }
 
-  window.dataLayer = window.dataLayer || [];
-  window.gtag = function(){ window.dataLayer.push(arguments); };
-  window.gtag("js", new Date());
-  window.gtag("config", GA4_MEASUREMENT_ID, { send_page_view: false });
-
-  if (!ga4LoadPromise) {
-    ga4LoadPromise = new Promise((resolve) => {
-      const existingScript = document.querySelector(`script[src*="${GA4_MEASUREMENT_ID}"]`);
-      if (existingScript) {
-        resolve(true);
-        return;
-      }
-
-      const script = document.createElement("script");
-      script.async = true;
-      script.src = `https://www.googletagmanager.com/gtag/js?id=${GA4_MEASUREMENT_ID}`;
-      script.onload = () => resolve(true);
-      script.onerror = () => resolve(false);
-      document.head.appendChild(script);
-    });
-  }
-
-  return ga4LoadPromise;
-};
-
-const pushAnalyticsEvent = (eventName, eventParams = {}) => {
-  window.dataLayer = window.dataLayer || [];
-  window.dataLayer.push({
-    event: eventName,
-    ...eventParams,
-  });
-  loadGa4DirectEvents().then((loaded) => {
-    if (loaded && typeof window.gtag === "function") {
-      window.gtag("event", eventName, eventParams);
+    const detailsField = form.querySelector('textarea[name="details"]');
+    if (detailsField && productTitle) {
+      const productLine = `Product: ${productTitle}`;
+      if (!detailsField.value.includes(productLine)) detailsField.value = productLine;
     }
   });
 };
+
+prefillInquiryFormsFromUrl();
 
 document.querySelectorAll("[data-inquiry-form]").forEach((inquiryForm) => {
   inquiryForm.addEventListener("submit", async (event) => {
@@ -377,12 +371,6 @@ document.querySelectorAll("[data-inquiry-form]").forEach((inquiryForm) => {
         notice.style.color = "var(--navy)";
         notice.textContent = "Thank you for your inquiry. Our team will reply within 1 business day.";
       }
-      pushAnalyticsEvent("generate_lead", {
-        form_location: inquiryForm.closest(".product-inquiry-card") ? "product_quote_modal" : "contact_page",
-        product_name: String(formData.get("product") || ""),
-        page_location: window.location.href,
-        page_title: document.title,
-      });
       inquiryForm.reset();
     } catch (error) {
       if (notice) {
@@ -417,11 +405,6 @@ const openProductInquiryModal = (productName = "") => {
   modal.hidden = false;
   modal.classList.add("is-open");
   document.body.classList.add("quote-modal-open");
-  pushAnalyticsEvent("quote_modal_open", {
-    product_name: productName,
-    page_location: window.location.href,
-    page_title: document.title,
-  });
   modal.querySelector(".product-inquiry-card input, .product-inquiry-card select, .product-inquiry-card textarea, .product-inquiry-card button")?.focus();
   return true;
 };
@@ -602,98 +585,4 @@ document.addEventListener("click", (event) => {
     categoryButton.classList.toggle("active", categoryButton === button);
   });
   applyBlogCategory(button.dataset.blogCategory || "All");
-});
-
-const productCategoryButtons = document.querySelectorAll(".products-category-nav [data-product-filter]");
-const productCards = document.querySelectorAll(".products-all-grid .product-type-card[data-product-category]");
-const productGrid = document.querySelector(".products-all-grid");
-const productsPerPage = 30;
-let selectedProductCategory = "all";
-let currentProductPage = 1;
-let productPagination = document.querySelector(".product-pagination");
-
-if (productGrid && !productPagination) {
-  productPagination = document.createElement("nav");
-  productPagination.className = "product-pagination";
-  productPagination.setAttribute("aria-label", "Product pages");
-  productGrid.insertAdjacentElement("afterend", productPagination);
-}
-
-const renderProductPagination = (pageCount) => {
-  if (!productPagination) return;
-
-  if (pageCount <= 1) {
-    productPagination.hidden = true;
-    productPagination.innerHTML = "";
-    return;
-  }
-
-  productPagination.hidden = false;
-  productPagination.innerHTML = Array.from({ length: pageCount }, (_, index) => {
-    const page = index + 1;
-    const isActive = page === currentProductPage;
-    return `<button type="button" class="${isActive ? "active" : ""}" data-product-page="${page}" aria-current="${isActive ? "page" : "false"}">${page}</button>`;
-  }).join("");
-};
-
-const applyProductFilter = (category, updateHash = false, page = 1) => {
-  if (!productCategoryButtons.length || !productCards.length) return;
-
-  selectedProductCategory = category || "all";
-  productCategoryButtons.forEach((button) => {
-    button.classList.toggle("active", button.dataset.productFilter === selectedProductCategory);
-  });
-
-  const matchingCards = [...productCards].filter((card) => (
-    selectedProductCategory === "all" || card.dataset.productCategory === selectedProductCategory
-  ));
-  const pageCount = Math.max(1, Math.ceil(matchingCards.length / productsPerPage));
-  currentProductPage = Math.min(Math.max(page, 1), pageCount);
-  const pageStart = (currentProductPage - 1) * productsPerPage;
-  const pageEnd = pageStart + productsPerPage;
-
-  productCards.forEach((card) => {
-    const matchedIndex = matchingCards.indexOf(card);
-    const shouldShowCard = matchedIndex >= pageStart && matchedIndex < pageEnd;
-    card.hidden = !shouldShowCard;
-    card.style.display = shouldShowCard ? "" : "none";
-  });
-  renderProductPagination(pageCount);
-
-  if (updateHash) {
-    const nextUrl = selectedProductCategory === "all"
-      ? `${window.location.pathname}${window.location.search}`
-      : `${window.location.pathname}${window.location.search}#${selectedProductCategory}`;
-    window.history.replaceState(null, "", nextUrl);
-  }
-};
-
-const productHash = window.location.hash.replace("#", "");
-if (window.location.pathname === "/products" && productHash) {
-  window.location.replace(productHash === "all" ? "/products" : productCategoryPaths[productHash] || "/products");
-}
-const initialProductFilter = [...productCategoryButtons].some((button) => button.dataset.productFilter === productHash)
-  ? productHash
-  : "all";
-applyProductFilter(initialProductFilter);
-
-document.addEventListener("click", (event) => {
-  const button = event.target.closest?.(".products-category-nav [data-product-filter]");
-  if (!button) return;
-
-  const href = button.getAttribute("href") || "";
-  if (href.startsWith("/") && !href.includes("#")) return;
-
-  event.preventDefault();
-  applyProductFilter(button.dataset.productFilter || "all", true);
-  document.querySelector(".products-all-section")?.scrollIntoView({ behavior: "smooth", block: "start" });
-});
-
-document.addEventListener("click", (event) => {
-  const button = event.target.closest?.(".product-pagination [data-product-page]");
-  if (!button) return;
-
-  event.preventDefault();
-  applyProductFilter(selectedProductCategory, false, Number(button.dataset.productPage) || 1);
-  document.querySelector(".products-all-section")?.scrollIntoView({ behavior: "smooth", block: "start" });
 });
