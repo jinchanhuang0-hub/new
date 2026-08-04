@@ -248,21 +248,20 @@ const html = String.raw`
         </div>
         <div class="how-visual" aria-hidden="true">
           <div class="process-flow">
-            <div class="process-flow-card">
-              <img src="assets/images/home-process-step-1.webp" alt="">
+            <div class="process-flow-title">DESIGN <span>→</span> PROOF <span>→</span> PRODUCT</div>
+            <div class="process-stage process-stage-concept">
+              <div class="process-stage-copy"><b>01 CONCEPT</b><span>Original Artwork</span></div>
+              <div class="process-flow-card"><img src="assets/images/home-process-step-1.webp" alt=""></div>
             </div>
-            <span class="process-flow-arrow">
-              <svg viewBox="0 0 48 64"><path class="arrow-main" d="M24 6v38M10 34l14 22 14-22"/><path class="arrow-highlight" d="M19 9v30M15 36l9 14"/></svg>
-            </span>
-            <div class="process-flow-card">
-              <img src="assets/images/home-process-step-2.webp" alt="">
+            <div class="process-stage process-stage-proof">
+              <div class="process-stage-copy"><b>02 PROOF</b><span>Color &amp; Finish Preview</span></div>
+              <div class="process-flow-card"><img src="assets/images/home-process-step-2.webp" alt=""></div>
             </div>
-            <span class="process-flow-arrow">
-              <svg viewBox="0 0 48 64"><path class="arrow-main" d="M24 6v38M10 34l14 22 14-22"/><path class="arrow-highlight" d="M19 9v30M15 36l9 14"/></svg>
-            </span>
-            <div class="process-flow-card">
-              <img src="assets/images/home-process-step-3.webp" alt="">
+            <div class="process-stage process-stage-finished">
+              <div class="process-stage-copy"><b>03 FINISHED</b><span>Production Sample</span></div>
+              <div class="process-flow-card"><img src="assets/images/home-process-step-3.webp" alt=""></div>
             </div>
+            <div class="process-flow-note">Free artwork support • Digital proof before production</div>
           </div>
         </div>
       </div>
@@ -325,7 +324,6 @@ const html = String.raw`
                 <p>The medals turned out absolutely fantastic. These will be a big hit with swimmers lucky enough to get their hands on one.</p>
                 <p class="review-more">Ada was great to deal with and responded very quickly to all of our changes and requests so that the medals ended exactly what we envisioned.</p>
                 <div class="review-author">
-                  <img src="https://i.pravatar.cc/96?img=12" alt="Michael Turner" loading="lazy" />
                   <span><strong>Michael Turner</strong></span>
                 </div>
               </article>
@@ -335,7 +333,6 @@ const html = String.raw`
                 <p>I honestly cannot say enough good things about the quality of the coins and keychains I have received from here.</p>
                 <p class="review-more">This was actually our 7th time ordering, and they have not missed a beat. The quality is very good and communication was excellent.</p>
                 <div class="review-author">
-                  <img src="https://i.pravatar.cc/96?img=32" alt="Sarah Mitchell" loading="lazy" />
                   <span><strong>Sarah Mitchell</strong></span>
                 </div>
               </article>
@@ -345,7 +342,6 @@ const html = String.raw`
                 <p>The custom lapel pins turned out absolutely perfect - clean details, vivid colors, and excellent quality.</p>
                 <p class="review-more">Communication was fast and professional throughout the entire process. The supplier was very helpful with design adjustments and delivered exactly what I needed.</p>
                 <div class="review-author">
-                  <img src="https://i.pravatar.cc/96?img=56" alt="David Parker" loading="lazy" />
                   <span><strong>David Parker</strong></span>
                 </div>
               </article>
@@ -355,7 +351,6 @@ const html = String.raw`
                 <p>Fantastic quality, attention to detail and packaging - just outstanding. Even better than I could have hoped for when I first designed them.</p>
                 <p class="review-more">This is my favourite supplier to work with, highly recommended. Eva is a great customer representative and answered all my questions with speed and grace.</p>
                 <div class="review-author">
-                  <img src="https://i.pravatar.cc/96?img=47" alt="Emily Carter" loading="lazy" />
                   <span><strong>Emily Carter</strong></span>
                 </div>
               </article>
@@ -365,7 +360,6 @@ const html = String.raw`
                 <p>Eve is always very helpful. I have used this company for the past 4 years for challenge coins, pins and magnets.</p>
                 <p class="review-more">They are great at offering suggestions and problem solving, and all of the products have come out very nice.</p>
                 <div class="review-author">
-                  <img src="https://i.pravatar.cc/96?img=15" alt="Mark Wilson" loading="lazy" />
                   <span><strong>Mark Wilson</strong></span>
                 </div>
               </article>
@@ -375,7 +369,6 @@ const html = String.raw`
                 <p>The turnaround time is incredibly fast, but my favorite part of the process is the communication.</p>
                 <p class="review-more">Their designers always send over a proof to make sure you are 100% happy with the design before production. That extra level of customer service keeps us coming back.</p>
                 <div class="review-author">
-                  <img src="https://i.pravatar.cc/96?img=45" alt="Jessica Brown" loading="lazy" />
                   <span><strong>Jessica Brown</strong></span>
                 </div>
               </article>
@@ -385,7 +378,6 @@ const html = String.raw`
                 <p>The coin is amazing, and the customer service is excellent. Every time I have a question, the team is helpful.</p>
                 <p class="review-more">They work closely with me to create the coin design I want, and the process is smooth from design discussion to final production.</p>
                 <div class="review-author">
-                  <img src="https://i.pravatar.cc/96?img=18" alt="Robert Miller" loading="lazy" />
                   <span><strong>Robert Miller</strong></span>
                 </div>
               </article>
@@ -395,7 +387,6 @@ const html = String.raw`
                 <p>The quality is very good. Communication was excellent, and the team understood my needs well.</p>
                 <p class="review-more">They worked to create the exact item I envisioned and made the custom ordering process clear and reliable.</p>
                 <div class="review-author">
-                  <img src="https://i.pravatar.cc/96?img=49" alt="Amanda Lewis" loading="lazy" />
                   <span><strong>Amanda Lewis</strong></span>
                 </div>
               </article>
@@ -423,33 +414,42 @@ const html = String.raw`
           <h2>Certificates</h2>
         </div>
         <div class="cert-grid">
-          <figure class="cert" tabindex="0" aria-label="View ISO 9001 certificate">
+          <figure class="cert" data-cert-lightbox-trigger role="button" tabindex="0" aria-label="View ISO 9001 certificate">
             <img src="assets/images/cert-iso9001.png" alt="Unique Pin ISO9001 certificate">
             <figcaption class="cert-name">ISO 9001</figcaption>
           </figure>
-          <figure class="cert" tabindex="0" aria-label="View ISO 14001 certificate">
+          <figure class="cert" data-cert-lightbox-trigger role="button" tabindex="0" aria-label="View ISO 14001 certificate">
             <img src="assets/images/cert-iso14001.png" alt="Unique Pin ISO14001 certificate">
             <figcaption class="cert-name">ISO 14001</figcaption>
           </figure>
-          <figure class="cert" tabindex="0" aria-label="View CE certificate">
+          <figure class="cert" data-cert-lightbox-trigger role="button" tabindex="0" aria-label="View CE certificate">
             <img src="assets/images/cert-ce.png" alt="Unique Pin CE certificate">
             <figcaption class="cert-name">CE</figcaption>
           </figure>
-          <figure class="cert" tabindex="0" aria-label="View RoHS certificate">
+          <figure class="cert" data-cert-lightbox-trigger role="button" tabindex="0" aria-label="View RoHS certificate">
             <img src="assets/images/cert-rohs.png" alt="Unique Pin RoHS certificate">
             <figcaption class="cert-name">RoHS</figcaption>
           </figure>
-          <figure class="cert" tabindex="0" aria-label="View FSC certificate">
+          <figure class="cert" data-cert-lightbox-trigger role="button" tabindex="0" aria-label="View FSC certificate">
             <img src="assets/images/cert-fsc.png" alt="Unique Pin FSC certificate">
             <figcaption class="cert-name">FSC</figcaption>
           </figure>
-          <figure class="cert" tabindex="0" aria-label="View SMETA certificate">
+          <figure class="cert" data-cert-lightbox-trigger role="button" tabindex="0" aria-label="View SMETA certificate">
             <img src="assets/images/cert-smeta.png" alt="Unique Pin SMETA certificate">
             <figcaption class="cert-name">SMETA</figcaption>
           </figure>
         </div>
       </div>
     </section>
+
+    <div class="cert-lightbox" data-cert-lightbox hidden aria-hidden="true" role="dialog" aria-modal="true" aria-label="Certificate preview">
+      <button class="cert-lightbox-backdrop" type="button" data-cert-lightbox-close aria-label="Close certificate preview"></button>
+      <div class="cert-lightbox-panel">
+        <button class="cert-lightbox-close" type="button" data-cert-lightbox-close aria-label="Close certificate preview">&times;</button>
+        <img class="cert-lightbox-img" src="" alt="">
+        <p class="cert-lightbox-caption"></p>
+      </div>
+    </div>
 
     <section class="section latest-products-section" aria-labelledby="latest-products-title">
       <div class="container latest-products-wrap">

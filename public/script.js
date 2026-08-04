@@ -190,6 +190,69 @@ document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") closeVideoLightbox();
 });
 
+let lastCertificateTrigger = null;
+
+const closeCertificateLightbox = () => {
+  const certLightbox = document.querySelector("[data-cert-lightbox]");
+  const certLightboxImage = certLightbox?.querySelector(".cert-lightbox-img");
+  if (!certLightbox || !certLightboxImage) return;
+  certLightbox.hidden = true;
+  certLightbox.classList.remove("is-open");
+  certLightbox.setAttribute("aria-hidden", "true");
+  certLightboxImage.removeAttribute("src");
+  certLightboxImage.alt = "";
+  document.body.classList.remove("is-cert-lightbox-open");
+  lastCertificateTrigger?.focus();
+};
+
+const initCertificateLightbox = () => {
+  const certLightbox = document.querySelector("[data-cert-lightbox]");
+  const certLightboxImage = certLightbox?.querySelector(".cert-lightbox-img");
+  const certLightboxCaption = certLightbox?.querySelector(".cert-lightbox-caption");
+  const certLightboxCloseButton = certLightbox?.querySelector(".cert-lightbox-close");
+
+  document.querySelectorAll("[data-cert-lightbox-trigger]").forEach((trigger) => {
+    if (trigger.dataset.certLightboxReady === "true") return;
+    trigger.dataset.certLightboxReady = "true";
+
+    const openCertificateLightbox = () => {
+      if (!certLightbox || !certLightboxImage || !certLightboxCaption) return;
+      const image = trigger.querySelector("img");
+      const caption = trigger.querySelector(".cert-name")?.textContent?.trim() || image?.alt || "Certificate";
+      if (!image) return;
+
+      lastCertificateTrigger = trigger;
+      certLightboxImage.src = image.currentSrc || image.src;
+      certLightboxImage.alt = image.alt || caption;
+      certLightboxCaption.textContent = caption;
+      certLightbox.hidden = false;
+      certLightbox.classList.add("is-open");
+      certLightbox.setAttribute("aria-hidden", "false");
+      document.body.classList.add("is-cert-lightbox-open");
+      certLightboxCloseButton?.focus();
+    };
+
+    trigger.addEventListener("click", openCertificateLightbox);
+    trigger.addEventListener("keydown", (event) => {
+      if (event.key !== "Enter" && event.key !== " ") return;
+      event.preventDefault();
+      openCertificateLightbox();
+    });
+  });
+
+  document.querySelectorAll("[data-cert-lightbox-close]").forEach((button) => {
+    if (button.dataset.certLightboxCloseReady === "true") return;
+    button.dataset.certLightboxCloseReady = "true";
+    button.addEventListener("click", closeCertificateLightbox);
+  });
+};
+
+initCertificateLightbox();
+document.addEventListener("DOMContentLoaded", initCertificateLightbox);
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") closeCertificateLightbox();
+});
+
 const productDetailData = {
   magnets: {
     title: "Custom Fridge Magnets Manufacturer",
