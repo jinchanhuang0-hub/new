@@ -34,7 +34,7 @@ const html = String.raw`
         <article class="legal-article">
           <section id="privacy-controller">
             <h2>1. Who Controls Your Information</h2>
-            <p>Zhongshan Unique Metal Gift Co., Ltd. (中山市优尼可工艺品有限公司), trading online as Unique Pin, is responsible for personal information collected through this website. The company was established in 2018 to develop international markets. Its custom metal gifts team draws on industry experience dating to 2003 through its roots in Kaston, a separate company established in 2003.</p>
+            <p>Zhongshan Unique Metal Gift Co., Ltd. (中山市优尼可工艺品有限公司), operating under the brand name “Unique Pin,” is the data controller responsible for the personal information collected through uccrafts.com.</p>
             <address>
               Business registration number: 91442000MA525GLE7Y<br>
               Registered office: Building A, No. 7 Xingyu Road, Taifeng Industrial Zone, Jidong'er, Xiaolan Town, Zhongshan, Guangdong, China
