@@ -7793,6 +7793,16 @@ body.is-video-lightbox-open {
   line-height: 1.05;
 }
 
+.legal-hero-centered > .container {
+  text-align: center;
+}
+
+.legal-hero-centered h1,
+.legal-hero-centered > .container > p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .legal-hero > .container > p:not(.legal-kicker):not(.legal-updated) {
   max-width: 780px;
   margin: 18px 0 0;
@@ -7805,6 +7815,17 @@ body.is-video-lightbox-open {
   color: #667085;
   font-size: 14px;
   font-weight: 700;
+}
+
+.legal-hero-centered > .container > p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.legal-hero.legal-hero-centered > .container > p:not(.legal-kicker):not(.legal-updated),
+.legal-hero.legal-hero-centered > .container > .legal-updated {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .legal-content {

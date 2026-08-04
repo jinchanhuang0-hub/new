@@ -13,9 +13,8 @@ export const metadata = {
 const html = String.raw`
   ${legalHeaderHtml}
   <main class="legal-page">
-    <section class="legal-hero">
+    <section class="legal-hero legal-hero-centered">
       <div class="container">
-        <p class="legal-kicker">Legal</p>
         <h1>Privacy Policy</h1>
         <p>How Zhongshan Unique Metal Gift Co., Ltd. (中山市优尼可工艺品有限公司) handles personal information submitted through uccrafts.com.</p>
         <p class="legal-updated">Effective date: August 3, 2026</p>
@@ -89,7 +88,7 @@ const html = String.raw`
             <h2>6. External Services, Business Changes and Policy Updates</h2>
             <p>This website may link to third-party websites or services, including WhatsApp and social networks. Those services control their own processing once you leave this website or choose to use their service. Please review their privacy information before providing personal information to them.</p>
             <p>If the business is reorganized, merged, financed, sold or transferred, relevant personal information may be disclosed to professional advisers and transferred to the resulting organization as part of that transaction, subject to applicable confidentiality and data protection requirements.</p>
-            <p>This business website is not directed to children. We do not knowingly request personal information from children through our quotation forms. We do not use website inquiry data for automated decisions that produce legal or similarly significant effects.</p>
+            <p>We do not aim any of our products or services directly at children under the age of 13, and we do not knowingly collect personal information about children under 13. We do not use website inquiry data for automated decisions that produce legal or similarly significant effects.</p>
             <p>We may update this policy when our services, providers, legal obligations or data practices change. The effective date above shows the latest revision. Privacy questions, requests or complaints may be sent to <a href="mailto:ceo@chinauniquepin.com">ceo@chinauniquepin.com</a>. Please provide enough information for us to identify the request without sending unnecessary sensitive information.</p>
           </section>
         </article>

@@ -13,9 +13,8 @@ export const metadata = {
 const html = String.raw`
   ${legalHeaderHtml}
   <main class="legal-page">
-    <section class="legal-hero">
+    <section class="legal-hero legal-hero-centered">
       <div class="container">
-        <p class="legal-kicker">Legal</p>
         <h1>Terms and Conditions</h1>
         <p>Website and commercial terms for inquiries, quotations and custom metal product orders.</p>
         <p class="legal-updated">Effective date: August 3, 2026</p>
