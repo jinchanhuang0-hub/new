@@ -278,6 +278,49 @@ const withBlogArticleDefaults = (article) => {
 };
 
 const blogArticleData = {
+  "challenge-coin-size-guide": {
+    title: "Challenge Coin Size Guide: Diameter, Thickness and Uses",
+    headline: "Challenge Coin Size and Thickness Guide: How to Choose the Right Dimensions",
+    description:
+      "Compare challenge coin sizes and thicknesses, from 1.5 to 2.5 inches. Learn how artwork, 3D relief, use and packaging affect your choice.",
+    author: "Sunny Huang",
+    authorType: "Person",
+    datePublished: "2026-08-05",
+    dateModified: "2026-08-05",
+    image: "/assets/images/blog-challenge-coin-size-guide-hero.webp",
+    faq: [
+      {
+        question: "What is the standard challenge coin size?",
+        answer:
+          "There is no mandatory standard. Common custom sizes range from about 1.5 to 2.5 inches. Start around 1.75 inches for concise pocket-carry designs and 2 inches for more detailed artwork.",
+      },
+      {
+        question: "Is a 1.75-inch or 2-inch challenge coin better?",
+        answer:
+          "Choose 1.75 inches for a clear emblem and limited wording. Choose 2 inches for a detailed seal, several text lines or complex double-sided artwork. Compare both layouts at actual size.",
+      },
+      {
+        question: "How thick should a challenge coin be?",
+        answer:
+          "For standard round coins, our current production reference is 2.0 to 3.0 mm for diameters of 25 to 45 mm, 3.0 to 3.5 mm for 46 to 70 mm, about 3.5 mm for 71 to 90 mm, and 4 mm or more for diameters of 91 mm and above. Artwork, relief and shape can change the final recommendation.",
+      },
+      {
+        question: "Does a thicker coin always mean better quality?",
+        answer:
+          "No. Quality also depends on artwork, tooling, plating, enamel, polishing, inspection and packaging. Extra thickness can add weight without improving readability or finish.",
+      },
+      {
+        question: "What size is best for a 3D challenge coin?",
+        answer:
+          "Many 3D projects benefit from 2 inches or more because sculpted contours need room to transition. Portraits, buildings, vehicles and detailed scenes may require more diameter and relief height than a simple raised emblem.",
+      },
+      {
+        question: "How is an irregular challenge coin measured?",
+        answer:
+          "Specify custom-shaped coins by maximum width and height, with the quoted size tied to the longest dimension. Mark cutouts, narrow sections and projections on the proof.",
+      },
+    ],
+  },
   "2d-vs-3d-challenge-coins": {
     title: "2D vs 3D Challenge Coins: Which Is Better for Your Design?",
     description:
@@ -367,12 +410,34 @@ const blogArticleData = {
     image: "/assets/images/blog-custom-metal-crafts.jpg",
   },
   "soft-enamel-vs-hard-enamel-pins": {
-    title: "Soft Enamel vs Hard Enamel Pins: Buyer Guide",
+    title: "Soft Enamel vs Hard Enamel Pins: Cost, Durability & Uses",
     description:
-      "Compare soft enamel and hard enamel pins by finish, durability, cost, application and production requirements.",
+      "Compare soft enamel vs hard enamel pins by texture, cost, durability, artwork limits and best uses before ordering custom pins.",
     datePublished: "2026-07-15",
-    dateModified: "2026-07-15",
+    dateModified: "2026-08-05",
     image: "/assets/images/blog-soft-hard-enamel-pins-v2.webp",
+    faq: [
+      {
+        question: "What is the main difference between soft enamel and hard enamel pins?",
+        answer:
+          "Soft enamel pins have recessed color areas and raised metal lines, creating a textured surface. Hard enamel pins are filled and polished so the enamel and metal sit nearly level, creating a smooth finish.",
+      },
+      {
+        question: "Are hard enamel pins more durable than soft enamel pins?",
+        answer:
+          "Hard enamel generally offers better resistance to everyday surface wear because of its polished, level finish. Soft enamel remains suitable for most promotional uses, and an epoxy coating can add protection while changing the surface appearance.",
+      },
+      {
+        question: "Which enamel pin type is more cost-effective for bulk orders?",
+        answer:
+          "Soft enamel is usually the more economical choice because it requires fewer finishing and polishing steps. Final price still depends on size, quantity, plating, number of colors, attachments and packaging.",
+      },
+      {
+        question: "Should retail enamel pins use soft or hard enamel?",
+        answer:
+          "Both can work for retail. Hard enamel suits a smooth, premium presentation, while soft enamel provides stronger texture and raised metal detail. The best choice depends on the artwork, target price and brand position.",
+      },
+    ],
   },
   "how-to-make-your-own-custom-lapel-pins": {
     title: "How to Make Your Own Custom Lapel Pins | Buyer Guide",
@@ -383,12 +448,29 @@ const blogArticleData = {
     image: "/assets/images/blog-lapel-pin-animal-samples.webp",
   },
   "custom-medals-vs-challenge-coins": {
-    title: "Custom Medals vs Challenge Coins: Buyer Guide",
+    title: "Custom Medals vs Challenge Coins for Events & Soccer",
     description:
-      "Compare custom medals and challenge coins by purpose, presentation, materials, finishes and ideal applications.",
+      "Compare custom medals vs challenge coins for soccer tournaments, team recognition, events and collectible gifts, including cost and design factors.",
     datePublished: "2026-07-15",
-    dateModified: "2026-07-15",
+    dateModified: "2026-08-05",
     image: "/assets/images/blog-medal-xball-front-back.png",
+    faq: [
+      {
+        question: "Are medals or challenge coins better for a soccer tournament?",
+        answer:
+          "Medals are usually better for player participation, finalist and champion awards because they can be worn during the ceremony. Challenge coins are better for coaches, volunteers, sponsors, club anniversaries and collectible team gifts.",
+      },
+      {
+        question: "Can a soccer event use both medals and challenge coins?",
+        answer:
+          "Yes. A tournament can award medals to players and use matching challenge coins for officials, sponsors, VIPs or commemorative merchandise. Shared artwork and plating can keep both products visually consistent.",
+      },
+      {
+        question: "Which product usually needs more packaging?",
+        answer:
+          "Medals commonly need ribbons and individual bags, while challenge coins may use pouches, capsules or presentation boxes. Packaging should be selected according to the recipient and distribution method.",
+      },
+    ],
   },
 };
 

@@ -14,17 +14,69 @@ const getPageShell = (html) => {
 
 const categorySeoContent = {
   pins: String.raw`
-          <div class="category-seo-panel" aria-label="Custom enamel pins manufacturer information">
-            <h2>Custom Enamel Pins for Brand, Event and Retail Orders</h2>
-            <p>Unique Pin manufactures custom enamel pins for overseas buyers who need reliable artwork support, stable production and clear export communication. Our enamel pin range includes lapel pins, soft enamel pins, hard enamel pins, die struck pins and printed pins. Buyers can use these styles for brand merchandise, school clubs, trade shows, fan products, awareness campaigns, corporate gifts and retail collections.</p>
-            <p>Every order starts with a production-ready art proof. Our team reviews line width, enamel color areas, plating choices, back attachments, packaging and quantity before mold making, so the finished pin matches the intended design and budget. For premium programs, hard enamel pins provide a smooth polished surface. For colorful promotional orders, soft enamel pins offer strong visual impact and flexible pricing. Printed pins help preserve gradients, photos and fine artwork that cannot be separated by raised metal lines.</p>
-            <p>If you are still comparing styles, our <a href="/blog/soft-enamel-vs-hard-enamel-pins">soft enamel vs hard enamel guide</a> explains the main surface and budget differences, while the <a href="/blog/how-to-make-your-own-custom-lapel-pins">custom lapel pin buyer guide</a> covers artwork preparation and order steps. When you are ready, send artwork, quantity and deadline through the <a href="/contact">quote form</a> so we can recommend the right pin construction for your project.</p>
-            <h3>Enamel Pin Options We Support</h3>
-            <ul class="category-seo-list">
-              <li>Soft enamel, hard enamel, die struck, printed, glitter, pearl, transparent enamel and epoxy coating.</li>
-              <li>Gold, silver, black nickel, antique gold, antique silver, rose gold and dual plating finishes.</li>
-              <li>Butterfly clutch, rubber clutch, locking pin, safety pin, magnet, backing card and retail packaging.</li>
-            </ul>
+          <div class="category-seo-panel category-seo-panel-featured" aria-label="Custom enamel pins manufacturer information">
+            <div class="category-seo-hero">
+              <div class="category-seo-intro">
+                <h2>Custom Enamel Pins for Brand, Event and Retail Orders</h2>
+                <p>Unique Pin manufactures custom enamel pins for overseas buyers who need reliable artwork support, stable production and clear export communication. Compare soft enamel, hard enamel, die struck and printed pin options before requesting a quote.</p>
+                <div class="category-seo-actions">
+                  <a class="category-seo-primary" href="/contact">Request a Pin Quote</a>
+                  <a class="category-seo-secondary" href="/blog/soft-enamel-vs-hard-enamel-pins">Compare Finishes</a>
+                </div>
+              </div>
+              <div class="category-quote-card" aria-label="Quote preparation checklist">
+                <h3>Send These for a Fast Quote</h3>
+                <ul class="category-seo-list">
+                  <li>Logo or reference artwork</li>
+                  <li>Target size, quantity and deadline</li>
+                  <li>Preferred finish, backing and packaging</li>
+                  <li>Delivery country or shipping method</li>
+                </ul>
+              </div>
+            </div>
+            <div class="pin-style-grid" aria-label="Enamel pin style guide">
+              <article>
+                <span class="pin-style-icon pin-style-icon-soft" aria-hidden="true"></span>
+                <h3>Soft Enamel</h3>
+                <p>Best for bold color blocks, raised metal outlines, event giveaways and flexible promotional budgets.</p>
+              </article>
+              <article>
+                <span class="pin-style-icon pin-style-icon-hard" aria-hidden="true"></span>
+                <h3>Hard Enamel</h3>
+                <p>Best for smooth premium surfaces, retail collections, membership pins and corporate gifts.</p>
+              </article>
+              <article>
+                <span class="pin-style-icon pin-style-icon-print" aria-hidden="true"></span>
+                <h3>Printed Pins</h3>
+                <p>Best for gradients, photos, QR codes and fine artwork that cannot be separated by metal lines.</p>
+              </article>
+              <article>
+                <span class="pin-style-icon pin-style-icon-metal" aria-hidden="true"></span>
+                <h3>Die Struck</h3>
+                <p>Best for classic metal relief, formal badges, award pins and designs without enamel color.</p>
+              </article>
+            </div>
+            <div class="category-seo-split">
+              <div class="category-seo-copy">
+                <h3>Materials, Finish and Price Factors</h3>
+                <p>Every order starts with a production-ready art proof. Our team reviews line width, enamel color areas, plating choices, back attachments, packaging and quantity before mold making, so the finished pin matches the intended design and budget.</p>
+                <p>Zinc alloy is useful for complex shapes, deeper relief and 3D effects. Iron can be economical for simpler flat designs. Brass or copper may be selected for premium projects. Plating, mold complexity, pin size, number of colors, attachment type, packaging and quantity all influence the final quotation.</p>
+              </div>
+              <div class="category-seo-checks">
+                <h3>Production and QC</h3>
+                <ol>
+                  <li><strong>Artwork review</strong><span>Line width, small text, color separation and Pantone references.</span></li>
+                  <li><strong>Pre-production confirmation</strong><span>Mold, plating, enamel colors, back attachment and sample approval.</span></li>
+                  <li><strong>Final inspection</strong><span>Plating surface, enamel filling, scratches, pin backs, quantity and carton labels.</span></li>
+                </ol>
+              </div>
+            </div>
+            <div class="category-guide-strip">
+              <strong>Useful buyer guides</strong>
+              <a href="/blog/soft-enamel-vs-hard-enamel-pins">Soft vs Hard Enamel</a>
+              <a href="/blog/how-to-make-your-own-custom-lapel-pins">How to Make Lapel Pins</a>
+              <a href="/blog/custom-enamel-pins-no-moq-guide">No MOQ Pin Orders</a>
+            </div>
           </div>`,
   coins: String.raw`
           <div class="category-seo-panel" aria-label="Custom challenge coins manufacturer information">
@@ -226,6 +278,7 @@ const addBlogArticleMeta = (articleHtml, articleMeta) => {
   const author = articleMeta?.author;
   const authorUrl = articleMeta?.authorUrl;
   const datePublished = articleMeta?.datePublished;
+  const dateModified = articleMeta?.dateModified;
   if (!author && !datePublished) return articleHtml;
 
   const metaItems = [
@@ -233,6 +286,9 @@ const addBlogArticleMeta = (articleHtml, articleMeta) => {
       ? `<span>By ${authorUrl ? `<a href="${authorUrl}">${author}</a>` : author}</span>`
       : "",
     datePublished ? `<time datetime="${datePublished}">${formatArticleDate(datePublished)}</time>` : "",
+    dateModified && dateModified !== datePublished
+      ? `<time datetime="${dateModified}">Updated ${formatArticleDate(dateModified)}</time>`
+      : "",
   ].filter(Boolean).join("");
 
   return articleHtml.replace(

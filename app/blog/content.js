@@ -34,6 +34,15 @@ export const blogHtml = String.raw`
           <button type="button" data-blog-category="Uncategorized">Uncategorized</button>
         </div>
         <div class="blog-card-grid">
+          <a class="blog-feature-card" href="/blog/challenge-coin-size-guide" data-card-image-fit="full" data-blog-category="Custom Coins" aria-label="Read Challenge Coin Size and Thickness Guide: How to Choose the Right Dimensions">
+            <img src="/assets/images/blog-challenge-coin-size-guide-hero.webp" width="1600" height="900" alt="five antique gold challenge coins arranged from 1.5 to 2.5 inches for size comparison">
+            <div class="blog-feature-body">
+              <div class="blog-feature-meta"><span>Custom Coins</span><span>Size Guide</span></div>
+              <h2>Challenge Coin Size and Thickness Guide: How to Choose the Right Dimensions</h2>
+              <p>Compare 1.5, 1.75, 2 and 2.5 inch coins, thickness options, artwork limits and factory inspection checks.</p>
+              <span class="blog-feature-link">Read More</span>
+            </div>
+          </a>
           <a class="blog-feature-card" href="/blog/2d-vs-3d-challenge-coins" data-blog-category="Custom Coins" aria-label="Read 2D vs 3D Challenge Coins">
             <img src="/assets/images/2d-vs-3d-challenge-coins.webp" width="1200" height="630" alt="side-by-side comparison of a colorful 2D challenge coin and a sculpted 3D challenge coin">
             <div class="blog-feature-body">
@@ -83,8 +92,8 @@ export const blogHtml = String.raw`
             <img src="/assets/images/blog-soft-hard-enamel-pins-v2.webp" width="1200" height="720" alt="two custom enamel pins with detailed sports and character artwork">
             <div class="blog-feature-body">
               <div class="blog-feature-meta"><span>Custom Lapel Pins</span><span>Buyer Guide</span></div>
-              <h2>Soft Enamel vs Hard Enamel Pins: Which Is Better for Your Order?</h2>
-              <p>Compare finish, texture, cost, durability and best use cases before placing a custom enamel pin order.</p>
+              <h2>Soft Enamel vs Hard Enamel Pins: Cost, Durability and Best Uses</h2>
+              <p>Compare texture, price factors, wear resistance, artwork limits and the best finish for retail, events and branded merchandise.</p>
               <span class="blog-feature-link">Read More</span>
             </div>
           </a>
@@ -101,14 +110,226 @@ export const blogHtml = String.raw`
             <img src="assets/images/blog-medal-xball-front-back.png" alt="custom medal front and back with ribbon">
             <div class="blog-feature-body">
               <div class="blog-feature-meta"><span>Custom Medals</span><span>Custom Coins</span></div>
-              <h2>Custom Medals vs Challenge Coins: How to Choose the Right Product</h2>
-              <p>A practical guide for event organizers, schools, corporate teams and recognition product buyers.</p>
+              <h2>Custom Medals vs Challenge Coins: Buyer Guide for Events and Soccer Tournaments</h2>
+              <p>Choose the right format for tournaments, player awards, team recognition, sponsors and collectible gifts.</p>
               <span class="blog-feature-link">Read More</span>
             </div>
           </a>
         </div>
       </div>
     </section>
+    <article id="challenge-coin-size-guide" class="section blog-article-section">
+      <div class="blog-article-shell">
+        <aside class="blog-article-toc" aria-label="Article contents">
+          <strong>In This Guide</strong>
+          <nav>
+            <a href="#quick-answer">Quick answer</a>
+            <a href="#size-comparison-chart">Size comparison chart</a>
+            <a href="#common-sizes">Common sizes and uses</a>
+            <a href="#standard-size">Is there a standard size?</a>
+            <a href="#coin-thickness">How thickness changes the coin</a>
+            <a href="#size-and-artwork">Match size to artwork</a>
+            <a href="#choose-by-application">Choose by application</a>
+            <a href="#custom-shapes">Custom shapes and 3D height</a>
+            <a href="#factory-checks">Factory and shipment checks</a>
+            <a href="#request-recommendation">What to send</a>
+            <a href="#frequently-asked-questions">FAQ</a>
+          </nav>
+        </aside>
+
+        <div class="container blog-article blog-article-with-toc">
+        <header class="blog-article-header">
+          <a class="blog-back-link" href="/blog">Back to Blog</a>
+          <h1>Challenge Coin Size and Thickness Guide: How to Choose the Right Dimensions</h1>
+          <p>Choosing the right challenge coin dimensions is not simply a matter of selecting the largest diameter available. Diameter controls the space for text, logos, borders, enamel colors and relief. Challenge coin thickness changes the edge profile, weight and physical presence of the finished coin.</p>
+          <p>For many projects, 1.75 inches and 2 inches are useful reference sizes, not universal standards. A clean emblem may work at 1.75 inches, while detailed <a href="/products/custom-challenge-coins/double-sided-anniversary-challenge-coin">double-sided artwork</a> or 3D sculpting may need 2 inches or more. Before tooling, print the proof at actual size and verify both the edge thickness and maximum 3D height.</p>
+          <figure class="blog-article-image blog-article-hero-image blog-challenge-coin-size-hero">
+            <img src="/assets/images/blog-challenge-coin-size-guide-hero.webp" width="1600" height="900" fetchpriority="high" decoding="async" alt="five antique gold challenge coins arranged from 1.5 to 2.5 inches on a measurement chart">
+            <figcaption>Common challenge coin diameters shown side by side for scale. Final artwork capacity also depends on borders, relief and shape.</figcaption>
+          </figure>
+        </header>
+
+          <div class="blog-article-main">
+            <details class="blog-mobile-toc">
+              <summary>Table of Contents</summary>
+              <nav>
+                <a href="#quick-answer">Quick answer</a>
+                <a href="#size-comparison-chart">Size comparison chart</a>
+                <a href="#common-sizes">Common sizes and uses</a>
+                <a href="#standard-size">Is there a standard size?</a>
+                <a href="#coin-thickness">How thickness changes the coin</a>
+                <a href="#size-and-artwork">Match size to artwork</a>
+                <a href="#choose-by-application">Choose by application</a>
+                <a href="#custom-shapes">Custom shapes and 3D height</a>
+                <a href="#factory-checks">Factory and shipment checks</a>
+                <a href="#request-recommendation">What to send</a>
+                <a href="#frequently-asked-questions">FAQ</a>
+              </nav>
+            </details>
+
+            <h2 id="quick-answer">Quick Answer: What Size Should a Challenge Coin Be?</h2>
+            <div class="blog-quick-answer">
+              <p>Most challenge coins measure between <strong>1.5 and 2.5 inches</strong>. A 1.75-inch coin suits pocket-carry designs with a clear emblem and limited text. A 2-inch coin gives detailed badges, two text rings and double-sided layouts more room. Consider 2.25 inches or above for complex scenes or display-focused projects.</p>
+              <p>For thickness, our current round-coin production reference ranges from 2.0 to 3.0 mm for coins measuring 25 to 45 mm in diameter, increasing to 4 mm or more for diameters of 91 mm and above. A 3 mm specification is common for conventional 2D pieces in regular carry sizes. Final dimensions should follow the approved artwork and production specification.</p>
+            </div>
+
+            <h2 id="size-comparison-chart">Challenge Coin Size Comparison Chart</h2>
+            <div class="blog-table-wrap">
+              <table class="blog-table">
+                <thead><tr><th>Diameter</th><th>Metric Size</th><th>Typical Use</th><th>Artwork Capacity</th><th>Carry or Display Character</th></tr></thead>
+                <tbody>
+                  <tr><td>1.5 in</td><td>38.1 mm</td><td>Simple tokens, compact giveaways, short wording</td><td>Limited</td><td>Light and easy to distribute</td></tr>
+                  <tr><td>1.75 in</td><td>44.45 mm</td><td>Unit coins, club coins, concise commemorative designs</td><td>Moderate</td><td>Comfortable for regular pocket carry</td></tr>
+                  <tr><td>2 in</td><td>50.8 mm</td><td>Detailed emblems, double-sided designs, recognition gifts</td><td>Moderate to high</td><td>Substantial without feeling oversized</td></tr>
+                  <tr><td>2.25 in</td><td>57.15 mm</td><td>Retirement coins, vehicles, buildings, detailed badges</td><td>High</td><td>Strong visual presence for presentation</td></tr>
+                  <tr><td>2.5 in</td><td>63.5 mm</td><td>Complex scenes, deep relief, display-focused projects</td><td>Very high</td><td>Better suited to presentation or display</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>These ranges are references, not fixed manufacturing rules. Usable space also changes with border width, internal cutouts, edge text and whether the artwork uses flat 2D levels or sculpted 3D relief.</p>
+
+            <h2 id="common-sizes">Common Challenge Coin Sizes and Their Best Uses</h2>
+            <h3>1.5 inches: compact and simple</h3>
+            <p>A 1.5-inch coin works for short wording, a single clear emblem and cost-effective large-volume distribution. It leaves little room for small text or crowded double-sided layouts, so artwork usually needs strong shapes and fewer details.</p>
+            <h3>1.75 inches: a balanced pocket-carry size</h3>
+            <p>This size balances portability with enough space for an emblem, outer text ring and simple reverse design. It works well for membership, club and unit-style coins when recipients are expected to carry them regularly.</p>
+            <h3>2 inches: more room without excessive bulk</h3>
+            <p>A 2-inch coin provides noticeably more usable area for detailed seals, multiple text lines, dates and <a href="/products/custom-challenge-coins/double-sided-anniversary-challenge-coin">artwork on both sides</a>. It also gives sculpted relief transitions more room, which is why many corporate recognition and commemorative projects begin here.</p>
+            <h3>2.25 to 2.5 inches: presentation and complex artwork</h3>
+            <p>Larger coins suit portraits, buildings, vehicles, layered scenes and deeper relief. The trade-off is greater weight and larger packaging requirements. These sizes are generally better for presentation boxes or display than routine pocket carry.</p>
+
+            <h2 id="standard-size">Is There a Standard Challenge Coin Size?</h2>
+            <p>There is no single mandatory standard. Buyers and manufacturers often describe 1.75 inches as traditional and 2 inches as versatile, but both can be correct for different projects. The useful question is: what is the smallest size that keeps the important elements clear and manufacturable?</p>
+            <p>For physical context, compare the dimensions with the <a href="https://www.usmint.gov/learn/coins-and-medals/circulating-coins/coin-specifications" target="_blank" rel="noopener noreferrer">U.S. Mint coin specifications</a>. Circulating coins are generally smaller and thinner than custom challenge coins. The comparison explains why a 1.75-inch or 2-inch product feels substantial, but it is not a custom manufacturing standard.</p>
+
+            <h2 id="coin-thickness">How Thickness Changes the Coin</h2>
+            <p>Thickness changes the visible edge, available relief depth, packaging fit and shipment weight. It also affects how the coin sits in a capsule or fitted presentation box.</p>
+            <figure class="blog-article-image">
+              <img src="/assets/images/blog-challenge-coin-thickness-caliper.webp" width="1600" height="900" loading="lazy" decoding="async" alt="quality inspector using a digital caliper to measure the edge of a gold challenge coin">
+              <figcaption>Edge thickness and maximum 3D height should be identified separately on sculpted coins.</figcaption>
+            </figure>
+            <h3>Factory reference: diameter and suggested thickness</h3>
+            <p>The following ranges come from our current internal specification guidance for round commemorative and challenge coins. They provide useful quotation references before the team evaluates the artwork, relief and edge structure.</p>
+            <div class="blog-table-wrap">
+              <table class="blog-table">
+                <thead><tr><th>Coin Diameter</th><th>Approximate Inch Range</th><th>Suggested Thickness</th></tr></thead>
+                <tbody>
+                  <tr><td>25 to 45 mm</td><td>0.98 to 1.77 in</td><td>2.0 to 3.0 mm</td></tr>
+                  <tr><td>46 to 70 mm</td><td>1.81 to 2.76 in</td><td>3.0 to 3.5 mm</td></tr>
+                  <tr><td>71 to 90 mm</td><td>2.80 to 3.54 in</td><td>About 3.5 mm</td></tr>
+                  <tr><td>91 mm and above</td><td>3.58 in and above</td><td>4 mm and above</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>This table is not a substitute for a final specification check. Custom outlines, deep 3D subjects, bottle-opener features, moving parts or fitted packaging can require a different thickness even when the overall diameter stays within the same range.</p>
+            <h3>3 mm: a common specification</h3>
+            <p>A 3 mm specification is commonly used for conventional 2D coins. With production-ready artwork, it can support raised and recessed areas, enamel color and common plated finishes.</p>
+            <h3>3.5 to 4 mm: more edge presence</h3>
+            <p>Additional thickness can strengthen the edge profile and create more room for relief. It may suit retirement pieces, portraits, buildings or presentation coins. It does not repair weak artwork; line width, relief transitions and polishing access still need evaluation.</p>
+            <h3>Edge thickness is not always maximum thickness</h3>
+            <p>On a sculpted coin, a 4 mm edge may sit below the central 3D subject. The proof should state whether thickness refers to the base, the edge or the maximum relief height. Otherwise, two suppliers may interpret the same number differently.</p>
+
+            <h2 id="size-and-artwork">Match Coin Size to the Artwork</h2>
+            <p>The fastest check is to print the front and back proof at 100 percent scale. Do not approve only a large image on a monitor. At actual size, verify that names, dates, unit numbers and mottos remain readable and that important symbols are not competing with the border.</p>
+            <figure class="blog-article-image">
+              <img src="/assets/images/blog-challenge-coin-actual-size-proof.webp" width="1600" height="900" loading="lazy" decoding="async" alt="challenge coin front back and thickness drawings reviewed at actual size with a metal ruler">
+              <figcaption>Review both sides at actual production size before approving tooling.</figcaption>
+            </figure>
+            <p>The <a href="/blog/2d-vs-3d-challenge-coins">2D vs 3D challenge coin guide</a> explains stepped levels and sculpted contours. Lettering and logos are often clearer in 2D, while portraits, animals, buildings and terrain may benefit from 3D treatment.</p>
+            <ul class="blog-list">
+              <li>Can the smallest wording be read without zooming?</li>
+              <li>Is the main emblem still dominant?</li>
+              <li>Are the front and back visually balanced?</li>
+              <li>Do enamel areas have clear metal boundaries?</li>
+              <li>Is there enough room for the selected edge treatment?</li>
+              <li>Will the packaging hold the finished diameter and maximum thickness?</li>
+            </ul>
+
+            <section class="blog-article-cta blog-article-cta-inline">
+              <div class="blog-cta-copy">
+                <h2>Not Sure Whether Your Artwork Needs 1.75 or 2 Inches?</h2>
+                <p>Send the front and back design, intended use, quantity and packaging preference. We can assess the layout before tooling and recommend a suitable diameter and thickness.</p>
+              </div>
+              <div class="blog-cta-actions"><a class="btn btn-yellow" href="/contact">Send Requirements</a><a class="btn btn-primary" href="/products/custom-challenge-coins">View Coin Options</a></div>
+            </section>
+
+            <h2 id="choose-by-application">Choose Size and Thickness by Application</h2>
+            <div class="blog-table-wrap">
+              <table class="blog-table">
+                <thead><tr><th>Application</th><th>Reference Size</th><th>Key Checks</th></tr></thead>
+                <tbody>
+                  <tr><td>Pocket-carry unit or membership coin</td><td>1.75 to 2 in</td><td>Readable emblem, smooth outline and manageable weight</td></tr>
+                  <tr><td>Corporate recognition or event coin</td><td>1.75 to 2 in</td><td>Brand mark, date, message and packaging fit</td></tr>
+                  <tr><td>Retirement, anniversary or presentation coin</td><td>2 to 2.5 in</td><td>Portrait or scene detail, relief height and box insert</td></tr>
+                  <tr><td>Functional or custom-shaped coin</td><td>Based on structure</td><td>Openings, pivots, projections, grip area and narrow metal bridges</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h2 id="custom-shapes">How Custom Shapes and 3D Relief Are Measured</h2>
+            <p>For a round coin, size normally means diameter. For a shield, badge, vehicle, map or other irregular outline, the quoted size should identify the longest overall dimension. Ask the supplier to show both width and height on the proof. This prevents a narrow 2-inch design and a wide 2-inch design from being treated as though they use the same footprint.</p>
+            <p>For 3D coins, the proof should distinguish the edge thickness from the maximum height. If the coin must fit a capsule, tray, fitted box or display stand, provide the internal packaging dimensions before production. Test dimension-sensitive packaging with a finished sample or an accurate reference rather than selecting it only from the face diameter.</p>
+
+            <h2 id="factory-checks">Factory Testing and Shipment Inspection</h2>
+            <figure class="blog-article-image">
+              <img src="/assets/images/blog-challenge-coin-qc-packing.webp" width="1600" height="900" loading="lazy" decoding="async" alt="real Unique Pin factory production batch arranged on trays during machine printing">
+              <figcaption>A real factory production batch arranged in repeated rows during the machine-printing stage.</figcaption>
+            </figure>
+            <h3>Real production example: batch print consistency</h3>
+            <p>This factory photo records a batch of round metal pieces arranged in repeated rows on flat trays during machine printing. Keeping each piece in a consistent position makes it easier to compare print placement and color coverage across the batch before the pieces move to the next production stage.</p>
+            <p>The same discipline applies to size selection. A larger face gives printed artwork more room, but it does not remove the need for accurate registration. The approved proof, finished diameter and printable area must agree. During the run, the team checks whether the main subject remains centered, edge details stay clear and neighboring pieces show visible variation.</p>
+            <p>During sample approval or in-process inspection, use a caliper to check diameter, width, height, edge thickness and any specified maximum 3D height. Compare the readings with the approved specification rather than relying on visual judgment.</p>
+            <ol class="blog-list">
+              <li><strong>Dimensions:</strong> Verify the stated diameter or maximum width and height.</li>
+              <li><strong>Thickness:</strong> Measure the edge and the highest point of the 3D relief identified on the proof.</li>
+              <li><strong>Artwork clarity:</strong> Check small text, dates, relief separation and enamel boundaries.</li>
+              <li><strong>Edge quality:</strong> Inspect for sharp areas, uneven polishing, incomplete plating or distorted edge text.</li>
+              <li><strong>Surface condition:</strong> Check scratches, pits, color overflow, plating variation and unwanted marks.</li>
+              <li><strong>Packaging fit:</strong> Make sure capsules, pouches, trays and boxes close without pressure on the coin.</li>
+              <li><strong>Shipment preparation:</strong> Verify quantities, protective packing, carton labels and the approved packaging configuration.</li>
+            </ol>
+            <h3>Before tooling, lock the complete specification</h3>
+            <p>The approved proof or purchase specification should show the diameter or maximum width and height, edge thickness, maximum relief height when relevant, front and back artwork, plating, enamel, edge treatment, packaging and quantity. Agree on any important measurement tolerance before mass production, particularly for fitted packaging and mechanical features.</p>
+            <p>To see how proofing, tooling, finishing, inspection and packing connect, read <a href="/blog/how-custom-challenge-coins-are-made">How Are Custom Challenge Coins Made?</a></p>
+
+            <h2 id="request-recommendation">What to Send for a Size Recommendation</h2>
+            <p>A useful recommendation needs more than a preferred diameter. Send the following details so the artwork and production method can be evaluated together:</p>
+            <ul class="blog-list">
+              <li>Front and back artwork or clear reference images</li>
+              <li>Required wording, dates, names and serial-number area</li>
+              <li>Intended application and recipient group</li>
+              <li>Approximate quantity and delivery country</li>
+              <li>Preferred 2D, 3D or mixed construction</li>
+              <li>Desired packaging and required arrival date</li>
+            </ul>
+            <p>If size is undecided, ask for two proofs at actual scale. Comparing a 1.75-inch and 2-inch layout using the same content is more informative than comparing unrelated sample photos.</p>
+
+            <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
+            <div class="blog-faq">
+              <details open><summary>What is the standard challenge coin size?</summary><p>There is no mandatory standard. Common custom sizes range from about 1.5 to 2.5 inches. Start around 1.75 inches for concise pocket-carry designs and 2 inches for more detailed artwork.</p></details>
+              <details><summary>Is a 1.75-inch or 2-inch challenge coin better?</summary><p>Choose 1.75 inches for a clear emblem and limited wording. Choose 2 inches for a detailed seal, several text lines or complex double-sided artwork. Compare both layouts at actual size.</p></details>
+              <details><summary>How thick should a challenge coin be?</summary><p>For standard round coins, our current production reference is 2.0 to 3.0 mm for diameters of 25 to 45 mm, 3.0 to 3.5 mm for 46 to 70 mm, about 3.5 mm for 71 to 90 mm, and 4 mm or more for diameters of 91 mm and above. Artwork, relief and shape can change the final recommendation.</p></details>
+              <details><summary>Does a thicker coin always mean better quality?</summary><p>No. Quality also depends on artwork, tooling, plating, enamel, polishing, inspection and packaging. Extra thickness can add weight without improving readability or finish.</p></details>
+              <details><summary>What size is best for a 3D challenge coin?</summary><p>Many 3D projects benefit from 2 inches or more because sculpted contours need room to transition. Portraits, buildings, vehicles and detailed scenes may require more diameter and relief height than a simple raised emblem.</p></details>
+              <details><summary>How is an irregular challenge coin measured?</summary><p>Specify custom-shaped coins by maximum width and height, with the quoted size tied to the longest dimension. Mark cutouts, narrow sections and projections on the proof.</p></details>
+            </div>
+
+            <h2>Conclusion</h2>
+            <p>The right challenge coin size is the smallest manufacturable dimension that keeps the artwork clear. A 1.75-inch coin suits concise pocket-carry designs; 2 inches provides more room for detailed or <a href="/products/custom-challenge-coins/double-sided-anniversary-challenge-coin">two-sided coin artwork</a>. Choose larger presentation sizes only when the content or application needs them.</p>
+            <p>Treat thickness as a separate production decision. Specify the edge, maximum 3D height, packaging fit and inspection method before mass production.</p>
+
+            <section class="blog-article-cta">
+              <div class="blog-cta-copy">
+                <h2>Get a Production-Ready Coin Size Recommendation</h2>
+                <p>Share your artwork, quantity, application, packaging preference and deadline. We can assess the layout and prepare a clear specification for your custom challenge coin project.</p>
+              </div>
+              <div class="blog-cta-actions"><a class="btn btn-yellow" href="/contact">Get a Quote</a><a class="btn btn-primary" href="/products/custom-challenge-coins">Custom Challenge Coins</a></div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </article>
+
     <article id="2d-vs-3d-challenge-coins" class="section blog-article-section">
       <div class="container blog-article">
         <header class="blog-article-header">
@@ -1016,64 +1237,131 @@ export const blogHtml = String.raw`
       <div class="container blog-article">
         <header class="blog-article-header">
           <a class="blog-back-link" href="/blog">Back to Blog</a>
-          <h1>Soft Enamel vs Hard Enamel Pins: Which Is Better for Your Custom Pin Order?</h1>
-          <p>Soft enamel and hard enamel pins are two of the most common choices for custom pin orders. For overseas buyers, the better option depends on budget, surface feel, brand positioning, delivery schedule and how the product will be used. A trade show giveaway, a school club pin and a premium retail collectible do not require the same production approach.</p>
+          <h1>Soft Enamel vs Hard Enamel Pins: Cost, Durability and Best Uses</h1>
+          <p><strong>The short answer:</strong> choose soft enamel when you want noticeable metal texture, bold color separation and a cost-effective finish for promotions or merchandise. Choose hard enamel when you want a smooth, polished surface for premium retail, corporate identity or pins that will be worn frequently.</p>
+          <p>The better process still depends on the artwork, quantity, target price and product use. This buyer guide compares how soft and hard enamel pins look, feel, wear and affect production so you can request the right specification before tooling begins.</p>
           <figure class="blog-article-image blog-article-hero-image">
             <img src="/assets/images/blog-soft-hard-enamel-pins-v2.webp" width="1200" height="720" alt="two custom enamel pins with detailed sports and character artwork">
-            <figcaption>Custom enamel pins can combine detailed artwork, raised metal borders and contrasting color finishes.</figcaption>
+            <figcaption>Enamel type changes the surface level, texture and overall presentation of a custom pin.</figcaption>
           </figure>
         </header>
 
-        <h2>What Are Soft Enamel Pins?</h2>
-        <p>Soft enamel pins are made with raised metal lines and recessed color areas. After the metal base is stamped or cast, enamel color is filled into the recessed sections. The result is a textured surface where the metal outlines can be felt by hand.</p>
-        <p>This structure makes soft enamel practical for bold logos, mascots, event icons and colorful promotional artwork. The raised metal borders help separate color blocks clearly, which is useful when the design needs to remain readable at a small size.</p>
-
-        <h2>When Soft Enamel Pins Work Best</h2>
-        <p>Soft enamel pins are often selected for brand campaigns, club merchandise, school events, fan products, tourism souvenirs and distributor orders. They balance appearance and cost well, especially when the buyer needs a visually strong item for volume distribution.</p>
-        <ul class="blog-list">
-          <li>Good for bold artwork with clear metal lines.</li>
-          <li>Suitable for large promotional quantities.</li>
-          <li>Can be upgraded with epoxy for added surface protection.</li>
-          <li>Usually more cost-effective than hard enamel.</li>
-        </ul>
-
-        <h2>What Are Hard Enamel Pins?</h2>
-        <p>Hard enamel pins are filled with enamel and polished until the color sits level with the metal surface. This creates a smooth, refined finish that feels closer to jewelry or premium accessories. The polishing process usually adds time and cost, but it can also improve the perceived value of the finished pin.</p>
-
-        <h2>When Hard Enamel Pins Work Best</h2>
-        <p>Hard enamel is often preferred for retail collections, corporate identity pins, membership programs, school recognition and long-term brand merchandise. If recipients will wear the pin frequently, the smoother surface and polished finish can be a strong advantage.</p>
-
-        <h2>Soft Enamel vs Hard Enamel Pins: Key Differences</h2>
+        <h2>Soft Enamel vs Hard Enamel Pins at a Glance</h2>
         <div class="blog-table-wrap">
           <table class="blog-table">
-            <thead><tr><th>Factor</th><th>Soft Enamel</th><th>Hard Enamel</th></tr></thead>
+            <thead><tr><th>Buying Factor</th><th>Soft Enamel Pins</th><th>Hard Enamel Pins</th></tr></thead>
             <tbody>
-              <tr><td>Surface</td><td>Textured with recessed colors</td><td>Smooth and polished</td></tr>
-              <tr><td>Best Use</td><td>Promotions, events, clubs</td><td>Retail, corporate gifts, premium branding</td></tr>
-              <tr><td>Cost</td><td>Usually more economical</td><td>Usually higher due to polishing</td></tr>
-              <tr><td>Appearance</td><td>Bold metal outlines</td><td>Clean and refined finish</td></tr>
-              <tr><td>Durability</td><td>Good for most promotional uses</td><td>Stronger surface resistance</td></tr>
+              <tr><td>Surface feel</td><td>Textured; color sits below raised metal lines</td><td>Smooth; enamel and metal are polished nearly level</td></tr>
+              <tr><td>Visual style</td><td>Bold outlines, deeper shadows and stronger relief</td><td>Clean, flat and jewelry-like presentation</td></tr>
+              <tr><td>Relative cost</td><td>Usually more economical</td><td>Usually higher because of extra filling and polishing</td></tr>
+              <tr><td>Wear resistance</td><td>Good for normal promotional and merchandise use</td><td>Better resistance to everyday surface wear</td></tr>
+              <tr><td>Best applications</td><td>Events, clubs, giveaways, fan merchandise and bold artwork</td><td>Retail, corporate identity, recognition and premium collections</td></tr>
+              <tr><td>Optional coating</td><td>Epoxy can protect recessed colors and create a domed surface</td><td>Normally does not need epoxy</td></tr>
+              <tr><td>Design character</td><td>Texture is part of the design</td><td>Smoothness and precise polishing are part of the design</td></tr>
             </tbody>
           </table>
         </div>
 
+        <h2>What Are Soft Enamel Pins?</h2>
+        <p>Soft enamel pins use raised metal borders to separate recessed color areas. After the metal base is stamped or cast and plated, enamel is filled below the top of those borders. You can see and feel the difference in height between the color and the metal.</p>
+        <p>This construction creates small highlights and shadows that make outlines look more pronounced. It is especially effective for mascots, sports graphics, event icons, lettering and designs where the metal itself should remain visible. Soft enamel does not mean the finished pin is flexible; the name describes the recessed enamel surface.</p>
+
+        <h2>When Soft Enamel Pins Work Best</h2>
+        <p>Soft enamel is a practical choice when texture supports the design or when unit cost matters across a larger quantity. Buyers commonly select it for trade shows, school clubs, sports teams, tourism souvenirs, fan products, fundraising campaigns and distributor programs.</p>
+        <ul class="blog-list">
+          <li><strong>Promotional orders:</strong> the process balances color impact with an economical finish.</li>
+          <li><strong>Artwork with strong outlines:</strong> raised borders keep separate color areas clear.</li>
+          <li><strong>Vintage or dimensional styling:</strong> recessed enamel gives the surface visible depth.</li>
+          <li><strong>Design testing:</strong> buyers can evaluate size, plating and color before committing to a premium treatment.</li>
+        </ul>
+
+        <h2>What Are Hard Enamel Pins?</h2>
+        <p>Hard enamel pins are filled in stages and polished so the enamel and metal borders sit at nearly the same level. The surface feels smooth when a finger moves across it. This process is also known as imitation hard enamel.</p>
+        <p>The additional filling and polishing create a refined, jewelry-like appearance. The process usually costs more and may require more production time than soft enamel, but it can raise perceived value for retail and presentation-focused orders.</p>
+
+        <h2>When Hard Enamel Pins Work Best</h2>
+        <p>Hard enamel is often preferred for premium retail collections, employee service pins, membership programs, corporate identity, school recognition and long-term branded merchandise. It is also useful when pins will be handled or worn frequently and the buyer wants a smooth surface that is easy to wipe clean.</p>
+        <p>Its polished finish works best with artwork that can be divided into clear metal and color areas. Very fine gradients, photographic effects and details that cannot be separated by metal may require screen printing or offset printing on top of the pin rather than enamel alone.</p>
+
+        <h2>Which Type Costs More?</h2>
+        <p>Hard enamel pins generally cost more because the colors are filled and polished through additional production steps. Soft enamel is usually the more economical starting point, particularly for bulk promotional orders. Enamel type is only one part of the quotation, however.</p>
+        <p>Size, thickness, order quantity, number of colors, plating, cutouts, printing, attachments and packaging can all change the total. A large soft enamel pin with many colors and custom packaging may cost more than a smaller, simpler hard enamel pin. For an accurate comparison, ask the factory to quote the same artwork, size, quantity and packaging in both finishes.</p>
+
+        <h2>Which Type Is More Durable?</h2>
+        <p>Both pin types can perform well when the metal base, plating, enamel filling and attachments are properly produced. Hard enamel generally resists everyday surface wear better because the polished enamel sits level with the metal. This makes it a strong option for pins that will be worn often or sold as long-term collectibles.</p>
+        <p>Soft enamel has exposed recesses where dust and surface marks can be more noticeable, but it is durable enough for most events, clubs and promotional programs. Buyers who want additional protection can request clear epoxy. Epoxy creates a smooth, slightly domed coating over the entire face, which protects the color but also reduces the original recessed texture and may change how light reflects from the pin.</p>
+
+        <h2>How Artwork Changes the Decision</h2>
+        <p>The best finish starts with the design, not with a generic quality ranking. Enamel colors normally need metal borders between them, and those borders must be thick enough to survive tooling, filling and polishing. Small text, narrow gaps and highly detailed logos may need to be enlarged or simplified.</p>
+        <ul class="blog-list">
+          <li>Choose <strong>soft enamel</strong> when raised outlines, recessed colors and stronger visual depth support the artwork.</li>
+          <li>Choose <strong>hard enamel</strong> when a level surface and clean polished presentation are the priority.</li>
+          <li>Consider <strong>printed details</strong> when the design contains gradients, photographs, tiny lettering or color transitions without metal borders.</li>
+          <li>Review the proof at the pin's actual physical size; artwork that looks clear on a large monitor may not remain readable at 25 or 30 mm.</li>
+        </ul>
+
+        <h2>Best Finish by Buyer Use Case</h2>
+        <div class="blog-table-wrap">
+          <table class="blog-table">
+            <thead><tr><th>Project</th><th>Recommended Starting Point</th><th>Reason</th></tr></thead>
+            <tbody>
+              <tr><td>Trade show giveaway</td><td>Soft enamel</td><td>Strong color impact and economical volume production</td></tr>
+              <tr><td>Retail collectible</td><td>Hard enamel or premium soft enamel</td><td>Choose smooth polish for a refined look or texture for artistic character</td></tr>
+              <tr><td>Corporate lapel pin</td><td>Hard enamel</td><td>Clean surface suits formal, repeat-wear use</td></tr>
+              <tr><td>Sports club or fan pin</td><td>Soft enamel</td><td>Raised outlines work well for mascots and team graphics</td></tr>
+              <tr><td>Employee recognition</td><td>Hard enamel</td><td>Polished finish supports long-term perceived value</td></tr>
+              <tr><td>Small trial order</td><td>Either</td><td>Use the sample to validate artwork, color, size and market response</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>Plating, Attachments and Packaging Still Matter</h2>
+        <p>Gold, silver, black nickel, rose gold and antique finishes can make the same enamel artwork feel very different. High-polish plating emphasizes clean hard enamel surfaces, while antique plating can strengthen the recessed, dimensional character of soft enamel. The factory should show the selected plating in the artwork proof because metal color affects contrast.</p>
+        <p>Back attachments should match how the pin will be used. Butterfly clutches are common for general orders, rubber clutches are comfortable for casual merchandise, locking clutches help secure frequently worn pins, and magnets can avoid piercing fabric. Retail orders may also need branded backing cards, individual bags, barcodes or gift boxes. These choices should be confirmed before final pricing, not added after production begins.</p>
+
         <h2>Artwork Preparation Before Production</h2>
-        <p>Artwork quality affects the final result. Buyers should prepare logo files, size, quantity, plating preference, Pantone colors, back attachment and packaging requirements before requesting a quote. Thin lines, small text and complex gradients may need adjustment before mold creation.</p>
-        <p>A reliable manufacturer should review the artwork before production, explain any technical limits and recommend a practical process. This helps prevent problems such as color bleeding, unclear letters or weak metal lines. For production styles, materials and quote details, start from the <a href="/products/custom-enamel-pins">custom enamel pins category page</a>.</p>
+        <p>Send the manufacturer the original logo file or vector artwork if available, along with the intended pin size, quantity, plating, color references, attachment and packaging. If those details are not final, explain the application and target price so the supplier can recommend practical options.</p>
+        <ol class="blog-list">
+          <li>Confirm whether the quotation is for soft enamel, hard enamel or both.</li>
+          <li>Check every Pantone color and the selected metal plating on the proof.</li>
+          <li>Verify minimum line widths, small lettering and cutout areas before approving tooling.</li>
+          <li>Confirm pin dimensions at actual size, including overall shape and metal borders.</li>
+          <li>Specify the clutch, number of posts, back stamp and packaging.</li>
+          <li>Approve the digital proof and any required physical sample before mass production.</li>
+        </ol>
+        <p>For more preparation detail, use our <a href="/blog/how-to-make-your-own-custom-lapel-pins">custom lapel pin production guide</a>. Buyers testing a design or ordering a limited run can also review the <a href="/blog/custom-enamel-pins-no-moq-guide">no minimum order enamel pin guide</a>.</p>
 
         <h2>Factory Quality Checks and Pre-Shipment Inspection</h2>
-        <p>During production, factory quality checks should cover enamel filling, plating quality, surface cleanliness and back attachment strength. A pre-shipment inspection should review color consistency, scratches, metal edges, packaging condition, quantity and carton labels.</p>
+        <p>For soft enamel, inspection should check fill coverage, recessed color consistency, clean metal borders and unwanted overflow. For hard enamel, inspectors should also check surface level, polishing consistency and whether metal details remain sharp after finishing.</p>
+        <p>Both types should be reviewed for plating color, scratches, pits, sharp edges, post alignment, clutch fit, logo orientation, packaging accuracy and order quantity. Ask how the supplier separates defective pieces and whether spare units or replacements are available for time-sensitive event or retail orders.</p>
+
+        <h2>Common Ordering Mistakes</h2>
+        <ul class="blog-list">
+          <li>Choosing hard enamel only because it is assumed to be universally better, even when the artwork relies on recessed texture.</li>
+          <li>Approving a proof at high screen magnification without checking readability at actual pin size.</li>
+          <li>Comparing quotations that use different thicknesses, attachments, plating or packaging.</li>
+          <li>Adding epoxy to soft enamel without understanding that it changes the tactile surface.</li>
+          <li>Leaving the delivery date until after sampling, especially for launches and fixed event dates.</li>
+        </ul>
+
+        <h2>Frequently Asked Questions</h2>
+        <div class="blog-faq">
+          <details open><summary>What is the main difference between soft enamel and hard enamel pins?</summary><p>Soft enamel pins have recessed color areas and raised metal lines, creating a textured surface. Hard enamel pins are filled and polished so the enamel and metal sit nearly level, creating a smooth finish.</p></details>
+          <details><summary>Are hard enamel pins more durable than soft enamel pins?</summary><p>Hard enamel generally offers better resistance to everyday surface wear because of its polished, level finish. Soft enamel remains suitable for most promotional uses, and an epoxy coating can add protection while changing the surface appearance.</p></details>
+          <details><summary>Which enamel pin type is more cost-effective for bulk orders?</summary><p>Soft enamel is usually the more economical choice because it requires fewer finishing and polishing steps. Final price still depends on size, quantity, plating, number of colors, attachments and packaging.</p></details>
+          <details><summary>Should retail enamel pins use soft or hard enamel?</summary><p>Both can work for retail. Hard enamel suits a smooth, premium presentation, while soft enamel provides stronger texture and raised metal detail. The best choice depends on the artwork, target price and brand position.</p></details>
+        </div>
 
         <section class="blog-article-cta">
           <div class="blog-cta-copy">
             <h2>Need Help Choosing the Right Enamel Finish?</h2>
-            <p>Send your design, quantity, target price and product application. We can recommend soft enamel, hard enamel or epoxy options based on your order requirements.</p>
+            <p>Send your artwork, size, quantity, target price and intended use. We can compare soft enamel, hard enamel and epoxy options on the same project specification.</p>
           </div>
           <div class="blog-cta-actions"><a class="btn btn-yellow" href="/contact">Get a Quote</a><a class="btn btn-primary" href="/products/custom-enamel-pins">View Pin Styles</a></div>
         </section>
 
         <h2>Conclusion</h2>
-        <p>Soft enamel is textured, colorful and cost-effective. Hard enamel is smooth, durable and more suitable for higher-end projects. The right choice depends on the buyer's market, budget, artwork and delivery plan. Confirm finish, plating, packaging and inspection standards before mass production.</p>
+        <p>Soft enamel is the stronger starting point for textured artwork, promotional value and bold raised outlines. Hard enamel is better when buyers need a smooth, polished and wear-resistant presentation. Neither is automatically right for every order. Compare both against the same artwork and specification, then confirm plating, attachments, packaging and inspection standards before mass production. Explore available processes on our <a href="/products/custom-enamel-pins">custom enamel pins</a> page.</p>
       </div>
     </article>
 
@@ -1081,8 +1369,9 @@ export const blogHtml = String.raw`
       <div class="container blog-article">
         <header class="blog-article-header">
           <a class="blog-back-link" href="/blog">Back to Blog</a>
-          <h1>Custom Medals vs Challenge Coins: How to Choose the Right Recognition Product</h1>
-          <p>Custom medals and challenge coins are both used for recognition, but they serve different purposes. Medals are usually associated with achievement, competition and ceremonies. Challenge coins are more often associated with identity, service, membership and long-term collection.</p>
+          <h1>Custom Medals vs Challenge Coins: Buyer Guide for Events and Soccer Tournaments</h1>
+          <p><strong>The short answer:</strong> choose custom medals when recipients are being recognized for participation, placement or achievement during a ceremony. Choose challenge coins when the goal is team identity, appreciation, membership or a collectible keepsake that is carried or displayed.</p>
+          <p>For a soccer tournament, medals are normally the best choice for players and winners. Challenge coins are better suited to coaches, referees, volunteers, sponsors, club anniversaries and limited commemorative gifts. Many larger programs can use both, with each serving a distinct purpose.</p>
           <figure class="blog-article-image blog-article-hero-image blog-article-contain-image">
             <img src="assets/images/blog-medal-ski-front-back.png" alt="custom medal front and back with blue ribbon">
           </figure>
@@ -1097,6 +1386,23 @@ export const blogHtml = String.raw`
         <h2>Common Medal Applications</h2>
         <p>Medals are widely used for marathons, school competitions, sports tournaments, charity activities, academic awards and company achievement programs. The artwork usually includes event names, years, rankings, sport icons, sponsor marks or mascots.</p>
 
+        <h2>Soccer Medal vs Challenge Coin: Which Should You Choose?</h2>
+        <p>Buyers comparing soccer medals with challenge coins usually have one of two purchasing needs. A soccer medal documents a result or participation and becomes part of the award ceremony. A challenge coin represents the team, club or event itself and works more like a permanent identity piece.</p>
+        <div class="blog-table-wrap">
+          <table class="blog-table">
+            <thead><tr><th>Soccer Program Need</th><th>Better Starting Choice</th><th>Why</th></tr></thead>
+            <tbody>
+              <tr><td>Participation award for every player</td><td>Custom medal</td><td>Easy to present and wear; ribbon can carry event branding</td></tr>
+              <tr><td>Champion, finalist or placement award</td><td>Custom medal</td><td>Clearly communicates achievement and award level</td></tr>
+              <tr><td>Coach, referee or volunteer appreciation</td><td>Challenge coin</td><td>Feels personal and can be displayed or kept long term</td></tr>
+              <tr><td>Club anniversary or team milestone</td><td>Challenge coin</td><td>Double-sided artwork can tell the club story</td></tr>
+              <tr><td>Sponsor or VIP gift</td><td>Challenge coin</td><td>Presentation packaging creates a formal keepsake</td></tr>
+              <tr><td>Large tournament with several audiences</td><td>Both</td><td>Use medals for competition and coins for recognition or merchandise</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>For youth leagues and school tournaments, medals are usually easier to understand and distribute. For established clubs, invitational events and anniversary programs, a matching coin can recognize the people behind the competition or become a limited-edition product for supporters.</p>
+
         <h2>What Are Challenge Coins?</h2>
         <p>Challenge coins are custom metal coins used by military units, public safety departments, corporate teams, clubs and associations. Unlike medals, they are usually not worn. They are carried, displayed, gifted or collected.</p>
         <p>Challenge coins often include double-sided artwork, antique plating, edge text, enamel colors, numbering and presentation boxes. They work well when the product needs physical weight, tradition and long-term keepsake value. For a deeper process view, see our step-by-step guide on <a href="/blog/how-custom-challenge-coins-are-made">how custom challenge coins are made</a>.</p>
@@ -1110,32 +1416,68 @@ export const blogHtml = String.raw`
           <table class="blog-table">
             <thead><tr><th>Factor</th><th>Custom Medals</th><th>Challenge Coins</th></tr></thead>
             <tbody>
-              <tr><td>Purpose</td><td>Achievement, ranking, participation</td><td>Identity, service, membership</td></tr>
+              <tr><td>Purpose</td><td>Achievement, ranking, participation</td><td>Identity, service, membership and appreciation</td></tr>
               <tr><td>Presentation</td><td>Usually worn with ribbons</td><td>Usually boxed, carried or displayed</td></tr>
               <tr><td>Design Focus</td><td>Event name, year, award level</td><td>Emblem, motto, unit or brand story</td></tr>
-              <tr><td>Best For</td><td>Sports, schools, ceremonies</td><td>Military, corporate teams, associations</td></tr>
+              <tr><td>Best For</td><td>Sports, schools, races and ceremonies</td><td>Teams, clubs, sponsors, service groups and associations</td></tr>
+              <tr><td>Wear Method</td><td>Ribbon around the neck</td><td>Not normally worn; held, carried or displayed</td></tr>
+              <tr><td>Design Sides</td><td>Front is primary; back can add event details</td><td>Both sides often carry important artwork</td></tr>
               <tr><td>Packaging</td><td>Ribbon, poly bag, gift box</td><td>Pouch, capsule, paper or wooden box</td></tr>
             </tbody>
           </table>
         </div>
 
         <h2>When to Choose Custom Medals</h2>
-        <p>Choose medals when the project is tied to achievement or participation. If recipients need to wear the product during a ceremony, medals are usually the right format. Buyers should confirm medal size, thickness, ribbon width, plating finish, 2D or 3D artwork, packaging, quantity and event date before requesting a quote.</p>
+        <p>Choose medals when the project is tied to achievement or participation. If recipients need to wear the product during a ceremony or appear in award photographs, medals are usually the right format. Different ribbon colors, printed ribbon text or back engraving can separate age groups, divisions and placement levels without requiring a completely different medal for every category.</p>
+        <p>Buyers should confirm medal size, thickness, ribbon width, plating finish, 2D or 3D artwork, packaging, quantity and event date before requesting a quote. For tournaments, also confirm how many gold, silver, bronze and participation pieces are needed for each division, plus a reasonable spare quantity.</p>
 
         <h2>When to Choose Challenge Coins</h2>
-        <p>Choose challenge coins when the project is about identity, appreciation or long-term collection. They are especially suitable for military organizations, public safety teams, corporate teams and associations. A coin can carry more meaning in a compact format, especially when it includes double-sided artwork and antique finishing.</p>
+        <p>Choose challenge coins when the project is about identity, appreciation or long-term collection. In addition to military, public safety and corporate programs, coins can work for soccer clubs, alumni groups, tournament committees and supporters. One side can feature the club crest or tournament logo while the other records the season, location, motto or milestone.</p>
+        <p>A coin can tell a fuller story in a compact format, especially with double-sided artwork, edge text, numbering and antique finishing. It can also be presented privately to a coach, official or sponsor, where a wearable medal might feel less appropriate.</p>
+
+        <h2>How to Use Medals and Coins in the Same Event</h2>
+        <p>Using both products works when each has a clear recipient and purpose. The medal remains the competition award; the coin becomes the recognition gift or collectible. A shared crest, event year, plating color and presentation style can connect the two products without making them identical.</p>
+        <ul class="blog-list">
+          <li>Award medals to players, finalists and champions during the ceremony.</li>
+          <li>Present coins to coaches, referees, volunteers, sponsors and founding members.</li>
+          <li>Offer a limited coin to supporters or include it in a tournament merchandise set.</li>
+          <li>Use matching packaging graphics to keep the event identity consistent.</li>
+        </ul>
+
+        <h2>Cost and Production Factors</h2>
+        <p>Neither format is always cheaper. Price depends on diameter, thickness, metal, relief depth, plating, enamel colors, printing, order quantity and packaging. Medals also require ribbons and assembly. Challenge coins are often thicker and may use two detailed sides, edge text or presentation boxes.</p>
+        <p>To compare fairly, provide the same quantity, dimensions, artwork complexity and packaging level to the supplier. If the event budget is fixed, ask which details can be standardized across award levels. A shared mold with different ribbon colors or printed ranking can be more efficient than creating many separate medal molds.</p>
+
+        <h2>Artwork and Ordering Checklist</h2>
+        <ol class="blog-list">
+          <li>Define each recipient group and the purpose of the product.</li>
+          <li>Confirm quantity by division, placement or stakeholder group.</li>
+          <li>Provide the event or club logo, year, wording and sponsor marks.</li>
+          <li>Select size, thickness, plating, enamel and 2D or 3D relief.</li>
+          <li>For medals, approve ribbon width, length, color, print and attachment.</li>
+          <li>For coins, approve both sides, edge treatment and presentation packaging.</li>
+          <li>Set the required arrival date with time for proofing, production and shipping.</li>
+        </ol>
+        <p>Event dates are usually fixed, so build approval time into the schedule. A delayed artwork decision can reduce the time available for physical sampling, replacement production or shipping changes.</p>
 
         <h2>Material, Finish and Inspection</h2>
         <p>Both medals and challenge coins can be made from zinc alloy, iron, brass or other metals. Zinc alloy is suitable for complex 3D relief, while iron can be considered for simpler cost-sensitive projects. Common finishes include gold, silver, bronze, antique gold, antique silver, black nickel, dual plating, enamel, printing and laser engraving.</p>
         <p>A pre-shipment inspection should verify plating consistency, enamel filling, edge quality, ribbon assembly, packaging accuracy, quantity and carton condition. Event orders require careful schedule control because missing pieces or damaged packaging can affect the ceremony.</p>
 
+        <h2>Frequently Asked Questions</h2>
+        <div class="blog-faq">
+          <details open><summary>Are medals or challenge coins better for a soccer tournament?</summary><p>Medals are usually better for player participation, finalist and champion awards because they can be worn during the ceremony. Challenge coins are better for coaches, volunteers, sponsors, club anniversaries and collectible team gifts.</p></details>
+          <details><summary>Can a soccer event use both medals and challenge coins?</summary><p>Yes. A tournament can award medals to players and use matching challenge coins for officials, sponsors, VIPs or commemorative merchandise. Shared artwork and plating can keep both products visually consistent.</p></details>
+          <details><summary>Which product usually needs more packaging?</summary><p>Medals commonly need ribbons and individual bags, while challenge coins may use pouches, capsules or presentation boxes. Packaging should be selected according to the recipient and distribution method.</p></details>
+        </div>
+
         <h2>Conclusion</h2>
-        <p>Medals are ideal for achievement, events and ceremonies. Challenge coins are better suited to identity, service, membership and collectible value. The right product should match the purpose, recipient and delivery schedule. For commercial options, compare our <a href="/products/custom-medals">custom medals</a> and <a href="/products/custom-challenge-coins">custom challenge coins</a> category pages.</p>
+        <p>Medals are ideal for player achievement, participation and visible award ceremonies. Challenge coins are better for team identity, appreciation, sponsors and collectible value. For soccer tournaments, start with medals for competitors and consider coins for the people and stories surrounding the event. Compare our <a href="/products/custom-medals">custom medals</a> and <a href="/products/custom-challenge-coins">custom challenge coins</a> before requesting matched artwork and pricing.</p>
 
         <section class="blog-article-cta">
           <div class="blog-cta-copy">
             <h2>Medals or Coins? Let Us Review Your Project</h2>
-            <p>Tell us your event type, audience, quantity and deadline. We can recommend a suitable recognition product, finish and packaging option.</p>
+            <p>Tell us your event type, recipient groups, quantity and deadline. We can recommend medals, challenge coins or a coordinated set with suitable finishes and packaging.</p>
           </div>
           <div class="blog-cta-actions"><a class="btn btn-yellow" href="/contact">Contact Us</a></div>
         </section>
