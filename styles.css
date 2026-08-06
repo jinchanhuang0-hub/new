@@ -394,7 +394,7 @@ a {
 
 .hero {
   position: relative;
-  height: 727px;
+  height: clamp(520px, 35.5vw, 683px);
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -447,7 +447,7 @@ a {
   height: 100%;
   max-width: none;
   object-fit: cover;
-  object-position: right center;
+  object-position: center;
 }
 
 .hero-content {
@@ -588,7 +588,7 @@ a {
   }
 
   .hero-bg {
-    object-fit: contain;
+    object-fit: cover;
     object-position: center;
   }
 
@@ -8787,7 +8787,7 @@ body.is-video-lightbox-open {
 
   .hero > .container {
     order: 1;
-    width: 100%;
+    width: min(var(--max), calc(100% - 40px));
   }
 
   .hero-content {
@@ -8802,9 +8802,9 @@ body.is-video-lightbox-open {
     order: 2;
     width: 100%;
     height: auto;
-    aspect-ratio: 2.1 / 1;
+    aspect-ratio: 2048 / 683;
     object-fit: cover;
-    object-position: right center;
+    object-position: center;
   }
 
   .hero h1 {
@@ -9170,13 +9170,13 @@ body.is-video-lightbox-open {
 
   .hero > .container {
     order: 1;
-    width: 100%;
+    width: min(var(--max), calc(100% - 28px));
   }
 
   .hero-content {
     width: 100%;
     transform: none;
-    padding: 38px 0 32px;
+    padding: 30px 0 24px;
   }
 
   .hero-bg {
@@ -9185,32 +9185,32 @@ body.is-video-lightbox-open {
     order: 2;
     width: 100%;
     height: auto;
-    aspect-ratio: 2.1 / 1;
+    aspect-ratio: 2048 / 683;
     object-fit: cover;
-    object-position: right center;
+    object-position: center;
   }
 
   .hero h1 {
     max-width: 100%;
-    font-size: 42px;
-    line-height: 1.04;
+    font-size: 38px;
+    line-height: 1.08;
     text-shadow: 0 12px 26px rgba(11, 47, 99, 0.12);
   }
 
   .hero p {
-    margin-top: 24px;
+    margin-top: 18px;
     font-size: 16px;
     line-height: 1.58;
   }
 
   .hero-actions {
-    margin-top: 28px;
+    margin-top: 22px;
   }
 
   .hero .hero-proof {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 18px;
-    margin-top: 30px;
+    gap: 14px;
+    margin-top: 22px;
   }
 
   .hero .proof-item {
@@ -9222,7 +9222,7 @@ body.is-video-lightbox-open {
     font-size: 19px;
   }
 
-  .hero-title-line:first-child {
+  .hero-title-line {
     white-space: normal;
   }
 
