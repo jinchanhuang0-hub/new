@@ -278,6 +278,49 @@ const withBlogArticleDefaults = (article) => {
 };
 
 const blogArticleData = {
+  "custom-marathon-medals-guide": {
+    title: "Custom Marathon Medals: Size, Ribbon, Finish & QC Guide",
+    headline: "Custom Marathon Medals Guide: Size, Ribbon, Finish and Factory QC Tips",
+    description:
+      "Plan custom marathon medals for running events with practical tips on size, ribbon, finish, lead time, factory testing and shipment inspection.",
+    author: "Sunny Huang",
+    authorType: "Person",
+    datePublished: "2026-08-06",
+    dateModified: "2026-08-06",
+    image: "/assets/images/blog-custom-marathon-medals-hero.webp",
+    faq: [
+      {
+        question: "What size should custom marathon medals be?",
+        answer:
+          "Many full marathon medals start around 80 to 90 mm, while 50 to 70 mm can work for 5K, 10K and community races. The right size depends on artwork detail, medal weight, ribbon comfort, budget and packaging.",
+      },
+      {
+        question: "What information should be on a race medal?",
+        answer:
+          "A race medal usually includes the event name, distance, year and main visual identity. It may also include the city, route shape, sponsor mark, charity symbol or finisher wording.",
+      },
+      {
+        question: "Are 2D or 3D medals better for running events?",
+        answer:
+          "2D medals are better for clean logos, text and race distance marks. 3D medals are better for sculpted landmarks, runners, mountains and premium depth. Many custom race medals use both methods.",
+      },
+      {
+        question: "How early should I order custom running medals?",
+        answer:
+          "Order as early as possible and allow time for artwork proofing, sample approval, production, shipment inspection, international shipping and local distribution before race day.",
+      },
+      {
+        question: "What affects the production time for custom marathon medals?",
+        answer:
+          "Artwork changes, custom shapes, 3D relief, enamel colors, ribbon printing, packaging and shipping method can all affect the schedule. Share the required in-hands date so the factory can plan proofing, production and inspection backward from race day.",
+      },
+      {
+        question: "Can one medal design be used for different race distances?",
+        answer:
+          "Yes. Many buyers use the same medal body with different ribbon colors, back printing, inserts or packaging labels for 5K, 10K, half marathon and full marathon categories.",
+      },
+    ],
+  },
   "challenge-coin-size-guide": {
     title: "Challenge Coin Size Guide: Diameter, Thickness and Uses",
     headline: "Challenge Coin Size and Thickness Guide: How to Choose the Right Dimensions",

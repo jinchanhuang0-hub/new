@@ -270,7 +270,7 @@ const sortBlogCardsByDate = (html, articles = {}) =>
 
 export const buildBlogIndexHtml = (html, articles = {}) =>
   addBlogCardMeta(sortBlogCardsByDate(normalizeBlogArticleLinks(html.replace(
-    /<article id="[^"]+" class="section blog-article-section">[\s\S]*?<\/article>/g,
+    /<article id="[^"]+" class="[^"]*\bblog-article-section\b[^"]*">[\s\S]*?<\/article>/g,
     "",
   )), articles), articles);
 
@@ -301,11 +301,11 @@ const addBlogArticleMeta = (articleHtml, articleMeta) => {
 export const buildBlogArticleHtml = (html, articleSlug, articleMeta = {}) => {
   const shell = getPageShell(html);
   const articlePattern = new RegExp(
-    `<article id="${articleSlug}" class="section blog-article-section">[\\s\\S]*?<\\/article>`,
+    `<article id="${articleSlug}" class="[^"]*\\bblog-article-section\\b[^"]*">[\\s\\S]*?<\\/article>`,
   );
   const article = addBlogArticleMeta((html.match(articlePattern)?.[0] || "").replace(
-    'class="section blog-article-section"',
-    'class="section blog-article-section is-active"',
+    /class="([^"]*\bblog-article-section\b[^"]*)"/,
+    (_, className) => `class="${className.includes("is-active") ? className : `${className} is-active`}"`,
   ), articleMeta);
 
   return normalizeBlogArticleLinks(`${shell.beforeMain}<main>${article}</main>${shell.afterMain}`);
