@@ -79,6 +79,10 @@ a {
   padding: 8px 0;
 }
 
+.topbar .container > span:first-child {
+  transform: translateX(-150px);
+}
+
 .site-header {
   position: sticky;
   top: 0;
@@ -563,6 +567,10 @@ a {
     transform: translateX(-80px);
   }
 
+  .topbar .container > span:first-child {
+    transform: translateX(-80px);
+  }
+
   .hero-content {
     transform: translate(-80px, -4px);
   }
@@ -570,6 +578,10 @@ a {
 
 @media (max-width: 1500px) {
   .brand {
+    transform: none;
+  }
+
+  .topbar .container > span:first-child {
     transform: none;
   }
 
