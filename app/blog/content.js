@@ -34,6 +34,15 @@ export const blogHtml = String.raw`
           <button type="button" data-blog-category="Uncategorized">Uncategorized</button>
         </div>
         <div class="blog-card-grid">
+          <a class="blog-feature-card" href="/blog/custom-marathon-medals-guide" data-blog-category="Custom Medals" aria-label="Read Custom Marathon Medals Design Guide">
+            <img src="/assets/images/blog-custom-marathon-medals-hero.webp" width="1600" height="900" alt="custom marathon medals with printed ribbons for running events">
+            <div class="blog-feature-body">
+              <div class="blog-feature-meta"><span>Custom Medals</span><span>Buyer Guide</span></div>
+              <h2>Custom Marathon Medals: How to Design Finisher Medals for Running Events</h2>
+              <p>Plan race medals by event type, size, material, ribbon, packaging, factory testing and shipment inspection before ordering.</p>
+              <span class="blog-feature-link">Read More</span>
+            </div>
+          </a>
           <a class="blog-feature-card" href="/blog/challenge-coin-size-guide" data-card-image-fit="full" data-blog-category="Custom Coins" aria-label="Read Challenge Coin Size and Thickness Guide: How to Choose the Right Dimensions">
             <img src="/assets/images/blog-challenge-coin-size-guide-hero.webp" width="1600" height="900" alt="five antique gold challenge coins arranged from 1.5 to 2.5 inches for size comparison">
             <div class="blog-feature-body">
@@ -118,6 +127,165 @@ export const blogHtml = String.raw`
         </div>
       </div>
     </section>
+    <article id="custom-marathon-medals-guide" class="section blog-article-section">
+      <div class="blog-article-shell">
+        <aside class="blog-article-toc" aria-label="Article contents">
+          <strong>In This Guide</strong>
+          <nav>
+            <a href="#quick-answer">Quick Answer</a>
+            <a href="#why-marathon-medals-matter">Why Medals Matter</a>
+            <a href="#match-medal-design-to-race-type">Race Type</a>
+            <a href="#size-material-and-finish">Size and Finish</a>
+            <a href="#ribbon-and-packaging">Ribbon and Packaging</a>
+            <a href="#factory-testing-and-shipment-inspection">Factory Checks</a>
+            <a href="#what-to-send-for-a-quote">Quote Details</a>
+            <a href="#faq">FAQ</a>
+            <a href="#conclusion">Conclusion</a>
+          </nav>
+        </aside>
+        <div class="container blog-article">
+          <header class="blog-article-header">
+            <a class="blog-back-link" href="/blog">Back to Blog</a>
+            <h1>Custom Marathon Medals: How to Design Finisher Medals for Running Events</h1>
+            <p><strong>The short answer:</strong> a good race medal should show the event identity, distance, year and achievement clearly. It should also be practical to produce, comfortable to wear with the ribbon and delivered before race day with stable quality.</p>
+            <p>This guide is written for race organizers, running clubs, schools, charity events and promotional product buyers comparing <a href="/products/custom-medals">custom medals</a> before requesting a quote.</p>
+            <figure class="blog-article-image blog-article-hero-image">
+              <img src="/assets/images/blog-custom-marathon-medals-hero.webp" width="1600" height="900" fetchpriority="high" decoding="async" alt="custom marathon medals with printed ribbons for running events">
+              <figcaption>Custom marathon medals should work as both a finish-line award and a long-term event keepsake.</figcaption>
+            </figure>
+          </header>
+
+          <a id="quick-answer"></a>
+          <h2>Quick Answer: What Makes a Good Marathon Medal?</h2>
+          <p>A strong marathon medal is easy to understand at first glance. The event name, race distance, year and main visual symbol should be clear without zooming into the artwork. For most 5K, 10K, half marathon and marathon events, buyers should confirm medal size, thickness, material, plating finish, enamel color, ribbon design, packaging and shipment schedule before production begins.</p>
+          <p>In factory review, the most common problems are small lettering, crowded sponsor marks, thin metal lines, color areas that are too narrow to fill cleanly and ribbon artwork approved too late. These are not dramatic issues, but they can slow production if nobody checks them before mold making. A useful supplier review should turn the event idea into a medal specification that can actually be produced consistently.</p>
+
+          <a id="why-marathon-medals-matter"></a>
+          <h2>Why Marathon Medals Matter to Runners and Organizers</h2>
+          <p>Runners keep medals because each one represents a very specific effort. It may be a first 5K, a personal best, a charity challenge, a city marathon or a difficult trail race. The medal records training time, discipline and the finish-line moment in a physical form.</p>
+          <p>For organizers, that emotional value also has practical marketing value. A medal appears in finish-line photos, social media posts, display racks and race recap videos. If the medal feels generic, the event loses an easy chance to be remembered. If the medal carries the race story well, it can support repeat registration and sponsor visibility without sounding like an advertisement.</p>
+          <figure class="blog-article-image">
+            <img src="/assets/images/blog-custom-marathon-medals-finish-line.webp" width="1400" height="840" loading="lazy" decoding="async" alt="runner receiving custom finisher medal after a race">
+            <figcaption>For many runners, the medal is the physical proof of the finish-line moment.</figcaption>
+          </figure>
+          <p>The best custom running medals usually connect three things: the achievement, the event identity and the experience of receiving the award. Achievement may be the distance or placement. Identity may be the logo, city, route, mascot or charity cause. Experience comes from weight, finish, ribbon, packaging and the way medals are handed out on race day.</p>
+
+          <a id="match-medal-design-to-race-type"></a>
+          <h2>Match Medal Design to Race Type</h2>
+          <p>Before choosing shape or finish, define the event type. A school 5K and a city marathon should not use the same medal logic. The recipient group, order quantity and distribution method all affect the best design choice.</p>
+
+          <h3>5K and 10K Events</h3>
+          <p>5K and 10K medals often need a balance of cost, visibility and easy distribution. These events may include families, schools, company teams and community runners, so a clean layout is usually stronger than a crowded design. A bold distance mark, event logo and year can do more work than a large amount of small text.</p>
+          <p>For large quantities, one medal body with different ribbon colors can separate categories while controlling mold cost. This works well when a buyer needs 5K, 10K and volunteer versions without creating too many separate medal designs.</p>
+
+          <h3>Half Marathon and Full Marathon Events</h3>
+          <p>Half marathon and full marathon medals normally carry more emotional weight. Runners train longer and expect a keepsake that feels substantial. These medals can support larger sizes, heavier construction, antique plating, layered relief or a more detailed city feature.</p>
+          <p>If the race has a recognizable bridge, skyline, waterfront, stadium, route shape or mountain background, that element can make the medal specific to the event. A generic runner icon may be easy to produce, but it will not carry the same memory as a design tied to the actual race.</p>
+
+          <h3>Charity Runs</h3>
+          <p>For charity runs, the medal should connect the participant with the cause. Campaign colors, awareness symbols and short messages can work well, but sponsor marks should be handled carefully. They should support the event, not overpower the runner's achievement or the charity message.</p>
+          <p>If fundraising tiers are used, different ribbon prints, back-side engraving or packaging labels can separate recognition levels without requiring several different molds.</p>
+
+          <h3>Trail and Ultra Running Events</h3>
+          <p>Trail and ultra medals often benefit from stronger outdoor imagery. Mountains, trees, elevation lines, trail markers, antique finishes and deeper relief can communicate endurance better than a flat round medal. Because these events attract serious runners and collectors, edge detail, weight and display value may matter more than the lowest unit price.</p>
+
+          <h3>Themed and Fun Runs</h3>
+          <p>Holiday runs, Halloween runs, color runs, beer runs and costume races can use playful custom shapes. A snowflake, pumpkin, bottle, mascot or glow effect can become part of the event experience. For these projects, bright enamel, glitter color, printing or moving attachments can help the medal feel more shareable.</p>
+
+          <a id="size-material-and-finish"></a>
+          <h2>Choose Size, Material and Finish</h2>
+          <p>Medal size affects artwork clarity, perceived value, ribbon comfort and shipping cost. A larger medal gives more room for text and visual detail, but it also increases weight and packaging requirements. The right size should match the race level and the artwork, not only the buyer's first idea.</p>
+          <div class="blog-table-wrap">
+            <table class="blog-table">
+              <thead><tr><th>Event Type</th><th>Practical Starting Size</th><th>Buyer Note</th></tr></thead>
+              <tbody>
+                <tr><td>School race or 5K</td><td>50-60 mm</td><td>Suitable for simple logos and large participant quantities</td></tr>
+                <tr><td>10K or charity run</td><td>60-70 mm</td><td>Balanced for event branding, cause colors and cost control</td></tr>
+                <tr><td>Half marathon</td><td>70-80 mm</td><td>More room for distance, year and city elements</td></tr>
+                <tr><td>Full marathon</td><td>80-90 mm</td><td>Good for premium finisher medals and stronger relief</td></tr>
+                <tr><td>Ultra or collector medal</td><td>90 mm and above</td><td>Best for complex artwork, series medals or display value</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>These ranges are starting points, not strict standards. Custom outlines, cutouts, 3D relief and fitted packaging may change the recommendation. For an irregular shape, ask the supplier to mark both width and height on the proof.</p>
+          <p>Common medal materials include zinc alloy, iron and brass. Zinc alloy is widely used for custom shapes and 3D details. Iron may suit simpler budget-sensitive orders. Brass can create a more traditional or heavier feel, depending on the design and finish.</p>
+          <p>Common finishes include shiny gold, silver, bronze, antique gold, antique silver, antique bronze, black nickel, dual plating, soft enamel, printing, translucent color, glitter effect and laser engraving. Antique finishes are useful when the medal has relief details because the darker recessed areas help raised artwork stand out. Bright plating can work well for city races, family events and colorful fun runs.</p>
+
+          <h3>2D or 3D Medal Design?</h3>
+          <p>Choose 2D when the design depends on clean logos, readable text, race distance marks and sponsor graphics. Choose 3D when the design includes a sculpted runner, landmark, mountain, animal, portrait or flowing route scene. Many good marathon medals use both: 2D for wording and logos, 3D for the central visual.</p>
+          <figure class="blog-article-image">
+            <img src="/assets/images/blog-custom-marathon-medals-production.webp" width="1400" height="840" loading="lazy" decoding="async" alt="custom running medals factory production inspection">
+            <figcaption>Artwork, plating and enamel details should be checked before mass production moves too far.</figcaption>
+          </figure>
+          <p>If the artwork includes very small text, thin outlines or gradients, ask for a production review before approving the mold. Some details may need to be enlarged, simplified or converted to printing. This is normal in custom metal production and helps protect the final result.</p>
+
+          <section class="blog-article-cta">
+            <div class="blog-cta-copy">
+              <h2>Need Help Choosing Medal Size and Finish?</h2>
+              <p>Send your event logo, race distance, quantity and deadline. We can review the artwork and suggest a practical medal and ribbon specification.</p>
+            </div>
+            <div class="blog-cta-actions"><a class="btn btn-yellow" href="/contact">Get a Quote</a></div>
+          </section>
+
+          <a id="ribbon-and-packaging"></a>
+          <h2>Plan the Ribbon and Packaging Early</h2>
+          <p>The ribbon is not just an accessory. It is a second branding surface. A printed ribbon can carry the race name, year, sponsor logo, event color or motivational phrase. Buyers should confirm ribbon width, length, material, print method and attachment style before production.</p>
+          <p>For events with several distances, ribbon variation can simplify distribution. A buyer may use one medal body with different ribbon colors for 5K, 10K, half marathon and full marathon categories. This keeps the medal family consistent while giving each group a clear identity.</p>
+          <p>Packaging should match how the medals will be delivered. Finish-line distribution usually needs simple individual bags or organized trays. Virtual race shipping may require stronger protection. VIP awards, sponsor gifts or podium medals may use velvet pouches or gift boxes. Before choosing a box, confirm medal diameter, thickness and how the ribbon folds inside the package.</p>
+
+          <a id="factory-testing-and-shipment-inspection"></a>
+          <h2>Factory Testing and Shipment Inspection</h2>
+          <p>For custom marathon medals, factory testing is not only about making one attractive sample. It is about confirming that mass production can repeat the approved standard. This matters because race dates are fixed and replacement time may be limited for overseas shipments.</p>
+          <p>Before mass production, the factory should review mold detail, small text, enamel areas, plating finish, ribbon attachment strength, back-side engraving or printing and packaging fit. During production, random checks should compare actual pieces with the approved sample.</p>
+          <figure class="blog-article-image">
+            <img src="/assets/images/blog-custom-marathon-medals-packaging.webp" width="1400" height="840" loading="lazy" decoding="async" alt="custom marathon medals packaging and shipment inspection">
+            <figcaption>Shipment inspection should verify medals, ribbons, packaging and quantity before export delivery.</figcaption>
+          </figure>
+          <p>Before shipment, inspect medal size, thickness, surface defects, plating color, enamel overflow, ribbon print, ribbon direction, quantity by category, packaging condition and carton labels. For large races, count by distance and award type. Missing one category can create problems during distribution even if the total carton quantity looks correct.</p>
+
+          <a id="what-to-send-for-a-quote"></a>
+          <h2>What to Send When Requesting a Quote</h2>
+          <p>A clear quote request helps the supplier give practical advice instead of guessing. When requesting custom running medals, send:</p>
+          <ul class="blog-list">
+            <li>Event type and race distance</li>
+            <li>Event logo or reference artwork</li>
+            <li>Quantity for each distance or award level</li>
+            <li>Preferred medal size and thickness</li>
+            <li>2D or 3D design preference</li>
+            <li>Plating and enamel color requirements</li>
+            <li>Ribbon design, width and length</li>
+            <li>Packaging requirement</li>
+            <li>Delivery country and required arrival date</li>
+            <li>Sponsor logo or personalization details</li>
+          </ul>
+          <p>If the design is not final, send the event story and reference images first. A factory can usually suggest whether the medal should be round, custom-shaped, antique plated, color-filled, printed or made with 3D relief.</p>
+          <p>For buyers comparing several recognition products, our <a href="/blog/custom-medals-vs-challenge-coins">custom medals vs challenge coins</a> guide explains when a medal is better for ceremony awards and when a coin is better for sponsor gifts or collectible recognition. If you are still building the whole product plan, the <a href="/blog/custom-metal-crafts-guide">custom metal crafts guide</a> may also help.</p>
+
+          <a id="faq"></a>
+          <h2>Frequently Asked Questions</h2>
+          <div class="blog-faq">
+            <details open><summary>What size should custom marathon medals be?</summary><p>Many full marathon medals start around 80 to 90 mm, while 50 to 70 mm can work for 5K, 10K and community races. The right size depends on artwork detail, medal weight, ribbon comfort, budget and packaging.</p></details>
+            <details><summary>What information should be on a race medal?</summary><p>A race medal usually includes the event name, distance, year and main visual identity. It may also include the city, route shape, sponsor mark, charity symbol or finisher wording.</p></details>
+            <details><summary>Are 2D or 3D medals better for running events?</summary><p>2D medals are better for clean logos, text and race distance marks. 3D medals are better for sculpted landmarks, runners, mountains and premium depth. Many custom marathon medals combine both methods.</p></details>
+            <details><summary>How early should I order custom running medals?</summary><p>Order as early as possible and allow time for artwork proofing, sample approval, production, shipment inspection, international shipping and local distribution before race day.</p></details>
+            <details><summary>Can one medal design be used for different race distances?</summary><p>Yes. Many buyers use the same medal body with different ribbon colors, back printing, inserts or packaging labels for 5K, 10K, half marathon and full marathon categories.</p></details>
+          </div>
+
+          <a id="conclusion"></a>
+          <h2>Conclusion</h2>
+          <p>Custom marathon medals should be designed around the runner's achievement and the organizer's production requirements. A strong medal is clear, meaningful, manufacturable and delivered on time. It does not need to use every special effect available. It needs to carry the race identity well and match the way the medals will be worn, packed and distributed.</p>
+          <p>For buyers, the safest process is to define the race type, confirm the artwork, choose a suitable size and finish, design the ribbon early and allow enough time for factory testing and shipment inspection. When these details are handled before production, the final medal can become a lasting part of the race experience.</p>
+
+          <section class="blog-article-cta">
+            <div class="blog-cta-copy">
+              <h2>Start Your Custom Running Medal Project</h2>
+              <p>Tell us your race type, quantity, ribbon requirement and delivery date. Our team will help prepare a production-ready medal plan for your event.</p>
+            </div>
+            <div class="blog-cta-actions"><a class="btn btn-yellow" href="/contact">Send Your Requirements</a></div>
+          </section>
+        </div>
+      </div>
+    </article>
     <article id="challenge-coin-size-guide" class="section blog-article-section">
       <div class="blog-article-shell">
         <aside class="blog-article-toc" aria-label="Article contents">
