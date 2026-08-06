@@ -394,7 +394,7 @@ a {
 
 .hero {
   position: relative;
-  height: clamp(520px, 35.5vw, 683px);
+  height: clamp(440px, 33.35vw, 683px);
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -446,7 +446,7 @@ a {
   width: 100%;
   height: 100%;
   max-width: none;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
 }
 
@@ -584,39 +584,57 @@ a {
 
 @media (min-width: 981px) and (max-width: 1500px) {
   .hero {
-    height: clamp(520px, 35.5vw, 575px);
+    height: clamp(440px, 33.35vw, 500px);
   }
 
   .hero-bg {
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
   }
 
   .hero-content {
     width: min(500px, 44vw);
-    padding: 30px 0;
+    padding: 18px 0;
   }
 
   .hero h1 {
     max-width: 100%;
-    font-size: clamp(36px, 2.8vw, 40px);
+    font-size: clamp(34px, 2.55vw, 38px);
     line-height: 1.12;
   }
 
   .hero p {
-    margin-top: 22px;
+    margin-top: 16px;
     max-width: 480px;
     font-size: 16px;
-    line-height: 1.55;
+    line-height: 1.46;
   }
 
   .hero-actions {
-    margin-top: 24px;
+    margin-top: 20px;
   }
 
   .hero-proof {
-    margin-top: 28px;
-    gap: 18px 20px;
+    margin-top: 20px;
+    gap: 14px 18px;
+  }
+
+  .proof-column {
+    gap: 14px;
+  }
+
+  .proof-item {
+    min-height: 58px;
+    padding: 5px 0 5px 16px;
+  }
+
+  .proof-item strong {
+    font-size: 21px;
+  }
+
+  .proof-item span {
+    margin-top: 5px;
+    font-size: 12px;
   }
 }
 
@@ -8803,7 +8821,7 @@ body.is-video-lightbox-open {
     width: 100%;
     height: auto;
     aspect-ratio: 2048 / 683;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
   }
 
@@ -9186,7 +9204,7 @@ body.is-video-lightbox-open {
     width: 100%;
     height: auto;
     aspect-ratio: 2048 / 683;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
   }
 
