@@ -141,6 +141,50 @@ const html = String.raw`
       </div>
     </section>
 
+    <section class="section about-cert-section" id="certificates">
+      <div class="container">
+        <div class="center-head about-heading">
+          <span class="heading-mark" aria-hidden="true"></span>
+          <h2>Certificates</h2>
+        </div>
+        <div class="cert-grid">
+          <figure class="cert" data-cert-lightbox-trigger role="button" tabindex="0" aria-label="View ISO 9001 certificate">
+            <img src="assets/images/cert-iso9001.png" alt="Unique Pin ISO9001 certificate">
+            <figcaption class="cert-name">ISO 9001</figcaption>
+          </figure>
+          <figure class="cert" data-cert-lightbox-trigger role="button" tabindex="0" aria-label="View ISO 14001 certificate">
+            <img src="assets/images/cert-iso14001.png" alt="Unique Pin ISO14001 certificate">
+            <figcaption class="cert-name">ISO 14001</figcaption>
+          </figure>
+          <figure class="cert" data-cert-lightbox-trigger role="button" tabindex="0" aria-label="View CE certificate">
+            <img src="assets/images/cert-ce.png" alt="Unique Pin CE certificate">
+            <figcaption class="cert-name">CE</figcaption>
+          </figure>
+          <figure class="cert" data-cert-lightbox-trigger role="button" tabindex="0" aria-label="View RoHS certificate">
+            <img src="assets/images/cert-rohs.png" alt="Unique Pin RoHS certificate">
+            <figcaption class="cert-name">RoHS</figcaption>
+          </figure>
+          <figure class="cert" data-cert-lightbox-trigger role="button" tabindex="0" aria-label="View FSC certificate">
+            <img src="assets/images/cert-fsc.png" alt="Unique Pin FSC certificate">
+            <figcaption class="cert-name">FSC</figcaption>
+          </figure>
+          <figure class="cert" data-cert-lightbox-trigger role="button" tabindex="0" aria-label="View SMETA certificate">
+            <img src="assets/images/cert-smeta.png" alt="Unique Pin SMETA certificate">
+            <figcaption class="cert-name">SMETA</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <div class="cert-lightbox" data-cert-lightbox hidden aria-hidden="true" role="dialog" aria-modal="true" aria-label="Certificate preview">
+      <button class="cert-lightbox-backdrop" type="button" data-cert-lightbox-close aria-label="Close certificate preview"></button>
+      <div class="cert-lightbox-panel">
+        <button class="cert-lightbox-close" type="button" data-cert-lightbox-close aria-label="Close certificate preview">&times;</button>
+        <img class="cert-lightbox-img" src="" alt="">
+        <p class="cert-lightbox-caption"></p>
+      </div>
+    </div>
+
     <section class="section reviews-section about-review-section" id="reviews">
       <div class="container">
         <div class="center-head reviews-head">
