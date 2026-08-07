@@ -43,7 +43,7 @@ const html = String.raw`
         <div class="about-hero-copy">
           <span class="about-hero-kicker">OEM / ODM Metal Gifts Factory</span>
           <h1>About Us</h1>
-          <p>Are you looking for a supplier of custom products? Then you've hit the jackpot by choosing Unique. Choosing us means choosing quality, originality, affordable prices, and fast turnaround times.</p>
+          <p>Unique Pin supports B2B buyers with OEM/ODM manufacturing for custom enamel pins, medals, challenge coins, keychains, belt buckles, and other metal promotional products.</p>
           <div class="about-hero-highlights" aria-label="Unique Pin factory highlights">
             <span>International Trade Since 2018</span>
             <span>Team Experience Since 2003</span>
@@ -53,33 +53,86 @@ const html = String.raw`
       </div>
     </section>
 
-    <section class="section about-profile-section" id="profile">
-      <div class="container about-profile">
-        <div class="about-profile-copy">
-          <div class="about-profile-gallery" aria-label="Inside our factory">
-            <div class="about-profile-video" data-video-lightbox-trigger data-video-src="assets/videos/factory-capability-web.mp4" data-video-poster="assets/images/factory-3.webp" role="button" tabindex="0" aria-label="Watch factory capability video larger">
-              <video class="factory-video-card" controls playsinline preload="metadata" poster="assets/images/factory-3.webp" aria-label="Factory capability video">
-                <source src="assets/videos/factory-capability-web.mp4" type="video/mp4">
-              </video>
-              <span class="video-expand-hint" aria-hidden="true">Watch larger</span>
-            </div>
-            <figure class="about-profile-image">
-              <img src="assets/images/factory-production-line.jpg" alt="Automated metal production equipment inside the Unique Pin factory" loading="lazy">
-            </figure>
-            <figure class="about-profile-image">
-              <img src="assets/images/factory-automated-coloring.jpg" alt="Technicians operating automated coloring equipment inside the Unique Pin factory" loading="lazy">
-            </figure>
+    <section class="section about-factory-view-section" aria-label="Factory videos">
+      <div class="container">
+        <div class="about-profile-gallery" aria-label="Inside our factory">
+          <div class="about-profile-video" data-video-lightbox-trigger data-video-src="assets/videos/factory-capability-web.mp4" data-video-poster="assets/images/factory-3.webp" role="button" tabindex="0" aria-label="Watch factory capability video larger">
+            <video class="factory-video-card" controls playsinline preload="metadata" poster="assets/images/factory-3.webp" aria-label="Factory capability video">
+              <source src="assets/videos/factory-capability-web.mp4" type="video/mp4">
+            </video>
+            <span class="video-expand-hint" aria-hidden="true">Watch larger</span>
           </div>
-          <h2>Who We Are</h2>
-          <p class="about-profile-subtitle">Over 20 Years of Crafting Quality Metal Products</p>
-          <p>Zhongshan Unique Metal Gift Co., Ltd. was established in 2018 to develop international markets, building on the custom metal gift experience of Custom, which was established in 2003. Through Unique Pin, our team provides OEM and ODM solutions covering product design, mold development, manufacturing, finishing, quality inspection, and global delivery.</p>
-          <p>Our product range includes custom enamel pins, badges, challenge coins, medals, belt buckles, metal keychains, and other customized metal accessories. These products are widely used for brand promotions, corporate gifting, sports events, military collections, commemorative programs, and retail applications worldwide.</p>
-          <p>With a fully integrated manufacturing facility, we manage every stage of production in-house, including CNC engraving, die casting, stamping, polishing, electroplating, automated enamel coloring, and quality inspection. Our 6,000-square-meter factory is equipped with 34 sets of advanced production machines, allowing us to efficiently handle both small customized projects and large-scale production orders.</p>
-          <p>Our team's industry experience dates to 2003, and we have supported projects for international brands and organizations across different industries. Our production capabilities are backed by certifications including Sedex, FSC, CE, RoHS, and Disney FAMA. Our manufacturing network includes facilities in Zhongshan, China, and Bangladesh, providing flexible production solutions and supply chain support for customers in North America, Europe, Australia, Southeast Asia, and the Middle East.</p>
-          <p>Driven by our philosophy of "Precision Craftsmanship Builds Trust," we combine advanced manufacturing technology, strict quality control, and responsive customer service to create durable, high-quality metal products that help brands turn creative ideas into lasting products.</p>
+          <div class="about-profile-video" data-video-lightbox-trigger data-video-src="assets/videos/factory-original-web.mp4" role="button" tabindex="0" aria-label="Watch original factory video larger">
+            <video class="factory-video-card" controls playsinline preload="metadata" aria-label="Original factory video">
+              <source src="assets/videos/factory-original-web.mp4" type="video/mp4">
+            </video>
+            <span class="video-expand-hint" aria-hidden="true">Watch larger</span>
+          </div>
+          <div class="about-profile-video" data-video-lightbox-trigger data-video-src="assets/videos/factory-view-1.mp4" role="button" tabindex="0" aria-label="Watch production line video larger">
+            <video class="factory-video-card" controls playsinline preload="metadata" aria-label="Production line video">
+              <source src="assets/videos/factory-view-1.mp4" type="video/mp4">
+            </video>
+            <span class="video-expand-hint" aria-hidden="true">Watch larger</span>
+          </div>
         </div>
       </div>
     </section>
+
+    <section class="section about-profile-section" id="profile">
+      <div class="container about-profile">
+        <div class="about-profile-copy">
+          <h2>Who We Are</h2>
+          <p class="about-profile-subtitle">Over 20 Years of Crafting Quality Metal Products</p>
+          <p>Zhongshan Unique Metal Gift Co., Ltd. was established in 2018 as a subsidiary of Guangdong Custom Culture Gifts Co., Ltd. for international B2B markets. Backed by group manufacturing experience since 2003, Unique Pin provides OEM/ODM support from design and mold development to production, inspection, and delivery.</p>
+          <p>We manufacture custom enamel pins, badges, challenge coins, medals, belt buckles, metal keychains, and other metal accessories for promotions, corporate gifts, sports events, military collections, commemorative programs, and retail projects worldwide.</p>
+          <p>Our 6,000-square-meter Zhongshan factory is equipped with 34 production machines and covers CNC engraving, die casting, stamping, polishing, electroplating, enamel coloring, and QC in-house. Supported by certifications including Sedex, FSC, CE, RoHS, and Disney FAMA, we serve customers across North America, Europe, Australia, Southeast Asia, and the Middle East.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-cert-section" id="certificates">
+      <div class="container">
+        <div class="center-head about-heading">
+          <span class="heading-mark" aria-hidden="true"></span>
+          <h2>Certificates</h2>
+        </div>
+        <div class="cert-grid">
+          <figure class="cert" data-cert-lightbox-trigger role="button" tabindex="0" aria-label="View ISO 9001 certificate">
+            <img src="assets/images/cert-iso9001.png" alt="Unique Pin ISO9001 certificate">
+            <figcaption class="cert-name">ISO 9001</figcaption>
+          </figure>
+          <figure class="cert" data-cert-lightbox-trigger role="button" tabindex="0" aria-label="View ISO 14001 certificate">
+            <img src="assets/images/cert-iso14001.png" alt="Unique Pin ISO14001 certificate">
+            <figcaption class="cert-name">ISO 14001</figcaption>
+          </figure>
+          <figure class="cert" data-cert-lightbox-trigger role="button" tabindex="0" aria-label="View CE certificate">
+            <img src="assets/images/cert-ce.png" alt="Unique Pin CE certificate">
+            <figcaption class="cert-name">CE</figcaption>
+          </figure>
+          <figure class="cert" data-cert-lightbox-trigger role="button" tabindex="0" aria-label="View RoHS certificate">
+            <img src="assets/images/cert-rohs.png" alt="Unique Pin RoHS certificate">
+            <figcaption class="cert-name">RoHS</figcaption>
+          </figure>
+          <figure class="cert" data-cert-lightbox-trigger role="button" tabindex="0" aria-label="View FSC certificate">
+            <img src="assets/images/cert-fsc.png" alt="Unique Pin FSC certificate">
+            <figcaption class="cert-name">FSC</figcaption>
+          </figure>
+          <figure class="cert" data-cert-lightbox-trigger role="button" tabindex="0" aria-label="View SMETA certificate">
+            <img src="assets/images/cert-smeta.png" alt="Unique Pin SMETA certificate">
+            <figcaption class="cert-name">SMETA</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <div class="cert-lightbox" data-cert-lightbox hidden aria-hidden="true" role="dialog" aria-modal="true" aria-label="Certificate preview">
+      <button class="cert-lightbox-backdrop" type="button" data-cert-lightbox-close aria-label="Close certificate preview"></button>
+      <div class="cert-lightbox-panel">
+        <button class="cert-lightbox-close" type="button" data-cert-lightbox-close aria-label="Close certificate preview">&times;</button>
+        <img class="cert-lightbox-img" src="" alt="">
+        <p class="cert-lightbox-caption"></p>
+      </div>
+    </div>
 
     <section class="section about-mission-section" id="mission">
       <div class="container about-mission-layout">
@@ -141,49 +194,37 @@ const html = String.raw`
       </div>
     </section>
 
-    <section class="section about-cert-section" id="certificates">
+    <section class="section about-team-section" id="team">
       <div class="container">
-        <div class="center-head about-heading">
+        <div class="center-head about-team-head">
           <span class="heading-mark" aria-hidden="true"></span>
-          <h2>Certificates</h2>
+          <h2>Meet the Team</h2>
         </div>
-        <div class="cert-grid">
-          <figure class="cert" data-cert-lightbox-trigger role="button" tabindex="0" aria-label="View ISO 9001 certificate">
-            <img src="assets/images/cert-iso9001.png" alt="Unique Pin ISO9001 certificate">
-            <figcaption class="cert-name">ISO 9001</figcaption>
-          </figure>
-          <figure class="cert" data-cert-lightbox-trigger role="button" tabindex="0" aria-label="View ISO 14001 certificate">
-            <img src="assets/images/cert-iso14001.png" alt="Unique Pin ISO14001 certificate">
-            <figcaption class="cert-name">ISO 14001</figcaption>
-          </figure>
-          <figure class="cert" data-cert-lightbox-trigger role="button" tabindex="0" aria-label="View CE certificate">
-            <img src="assets/images/cert-ce.png" alt="Unique Pin CE certificate">
-            <figcaption class="cert-name">CE</figcaption>
-          </figure>
-          <figure class="cert" data-cert-lightbox-trigger role="button" tabindex="0" aria-label="View RoHS certificate">
-            <img src="assets/images/cert-rohs.png" alt="Unique Pin RoHS certificate">
-            <figcaption class="cert-name">RoHS</figcaption>
-          </figure>
-          <figure class="cert" data-cert-lightbox-trigger role="button" tabindex="0" aria-label="View FSC certificate">
-            <img src="assets/images/cert-fsc.png" alt="Unique Pin FSC certificate">
-            <figcaption class="cert-name">FSC</figcaption>
-          </figure>
-          <figure class="cert" data-cert-lightbox-trigger role="button" tabindex="0" aria-label="View SMETA certificate">
-            <img src="assets/images/cert-smeta.png" alt="Unique Pin SMETA certificate">
-            <figcaption class="cert-name">SMETA</figcaption>
-          </figure>
+        <div class="about-team-grid" aria-label="Unique Pin core team">
+          <article class="about-team-member about-team-member-director">
+            <figure class="about-team-portrait">
+              <span class="about-team-disc" aria-hidden="true"></span>
+              <img class="about-team-cutout" src="assets/images/team-cutout-director.png" alt="Unique Pin director" loading="lazy">
+            </figure>
+            <h3>Director</h3>
+          </article>
+          <article class="about-team-member about-team-member-business">
+            <figure class="about-team-portrait">
+              <span class="about-team-disc" aria-hidden="true"></span>
+              <img class="about-team-cutout" src="assets/images/team-cutout-business-supervisor.png" alt="Unique Pin business supervisor" loading="lazy">
+            </figure>
+            <h3>Business Supervisor</h3>
+          </article>
+          <article class="about-team-member about-team-member-designer">
+            <figure class="about-team-portrait">
+              <span class="about-team-disc" aria-hidden="true"></span>
+              <img class="about-team-cutout" src="assets/images/team-cutout-graphic-designer.png" alt="Unique Pin graphic designer" loading="lazy">
+            </figure>
+            <h3>Graphic Designer</h3>
+          </article>
         </div>
       </div>
     </section>
-
-    <div class="cert-lightbox" data-cert-lightbox hidden aria-hidden="true" role="dialog" aria-modal="true" aria-label="Certificate preview">
-      <button class="cert-lightbox-backdrop" type="button" data-cert-lightbox-close aria-label="Close certificate preview"></button>
-      <div class="cert-lightbox-panel">
-        <button class="cert-lightbox-close" type="button" data-cert-lightbox-close aria-label="Close certificate preview">&times;</button>
-        <img class="cert-lightbox-img" src="" alt="">
-        <p class="cert-lightbox-caption"></p>
-      </div>
-    </div>
 
     <section class="section reviews-section about-review-section" id="reviews">
       <div class="container">
