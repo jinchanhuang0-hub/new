@@ -62,14 +62,14 @@ const html = String.raw`
             </video>
             <span class="video-expand-hint" aria-hidden="true">Watch larger</span>
           </div>
-          <div class="about-profile-video" data-video-lightbox-trigger data-video-src="assets/videos/factory-original-web.mp4" role="button" tabindex="0" aria-label="Watch original factory video larger">
-            <video class="factory-video-card" controls playsinline preload="metadata" aria-label="Original factory video">
+          <div class="about-profile-video" data-video-lightbox-trigger data-video-src="assets/videos/factory-original-web.mp4" data-video-poster="assets/images/factory-original-frame-poster.jpg" role="button" tabindex="0" aria-label="Watch original factory video larger">
+            <video class="factory-video-card" controls playsinline preload="metadata" poster="assets/images/factory-original-frame-poster.jpg" aria-label="Original factory video">
               <source src="assets/videos/factory-original-web.mp4" type="video/mp4">
             </video>
             <span class="video-expand-hint" aria-hidden="true">Watch larger</span>
           </div>
-          <div class="about-profile-video" data-video-lightbox-trigger data-video-src="assets/videos/factory-view-1.mp4" role="button" tabindex="0" aria-label="Watch production line video larger">
-            <video class="factory-video-card" controls playsinline preload="metadata" aria-label="Production line video">
+          <div class="about-profile-video" data-video-lightbox-trigger data-video-src="assets/videos/factory-view-1.mp4" data-video-poster="assets/images/factory-production-frame-poster.jpg" role="button" tabindex="0" aria-label="Watch production line video larger">
+            <video class="factory-video-card" controls playsinline preload="metadata" poster="assets/images/factory-production-frame-poster.jpg" aria-label="Production line video">
               <source src="assets/videos/factory-view-1.mp4" type="video/mp4">
             </video>
             <span class="video-expand-hint" aria-hidden="true">Watch larger</span>
