@@ -495,7 +495,7 @@ a {
 .hero h1 {
   margin: 0;
   max-width: 720px;
-  font-size: clamp(42px, 2.6vw, 46px);
+  font-size: clamp(46px, 2.9vw, 52px);
   line-height: 1.14;
   font-weight: 950;
   letter-spacing: 0;
@@ -590,7 +590,7 @@ a {
   }
 
   .hero h1 {
-    font-size: 44px;
+    font-size: 48px;
   }
 }
 
@@ -606,7 +606,7 @@ a {
 
   .hero h1 {
     max-width: 100%;
-    font-size: clamp(42px, 3.35vw, 46px);
+    font-size: clamp(44px, 3.7vw, 48px);
     line-height: 1.12;
   }
 
@@ -9211,7 +9211,7 @@ body.is-video-lightbox-open {
 
   .hero h1 {
     max-width: 100%;
-    font-size: clamp(38px, 9vw, 46px);
+    font-size: clamp(40px, 9.5vw, 48px);
     line-height: 1.04;
     text-shadow: 0 12px 26px rgba(11, 47, 99, 0.12);
   }
