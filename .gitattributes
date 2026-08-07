@@ -1,2 +1,4 @@
 public/assets/videos/*.mp4 filter=lfs diff=lfs merge=lfs -text
 public/assets/videos/factory-capability-web.mp4 -filter -diff -merge -text
+public/assets/videos/factory-original-web.mp4 -filter -diff -merge -text
+public/assets/videos/factory-view-1.mp4 -filter -diff -merge -text
