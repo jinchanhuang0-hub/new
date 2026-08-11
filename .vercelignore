@@ -1,0 +1,22 @@
+node_modules/
+.next/
+.next-*/
+out/
+tmp/
+tmp-*.png
+*.log
+.lighthouse*.json
+.codex-*.png
+
+# Local source/export backups that are not needed for Vercel builds.
+*.zip
+*.tar
+*.tar.gz
+
+# The optimized web video is used by the site; this original source file is too large for Vercel uploads.
+public/assets/videos/factory-capability.mp4
+
+# Draft and audit notes should stay out of production deployments.
+*.md
+seo-shizhan-mima-5th-page-md-patch/
+uccrafts-com-disavow-from-csv-2026-07-16.txt
