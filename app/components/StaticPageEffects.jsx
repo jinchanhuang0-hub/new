@@ -222,19 +222,6 @@ export default function StaticPageEffects() {
       return true;
     };
 
-    const handleHomeProductClick = (event) => {
-      const card = event.target.closest?.(".home-product-card[href]");
-      if (!card) return;
-
-      event.preventDefault();
-      const productName = card.querySelector("h3")?.textContent?.trim() || "";
-      if (!openProductInquiryModal(productName)) {
-        window.location.assign(card.href);
-      }
-    };
-
-    document.addEventListener("click", handleHomeProductClick);
-
     const handleProductInquiryTriggerClick = (event) => {
       const trigger = event.target.closest?.("[data-product-inquiry-trigger]");
       if (!trigger) return;
@@ -302,6 +289,63 @@ export default function StaticPageEffects() {
     };
 
     prefillInquiryFormsFromUrl();
+
+    const getFormNotice = (form) => form.querySelector("[data-form-notice]")
+      || form.closest(".contact-card, .product-inquiry-card, .contact-layout")?.querySelector("[data-form-notice]");
+
+    const handleInquirySubmit = async (event) => {
+      const inquiryForm = event.target.closest?.("[data-inquiry-form]");
+      if (!inquiryForm) return;
+
+      event.preventDefault();
+
+      const notice = getFormNotice(inquiryForm);
+      const submitButton = inquiryForm.querySelector('button[type="submit"]');
+      const originalButtonText = submitButton?.textContent;
+      const formData = new FormData(inquiryForm);
+
+      formData.set("pageUrl", window.location.href);
+      formData.set("pageTitle", document.title);
+
+      if (notice) {
+        notice.style.color = "var(--navy)";
+        notice.textContent = "Sending your inquiry...";
+      }
+      if (submitButton) {
+        submitButton.disabled = true;
+        submitButton.textContent = "Sending...";
+      }
+
+      try {
+        const response = await fetch("/api/inquiry", {
+          method: "POST",
+          body: formData,
+        });
+        const result = await response.json().catch(() => ({}));
+
+        if (!response.ok) {
+          throw new Error(result.message || "Inquiry could not be sent. Please email ceo@chinauniquepin.com directly.");
+        }
+
+        if (notice) {
+          notice.style.color = "var(--navy)";
+          notice.textContent = "Thank you for your inquiry. Our team will reply within 1 business day.";
+        }
+        inquiryForm.reset();
+      } catch (error) {
+        if (notice) {
+          notice.style.color = "#b42318";
+          notice.textContent = error.message || "Inquiry could not be sent. Please email ceo@chinauniquepin.com directly.";
+        }
+      } finally {
+        if (submitButton) {
+          submitButton.disabled = false;
+          submitButton.textContent = originalButtonText || "Submit Inquiry";
+        }
+      }
+    };
+
+    document.addEventListener("submit", handleInquirySubmit);
 
     const blogCategories = [
       "Awareness",
@@ -721,10 +765,10 @@ export default function StaticPageEffects() {
 
     return () => {
       document.removeEventListener("click", handleBlogCardClick);
-      document.removeEventListener("click", handleHomeProductClick);
       document.removeEventListener("click", handleProductInquiryTriggerClick);
       document.removeEventListener("click", handleProductInquiryModalClick);
       document.removeEventListener("keydown", handleProductInquiryModalKeydown);
+      document.removeEventListener("submit", handleInquirySubmit);
       document.removeEventListener("click", handleBlogCategoryClick);
       document.removeEventListener("click", handleBlogPaginationClick);
       document.removeEventListener("click", handleProductCategoryClick);

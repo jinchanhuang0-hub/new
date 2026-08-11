@@ -2,6 +2,7 @@ import JsonLd from "./components/JsonLd";
 import AnalyticsConsent from "./components/AnalyticsConsent";
 import Script from "next/script";
 import { SITE_URL } from "./lib/siteRoutes";
+import "../styles.css";
 import "./globals.css";
 
 export const metadata = {
@@ -18,11 +19,11 @@ export const metadata = {
     type: "website",
     siteName: "Unique Pin",
     locale: "en_US",
-    images: ["/assets/images/hero-banner.png"],
+    images: ["/assets/images/hero-banner-og.jpg"],
   },
   twitter: {
     card: "summary_large_image",
-    images: ["/assets/images/hero-banner.png"],
+    images: ["/assets/images/hero-banner-og.jpg"],
   },
 };
 

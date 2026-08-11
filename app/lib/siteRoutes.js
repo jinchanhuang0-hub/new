@@ -66,6 +66,9 @@ export const getProductPath = (itemSlug, item) =>
   `${getCategoryPath(getCategoryKeyForItem(item))}/${itemSlug}`;
 
 export const productItemCategoryKey = {
+  "uv-printed-masquerade-day-lapel-pin": "pins",
+  "skull-axe-3d-zinc-alloy-lapel-pin": "pins",
+  "aaa-antique-round-lapel-pin": "pins",
   "halloween-letter-s-soft-enamel-pin": "pins",
   "fire-breathing-queen-soft-enamel-pin": "pins",
   "winged-anime-character-soft-enamel-pin-set": "pins",
@@ -141,7 +144,6 @@ export const productItemCategoryKey = {
   "halloween-bicycle-race-ribbon-medal": "medals",
   "halloween-finisher-ribbon-medal": "medals",
   "swim-ribbon-medal-set": "medals",
-  "weiss-blau-anniversary-ribbon-medal": "medals",
   "hofgrafen-kalscheuren-carnival-medal": "medals",
   "world-run-triathlon-medal-set": "medals",
   "ski-federation-ribbon-medal": "medals",

@@ -4,6 +4,48 @@ import { getProductPath } from "../lib/siteRoutes";
 import { compareProductEntriesBySkuDesc } from "../lib/productSorting";
 
 export const productItems = {
+  "uv-printed-masquerade-day-lapel-pin": {
+    title: "UV Printed Masquerade Day Lapel Pin",
+    image: "assets/images/type-pins-uv-printed-masquerade-day.png",
+    alt: "UV printed masquerade day lapel pin",
+    categoryLabel: "Lapel Pins",
+    categoryHref: "/products/custom-enamel-pins",
+    material: "Zinc alloy",
+    process: "Full color UV printing with clear epoxy coating",
+    sku: "UP-PIN-017",
+    usage: "Event merchandise, retail gifts, photo artwork pins",
+    categories: "Lapel Pins, UV Printed Pins, Full Color Printed Pins",
+    quoteProduct: "Lapel Pins",
+    lead: "This UV printed masquerade day lapel pin uses full color UV printing to reproduce photo-style artwork, crisp color transitions and glossy surface detail for event merchandise, retail gifts and promotional collections."
+  },
+  "skull-axe-3d-zinc-alloy-lapel-pin": {
+    title: "Skull Axe 3D Zinc Alloy Lapel Pin",
+    image: "assets/images/type-pins-3d-zinc-alloy.png",
+    alt: "Skull axe 3D zinc alloy lapel pin",
+    categoryLabel: "Lapel Pins",
+    categoryHref: "/products/custom-enamel-pins",
+    material: "Zinc alloy",
+    process: "3D die casting and antique plating",
+    sku: "UP-PIN-016",
+    usage: "Retail collections, club merchandise, events",
+    categories: "Lapel Pins, 3D Lapel Pins, Zinc Alloy Pins",
+    quoteProduct: "Lapel Pins",
+    lead: "This skull axe 3D zinc alloy lapel pin features sculpted metal relief, antique plating and bold dimensional detail for retail collections, club merchandise, event giveaways and promotional gifts."
+  },
+  "aaa-antique-round-lapel-pin": {
+    title: "AAA Antique Round Lapel Pin",
+    image: "assets/images/type-pins-aaa-antique-round.png",
+    alt: "AAA antique round lapel pin",
+    categoryLabel: "Lapel Pins",
+    categoryHref: "/products/custom-enamel-pins",
+    material: "Zinc alloy",
+    process: "Die casting and antique plating",
+    sku: "UP-PIN-015",
+    usage: "Club merchandise, awards, retail gifts",
+    categories: "Lapel Pins, Antique Pins, Round Pins",
+    quoteProduct: "Lapel Pins",
+    lead: "This AAA antique round lapel pin uses raised metal lettering, textured recessed detail and antique plating for club merchandise, recognition gifts, retail collections and event promotions."
+  },
   "halloween-letter-s-soft-enamel-pin": {
     title: "Halloween Letter S Soft Enamel Pin",
     image: "assets/images/type-pins-halloween-letter-s-soft-enamel.png",
@@ -1054,20 +1096,6 @@ export const productItems = {
     quoteProduct: "Medals",
     lead: "This swim ribbon medal set includes gold and silver finishes with swimming artwork and blue ribbons for swim meets, school competitions, sports clubs and aquatic event awards."
   },
-  "weiss-blau-anniversary-ribbon-medal": {
-    title: "Weiss-Blau Anniversary Ribbon Medal",
-    image: "assets/images/type-medals-weiss-blau-anniversary-ribbon.jpg",
-    alt: "Weiss-Blau anniversary ribbon medal",
-    categoryLabel: "Medals",
-    categoryHref: "/products/custom-medals",
-    material: "Zinc alloy",
-    process: "Die casting and enamel filling",
-    sku: "UP-MEDAL-019",
-    usage: "Club anniversaries, carnival events, awards",
-    categories: "Medals, Ribbon Medals",
-    quoteProduct: "Medals",
-    lead: "This Weiss-Blau anniversary ribbon medal features mascot relief, blue enamel, custom lettering and a striped ribbon for club anniversaries, carnival societies, community events and presentation awards."
-  },
   "hofgrafen-kalscheuren-carnival-medal": {
     title: "Hofgrafen Kalscheuren Carnival Medal",
     image: "assets/images/type-medals-hofgrafen-kalscheuren-carnival.jpg",
@@ -1308,7 +1336,7 @@ export const productItems = {
   },
   "gold-scn-ribbon-medal": {
     title: "Gold SCN Ribbon Medal",
-    image: "assets/images/latest-gold-scn-ribbon-medal.png",
+    image: "assets/images/latest-gold-scn-ribbon-medal.webp",
     alt: "Gold SCN ribbon medal",
     categoryLabel: "Medals",
     categoryHref: "/products/custom-medals",

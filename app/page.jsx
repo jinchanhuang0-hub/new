@@ -37,8 +37,9 @@ const html = String.raw`
 
   <main>
     <section class="hero">
-      <img class="hero-bg" src="assets/images/hero-banner.webp" width="2048" height="683" fetchpriority="high" alt="Custom enamel pins medals and challenge coins hero banner">
+ <img class="hero-bg" src="assets/images/hero-banner.webp" width="2048" height="683" fetchpriority="high" alt="Custom enamel pins medals and challenge coins hero banner">
       <div class="container">
+       
         <div class="hero-content">
           <h1><span class="hero-title-line">High-Quality Custom</span><span class="hero-title-line">Metal Products Manufacturer</span></h1>
           <p>OEM/ODM custom metal crafts with 20+ years of expertise.<br>From design to delivery, quality you can trust.</p>
@@ -119,42 +120,42 @@ const html = String.raw`
           </div>
         </div>
         <div class="grid-3 home-products-grid">
-          <a class="product-card home-product-card" href="/products/custom-enamel-pins" aria-label="View Custom Enamel Pins details" data-product-inquiry-trigger data-product-inquiry-product="Lapel Pins">
+          <a class="product-card home-product-card" href="/product-category/custom-lapel-pins" aria-label="View Custom Enamel Pins details">
             <img src="assets/images/home-lapel-pins-cat.jpg" alt="Custom lapel pin with cat and colorful umbrella">
             <div class="body">
               <h3>Lapel Pins</h3>
               <p>An exquisite accessory that captures your brand's identity and sparks conversation.</p>
             </div>
           </a>
-          <a class="product-card home-product-card" href="/products/custom-medals" aria-label="View Custom Medals details" data-product-inquiry-trigger data-product-inquiry-product="Medals">
+          <a class="product-card home-product-card" href="/product-category/custom-medals" aria-label="View Custom Medals details">
             <img src="assets/images/home-medals-floral.webp" alt="Custom medal with floral enamel and ribbon">
             <div class="body">
               <h3>Medals</h3>
               <p>A meaningful award piece that celebrates achievement with lasting visual impact.</p>
             </div>
           </a>
-          <a class="product-card home-product-card" href="/products/custom-challenge-coins" aria-label="View Challenge Coins details" data-product-inquiry-trigger data-product-inquiry-product="Challenge Coins">
+          <a class="product-card home-product-card" href="/product-category/custom-challenge-coins" aria-label="View Challenge Coins details">
             <img src="assets/images/home-challenge-coins-police.jpg" alt="Custom challenge coins with police emblems">
             <div class="body">
               <h3>Challenge Coins</h3>
               <p>A premium keepsake that honors teams, milestones and shared stories.</p>
             </div>
           </a>
-          <a class="product-card home-product-card" href="/products/custom-metal-keychains" aria-label="View Custom Keychains details" data-product-inquiry-trigger data-product-inquiry-product="Keychains">
+          <a class="product-card home-product-card" href="/product-category/custom-keychains" aria-label="View Custom Keychains details">
             <img src="assets/images/home-keychains-charms.jpg" alt="Custom metal keychain with enamel charms">
             <div class="body">
               <h3>Keychains</h3>
               <p>A practical everyday gift that keeps your brand close at hand.</p>
             </div>
           </a>
-          <a class="product-card home-product-card" href="/products/custom-belt-buckles" aria-label="View Custom Belt Buckles details" data-product-inquiry-trigger data-product-inquiry-product="Belt Buckles">
+          <a class="product-card home-product-card" href="/product-category/custom-belt-buckles" aria-label="View Custom Belt Buckles details">
             <img src="assets/images/home-belt-buckles-arizona.jpg" alt="Custom antique belt buckle with Arizona design">
             <div class="body">
               <h3>Belt Buckles</h3>
               <p>A bold statement piece that turns custom detail into wearable style.</p>
             </div>
           </a>
-          <a class="product-card home-product-card" href="/products/custom-golf-accessories" aria-label="View Custom Golf Ball Markers details" data-product-inquiry-trigger data-product-inquiry-product="Golf Accessories">
+          <a class="product-card home-product-card" href="/product-category/custom-golf-ball-markers" aria-label="View Custom Golf Ball Markers details">
             <img src="assets/images/home-golf-ball-marker.jpg" alt="Custom golf ball marker and divot tool">
             <div class="body">
               <h3>Golf Ball Markers</h3>
@@ -474,7 +475,7 @@ const html = String.raw`
           <article class="latest-product-card">
             <span class="latest-product-badge">NEW</span>
             <a class="latest-product-media" href="/products/custom-medals/gold-scn-ribbon-medal" aria-label="View Gold SCN Ribbon Medal">
-              <img src="assets/images/latest-gold-scn-ribbon-medal.png" alt="Gold SCN ribbon medal" loading="lazy">
+              <img src="assets/images/latest-gold-scn-ribbon-medal.webp" alt="Gold SCN ribbon medal" loading="lazy">
             </a>
             <div class="latest-product-body">
               <h3><a href="/products/custom-medals/gold-scn-ribbon-medal">Gold SCN Ribbon Medal</a></h3>
