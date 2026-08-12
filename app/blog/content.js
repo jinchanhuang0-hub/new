@@ -36,7 +36,7 @@ export const blogHtml = String.raw`
           <button type="button" data-blog-category="Uncategorized">Uncategorized</button>
         </div>
         <div class="blog-card-grid">
-          <a class="blog-feature-card" href="/blog/custom-metal-keychain-materials" data-blog-category="Custom Keychains" aria-label="Read Custom Metal Keychain Materials: Zinc Alloy vs Brass vs Stainless Steel vs Iron">
+          <a class="blog-feature-card" href="/blog/custom-metal-keychain-materials" data-card-image-fit="contain" data-blog-category="Custom Keychains" aria-label="Read Custom Metal Keychain Materials: Zinc Alloy vs Brass vs Stainless Steel vs Iron">
             <img src="/assets/images/custom-metal-keychain-materials-comparison.webp" width="1200" height="675" alt="Custom metal keychain materials compared in zinc alloy, brass, stainless steel and iron finishes">
             <div class="blog-feature-body">
               <div class="blog-feature-meta"><span>Custom Keychains</span><span>Material Guide</span></div>
