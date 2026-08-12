@@ -196,6 +196,14 @@
   box-sizing: border-box;
 }
 
+.blog-feature-card[href^="/blog/custom-metal-keychain-materials"] img {
+  height: auto;
+  aspect-ratio: auto;
+  padding: 10px 10px 0;
+  object-fit: contain;
+  box-sizing: border-box;
+}
+
 .blog-feature-card[data-card-image-fit="full"] img {
   aspect-ratio: 5 / 3;
   padding: 0;
