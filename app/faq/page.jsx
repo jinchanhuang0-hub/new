@@ -1,6 +1,8 @@
 import StaticPage from "../components/StaticPage";
 import { footerHtml } from "../components/footerHtml";
 import JsonLd from "../components/JsonLd";
+import { siteHeaderHtml } from "../components/siteHeaderHtml";
+
 
 export const metadata = {
   title: "FAQ | Custom Metal Crafts Questions | Unique Pin",
@@ -12,8 +14,7 @@ export const metadata = {
 };
 
 const header = String.raw`
-  <div class="topbar"><div class="container"><span>Team Industry Experience Since 2003</span><span>Email: ceo@chinauniquepin.com | WhatsApp: +86 18895316838</span></div></div>
-  <header class="site-header"><div class="container nav-wrap"><a class="brand" href="/"><img src="assets/images/logo.png" alt="Unique Pin logo"><span><strong>Unique Pin</strong><span>Custom Metal Gifts Factory</span></span></a><nav class="nav" aria-label="Main navigation"><a href="/">Home</a><div class="nav-item products-menu"><a href="/products">Products</a><div class="mega-dropdown" role="menu" aria-label="Products mega menu"><div class="mega-panel"><div class="mega-featured"><a class="mega-product" href="/products/custom-enamel-pins"><img src="assets/images/mega-lapel-pins-auburn.jpg" alt="Custom Auburn lapel pin"><span>Lapel Pins</span><small>Custom enamel pins for brands, events and clubs.</small></a><a class="mega-product" href="/products/custom-medals"><img src="assets/images/mega-medals-butterfly.png" alt="Custom butterfly medal with ribbon"><span>Medals</span><small>Colorful award medals with ribbons and finishes.</small></a><a class="mega-product" href="/products/custom-challenge-coins"><img src="assets/images/mega-challenge-coin-christmas.jpg" alt="Custom Christmas challenge coin"><span>Challenge Coins</span><small>Detailed coins for recognition and commemorations.</small></a></div><div class="mega-list"><a href="/products/custom-enamel-pins">Lapel Pins</a><a href="/products/custom-challenge-coins">Challenge Coins</a><a href="/products/custom-medals">Medals</a><a href="/products/custom-metal-keychains">Keychains</a><a href="/products/custom-belt-buckles">Belt Buckles</a><a href="/products/custom-golf-accessories">Golf Ball Markers &amp;Hat Clips</a><a href="/products/custom-bottle-openers">Bottle Openers</a><a href="/products/custom-cufflinks-tie-clips">Cufflinks &amp; Tie Clips</a><a href="/products/custom-fridge-magnets">Fridge Magnets</a></div><div class="mega-cta"><div><strong>Need a custom product quote?</strong><span>Send logo, quantity and deadline. We reply within 1 business day.</span></div><a class="btn btn-yellow" href="/contact">Get Free Quote</a></div></div></div></div><a href="/custom">Custom</a><a href="/about">About Us</a><a href="/blog">Blog</a><a href="/contact">Contact Us</a></nav><div class="nav-actions"><a class="btn btn-primary" href="/contact">Get Free Quote</a><button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">&#9776;</button></div></div></header>`;
+  ${siteHeaderHtml()}`;
 
 
 const faqGroups = [
@@ -52,7 +53,7 @@ const faqGroups = [
       ["What is your minimum order quantity?", "We do not have a fixed minimum order quantity. You can start from 1 piece."],
       ["Do you offer better prices for bulk orders?", "Yes. Unit cost usually decreases as quantity increases because mold and setup costs are shared across more pieces."],
       ["Are mold and setup fees included in the product price?", "Mold and setup fees depend on the product design and production requirements. For new custom designs, mold costs may apply. For repeat orders using existing molds, additional mold charges are usually not required."],
-      ["Can I order a small quantity first?", "A: Yes. We support trial orders and sample production to help customers evaluate product quality before placing larger orders."],
+      ["Can I order a small quantity first?", "Yes. We support trial orders and sample production to help customers evaluate product quality before placing larger orders."],
       ["How long does mass production take?", "Typical production takes about 15-25 days after sample or artwork approval. Complex 3D, dual-plating, special packaging or large orders may need more time."],
       ["Can urgent orders be expedited?", "We can review the schedule and prioritize urgent projects when production capacity allows. Share your event date as early as possible."]
     ]

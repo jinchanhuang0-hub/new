@@ -1,10 +1,18 @@
 const nav = document.querySelector(".nav");
 const toggle = document.querySelector(".menu-toggle");
 
+const loadDeferredImages = (root = document) => {
+  root.querySelectorAll("img[data-src]").forEach((image) => {
+    image.src = image.dataset.src;
+    image.removeAttribute("data-src");
+  });
+};
+
 if (toggle && nav) {
   toggle.addEventListener("click", () => {
     nav.classList.toggle("open");
     toggle.setAttribute("aria-expanded", nav.classList.contains("open") ? "true" : "false");
+    if (nav.classList.contains("open")) loadDeferredImages(nav);
   });
 
   nav.addEventListener("click", (event) => {
@@ -26,6 +34,7 @@ document.querySelectorAll(".products-menu").forEach((menu) => {
 
   const openMenu = () => {
     window.clearTimeout(closeTimer);
+    loadDeferredImages(menu);
     menu.classList.add("is-open");
   };
 
@@ -171,7 +180,18 @@ document.querySelectorAll("[data-video-lightbox-trigger]").forEach((trigger) => 
   };
 
   trigger.addEventListener("click", (event) => {
-    if (event.target.closest("video")) return;
+    const expandHint = event.target.closest(".video-expand-hint");
+    const inlineVideo = trigger.querySelector("video");
+    if (!expandHint && inlineVideo) {
+      const videoRect = inlineVideo.getBoundingClientRect();
+      const isInsideVideo =
+        event.clientX >= videoRect.left
+        && event.clientX <= videoRect.right
+        && event.clientY >= videoRect.top
+        && event.clientY <= videoRect.bottom;
+      if (isInsideVideo) return;
+    }
+    event.preventDefault();
     openVideoLightbox();
   });
   trigger.addEventListener("keydown", (event) => {

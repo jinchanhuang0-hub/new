@@ -280,6 +280,44 @@ const withBlogArticleDefaults = (article) => {
 };
 
 const blogArticleData = {
+  "custom-metal-keychain-materials": {
+    title: "Custom Metal Keychain Materials: 4 Metals Compared",
+    headline: "Custom Metal Keychain Materials: Zinc Alloy vs Brass vs Stainless Steel vs Iron",
+    description:
+      "Compare zinc alloy, brass, stainless steel and iron for custom metal keychains. Choose the right metal by design, durability, finish, application and budget.",
+    author: "Sunny Huang",
+    authorType: "Person",
+    datePublished: "2026-08-12",
+    dateModified: "2026-08-12",
+    image: "/assets/images/custom-metal-keychain-materials-comparison.webp",
+    faq: [
+      {
+        question: "What is the best material for a custom metal keychain?",
+        answer:
+          "The best material depends on the design and use. Zinc alloy suits complex 3D shapes, brass supports premium merchandise, stainless steel may suit flat corrosion-resistant designs when the grade is appropriate, and iron-based construction is practical for simple cost-sensitive orders.",
+      },
+      {
+        question: "Is zinc alloy better than stainless steel?",
+        answer:
+          "Neither is universally better. Zinc alloy offers greater freedom for die-cast shapes and sculpted relief. Stainless steel is more suitable for many flat, engraved or moisture-exposed applications.",
+      },
+      {
+        question: "Which material is normally the most economical?",
+        answer:
+          "Iron-based steel is often economical for a simple stamped design. However, tooling, size, thickness, surface treatment, hardware, packaging and quantity determine the total project cost.",
+      },
+      {
+        question: "Can an iron-based keychain rust?",
+        answer:
+          "Unprotected iron-based steel can corrode. Plating or coating reduces the risk, but damaged or incompletely covered areas may remain vulnerable. Surface protection and packaging should be confirmed for humid destinations.",
+      },
+      {
+        question: "Should buyers approve a physical sample?",
+        answer:
+          "A physical sample is recommended when thickness, weight, surface finish, 3D relief, functionality or retail presentation matters. Photographs cannot fully communicate balance, surface feel or hardware performance.",
+      },
+    ],
+  },
   "custom-marathon-medals-guide": {
     title: "Custom Marathon Medals: Size, Ribbon, Finish & QC Guide",
     headline: "Custom Marathon Medals Guide: Size, Ribbon, Finish and Factory QC Tips",
@@ -526,8 +564,28 @@ export const blogArticles = Object.fromEntries(
   ]),
 );
 
+const addImagePerformanceDefaults = (html) =>
+  html.replace(/<img\b([^>]*)>/g, (match, attrs) => {
+    let nextAttrs = attrs;
+    const isPriorityImage = /\bfetchpriority=/.test(nextAttrs)
+      || /\bclass=["'][^"']*\bhero-bg\b/.test(nextAttrs)
+      || /\bclass=["'][^"']*\bsingle-product-main-image\b/.test(nextAttrs)
+      || /\bdata-main-image\b/.test(nextAttrs)
+      || /\balt=["']Unique Pin logo["']/.test(nextAttrs);
+
+    if (!/\bdecoding=/.test(nextAttrs)) {
+      nextAttrs += ' decoding="async"';
+    }
+
+    if (!isPriorityImage && !/\bloading=/.test(nextAttrs)) {
+      nextAttrs += ' loading="lazy"';
+    }
+
+    return `<img${nextAttrs}>`;
+  });
+
 export const normalizeSiteHtml = (html) =>
-  html
+  addImagePerformanceDefaults(html
     .replaceAll("Golf Ball Markers &amp;Hat Clips", "Golf Accessories")
     .replaceAll("Golf Ball Markers &amp; Hat Clips", "Golf Accessories")
     .replace(/href="\/blog\/([a-z0-9-]+)#\1"/g, 'href="/blog/$1"')
@@ -548,4 +606,7 @@ export const normalizeSiteHtml = (html) =>
       '$1<img loading="lazy" decoding="async"',
     )
     .replaceAll('src="assets/', 'src="/assets/')
-    .replaceAll('href="assets/', 'href="/assets/');
+    .replaceAll('href="assets/', 'href="/assets/')
+    .replaceAll('poster="assets/', 'poster="/assets/')
+    .replaceAll('data-video-src="assets/', 'data-video-src="/assets/')
+    .replaceAll('data-video-poster="assets/', 'data-video-poster="/assets/'));

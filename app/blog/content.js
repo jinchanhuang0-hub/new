@@ -1,5 +1,8 @@
 import StaticPage from "../components/StaticPage";
 import { footerHtml } from "../components/footerHtml";
+import { siteHeaderHtml } from "../components/siteHeaderHtml";
+import { customMetalKeychainMaterialsArticleHtml } from "./customMetalKeychainMaterials";
+
 
 export const metadata = {
   title: "Custom Metal Crafts Manufacturer Guide",
@@ -7,8 +10,7 @@ export const metadata = {
 };
 
 export const blogHtml = String.raw`
-  <div class="topbar"><div class="container"><span>Team Industry Experience Since 2003</span><span>Email: ceo@chinauniquepin.com | WhatsApp: +86 18895316838</span></div></div>
-  <header class="site-header"><div class="container nav-wrap"><a class="brand" href="/"><img src="assets/images/logo.png" alt="Unique Pin logo"><span><strong>Unique Pin</strong><span>Custom Metal Gifts Factory</span></span></a><nav class="nav" aria-label="Main navigation"><a href="/">Home</a><div class="nav-item products-menu"><a href="/products">Products</a><div class="mega-dropdown" role="menu" aria-label="Products mega menu"><div class="mega-panel"><div class="mega-featured"><a class="mega-product" href="/products/custom-enamel-pins"><img src="assets/images/mega-lapel-pins-auburn.jpg" alt="Custom Auburn lapel pin"><span>Lapel Pins</span><small>Custom enamel pins for brands, events and clubs.</small></a><a class="mega-product" href="/products/custom-medals"><img src="assets/images/mega-medals-butterfly.png" alt="Custom butterfly medal with ribbon"><span>Medals</span><small>Colorful award medals with ribbons and finishes.</small></a><a class="mega-product" href="/products/custom-challenge-coins"><img src="assets/images/mega-challenge-coin-christmas.jpg" alt="Custom Christmas challenge coin"><span>Challenge Coins</span><small>Detailed coins for recognition and commemorations.</small></a></div><div class="mega-list"><a href="/products/custom-enamel-pins">Lapel Pins</a><a href="/products/custom-challenge-coins">Challenge Coins</a><a href="/products/custom-medals">Medals</a><a href="/products/custom-metal-keychains">Keychains</a><a href="/products/custom-belt-buckles">Belt Buckles</a><a href="/products/custom-golf-accessories">Golf Ball Markers &amp;Hat Clips</a><a href="/products/custom-bottle-openers">Bottle Openers</a><a href="/products/custom-cufflinks-tie-clips">Cufflinks &amp; Tie Clips</a><a href="/products/custom-fridge-magnets">Fridge Magnets</a></div><div class="mega-cta"><div><strong>Need a custom product quote?</strong><span>Send logo, quantity and deadline. We reply within 1 business day.</span></div><a class="btn btn-yellow" href="/contact">Get Free Quote</a></div></div></div></div><a href="/custom">Custom</a><a href="/about">About Us</a><a class="active" href="/blog">Blog</a><a href="/contact">Contact Us</a></nav><div class="nav-actions"><a class="btn btn-primary" href="/contact">Get Free Quote</a><button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">&#9776;</button></div></div></header>
+  ${siteHeaderHtml({ active: "blog" })}
   <main>
     <section class="page-hero blog-page-hero">
       <div class="container">
@@ -34,6 +36,15 @@ export const blogHtml = String.raw`
           <button type="button" data-blog-category="Uncategorized">Uncategorized</button>
         </div>
         <div class="blog-card-grid">
+          <a class="blog-feature-card" href="/blog/custom-metal-keychain-materials" data-blog-category="Custom Keychains" aria-label="Read Custom Metal Keychain Materials: Zinc Alloy vs Brass vs Stainless Steel vs Iron">
+            <img src="/assets/images/custom-metal-keychain-materials-comparison.webp" width="1200" height="675" alt="Custom metal keychain materials compared in zinc alloy, brass, stainless steel and iron finishes">
+            <div class="blog-feature-body">
+              <div class="blog-feature-meta"><span>Custom Keychains</span><span>Material Guide</span></div>
+              <h2>Custom Metal Keychain Materials: Zinc Alloy vs Brass vs Stainless Steel vs Iron</h2>
+              <p>Compare four common metals by design flexibility, durability, finish, manufacturing process, application and budget.</p>
+              <span class="blog-feature-link">Read More</span>
+            </div>
+          </a>
           <a class="blog-feature-card" href="/blog/custom-marathon-medals-guide" data-blog-category="Custom Medals" aria-label="Read Custom Marathon Medals Guide">
             <img src="/assets/images/blog-custom-marathon-medals-hero.webp" width="1600" height="900" alt="custom marathon medals with printed ribbons for running events">
             <div class="blog-feature-body">
@@ -127,6 +138,7 @@ export const blogHtml = String.raw`
         </div>
       </div>
     </section>
+    ${customMetalKeychainMaterialsArticleHtml}
     <article id="custom-marathon-medals-guide" class="section blog-article-section blog-marathon-medals-article">
       <div class="blog-article-shell">
         <aside class="blog-article-toc" aria-label="Article contents">

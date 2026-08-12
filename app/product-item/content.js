@@ -2,6 +2,8 @@ import StaticPage from "../components/StaticPage";
 import { footerHtml } from "../components/footerHtml";
 import { getProductPath } from "../lib/siteRoutes";
 import { compareProductEntriesBySkuDesc } from "../lib/productSorting";
+import { siteHeaderHtml } from "../components/siteHeaderHtml";
+
 
 export const productItems = {
   "uv-printed-masquerade-day-lapel-pin": {
@@ -2692,8 +2694,7 @@ export async function generateMetadata({ searchParams }) {
 
 const html = String.raw`
   <script type="application/json" data-product-item-data>${JSON.stringify(productItems)}</script>
-  <div class="topbar"><div class="container"><span>Team Industry Experience Since 2003</span><span>Email: ceo@chinauniquepin.com | WhatsApp: +86 18895316838</span></div></div>
-  <header class="site-header"><div class="container nav-wrap"><a class="brand" href="/"><img src="assets/images/logo.png" alt="Unique Pin logo"><span><strong>Unique Pin</strong><span>Custom Metal Gifts Factory</span></span></a><nav class="nav" aria-label="Main navigation"><a href="/">Home</a><div class="nav-item products-menu"><a class="active" href="/products">Products</a></div><a href="/custom">Custom</a><a href="/about">About Us</a><a href="/blog">Blog</a><a href="/contact">Contact Us</a></nav><div class="nav-actions"><a class="btn btn-primary" href="/contact">Get Free Quote</a><button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">&#9776;</button></div></div></header>
+  ${siteHeaderHtml({ active: "products" })}
 
   <main class="single-product-page" data-product-item-page>
     <section class="single-product-hero">

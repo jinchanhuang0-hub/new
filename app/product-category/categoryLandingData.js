@@ -1,4 +1,5 @@
 import { footerHtml } from "../components/footerHtml";
+import { siteHeaderHtml } from "../components/siteHeaderHtml";
 
 const productOptions = [
   "Lapel Pins",
@@ -19,9 +20,6 @@ const escapeHtml = (value = "") => String(value)
   .replaceAll(">", "&gt;")
   .replaceAll('"', "&quot;");
 
-const renderHeader = () => String.raw`
-  <div class="topbar"><div class="container"><span>Team Industry Experience Since 2003</span><span>Email: ceo@chinauniquepin.com | WhatsApp: +86 18895316838</span></div></div>
-  <header class="site-header"><div class="container nav-wrap"><a class="brand" href="/"><img src="assets/images/logo.png" alt="Unique Pin logo"><span><strong>Unique Pin</strong><span>Custom Metal Gifts Factory</span></span></a><nav class="nav" aria-label="Main navigation"><a href="/">Home</a><div class="nav-item products-menu"><a class="active" href="/products">Products</a><div class="mega-dropdown" role="menu" aria-label="Products mega menu"><div class="mega-panel"><div class="mega-featured"><a class="mega-product" href="/products/custom-enamel-pins"><img src="assets/images/mega-lapel-pins-auburn.jpg" alt="Custom Auburn lapel pin"><span>Lapel Pins</span><small>Custom enamel pins for brands, events and clubs.</small></a><a class="mega-product" href="/products/custom-medals"><img src="assets/images/mega-medals-butterfly.png" alt="Custom butterfly medal with ribbon"><span>Medals</span><small>Colorful award medals with ribbons and finishes.</small></a><a class="mega-product" href="/products/custom-challenge-coins"><img src="assets/images/mega-challenge-coin-christmas.jpg" alt="Custom Christmas challenge coin"><span>Challenge Coins</span><small>Detailed coins for recognition and commemorations.</small></a></div><div class="mega-list"><a href="/products/custom-enamel-pins">Lapel Pins</a><a href="/products/custom-challenge-coins">Challenge Coins</a><a href="/products/custom-medals">Medals</a><a href="/products/custom-metal-keychains">Keychains</a><a href="/products/custom-belt-buckles">Belt Buckles</a><a href="/products/custom-golf-accessories">Golf Accessories</a><a href="/products/custom-bottle-openers">Bottle Openers</a><a href="/products/custom-cufflinks-tie-clips">Cufflinks &amp; Tie Clips</a><a href="/products/custom-fridge-magnets">Fridge Magnets</a></div><div class="mega-cta"><div><strong>Need a custom product quote?</strong><span>Send logo, quantity and deadline. We reply within 1 business day.</span></div><a class="btn btn-yellow" href="/contact">Get Free Quote</a></div></div></div></div><a href="/custom">Custom</a><a href="/about">About Us</a><a href="/blog">Blog</a><a href="/contact">Contact Us</a></nav><div class="nav-actions"><a class="btn btn-primary" href="/contact">Get Free Quote</a><button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">&#9776;</button></div></div></header>`;
 
 export const homeProductLandingPages = [
   {
@@ -46,6 +44,7 @@ export const homeProductLandingPages = [
         title: "Soft Enamel Lapel Pins",
         image: "assets/images/type-pins-auburn-proud.jpg",
         href: "/products/custom-enamel-pins/auburn-proud-soft-enamel-pin",
+        buttonLabel: "Explore Soft Enamel Pins",
         copy: "Raised metal lines and recessed enamel colors create a distinctive textured finish. A versatile choice for clubs, schools, events, promotional campaigns and branded merchandise.",
       },
       {
@@ -53,6 +52,7 @@ export const homeProductLandingPages = [
         title: "Hard Enamel Lapel Pins",
         image: "assets/images/type-pins-yellow-character.jpg",
         href: "/products/custom-enamel-pins/yellow-character-hard-enamel-pin",
+        buttonLabel: "Explore Hard Enamel Pins",
         copy: "Enamel colors are polished flush with the metal lines to create a smooth, durable and refined surface. Ideal for premium merchandise, corporate gifts, membership programs and retail collections.",
       },
       {
@@ -60,6 +60,7 @@ export const homeProductLandingPages = [
         title: "3D Zinc Alloy Lapel Pins",
         image: "assets/images/type-pins-3d-zinc-alloy.png",
         href: "/products/custom-enamel-pins/skull-axe-3d-zinc-alloy-lapel-pin",
+        buttonLabel: "Explore 3D Zinc Alloy Pins",
         copy: "Zinc alloy casting supports sculpted relief, dimensional details and complex custom shapes. Well suited for mascots, character designs, commemorative pieces and distinctive brand merchandise.",
       },
       {
@@ -68,6 +69,7 @@ export const homeProductLandingPages = [
         title: "UV Printed Lapel Pins",
         image: "assets/images/type-pins-uv-printed-masquerade-day.png",
         href: "/products/custom-enamel-pins/uv-printed-masquerade-day-lapel-pin",
+        buttonLabel: "Explore UV Printed Pins",
         copy: "Reproduce photographs, gradients and intricate artwork in vibrant color. A versatile option for detailed logos, characters, events and promotional designs.",
       },
       {
@@ -76,6 +78,7 @@ export const homeProductLandingPages = [
         image: "assets/images/type-pins-die-struck.jpg",
         reverse: false,
         href: "/products/custom-enamel-pins/antique-silver-guitar-crest-enamel-pin",
+        buttonLabel: "Explore Antique Pins",
         copy: "Antique plating enhances recessed details and raised metal surfaces, creating a distinctive, time-worn appearance. Ideal for commemorative pins, formal emblems, clubs and heritage-inspired designs.",
       },
       {
@@ -84,6 +87,7 @@ export const homeProductLandingPages = [
         image: "assets/images/type-pins-aaa-antique-round.png",
         reverse: true,
         href: "/products/custom-enamel-pins/aaa-antique-round-lapel-pin",
+        buttonLabel: "Explore Die Struck Pins",
         copy: "Die-struck production creates clean raised and recessed metal details without enamel colors. A refined choice for corporate recognition, service awards, commemorative events and official emblems.",
       },
     ],
@@ -110,6 +114,7 @@ export const homeProductLandingPages = [
         title: "Custom Sports Medals",
         image: "assets/images/type-medals-sports.png",
         href: "/products/custom-medals/silver-basketball-sports-medal-with-ribbon",
+        buttonLabel: "Explore Sports Medals",
         copy: "Create custom sports medals with your logo, event name and choice of shape, color, plating and ribbon. Ideal for tournaments, leagues, clubs and team competitions.",
       },
       {
@@ -117,6 +122,7 @@ export const homeProductLandingPages = [
         title: "Marathon & Running Medals",
         image: "assets/images/type-medals-city-finisher-52195-ribbon.jpg",
         href: "/products/custom-medals/city-finisher-52195-ribbon-medal",
+        buttonLabel: "Explore Running Medals",
         copy: "Custom finisher medals for marathons, 5K and 10K races, charity runs, trail races and virtual events, available with personalized artwork, finishes and event ribbons.",
       },
       {
@@ -124,6 +130,7 @@ export const homeProductLandingPages = [
         title: "Custom School & Academic Medals",
         image: "assets/images/type-medals-3d.png",
         href: "/products/custom-medals/3d-shield-logo-award-medal",
+        buttonLabel: "Explore Academic Medals",
         copy: "Personalized school medals for academic achievement, student competitions, graduation ceremonies and recognition programs, customized with your school logo, text, colors and ribbon.",
       },
       {
@@ -131,6 +138,7 @@ export const homeProductLandingPages = [
         title: "Corporate Award Medals",
         image: "assets/images/type-medals-award.png",
         href: "/products/custom-medals/silver-race-award-medal-with-ribbon",
+        buttonLabel: "Explore Award Medals",
         copy: "Custom award medals for employee recognition, company anniversaries, sales achievements and corporate events, available with branded artwork, premium finishes and presentation packaging.",
       },
       {
@@ -138,6 +146,7 @@ export const homeProductLandingPages = [
         title: "Custom Event Medals",
         image: "assets/images/type-medals-medal-depot-carnival-run.jpg",
         href: "/products/custom-medals/medal-depot-carnival-run-ribbon-medal",
+        buttonLabel: "Explore Event Medals",
         copy: "Create custom event medals with your logo, artwork and event details. Ideal for festivals, charity events, community programs, club activities and branded promotional campaigns.",
       },
       {
@@ -145,6 +154,7 @@ export const homeProductLandingPages = [
         title: "Commemorative Medals",
         image: "assets/images/type-medals-grielacher-ellene-anniversary.png",
         href: "/products/custom-medals/grielacher-ellene-anniversary-medal",
+        buttonLabel: "Explore Commemorative Medals",
         copy: "Custom commemorative medals designed for anniversaries, ceremonies, service recognition, organizational milestones and special occasions, with personalized artwork, finishes and presentation options.",
       },
     ],
@@ -301,6 +311,7 @@ export const homeProductLandingPages = [
         title: "Western Belt Buckles",
         image: "assets/images/type-buckles-western.jpg",
         href: "/products/custom-belt-buckles/western-skull-relief-belt-buckle",
+        buttonLabel: "Explore Western Buckles",
         copy: "Western buckles suit rodeo events, clubs, fashion accessories and retail merchandise with bold relief artwork.",
       },
       {
@@ -308,6 +319,7 @@ export const homeProductLandingPages = [
         title: "Logo Belt Buckles",
         image: "assets/images/type-buckles-logo.jpg",
         href: "/products/custom-belt-buckles/oval-relief-logo-metal-belt-buckle",
+        buttonLabel: "Explore Logo Buckles",
         copy: "Logo buckles give brands, teams and organizations a larger metal surface for identity and detail.",
       },
       {
@@ -315,6 +327,7 @@ export const homeProductLandingPages = [
         title: "Antique Belt Buckles",
         image: "assets/images/type-buckles-antique.jpg",
         href: "/products/custom-belt-buckles/antique-silver-rectangle-logo-belt-buckle",
+        buttonLabel: "Explore Antique Buckles",
         copy: "Antique plating brings out raised and recessed details while giving the buckle a durable, collectible feel.",
       },
       {
@@ -322,6 +335,7 @@ export const homeProductLandingPages = [
         title: "Enamel Belt Buckles",
         image: "assets/images/type-buckles-enamel.jpg",
         href: "/products/custom-belt-buckles/oval-club-logo-enamel-belt-buckle",
+        buttonLabel: "Explore Enamel Buckles",
         copy: "Enamel buckles combine metal relief with color blocks for club logos, team marks and branded designs.",
       },
     ],
@@ -348,6 +362,7 @@ export const homeProductLandingPages = [
         title: "Golf Ball Markers",
         image: "assets/images/type-golf-ball-marker.jpg",
         href: "/products/custom-golf-accessories/antique-golf-club-divot-tool-ball-marker",
+        buttonLabel: "Explore Golf Ball Markers",
         copy: "Custom ball markers are compact, useful and easy to brand for tournaments, pro shops and membership gifts.",
       },
       {
@@ -355,6 +370,7 @@ export const homeProductLandingPages = [
         title: "Golf Hat Clips",
         image: "assets/images/type-golf-hat-clip.jpg",
         href: "/products/custom-golf-accessories/avocado-golf-hat-clip-ball-marker",
+        buttonLabel: "Explore Golf Hat Clips",
         copy: "Hat clips keep the marker visible and accessible, making them a stronger retail or club gift than loose markers.",
       },
       {
@@ -362,6 +378,7 @@ export const homeProductLandingPages = [
         title: "Golf Divot Tools",
         image: "assets/images/type-golf-divot-tool.jpg",
         href: "/products/custom-golf-accessories/color-logo-golf-divot-tool-set",
+        buttonLabel: "Explore Divot Tools",
         copy: "Divot tools can pair with magnetic markers for sponsor gifts, resort merchandise and tournament welcome packs.",
       },
       {
@@ -369,6 +386,7 @@ export const homeProductLandingPages = [
         title: "Character Marker Sets",
         image: "assets/images/type-golf-animal-marker-set.jpg",
         href: "/products/custom-golf-accessories/animal-character-golf-ball-marker-set",
+        buttonLabel: "Explore Marker Sets",
         copy: "Character and theme marker sets add personality to golf gift lines while keeping the product useful on the course.",
       },
     ],
@@ -500,8 +518,8 @@ ${renderProductOptions(page.formProduct)}
     </section>`;
 
 export const renderHomeProductLandingHtml = (page) => String.raw`
-  ${renderHeader()}
-  <main class="home-category-page">
+  ${siteHeaderHtml({ active: "products" })}
+  <main class="home-category-page" data-category-slug="${escapeHtml(page.slug)}">
     <section class="home-category-hero${page.heroBackground ? " has-background-image" : ""}">
 ${renderHeroBackground(page)}
       <div class="container home-category-hero-inner">

@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 
 const CONSENT_KEY = "uccrafts_analytics_consent";
+const CONSENT_EVENT = "uccrafts:analytics-consent-changed";
 const GTM_ID = "GTM-PVLJT85N";
 
 const consentValues = {
@@ -106,6 +107,7 @@ export default function AnalyticsConsent() {
       removeAnalyticsCookies();
     }
 
+    window.dispatchEvent(new CustomEvent(CONSENT_EVENT, { detail: { choice: nextChoice } }));
     setIsOpen(false);
   };
 

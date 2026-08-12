@@ -13,3 +13,5 @@ tmp/
 tmp-*.png
 .DS_Store
 Thumbs.db
+.vercel
+.env*

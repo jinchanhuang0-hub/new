@@ -37,7 +37,7 @@ export const renderProductTypeCards = (categoryKey, options = {}) =>
       : "";
 
     return `          <article class="product-type-card"${categoryAttrs}>
-            <a class="product-type-media" href="${escapeHtml(productPath)}"><img src="${escapeHtml(product.image)}" alt="${escapeHtml(product.alt || product.title)}"></a>
+            <a class="product-type-media" href="${escapeHtml(productPath)}"><img src="${escapeHtml(product.image)}" width="800" height="800" loading="lazy" decoding="async" alt="${escapeHtml(product.alt || product.title)}"></a>
             <h2><a href="${escapeHtml(productPath)}">${escapeHtml(product.title)}</a></h2>
             <div class="product-type-actions">
               <a class="product-type-btn product-type-btn-outline" href="${escapeHtml(productPath)}">View Details</a>
