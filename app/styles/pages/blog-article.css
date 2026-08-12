@@ -125,6 +125,21 @@
   max-height: 480px;
 }
 
+#custom-metal-keychain-materials .blog-article-header > .blog-article-hero-image.blog-article-natural-image {
+  width: calc(100% + (2 * var(--article-pad)));
+  max-width: none;
+  margin-left: calc(var(--article-pad) * -1);
+  margin-right: calc(var(--article-pad) * -1);
+}
+
+#custom-metal-keychain-materials .blog-article-header > .blog-article-hero-image.blog-article-natural-image img {
+  width: 100%;
+  max-width: none;
+  height: auto;
+  padding: 0;
+  object-fit: cover;
+}
+
 .blog-article-image-pair .blog-article-cropped-image img {
   object-fit: contain;
   padding: 18px;
