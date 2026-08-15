@@ -201,6 +201,7 @@
   }
 
   .split,
+  .home-company-layout,
   .detail-layout,
   .contact-layout,
   .footer-quote,
@@ -614,6 +615,15 @@
     padding: 28px 23px;
   }
 
+  .home-company-layout {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .home-company-copy h2 {
+    max-width: 680px;
+  }
+
   .about-hero {
     padding: 38px 0 34px;
   }
@@ -775,6 +785,7 @@
   }
 
   .hero-proof,
+  .home-company-layout,
   .grid-3,
   .grid-4,
   .why-grid,
@@ -787,6 +798,31 @@
   .footer-form-grid,
   .form-row {
     grid-template-columns: 1fr;
+  }
+
+  .home-company-section {
+    padding: 58px 0;
+  }
+
+  .home-company-media::before {
+    inset: 12px -10px -10px 10px;
+  }
+
+  .home-company-copy h2 {
+    font-size: 30px;
+  }
+
+  .home-company-copy p {
+    font-size: 16px;
+  }
+
+  .home-company-actions {
+    width: 100%;
+  }
+
+  .home-company-actions .btn {
+    flex: 1 1 160px;
+    justify-content: center;
   }
 
   .how-steps {

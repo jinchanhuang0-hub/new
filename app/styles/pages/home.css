@@ -324,6 +324,84 @@
   background: #fff;
 }
 
+.home-company-section {
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+}
+
+.home-company-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(360px, 0.95fr);
+  align-items: center;
+  gap: 46px;
+}
+
+.home-company-media {
+  position: relative;
+}
+
+.home-company-video {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border: 1px solid rgba(196, 209, 230, 0.85);
+  border-radius: 8px;
+  background: #071b38;
+  box-shadow: 0 24px 60px rgba(11, 47, 99, 0.16);
+}
+
+.home-company-copy {
+  min-width: 0;
+}
+
+.home-company-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--navy);
+  font-size: 13px;
+  font-weight: 850;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.home-company-eyebrow::before {
+  content: "";
+  width: 42px;
+  height: 4px;
+  border-radius: 999px;
+  background: var(--yellow);
+}
+
+.home-company-copy h2 {
+  margin: 14px 0 18px;
+  color: var(--navy);
+  font-size: clamp(30px, 3vw, 44px);
+  line-height: 1.1;
+  letter-spacing: 0;
+}
+
+.home-company-copy p {
+  margin: 0;
+  color: #223653;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.home-company-copy p + p {
+  margin-top: 14px;
+}
+
+.home-company-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
 .contact-products-cta-section .cta-band h2 {
   max-width: none;
   white-space: nowrap;

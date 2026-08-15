@@ -5,9 +5,7 @@
 /* PC styles */
 .reviews-section {
   overflow: hidden;
-  background:
-    radial-gradient(circle at 50% 0%, rgba(243, 198, 0, 0.08), rgba(255, 255, 255, 0) 34%),
-    #fff;
+  background: #fff;
 }
 
 .reviews-head h2 {

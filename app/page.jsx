@@ -287,6 +287,26 @@ const html = String.raw`
       </div>
     </section>
 
+    <section class="section home-company-section" aria-labelledby="home-company-title">
+      <div class="container home-company-layout">
+        <div class="home-company-media">
+          <video class="home-company-video" controls playsinline preload="metadata" aria-label="Unique Pin company and product overview video">
+            <source src="/assets/videos/company-overview.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="home-company-copy">
+          <span class="home-company-eyebrow">Custom Metal Gifts Manufacturer</span>
+          <h2 id="home-company-title">Meet Unique Pin</h2>
+          <p>Take a 34-second look inside our 6,000 m² factory in Zhongshan, China. With 34 production machines, our in-house team manages CNC engraving, die casting, polishing, plating, enamel coloring, inspection and packing.</p>
+          <p>We manufacture custom enamel pins, challenge coins, medals, keychains and belt buckles for distributors, brands, clubs and event organizers-from artwork proofing to global delivery.</p>
+          <div class="home-company-actions">
+            <a class="btn btn-primary" href="/about">About Us</a>
+            <a class="btn btn-outline" href="/products">View Products</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="section reviews-section">
       <div class="container">
         <div class="center-head reviews-head">

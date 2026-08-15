@@ -28,7 +28,7 @@ const faqGroups = [
       ["What file formats do you accept?", "Vector files such as AI, PDF, EPS, CDR and SVG are best. High-resolution PNG, JPG and PSD files can also be used when vector artwork is not available."],
       ["Can I customize the size, shape, color, and finish?", "Yes. Almost every detail can be customized, including product size, shape, thickness, color, plating, surface finish, and attachment options."],
       ["Can I modify my order after proof approval?", "Small changes are possible before mold making or production starts. Once production begins, changes may affect cost and lead time."],
-      ["Will I receive a design proof before production?", "A: Yes. Before mass production, we provide digital artwork and production proofs for your approval. Production will only begin after confirming all details with you."]
+      ["Will I receive a design proof before production?", "Yes. Before mass production, we provide digital artwork and production proofs for your approval. Production will only begin after confirming all details with you."]
     ]
   },
   {
