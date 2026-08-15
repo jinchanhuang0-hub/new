@@ -686,23 +686,23 @@
 }
 
 .brand-logo img[src$="pepsi.png"],
-.brand-logo img[src$="starbucks.png"] {
+.brand-logo img[src$="starbucks.webp"] {
   max-width: 147px;
   max-height: 147px;
 }
 
-.brand-logo img[src$="walmart.png"] {
+.brand-logo img[src$="walmart.webp"] {
   max-width: 230px;
   max-height: 230px;
 }
 
-.brand-logo img[src$="mars.png"],
-.brand-logo img[src$="mercedes.png"] {
+.brand-logo img[src$="mars.webp"],
+.brand-logo img[src$="mercedes.webp"] {
   max-width: 154px;
   max-height: 154px;
 }
 
-.brand-logo img[src$="mercedes.png"] {
+.brand-logo img[src$="mercedes.webp"] {
   max-width: 177px;
   max-height: 177px;
 }

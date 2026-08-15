@@ -52,38 +52,38 @@ const html = String.raw`
           <span class="brand-logo"><img src="assets/images/brands/disney.svg" alt="Disney logo"></span>
           <span class="brand-logo logo-square"><img src="assets/images/brands/pepsi.png" alt="Pepsi logo"></span>
           <span class="brand-logo logo-square"><img src="assets/images/brands/lego.svg" alt="LEGO logo"></span>
-          <span class="brand-logo logo-square"><img src="assets/images/brands/starbucks.png" alt="Starbucks logo"></span>
-          <span class="brand-logo"><img src="assets/images/brands/walmart.png" alt="Walmart logo"></span>
-          <span class="brand-logo"><img src="assets/images/brands/mars.png" alt="Mars logo"></span>
+          <span class="brand-logo logo-square"><img src="assets/images/brands/starbucks.webp" alt="Starbucks logo"></span>
+          <span class="brand-logo"><img src="assets/images/brands/walmart.webp" alt="Walmart logo"></span>
+          <span class="brand-logo"><img src="assets/images/brands/mars.webp" alt="Mars logo"></span>
           <span class="brand-logo"><img src="assets/images/brands/nike.svg" alt="Nike logo"></span>
           <span class="brand-logo"><img src="assets/images/brands/adidas.svg" alt="adidas logo"></span>
-          <span class="brand-logo"><img src="assets/images/brands/mercedes.png" alt="Mercedes-Benz logo"></span>
-          <span class="brand-logo logo-square"><img src="assets/images/brands/bmw.png" alt="BMW logo"></span>
+          <span class="brand-logo"><img src="assets/images/brands/mercedes.webp" alt="Mercedes-Benz logo"></span>
+          <span class="brand-logo logo-square"><img src="assets/images/brands/bmw.webp" alt="BMW logo"></span>
           <span class="brand-logo"><img src="assets/images/brands/marvel.svg" alt="MARVEL logo"></span>
-          <span class="brand-logo logo-square logo-kfc"><img src="assets/images/brands/kfc.png" alt="KFC logo"></span>
-          <span class="brand-logo logo-square logo-roomy"><img src="assets/images/brands/american-greetings.png" alt="American Greetings logo"></span>
-          <span class="brand-logo logo-square"><img src="assets/images/brands/teal-s-logo.png" alt="Teal S brand logo"></span>
-          <span class="brand-logo logo-square"><img src="assets/images/brands/lions-international.png" alt="Lions International logo"></span>
-          <span class="brand-logo logo-wide"><img src="assets/images/brands/turbovets.png" alt="Turbovets Tech For Heroes logo"></span>
+          <span class="brand-logo logo-square logo-kfc"><img src="assets/images/brands/kfc.webp" alt="KFC logo"></span>
+          <span class="brand-logo logo-square logo-roomy"><img src="assets/images/brands/american-greetings.webp" alt="American Greetings logo"></span>
+          <span class="brand-logo logo-square"><img src="assets/images/brands/teal-s-logo.webp" alt="Teal S brand logo"></span>
+          <span class="brand-logo logo-square"><img src="assets/images/brands/lions-international.webp" alt="Lions International logo"></span>
+          <span class="brand-logo logo-wide"><img src="assets/images/brands/turbovets.webp" alt="Turbovets Tech For Heroes logo"></span>
           <span class="brand-logo logo-square"><img src="assets/images/brands/nbc.svg" alt="NBC logo"></span>
           <span class="brand-logo"><img src="assets/images/brands/coca-cola.svg" alt="Coca-Cola logo"></span>
           <span class="brand-logo logo-square"><img src="assets/images/brands/mcdonalds.svg" alt="McDonald's logo"></span>
           <span class="brand-logo"><img src="assets/images/brands/disney.svg" alt="Disney logo"></span>
           <span class="brand-logo logo-square"><img src="assets/images/brands/pepsi.png" alt="Pepsi logo"></span>
           <span class="brand-logo logo-square"><img src="assets/images/brands/lego.svg" alt="LEGO logo"></span>
-          <span class="brand-logo logo-square"><img src="assets/images/brands/starbucks.png" alt="Starbucks logo"></span>
-          <span class="brand-logo"><img src="assets/images/brands/walmart.png" alt="Walmart logo"></span>
-          <span class="brand-logo"><img src="assets/images/brands/mars.png" alt="Mars logo"></span>
+          <span class="brand-logo logo-square"><img src="assets/images/brands/starbucks.webp" alt="Starbucks logo"></span>
+          <span class="brand-logo"><img src="assets/images/brands/walmart.webp" alt="Walmart logo"></span>
+          <span class="brand-logo"><img src="assets/images/brands/mars.webp" alt="Mars logo"></span>
           <span class="brand-logo"><img src="assets/images/brands/nike.svg" alt="Nike logo"></span>
           <span class="brand-logo"><img src="assets/images/brands/adidas.svg" alt="adidas logo"></span>
-          <span class="brand-logo"><img src="assets/images/brands/mercedes.png" alt="Mercedes-Benz logo"></span>
-          <span class="brand-logo logo-square"><img src="assets/images/brands/bmw.png" alt="BMW logo"></span>
+          <span class="brand-logo"><img src="assets/images/brands/mercedes.webp" alt="Mercedes-Benz logo"></span>
+          <span class="brand-logo logo-square"><img src="assets/images/brands/bmw.webp" alt="BMW logo"></span>
           <span class="brand-logo"><img src="assets/images/brands/marvel.svg" alt="MARVEL logo"></span>
-          <span class="brand-logo logo-square logo-kfc"><img src="assets/images/brands/kfc.png" alt="KFC logo"></span>
-          <span class="brand-logo logo-square logo-roomy"><img src="assets/images/brands/american-greetings.png" alt="American Greetings logo"></span>
-          <span class="brand-logo logo-square"><img src="assets/images/brands/teal-s-logo.png" alt="Teal S brand logo"></span>
-          <span class="brand-logo logo-square"><img src="assets/images/brands/lions-international.png" alt="Lions International logo"></span>
-          <span class="brand-logo logo-wide"><img src="assets/images/brands/turbovets.png" alt="Turbovets Tech For Heroes logo"></span>
+          <span class="brand-logo logo-square logo-kfc"><img src="assets/images/brands/kfc.webp" alt="KFC logo"></span>
+          <span class="brand-logo logo-square logo-roomy"><img src="assets/images/brands/american-greetings.webp" alt="American Greetings logo"></span>
+          <span class="brand-logo logo-square"><img src="assets/images/brands/teal-s-logo.webp" alt="Teal S brand logo"></span>
+          <span class="brand-logo logo-square"><img src="assets/images/brands/lions-international.webp" alt="Lions International logo"></span>
+          <span class="brand-logo logo-wide"><img src="assets/images/brands/turbovets.webp" alt="Turbovets Tech For Heroes logo"></span>
           <span class="brand-logo logo-square"><img src="assets/images/brands/nbc.svg" alt="NBC logo"></span>
         </div>
       </div>
@@ -415,27 +415,27 @@ const html = String.raw`
         </div>
         <div class="cert-grid">
           <figure class="cert" data-cert-lightbox-trigger role="button" tabindex="0" aria-label="View ISO 9001 certificate">
-            <img src="assets/images/cert-iso9001.png" alt="Unique Pin ISO9001 certificate">
+            <img src="assets/images/cert-iso9001.webp" alt="Unique Pin ISO9001 certificate">
             <figcaption class="cert-name">ISO 9001</figcaption>
           </figure>
           <figure class="cert" data-cert-lightbox-trigger role="button" tabindex="0" aria-label="View ISO 14001 certificate">
-            <img src="assets/images/cert-iso14001.png" alt="Unique Pin ISO14001 certificate">
+            <img src="assets/images/cert-iso14001.webp" alt="Unique Pin ISO14001 certificate">
             <figcaption class="cert-name">ISO 14001</figcaption>
           </figure>
           <figure class="cert" data-cert-lightbox-trigger role="button" tabindex="0" aria-label="View CE certificate">
-            <img src="assets/images/cert-ce.png" alt="Unique Pin CE certificate">
+            <img src="assets/images/cert-ce.webp" alt="Unique Pin CE certificate">
             <figcaption class="cert-name">CE</figcaption>
           </figure>
           <figure class="cert" data-cert-lightbox-trigger role="button" tabindex="0" aria-label="View RoHS certificate">
-            <img src="assets/images/cert-rohs.png" alt="Unique Pin RoHS certificate">
+            <img src="assets/images/cert-rohs.webp" alt="Unique Pin RoHS certificate">
             <figcaption class="cert-name">RoHS</figcaption>
           </figure>
           <figure class="cert" data-cert-lightbox-trigger role="button" tabindex="0" aria-label="View FSC certificate">
-            <img src="assets/images/cert-fsc.png" alt="Unique Pin FSC certificate">
+            <img src="assets/images/cert-fsc.webp" alt="Unique Pin FSC certificate">
             <figcaption class="cert-name">FSC</figcaption>
           </figure>
           <figure class="cert" data-cert-lightbox-trigger role="button" tabindex="0" aria-label="View SMETA certificate">
-            <img src="assets/images/cert-smeta.png" alt="Unique Pin SMETA certificate">
+            <img src="assets/images/cert-smeta.webp" alt="Unique Pin SMETA certificate">
             <figcaption class="cert-name">SMETA</figcaption>
           </figure>
         </div>
