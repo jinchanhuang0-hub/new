@@ -172,8 +172,10 @@
 .proof-item span {
   color: var(--muted);
   font-size: 13px;
+  line-height: 1.35;
   display: block;
   margin-top: 10px;
+  overflow-wrap: anywhere;
 }
 
 @media (max-width: 1760px) {
@@ -400,6 +402,11 @@
   flex-wrap: wrap;
   gap: 12px;
   margin-top: 28px;
+}
+
+.home-company-actions .btn {
+  min-width: 146px;
+  justify-content: center;
 }
 
 .contact-products-cta-section .cta-band h2 {

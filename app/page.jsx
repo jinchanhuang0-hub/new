@@ -29,7 +29,7 @@ const html = String.raw`
           <div class="hero-proof">
             <div class="proof-column">
               <div class="proof-item"><strong>20+</strong><span>Years Experience</span></div>
-              <div class="proof-item"><strong>100%</strong><span>Satisfaction</span></div>
+              <div class="proof-item"><strong>Free Design</strong><span>Artwork &amp; Digital Proof Support</span></div>
             </div>
             <div class="proof-column">
               <div class="proof-item"><strong>NO MOQ</strong><span>Flexible Custom Orders</span></div>
