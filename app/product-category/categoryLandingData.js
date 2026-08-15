@@ -24,12 +24,13 @@ const escapeHtml = (value = "") => String(value)
 export const homeProductLandingPages = [
   {
     slug: "custom-lapel-pins",
-    title: "Custom Lapel Pins",
+    title: "Lapel Pin Types & Techniques",
     shortLabel: "Lapel Pins",
     formProduct: "Lapel Pins",
     metaTitle: "Custom Lapel Pins | Enamel Pin Types & Free Quote",
     description: "Explore custom lapel pin styles including soft enamel, hard enamel, printed, antique and 3D pins before requesting a factory quote.",
-    heroCopy: "Create custom pins from your logo or artwork with soft enamel, hard enamel, die-struck and printed options. No minimum order and free artwork support.",
+    heroEyebrow: "Pin Style Guide",
+    heroCopy: "Compare soft enamel, hard enamel, die-struck, printed, antique and 3D lapel pin styles by texture, artwork fit and intended use. Choose the right technique before viewing finished pin examples.",
     heroBackground: "assets/images/home-category-lapel-pins-banner.png",
     includes: ["8mm post with butterfly or rubber clutch", "Up to 7 enamel colors for free", "Free mold for 2 inches or smaller on qualifying orders", "Worldwide shipping support", "Artwork proof before production"],
     heroImages: [
@@ -94,12 +95,13 @@ export const homeProductLandingPages = [
   },
   {
     slug: "custom-medals",
-    title: "Custom Medals",
+    title: "Medal Types",
     shortLabel: "Medals",
     formProduct: "Medals",
     metaTitle: "Custom Medals | Award Medal Styles & Free Quote",
     description: "Compare custom medal styles for races, tournaments, ceremonies and branded recognition programs before requesting a quote.",
-    heroCopy: "Create custom medals with your logo, artwork and choice of shape, finish, color and ribbon. Ideal for races, sporting events, schools, clubs, corporate awards and commemorative programs.",
+    heroEyebrow: "Medal Selection Guide",
+    heroCopy: "Compare sports, running, school, corporate, event and commemorative medals by recipient, presentation and program goal. Choose the right medal category before reviewing finished product examples.",
     heroBackground: "assets/images/home-category-medals-banner.png",
     includes: ["Custom shape, size and thickness", "2D or 3D relief artwork", "Ribbon printing and assembly", "Gold, silver, bronze or antique plating", "Event-ready packing and carton labels"],
     heroImages: [
@@ -161,12 +163,13 @@ export const homeProductLandingPages = [
   },
   {
     slug: "custom-challenge-coins",
-    title: "Custom Challenge Coins",
+    title: "Challenge Coin Types",
     shortLabel: "Challenge Coins",
     formProduct: "Challenge Coins",
     metaTitle: "Custom Challenge Coins | Coin Styles & Free Quote",
     description: "Explore challenge coin styles including 3D, antique, double-sided and custom shape coins for teams, units and events.",
-    heroCopy: "Create custom challenge coins with your logo, 2D or 3D relief, enamel colors, custom plating and personalized edges for military units, businesses, clubs, events and commemorative programs.",
+    heroEyebrow: "Challenge Coin Selection Guide",
+    heroCopy: "Compare military, police, corporate, commemorative, club, event and fundraising challenge coins by recipient, presentation and program goal. Choose the right coin type before reviewing finished product examples.",
     heroBackground: "assets/images/home-category-challenge-coins-banner.png",
     includes: ["Double-sided artwork options", "2D or 3D relief", "Antique, bright or dual plating", "Edge text and numbering options", "Pouches, capsules or gift boxes"],
     heroImages: [
@@ -235,12 +238,13 @@ export const homeProductLandingPages = [
   },
   {
     slug: "custom-keychains",
-    title: "Custom Keychains",
+    title: "Metal Keychain Styles",
     shortLabel: "Keychains",
     formProduct: "Keychains",
     metaTitle: "Custom Metal Keychains | Keychain Styles & Free Quote",
     description: "Compare custom metal keychain styles for brand promotions, souvenirs, retail gifts and practical everyday merchandise.",
-    heroCopy: "Turn your logo or artwork into custom metal keychains with enamel colors, 2D or 3D relief, custom plating and practical features for promotions, souvenirs, events and branded merchandise.",
+    heroEyebrow: "Keychain Style Guide",
+    heroCopy: "Compare 3D, enamel, bottle opener and spinner keychains by artwork fit, construction and everyday function. Choose the right style before viewing finished keychain examples.",
     heroBackground: "assets/images/home-category-keychains-banner.png",
     includes: ["Enamel, metal, leather or PVC styles", "Split ring, hook or chain hardware", "Spinner and bottle opener functions", "Custom backing cards and packaging", "Artwork proof before production"],
     heroImages: [
@@ -291,12 +295,13 @@ export const homeProductLandingPages = [
   },
   {
     slug: "custom-belt-buckles",
-    title: "Custom Belt Buckles",
+    title: "Belt Buckle Styles",
     shortLabel: "Belt Buckles",
     formProduct: "Belt Buckles",
     metaTitle: "Custom Belt Buckles | Buckle Styles & Free Quote",
     description: "Explore custom belt buckle styles for Western merchandise, clubs, fashion accessories and event awards.",
-    heroCopy: "Turn your logo or artwork into custom metal belt buckles with 2D or 3D relief, enamel colors and personalized finishes for western brands, rodeo events, clubs, awards and retail merchandise.",
+    heroEyebrow: "Belt Buckle Styles & Finishes",
+    heroCopy: "Compare western, logo, antique and enamel belt buckle styles by artwork compatibility, surface finish and recommended application.",
     heroBackground: "assets/images/home-category-belt-buckles-banner.png",
     includes: ["Custom shape and back hardware", "2D or 3D relief", "Antique or bright plating", "Enamel color options", "Retail or award packaging support"],
     heroImages: [
@@ -342,12 +347,13 @@ export const homeProductLandingPages = [
   },
   {
     slug: "custom-golf-ball-markers",
-    title: "Custom Golf Ball Markers",
+    title: "Golf Accessory Types",
     shortLabel: "Golf Ball Markers",
     formProduct: "Golf Accessories",
     metaTitle: "Custom Golf Ball Markers | Golf Accessories & Free Quote",
     description: "Compare custom golf ball markers, hat clips, divot tools and tournament gift set options before requesting a quote.",
-    heroCopy: "Golf ball markers, hat clips and divot tools give clubs, resorts and tournaments a compact premium gift with frequent course visibility.",
+    heroEyebrow: "Golf Ball Marker, Hat Clip & Divot Tool Types",
+    heroCopy: "Compare golf ball markers, magnetic hat clips, divot tools and gift sets by on-course function, branding space and recommended use.",
     heroBackground: "assets/images/home-category-golf-ball-markers-banner.png",
     includes: ["Ball markers and magnetic hat clips", "Divot tools and gift sets", "Custom logo enamel or printing", "Tournament date and sponsor artwork", "Retail-ready packaging support"],
     heroImages: [
@@ -383,7 +389,7 @@ export const homeProductLandingPages = [
       },
       {
         eyebrow: "Retail-ready personality",
-        title: "Character Marker Sets",
+        title: "Golf Accessory Gift Sets",
         image: "assets/images/type-golf-animal-marker-set.jpg",
         href: "/products/custom-golf-accessories/animal-character-golf-ball-marker-set",
         buttonLabel: "Explore Marker Sets",
@@ -524,11 +530,10 @@ export const renderHomeProductLandingHtml = (page) => String.raw`
 ${renderHeroBackground(page)}
       <div class="container home-category-hero-inner">
         <div class="home-category-hero-copy">
-          <span>Free Quote Form</span>
+          <span>${escapeHtml(page.heroEyebrow || "Free Quote Form")}</span>
           <h1>${escapeHtml(page.title)}</h1>
           <p>${escapeHtml(page.heroCopy)}</p>
           <div class="home-category-hero-actions">
-            <a class="btn btn-primary" href="#quote">Get Free Quote</a>
             <a class="btn btn-outline" href="/products">View All Products</a>
           </div>
         </div>

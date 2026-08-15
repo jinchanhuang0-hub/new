@@ -56,7 +56,7 @@ export const productDetailHtml = String.raw`
   <main class="product-types-page" id="custom-details">
     <section class="product-type-section" data-product-content="pins">
       <div class="container product-type-content">
-        <div class="product-type-head"><h1>Custom Enamel Pin Types</h1><p>Choose from soft enamel, hard enamel, die struck, printed and specialty enamel pin styles for brand promotion, events, clubs and retail programs.</p></div>
+        <div class="product-type-head"><h1>Custom Enamel Pins</h1><p>Choose from soft enamel, hard enamel, die struck, printed and specialty enamel pin styles for brand promotion, events, clubs and retail programs.</p></div>
         ${productCategoryNavHtml({ active: "pins", variant: "inline" })}
         <div class="product-type-grid">
           <article class="product-type-card"><img src="assets/images/type-pins-yellow-character.jpg" alt="Yellow character hard enamel pin"><h2>Yellow Character Hard Enamel Pin</h2><div class="product-type-actions"><a class="product-type-btn product-type-btn-outline" href="/products/custom-enamel-pins/yellow-character-hard-enamel-pin">View More</a><a class="product-type-btn product-type-btn-primary" href="/contact">GET QUOTE NOW</a></div></article>
@@ -71,7 +71,7 @@ export const productDetailHtml = String.raw`
 
     <section class="product-type-section" data-product-content="medals" hidden>
       <div class="container product-type-content">
-        <div class="product-type-head"><h1>Custom Medal Types</h1><p>Custom medals for sports competitions, school awards, corporate recognition, charity events and commemorative programs.</p></div>
+        <div class="product-type-head"><h1>Custom Medals</h1><p>Custom medals for sports competitions, school awards, corporate recognition, charity events and commemorative programs.</p></div>
         ${productCategoryNavHtml({ active: "medals", variant: "inline" })}
         <div class="product-type-grid">
           <article class="product-type-card"><img src="assets/images/type-medals-sports.png" alt="Custom sports medals"><h2>Silver Basketball Sports Medal with Ribbon</h2><div class="product-type-actions"><a class="product-type-btn product-type-btn-outline" href="/products/custom-medals/silver-basketball-sports-medal-with-ribbon">View More</a><a class="product-type-btn product-type-btn-primary" href="/contact">GET QUOTE NOW</a></div></article>
@@ -84,7 +84,7 @@ export const productDetailHtml = String.raw`
 
     <section class="product-type-section" data-product-content="coins" hidden>
       <div class="container product-type-content">
-        <div class="product-type-head"><h1>Challenge Coin Types</h1><p>Challenge coins and commemorative coins for military units, public service organizations, corporate teams and collector programs.</p></div>
+        <div class="product-type-head"><h1>Challenge Coins</h1><p>Challenge coins and commemorative coins for military units, public service organizations, corporate teams and collector programs.</p></div>
         ${productCategoryNavHtml({ active: "coins", variant: "inline" })}
         <div class="product-type-grid">
           <article class="product-type-card"><img src="assets/images/type-coins-3d.jpg" alt="Custom 3D challenge coins"><h2>3D Antique Firefighter Challenge Coins</h2><div class="product-type-actions"><a class="product-type-btn product-type-btn-outline" href="/products/custom-challenge-coins/3d-antique-firefighter-challenge-coins">View More</a><a class="product-type-btn product-type-btn-primary" href="/contact">GET QUOTE NOW</a></div></article>
@@ -97,7 +97,7 @@ export const productDetailHtml = String.raw`
 
     <section class="product-type-section" data-product-content="keychains" hidden>
       <div class="container product-type-content">
-        <div class="product-type-head"><h1>Custom Metal Keychain Types</h1><p>Metal keychains for promotional giveaways, souvenir shops, brand merchandise and practical retail accessories.</p></div>
+        <div class="product-type-head"><h1>Custom Metal Keychains</h1><p>Metal keychains for promotional giveaways, souvenir shops, brand merchandise and practical retail accessories.</p></div>
         ${productCategoryNavHtml({ active: "keychains", variant: "inline" })}
         <div class="product-type-grid">
           <article class="product-type-card"><img src="assets/images/type-keychains-metal.jpg" alt="Custom metal keychains"><h2>Colorful Flower Metal Keychains</h2><div class="product-type-actions"><a class="product-type-btn product-type-btn-outline" href="/products/custom-metal-keychains/colorful-flower-metal-keychains">View More</a><a class="product-type-btn product-type-btn-primary" href="/contact">GET QUOTE NOW</a></div></article>
@@ -110,7 +110,7 @@ export const productDetailHtml = String.raw`
 
     <section class="product-type-section" data-product-content="magnets" hidden>
       <div class="container product-type-content">
-        <div class="product-type-head"><h1>Custom Fridge Magnet Types</h1><p>Custom fridge magnets for tourist souvenirs, city gifts, event merchandise and retail gift programs.</p></div>
+        <div class="product-type-head"><h1>Custom Fridge Magnets</h1><p>Custom fridge magnets for tourist souvenirs, city gifts, event merchandise and retail gift programs.</p></div>
         ${productCategoryNavHtml({ active: "magnets", variant: "inline" })}
         <div class="product-type-grid">
           <article class="product-type-card"><img src="assets/images/type-magnets-enamel.png" alt="Custom enamel fridge magnets"><h2>Ornate Building Enamel Fridge Magnet</h2><div class="product-type-actions"><a class="product-type-btn product-type-btn-outline" href="/products/custom-fridge-magnets/ornate-building-enamel-fridge-magnet">View More</a><a class="product-type-btn product-type-btn-primary" href="/contact">GET QUOTE NOW</a></div></article>
@@ -123,7 +123,7 @@ export const productDetailHtml = String.raw`
 
     <section class="product-type-section" data-product-content="bottle-openers" hidden>
       <div class="container product-type-content">
-        <div class="product-type-head"><h1>Custom Bottle Opener Types</h1><p>Custom bottle openers that combine practical use with logo promotion, event gifts and retail packaging.</p></div>
+        <div class="product-type-head"><h1>Custom Bottle Openers</h1><p>Custom bottle openers that combine practical use with logo promotion, event gifts and retail packaging.</p></div>
         ${productCategoryNavHtml({ active: "bottle-openers", variant: "inline" })}
         <div class="product-type-grid compact">
           <article class="product-type-card"><img src="assets/images/type-openers-coin.jpg" alt="Custom coin bottle openers"><h2>Playing Card Metal Bottle Opener</h2><div class="product-type-actions"><a class="product-type-btn product-type-btn-outline" href="/products/custom-bottle-openers/playing-card-metal-bottle-opener">View More</a><a class="product-type-btn product-type-btn-primary" href="/contact">GET QUOTE NOW</a></div></article>
@@ -134,7 +134,7 @@ export const productDetailHtml = String.raw`
 
     <section class="product-type-section" data-product-content="buckles" hidden>
       <div class="container product-type-content">
-        <div class="product-type-head"><h1>Custom Belt Buckle Types</h1><p>Custom belt buckles for clubs, fashion brands, Western themes, awards and promotional merchandise.</p></div>
+        <div class="product-type-head"><h1>Custom Belt Buckles</h1><p>Custom belt buckles for clubs, fashion brands, Western themes, awards and promotional merchandise.</p></div>
         ${productCategoryNavHtml({ active: "buckles", variant: "inline" })}
         <div class="product-type-grid">
           <article class="product-type-card"><img src="assets/images/type-buckles-western.jpg" alt="Western custom belt buckles"><h2>Western Skull Relief Belt Buckle</h2><div class="product-type-actions"><a class="product-type-btn product-type-btn-outline" href="/products/custom-belt-buckles/western-skull-relief-belt-buckle">View More</a><a class="product-type-btn product-type-btn-primary" href="/contact">GET QUOTE NOW</a></div></article>
@@ -159,7 +159,7 @@ export const productDetailHtml = String.raw`
 
     <section class="product-type-section" data-product-content="cufflinks-tieclips" hidden>
       <div class="container product-type-content">
-        <div class="product-type-head"><h1>Cufflinks & Tie Clip Types</h1><p>Custom cufflinks and tie clips for corporate gifts, retail collections, clubs, formal events and brand accessories.</p></div>
+        <div class="product-type-head"><h1>Cufflinks & Tie Clips</h1><p>Custom cufflinks and tie clips for corporate gifts, retail collections, clubs, formal events and brand accessories.</p></div>
         ${productCategoryNavHtml({ active: "cufflinks-tieclips", variant: "inline" })}
         <div class="product-type-grid compact">
           <article class="product-type-card"><img src="assets/images/type-cufflinks-metal.jpg" alt="Custom metal cufflinks"><h2>Blue Carbon Fiber Metal Cufflinks</h2><div class="product-type-actions"><a class="product-type-btn product-type-btn-outline" href="/products/custom-cufflinks-tie-clips/blue-carbon-fiber-metal-cufflinks">View More</a><a class="product-type-btn product-type-btn-primary" href="/contact">GET QUOTE NOW</a></div></article>

@@ -11,14 +11,14 @@ export function middleware(request) {
   const { pathname, searchParams } = url;
   let destination;
 
-  if (pathname === "/product-detail.html") {
+  if (pathname === "/product-detail.html" || pathname === "/product-detail") {
     const categoryKey = searchParams.get("product");
     destination = getCategoryPath(
       productCategories[categoryKey] ? categoryKey : "pins",
     );
   }
 
-  if (pathname === "/product-item.html") {
+  if (pathname === "/product-item.html" || pathname === "/product-item") {
     const itemSlug = searchParams.get("item");
     const categoryKey = productItemCategoryKey[itemSlug];
     destination =
@@ -46,5 +46,12 @@ export function middleware(request) {
 }
 
 export const config = {
-  matcher: ["/product-detail.html", "/product-item.html", "/blog.html", "/blog.html/:path*"],
+  matcher: [
+    "/product-detail",
+    "/product-detail.html",
+    "/product-item",
+    "/product-item.html",
+    "/blog.html",
+    "/blog.html/:path*",
+  ],
 };
