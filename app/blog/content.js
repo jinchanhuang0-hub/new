@@ -2,6 +2,7 @@ import StaticPage from "../components/StaticPage";
 import { footerHtml } from "../components/footerHtml";
 import { siteHeaderHtml } from "../components/siteHeaderHtml";
 import { customMetalKeychainMaterialsArticleHtml } from "./customMetalKeychainMaterials";
+import { customMetalKeychainSizeAttachmentGuideArticleHtml } from "./customMetalKeychainSizeAttachmentGuide";
 
 
 export const metadata = {
@@ -42,6 +43,15 @@ export const blogHtml = String.raw`
               <div class="blog-feature-meta"><span>Custom Keychains</span><span>Material Guide</span></div>
               <h2>Custom Metal Keychain Materials: Zinc Alloy vs Brass vs Stainless Steel vs Iron</h2>
               <p>Compare four common metals by design flexibility, durability, finish, manufacturing process, application and budget.</p>
+              <span class="blog-feature-link">Read More</span>
+            </div>
+          </a>
+          <a class="blog-feature-card" href="/blog/custom-metal-keychain-size-attachment-guide" data-card-image-fit="full" data-blog-category="Custom Keychains" aria-label="Read Custom Metal Keychain Size, Thickness and Attachment Guide">
+            <img src="/assets/images/custom-metal-keychain-size-attachment-guide.webp?v=20260817-2" width="1200" height="675" alt="Custom metal keychains in different sizes with split ring chain and swivel hook attachments">
+            <div class="blog-feature-body">
+              <div class="blog-feature-meta"><span>Custom Keychains</span><span>Specification Guide</span></div>
+              <h2>Custom Metal Keychain Size, Thickness and Attachment Guide</h2>
+              <p>Compare metal keychain body dimensions, thickness, finished length and attachment options before approving a sample or placing a bulk order.</p>
               <span class="blog-feature-link">Read More</span>
             </div>
           </a>
@@ -139,6 +149,7 @@ export const blogHtml = String.raw`
       </div>
     </section>
     ${customMetalKeychainMaterialsArticleHtml}
+    ${customMetalKeychainSizeAttachmentGuideArticleHtml}
     <article id="custom-marathon-medals-guide" class="section blog-article-section blog-marathon-medals-article">
       <div class="blog-article-shell">
         <aside class="blog-article-toc" aria-label="Article contents">
