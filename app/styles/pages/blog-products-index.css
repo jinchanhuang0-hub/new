@@ -602,6 +602,20 @@
   align-items: stretch;
 }
 
+#custom-metal-keychain-size-attachment-guide .blog-article-header {
+  width: 100%;
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
+  box-sizing: border-box;
+}
+
+#custom-metal-keychain-size-attachment-guide .blog-article-header > .blog-article-hero-image img {
+  height: auto;
+  max-height: none;
+  object-fit: cover;
+}
+
 #custom-metal-keychain-size-attachment-guide .blog-article-image-pair .blog-article-cropped-image {
   aspect-ratio: 900 / 1161;
   box-sizing: border-box;
