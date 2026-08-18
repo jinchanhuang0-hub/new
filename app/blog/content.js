@@ -176,7 +176,7 @@ export const blogHtml = String.raw`
         </header>
 
         <nav class="blog-anchor-links" aria-label="Article anchor links">
-          <strong>On this page</strong>
+          <strong>In This Guide</strong>
           <a href="#what-does-a-military-challenge-coin-represent">Meaning</a>
           <a href="#where-did-the-challenge-coin-tradition-begin">Origins</a>
           <a href="#why-do-military-leaders-present-challenge-coins">Presentation reasons</a>
