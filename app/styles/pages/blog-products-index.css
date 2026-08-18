@@ -190,6 +190,28 @@
   background: #fff;
 }
 
+.blog-feature-placeholder {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  aspect-ratio: 5 / 3;
+  padding: 28px;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(197, 211, 233, 0.72);
+  background:
+    linear-gradient(135deg, rgba(11, 47, 99, 0.08), rgba(243, 198, 0, 0.12)),
+    #f7fbff;
+  color: var(--navy);
+  text-align: center;
+}
+
+.blog-feature-placeholder span {
+  max-width: 270px;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1.22;
+}
+
 .blog-feature-card[data-card-image-fit="contain"] img {
   padding: 10px;
   object-fit: contain;
@@ -537,6 +559,33 @@
   box-shadow: 0 24px 58px rgba(11, 47, 99, 0.12);
 }
 
+.blog-article-placeholder {
+  overflow: hidden;
+  border: 1px solid rgba(197, 211, 233, 0.8);
+  border-radius: 4px;
+  background: #f7fbff;
+}
+
+.blog-article-placeholder-box {
+  display: grid;
+  min-height: clamp(240px, 34vw, 430px);
+  place-items: center;
+  padding: 32px;
+  background:
+    linear-gradient(135deg, rgba(11, 47, 99, 0.1), rgba(243, 198, 0, 0.16)),
+    repeating-linear-gradient(45deg, rgba(11, 47, 99, 0.04) 0 1px, transparent 1px 16px),
+    #ffffff;
+  color: var(--navy);
+  text-align: center;
+}
+
+.blog-article-placeholder-box span {
+  max-width: 480px;
+  font-size: clamp(22px, 3vw, 36px);
+  font-weight: 900;
+  line-height: 1.18;
+}
+
 .blog-article-image figcaption {
   margin-top: 10px;
   color: #6b7b92;
@@ -686,6 +735,43 @@
   border-radius: 8px;
   background: #fff;
   box-shadow: 0 16px 38px rgba(11, 47, 99, 0.06);
+}
+
+.blog-related-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  max-width: 980px;
+  margin: 42px auto 0;
+  padding: 18px 0 0;
+  border-top: 1px solid rgba(197, 211, 233, 0.82);
+}
+
+.blog-related-links strong {
+  flex: 1 0 100%;
+  color: var(--navy);
+  font-size: 17px;
+}
+
+.blog-related-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  padding: 8px 13px;
+  border: 1px solid rgba(11, 47, 99, 0.16);
+  border-radius: 4px;
+  color: var(--navy);
+  background: #fff;
+  font-weight: 850;
+  line-height: 1.25;
+  text-decoration: none;
+}
+
+.blog-related-links a:hover,
+.blog-related-links a:focus-visible {
+  border-color: var(--navy);
+  background: #f7fbff;
 }
 
 .blog-table-wrap {

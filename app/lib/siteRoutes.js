@@ -280,6 +280,17 @@ const withBlogArticleDefaults = (article) => {
 };
 
 const blogArticleData = {
+  "military-challenge-coin-traditions": {
+    title: "Military Challenge Coin Traditions, Meaning and Etiquette",
+    headline: "Military Challenge Coin Traditions: Meaning, History and How They Are Presented",
+    description:
+      "Explore military challenge coin traditions, their debated history, meaning, presentation etiquette, coin checks, common types, symbols and modern uses.",
+    author: "Sunny Huang",
+    authorType: "Person",
+    datePublished: "2026-08-18",
+    dateModified: "2026-08-18",
+    schemaType: "Article",
+  },
   "custom-metal-keychain-materials": {
     title: "Custom Metal Keychain Materials: 4 Metals Compared",
     headline: "Custom Metal Keychain Materials: Zinc Alloy vs Brass vs Stainless Steel vs Iron",

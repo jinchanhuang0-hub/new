@@ -53,7 +53,7 @@ export default async function BlogArticlePage({ params }) {
       <JsonLd
         data={{
           "@context": "https://schema.org",
-          "@type": "BlogPosting",
+          "@type": article.schemaType || "BlogPosting",
           headline: article.headline || article.title,
           description: article.description,
           image: article.image ? `${SITE_URL}${article.image}` : undefined,
