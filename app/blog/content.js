@@ -215,15 +215,9 @@ export const blogHtml = String.raw`
         <figure class="blog-article-image blog-visual-block blog-image-7x4 blog-history-timeline-figure">
           <p class="blog-visual-title">Possible Origins and the Development of the Challenge Coin Tradition</p>
           <picture>
-            <source srcset="/assets/images/challenge-coin-history-timeline-custom.webp" type="image/webp">
-            <img src="/assets/images/challenge-coin-history-timeline-custom.jpg" width="1400" height="800" loading="lazy" decoding="async" alt="Timeline showing the debated origins of challenge coin traditions">
+            <source srcset="/assets/images/challenge-coin-history-timeline-labeled.webp" type="image/webp">
+            <img src="/assets/images/challenge-coin-history-timeline-labeled.jpg" width="1400" height="800" loading="lazy" decoding="async" alt="Timeline showing the debated origins of challenge coin traditions">
           </picture>
-          <div class="blog-timeline-labels" aria-label="Possible origins and development stages">
-            <div><strong>Ancient Rome</strong><span>An early precedent for coins used as recognition—not a proven origin of modern challenge coins.</span></div>
-            <div><strong>World War I</strong><span>The well-known pilot story is widely repeated, but surviving documentation is limited.</span></div>
-            <div><strong>World War II and Vietnam</strong><span>Other accounts connect the tradition with identification practices and informal unit customs.</span></div>
-            <div><strong>Modern Era</strong><span>Challenge coins became an established form of recognition, membership and remembrance.</span></div>
-          </div>
           <figcaption>The exact origin of the modern challenge coin tradition has not been conclusively documented.</figcaption>
         </figure>
 
@@ -309,8 +303,8 @@ export const blogHtml = String.raw`
         <p>A fire department may honor service, a sports team may recognize volunteers, and a company may mark an anniversary. These coins do not need to imitate military imagery; they are often more meaningful when the symbols and presentation feel authentic to the organization.</p>
         <figure class="blog-article-image blog-image-7x4">
           <picture>
-            <source srcset="/assets/images/challenge-coins-modern-applications.webp" type="image/webp">
-            <img src="/assets/images/challenge-coins-modern-applications.jpg" width="1400" height="800" loading="lazy" decoding="async" alt="Challenge coins used by military civilian and community organizations">
+            <source srcset="/assets/images/challenge-coins-modern-applications-light.webp" type="image/webp">
+            <img src="/assets/images/challenge-coins-modern-applications-light.jpg" width="1400" height="800" loading="lazy" decoding="async" alt="Challenge coins used by military civilian and community organizations">
           </picture>
           <figcaption>The tradition has expanded into public service, corporate, nonprofit and sports communities.</figcaption>
         </figure>
