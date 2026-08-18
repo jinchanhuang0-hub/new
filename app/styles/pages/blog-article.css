@@ -140,6 +140,24 @@
   object-fit: cover;
 }
 
+#military-challenge-coin-traditions .blog-article-header > .blog-article-hero-image.blog-article-natural-image {
+  width: calc(100% + (2 * var(--article-pad)));
+  max-width: none;
+  margin-left: calc(var(--article-pad) * -1);
+  margin-right: calc(var(--article-pad) * -1);
+  overflow: hidden;
+}
+
+#military-challenge-coin-traditions .blog-article-header > .blog-article-hero-image.blog-article-natural-image img {
+  width: 100%;
+  max-width: none;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  padding: 0;
+  object-fit: cover;
+  object-position: center;
+}
+
 .blog-article-placeholder {
   overflow: hidden;
   border: 1px solid rgba(197, 211, 233, 0.8);
