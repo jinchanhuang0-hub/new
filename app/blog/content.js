@@ -38,9 +38,7 @@ export const blogHtml = String.raw`
         </div>
         <div class="blog-card-grid">
           <a class="blog-feature-card" href="/blog/military-challenge-coin-traditions" data-blog-category="Custom Coins" aria-label="Read Military Challenge Coin Traditions, Meaning and Etiquette">
-            <div class="blog-feature-placeholder" aria-hidden="true">
-              <span>Military Challenge Coin Traditions</span>
-            </div>
+            <img src="/assets/images/military-challenge-coin-tradition.webp" width="1600" height="900" alt="Military challenge coin presented discreetly during a handshake">
             <div class="blog-feature-body">
               <div class="blog-feature-meta"><span>Custom Coins</span><span>Traditions Guide</span></div>
               <h2>Military Challenge Coin Traditions, Meaning and Etiquette</h2>
