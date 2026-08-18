@@ -59,6 +59,18 @@
   line-height: 1.75;
 }
 
+.product-type-section[data-product-content="keychains"] .product-type-head {
+  max-width: 1080px;
+  margin-bottom: 32px;
+}
+
+.product-type-section[data-product-content="keychains"] .product-type-head p {
+  max-width: 1060px;
+  margin: 0 auto;
+  font-size: 17px;
+  line-height: 1.68;
+}
+
 .product-type-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1344,6 +1356,16 @@
 
   .product-type-head p {
     font-size: 16px;
+  }
+
+  .product-type-section[data-product-content="keychains"] .product-type-head {
+    max-width: 100%;
+    margin-bottom: 28px;
+  }
+
+  .product-type-section[data-product-content="keychains"] .product-type-head p {
+    font-size: 15.5px;
+    line-height: 1.62;
   }
 
   .product-type-grid,

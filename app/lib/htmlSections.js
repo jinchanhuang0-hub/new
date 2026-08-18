@@ -104,19 +104,7 @@ const categorySeoContent = {
               <li>Gold, silver, bronze, antique finish, dual plating, enamel filling, printing and gift packaging.</li>
             </ul>
           </div>`,
-  keychains: String.raw`
-          <div class="category-seo-panel" aria-label="Custom metal keychains manufacturer information">
-            <h2>Custom Metal Keychains for Promotions, Souvenirs and Retail Gifts</h2>
-            <p>Custom metal keychains are practical promotional products because they combine everyday use with visible brand artwork. The range below shows individual sample styles such as flower keychains, enamel destination keychains, school logo keychains and spinner keychains.</p>
-            <p>We support metal keychains made for tourism souvenirs, retail gift programs, school events, company giveaways, membership gifts and brand merchandise. Depending on the design, buyers can choose die casting, stamping, enamel filling, printing, epoxy coating, spinning parts, charms, bottle opener functions or custom packaging. Our team checks artwork, size, ring strength, plating quality and packaging before shipment.</p>
-            <p>For quote accuracy, include the expected size, attachment style, quantity and whether the keychain needs an extra function such as a spinner, bottle opener or charm set. Buyers comparing <a href="/blog/custom-metal-keychain-materials">custom metal keychain materials</a> can review zinc alloy, brass, stainless steel and iron before selecting a practical construction. Buyers planning a wider promotional line can also review our <a href="/blog/custom-metal-crafts-guide">custom metal crafts guide</a> to compare keychains with pins, coins and other gifts. Send logo files through the <a href="/contact">quote form</a> and we will suggest a durable construction for daily use.</p>
-            <h3>Keychain Project Options</h3>
-            <ul class="category-seo-list">
-              <li>Enamel keychains, logo keychains, spinner keychains, souvenir keychains and functional keychains.</li>
-              <li>Split rings, chains, lobster clasps, swivel hooks, back cards, poly bags and retail boxes.</li>
-              <li>Factory-direct OEM/ODM support for small test orders and larger repeat production runs.</li>
-            </ul>
-          </div>`,
+  keychains: "",
   buckles: String.raw`
           <div class="category-seo-panel" aria-label="Custom belt buckles manufacturer information">
             <h2>Custom Belt Buckles for Clubs, Brands and Western Merchandise</h2>

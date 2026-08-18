@@ -97,7 +97,7 @@ export const productDetailHtml = String.raw`
 
     <section class="product-type-section" data-product-content="keychains" hidden>
       <div class="container product-type-content">
-        <div class="product-type-head"><h1>Custom Metal Keychains</h1><p>Metal keychains for promotional giveaways, souvenir shops, brand merchandise and practical retail accessories.</p></div>
+        <div class="product-type-head"><h1>Custom Metal Keychains</h1><p>Create custom metal keychains for promotional campaigns, retail collections, corporate gifts, events, and souvenir programs. As a custom metal keychain manufacturer, we help buyers choose suitable materials, finishes, sizes, attachments, and packaging for each project. Our metal keychain custom service supports both small test orders and bulk metal keychains. Send your logo, intended use, preferred size, quantity, target market, and delivery deadline so our team can review the artwork, recommend a practical construction, and prepare an accurate quotation before production begins.</p></div>
         ${productCategoryNavHtml({ active: "keychains", variant: "inline" })}
         <div class="product-type-grid">
           <article class="product-type-card"><img src="assets/images/type-keychains-metal.jpg" alt="Custom metal keychains"><h2>Colorful Flower Metal Keychains</h2><div class="product-type-actions"><a class="product-type-btn product-type-btn-outline" href="/products/custom-metal-keychains/colorful-flower-metal-keychains">View More</a><a class="product-type-btn product-type-btn-primary" href="/contact">GET QUOTE NOW</a></div></article>

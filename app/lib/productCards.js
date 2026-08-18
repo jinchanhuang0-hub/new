@@ -1,6 +1,6 @@
 import { productItems } from "../product-item/content";
 import { getCategoryKeyForItem, getProductPath } from "./siteRoutes";
-import { sortProductEntriesBySkuDesc } from "./productSorting";
+import { compareProductEntriesBySkuDesc } from "./productSorting";
 
 export const productCardCategoryOrder = [
   "pins",
@@ -20,12 +20,37 @@ const escapeHtml = (value = "") => String(value)
   .replaceAll(">", "&gt;")
   .replaceAll('"', "&quot;");
 
-const getProductEntriesForCategory = (categoryKey) =>
-  sortProductEntriesBySkuDesc(
-    Object.entries(productItems).filter(([, product]) =>
-      getCategoryKeyForItem(product) === categoryKey
-    )
-  );
+const deferredKeychainKeywords = ["pvc", "leather", "woven"];
+
+const isDeferredKeychainProduct = (product) => {
+  const searchableText = [
+    product.title,
+    product.material,
+    product.process,
+    product.categories,
+  ].join(" ").toLowerCase();
+
+  return deferredKeychainKeywords.some((keyword) => searchableText.includes(keyword));
+};
+
+const compareKeychainEntriesByMaterialPriority = (entryA, entryB) => {
+  const deferredDiff =
+    Number(isDeferredKeychainProduct(entryA[1])) -
+    Number(isDeferredKeychainProduct(entryB[1]));
+
+  return deferredDiff || compareProductEntriesBySkuDesc(entryA, entryB);
+};
+
+const getProductEntriesForCategory = (categoryKey) => {
+  const sorter =
+    categoryKey === "keychains"
+      ? compareKeychainEntriesByMaterialPriority
+      : compareProductEntriesBySkuDesc;
+
+  return Object.entries(productItems)
+    .filter(([, product]) => getCategoryKeyForItem(product) === categoryKey)
+    .sort(sorter);
+};
 
 export const renderProductTypeCards = (categoryKey, options = {}) =>
   getProductEntriesForCategory(categoryKey).map(([slug, product], index) => {
