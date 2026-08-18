@@ -298,8 +298,8 @@ export const blogHtml = String.raw`
         <p>Official names, seals, insignia, mottos and unit marks may be protected. The <a href="https://www.defense.gov/Resources/Branding-and-Trademarks/" target="_blank" rel="noopener noreferrer">U.S. Department of Defense trademark guidance</a> explains that military service marks are managed through service licensing offices. Protected artwork should not be used without permission or presented as officially endorsed.</p>
         <figure class="blog-article-image blog-image-3x2">
           <picture>
-            <source srcset="/assets/images/challenge-coin-symbols-meaning.webp" type="image/webp">
-            <img src="/assets/images/challenge-coin-symbols-meaning.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Two custom challenge coins with raised enamel details">
+            <source srcset="/assets/images/challenge-coin-symbols-meaning-custom.webp" type="image/webp">
+            <img src="/assets/images/challenge-coin-symbols-meaning-custom.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Two custom challenge coins with raised enamel details">
           </picture>
           <figcaption>Symbols gain meaning from the people, event and experience they are intended to represent.</figcaption>
         </figure>
