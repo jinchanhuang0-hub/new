@@ -275,7 +275,7 @@ export const blogHtml = String.raw`
         <figure class="blog-article-image blog-visual-block blog-image-7x5">
           <picture>
             <source srcset="/assets/images/types-of-military-challenge-coins.webp" type="image/webp">
-            <img src="/assets/images/types-of-military-challenge-coins.jpg" width="1400" height="1000" loading="lazy" decoding="async" alt="Nine common types of military challenge coins grouped by purpose">
+            <img src="/assets/images/types-of-military-challenge-coins.jpg" width="1400" height="1000" loading="lazy" decoding="async" alt="Custom challenge coin collage with sample logo placement">
           </picture>
           <ol class="blog-coin-type-labels" aria-label="Nine purpose-based challenge coin categories">
             <li>Unit Coins</li>
