@@ -184,13 +184,15 @@ export const blogHtml = String.raw`
         <header class="blog-article-header">
           <a class="blog-back-link" href="/blog">Back to Blog</a>
           <h1>Military Challenge Coin Traditions: Meaning, History and How They Are Presented</h1>
+          <figure class="blog-article-image blog-article-hero-image blog-article-natural-image">
+            <picture>
+              <source srcset="/assets/images/military-challenge-coin-tradition.webp" type="image/webp">
+              <img src="/assets/images/military-challenge-coin-tradition.jpg" width="1600" height="900" fetchpriority="high" decoding="async" alt="Military challenge coin presented discreetly during a handshake">
+            </picture>
+            <figcaption>A discreet handshake presentation is one familiar challenge coin tradition, although presentation customs vary between organizations.</figcaption>
+          </figure>
           <p>A military challenge coin may represent unit membership, recognition from a leader, completion of an assignment, remembrance or appreciation for service. Some coins are carried every day. Others remain in presentation boxes because the moment in which they were received matters more than the metal itself.</p>
           <p>The military challenge coin tradition is widely recognized, but its exact origin is debated and its customs are not universal. This guide separates documented practice from popular legend and explains how challenge coins are understood, presented and used today.</p>
-          <figure class="blog-article-image blog-article-hero-image blog-article-placeholder">
-            <div class="blog-article-placeholder-box" role="img" aria-label="Placeholder reserved for an original challenge coin traditions article image">
-              <span>Original article image pending</span>
-            </div>
-          </figure>
         </header>
 
         <div class="blog-article-main">
@@ -212,6 +214,20 @@ export const blogHtml = String.raw`
         <p>The best-known modern story is set during World War I. A lieutenant reportedly commissioned bronze medallions for his flying squadron, and one pilot later used his medallion to help prove his identity after escaping captivity. The story appears widely, but surviving documentation is limited.</p>
         <p>Other accounts connect the tradition with World War II identification practices, customs among troops during the Vietnam War, or the later growth of unit coins. A <a href="https://www.war.gov/News/Feature-Stories/Story/article/2567302/the-challenge-coin-tradition-do-you-know-how-it-started/" target="_blank" rel="noopener noreferrer">U.S. military feature on the tradition</a> discusses several possible beginnings.</p>
         <p>The accurate approach is to explain the main stories without claiming that one has been conclusively proven. What is clearer is that challenge coins have become a familiar part of modern military culture.</p>
+        <figure class="blog-article-image blog-visual-block blog-image-7x4 blog-history-timeline-figure">
+          <p class="blog-visual-title">Possible Origins and the Development of the Challenge Coin Tradition</p>
+          <picture>
+            <source srcset="/assets/images/challenge-coin-history-timeline.webp" type="image/webp">
+            <img src="/assets/images/challenge-coin-history-timeline.jpg" width="1400" height="800" loading="lazy" decoding="async" alt="Timeline showing the debated origins of challenge coin traditions">
+          </picture>
+          <div class="blog-timeline-labels" aria-label="Possible origins and development stages">
+            <div><strong>Ancient Rome</strong><span>An early precedent for coins used as recognition—not a proven origin of modern challenge coins.</span></div>
+            <div><strong>World War I</strong><span>The well-known pilot story is widely repeated, but surviving documentation is limited.</span></div>
+            <div><strong>World War II and Vietnam</strong><span>Other accounts connect the tradition with identification practices and informal unit customs.</span></div>
+            <div><strong>Modern Era</strong><span>Challenge coins became an established form of recognition, membership and remembrance.</span></div>
+          </div>
+          <figcaption>The exact origin of the modern challenge coin tradition has not been conclusively documented.</figcaption>
+        </figure>
 
         <h2 id="why-do-military-leaders-present-challenge-coins">Why Do Military Leaders Present Challenge Coins?</h2>
         <p>Challenge coins offer a direct and personal form of recognition. They do not replace formal decorations or official awards, but they can acknowledge contributions that a leader wants to recognize personally.</p>
@@ -236,6 +252,13 @@ export const blogHtml = String.raw`
         <p>A coin check is an informal social custom. In a commonly described version, one person places a coin on a table and others show theirs. Someone who cannot produce a coin may be expected to buy a beverage; if everyone can, the person who started the challenge may be responsible instead.</p>
         <p>Details such as time limits, carrying rules and outcomes vary. Some units may not practice coin checks at all.</p>
         <p>“Challenge coin rules” should therefore not be presented as universal military regulations. Recipients should follow the expectations of the group that presented the coin rather than assume that an online rule list applies everywhere.</p>
+        <figure class="blog-article-image blog-image-3x2">
+          <picture>
+            <source srcset="/assets/images/military-coin-check-tradition.webp" type="image/webp">
+            <img src="/assets/images/military-coin-check-tradition.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Group members taking part in an informal military coin check">
+          </picture>
+          <figcaption>Coin checks are informal social customs, and their rules may differ between groups.</figcaption>
+        </figure>
 
         <h2 id="common-types-of-military-challenge-coins">Common Types of Military Challenge Coins</h2>
         <p>There is no single official classification system covering every military challenge coin. The following categories are a practical way to understand common purposes, and one coin may fit more than one category.</p>
@@ -251,16 +274,48 @@ export const blogHtml = String.raw`
           <li><strong>Recognition and achievement coins</strong> acknowledge leadership, performance, support or an important contribution.</li>
         </ol>
         <p>This purpose-based grouping is more useful than assuming that every branch or unit follows the same practice. It also keeps the focus on why a coin exists and what it means to the recipient.</p>
+        <figure class="blog-article-image blog-visual-block blog-image-7x5">
+          <picture>
+            <source srcset="/assets/images/types-of-military-challenge-coins.webp" type="image/webp">
+            <img src="/assets/images/types-of-military-challenge-coins.jpg" width="1400" height="1000" loading="lazy" decoding="async" alt="Nine common types of military challenge coins grouped by purpose">
+          </picture>
+          <ol class="blog-coin-type-labels" aria-label="Nine purpose-based challenge coin categories">
+            <li>Unit Coins</li>
+            <li>Commander’s Coins</li>
+            <li>Deployment and Mission Coins</li>
+            <li>Training and Graduation Coins</li>
+            <li>Retirement and Farewell Coins</li>
+            <li>Memorial Coins</li>
+            <li>Anniversary Coins</li>
+            <li>Veteran Association Coins</li>
+            <li>Recognition and Achievement Coins</li>
+          </ol>
+          <figcaption>These are practical purpose-based categories rather than an official military classification system.</figcaption>
+        </figure>
 
         <h2 id="common-symbols-and-what-they-can-mean">Common Symbols and What They Can Mean</h2>
         <p>Challenge coin artwork can act as a compact record of identity and experience. Common elements include mottos, dates, locations, roles, mission references, shields, stars, maps, vehicles, memorial wording and sequential numbers.</p>
         <p>The same symbol can mean different things. A star may represent guidance, achievement or rank; a number may identify a unit, anniversary, class or individually numbered coin.</p>
         <p>Symbols should be chosen because recipients understand them, not because they fill space. One side can establish identity while the other records the occasion or reason for recognition.</p>
         <p>Official names, seals, insignia, mottos and unit marks may be protected. The <a href="https://www.defense.gov/Resources/Branding-and-Trademarks/" target="_blank" rel="noopener noreferrer">U.S. Department of Defense trademark guidance</a> explains that military service marks are managed through service licensing offices. Protected artwork should not be used without permission or presented as officially endorsed.</p>
+        <figure class="blog-article-image blog-image-3x2">
+          <picture>
+            <source srcset="/assets/images/challenge-coin-symbols-meaning.webp" type="image/webp">
+            <img src="/assets/images/challenge-coin-symbols-meaning.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Generic challenge coin symbols including stars shields dates and numbers">
+          </picture>
+          <figcaption>Symbols gain meaning from the people, event and experience they are intended to represent.</figcaption>
+        </figure>
 
         <h2 id="how-did-the-tradition-move-beyond-the-military">How Did the Tradition Move Beyond the Military?</h2>
         <p>Belonging, recognition and shared experience also matter outside the armed forces. Police and fire departments, emergency services, veteran groups, schools, sports teams, clubs, nonprofits and companies use coins for similar reasons.</p>
         <p>A fire department may honor service, a sports team may recognize volunteers, and a company may mark an anniversary. These coins do not need to imitate military imagery; they are often more meaningful when the symbols and presentation feel authentic to the organization.</p>
+        <figure class="blog-article-image blog-image-7x4">
+          <picture>
+            <source srcset="/assets/images/challenge-coins-modern-applications.webp" type="image/webp">
+            <img src="/assets/images/challenge-coins-modern-applications.jpg" width="1400" height="800" loading="lazy" decoding="async" alt="Challenge coins used by military civilian and community organizations">
+          </picture>
+          <figcaption>The tradition has expanded into public service, corporate, nonprofit and sports communities.</figcaption>
+        </figure>
 
         <h2 id="how-can-a-new-coin-preserve-the-meaning-of-the-tradition">How Can a New Coin Preserve the Meaning of the Tradition?</h2>
         <p>A meaningful coin begins with purpose, not decoration. Before developing artwork, define five things:</p>
