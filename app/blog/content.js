@@ -162,7 +162,25 @@ export const blogHtml = String.raw`
     ${customMetalKeychainMaterialsArticleHtml}
     ${customMetalKeychainSizeAttachmentGuideArticleHtml}
     <article id="military-challenge-coin-traditions" class="section blog-article-section">
-      <div class="container blog-article">
+      <div class="blog-article-shell">
+        <aside class="blog-article-toc" aria-label="Article contents">
+          <strong>In This Guide</strong>
+          <nav>
+            <a href="#what-does-a-military-challenge-coin-represent">Meaning</a>
+            <a href="#where-did-the-challenge-coin-tradition-begin">Origins</a>
+            <a href="#why-do-military-leaders-present-challenge-coins">Presentation reasons</a>
+            <a href="#how-is-a-challenge-coin-traditionally-presented">Presentation etiquette</a>
+            <a href="#what-is-a-military-coin-check">Coin checks</a>
+            <a href="#common-types-of-military-challenge-coins">Coin types</a>
+            <a href="#common-symbols-and-what-they-can-mean">Symbols</a>
+            <a href="#how-did-the-tradition-move-beyond-the-military">Modern uses</a>
+            <a href="#how-can-a-new-coin-preserve-the-meaning-of-the-tradition">Planning a coin</a>
+            <a href="#frequently-asked-questions">FAQ</a>
+            <a href="#conclusion">Conclusion</a>
+            <a href="#create-a-coin-that-carries-a-real-story">Start a project</a>
+          </nav>
+        </aside>
+        <div class="container blog-article blog-article-with-toc">
         <header class="blog-article-header">
           <a class="blog-back-link" href="/blog">Back to Blog</a>
           <h1>Military Challenge Coin Traditions: Meaning, History and How They Are Presented</h1>
@@ -175,22 +193,7 @@ export const blogHtml = String.raw`
           </figure>
         </header>
 
-        <nav class="blog-anchor-links" aria-label="Article anchor links">
-          <strong>In This Guide</strong>
-          <a href="#what-does-a-military-challenge-coin-represent">Meaning</a>
-          <a href="#where-did-the-challenge-coin-tradition-begin">Origins</a>
-          <a href="#why-do-military-leaders-present-challenge-coins">Presentation reasons</a>
-          <a href="#how-is-a-challenge-coin-traditionally-presented">Presentation etiquette</a>
-          <a href="#what-is-a-military-coin-check">Coin checks</a>
-          <a href="#common-types-of-military-challenge-coins">Coin types</a>
-          <a href="#common-symbols-and-what-they-can-mean">Symbols</a>
-          <a href="#how-did-the-tradition-move-beyond-the-military">Modern uses</a>
-          <a href="#how-can-a-new-coin-preserve-the-meaning-of-the-tradition">Planning a coin</a>
-          <a href="#frequently-asked-questions">FAQ</a>
-          <a href="#conclusion">Conclusion</a>
-          <a href="#create-a-coin-that-carries-a-real-story">Start a project</a>
-        </nav>
-
+        <div class="blog-article-main">
         <h2 id="what-does-a-military-challenge-coin-represent">What Does a Military Challenge Coin Represent?</h2>
         <p>The meaning of a military challenge coin depends on who issued it and why it was presented. A unit coin may express belonging. A commander’s coin may recognize an individual contribution. A deployment, graduation or retirement coin may preserve a specific period of service.</p>
         <p>Across these different uses, several ideas appear repeatedly:</p>
@@ -294,6 +297,8 @@ export const blogHtml = String.raw`
           <a href="https://uccrafts.com/blog/challenge-coin-size-guide">challenge coin size and thickness guide</a>
           <a href="https://uccrafts.com/blog/custom-medals-vs-challenge-coins">custom medals vs challenge coins</a>
         </nav>
+        </div>
+        </div>
       </div>
     </article>
     <article id="custom-marathon-medals-guide" class="section blog-article-section blog-marathon-medals-article">
