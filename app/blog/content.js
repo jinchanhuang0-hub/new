@@ -38,7 +38,7 @@ export const blogHtml = String.raw`
         </div>
         <div class="blog-card-grid">
           <a class="blog-feature-card" href="/blog/military-challenge-coin-traditions" data-blog-category="Custom Coins" aria-label="Read Military Challenge Coin Traditions, Meaning and Etiquette">
-            <img src="/assets/images/military-challenge-coin-tradition.webp" width="1600" height="900" alt="Military challenge coin presented discreetly during a handshake">
+            <img src="/assets/images/military-challenge-coin-tradition-handshake.webp" width="1600" height="900" alt="Military challenge coin presented discreetly during a handshake">
             <div class="blog-feature-body">
               <div class="blog-feature-meta"><span>Custom Coins</span><span>Traditions Guide</span></div>
               <h2>Military Challenge Coin Traditions, Meaning and Etiquette</h2>
@@ -184,8 +184,8 @@ export const blogHtml = String.raw`
           <h1>Military Challenge Coin Traditions: Meaning, History and How They Are Presented</h1>
           <figure class="blog-article-image blog-article-hero-image blog-article-natural-image">
             <picture>
-              <source srcset="/assets/images/military-challenge-coin-tradition.webp" type="image/webp">
-              <img src="/assets/images/military-challenge-coin-tradition.jpg" width="1600" height="900" fetchpriority="high" decoding="async" alt="Military challenge coin presented discreetly during a handshake">
+              <source srcset="/assets/images/military-challenge-coin-tradition-handshake.webp" type="image/webp">
+              <img src="/assets/images/military-challenge-coin-tradition-handshake.jpg" width="1600" height="900" fetchpriority="high" decoding="async" alt="Military challenge coin presented discreetly during a handshake">
             </picture>
             <figcaption>A discreet handshake presentation is one familiar challenge coin tradition, although presentation customs vary between organizations.</figcaption>
           </figure>
@@ -215,8 +215,8 @@ export const blogHtml = String.raw`
         <figure class="blog-article-image blog-visual-block blog-image-7x4 blog-history-timeline-figure">
           <p class="blog-visual-title">Possible Origins and the Development of the Challenge Coin Tradition</p>
           <picture>
-            <source srcset="/assets/images/challenge-coin-history-timeline.webp" type="image/webp">
-            <img src="/assets/images/challenge-coin-history-timeline.jpg" width="1400" height="800" loading="lazy" decoding="async" alt="Timeline showing the debated origins of challenge coin traditions">
+            <source srcset="/assets/images/challenge-coin-history-timeline-custom.webp" type="image/webp">
+            <img src="/assets/images/challenge-coin-history-timeline-custom.jpg" width="1400" height="800" loading="lazy" decoding="async" alt="Timeline showing the debated origins of challenge coin traditions">
           </picture>
           <div class="blog-timeline-labels" aria-label="Possible origins and development stages">
             <div><strong>Ancient Rome</strong><span>An early precedent for coins used as recognition—not a proven origin of modern challenge coins.</span></div>
@@ -274,8 +274,8 @@ export const blogHtml = String.raw`
         <p>This purpose-based grouping is more useful than assuming that every branch or unit follows the same practice. It also keeps the focus on why a coin exists and what it means to the recipient.</p>
         <figure class="blog-article-image blog-visual-block blog-image-7x5">
           <picture>
-            <source srcset="/assets/images/types-of-military-challenge-coins.webp" type="image/webp">
-            <img src="/assets/images/types-of-military-challenge-coins.jpg" width="1400" height="1000" loading="lazy" decoding="async" alt="Custom challenge coin collage with sample logo placement">
+            <source srcset="/assets/images/types-of-military-challenge-coins-grid.webp" type="image/webp">
+            <img src="/assets/images/types-of-military-challenge-coins-grid.jpg" width="1400" height="1000" loading="lazy" decoding="async" alt="Nine common types of military challenge coins grouped by purpose">
           </picture>
           <ol class="blog-coin-type-labels" aria-label="Nine purpose-based challenge coin categories">
             <li>Unit Coins</li>
