@@ -208,10 +208,10 @@ export const blogHtml = String.raw`
 
         <h2 id="where-did-the-challenge-coin-tradition-begin">Where Did the Challenge Coin Tradition Begin?</h2>
         <p>The exact origin of challenge coins is not definitively documented. Several stories are frequently repeated, but they should not all be presented as verified historical fact.</p>
-        <p>Some accounts look as far back as ancient Rome, where soldiers could receive marked coins or additional pay for notable service. This shows that coins have long communicated status and recognition, but it does not establish a continuous line to the modern tradition.</p>
+        <p>Some accounts look as far back as ancient Rome, where soldiers could receive marked coins or additional pay for notable service. This suggests that coins have long been used to communicate status and recognition, but it does not establish a continuous line to the modern tradition.</p>
         <p>The best-known modern story is set during World War I. A lieutenant reportedly commissioned bronze medallions for his flying squadron, and one pilot later used his medallion to help prove his identity after escaping captivity. The story appears widely, but surviving documentation is limited.</p>
         <p>Other accounts connect the tradition with World War II identification practices, customs among troops during the Vietnam War, or the later growth of unit coins. A <a href="https://www.war.gov/News/Feature-Stories/Story/article/2567302/the-challenge-coin-tradition-do-you-know-how-it-started/" target="_blank" rel="noopener noreferrer">U.S. military feature on the tradition</a> discusses several possible beginnings.</p>
-        <p>The accurate approach is to explain the main stories without claiming that one has been conclusively proven. What is clearer is that challenge coins became an established part of modern military culture.</p>
+        <p>The accurate approach is to explain the main stories without claiming that one has been conclusively proven. What is clearer is that challenge coins have become a familiar part of modern military culture.</p>
 
         <h2 id="why-do-military-leaders-present-challenge-coins">Why Do Military Leaders Present Challenge Coins?</h2>
         <p>Challenge coins offer a direct and personal form of recognition. They do not replace formal decorations or official awards, but they can acknowledge contributions that a leader wants to recognize personally.</p>
@@ -260,7 +260,7 @@ export const blogHtml = String.raw`
 
         <h2 id="how-did-the-tradition-move-beyond-the-military">How Did the Tradition Move Beyond the Military?</h2>
         <p>Belonging, recognition and shared experience also matter outside the armed forces. Police and fire departments, emergency services, veteran groups, schools, sports teams, clubs, nonprofits and companies use coins for similar reasons.</p>
-        <p>A fire department may honor service, a sports team may recognize volunteers, and a company may mark an anniversary. These coins do not need to imitate military imagery; they work best when the symbols and presentation feel authentic to the organization.</p>
+        <p>A fire department may honor service, a sports team may recognize volunteers, and a company may mark an anniversary. These coins do not need to imitate military imagery; they are often more meaningful when the symbols and presentation feel authentic to the organization.</p>
 
         <h2 id="how-can-a-new-coin-preserve-the-meaning-of-the-tradition">How Can a New Coin Preserve the Meaning of the Tradition?</h2>
         <p>A meaningful coin begins with purpose, not decoration. Before developing artwork, define five things:</p>
@@ -282,7 +282,7 @@ export const blogHtml = String.raw`
         <h3 id="faq-challenge-coin-rules">Are challenge coin rules the same in every military unit?</h3>
         <p>No. Coin checks and carrying customs are informal traditions that can vary between units and organizations. Some groups use them socially, while others do not practice them at all.</p>
         <h3 id="faq-can-civilians-receive-challenge-coins">Can civilians receive challenge coins?</h3>
-        <p>Yes. Military leaders and organizations may present coins to civilians in recognition of support, service or a professional relationship. Civilian organizations also create their own coins for recognition, membership and commemorative purposes.</p>
+        <p>Yes. In some cases, military leaders and organizations may present coins to civilians in recognition of support, service or a professional relationship. Civilian organizations also create their own coins for recognition, membership and commemorative purposes.</p>
 
         <h2 id="conclusion">Conclusion</h2>
         <p>Military challenge coins turn recognition, identity and shared experience into something people can hold. Their origin remains debated and their customs vary, but their value consistently comes from the story, relationship and moment attached to them.</p>
