@@ -299,7 +299,7 @@ export const blogHtml = String.raw`
         <figure class="blog-article-image blog-image-3x2">
           <picture>
             <source srcset="/assets/images/challenge-coin-symbols-meaning.webp" type="image/webp">
-            <img src="/assets/images/challenge-coin-symbols-meaning.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Generic challenge coin symbols including stars shields dates and numbers">
+            <img src="/assets/images/challenge-coin-symbols-meaning.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Two custom challenge coins with raised enamel details">
           </picture>
           <figcaption>Symbols gain meaning from the people, event and experience they are intended to represent.</figcaption>
         </figure>
