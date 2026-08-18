@@ -302,6 +302,25 @@
   margin-right: 0;
 }
 
+.blog-inquiry-cta {
+  grid-template-columns: minmax(0, 1fr) 230px;
+  align-items: center;
+  border-left: 6px solid var(--yellow);
+  background:
+    radial-gradient(circle at 92% 12%, rgba(23, 113, 184, 0.12), rgba(255, 255, 255, 0) 30%),
+    linear-gradient(135deg, #ffffff 0%, #f7fbff 56%, #fff8df 100%);
+  box-shadow: 0 24px 58px rgba(11, 47, 99, 0.12);
+}
+
+.blog-cta-kicker {
+  margin: 0 0 8px;
+  color: var(--yellow-dark, #b88600);
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
 .blog-article-with-toc {
   width: 100%;
   max-width: 1080px;

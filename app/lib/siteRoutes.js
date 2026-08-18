@@ -289,7 +289,7 @@ const blogArticleData = {
     authorType: "Person",
     datePublished: "2026-08-18",
     dateModified: "2026-08-18",
-    image: "/assets/images/military-challenge-coin-tradition-handshake-og.webp",
+    image: "/assets/images/military-challenge-coin-tradition-handshake-clean-og.webp",
     schemaType: "Article",
   },
   "custom-metal-keychain-materials": {

@@ -38,7 +38,7 @@ export const blogHtml = String.raw`
         </div>
         <div class="blog-card-grid">
           <a class="blog-feature-card" href="/blog/military-challenge-coin-traditions" data-blog-category="Custom Coins" aria-label="Read Military Challenge Coin Traditions, Meaning and Etiquette">
-            <img src="/assets/images/military-challenge-coin-tradition-handshake.webp" width="1600" height="900" alt="Military challenge coin presented discreetly during a handshake">
+            <img src="/assets/images/military-challenge-coin-tradition-handshake-clean.webp" width="1600" height="900" alt="Military challenge coin presented discreetly during a handshake">
             <div class="blog-feature-body">
               <div class="blog-feature-meta"><span>Custom Coins</span><span>Traditions Guide</span></div>
               <h2>Military Challenge Coin Traditions, Meaning and Etiquette</h2>
@@ -184,8 +184,8 @@ export const blogHtml = String.raw`
           <h1>Military Challenge Coin Traditions: Meaning, History and How They Are Presented</h1>
           <figure class="blog-article-image blog-article-hero-image blog-article-natural-image">
             <picture>
-              <source srcset="/assets/images/military-challenge-coin-tradition-handshake.webp" type="image/webp">
-              <img src="/assets/images/military-challenge-coin-tradition-handshake.jpg" width="1600" height="900" fetchpriority="high" decoding="async" alt="Military challenge coin presented discreetly during a handshake">
+              <source srcset="/assets/images/military-challenge-coin-tradition-handshake-clean.webp" type="image/webp">
+              <img src="/assets/images/military-challenge-coin-tradition-handshake-clean.jpg" width="1600" height="900" fetchpriority="high" decoding="async" alt="Military challenge coin presented discreetly during a handshake">
             </picture>
             <figcaption>A discreet handshake presentation is one familiar challenge coin tradition, although presentation customs vary between organizations.</figcaption>
           </figure>
@@ -336,6 +336,18 @@ export const blogHtml = String.raw`
 
         <h2 id="create-a-coin-that-carries-a-real-story">Create a Coin That Carries a Real Story</h2>
         <p>Tell us who the coin is for, why it will be presented, the wording or symbols that matter, your quantity and your required date. UcCrafts can review the concept, help prepare production-ready artwork and provide a digital proof before an order moves forward.</p>
+
+        <section class="blog-article-cta blog-inquiry-cta" aria-labelledby="military-coin-inquiry-title">
+          <div>
+            <p class="blog-cta-kicker">Custom challenge coin inquiry</p>
+            <h2 id="military-coin-inquiry-title" class="blog-cta-title">Ready to Plan a Meaningful Challenge Coin?</h2>
+            <p>Send your logo or approved artwork, intended use, quantity, preferred size, finish, packaging requirements and delivery deadline. Our team can review the design, recommend a practical coin construction and prepare a clear production quote.</p>
+          </div>
+          <div class="blog-cta-actions">
+            <a class="btn btn-yellow" href="/contact?product=Challenge%20Coins&source=military-challenge-coin-traditions">Request a Free Quote</a>
+            <a class="btn btn-primary" href="/products/custom-challenge-coins">View Coin Options</a>
+          </div>
+        </section>
 
         <nav class="blog-related-links" aria-label="Related buyer guides">
           <strong>Related buyer guides</strong>
