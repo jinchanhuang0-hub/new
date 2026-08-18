@@ -553,17 +553,18 @@
   .hero > .container {
     order: 1;
     width: min(var(--max), calc(100% - 28px));
-    min-height: calc(33.35vw + 330px);
+    min-height: 0;
   }
 
   .hero-content {
+    min-width: 0;
     width: 100%;
     transform: none;
-    padding: 30px 0 calc(33.35vw + 24px);
+    padding: 30px 0 34px;
   }
 
   .hero-bg {
-    display: block;
+    display: none;
   }
 
   .hero h1 {
@@ -574,9 +575,15 @@
   }
 
   .hero p {
+    max-width: 390px;
     margin-top: 24px;
     font-size: 16px;
-    line-height: 1.58;
+    line-height: 1.65;
+    overflow-wrap: break-word;
+  }
+
+  .hero p br {
+    display: none;
   }
 
   .hero-actions {

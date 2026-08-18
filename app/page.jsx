@@ -21,7 +21,7 @@ const html = String.raw`
        
         <div class="hero-content">
           <h1><span class="hero-title-line">High-Quality Custom</span><span class="hero-title-line">Metal Products Manufacturer</span></h1>
-          <p>OEM/ODM custom metal crafts with 20+ years of expertise.<br>From design to delivery, quality you can trust.</p>
+          <p>OEM/ODM custom metal crafts with 20+ years of expertise. <br>From design to delivery, quality you can trust.</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="/contact">Get Free Quote</a>
             <a class="btn btn-outline" href="/contact">Contact Us</a>
