@@ -220,7 +220,7 @@ export const customMetalKeychainMaterialsArticleHtml = String.raw`
           <a id="conclusion"></a>
           <h2>Conclusion</h2>
           <p>Material selection is most reliable when the buyer and manufacturer review the budget, application and artwork together. The goal is not simply to select the most expensive metal, but to identify a material-process combination that reproduces the design and performs as required.</p>
-          <p>Before mass production, confirm the material, process, dimensions, finish, hardware, packaging and inspection criteria in writing. For another comparison, review our <a href="/products/custom-metal-keychains">custom metal keychain collection</a> and send the artwork for a practical material recommendation.</p>
+          <p>Before mass production, confirm the material, process, dimensions, finish, hardware, packaging and inspection criteria in writing. For finished style references, review our <a href="/products/custom-metal-keychains">custom metal keychain collection</a>; for measurement and attachment decisions, use the <a href="/blog/custom-metal-keychain-size-attachment-guide">custom metal keychain size guide</a>. Send the artwork for a practical material recommendation.</p>
 
           <section class="blog-article-cta">
             <div class="blog-cta-copy">

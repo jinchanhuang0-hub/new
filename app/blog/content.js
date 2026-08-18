@@ -289,7 +289,7 @@ export const blogHtml = String.raw`
             <li>Sponsor logo or personalization details</li>
           </ul>
           <p>If the design is not final, send the event story and reference images first. A factory can suggest whether the medal should be round, custom-shaped, antique plated, color-filled, printed or made with 3D relief.</p>
-          <p>For buyers comparing recognition products, our <a href="/blog/custom-medals-vs-challenge-coins">custom medals vs challenge coins</a> guide explains when medals fit ceremony awards and when coins fit sponsor gifts or collectible recognition. If you are still building the product plan, the <a href="/blog/custom-metal-crafts-guide">custom metal crafts guide</a> may also help.</p>
+          <p>For buyers comparing recognition products, our <a href="/blog/custom-medals-vs-challenge-coins">custom medals vs challenge coins</a> guide explains when medals fit ceremony awards and when coins fit sponsor gifts or collectible recognition. You can also browse finished <a href="/products/custom-medals">custom medals</a> before finalizing size, finish and ribbon direction. If you are still building the product plan, the <a href="/blog/custom-metal-crafts-guide">custom metal crafts guide</a> may also help.</p>
 
           <a id="faq"></a>
           <h2>Frequently Asked Questions</h2>
@@ -915,7 +915,7 @@ export const blogHtml = String.raw`
           <h1>How Are Custom Challenge Coins Made?</h1>
           <p>Custom challenge coins are made through a controlled manufacturing process that turns a logo, badge, sketch, or idea into a finished metal coin. For buyers, the useful part is not only knowing the steps. It is knowing which details must be confirmed before tooling starts, because unclear artwork, weak relief, color mistakes, and late packaging changes can all affect the final order.</p>
           <p>This guide explains the challenge coin manufacturing process from artwork preparation and digital proofing to tooling, die-striking or die-casting, finishing, color filling, final inspection, and shipment preparation. Each step has a practical effect on weight, surface detail, color clarity, delivery planning, and the way the finished coin is presented to the recipient.</p>
-          <p>For related buying decisions, review our <a href="/blog/2d-vs-3d-challenge-coins">2D vs 3D challenge coin comparison</a>, <a href="/products/custom-challenge-coins">custom challenge coins</a> page, <a href="/blog/custom-metal-crafts-guide">custom metal crafts guide</a>, and <a href="/blog/custom-medals-vs-challenge-coins">custom medals vs challenge coins</a> comparison.</p>
+          <p>For related buying decisions, review our <a href="/blog/2d-vs-3d-challenge-coins">2D vs 3D challenge coin comparison</a>, <a href="/product-category/custom-challenge-coins">challenge coin category page</a>, <a href="/products/custom-challenge-coins">custom challenge coins</a> page, <a href="/blog/custom-metal-crafts-guide">custom metal crafts guide</a>, and <a href="/blog/custom-medals-vs-challenge-coins">custom medals vs challenge coins</a> comparison.</p>
           <figure class="blog-article-image blog-article-hero-image">
             <img src="/assets/images/blog-how-challenge-coins-made-hero.webp" width="1600" height="759" alt="three custom challenge coins with blue red and gold enamel finishes">
             <figcaption>Finished custom challenge coins can combine raised metal relief, enamel color and antique finishes.</figcaption>

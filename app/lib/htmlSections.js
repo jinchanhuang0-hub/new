@@ -179,10 +179,7 @@ export const buildCategoryHtml = (html, categoryKey, categoryLabel) => {
   );
   const section = replaceProductTypeSectionCards((
     html.match(sectionPattern)?.[0]?.replace(/\s+hidden(?=[\s>])/i, "") || ""
-  ), categoryKey).replace(
-    /(\s*<\/div>\s*<\/section>)$/,
-    `${categorySeoContent[categoryKey] || ""}$1`,
-  );
+  ), categoryKey);
 
   return `${shell.beforeMain}<main class="product-types-page" id="custom-details">${section}</main>${shell.afterMain}`;
 };
