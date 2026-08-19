@@ -5,7 +5,7 @@ import { siteHeaderHtml } from "./components/siteHeaderHtml";
 
 export const metadata = {
   title: "Custom Metal Gifts Manufacturer | Pins, Medals & Coins",
-  description: "Unique Pin is a China OEM/ODM custom metal gifts manufacturer with 20+ years of experience, No MOQ, free artwork support, fast sampling and global delivery. Mold fees and unit prices are calculated by project.",
+  description: "Unique Pin provides OEM/ODM production backed by team experience since 2003, with free artwork support, No MOQ and in-house quality control. Mold fees and unit prices are calculated by project.",
   alternates: {
     canonical: "https://uccrafts.com/"
   }
@@ -21,7 +21,7 @@ const html = String.raw`
        
         <div class="hero-content">
           <h1><span class="hero-title-line">High-Quality Custom</span><span class="hero-title-line">Metal Products Manufacturer</span></h1>
-          <p>OEM/ODM custom metal crafts with 20+ years of expertise. <br>From design to delivery, quality you can trust.</p>
+          <p>OEM/ODM production backed by team experience since 2003, with free artwork support, No MOQ and in-house quality control.</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="/contact">Get Free Quote</a>
             <a class="btn btn-outline" href="/contact">Contact Us</a>

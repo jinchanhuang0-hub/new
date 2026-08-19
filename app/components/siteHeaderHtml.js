@@ -76,7 +76,7 @@ export const siteHeaderHtml = ({ active = "" } = {}) => {
   return String.raw`
   <div class="topbar">
     <div class="container">
-      <span>Team Industry Experience Since 2003</span>
+      <span>Team Metal Craft Experience Since 2003</span>
       <span>Email: ceo@chinauniquepin.com | WhatsApp: +86 18895316838</span>
     </div>
   </div>
