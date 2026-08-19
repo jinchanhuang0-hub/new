@@ -2828,6 +2828,8 @@ const escapeHtml = (value = "") => String(value)
   .replaceAll('"', "&quot;");
 
 const DEFAULT_CUSTOM_SOLUTION_PROFILE = {
+  material: "Metal, PVC, magnet or accessory materials selected for the product structure and finish.",
+  process: "Production process matched to the approved artwork, structure and product type.",
   size: "Custom size based on artwork, product use and budget.",
   thickness: "Project-based thickness confirmed with the digital proof.",
   accessories: "Product-specific hardware, attachments or display options available.",
@@ -2838,54 +2840,72 @@ const DEFAULT_CUSTOM_SOLUTION_PROFILE = {
 
 const CUSTOM_SOLUTION_PROFILES = {
   "Lapel Pins": {
+    material: "Zinc alloy or iron base selected by artwork detail, finish and budget.",
+    process: "Pin badge production process selected by artwork style, finish and surface effect.",
     size: "Custom shape and size, commonly 0.75-2.0 inches for pin badges.",
     thickness: "Commonly 1.2-2.0 mm, adjusted for 3D relief, printing or enamel areas.",
     accessories: "Butterfly clutch, rubber clutch, deluxe clutch, safety pin, magnet or backing card.",
     packaging: "OPP bag as standard; backing card, carded bag, velvet pouch or retail box available."
   },
   "Medals": {
+    material: "Zinc alloy, iron or brass selected for medal size, weight and finish.",
+    process: "Metal forming, plating, color detailing, polishing and ribbon assembly.",
     size: "Custom medal diameter or shape, commonly 1.75-3.5 inches.",
     thickness: "Commonly 2.5-5.0 mm depending on relief depth, weight and event budget.",
     accessories: "Ribbon, neck drape, jump ring, medal loop, presentation box or display case.",
     packaging: "Individual OPP bag, velvet box, medal case, gift box or event-ready packing."
   },
   "Challenge Coins": {
+    material: "Zinc alloy, brass or iron selected for coin weight, edge detail and finish.",
+    process: "Metal relief forming, plating, edge finishing and optional color detailing.",
     size: "Custom round or shaped coin, commonly 1.5-2.5 inches.",
     thickness: "Commonly 3.0-5.0 mm for single-sided or double-sided coin designs.",
     accessories: "Coin capsule, velvet pouch, acrylic case, coin stand or presentation box.",
     packaging: "Individual OPP bag, capsule, velvet box, acrylic case or retail gift box."
   },
   "Keychains": {
+    material: "Zinc alloy, iron, stainless steel, acrylic, leather or PVC selected by design.",
+    process: "Metal shaping, surface finishing, artwork application and keychain hardware assembly.",
     size: "Custom charm size, commonly 1.0-3.0 inches before ring or chain.",
     thickness: "Commonly 2.0-4.0 mm depending on metal weight, shape and finish.",
     accessories: "Split ring, chain, swivel hook, lobster clasp, bottle opener or custom fitting.",
     packaging: "OPP bag as standard; backing card, hang card, velvet pouch or gift box available."
   },
   "Belt Buckles": {
+    material: "Zinc alloy or brass selected for buckle weight, relief detail and belt hardware.",
+    process: "Buckle body forming, polishing, plating, color detail and back hardware assembly.",
     size: "Custom buckle size, commonly 2.5-4.5 inches by belt width.",
     thickness: "Commonly 3.5-5.5 mm, adjusted for relief, enamel and back hardware.",
     accessories: "Buckle loop, prong, belt-fit hardware and finish options.",
     packaging: "Individual protective bag, velvet pouch, gift box or retail packaging."
   },
   "Golf Accessories": {
+    material: "Zinc alloy, iron or magnetic hardware selected for the golf accessory structure.",
+    process: "Golf accessory forming, surface finishing, artwork application and magnetic assembly.",
     size: "Ball marker, hat clip, divot tool or gift set size based on intended use.",
     thickness: "Commonly 1.2-3.0 mm for markers and clips; adjusted for tool structure.",
     accessories: "Magnetic hat clip, divot tool, ball marker tray, backing card or gift set box.",
     packaging: "OPP bag, backing card, clamshell, velvet pouch or golf gift box available."
   },
   "Bottle Openers": {
+    material: "Zinc alloy, stainless steel, iron or aluminum selected for opening strength.",
+    process: "Opener body forming, polishing, plating, artwork application and key ring assembly.",
     size: "Custom opener size, commonly 2.5-4.5 inches depending on function and shape.",
     thickness: "Commonly 2.5-5.0 mm for durable opening strength and comfortable handling.",
     accessories: "Key ring, chain, magnet, opener insert or custom hanging hardware.",
     packaging: "OPP bag, backing card, gift box or retail-ready packaging available."
   },
   "Cufflinks & Tie Clips": {
+    material: "Brass, stainless steel or zinc alloy selected for formal accessory finish.",
+    process: "Metal polishing, plating, logo application, inlay work and accessory hardware assembly.",
     size: "Cufflink face and tie clip length are customized for formal accessory use.",
     thickness: "Profile thickness is adjusted for comfort, plating and accessory hardware.",
     accessories: "Cufflink backs, tie clip springs, gift card, velvet pouch or presentation box.",
     packaging: "Individual bag, velvet pouch, cufflink box or premium gift box available."
   },
   "Fridge Magnets": {
+    material: "Zinc alloy, soft PVC, acrylic or magnetic backing selected by magnet style.",
+    process: "Magnet body forming, artwork application, surface finishing and magnet backing assembly.",
     size: "Custom magnet size, commonly 1.5-4.0 inches for souvenir or retail use.",
     thickness: "Commonly 2.0-5.0 mm depending on metal, PVC or magnet structure.",
     accessories: "Rubber magnet, ferrite magnet, soft magnetic sheet, backing card or display card.",
@@ -2901,6 +2921,8 @@ const getProductSearchText = (item) => [
   item.lead
 ].filter(Boolean).join(" ").toLowerCase();
 
+const includesAny = (text, terms) => terms.some((term) => text.includes(term));
+
 const getCustomSolutionProfile = (item) => {
   const productType = item.quoteProduct || item.categoryLabel;
   const profile = {
@@ -2912,10 +2934,12 @@ const getCustomSolutionProfile = (item) => {
   if (text.includes("uv printed") || text.includes("uv printing") || text.includes("full color printed")) {
     return {
       ...profile,
-      material: `${item.material} base with a smooth printable face.`,
-      process: "Full color UV printing, clear epoxy coating and plating as required.",
+      material: `${item.material} or iron base with a smooth printable face.`,
+      process: "Full-color UV printing, optional clear epoxy coating and plating.",
+      size: "Custom shape and size, commonly 0.75-2.0 inches for printed pin badges.",
       thickness: "Commonly 1.0-2.0 mm, adjusted for print area, edge shape and epoxy coating.",
-      accessories: "Butterfly clutch, rubber clutch, magnet, safety pin or backing card."
+      accessories: "Butterfly clutch, rubber clutch, magnet, safety pin or backing card.",
+      packaging: "OPP bag as standard; backing card, carded bag or retail packaging available."
     };
   }
 
@@ -2924,15 +2948,50 @@ const getCustomSolutionProfile = (item) => {
       ...profile,
       material: "Soft PVC or flexible rubber material matched to the design.",
       process: "PVC molding, color filling and magnet or accessory assembly.",
+      size: "Custom molded size based on character artwork and intended use.",
       thickness: "Custom molded thickness based on character relief and flexibility.",
-      accessories: "Magnet backing, key ring, hanging loop, backing card or retail package."
+      accessories: "Magnet backing, key ring, hanging loop, backing card or retail package.",
+      packaging: "OPP bag, backing card, retail card or gift packaging available."
+    };
+  }
+
+  if (includesAny(text, ["hard enamel"])) {
+    return {
+      ...profile,
+      material: `${item.material} or iron base selected for a smooth polished enamel finish.`,
+      process: "Hard enamel color fill, surface polishing and plating.",
+      thickness: "Commonly 1.2-2.0 mm, adjusted for polished enamel areas and metal outline.",
+      accessories: "Butterfly clutch, rubber clutch, deluxe clutch, safety pin, magnet or backing card."
+    };
+  }
+
+  if (includesAny(text, ["soft enamel"])) {
+    return {
+      ...profile,
+      material: `${item.material} or iron base selected for raised metal outlines and recessed color.`,
+      process: "Soft enamel color fill, plating and protective surface finishing.",
+      thickness: "Commonly 1.2-2.0 mm, adjusted for recessed color areas and metal outline.",
+      accessories: "Butterfly clutch, rubber clutch, deluxe clutch, safety pin, magnet or backing card."
+    };
+  }
+
+  if (includesAny(text, ["die struck", "antique", "3d zinc", "3d lapel", "3d metal"])) {
+    return {
+      ...profile,
+      material: `${item.material} selected for raised relief, antique texture or 3D detail.`,
+      process: "Raised metal relief, polishing, plating and antique finishing as required.",
+      thickness: "Commonly 1.5-2.5 mm for pins, adjusted for relief depth and finish.",
+      accessories: "Butterfly clutch, rubber clutch, deluxe clutch, safety pin or backing card."
     };
   }
 
   if (text.includes("printed") || text.includes("printing")) {
     return {
       ...profile,
-      process: `${item.process}. Printing details are matched to your submitted artwork.`
+      material: `${item.material} base with a print-ready surface.`,
+      process: "Full-color printing, optional epoxy coating and plating.",
+      thickness: "Commonly 1.0-2.0 mm, adjusted for print area, shape and coating.",
+      accessories: "Product-specific hardware selected for the approved design."
     };
   }
 
@@ -2943,8 +3002,8 @@ const getCustomSolutionRows = (item) => {
   const profile = getCustomSolutionProfile(item);
 
   return [
-    ["Material", profile.material || `${item.material} selected for the product structure and finish.`],
-    ["Process", profile.process || `${item.process} matched to the approved artwork.`],
+    ["Material", profile.material],
+    ["Process", profile.process],
     ["Size", profile.size],
     ["Thickness", profile.thickness],
     ["Accessories", profile.accessories],
@@ -2988,6 +3047,8 @@ export const renderProductItemHtml = (item, currentSlug) => {
   );
   const quoteProduct = item.quoteProduct || item.categoryLabel;
   const quotePath = escapeHtml(`/contact?product=${encodeURIComponent(quoteProduct)}&item=${encodeURIComponent(item.title)}`);
+  const solutionProfile = getCustomSolutionProfile(item);
+  const displayProcess = escapeHtml(solutionProfile.process);
 
   return html
     .replace(/^\s*<script type="application\/json" data-product-item-data>[\s\S]*?<\/script>\s*/, "")
@@ -2997,7 +3058,7 @@ export const renderProductItemHtml = (item, currentSlug) => {
     .replace(/<h1 data-product-item-title>[^<]*<\/h1>/g, `<h1 data-product-item-title>${safe.title}</h1>`)
     .replace(/<p class="single-product-lead" data-product-item-lead>[\s\S]*?<\/p>/, `<p class="single-product-lead" data-product-item-lead>${safe.lead}</p>`)
     .replace(/<span data-product-spec="material">[^<]*<\/span>/g, `<span data-product-spec="material">${safe.material}</span>`)
-    .replace(/<span data-product-spec="process">[^<]*<\/span>/g, `<span data-product-spec="process">${safe.process}</span>`)
+    .replace(/<span data-product-spec="process">[^<]*<\/span>/g, `<span data-product-spec="process">${displayProcess}</span>`)
     .replace(/<span data-product-spec="sku">[^<]*<\/span>/g, `<span data-product-spec="sku">${safe.sku}</span>`)
     .replace(/<span data-product-spec="usage">[^<]*<\/span>/g, `<span data-product-spec="usage">${safe.usage}</span>`)
     .replace(/<span data-product-spec="categories">[^<]*<\/span>/g, `<span data-product-spec="categories">${safe.categories}</span>`)
