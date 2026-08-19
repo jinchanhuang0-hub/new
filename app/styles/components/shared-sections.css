@@ -44,7 +44,7 @@
 
 .review-card {
   min-height: 430px;
-  flex: 0 0 calc(33.333333% - 8px);
+  flex: 0 0 100%;
   display: flex;
   flex-direction: column;
   padding: 36px;
@@ -59,8 +59,8 @@
 
 .review-card.review-image-card {
   min-height: 0;
-  justify-content: center;
-  padding: 14px;
+  justify-content: flex-start;
+  padding: 0 14px 14px;
   background: #fff;
 }
 

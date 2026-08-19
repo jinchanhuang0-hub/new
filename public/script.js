@@ -103,11 +103,7 @@ document.querySelectorAll("[data-review-carousel]").forEach((carousel) => {
   const next = carousel.querySelector("[data-review-next]");
   let current = 0;
 
-  const visibleCount = () => {
-    if (window.matchMedia("(max-width: 640px)").matches) return 1;
-    if (window.matchMedia("(max-width: 980px)").matches) return 2;
-    return 3;
-  };
+  const visibleCount = () => 1;
 
   const maxIndex = () => Math.max(0, cards.length - visibleCount());
 
