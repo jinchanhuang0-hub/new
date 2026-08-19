@@ -663,11 +663,14 @@
   width: 100%;
   min-height: 48px;
   margin: 0;
+  padding: 0 18px;
   border: 2px solid var(--navy);
   border-radius: 7px;
   background: var(--yellow);
   color: var(--navy);
   font-weight: 900;
+  line-height: 1.25;
+  text-align: center;
   text-decoration: none;
   box-shadow: 0 16px 34px rgba(243, 198, 0, 0.22);
   transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;

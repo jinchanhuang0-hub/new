@@ -2727,7 +2727,7 @@ const html = String.raw`
             <div><strong>Usage</strong><span data-product-spec="usage">Brand events, clubs, retail gifts</span></div>
             <div><strong>Categories</strong><span data-product-spec="categories">Lapel Pins, Soft Enamel Pins</span></div>
           </div>
-          <a class="single-product-inquiry" href="/contact" data-product-inquiry-trigger data-product-inquiry-product="Lapel Pins">GET A QUOTE</a>
+          <a class="single-product-inquiry" href="/contact" data-product-inquiry-trigger data-product-inquiry-product="Lapel Pins">Request a Similar Custom Design</a>
           <div class="single-product-quote-benefits" aria-label="Quote benefits">
             <div><span class="quote-benefit-icon quote-benefit-icon-moq" aria-hidden="true"></span><span>No MOQ</span></div>
             <div><span class="quote-benefit-icon quote-benefit-icon-design" aria-hidden="true"></span><span>FREE DESIGN</span></div>
@@ -2758,12 +2758,13 @@ const html = String.raw`
           <table class="custom-solutions-table">
             <thead><tr><th colspan="3">CUSTOM SOLUTIONS</th></tr></thead>
             <tbody>
-              <tr><td>1</td><td>Material</td><td>Zinc alloy, iron, brass or stainless steel for optional needs.</td></tr>
-              <tr><td>2</td><td>Process</td><td>Molding, casting, polishing, plating, enamel filling and packaging.</td></tr>
-              <tr><td>3</td><td>Plating color</td><td>Gold, silver, bronze, black nickel, antique or custom plating colors.</td></tr>
-              <tr><td>4</td><td>Logo</td><td>Customize with your own artwork, brand mark or event design.</td></tr>
-              <tr><td>5</td><td>Package</td><td>Poly bag, backing card, velvet box, gift box or retail package.</td></tr>
-              <tr><td>6</td><td>Shipment</td><td>DHL, FedEx, UPS, air freight, sea freight or your forwarder.</td></tr>
+              <tr><td>1</td><td>Material</td><td>Zinc alloy</td></tr>
+              <tr><td>2</td><td>Process</td><td>Soft enamel, hard enamel, printing or plating selected by artwork.</td></tr>
+              <tr><td>3</td><td>Size</td><td>Custom size based on artwork and use case.</td></tr>
+              <tr><td>4</td><td>Thickness</td><td>Project-based thickness confirmed with the digital proof.</td></tr>
+              <tr><td>5</td><td>Accessories</td><td>Attachment options selected for the product type.</td></tr>
+              <tr><td>6</td><td>Packaging</td><td>Standard or retail packaging quoted by project.</td></tr>
+              <tr><td>7</td><td>Lead Time</td><td>Confirmed after artwork review and proof approval.</td></tr>
             </tbody>
           </table>
           <div class="custom-solutions-visual"><img data-product-item-image src="assets/images/type-pins-soft-enamel.jpg" alt="Custom product sample"></div>
@@ -2798,8 +2799,8 @@ const html = String.raw`
       <div class="product-inquiry-dialog" role="dialog" aria-modal="true" aria-labelledby="product-item-quote-title">
         <button class="product-inquiry-close" type="button" aria-label="Close inquiry form" data-product-inquiry-close>&times;</button>
         <div class="contact-card product-inquiry-card">
-          <h2 id="product-item-quote-title" class="contact-form-title">Request Your Free Quote</h2>
-          <p class="product-inquiry-note">Send your product details, artwork or deadline. Our team will reply with a clear custom quote.</p>
+          <h2 id="product-item-quote-title" class="contact-form-title">Request a Similar Custom Design</h2>
+          <p class="product-inquiry-note">Use this sample as a style reference. Share your own artwork, logo or deadline, and our team will prepare an original custom quote.</p>
           <form class="form" data-inquiry-form>
             <div class="form-row"><input type="text" name="name" placeholder="Name" required><input type="email" name="email" placeholder="Email" required></div>
             <div class="form-row"><input type="text" name="country" placeholder="Country / Region" required><input type="text" name="whatsapp" placeholder="Phone Number"></div>
@@ -2824,6 +2825,144 @@ const escapeHtml = (value = "") => String(value)
   .replaceAll("<", "&lt;")
   .replaceAll(">", "&gt;")
   .replaceAll('"', "&quot;");
+
+const DEFAULT_CUSTOM_SOLUTION_PROFILE = {
+  size: "Custom size based on artwork, product use and budget.",
+  thickness: "Project-based thickness confirmed with the digital proof.",
+  accessories: "Product-specific hardware, attachments or display options available.",
+  packaging: "OPP bag as standard; backing card, velvet box, gift box or retail packaging available.",
+  leadTime: "Artwork proof, mold fee, unit price and production schedule are calculated by project."
+};
+
+const CUSTOM_SOLUTION_PROFILES = {
+  "Lapel Pins": {
+    size: "Custom shape and size, commonly 0.75-2.0 inches for pin badges.",
+    thickness: "Commonly 1.2-2.0 mm, adjusted for 3D relief, printing or enamel areas.",
+    accessories: "Butterfly clutch, rubber clutch, deluxe clutch, safety pin, magnet or backing card.",
+    packaging: "OPP bag as standard; backing card, carded bag, velvet pouch or retail box available.",
+    leadTime: "Digital proof before production; mold fees and unit prices are calculated by project."
+  },
+  "Medals": {
+    size: "Custom medal diameter or shape, commonly 1.75-3.5 inches.",
+    thickness: "Commonly 2.5-5.0 mm depending on relief depth, weight and event budget.",
+    accessories: "Ribbon, neck drape, jump ring, medal loop, presentation box or display case.",
+    packaging: "Individual OPP bag, velvet box, medal case, gift box or event-ready packing.",
+    leadTime: "Schedule is confirmed after artwork, ribbon and packaging details are approved."
+  },
+  "Challenge Coins": {
+    size: "Custom round or shaped coin, commonly 1.5-2.5 inches.",
+    thickness: "Commonly 3.0-5.0 mm for single-sided or double-sided coin designs.",
+    accessories: "Coin capsule, velvet pouch, acrylic case, coin stand or presentation box.",
+    packaging: "Individual OPP bag, capsule, velvet box, acrylic case or retail gift box.",
+    leadTime: "Artwork proof, mold fee, unit price and production time are quoted by project."
+  },
+  "Keychains": {
+    size: "Custom charm size, commonly 1.0-3.0 inches before ring or chain.",
+    thickness: "Commonly 2.0-4.0 mm depending on metal weight, shape and finish.",
+    accessories: "Split ring, chain, swivel hook, lobster clasp, bottle opener or custom fitting.",
+    packaging: "OPP bag as standard; backing card, hang card, velvet pouch or gift box available.",
+    leadTime: "Lead time is confirmed after artwork, hardware and packaging details are approved."
+  },
+  "Belt Buckles": {
+    size: "Custom buckle size, commonly 2.5-4.5 inches by belt width.",
+    thickness: "Commonly 3.5-5.5 mm, adjusted for relief, enamel and back hardware.",
+    accessories: "Buckle loop, prong, belt-fit hardware and finish options.",
+    packaging: "Individual protective bag, velvet pouch, gift box or retail packaging.",
+    leadTime: "Mold fee, unit price and production schedule are calculated by buckle design."
+  },
+  "Golf Accessories": {
+    size: "Ball marker, hat clip, divot tool or gift set size based on intended use.",
+    thickness: "Commonly 1.2-3.0 mm for markers and clips; adjusted for tool structure.",
+    accessories: "Magnetic hat clip, divot tool, ball marker tray, backing card or gift set box.",
+    packaging: "OPP bag, backing card, clamshell, velvet pouch or golf gift box available.",
+    leadTime: "Production timing is confirmed after artwork, accessory and set details are approved."
+  },
+  "Bottle Openers": {
+    size: "Custom opener size, commonly 2.5-4.5 inches depending on function and shape.",
+    thickness: "Commonly 2.5-5.0 mm for durable opening strength and comfortable handling.",
+    accessories: "Key ring, chain, magnet, opener insert or custom hanging hardware.",
+    packaging: "OPP bag, backing card, gift box or retail-ready packaging available.",
+    leadTime: "Lead time is quoted after artwork, opener structure and packaging are confirmed."
+  },
+  "Cufflinks & Tie Clips": {
+    size: "Cufflink face and tie clip length are customized for formal accessory use.",
+    thickness: "Profile thickness is adjusted for comfort, plating and accessory hardware.",
+    accessories: "Cufflink backs, tie clip springs, gift card, velvet pouch or presentation box.",
+    packaging: "Individual bag, velvet pouch, cufflink box or premium gift box available.",
+    leadTime: "Schedule is confirmed after artwork, hardware and packaging details are approved."
+  },
+  "Fridge Magnets": {
+    size: "Custom magnet size, commonly 1.5-4.0 inches for souvenir or retail use.",
+    thickness: "Commonly 2.0-5.0 mm depending on metal, PVC or magnet structure.",
+    accessories: "Rubber magnet, ferrite magnet, soft magnetic sheet, backing card or display card.",
+    packaging: "OPP bag, backing card, retail card or gift packaging available.",
+    leadTime: "Lead time is confirmed after artwork, magnet type and packaging are approved."
+  }
+};
+
+const getProductSearchText = (item) => [
+  item.title,
+  item.process,
+  item.categories,
+  item.material,
+  item.lead
+].filter(Boolean).join(" ").toLowerCase();
+
+const getCustomSolutionProfile = (item) => {
+  const productType = item.quoteProduct || item.categoryLabel;
+  const profile = {
+    ...DEFAULT_CUSTOM_SOLUTION_PROFILE,
+    ...(CUSTOM_SOLUTION_PROFILES[productType] || {})
+  };
+  const text = getProductSearchText(item);
+
+  if (text.includes("uv printed") || text.includes("uv printing") || text.includes("full color printed")) {
+    return {
+      ...profile,
+      material: `${item.material} base with a smooth printable face.`,
+      process: "Full color UV printing, clear epoxy coating and plating as required.",
+      thickness: "Commonly 1.0-2.0 mm, adjusted for print area, edge shape and epoxy coating.",
+      accessories: "Butterfly clutch, rubber clutch, magnet, safety pin or backing card."
+    };
+  }
+
+  if (text.includes("soft pvc") || text.includes("pvc molding")) {
+    return {
+      ...profile,
+      material: "Soft PVC or flexible rubber material matched to the design.",
+      process: "PVC molding, color filling and magnet or accessory assembly.",
+      thickness: "Custom molded thickness based on character relief and flexibility.",
+      accessories: "Magnet backing, key ring, hanging loop, backing card or retail package."
+    };
+  }
+
+  if (text.includes("printed") || text.includes("printing")) {
+    return {
+      ...profile,
+      process: `${item.process}. Printing details are matched to your submitted artwork.`
+    };
+  }
+
+  return profile;
+};
+
+const getCustomSolutionRows = (item) => {
+  const profile = getCustomSolutionProfile(item);
+
+  return [
+    ["Material", profile.material || `${item.material} selected for the product structure and finish.`],
+    ["Process", profile.process || `${item.process} matched to the approved artwork.`],
+    ["Size", profile.size],
+    ["Thickness", profile.thickness],
+    ["Accessories", profile.accessories],
+    ["Packaging", profile.packaging],
+    ["Lead Time", profile.leadTime]
+  ];
+};
+
+const buildCustomSolutionRowsHtml = (item) => getCustomSolutionRows(item)
+  .map(([label, value], index) => `              <tr><td>${index + 1}</td><td>${escapeHtml(label)}</td><td>${escapeHtml(value)}</td></tr>`)
+  .join("\n");
 
 const buildRelatedProductsHtml = (currentSlug, item) => {
   const relatedProducts = Object.entries(productItems)
@@ -2870,6 +3009,7 @@ export const renderProductItemHtml = (item, currentSlug) => {
     .replace(/<span data-product-spec="categories">[^<]*<\/span>/g, `<span data-product-spec="categories">${safe.categories}</span>`)
     .replace(/<img([^>]*data-product-item-image[^>]*)src="[^"]*"([^>]*)alt="[^"]*"/g, `<img$1src="${safe.image}"$2alt="${safe.alt || safe.title}"`)
     .replace(/<a class="single-product-inquiry" href="[^"]*"[^>]*>/, `<a class="single-product-inquiry" href="${quotePath}" data-product-inquiry-trigger data-product-inquiry-product="${escapeHtml(quoteProduct)}" data-product-inquiry-title="${safe.title}">`)
+    .replace(/<tbody>\s*<tr><td>1<\/td><td>Material<\/td><td>[\s\S]*?<\/tbody>/, `<tbody>\n${buildCustomSolutionRowsHtml(item)}\n            </tbody>`)
     .replace(/<div class="single-product-related-grid" data-product-related-content><\/div>/, `<div class="single-product-related-grid" data-product-related-content>${buildRelatedProductsHtml(currentSlug, item)}
         </div>`)
     .replace(/data-product-inquiry-product="[^"]*"/g, `data-product-inquiry-product="${escapeHtml(quoteProduct)}"`);
