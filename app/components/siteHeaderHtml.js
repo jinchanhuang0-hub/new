@@ -10,22 +10,22 @@ const navItems = [
 const megaProducts = [
   {
     href: "/products/custom-enamel-pins",
-    image: "assets/images/mega-lapel-pins-auburn.jpg",
-    alt: "Custom Auburn lapel pin",
+    image: "assets/images/mega-lapel-pins-christmas-candy-tight.webp",
+    alt: "Christmas candy cane custom enamel pin",
     label: "Lapel Pins",
     copy: "Custom enamel pins for brands, events and clubs.",
   },
   {
     href: "/products/custom-medals",
-    image: "assets/images/mega-medals-butterfly.png",
-    alt: "Custom butterfly medal with ribbon",
+    image: "assets/images/mega-medals-christmas-reindeer-zoom2.webp",
+    alt: "Christmas reindeer custom medal with ribbon",
     label: "Medals",
     copy: "Colorful award medals with ribbons and finishes.",
   },
   {
     href: "/products/custom-challenge-coins",
-    image: "assets/images/mega-challenge-coin-christmas.jpg",
-    alt: "Custom Christmas challenge coin",
+    image: "assets/images/mega-challenge-coin-snowman-tight.webp",
+    alt: "Christmas snowman custom challenge coin",
     label: "Challenge Coins",
     copy: "Detailed coins for recognition and commemorations.",
   },

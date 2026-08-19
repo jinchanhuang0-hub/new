@@ -4,9 +4,9 @@ const criticalImages = [
   "/assets/images/logo.png",
   "/assets/images/hero-banner.webp",
   "/assets/images/hero-banner-og.jpg",
-  "/assets/images/mega-lapel-pins-auburn.jpg",
-  "/assets/images/mega-medals-butterfly.png",
-  "/assets/images/mega-challenge-coin-christmas.jpg",
+  "/assets/images/mega-lapel-pins-christmas-candy-tight.webp",
+  "/assets/images/mega-medals-christmas-reindeer-zoom2.webp",
+  "/assets/images/mega-challenge-coin-snowman-tight.webp",
 ];
 
 export default function ResourceHints() {
