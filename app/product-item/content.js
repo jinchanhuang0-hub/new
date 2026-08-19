@@ -2764,7 +2764,8 @@ const html = String.raw`
               <tr><td>4</td><td>Thickness</td><td>Project-based thickness confirmed with the digital proof.</td></tr>
               <tr><td>5</td><td>Accessories</td><td>Attachment options selected for the product type.</td></tr>
               <tr><td>6</td><td>Packaging</td><td>Standard or retail packaging quoted by project.</td></tr>
-              <tr><td>7</td><td>Lead Time</td><td>Confirmed after artwork review and proof approval.</td></tr>
+              <tr><td>7</td><td>Sample lead time</td><td>5-7 working days</td></tr>
+              <tr><td>8</td><td>Production lead time</td><td>12-15 working days</td></tr>
             </tbody>
           </table>
           <div class="custom-solutions-visual"><img data-product-item-image src="assets/images/type-pins-soft-enamel.jpg" alt="Custom product sample"></div>
@@ -2831,7 +2832,8 @@ const DEFAULT_CUSTOM_SOLUTION_PROFILE = {
   thickness: "Project-based thickness confirmed with the digital proof.",
   accessories: "Product-specific hardware, attachments or display options available.",
   packaging: "OPP bag as standard; backing card, velvet box, gift box or retail packaging available.",
-  leadTime: "Artwork proof, mold fee, unit price and production schedule are calculated by project."
+  sampleLeadTime: "5-7 working days",
+  productionLeadTime: "12-15 working days"
 };
 
 const CUSTOM_SOLUTION_PROFILES = {
@@ -2839,64 +2841,55 @@ const CUSTOM_SOLUTION_PROFILES = {
     size: "Custom shape and size, commonly 0.75-2.0 inches for pin badges.",
     thickness: "Commonly 1.2-2.0 mm, adjusted for 3D relief, printing or enamel areas.",
     accessories: "Butterfly clutch, rubber clutch, deluxe clutch, safety pin, magnet or backing card.",
-    packaging: "OPP bag as standard; backing card, carded bag, velvet pouch or retail box available.",
-    leadTime: "Digital proof before production; mold fees and unit prices are calculated by project."
+    packaging: "OPP bag as standard; backing card, carded bag, velvet pouch or retail box available."
   },
   "Medals": {
     size: "Custom medal diameter or shape, commonly 1.75-3.5 inches.",
     thickness: "Commonly 2.5-5.0 mm depending on relief depth, weight and event budget.",
     accessories: "Ribbon, neck drape, jump ring, medal loop, presentation box or display case.",
-    packaging: "Individual OPP bag, velvet box, medal case, gift box or event-ready packing.",
-    leadTime: "Schedule is confirmed after artwork, ribbon and packaging details are approved."
+    packaging: "Individual OPP bag, velvet box, medal case, gift box or event-ready packing."
   },
   "Challenge Coins": {
     size: "Custom round or shaped coin, commonly 1.5-2.5 inches.",
     thickness: "Commonly 3.0-5.0 mm for single-sided or double-sided coin designs.",
     accessories: "Coin capsule, velvet pouch, acrylic case, coin stand or presentation box.",
-    packaging: "Individual OPP bag, capsule, velvet box, acrylic case or retail gift box.",
-    leadTime: "Artwork proof, mold fee, unit price and production time are quoted by project."
+    packaging: "Individual OPP bag, capsule, velvet box, acrylic case or retail gift box."
   },
   "Keychains": {
     size: "Custom charm size, commonly 1.0-3.0 inches before ring or chain.",
     thickness: "Commonly 2.0-4.0 mm depending on metal weight, shape and finish.",
     accessories: "Split ring, chain, swivel hook, lobster clasp, bottle opener or custom fitting.",
-    packaging: "OPP bag as standard; backing card, hang card, velvet pouch or gift box available.",
-    leadTime: "Lead time is confirmed after artwork, hardware and packaging details are approved."
+    packaging: "OPP bag as standard; backing card, hang card, velvet pouch or gift box available."
   },
   "Belt Buckles": {
     size: "Custom buckle size, commonly 2.5-4.5 inches by belt width.",
     thickness: "Commonly 3.5-5.5 mm, adjusted for relief, enamel and back hardware.",
     accessories: "Buckle loop, prong, belt-fit hardware and finish options.",
-    packaging: "Individual protective bag, velvet pouch, gift box or retail packaging.",
-    leadTime: "Mold fee, unit price and production schedule are calculated by buckle design."
+    packaging: "Individual protective bag, velvet pouch, gift box or retail packaging."
   },
   "Golf Accessories": {
     size: "Ball marker, hat clip, divot tool or gift set size based on intended use.",
     thickness: "Commonly 1.2-3.0 mm for markers and clips; adjusted for tool structure.",
     accessories: "Magnetic hat clip, divot tool, ball marker tray, backing card or gift set box.",
-    packaging: "OPP bag, backing card, clamshell, velvet pouch or golf gift box available.",
-    leadTime: "Production timing is confirmed after artwork, accessory and set details are approved."
+    packaging: "OPP bag, backing card, clamshell, velvet pouch or golf gift box available."
   },
   "Bottle Openers": {
     size: "Custom opener size, commonly 2.5-4.5 inches depending on function and shape.",
     thickness: "Commonly 2.5-5.0 mm for durable opening strength and comfortable handling.",
     accessories: "Key ring, chain, magnet, opener insert or custom hanging hardware.",
-    packaging: "OPP bag, backing card, gift box or retail-ready packaging available.",
-    leadTime: "Lead time is quoted after artwork, opener structure and packaging are confirmed."
+    packaging: "OPP bag, backing card, gift box or retail-ready packaging available."
   },
   "Cufflinks & Tie Clips": {
     size: "Cufflink face and tie clip length are customized for formal accessory use.",
     thickness: "Profile thickness is adjusted for comfort, plating and accessory hardware.",
     accessories: "Cufflink backs, tie clip springs, gift card, velvet pouch or presentation box.",
-    packaging: "Individual bag, velvet pouch, cufflink box or premium gift box available.",
-    leadTime: "Schedule is confirmed after artwork, hardware and packaging details are approved."
+    packaging: "Individual bag, velvet pouch, cufflink box or premium gift box available."
   },
   "Fridge Magnets": {
     size: "Custom magnet size, commonly 1.5-4.0 inches for souvenir or retail use.",
     thickness: "Commonly 2.0-5.0 mm depending on metal, PVC or magnet structure.",
     accessories: "Rubber magnet, ferrite magnet, soft magnetic sheet, backing card or display card.",
-    packaging: "OPP bag, backing card, retail card or gift packaging available.",
-    leadTime: "Lead time is confirmed after artwork, magnet type and packaging are approved."
+    packaging: "OPP bag, backing card, retail card or gift packaging available."
   }
 };
 
@@ -2956,7 +2949,8 @@ const getCustomSolutionRows = (item) => {
     ["Thickness", profile.thickness],
     ["Accessories", profile.accessories],
     ["Packaging", profile.packaging],
-    ["Lead Time", profile.leadTime]
+    ["Sample lead time", profile.sampleLeadTime],
+    ["Production lead time", profile.productionLeadTime]
   ];
 };
 
