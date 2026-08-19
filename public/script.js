@@ -211,12 +211,14 @@ let lastCertificateTrigger = null;
 const closeCertificateLightbox = () => {
   const certLightbox = document.querySelector("[data-cert-lightbox]");
   const certLightboxImage = certLightbox?.querySelector(".cert-lightbox-img");
+  const certLightboxDetails = certLightbox?.querySelector(".cert-lightbox-details");
   if (!certLightbox || !certLightboxImage) return;
   certLightbox.hidden = true;
   certLightbox.classList.remove("is-open");
   certLightbox.setAttribute("aria-hidden", "true");
   certLightboxImage.removeAttribute("src");
   certLightboxImage.alt = "";
+  if (certLightboxDetails) certLightboxDetails.replaceChildren();
   document.body.classList.remove("is-cert-lightbox-open");
   lastCertificateTrigger?.focus();
 };
@@ -225,14 +227,23 @@ const initCertificateLightbox = () => {
   const certLightbox = document.querySelector("[data-cert-lightbox]");
   const certLightboxImage = certLightbox?.querySelector(".cert-lightbox-img");
   const certLightboxCaption = certLightbox?.querySelector(".cert-lightbox-caption");
+  const certLightboxDetails = certLightbox?.querySelector(".cert-lightbox-details");
   const certLightboxCloseButton = certLightbox?.querySelector(".cert-lightbox-close");
+  const readyVersion = "details-v1";
+  const detailFields = [
+    ["Certificate Holder", "certHolder"],
+    ["Applicable Scope", "certScope"],
+    ["Issuing Body", "certIssuer"],
+    ["Certificate Number", "certNumber"],
+    ["Issue/Expiry Date", "certDates"],
+  ];
 
   document.querySelectorAll("[data-cert-lightbox-trigger]").forEach((trigger) => {
-    if (trigger.dataset.certLightboxReady === "true") return;
-    trigger.dataset.certLightboxReady = "true";
+    if (trigger.dataset.certLightboxReady === readyVersion) return;
+    trigger.dataset.certLightboxReady = readyVersion;
 
     const openCertificateLightbox = () => {
-      if (!certLightbox || !certLightboxImage || !certLightboxCaption) return;
+      if (!certLightbox || !certLightboxImage || !certLightboxCaption || !certLightboxDetails) return;
       const image = trigger.querySelector("img");
       const caption = trigger.querySelector(".cert-name")?.textContent?.trim() || image?.alt || "Certificate";
       if (!image) return;
@@ -241,6 +252,16 @@ const initCertificateLightbox = () => {
       certLightboxImage.src = image.currentSrc || image.src;
       certLightboxImage.alt = image.alt || caption;
       certLightboxCaption.textContent = caption;
+      certLightboxDetails.replaceChildren();
+      detailFields.forEach(([label, key]) => {
+        const value = trigger.dataset[key];
+        if (!value) return;
+        const term = document.createElement("dt");
+        const description = document.createElement("dd");
+        term.textContent = label;
+        description.textContent = value;
+        certLightboxDetails.append(term, description);
+      });
       certLightbox.hidden = false;
       certLightbox.classList.add("is-open");
       certLightbox.setAttribute("aria-hidden", "false");

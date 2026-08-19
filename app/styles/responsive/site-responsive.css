@@ -266,8 +266,20 @@
     padding: 22px;
   }
 
+  .cert-lightbox-panel {
+    grid-template-columns: 1fr;
+    align-items: stretch;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
   .cert-lightbox-img {
-    max-height: calc(100vh - 120px);
+    width: 100%;
+    max-height: 52vh;
+  }
+
+  .cert-lightbox-copy {
+    max-height: none;
   }
 
   .cert-lightbox-close {
