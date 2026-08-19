@@ -607,7 +607,8 @@
 
 .about-team-member h3 {
   margin: 0;
-  text-transform: uppercase;
+  font-size: calc(clamp(20px, 1.7vw, 26px) * 0.7);
+  font-weight: 400;
   white-space: nowrap;
 }
 
