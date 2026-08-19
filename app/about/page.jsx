@@ -208,6 +208,9 @@ const html = String.raw`
           <div class="review-viewport">
             <div class="testimonial-grid review-track" data-review-track>
               <article class="testimonial review-card review-image-card">
+                <img src="/assets/images/customer-review-brass-engraving-coins-canada.webp" alt="Customer review screenshot for brass engraving collectible coins from Canada" width="818" height="360" loading="lazy" decoding="async">
+              </article>
+              <article class="testimonial review-card review-image-card">
                 <img src="/assets/images/customer-review-challenge-coin.webp" alt="Customer review screenshot for a custom 3D metal challenge coin order" width="799" height="208" loading="lazy" decoding="async">
               </article>
               <article class="testimonial review-card review-image-card">
@@ -233,9 +236,6 @@ const html = String.raw`
               </article>
               <article class="testimonial review-card review-image-card">
                 <img src="/assets/images/customer-review-commemorative-coins-australia.webp" alt="Customer review screenshot for commemorative coin orders from Australia" width="831" height="255" loading="lazy" decoding="async">
-              </article>
-              <article class="testimonial review-card review-image-card">
-                <img src="/assets/images/customer-review-brass-engraving-coins-canada.webp" alt="Customer review screenshot for brass engraving collectible coins from Canada" width="818" height="360" loading="lazy" decoding="async">
               </article>
             </div>
           </div>
