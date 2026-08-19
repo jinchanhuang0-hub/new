@@ -8,10 +8,7 @@
   overflow: hidden;
   padding: 74px 0 48px;
   text-align: center;
-  background:
-    radial-gradient(circle at 14% 20%, rgba(243, 198, 0, 0.18), rgba(255, 255, 255, 0) 26%),
-    radial-gradient(circle at 86% 24%, rgba(23, 113, 184, 0.12), rgba(255, 255, 255, 0) 30%),
-    linear-gradient(135deg, #f8fbff 0%, #ffffff 52%, #fff8df 100%);
+  background: #fff;
 }
 
 .products-page-hero::before {
