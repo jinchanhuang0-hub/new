@@ -1875,30 +1875,6 @@ body.is-cert-lightbox-open {
   padding: 22px;
 }
 
-.cert-lightbox-details {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 6px;
-  margin: 18px 0 0;
-}
-
-.cert-lightbox-details dt {
-  color: #5d6d86;
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: 0.04em;
-  line-height: 1.25;
-  text-transform: uppercase;
-}
-
-.cert-lightbox-details dd {
-  margin: 0 0 10px;
-  color: var(--navy);
-  font-size: 15px;
-  line-height: 1.45;
-  overflow-wrap: anywhere;
-}
-
 .cert-lightbox-close {
   position: absolute;
   top: -18px;

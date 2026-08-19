@@ -60,7 +60,7 @@ const html = String.raw`
           </div>
         </div>
         <div class="contact-card">
-          <h2 class="contact-form-title">Get a Free Factory Quote</h2>
+          <h2 class="contact-form-title">Get a Free Quote</h2>
           <form class="form" data-inquiry-form>
             <div class="form-row">
               <label class="sr-only" for="contact-inquiry-name">Name</label>
@@ -104,7 +104,7 @@ const html = String.raw`
                 <span>Upload artwork or reference files for a free proof</span>
               </label>
             </div>
-            <button class="btn btn-primary" type="submit">Get a Free Factory Quote</button>
+            <button class="btn btn-primary" type="submit">Get a Free Quote</button>
             <p class="form-commitment-note">We reply within 1 business day. Your artwork and project information are kept confidential.</p>
             <p class="form-privacy-note">We use the information you submit to respond to your inquiry. See our <a href="/privacy-policy">Privacy Policy</a>.</p>
             <p data-form-notice aria-live="polite" style="color: var(--navy); font-weight: 800;"></p>

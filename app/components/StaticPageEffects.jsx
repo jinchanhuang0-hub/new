@@ -341,7 +341,7 @@ export default function StaticPageEffects() {
       } finally {
         if (submitButton) {
           submitButton.disabled = false;
-          submitButton.textContent = originalButtonText || "Get a Free Factory Quote";
+          submitButton.textContent = originalButtonText || "Get a Free Quote";
         }
       }
     };

@@ -478,7 +478,7 @@ const renderQuoteForm = (page) => `
     <section class="home-category-quote" id="quote">
       <div class="container">
         <div class="home-category-quote-head">
-          <h2>Get a Free Factory Quote</h2>
+          <h2>Get a Free Quote</h2>
           <p>Having trouble or just want to send an email? Contact us for a quote or questions at <a href="mailto:ceo@chinauniquepin.com">ceo@chinauniquepin.com</a></p>
         </div>
         <div class="home-category-quote-card contact-card">
@@ -515,7 +515,7 @@ ${renderProductOptions(page.formProduct)}
                 <span>Upload artwork or reference files for a free proof</span>
               </label>
             </div>
-            <button class="btn btn-primary" type="submit">Get a Free Factory Quote</button>
+            <button class="btn btn-primary" type="submit">Get a Free Quote</button>
             <p class="form-commitment-note">We reply within 1 business day. Your artwork and project information are kept confidential.</p>
             <p class="form-privacy-note">We use the information you submit to respond to your inquiry. See our <a href="/privacy-policy">Privacy Policy</a>.</p>
             <p data-form-notice aria-live="polite" style="color: var(--navy); font-weight: 800;"></p>

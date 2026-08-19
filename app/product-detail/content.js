@@ -173,7 +173,7 @@ export const productDetailHtml = String.raw`
       <div class="container">
         <div class="cta-band">
           <div><h2>Need a Price for Your Design?</h2><p>Send product type, logo, size, quantity and deadline. Our team will recommend the right process and quote clearly.</p></div>
-          <a class="btn btn-yellow" href="/contact">Get a Free Factory Quote</a>
+          <a class="btn btn-yellow" href="/contact">Get a Free Quote</a>
         </div>
       </div>
     </section>

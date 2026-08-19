@@ -194,7 +194,7 @@ const html = String.raw`
             <p>Send your logo, quantity and deadline. Our team will reply with a clear quote and artwork guidance.</p>
           </div>
           <div class="hero-actions">
-          <a class="btn btn-yellow" href="/contact">Get a Free Factory Quote</a>
+          <a class="btn btn-yellow" href="/contact">Get a Free Quote</a>
             <a class="btn btn-outline" href="/contact">Upload Artwork</a>
           </div>
         </div>

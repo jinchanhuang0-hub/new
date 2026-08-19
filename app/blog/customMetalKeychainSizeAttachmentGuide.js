@@ -225,7 +225,7 @@ export const customMetalKeychainSizeAttachmentGuideArticleHtml = String.raw`
               <h2>Ready to Confirm Your Keychain Specification?</h2>
               <p>Send your logo, quantity, intended use, preferred attachment and required delivery date. We can review the body size, thickness, connection structure and sample checklist for your project.</p>
             </div>
-      <div class="blog-cta-actions"><a class="btn btn-yellow" href="/contact">Get a Free Factory Quote</a><a class="btn btn-outline" href="/products/custom-metal-keychains">View Custom Metal Keychains</a></div>
+      <div class="blog-cta-actions"><a class="btn btn-yellow" href="/contact">Get a Free Quote</a><a class="btn btn-outline" href="/products/custom-metal-keychains">View Custom Metal Keychains</a></div>
           </section>
         </div>
       </div>

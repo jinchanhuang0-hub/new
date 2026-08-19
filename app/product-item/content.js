@@ -2811,7 +2811,7 @@ const html = String.raw`
             </div>
             <div class="form-field form-field-full"><label for="product-item-quote-details">What can we help you with?</label><textarea id="product-item-quote-details" name="details" placeholder="Notes, Comments, etc."></textarea></div>
             <div class="form-field form-field-full"><label for="product-item-quote-artwork">Upload Artwork for a Free Proof</label><label class="upload-box" for="product-item-quote-artwork"><input id="product-item-quote-artwork" type="file" name="artwork" accept=".jpg,.jpeg,.png,.pdf,.ai,.eps,.psd,.cdr" aria-label="Upload artwork"><span class="upload-icon" aria-hidden="true">&#8593;</span><span>Upload artwork or reference files for a free proof</span></label></div>
-            <button class="btn btn-primary" type="submit">Get a Free Factory Quote</button>
+            <button class="btn btn-primary" type="submit">Get a Free Quote</button>
             <p class="form-commitment-note">We reply within 1 business day. Your artwork and project information are kept confidential.</p>
             <p class="form-privacy-note">We use the information you submit to respond to your inquiry. See our <a href="/privacy-policy">Privacy Policy</a>.</p>
             <p data-form-notice aria-live="polite" style="color: var(--navy); font-weight: 800;"></p>

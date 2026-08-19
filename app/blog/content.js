@@ -344,7 +344,7 @@ export const blogHtml = String.raw`
             <p>Send your logo or approved artwork, intended use, quantity, preferred size, finish, packaging requirements and delivery deadline. Our team can review the design, recommend a practical coin construction and prepare a clear production quote.</p>
           </div>
           <div class="blog-cta-actions">
-        <a class="btn btn-yellow" href="/contact?product=Challenge%20Coins&source=military-challenge-coin-traditions">Get a Free Factory Quote</a>
+        <a class="btn btn-yellow" href="/contact?product=Challenge%20Coins&source=military-challenge-coin-traditions">Get a Free Quote</a>
             <a class="btn btn-primary" href="/products/custom-challenge-coins">View Coin Options</a>
           </div>
         </section>
@@ -458,7 +458,7 @@ export const blogHtml = String.raw`
               <p class="blog-cta-title">Need a Production Review Before Quotation?</p>
               <p>Send your medal artwork, race date, quantity, delivery country and ribbon idea. We can check medal size, finish, ribbon attachment fit and possible production risks before tooling.</p>
             </div>
-      <div class="blog-cta-actions"><a class="btn btn-yellow" href="/contact">Get a Free Factory Quote</a></div>
+      <div class="blog-cta-actions"><a class="btn btn-yellow" href="/contact">Get a Free Quote</a></div>
           </section>
 
           <a id="ribbon-and-packaging"></a>
@@ -732,7 +732,7 @@ export const blogHtml = String.raw`
                 <h2>Get a Production-Ready Coin Size Recommendation</h2>
                 <p>Share your artwork, quantity, application, packaging preference and deadline. We can assess the layout and prepare a clear specification for your custom challenge coin project.</p>
               </div>
-      <div class="blog-cta-actions"><a class="btn btn-yellow" href="/contact">Get a Free Factory Quote</a><a class="btn btn-primary" href="/products/custom-challenge-coins">Custom Challenge Coins</a></div>
+      <div class="blog-cta-actions"><a class="btn btn-yellow" href="/contact">Get a Free Quote</a><a class="btn btn-primary" href="/products/custom-challenge-coins">Custom Challenge Coins</a></div>
             </section>
           </div>
         </div>
@@ -1256,7 +1256,7 @@ export const blogHtml = String.raw`
             <h2>Ready to Make Custom Challenge Coins?</h2>
             <p>Send your artwork and requirements to Unique Pin. We will review your design, recommend the right manufacturing process, and prepare a practical factory quotation.</p>
           </div>
-      <div class="blog-cta-actions"><a class="btn btn-yellow" href="/contact">Get a Free Factory Quote</a><a class="btn btn-primary" href="/products/custom-challenge-coins">View Challenge Coins</a></div>
+      <div class="blog-cta-actions"><a class="btn btn-yellow" href="/contact">Get a Free Quote</a><a class="btn btn-primary" href="/products/custom-challenge-coins">View Challenge Coins</a></div>
         </section>
       </div>
     </article>
@@ -1389,7 +1389,7 @@ export const blogHtml = String.raw`
             <h2>Ready to Start a Small or Bulk Custom Enamel Pin Order?</h2>
             <p>Send your artwork and requirements to Unique Pin. We can review your design, recommend the right process, and prepare a practical factory quotation before production begins.</p>
           </div>
-      <div class="blog-cta-actions"><a class="btn btn-yellow" href="/contact">Get a Free Factory Quote</a><a class="btn btn-primary" href="/products/custom-enamel-pins">View Enamel Pin Options</a></div>
+      <div class="blog-cta-actions"><a class="btn btn-yellow" href="/contact">Get a Free Quote</a><a class="btn btn-primary" href="/products/custom-enamel-pins">View Enamel Pin Options</a></div>
         </section>
       </div>
     </article>
@@ -1512,7 +1512,7 @@ export const blogHtml = String.raw`
             <h2>Ready to Make Your Own Custom Lapel Pins?</h2>
             <p>Send your artwork, quantity and delivery deadline. Unique Pin can review the design, recommend suitable materials and prepare a clear quotation for custom lapel pins.</p>
           </div>
-      <div class="blog-cta-actions"><a class="btn btn-yellow" href="/contact">Get a Free Factory Quote</a><a class="btn btn-primary" href="/products/custom-enamel-pins">View Enamel Pin Options</a></div>
+      <div class="blog-cta-actions"><a class="btn btn-yellow" href="/contact">Get a Free Quote</a><a class="btn btn-primary" href="/products/custom-enamel-pins">View Enamel Pin Options</a></div>
         </section>
       </div>
     </article>
@@ -1637,7 +1637,7 @@ export const blogHtml = String.raw`
             <h2>Ready to Start a Custom Metal Crafts Project?</h2>
             <p>Send your logo, reference image, size, quantity and deadline. Our team can review the design, recommend a suitable process and prepare a clear quotation.</p>
           </div>
-      <div class="blog-cta-actions"><a class="btn btn-yellow" href="/contact">Get a Free Factory Quote</a></div>
+      <div class="blog-cta-actions"><a class="btn btn-yellow" href="/contact">Get a Free Quote</a></div>
         </section>
 
       </div>
@@ -1766,7 +1766,7 @@ export const blogHtml = String.raw`
             <h2>Need Help Choosing the Right Enamel Finish?</h2>
             <p>Send your artwork, size, quantity, target price and intended use. We can compare soft enamel, hard enamel and epoxy options on the same project specification.</p>
           </div>
-      <div class="blog-cta-actions"><a class="btn btn-yellow" href="/contact">Get a Free Factory Quote</a><a class="btn btn-primary" href="/products/custom-enamel-pins">View Pin Styles</a></div>
+      <div class="blog-cta-actions"><a class="btn btn-yellow" href="/contact">Get a Free Quote</a><a class="btn btn-primary" href="/products/custom-enamel-pins">View Pin Styles</a></div>
         </section>
 
         <h2>Conclusion</h2>
@@ -1888,7 +1888,7 @@ export const blogHtml = String.raw`
             <h2>Medals or Coins? Let Us Review Your Project</h2>
             <p>Tell us your event type, recipient groups, quantity and deadline. We can recommend medals, challenge coins or a coordinated set with suitable finishes and packaging.</p>
           </div>
-      <div class="blog-cta-actions"><a class="btn btn-yellow" href="/contact">Get a Free Factory Quote</a></div>
+      <div class="blog-cta-actions"><a class="btn btn-yellow" href="/contact">Get a Free Quote</a></div>
         </section>
       </div>
     </article>
