@@ -765,13 +765,17 @@
     width: 100%;
     max-width: 100%;
     margin: 14px auto 0;
-    padding: 0 30px 56px;
+    padding: 0 18px 52px;
     transform: none;
   }
 
   .review-card {
     flex-basis: 100%;
     min-height: 340px;
+  }
+
+  .review-card.review-image-card {
+    padding: 8px;
   }
 
   .review-nav {
@@ -782,12 +786,12 @@
   }
 
   .review-prev {
-    left: 30px;
+    left: 18px;
     transform: translate(-50%, -50%);
   }
 
   .review-next {
-    right: 30px;
+    right: 18px;
     transform: translate(50%, -50%);
   }
 
