@@ -44,7 +44,11 @@ export default function RootLayout({ children }) {
             url: SITE_URL,
             logo: `${SITE_URL}/assets/images/logo.png`,
             foundingDate: "2018",
-            description: "International trade company established in 2018 to develop global markets, supported by a custom metal gifts team whose industry experience dates to 2003.",
+            description: "Custom metal gifts manufacturer established in 2018, supported by a manufacturing team whose industry experience dates to 2003.",
+            parentOrganization: {
+              "@type": "Organization",
+              name: "Guangdong Custom Culture Gifts Co., Ltd.",
+            },
             email: "ceo@chinauniquepin.com",
             telephone: "+86-188-9531-6838",
             address: {
