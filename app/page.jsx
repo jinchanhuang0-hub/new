@@ -291,7 +291,7 @@ const html = String.raw`
       <div class="container home-company-layout">
         <div class="home-company-media">
           <video class="home-company-video" controls playsinline preload="metadata" aria-label="Unique Pin company and product overview video">
-            <source src="/assets/videos/company-overview.mp4" type="video/mp4">
+            <source src="/assets/videos/company-overview.mp4?v=20260819-lfs-fix" type="video/mp4">
           </video>
         </div>
         <div class="home-company-copy">
