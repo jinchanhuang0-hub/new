@@ -329,9 +329,10 @@ export default function StaticPageEffects() {
 
         if (notice) {
           notice.style.color = "var(--navy)";
-          notice.textContent = "Thank you for your inquiry. Our team will reply within 1 business day.";
+          notice.textContent = "Thank you for your inquiry. Redirecting...";
         }
         inquiryForm.reset();
+        window.location.assign("/thank-you");
       } catch (error) {
         if (notice) {
           notice.style.color = "#b42318";
@@ -340,7 +341,7 @@ export default function StaticPageEffects() {
       } finally {
         if (submitButton) {
           submitButton.disabled = false;
-          submitButton.textContent = originalButtonText || "Submit Inquiry";
+          submitButton.textContent = originalButtonText || "Get a Free Factory Quote";
         }
       }
     };

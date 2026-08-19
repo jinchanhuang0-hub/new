@@ -31,8 +31,9 @@ export const footerHtml = String.raw`
         <div class="footer-message-row">
           <label class="sr-only" for="footer-inquiry-details">Design, quantity, or deadline</label>
           <textarea id="footer-inquiry-details" name="details" placeholder="Tell us about your design, quantity or deadline"></textarea>
-          <button type="submit">Send Inquiry</button>
+          <button type="submit">Get a Free Factory Quote</button>
         </div>
+        <p class="form-commitment-note">We reply within 1 business day. Your artwork and project information are kept confidential.</p>
         <p class="footer-form-notice" data-form-notice aria-live="polite"></p>
       </form>
     </div>

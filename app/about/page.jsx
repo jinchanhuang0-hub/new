@@ -204,7 +204,7 @@ const html = String.raw`
         <div class="center-head reviews-head">
           <span class="brand-kicker" aria-hidden="true"></span>
           <h2>Reviews From Our Customers</h2>
-          <p>Check how satisfied our customers are viewing their feedback and testimonials. We persist in providing good metal craft products and services all the time.</p>
+          <p>Check out feedback from real customers! We persist in providing good metal craft products and services all the time.</p>
         </div>
         <div class="review-carousel" data-review-carousel>
           <button class="review-nav review-prev" type="button" data-review-prev aria-label="Previous reviews">&lsaquo;</button>
@@ -267,8 +267,8 @@ const html = String.raw`
             <p>Send us your idea, logo or reference image. We will help turn it into a production-ready design.</p>
           </div>
           <div class="cta-actions">
-            <a class="btn btn-yellow" href="/contact">Request Quote</a>
-            <a class="btn btn-outline" href="/contact">Start Custom Order</a>
+            <a class="btn btn-yellow" href="/contact">Get a Free Factory Quote</a>
+            <a class="btn btn-outline" href="https://api.whatsapp.com/send?phone=8618895316838&amp;text=Hello%2C%20I%20am%20interested%20in%20your%20products.%20Please%20send%20me%20more%20details." target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
           </div>
         </div>
       </div>

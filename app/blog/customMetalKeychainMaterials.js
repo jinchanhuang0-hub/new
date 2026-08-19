@@ -227,7 +227,7 @@ export const customMetalKeychainMaterialsArticleHtml = String.raw`
               <h2>Ready to Start Your Custom Metal Keychain Project?</h2>
               <p>Send your logo, quantity, intended application, finish preference and required delivery date. Our team can review the artwork and recommend a practical material and manufacturing process for sampling and quotation.</p>
             </div>
-            <div class="blog-cta-actions"><a class="btn btn-yellow" href="/contact">Get a Quote</a><a class="btn btn-outline" href="/products/custom-metal-keychains">View Custom Metal Keychains</a></div>
+      <div class="blog-cta-actions"><a class="btn btn-yellow" href="/contact">Get a Free Factory Quote</a><a class="btn btn-outline" href="/products/custom-metal-keychains">View Custom Metal Keychains</a></div>
           </section>
         </div>
       </div>

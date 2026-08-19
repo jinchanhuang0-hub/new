@@ -134,7 +134,7 @@ const html = String.raw`
             <p>Send your design, quantity, size and deadline. Our team will reply with artwork advice, production options and a clear quotation.</p>
           </div>
           <div class="hero-actions">
-            <a class="btn btn-yellow" href="/contact">Get Free Quote</a>
+          <a class="btn btn-yellow" href="/contact">Get a Free Factory Quote</a>
             <a class="btn btn-outline" href="/custom">View Custom Options</a>
           </div>
         </div>

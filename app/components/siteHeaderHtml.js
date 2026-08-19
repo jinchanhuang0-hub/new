@@ -56,7 +56,7 @@ const renderMegaMenu = (isActive) => String.raw`
                 </div>
                 <div class="mega-cta">
                   <div><strong>Need a custom product quote?</strong><span>Send logo, quantity and deadline. We reply within 1 business day.</span></div>
-                  <a class="btn btn-yellow" href="/contact">Get Free Quote</a>
+                  <a class="btn btn-yellow" href="/contact">Get a Free Factory Quote</a>
                 </div>
               </div>
             </div>
@@ -90,7 +90,7 @@ export const siteHeaderHtml = ({ active = "" } = {}) => {
         ${navHtml}
       </nav>
       <div class="nav-actions">
-        <a class="btn btn-primary" href="/contact">Get Free Quote</a>
+        <a class="btn btn-primary" href="/contact">Get a Free Factory Quote</a>
         <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">&#9776;</button>
       </div>
     </div>

@@ -60,7 +60,7 @@ const html = String.raw`
           </div>
         </div>
         <div class="contact-card">
-          <h2 class="contact-form-title">Request Your Free Quote</h2>
+          <h2 class="contact-form-title">Get a Free Factory Quote</h2>
           <form class="form" data-inquiry-form>
             <div class="form-row">
               <label class="sr-only" for="contact-inquiry-name">Name</label>
@@ -97,14 +97,15 @@ const html = String.raw`
               <textarea id="details" name="details" placeholder="Notes, Comments, etc."></textarea>
             </div>
             <div class="form-field form-field-full">
-              <label for="artwork">Upload files</label>
+              <label for="artwork">Upload Artwork for a Free Proof</label>
               <label class="upload-box" for="artwork">
                 <input id="artwork" type="file" name="artwork" accept=".jpg,.jpeg,.png,.pdf,.ai,.eps,.psd,.cdr" aria-label="Upload artwork">
                 <span class="upload-icon" aria-hidden="true">&#8593;</span>
-                <span>Drag and drop a file here or click to choose</span>
+                <span>Upload artwork or reference files for a free proof</span>
               </label>
             </div>
-            <button class="btn btn-primary" type="submit">Submit Inquiry</button>
+            <button class="btn btn-primary" type="submit">Get a Free Factory Quote</button>
+            <p class="form-commitment-note">We reply within 1 business day. Your artwork and project information are kept confidential.</p>
             <p class="form-privacy-note">We use the information you submit to respond to your inquiry. See our <a href="/privacy-policy">Privacy Policy</a>.</p>
             <p data-form-notice aria-live="polite" style="color: var(--navy); font-weight: 800;"></p>
           </form>

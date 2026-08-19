@@ -20,11 +20,11 @@ const html = String.raw`
       <div class="container">
        
         <div class="hero-content">
-          <h1><span class="hero-title-line">High-Quality Custom</span><span class="hero-title-line">Metal Products Manufacturer</span></h1>
+          <h1><span class="hero-title-line">High-Quality Custom</span><span class="hero-title-line">Metal Gifts Manufacturer</span></h1>
           <p>OEM/ODM production backed by team experience since 2003, with free artwork support, No MOQ and in-house quality control.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="/contact">Get Free Quote</a>
-            <a class="btn btn-outline" href="/contact">Contact Us</a>
+            <a class="btn btn-primary" href="/contact">Get a Free Factory Quote</a>
+            <a class="btn btn-outline" href="https://api.whatsapp.com/send?phone=8618895316838&amp;text=Hello%2C%20I%20am%20interested%20in%20your%20products.%20Please%20send%20me%20more%20details." target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
           </div>
           <div class="hero-proof">
             <div class="proof-column">
@@ -152,7 +152,7 @@ const html = String.raw`
       <div class="product-inquiry-dialog" role="dialog" aria-modal="true" aria-labelledby="home-quote-title">
         <button class="product-inquiry-close" type="button" aria-label="Close inquiry form" data-product-inquiry-close>&times;</button>
         <div class="contact-card product-inquiry-card">
-          <h2 id="home-quote-title" class="contact-form-title">Request Your Free Quote</h2>
+          <h2 id="home-quote-title" class="contact-form-title">Get a Free Factory Quote</h2>
           <p class="product-inquiry-note">Send your product details, artwork or deadline. Our team will reply with a clear custom quote.</p>
           <form class="form" data-inquiry-form>
             <div class="form-row">
@@ -184,14 +184,15 @@ const html = String.raw`
               <textarea id="home-quote-details" name="details" placeholder="Notes, Comments, etc."></textarea>
             </div>
             <div class="form-field form-field-full">
-              <label for="home-quote-artwork">Upload files</label>
+              <label for="home-quote-artwork">Upload Artwork for a Free Proof</label>
               <label class="upload-box" for="home-quote-artwork">
                 <input id="home-quote-artwork" type="file" name="artwork" accept=".jpg,.jpeg,.png,.pdf,.ai,.eps,.psd,.cdr" aria-label="Upload artwork">
                 <span class="upload-icon" aria-hidden="true">&#8593;</span>
-                <span>Drag and drop a file here or click to choose</span>
+                <span>Upload artwork or reference files for a free proof</span>
               </label>
             </div>
-            <button class="btn btn-primary" type="submit">Submit Inquiry</button>
+            <button class="btn btn-primary" type="submit">Get a Free Factory Quote</button>
+            <p class="form-commitment-note">We reply within 1 business day. Your artwork and project information are kept confidential.</p>
             <p class="form-privacy-note">We use the information you submit to respond to your inquiry. See our <a href="/privacy-policy">Privacy Policy</a>.</p>
             <p data-form-notice aria-live="polite" style="color: var(--navy); font-weight: 800;"></p>
           </form>
@@ -204,7 +205,7 @@ const html = String.raw`
         <div class="how-content">
           <div class="how-heading">
             <h2>How It Works</h2>
-            <p>we make custom metal crafts simple and reliable.</p>
+            <p>We Make Custom Metal Crafts Simple and Reliable.</p>
           </div>
           <div class="how-steps">
             <div class="how-step-card">
@@ -224,7 +225,7 @@ const html = String.raw`
               <span>Your Order Gets Shipped</span>
             </div>
           </div>
-          <a class="how-cta" href="/contact">Start Your Free Design</a>
+          <a class="how-cta" href="/contact">Upload Artwork for a Free Proof</a>
         </div>
         <div class="how-visual" aria-hidden="true">
           <div class="process-flow">
@@ -312,7 +313,7 @@ const html = String.raw`
         <div class="center-head reviews-head">
           <span class="brand-kicker" aria-hidden="true"></span>
           <h2>Reviews From Our Customers</h2>
-          <p>Check how satisfied our customers are viewing their feedback and testimonials. We persist in providing good metal craft products and services all the time.</p>
+          <p>Check out feedback from real customers! We persist in providing good metal craft products and services all the time.</p>
         </div>
         <div class="review-carousel" data-review-carousel>
           <button class="review-nav review-prev" type="button" data-review-prev aria-label="Previous reviews">&lsaquo;</button>
@@ -432,7 +433,7 @@ const html = String.raw`
             <div class="latest-product-body">
               <h3><a href="/products/custom-enamel-pins/christmas-enamel-pin-set">Christmas Enamel Pin Set</a></h3>
             </div>
-            <a class="latest-product-quote" href="/contact" data-product-inquiry-trigger data-product-inquiry-product="Lapel Pins" data-product-inquiry-title="Christmas Enamel Pin Set">Get a Quote</a>
+            <a class="latest-product-quote" href="/contact" data-product-inquiry-trigger data-product-inquiry-product="Lapel Pins" data-product-inquiry-title="Christmas Enamel Pin Set">Get a Free Factory Quote</a>
           </article>
           <article class="latest-product-card">
             <span class="latest-product-badge">NEW</span>
@@ -442,7 +443,7 @@ const html = String.raw`
             <div class="latest-product-body">
               <h3><a href="/products/custom-medals/gold-scn-ribbon-medal">Gold SCN Ribbon Medal</a></h3>
             </div>
-            <a class="latest-product-quote" href="/contact" data-product-inquiry-trigger data-product-inquiry-product="Medals" data-product-inquiry-title="Gold SCN Ribbon Medal">Get a Quote</a>
+            <a class="latest-product-quote" href="/contact" data-product-inquiry-trigger data-product-inquiry-product="Medals" data-product-inquiry-title="Gold SCN Ribbon Medal">Get a Free Factory Quote</a>
           </article>
           <article class="latest-product-card">
             <span class="latest-product-badge">NEW FINISH</span>
@@ -452,7 +453,7 @@ const html = String.raw`
             <div class="latest-product-body">
               <h3><a href="/products/custom-challenge-coins/christmas-bell-challenge-coin">Christmas Bell Challenge Coin</a></h3>
             </div>
-            <a class="latest-product-quote" href="/contact" data-product-inquiry-trigger data-product-inquiry-product="Challenge Coins" data-product-inquiry-title="Christmas Bell Challenge Coin">Get a Quote</a>
+            <a class="latest-product-quote" href="/contact" data-product-inquiry-trigger data-product-inquiry-product="Challenge Coins" data-product-inquiry-title="Christmas Bell Challenge Coin">Get a Free Factory Quote</a>
           </article>
           <article class="latest-product-card">
             <span class="latest-product-badge">NEW</span>
@@ -462,7 +463,7 @@ const html = String.raw`
             <div class="latest-product-body">
               <h3><a href="/products/custom-metal-keychains/travel-charm-spinner-keychain">Travel Charm Spinner Keychain</a></h3>
             </div>
-            <a class="latest-product-quote" href="/contact" data-product-inquiry-trigger data-product-inquiry-product="Keychains" data-product-inquiry-title="Travel Charm Spinner Keychain">Get a Quote</a>
+            <a class="latest-product-quote" href="/contact" data-product-inquiry-trigger data-product-inquiry-product="Keychains" data-product-inquiry-title="Travel Charm Spinner Keychain">Get a Free Factory Quote</a>
           </article>
         </div>
       </div>

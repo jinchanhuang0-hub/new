@@ -107,11 +107,13 @@
 
 .footer-quote-form button {
   min-height: 92px;
+  padding: 12px 14px;
   border: 0;
   border-radius: 8px;
   background: var(--yellow);
   color: var(--navy);
   font-weight: 900;
+  line-height: 1.2;
   cursor: pointer;
   box-shadow: 0 16px 30px rgba(243, 198, 0, 0.24);
   transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
@@ -139,6 +141,14 @@
   line-height: 1.5;
 }
 
+.form-commitment-note {
+  margin: 0;
+  color: #334864;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.5;
+}
+
 .form-privacy-note a {
   color: var(--navy);
   font-weight: 800;
@@ -149,6 +159,12 @@
 .site-footer .form-privacy-note {
   max-width: none;
   color: #c9d8ee;
+  font-size: 13px;
+}
+
+.site-footer .form-commitment-note {
+  max-width: none;
+  color: #eaf3ff;
   font-size: 13px;
 }
 

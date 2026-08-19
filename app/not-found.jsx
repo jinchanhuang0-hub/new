@@ -21,7 +21,7 @@ export default function NotFound() {
         <div className="not-found-actions">
           <Link href="/" className="btn btn-primary">Home</Link>
           <Link href="/products" className="btn btn-outline">Products</Link>
-          <Link href="/contact" className="btn btn-yellow">Get Quote</Link>
+          <Link href="/contact" className="btn btn-yellow">Get a Free Factory Quote</Link>
         </div>
       </section>
     </main>
