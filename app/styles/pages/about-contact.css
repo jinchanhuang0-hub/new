@@ -601,13 +601,13 @@
 }
 
 .about-team-name {
-  margin: 0 0 4px;
+  margin: 0 0 5px;
   font-weight: 900;
 }
 
 .about-team-member h3 {
   margin: 0;
-  font-size: calc(clamp(20px, 1.7vw, 26px) * 0.7);
+  font-size: calc(clamp(20px, 1.7vw, 26px) * 0.805);
   font-weight: 400;
   white-space: nowrap;
 }
