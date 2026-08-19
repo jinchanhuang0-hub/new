@@ -24,7 +24,7 @@ const html = String.raw`
           <p>OEM/ODM production backed by team experience since 2003, with free artwork support, No MOQ and in-house quality control.</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="/contact">Get a Free Quote</a>
-            <a class="btn btn-outline" href="/contact">Contact Us</a>
+            <a class="btn btn-outline" href="https://api.whatsapp.com/send?phone=8618895316838&amp;text=Hello%2C%20I%20am%20interested%20in%20your%20products.%20Please%20send%20me%20more%20details." target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
           </div>
           <div class="hero-proof">
             <div class="proof-column">
