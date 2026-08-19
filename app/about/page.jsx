@@ -21,11 +21,6 @@ const html = String.raw`
           <span class="about-hero-kicker">OEM / ODM Metal Gifts Factory</span>
           <h1>About Us</h1>
           <p>Unique Pin supports B2B buyers with OEM/ODM manufacturing for custom enamel pins, medals, challenge coins, keychains, belt buckles, and other metal promotional products.</p>
-          <div class="about-hero-highlights" aria-label="Unique Pin factory highlights">
-            <span>International Trade Since 2018</span>
-            <span>Team Experience Since 2003</span>
-            <span>Global Delivery</span>
-          </div>
         </div>
       </div>
     </section>

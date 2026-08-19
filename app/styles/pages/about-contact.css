@@ -58,28 +58,6 @@
   line-height: 1.75;
 }
 
-.about-hero-highlights {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 28px;
-}
-
-.about-hero-highlights span {
-  display: inline-flex;
-  min-height: 40px;
-  align-items: center;
-  padding: 10px 14px;
-  border: 1px solid rgba(197, 211, 233, 0.9);
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.86);
-  color: var(--navy);
-  font-size: 14px;
-  font-weight: 900;
-  box-shadow: 0 12px 28px rgba(11, 47, 99, 0.08);
-}
-
 .about-nav-section {
   position: relative;
   z-index: 2;
