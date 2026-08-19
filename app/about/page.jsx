@@ -55,7 +55,7 @@ const html = String.raw`
         <div class="about-profile-copy">
           <h2>Who We Are</h2>
           <p class="about-profile-subtitle">Custom Metal Manufacturing Supported by Experience Since 2003</p>
-          <p>Unique Pin is the custom metal products brand of Zhongshan Unique Metal Gift Co., Ltd., a manufacturer established in Zhongshan, China, in 2018. We provide end-to-end OEM and ODM services, from product design and mold development through manufacturing and quality inspection to global delivery. We are backed by group manufacturing expertise dating back to 2003.</p>
+          <p>Unique Pin is the custom metal products brand of Zhongshan Unique Metal Gift Co., Ltd., a manufacturer established in Zhongshan, China, in 2018. We provide end-to-end OEM and ODM services, from product design and mold development through manufacturing and quality inspection to global delivery. As part of Guangdong Custom Culture Gifts Co., Ltd., we are backed by group manufacturing expertise dating back to 2003.</p>
           <p>We manufacture custom enamel pins, badges, challenge coins, medals, belt buckles, metal keychains, and other metal accessories for promotions, corporate gifts, sports events, military collections, commemorative programs, and retail projects worldwide.</p>
           <p>Our 6,000-square-meter Zhongshan factory is equipped with 34 production machines and covers CNC engraving, die casting, stamping, polishing, electroplating, enamel coloring, and QC in-house. Supported by certifications including Sedex, FSC, CE, RoHS, and Disney FAMA, we serve customers across North America, Europe, Australia, Southeast Asia, and the Middle East.</p>
         </div>
