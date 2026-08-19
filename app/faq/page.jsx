@@ -7,7 +7,7 @@ import { siteHeaderHtml } from "../components/siteHeaderHtml";
 export const metadata = {
   title: "FAQ | Custom Metal Crafts Questions | Unique Pin",
   description:
-    "Answers about custom metal crafts, artwork, materials, MOQ, production, payment, packaging, shipping and after-sales service.",
+    "Answers about custom metal crafts, artwork, materials, No MOQ orders, production, payment, packaging, shipping and after-sales service.",
   alternates: {
     canonical: "/faq",
   },
@@ -48,10 +48,10 @@ const faqGroups = [
   {
     id: "pricing-lead-time",
     title: "3. Pricing & Lead Time",
-    intro: "Quotation factors, samples, MOQ and production timing.",
+    intro: "Quotation factors, samples, No MOQ orders and production timing.",
     items: [
-      ["What is your minimum order quantity?", "We do not have a fixed minimum order quantity. You can start from 1 piece."],
-      ["Do you offer better prices for bulk orders?", "Yes. Unit cost usually decreases as quantity increases because mold and setup costs are shared across more pieces."],
+      ["What is your MOQ?", "No MOQ. Flexible quantities are welcome, and mold fees and unit prices are calculated by project."],
+      ["Do you offer better prices for bulk orders?", "Yes. Unit cost usually decreases as quantity increases because mold and setup costs are shared across more pieces. Mold fees and unit prices are calculated by project."],
       ["Are mold and setup fees included in the product price?", "Mold and setup fees depend on the product design and production requirements. For new custom designs, mold costs may apply. For repeat orders using existing molds, additional mold charges are usually not required."],
       ["Can I order a small quantity first?", "Yes. We support trial orders and sample production to help customers evaluate product quality before placing larger orders."],
       ["How long does mass production take?", "Typical production takes about 15-25 days after sample or artwork approval. Complex 3D, dual-plating, special packaging or large orders may need more time."],

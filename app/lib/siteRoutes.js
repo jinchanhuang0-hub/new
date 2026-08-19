@@ -527,9 +527,9 @@ const blogArticleData = {
     image: "/assets/images/blog-how-challenge-coins-made-card-v3.webp",
   },
   "custom-enamel-pins-no-moq-guide": {
-    title: "Custom Enamel Pins with No Minimum Order: A Complete Guide",
+    title: "Custom Enamel Pins with No MOQ: A Complete Guide",
     description:
-      "Learn how no MOQ custom enamel pin orders work for samples, small batches and bulk orders, including artwork review, mold setup, unit cost, inspection and shipment preparation.",
+      "Learn how No MOQ custom enamel pin orders work for samples, small batches and bulk orders, including artwork review, mold setup, unit cost, inspection and shipment preparation. Mold fees and unit prices are calculated by project.",
     datePublished: "2026-07-23",
     dateModified: "2026-07-23",
     image: "/assets/images/blog-custom-enamel-pins-no-moq-products.png",

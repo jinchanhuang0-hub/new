@@ -2729,7 +2729,7 @@ const html = String.raw`
           </div>
           <a class="single-product-inquiry" href="/contact" data-product-inquiry-trigger data-product-inquiry-product="Lapel Pins">GET A QUOTE</a>
           <div class="single-product-quote-benefits" aria-label="Quote benefits">
-            <div><span class="quote-benefit-icon quote-benefit-icon-moq" aria-hidden="true"></span><span>NO MOQ</span></div>
+            <div><span class="quote-benefit-icon quote-benefit-icon-moq" aria-hidden="true"></span><span>No MOQ</span></div>
             <div><span class="quote-benefit-icon quote-benefit-icon-design" aria-hidden="true"></span><span>FREE DESIGN</span></div>
             <div><span class="quote-benefit-icon quote-benefit-icon-factory" aria-hidden="true"></span><span>FACTORY DIRECT</span></div>
             <div><span class="quote-benefit-icon quote-benefit-icon-oem" aria-hidden="true"></span><span>OEM/ODM</span></div>
@@ -2775,7 +2775,7 @@ const html = String.raw`
       <div class="container">
         <div class="single-product-faq-heading"><span class="single-product-faq-icon" aria-hidden="true"></span><h2>Frequently Asked Questions</h2></div>
         <div class="single-product-faq-list">
-          <details><summary><span class="faq-plus" aria-hidden="true"></span><span>What is your minimum order quantity?</span></summary><p>We do not have a fixed minimum order quantity. You can start from 1 piece.</p></details>
+          <details><summary><span class="faq-plus" aria-hidden="true"></span><span>What is your MOQ?</span></summary><p>No MOQ. Flexible quantities are welcome, and mold fees and unit prices are calculated by project.</p></details>
           <details><summary><span class="faq-plus" aria-hidden="true"></span><span>Do you offer free art proofs?</span></summary><p>Yes. Every order includes a free digital art proof before production begins. You can request revisions until the design matches your vision. Production does not start until you approve the proof.</p></details>
           <details><summary><span class="faq-plus" aria-hidden="true"></span><span>What file formats do you accept?</span></summary><p>Vector files such as AI, PDF, EPS, CDR and SVG are best. High-resolution PNG, JPG and PSD files can also be used when vector artwork is not available.</p></details>
           <details><summary><span class="faq-plus" aria-hidden="true"></span><span>How to choose the suitable material?</span></summary><p>For designs that need a strong 3D effect, we usually recommend zinc alloy because it is easier to cast detailed raised shapes and dimensional surfaces. If your priority is reducing cost for a simple flat design, iron can be a more economical option.</p></details>
