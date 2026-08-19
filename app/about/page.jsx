@@ -173,6 +173,7 @@ const html = String.raw`
               <span class="about-team-disc" aria-hidden="true"></span>
               <img class="about-team-cutout" src="assets/images/team-cutout-director.png" alt="Unique Pin director" loading="lazy">
             </figure>
+            <p class="about-team-name">Jake</p>
             <h3>Managing Director</h3>
           </article>
           <article class="about-team-member about-team-member-business">
@@ -180,6 +181,7 @@ const html = String.raw`
               <span class="about-team-disc" aria-hidden="true"></span>
               <img class="about-team-cutout" src="assets/images/team-cutout-business-supervisor.png" alt="Unique Pin business supervisor" loading="lazy">
             </figure>
+            <p class="about-team-name">Eva</p>
             <h3>Business Supervisor</h3>
           </article>
           <article class="about-team-member about-team-member-designer">
@@ -187,6 +189,7 @@ const html = String.raw`
               <span class="about-team-disc" aria-hidden="true"></span>
               <img class="about-team-cutout" src="assets/images/team-cutout-graphic-designer.png" alt="Unique Pin graphic designer" loading="lazy">
             </figure>
+            <p class="about-team-name">June</p>
             <h3>Graphic Designer</h3>
           </article>
         </div>

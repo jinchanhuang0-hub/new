@@ -593,11 +593,20 @@
   --team-cutout-bottom: -7%;
 }
 
+.about-team-name,
 .about-team-member h3 {
-  margin: 0;
   color: var(--navy);
   font-size: clamp(20px, 1.7vw, 26px);
   line-height: 1.18;
+}
+
+.about-team-name {
+  margin: 0 0 4px;
+  font-weight: 900;
+}
+
+.about-team-member h3 {
+  margin: 0;
   text-transform: uppercase;
   white-space: nowrap;
 }
