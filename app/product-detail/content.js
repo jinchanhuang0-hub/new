@@ -144,8 +144,8 @@ export const productDetailHtml = String.raw`
       <div class="container product-type-content">
         <div class="product-type-head"><h1>Other Custom Products</h1><p>Need a product that does not fit the standard categories? We can review custom metal gifts, mixed accessories, event merchandise and special OEM/ODM requests based on your artwork, structure and target use.</p></div>
         ${productCategoryNavHtml({ active: "others", variant: "inline" })}
-        <div class="product-type-grid custom-category-grid">
-          <article class="product-type-card"><img src="assets/images/type-openers-coin.jpg" alt="Functional custom metal product sample"><h2>Functional Accessories</h2><p>Custom hardware, promotional accessories and functional metal products with practical structures.</p><div class="product-type-actions"><a class="product-type-btn product-type-btn-primary" href="/contact?product=Others&amp;item=Functional%20Accessories">GET A QUOTE</a></div></article>
+        <div class="product-type-grid custom-category-grid cover-card-grid">
+          <article class="product-type-card" id="functional-accessories"><img src="assets/images/type-openers-coin.jpg" alt="Functional custom metal product sample"><h2>Functional Accessories</h2><div class="product-type-actions"><a class="product-type-btn product-type-btn-outline" href="#functional-accessories">View Details</a><a class="product-type-btn product-type-btn-primary" href="/contact?product=Others&amp;item=Functional%20Accessories">GET A QUOTE</a></div></article>
         </div>
       </div>
     </section>
