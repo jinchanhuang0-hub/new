@@ -267,6 +267,8 @@ export const productItemCategoryKey = {
   "ferris-wheel-3d-metal-fridge-magnet": "magnets",
   "cartoon-character-soft-pvc-fridge-magnet": "magnets",
   "city-landmark-souvenir-fridge-magnet": "magnets",
+  "custom-woven-dragon-round-patch": "patchs",
+  "custom-embroidered-cartoon-character-patch": "patchs",
 };
 
 const DEFAULT_BLOG_AUTHOR = "Sunny Huang";

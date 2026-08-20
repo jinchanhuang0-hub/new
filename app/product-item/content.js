@@ -2665,6 +2665,34 @@ export const productItems = {
     categories: "Fridge Magnets, Souvenir Magnets",
     quoteProduct: "Fridge Magnets",
     lead: "This city landmark magnet presents local architecture and destination details in a compact gift format. It is well suited for tourist shops, city promotions, museums and travel retail."
+  },
+  "custom-woven-dragon-round-patch": {
+    title: "Custom Woven Dragon Round Patch",
+    image: "assets/images/custom-woven-dragon-round-patch.webp",
+    alt: "Blue and gold custom woven dragon round patch",
+    categoryLabel: "Patchs",
+    categoryHref: "/products/custom-patchs",
+    material: "Polyester fiber, twill fabric, cotton, silk, non-woven fabric or dyed fabric options",
+    process: "Woven artwork with stitched border; embroidery options available by design",
+    sku: "UP-PATCH-001",
+    usage: "Uniforms, apparel, bags, luggage and event merchandise",
+    categories: "Patchs, Woven Patchs, Apparel Patches",
+    quoteProduct: "Patchs",
+    lead: "This custom woven dragon round patch uses blue and gold woven artwork with a stitched border for uniforms, apparel, bags, luggage, club merchandise and event programs."
+  },
+  "custom-embroidered-cartoon-character-patch": {
+    title: "Custom Embroidered Cartoon Character Patch",
+    image: "assets/images/custom-embroidered-cartoon-character-patch.webp",
+    alt: "Custom embroidered cartoon character patch",
+    categoryLabel: "Patchs",
+    categoryHref: "/products/custom-patchs",
+    material: "Polyester fiber, twill fabric, cotton, silk, non-woven fabric or dyed fabric options",
+    process: "Embroidery with textured thread and stitched border",
+    sku: "UP-PATCH-002",
+    usage: "Apparel, uniforms, bags, toys, pet accessories and events",
+    categories: "Patchs, Embroidered Patchs, Character Patches",
+    quoteProduct: "Patchs",
+    lead: "This custom embroidered cartoon character patch uses textured thread, bright color areas and a stitched border for apparel, uniforms, bags, toys, pet accessories and promotional events."
   }
 };
 
@@ -2911,6 +2939,16 @@ const CUSTOM_SOLUTION_PROFILES = {
     thickness: "Commonly 2.0-5.0 mm depending on metal, PVC or magnet structure.",
     accessories: "Rubber magnet, ferrite magnet, soft magnetic sheet, backing card or display card.",
     packaging: "OPP bag, backing card, retail card or gift packaging available."
+  },
+  Patchs: {
+    material: "Polyester fiber, twill fabric, cotton, silk, non-woven fabric or dyed fabric selected by artwork and use.",
+    process: "Woven or embroidered patch production based on the approved artwork.",
+    size: "Custom size and logo are welcome.",
+    thickness: "Patch structure and backing are confirmed with the artwork proof.",
+    accessories: "Sew-on, iron-on, hook-and-loop or other backing options can be quoted by request.",
+    packaging: "Poly bag, bubble bag, OPP bag, plastic box or gift box available; bulk carton reference: 5000 pcs per carton, 40 x 30 x 35 cm.",
+    sampleLeadTime: "3-5 working days",
+    productionLeadTime: "6-8 working days"
   }
 };
 
@@ -2931,6 +2969,20 @@ const getCustomSolutionProfile = (item) => {
     ...(CUSTOM_SOLUTION_PROFILES[productType] || {})
   };
   const text = getProductSearchText(item);
+
+  if (productType === "Patchs") {
+    return {
+      ...profile,
+      material: item.material || profile.material,
+      process: item.process || profile.process,
+      size: "Custom size and logo are welcome.",
+      thickness: "Patch structure and backing are confirmed with the artwork proof.",
+      accessories: "Sew-on, iron-on, hook-and-loop or other backing options can be quoted by request.",
+      packaging: "Poly bag, bubble bag, OPP bag, plastic box or gift box available; bulk carton reference: 5000 pcs per carton, 40 x 30 x 35 cm.",
+      sampleLeadTime: "3-5 working days",
+      productionLeadTime: "6-8 working days"
+    };
+  }
 
   if (text.includes("uv printed") || text.includes("uv printing") || text.includes("full color printed")) {
     return {

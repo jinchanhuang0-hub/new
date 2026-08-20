@@ -12,6 +12,7 @@ export const productCardCategoryOrder = [
   "bottle-openers",
   "cufflinks-tieclips",
   "magnets",
+  "patchs",
 ];
 
 const escapeHtml = (value = "") => String(value)
