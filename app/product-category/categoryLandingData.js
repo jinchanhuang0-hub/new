@@ -26,7 +26,7 @@ const escapeHtml = (value = "") => String(value)
 export const homeProductLandingPages = [
   {
     slug: "custom-lapel-pins",
-    title: "Lapel Pin Types & Techniques",
+    title: "Lapel Pin Types",
     shortLabel: "Lapel Pins",
     formProduct: "Lapel Pins",
     metaTitle: "Custom Lapel Pins | Enamel Pin Types & Free Quote",
