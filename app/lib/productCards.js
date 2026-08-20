@@ -42,10 +42,25 @@ const compareKeychainEntriesByMaterialPriority = (entryA, entryB) => {
   return deferredDiff || compareProductEntriesBySkuDesc(entryA, entryB);
 };
 
+const patchProductPriority = {
+  "custom-woven-dragon-round-patch": 1,
+  "custom-embroidered-cartoon-character-patch": 2,
+};
+
+const comparePatchEntriesByDisplayPriority = (entryA, entryB) => {
+  const priorityDiff =
+    (patchProductPriority[entryA[0]] || 999) -
+    (patchProductPriority[entryB[0]] || 999);
+
+  return priorityDiff || compareProductEntriesBySkuDesc(entryA, entryB);
+};
+
 const getProductEntriesForCategory = (categoryKey) => {
   const sorter =
     categoryKey === "keychains"
       ? compareKeychainEntriesByMaterialPriority
+      : categoryKey === "patchs"
+      ? comparePatchEntriesByDisplayPriority
       : compareProductEntriesBySkuDesc;
 
   return Object.entries(productItems)
