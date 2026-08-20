@@ -2806,7 +2806,7 @@ const html = String.raw`
             <div class="form-row"><input type="text" name="name" placeholder="Name" required><input type="email" name="email" placeholder="Email" required></div>
             <div class="form-row"><input type="text" name="country" placeholder="Country / Region" required><input type="text" name="whatsapp" placeholder="Phone Number"></div>
             <div class="form-row">
-              <select name="product" required><option value="">Product Type</option><option>Lapel Pins</option><option>Medals</option><option>Challenge Coins</option><option>Keychains</option><option>Belt Buckles</option><option>Golf Accessories</option><option>Fridge Magnets</option><option>Bottle Openers</option><option>Cufflinks &amp; Tie Clips</option><option>Other</option></select>
+              <select name="product" required><option value="">Product Type</option><option>Lapel Pins</option><option>Medals</option><option>Challenge Coins</option><option>Keychains</option><option>Belt Buckles</option><option>Golf Accessories</option><option>Fridge Magnets</option><option>Bottle Openers</option><option>Cufflinks &amp; Tie Clips</option><option>Patchs</option><option>Others</option><option>Other</option></select>
               <input type="text" name="quantity" placeholder="Quantity">
             </div>
             <div class="form-field form-field-full"><label for="product-item-quote-details">What can we help you with?</label><textarea id="product-item-quote-details" name="details" placeholder="Notes, Comments, etc."></textarea></div>

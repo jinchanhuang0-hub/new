@@ -11,6 +11,8 @@ const productOptions = [
   "Fridge Magnets",
   "Bottle Openers",
   "Cufflinks & Tie Clips",
+  "Patchs",
+  "Others",
   "Other",
 ];
 

@@ -87,6 +87,8 @@ const html = String.raw`
                 <option>Challenge Coins</option>
                 <option>Cufflinks & Tie Clips</option>
                 <option>Keychains</option>
+                <option>Patchs</option>
+                <option>Others</option>
                 <option>Other</option>
               </select>
               <label class="sr-only" for="contact-inquiry-quantity">Quantity</label>

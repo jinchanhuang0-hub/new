@@ -37,6 +37,15 @@ export const blogHtml = String.raw`
           <button type="button" data-blog-category="Uncategorized">Uncategorized</button>
         </div>
         <div class="blog-card-grid">
+          <a class="blog-feature-card" href="/blog/finisher-medals-vs-placement-medals" data-blog-category="Custom Medals" aria-label="Read Finisher Medals vs Placement Medals: Race Award Guide">
+            <img src="/assets/images/finisher-vs-placement-medals.webp" width="1672" height="941" alt="Finisher medals and placement medals prepared for a race event">
+            <div class="blog-feature-body">
+              <div class="blog-feature-meta"><span>Custom Medals</span><span>Race Awards</span></div>
+              <h2>Finisher Medals vs Placement Medals: Race Award Guide</h2>
+              <p>Compare finisher, placement and age-group medals, then plan fair award categories and race-day distribution for 5Ks, marathons and sports events.</p>
+              <span class="blog-feature-link">Read More</span>
+            </div>
+          </a>
           <a class="blog-feature-card" href="/blog/military-challenge-coin-traditions" data-blog-category="Custom Coins" aria-label="Read Military Challenge Coin Traditions, Meaning and Etiquette">
             <img src="/assets/images/military-challenge-coin-tradition-handshake-clean.webp" width="1600" height="900" alt="Military challenge coin presented discreetly during a handshake">
             <div class="blog-feature-body">
@@ -1890,6 +1899,179 @@ export const blogHtml = String.raw`
           </div>
       <div class="blog-cta-actions"><a class="btn btn-yellow" href="/contact">Get a Free Quote</a></div>
         </section>
+      </div>
+    </article>
+
+    <article id="finisher-medals-vs-placement-medals" class="section blog-article-section">
+      <div class="blog-article-shell">
+        <aside class="blog-article-toc" aria-label="Article contents">
+          <strong>In This Guide</strong>
+          <nav>
+            <a href="#what-is-the-difference-between-finisher-and-placement-medals">Difference</a>
+            <a href="#should-every-participant-receive-a-medal">Award policy</a>
+            <a href="#can-an-event-use-both-finisher-and-placement-medals">Using both</a>
+            <a href="#overall-awards-vs-age-group-awards">Overall vs age-group</a>
+            <a href="#special-cases-every-race-director-should-decide-in-advance">Special cases</a>
+            <a href="#how-should-different-award-levels-look">Award levels</a>
+            <a href="#how-many-medals-should-an-event-order">Quantities</a>
+            <a href="#planning-medal-distribution-on-race-day">Distribution</a>
+            <a href="#publish-the-medal-policy-before-registration">Policy</a>
+            <a href="#frequently-asked-questions">FAQ</a>
+            <a href="#conclusion">Conclusion</a>
+          </nav>
+        </aside>
+        <div class="container blog-article blog-article-with-toc">
+        <header class="blog-article-header">
+          <a class="blog-back-link" href="/blog">Back to Blog</a>
+          <h1>Finisher Medals vs Placement Medals: How to Plan Awards for Races and Sports Events</h1>
+          <figure class="blog-article-image blog-article-hero-image blog-article-natural-image">
+            <img src="/assets/images/finisher-vs-placement-medals.webp" width="1672" height="941" fetchpriority="high" decoding="async" alt="Finisher medals and placement medals prepared for a race event">
+            <figcaption>Finisher and placement medals prepared for race-day award distribution.</figcaption>
+          </figure>
+          <p>Should every participant receive a medal, or should medals be reserved for the fastest athletes?</p>
+          <p>Race directors rarely use one rule for every event. Finisher medals recognize completion, while placement medals recognize competitive results. Many races use both, but the right structure depends on the event's purpose, participant expectations, categories and budget. It also affects registration information, order quantities, medal wording and race-day distribution. This guide explains how to build a clear policy without treating one approach as universal.</p>
+        </header>
+
+        <h2 id="what-is-the-difference-between-finisher-and-placement-medals">What Is the Difference Between Finisher and Placement Medals?</h2>
+        <p>The simplest difference is the achievement being recognized.</p>
+        <div class="blog-table-wrap">
+          <table class="blog-table">
+            <thead>
+              <tr><th>Award type</th><th>Who receives it?</th><th>What it recognizes</th><th>Common settings</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>Finisher medal</strong></td><td>A participant who completes the event under its stated rules</td><td>Completion, persistence and a personal goal</td><td>5Ks, marathons, charity runs and trail races</td></tr>
+              <tr><td><strong>Placement medal</strong></td><td>An athlete or team that finishes in a specified position</td><td>Competitive result</td><td>Track meets, swimming, tournaments and school sports</td></tr>
+              <tr><td><strong>Age-group medal</strong></td><td>A leading finisher within a defined age category</td><td>Performance among comparable competitors</td><td>5Ks, 10Ks, half marathons and marathons</td></tr>
+              <tr><td><strong>Participation medal</strong></td><td>Someone who takes part under the event's participation policy</td><td>Involvement and encouragement</td><td>Youth, school and community programs</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>A finisher medal and a participation medal may be physically similar, but the wording frames the achievement differently. &ldquo;Finisher&rdquo; normally means completing a stated distance or challenge. &ldquo;Participation&rdquo; recognizes taking part and may not depend on reaching a finish line. Placement and age-group awards distinguish competitive results, so eligibility should follow published event rules.</p>
+        <figure class="blog-article-image blog-article-natural-image">
+          <img src="/assets/images/finisher-medals-placement-medals-comparison.webp" width="1536" height="1024" loading="lazy" decoding="async" alt="Comparison of race finisher medals and gold silver bronze placement medals">
+          <figcaption>Race finisher medals and gold, silver and bronze placement medals serve different award purposes.</figcaption>
+        </figure>
+
+        <h2 id="should-every-participant-receive-a-medal">Should Every Participant Receive a Medal?</h2>
+        <p>Start with the purpose of the event. A community fundraiser, a timed road race and a school tournament may all make reasonable but different decisions.</p>
+
+        <h3>Marathons and Half Marathons</h3>
+        <p>For many endurance events, the medal is part of the finish-line experience. Organizers should still define &ldquo;finisher,&rdquo; such as completing the official course within the published rules. Overall and age-group winners can receive separate awards, allowing the event to recognize completion without treating every finisher as a competitive winner.</p>
+
+        <h3>5K and 10K Races</h3>
+        <p>Policies vary more at shorter distances. Charity, themed and community races may give 5K medals to all eligible finishers, while a competitive timed 5K may reserve awards for overall or age-group winners. The registration page should say what is included. NYCRUNS, for example, states that all of its half marathons and some shorter races include finisher medals. (<a href="https://nycruns.com/article/do-runners-receive-medals-at-all-your-events" target="_blank" rel="noopener noreferrer">NYCRUNS</a>)</p>
+
+        <h3>Youth and School Events</h3>
+        <p>Youth programs often balance encouragement with competitive recognition. A participation or completion medal can acknowledge effort, while separate gold, silver and bronze awards recognize results. Clear wording, ribbon colors or finish variations should distinguish the two levels.</p>
+
+        <h3>Team Sports and Tournaments</h3>
+        <p>Team events must decide whether medals go to the champion and runner-up, the top three teams or every participant. Eligibility for substitutes, coaches and special awards such as MVP or best goalkeeper should be settled before quantities are confirmed.</p>
+
+        <h3>Charity and Community Events</h3>
+        <p>For a charity run or community challenge, a medal may represent both completion and support for a cause. The participant's achievement should remain central, and charity logos or protected artwork should be used with permission.</p>
+        <figure class="blog-article-image blog-article-natural-image">
+          <img src="/assets/images/medals-for-races-and-sports-events.webp" width="1659" height="948" loading="lazy" decoding="async" alt="Medal award settings for a 5K marathon youth event and team tournament">
+          <figcaption>Different race and sports settings can use medals for finishers, youth participation and team recognition.</figcaption>
+        </figure>
+
+        <h2 id="can-an-event-use-both-finisher-and-placement-medals">Can an Event Use Both Finisher and Placement Medals?</h2>
+        <p>Yes. A layered award structure can recognize different kinds of achievement without confusing them. One possible structure is:</p>
+        <ol class="blog-list">
+          <li>All eligible finishers receive a finisher medal.</li>
+          <li>The leading overall finishers receive podium awards.</li>
+          <li>The leading athletes in published age groups receive age-group awards.</li>
+          <li>Volunteers, guides or other contributors may receive separate recognition when the event chooses to provide it.</li>
+        </ol>
+        <p>Treat this as a sample structure, not a rulebook. Real events organize awards differently. US Road Running states that all finishers at its races receive themed finisher medals, while its overall awards follow separate eligibility rules. (<a href="https://usroadrunning.com/FinisherMedals.php" target="_blank" rel="noopener noreferrer">US Road Running finisher medals</a>, <a href="https://usroadrunning.com/Awards.php" target="_blank" rel="noopener noreferrer">race awards</a>) Run the Rainbow provides finisher medals and also lists overall and age-group awards. (<a href="https://umc.edu/Development/Community/Events/Annual-Events/Run-the-Rainbow/Awards.html" target="_blank" rel="noopener noreferrer">Run the Rainbow</a>)</p>
+        <p>The practical lesson is simple: publish your own policy instead of copying another event's template.</p>
+        <figure class="blog-article-image blog-article-natural-image blog-award-hierarchy-image">
+          <img src="/assets/images/race-medal-award-hierarchy.webp" width="1485" height="1059" loading="lazy" decoding="async" alt="Race award hierarchy for finishers age groups and overall winners">
+          <figcaption>A layered race award hierarchy separates finisher medals, age-group medals, podium medals and special recognition.</figcaption>
+        </figure>
+
+        <h2 id="overall-awards-vs-age-group-awards">Overall Awards vs Age-Group Awards</h2>
+        <p>Overall awards recognize the best results across the eligible field or division; age-group awards compare athletes within published age categories. If an overall winner also leads an age group, the organizer may allow both awards or move the age-group recognition to the next eligible athlete. Age ranges, recognized places, duplicate-award rules and the treatment of ties should be established before registration opens.</p>
+
+        <h2 id="special-cases-every-race-director-should-decide-in-advance">Special Cases Every Race Director Should Decide in Advance</h2>
+        <p>Several situations can cause confusion when the medal policy is vague:</p>
+        <ul class="blog-list">
+          <li><strong>DNS (Did Not Start):</strong> A registered participant who does not begin the event.</li>
+          <li><strong>DNF (Did Not Finish):</strong> A participant who starts but does not complete the required course.</li>
+          <li><strong>Guide runners:</strong> People supporting athletes who require assistance.</li>
+          <li><strong>Pacers:</strong> Runners helping participants maintain a target pace.</li>
+          <li><strong>Volunteers:</strong> People supporting registration, course operations or finish-line distribution.</li>
+          <li><strong>Virtual participants:</strong> Entrants completing an approved activity away from the physical event.</li>
+          <li><strong>Late registrants:</strong> People entering after the main medal quantity was confirmed.</li>
+          <li><strong>Disqualified athletes:</strong> Participants whose results are removed under event rules.</li>
+        </ul>
+        <p>These groups are where vague wording can create confusion. Decide eligibility deliberately, communicate it before the event and apply it consistently. Accessibility and guide policies should be developed with the people affected rather than treated as an afterthought.</p>
+
+        <h2 id="how-should-different-award-levels-look">How Should Different Award Levels Look?</h2>
+        <p>A coherent medal family can share the same event logo, year and visual theme while still making each award level easy to identify.</p>
+        <ul class="blog-list">
+          <li>Use consistent event artwork for race finisher medals.</li>
+          <li>Reserve gold, silver and bronze language for defined placement categories.</li>
+          <li>Distinguish age group medals with clear back text, ribbon colors or packaging labels.</li>
+          <li>Use a shared design system for several distances, but identify each distance clearly.</li>
+          <li>Make wording such as <code>FINISHER</code>, <code>1ST PLACE</code> or <code>AGE GROUP</code> readable.</li>
+          <li>Avoid so many minor variations that volunteers cannot sort them quickly.</li>
+        </ul>
+        <p>A finisher medal should still feel earned; the point is to make each award match the achievement it represents. For physical specifications, use the <a href="https://uccrafts.com/blog/custom-marathon-medals-guide">marathon medal size, ribbon and finish guide</a>.</p>
+
+        <h2 id="how-many-medals-should-an-event-order">How Many Medals Should an Event Order?</h2>
+        <p>Start with the award policy and calculate each group separately.</p>
+        <p>For finisher medals, review registrations, historical start and completion patterns, late-entry rules, virtual entries and an approved reserve for replacements or verified distribution errors. Avoid applying an arbitrary percentage without examining the event's records.</p>
+        <p>For placement medals, a starting calculation is:</p>
+        <blockquote>
+          <p>Number of award positions &times; number of categories &times; number of divisions</p>
+        </blockquote>
+        <p>Adjust the result for the actual rules. For team sports, use the eligible roster rather than only the expected starting lineup and confirm whether substitutes, coaches or support staff are included. Record every category as a separate line item before ordering.</p>
+
+        <h2 id="planning-medal-distribution-on-race-day">Planning Medal Distribution on Race Day</h2>
+        <p>Even a correct order can become messy on race day if medals are not organized for distribution.</p>
+        <ul class="blog-list">
+          <li>Store finisher medals separately from podium and age-group awards.</li>
+          <li>Label cartons or trays by distance, division and award level.</li>
+          <li>Give volunteers a simple distribution sheet.</li>
+          <li>Keep competitive awards away from the general finish-line handout.</li>
+          <li>Verify results before the award ceremony.</li>
+          <li>Assign a person to handle corrections and unclaimed awards.</li>
+          <li>Publish mailing conditions for virtual or absent recipients.</li>
+        </ul>
+        <p>When medal designs look similar, color-coded ribbons or removable tray labels can reduce mistakes without adding unnecessary variations to the artwork.</p>
+        <figure class="blog-article-image blog-article-natural-image blog-race-day-distribution-image">
+          <img src="/assets/images/race-day-medal-distribution.webp" width="1536" height="1024" loading="lazy" decoding="async" alt="Volunteers organizing and distributing finisher medals on race day">
+          <figcaption>Organized trays, labels and volunteers help distribute race medals accurately on event day.</figcaption>
+        </figure>
+
+        <h2 id="publish-the-medal-policy-before-registration">Publish the Medal Policy Before Registration</h2>
+        <p>Participants should be able to find the following information before they enter:</p>
+        <ul class="blog-list">
+          <li>who qualifies for a finisher medal;</li>
+          <li>whether DNS and DNF participants are eligible;</li>
+          <li>which overall and age-group awards are offered;</li>
+          <li>how age groups are defined;</li>
+          <li>whether one athlete may receive multiple awards;</li>
+          <li>whether awards can be mailed;</li>
+          <li>whether recipients must attend the ceremony; and</li>
+          <li>how changes will be communicated.</li>
+        </ul>
+        <p>Clear policy language reduces confusion at pickup, results review and award ceremonies. It also helps the organizer calculate quantities, brief volunteers and answer participant questions consistently.</p>
+
+        <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
+        <div class="blog-faq">
+          <details open><summary>Do you get a medal for completing a 5K?</summary><p>It depends on the event. Many charity, themed and community 5Ks provide finisher medals, while some competitive or low-cost races reserve awards for leading finishers. Check the registration page.</p></details>
+          <details><summary>What is the difference between a finisher medal and a participation medal?</summary><p>A finisher medal recognizes completion of a defined challenge. A participation medal recognizes taking part and may not require completion. The wording should match the eligibility rules.</p></details>
+          <details><summary>Can a runner receive both an overall and an age-group award?</summary><p>Some events allow both awards; others move the age-group award to the next eligible athlete. Publish the rule before results are calculated.</p></details>
+          <details><summary>Should runners who do not finish receive a medal?</summary><p>There is no universal rule. Eligibility for a finisher medal should match the event's published definition of finishing. Other participants may have a separate recognition policy.</p></details>
+          <details><summary>How many race medals should an organizer order?</summary><p>Calculate finisher, placement, age-group and team medals separately using registration data, event history, category rules, eligible rosters and an approved reserve.</p></details>
+        </div>
+
+        <h2 id="conclusion">Conclusion</h2>
+        <p>The real decision is not simply finisher medals vs placement medals; it is what the event wants to recognize. When eligibility, award hierarchy, quantities and distribution agree, participants understand what they have earned and staff can deliver the right award at the right moment.</p>
+        <p>If your award structure is already defined, explore <a href="https://uccrafts.com/product-category/custom-medals">custom medals</a> or send our team the event type, participant categories, quantities, artwork status and required delivery date for a project review.</p>
+        </div>
       </div>
     </article>
 </main>

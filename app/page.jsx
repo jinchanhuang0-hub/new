@@ -32,7 +32,7 @@ const html = String.raw`
               <div class="proof-item"><strong>Free Design</strong><span>Artwork &amp; Digital Proof Support</span></div>
             </div>
             <div class="proof-column">
-              <div class="proof-item"><strong>No MOQ</strong><span>Mold fees and unit prices are calculated by project.</span></div>
+              <div class="proof-item"><strong>No MOQ</strong><span>Flexible Custom Orders</span></div>
               <div class="proof-item"><strong>Affordable Prices</strong><span>Competitive Factory Price</span></div>
             </div>
           </div>
@@ -175,6 +175,8 @@ const html = String.raw`
                 <option>Fridge Magnets</option>
                 <option>Bottle Openers</option>
                 <option>Cufflinks &amp; Tie Clips</option>
+                <option>Patchs</option>
+                <option>Others</option>
                 <option>Other</option>
               </select>
               <input type="text" name="quantity" placeholder="Quantity">

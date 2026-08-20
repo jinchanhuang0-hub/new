@@ -66,6 +66,14 @@ export default function StaticPageEffects() {
         magnets: {
           title: "Custom Fridge Magnets Manufacturer | Souvenir Magnets",
           description: "Order custom fridge magnets for tourist souvenirs, city gifts, event merchandise and retail gift programs with OEM/ODM support."
+        },
+        patchs: {
+          title: "Custom Patchs Manufacturer | Embroidered, PVC & Woven Patchs",
+          description: "Order custom patchs for uniforms, clubs, events, apparel brands and promotional merchandise with artwork proofing, material guidance and OEM/ODM support."
+        },
+        others: {
+          title: "Other Custom Metal Products | OEM/ODM Gift Manufacturer",
+          description: "Request other custom products from Unique Pin, including special metal gifts, accessories, promotional items and mixed custom projects."
         }
       };
 

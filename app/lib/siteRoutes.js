@@ -37,6 +37,14 @@ export const productCategories = {
     slug: "custom-fridge-magnets",
     label: "Custom Fridge Magnets",
   },
+  patchs: {
+    slug: "custom-patchs",
+    label: "Custom Patchs",
+  },
+  others: {
+    slug: "others",
+    label: "Other Custom Products",
+  },
 };
 
 export const categoryKeyByRouteSlug = Object.fromEntries(
@@ -54,6 +62,9 @@ const categoryKeyByLabel = {
   "Bottle Openers": "bottle-openers",
   "Cufflinks & Tie Clips": "cufflinks-tieclips",
   "Fridge Magnets": "magnets",
+  Patchs: "patchs",
+  Others: "others",
+  Other: "others",
 };
 
 export const getCategoryKeyForItem = (item) =>
@@ -280,6 +291,18 @@ const withBlogArticleDefaults = (article) => {
 };
 
 const blogArticleData = {
+  "finisher-medals-vs-placement-medals": {
+    title: "Finisher Medals vs Placement Medals: Race Award Guide",
+    headline: "Finisher Medals vs Placement Medals: How to Plan Awards for Races and Sports Events",
+    description:
+      "Compare finisher, placement and age-group medals, then plan fair award categories and race-day distribution for 5Ks, marathons and sports events.",
+    author: "Sunny Huang",
+    authorType: "Person",
+    datePublished: "2026-08-20",
+    dateModified: "2026-08-20",
+    image: "/assets/images/finisher-vs-placement-medals-og.webp",
+    schemaType: "Article",
+  },
   "military-challenge-coin-traditions": {
     title: "Military Challenge Coin Traditions, Meaning and Etiquette",
     headline: "Military Challenge Coin Traditions: Meaning, History and How They Are Presented",

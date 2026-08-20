@@ -140,6 +140,43 @@
   object-fit: cover;
 }
 
+#finisher-medals-vs-placement-medals .blog-article-header > .blog-article-hero-image.blog-article-natural-image {
+  width: calc(100% + (2 * var(--article-pad)));
+  max-width: none;
+  margin-left: calc(var(--article-pad) * -1);
+  margin-right: calc(var(--article-pad) * -1);
+  overflow: hidden;
+}
+
+#finisher-medals-vs-placement-medals .blog-article-header > .blog-article-hero-image.blog-article-natural-image img {
+  width: 100%;
+  max-width: none;
+  height: auto;
+  padding: 0;
+  max-height: none;
+  aspect-ratio: auto;
+  object-fit: contain;
+  object-position: center;
+}
+
+#finisher-medals-vs-placement-medals .blog-award-hierarchy-image img {
+  width: 100%;
+  height: auto;
+  max-height: none;
+  aspect-ratio: auto;
+  object-fit: contain;
+  object-position: center;
+}
+
+#finisher-medals-vs-placement-medals .blog-race-day-distribution-image img {
+  width: 100%;
+  height: auto;
+  max-height: none;
+  aspect-ratio: auto;
+  object-fit: contain;
+  object-position: center;
+}
+
 #military-challenge-coin-traditions .blog-article-header > .blog-article-hero-image.blog-article-natural-image {
   width: calc(100% + (2 * var(--article-pad)));
   max-width: none;

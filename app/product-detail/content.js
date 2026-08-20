@@ -42,6 +42,14 @@ export const productDetailMetadata = {
   magnets: {
     title: "Custom Fridge Magnets Manufacturer | Souvenir Magnets",
     description: "Order custom fridge magnets for tourist souvenirs, city gifts, event merchandise and retail gift programs with OEM/ODM support."
+  },
+  patchs: {
+    title: "Custom Patchs Manufacturer | Embroidered, PVC & Woven Patchs",
+    description: "Order custom patchs for uniforms, clubs, events, apparel brands and promotional merchandise with artwork proofing, material guidance and OEM/ODM support."
+  },
+  others: {
+    title: "Other Custom Metal Products | OEM/ODM Gift Manufacturer",
+    description: "Request other custom products from Unique Pin, including special metal gifts, accessories, promotional items and mixed custom projects."
   }
 };
 
@@ -117,6 +125,30 @@ export const productDetailHtml = String.raw`
           <article class="product-type-card"><img src="assets/images/type-magnets-3d.png" alt="3D custom fridge magnets"><h2>Ferris Wheel 3D Metal Fridge Magnet</h2><div class="product-type-actions"><a class="product-type-btn product-type-btn-outline" href="/products/custom-fridge-magnets/ferris-wheel-3d-metal-fridge-magnet">View More</a><a class="product-type-btn product-type-btn-primary" href="/contact">GET QUOTE NOW</a></div></article>
           <article class="product-type-card"><img src="assets/images/type-magnets-soft-pvc.png" alt="Soft PVC fridge magnets"><h2>Cartoon Character Soft Fridge Magnet</h2><div class="product-type-actions"><a class="product-type-btn product-type-btn-outline" href="/products/custom-fridge-magnets/cartoon-character-soft-pvc-fridge-magnet">View More</a><a class="product-type-btn product-type-btn-primary" href="/contact">GET QUOTE NOW</a></div></article>
           <article class="product-type-card"><img src="assets/images/type-magnets-souvenir.png" alt="Souvenir fridge magnets"><h2>City Landmark Souvenir Fridge Magnet</h2><div class="product-type-actions"><a class="product-type-btn product-type-btn-outline" href="/products/custom-fridge-magnets/city-landmark-souvenir-fridge-magnet">View More</a><a class="product-type-btn product-type-btn-primary" href="/contact">GET QUOTE NOW</a></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-type-section" data-product-content="patchs" hidden>
+      <div class="container product-type-content">
+        <div class="product-type-head"><h1>Custom Patchs</h1><p>Custom patchs for uniforms, jackets, bags, clubs, event merchandise and apparel programs. Share your logo, backing requirement, quantity and deadline so our team can recommend the right material, border and attachment method.</p></div>
+        ${productCategoryNavHtml({ active: "patchs", variant: "inline" })}
+        <div class="product-type-grid custom-category-grid">
+          <article class="product-type-card"><img src="assets/images/type-keychains-never-give-up-woven-label.jpg" alt="Custom woven patch style label"><h2>Woven Patchs</h2><p>Fine woven details for logos, text, uniforms, brand labels and compact artwork.</p><div class="product-type-actions"><a class="product-type-btn product-type-btn-primary" href="/contact?product=Patchs&amp;item=Woven%20Patchs">GET A QUOTE</a></div></article>
+          <article class="product-type-card"><img src="assets/images/type-keychains-red-performance-woven-label.jpg" alt="Custom embroidered patch style sample"><h2>Embroidered Patchs</h2><p>Textured thread effects for clubs, teams, uniforms, jackets and event merchandise.</p><div class="product-type-actions"><a class="product-type-btn product-type-btn-primary" href="/contact?product=Patchs&amp;item=Embroidered%20Patchs">GET A QUOTE</a></div></article>
+          <article class="product-type-card"><img src="assets/images/type-keychains-rainbow-balloon-pvc.jpg" alt="Custom soft PVC patch color sample"><h2>PVC Patchs</h2><p>Flexible raised-color designs for outdoor gear, tactical projects and durable branded items.</p><div class="product-type-actions"><a class="product-type-btn product-type-btn-primary" href="/contact?product=Patchs&amp;item=PVC%20Patchs">GET A QUOTE</a></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-type-section" data-product-content="others" hidden>
+      <div class="container product-type-content">
+        <div class="product-type-head"><h1>Other Custom Products</h1><p>Need a product that does not fit the standard categories? We can review custom metal gifts, mixed accessories, event merchandise and special OEM/ODM requests based on your artwork, structure and target use.</p></div>
+        ${productCategoryNavHtml({ active: "others", variant: "inline" })}
+        <div class="product-type-grid custom-category-grid">
+          <article class="product-type-card"><img src="assets/images/home-keychains-charms.jpg" alt="Mixed custom metal gift charms"><h2>Mixed Metal Gifts</h2><p>Custom charms, tags, pendants and small metal items matched to your campaign or retail line.</p><div class="product-type-actions"><a class="product-type-btn product-type-btn-primary" href="/contact?product=Others&amp;item=Mixed%20Metal%20Gifts">GET A QUOTE</a></div></article>
+          <article class="product-type-card"><img src="assets/images/home-process-step-2.webp" alt="Custom artwork proof and product sample"><h2>Special OEM Projects</h2><p>Send sketches, reference images or samples, and we will check production feasibility before quoting.</p><div class="product-type-actions"><a class="product-type-btn product-type-btn-primary" href="/contact?product=Others&amp;item=Special%20OEM%20Projects">GET A QUOTE</a></div></article>
+          <article class="product-type-card"><img src="assets/images/type-openers-coin.jpg" alt="Functional custom metal product sample"><h2>Functional Accessories</h2><p>Custom hardware, promotional accessories and functional metal products with practical structures.</p><div class="product-type-actions"><a class="product-type-btn product-type-btn-primary" href="/contact?product=Others&amp;item=Functional%20Accessories">GET A QUOTE</a></div></article>
         </div>
       </div>
     </section>

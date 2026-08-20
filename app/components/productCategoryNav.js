@@ -10,6 +10,8 @@ const productCategories = [
   { label: "Bottle Openers", slug: "bottle-openers" },
   { label: "Cufflinks & Tie Clips", slug: "cufflinks-tieclips" },
   { label: "Fridge Magnets", slug: "magnets" },
+  { label: "Patchs", slug: "patchs" },
+  { label: "Others", slug: "others" },
 ];
 
 export function productCategoryNavHtml({ active = "all", mode = "links", variant = "section" } = {}) {

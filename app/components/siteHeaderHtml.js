@@ -41,6 +41,8 @@ const megaLinks = [
   { href: "/products/custom-bottle-openers", label: "Bottle Openers" },
   { href: "/products/custom-cufflinks-tie-clips", label: "Cufflinks &amp; Tie Clips" },
   { href: "/products/custom-fridge-magnets", label: "Fridge Magnets" },
+  { href: "/products/custom-patchs", label: "Patchs" },
+  { href: "/products/others", label: "Others" },
 ];
 
 const renderMegaMenu = (isActive) => String.raw`
