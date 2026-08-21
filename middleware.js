@@ -15,6 +15,10 @@ const productCategoryRedirects = {
   "/product-category/custom-golf-ball-markers": "/products/custom-golf-accessories",
 };
 
+const legacyBlogRedirects = {
+  "/blog/custom-challenge-coin-size-attachment-guide": "/blog/challenge-coin-size-guide",
+};
+
 export function middleware(request) {
   const url = request.nextUrl.clone();
   const { pathname, searchParams } = url;
@@ -24,6 +28,11 @@ export function middleware(request) {
 
   if (productCategoryRedirects[normalizedPathname]) {
     destination = productCategoryRedirects[normalizedPathname];
+    clearSearch = true;
+  }
+
+  if (legacyBlogRedirects[normalizedPathname]) {
+    destination = legacyBlogRedirects[normalizedPathname];
     clearSearch = true;
   }
 
