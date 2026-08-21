@@ -44,8 +44,8 @@ export const productDetailMetadata = {
     description: "Order custom fridge magnets for tourist souvenirs, city gifts, event merchandise and retail gift programs with OEM/ODM support."
   },
   patchs: {
-    title: "Custom Patchs Manufacturer | Embroidered, PVC & Woven Patchs",
-    description: "Order custom patchs for uniforms, clubs, events, apparel brands and promotional merchandise with artwork proofing, material guidance and OEM/ODM support."
+    title: "Custom Patches Manufacturer | Embroidered, PVC & Woven Patches",
+    description: "Order custom patches for uniforms, clubs, events, apparel brands and promotional merchandise with artwork proofing, material guidance and OEM/ODM support."
   },
   others: {
     title: "Other Custom Metal Products | OEM/ODM Gift Manufacturer",
@@ -92,7 +92,7 @@ export const productDetailHtml = String.raw`
 
     <section class="product-type-section" data-product-content="coins" hidden>
       <div class="container product-type-content">
-        <div class="product-type-head"><h1>Challenge Coins</h1><p>Challenge coins and commemorative coins for military units, public service organizations, corporate teams and collector programs.</p></div>
+        <div class="product-type-head"><h1>Custom Challenge Coins</h1><p>Challenge coins and commemorative coins for military units, public service organizations, corporate teams and collector programs.</p></div>
         ${productCategoryNavHtml({ active: "coins", variant: "inline" })}
         <div class="product-type-grid">
           <article class="product-type-card"><img src="assets/images/type-coins-3d.jpg" alt="Custom 3D challenge coins"><h2>3D Antique Firefighter Challenge Coins</h2><div class="product-type-actions"><a class="product-type-btn product-type-btn-outline" href="/products/custom-challenge-coins/3d-antique-firefighter-challenge-coins">View More</a><a class="product-type-btn product-type-btn-primary" href="/contact">GET QUOTE NOW</a></div></article>
@@ -105,7 +105,7 @@ export const productDetailHtml = String.raw`
 
     <section class="product-type-section" data-product-content="keychains" hidden>
       <div class="container product-type-content">
-        <div class="product-type-head"><h1>Custom Metal Keychains</h1><p>Create custom metal keychains for promotional campaigns, retail collections, corporate gifts, events, and souvenir programs. As a custom metal keychain manufacturer, we help buyers choose suitable materials, finishes, sizes, attachments, and packaging for each project. Our metal keychain custom service supports both small test orders and bulk metal keychains. Send your logo, intended use, preferred size, quantity, target market, and delivery deadline so our team can review the artwork, recommend a practical construction, and prepare an accurate quotation before production begins.</p></div>
+        <div class="product-type-head"><h1>Custom Metal Keychains</h1><p>Create custom metal keychains for promotional campaigns, retail collections, corporate gifts, events and souvenir programs. Share your logo, preferred size, quantity, finish, attachment and packaging needs, and our team will review the artwork, recommend a practical metal construction, and prepare a clear quotation for approval, sampling and production planning support.</p></div>
         ${productCategoryNavHtml({ active: "keychains", variant: "inline" })}
         <div class="product-type-grid">
           <article class="product-type-card"><img src="assets/images/type-keychains-metal.jpg" alt="Custom metal keychains"><h2>Colorful Flower Metal Keychains</h2><div class="product-type-actions"><a class="product-type-btn product-type-btn-outline" href="/products/custom-metal-keychains/colorful-flower-metal-keychains">View More</a><a class="product-type-btn product-type-btn-primary" href="/contact">GET QUOTE NOW</a></div></article>
@@ -131,11 +131,11 @@ export const productDetailHtml = String.raw`
 
     <section class="product-type-section" data-product-content="patchs" hidden>
       <div class="container product-type-content">
-        <div class="product-type-head"><h1>Custom Patchs</h1><p>Custom patchs for uniforms, jackets, bags, clubs, event merchandise and apparel programs. Share your logo, backing requirement, quantity and deadline so our team can recommend the right material, border and attachment method.</p></div>
+        <div class="product-type-head"><h1>Custom Patches</h1><p>Custom patches for uniforms, jackets, bags, clubs, event merchandise and apparel programs. Share your logo, backing requirement, quantity and deadline so our team can recommend the right material, border and attachment method.</p></div>
         ${productCategoryNavHtml({ active: "patchs", variant: "inline" })}
         <div class="product-type-grid">
-          <article class="product-type-card"><a class="product-type-media" href="/products/custom-patchs/custom-woven-dragon-round-patch"><img src="assets/images/custom-woven-dragon-round-patch.webp" width="800" height="800" alt="Blue and gold custom woven dragon round patch"></a><h2><a href="/products/custom-patchs/custom-woven-dragon-round-patch">Custom Woven Dragon Round Patch</a></h2><div class="product-type-actions"><a class="product-type-btn product-type-btn-outline" href="/products/custom-patchs/custom-woven-dragon-round-patch">View Details</a><a class="product-type-btn product-type-btn-primary" href="/contact?product=Patchs&amp;item=Custom%20Woven%20Dragon%20Round%20Patch">GET A QUOTE</a></div></article>
-          <article class="product-type-card"><a class="product-type-media" href="/products/custom-patchs/custom-embroidered-cartoon-character-patch"><img src="assets/images/custom-embroidered-cartoon-character-patch.webp" width="800" height="800" alt="Custom embroidered cartoon character patch"></a><h2><a href="/products/custom-patchs/custom-embroidered-cartoon-character-patch">Custom Embroidered Cartoon Character Patch</a></h2><div class="product-type-actions"><a class="product-type-btn product-type-btn-outline" href="/products/custom-patchs/custom-embroidered-cartoon-character-patch">View Details</a><a class="product-type-btn product-type-btn-primary" href="/contact?product=Patchs&amp;item=Custom%20Embroidered%20Cartoon%20Character%20Patch">GET A QUOTE</a></div></article>
+          <article class="product-type-card"><a class="product-type-media" href="/products/custom-patchs/custom-woven-dragon-round-patch"><img src="assets/images/custom-woven-dragon-round-patch.webp" width="800" height="800" alt="Blue and gold custom woven dragon round patch"></a><h2><a href="/products/custom-patchs/custom-woven-dragon-round-patch">Custom Woven Dragon Round Patch</a></h2><div class="product-type-actions"><a class="product-type-btn product-type-btn-outline" href="/products/custom-patchs/custom-woven-dragon-round-patch">View Details</a><a class="product-type-btn product-type-btn-primary" href="/contact?product=Patches&amp;item=Custom%20Woven%20Dragon%20Round%20Patch">GET A QUOTE</a></div></article>
+          <article class="product-type-card"><a class="product-type-media" href="/products/custom-patchs/custom-embroidered-cartoon-character-patch"><img src="assets/images/custom-embroidered-cartoon-character-patch.webp" width="800" height="800" alt="Custom embroidered cartoon character patch"></a><h2><a href="/products/custom-patchs/custom-embroidered-cartoon-character-patch">Custom Embroidered Cartoon Character Patch</a></h2><div class="product-type-actions"><a class="product-type-btn product-type-btn-outline" href="/products/custom-patchs/custom-embroidered-cartoon-character-patch">View Details</a><a class="product-type-btn product-type-btn-primary" href="/contact?product=Patches&amp;item=Custom%20Embroidered%20Cartoon%20Character%20Patch">GET A QUOTE</a></div></article>
         </div>
       </div>
     </section>

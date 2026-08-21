@@ -1,4 +1,8 @@
 import { replaceProductTypeSectionCards } from "./productCards";
+import {
+  homeProductLandingPagesBySlug,
+  renderHomeProductLandingRowsSection,
+} from "../product-category/categoryLandingData";
 
 const getPageShell = (html) => {
   const mainStart = html.indexOf("<main");
@@ -172,6 +176,98 @@ const categorySeoContent = {
           </div>`,
 };
 
+const productCategoryHeroBackgrounds = {
+  pins: "assets/images/home-category-lapel-pins-banner.png",
+  medals: "assets/images/home-category-medals-banner.png",
+  coins: "assets/images/home-category-challenge-coins-banner.png",
+  keychains: "assets/images/home-category-keychains-banner.png",
+  buckles: "assets/images/home-category-belt-buckles-banner.png",
+  "golf-accessories": "assets/images/home-category-golf-ball-markers-banner.png",
+  "bottle-openers": "",
+  "cufflinks-tieclips": "",
+  magnets: "",
+  patchs: "",
+  others: "",
+};
+
+const categoryStyleGuideSourceByKey = {
+  pins: {
+    sourceSlug: "custom-lapel-pins",
+    heading: "Lapel Pin Types & Techniques",
+    id: "lapel-pin-types",
+  },
+  medals: {
+    sourceSlug: "custom-medals",
+    heading: "Custom Medal Types",
+    id: "medal-types",
+  },
+  coins: {
+    sourceSlug: "custom-challenge-coins",
+    heading: "Challenge Coin Types",
+    id: "challenge-coin-types",
+  },
+  keychains: {
+    sourceSlug: "custom-keychains",
+    heading: "Custom Keychain Types",
+    id: "keychain-types",
+  },
+  buckles: {
+    sourceSlug: "custom-belt-buckles",
+    heading: "Custom Belt Buckle Types",
+    id: "belt-buckle-types",
+  },
+  "golf-accessories": {
+    sourceSlug: "custom-golf-ball-markers",
+    heading: "Custom Golf Ball Marker Types",
+    id: "golf-ball-marker-types",
+  },
+};
+
+const renderCategoryStyleGuideSection = (categoryKey) => {
+  const guide = categoryStyleGuideSourceByKey[categoryKey];
+  const sourcePage = homeProductLandingPagesBySlug[guide?.sourceSlug];
+  if (!sourcePage?.rows?.length) return "";
+
+  return renderHomeProductLandingRowsSection(sourcePage, {
+    includeBackLink: false,
+    rowHeadingTag: "h3",
+    rowsHeading: guide.heading,
+    rowsHeadingId: guide.id,
+    sectionClass: "product-category-style-guide",
+  });
+};
+
+const buildProductCategoryHero = (section, categoryKey, categoryLabel) => {
+  if (!Object.hasOwn(productCategoryHeroBackgrounds, categoryKey)) {
+    return {
+      hero: "",
+      section,
+    };
+  }
+
+  const heroBackground = productCategoryHeroBackgrounds[categoryKey];
+  const head = section.match(/\s*<div class="product-type-head">[\s\S]*?<\/div>/)?.[0] || "";
+  if (!head) {
+    return {
+      hero: "",
+      section,
+    };
+  }
+
+  const cleanedSection = section.replace(head, "");
+
+  return {
+    hero: String.raw`
+    <section class="product-type-hero-section has-product-hero-bg" data-product-hero="${categoryKey}">
+      ${heroBackground ? `<img class="product-type-hero-bg" src="${heroBackground}" alt="${categoryLabel} banner">` : ""}
+      <div class="container product-type-hero-inner">
+${head.trim()}
+      </div>
+    </section>`,
+    section: cleanedSection,
+  };
+};
+
 export const buildCategoryHtml = (html, categoryKey, categoryLabel) => {
   const shell = getPageShell(html);
   const sectionPattern = new RegExp(
@@ -180,8 +276,10 @@ export const buildCategoryHtml = (html, categoryKey, categoryLabel) => {
   const section = replaceProductTypeSectionCards((
     html.match(sectionPattern)?.[0]?.replace(/\s+hidden(?=[\s>])/i, "") || ""
   ), categoryKey);
+  const categoryHero = buildProductCategoryHero(section, categoryKey, categoryLabel);
+  const styleGuideSection = renderCategoryStyleGuideSection(categoryKey);
 
-  return `${shell.beforeMain}<main class="product-types-page" id="custom-details">${section}</main>${shell.afterMain}`;
+  return `${shell.beforeMain}<main class="product-types-page" id="custom-details">${categoryHero.hero}${categoryHero.section}${styleGuideSection}</main>${shell.afterMain}`;
 };
 
 const formatArticleDate = (date) => {

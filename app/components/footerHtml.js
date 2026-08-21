@@ -25,7 +25,7 @@ export const footerHtml = String.raw`
             <option>Fridge Magnets</option>
             <option>Bottle Openers</option>
             <option>Cufflinks &amp; Tie Clips</option>
-            <option>Patchs</option>
+            <option>Patches</option>
             <option>Others</option>
             <option>Other</option>
           </select>

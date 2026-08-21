@@ -328,7 +328,7 @@ export const blogHtml = String.raw`
           <li>How will the coin be presented, carried or displayed?</li>
         </ol>
         <p>The answers determine what belongs on the coin. A retirement coin may need dates and a personal message; an anniversary coin may emphasize heritage. Spelling, names, dates and artwork authorization should always be confirmed.</p>
-        <p>For organizations planning <a href="https://uccrafts.com/product-category/custom-challenge-coins">custom challenge coins</a>, the useful starting information is the recipient group, occasion, required wording, approved artwork and quantity. Manufacturing choices can follow after the message is clear.</p>
+        <p>For organizations planning <a href="https://uccrafts.com/products/custom-challenge-coins">custom challenge coins</a>, the useful starting information is the recipient group, occasion, required wording, approved artwork and quantity. Manufacturing choices can follow after the message is clear.</p>
 
         <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
         <h3 id="faq-receiving-meaning">What does receiving a military challenge coin mean?</h3>
@@ -360,7 +360,7 @@ export const blogHtml = String.raw`
 
         <nav class="blog-related-links" aria-label="Related buyer guides">
           <strong>Related buyer guides</strong>
-          <a href="https://uccrafts.com/product-category/custom-challenge-coins">custom challenge coins</a>
+          <a href="https://uccrafts.com/products/custom-challenge-coins">custom challenge coins</a>
           <a href="https://uccrafts.com/products/custom-challenge-coins">challenge coin types</a>
           <a href="https://uccrafts.com/blog/challenge-coin-size-guide">challenge coin size and thickness guide</a>
           <a href="https://uccrafts.com/blog/custom-medals-vs-challenge-coins">custom medals vs challenge coins</a>
@@ -1134,7 +1134,7 @@ export const blogHtml = String.raw`
           <h1>How Are Custom Challenge Coins Made?</h1>
           <p>Custom challenge coins are made through a controlled manufacturing process that turns a logo, badge, sketch, or idea into a finished metal coin. For buyers, the useful part is not only knowing the steps. It is knowing which details must be confirmed before tooling starts, because unclear artwork, weak relief, color mistakes, and late packaging changes can all affect the final order.</p>
           <p>This guide explains the challenge coin manufacturing process from artwork preparation and digital proofing to tooling, die-striking or die-casting, finishing, color filling, final inspection, and shipment preparation. Each step has a practical effect on weight, surface detail, color clarity, delivery planning, and the way the finished coin is presented to the recipient.</p>
-          <p>For related buying decisions, review our <a href="/blog/2d-vs-3d-challenge-coins">2D vs 3D challenge coin comparison</a>, <a href="/product-category/custom-challenge-coins">challenge coin category page</a>, <a href="/products/custom-challenge-coins">custom challenge coins</a> page, <a href="/blog/custom-metal-crafts-guide">custom metal crafts guide</a>, and <a href="/blog/custom-medals-vs-challenge-coins">custom medals vs challenge coins</a> comparison.</p>
+          <p>For related buying decisions, review our <a href="/blog/2d-vs-3d-challenge-coins">2D vs 3D challenge coin comparison</a>, <a href="/products/custom-challenge-coins#challenge-coin-types">challenge coin types</a>, <a href="/products/custom-challenge-coins">custom challenge coins</a> page, <a href="/blog/custom-metal-crafts-guide">custom metal crafts guide</a>, and <a href="/blog/custom-medals-vs-challenge-coins">custom medals vs challenge coins</a> comparison.</p>
           <figure class="blog-article-image blog-article-hero-image">
             <img src="/assets/images/blog-how-challenge-coins-made-hero.webp" width="1600" height="759" alt="three custom challenge coins with blue red and gold enamel finishes">
             <figcaption>Finished custom challenge coins can combine raised metal relief, enamel color and antique finishes.</figcaption>
@@ -2070,7 +2070,7 @@ export const blogHtml = String.raw`
 
         <h2 id="conclusion">Conclusion</h2>
         <p>The real decision is not simply finisher medals vs placement medals; it is what the event wants to recognize. When eligibility, award hierarchy, quantities and distribution agree, participants understand what they have earned and staff can deliver the right award at the right moment.</p>
-        <p>If your award structure is already defined, explore <a href="https://uccrafts.com/product-category/custom-medals">custom medals</a> or send our team the event type, participant categories, quantities, artwork status and required delivery date for a project review.</p>
+        <p>If your award structure is already defined, explore <a href="https://uccrafts.com/products/custom-medals">custom medals</a> or send our team the event type, participant categories, quantities, artwork status and required delivery date for a project review.</p>
         </div>
       </div>
     </article>

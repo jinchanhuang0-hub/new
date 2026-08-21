@@ -2670,28 +2670,28 @@ export const productItems = {
     title: "Custom Woven Dragon Round Patch",
     image: "assets/images/custom-woven-dragon-round-patch.webp",
     alt: "Blue and gold custom woven dragon round patch",
-    categoryLabel: "Patchs",
+    categoryLabel: "Patches",
     categoryHref: "/products/custom-patchs",
     material: "Polyester fiber, twill fabric, cotton, silk, non-woven fabric or dyed fabric options",
     process: "Woven artwork with stitched border; embroidery options available by design",
     sku: "UP-PATCH-001",
     usage: "Uniforms, apparel, bags, luggage and event merchandise",
-    categories: "Patchs, Woven Patchs, Apparel Patches",
-    quoteProduct: "Patchs",
+    categories: "Patches, Woven Patches, Apparel Patches",
+    quoteProduct: "Patches",
     lead: "This custom woven dragon round patch uses blue and gold woven artwork with a stitched border for uniforms, apparel, bags, luggage, club merchandise and event programs."
   },
   "custom-embroidered-cartoon-character-patch": {
     title: "Custom Embroidered Cartoon Character Patch",
     image: "assets/images/custom-embroidered-cartoon-character-patch.webp",
     alt: "Custom embroidered cartoon character patch",
-    categoryLabel: "Patchs",
+    categoryLabel: "Patches",
     categoryHref: "/products/custom-patchs",
     material: "Polyester fiber, twill fabric, cotton, silk, non-woven fabric or dyed fabric options",
     process: "Embroidery with textured thread and stitched border",
     sku: "UP-PATCH-002",
     usage: "Apparel, uniforms, bags, toys, pet accessories and events",
-    categories: "Patchs, Embroidered Patchs, Character Patches",
-    quoteProduct: "Patchs",
+    categories: "Patches, Embroidered Patches, Character Patches",
+    quoteProduct: "Patches",
     lead: "This custom embroidered cartoon character patch uses textured thread, bright color areas and a stitched border for apparel, uniforms, bags, toys, pet accessories and promotional events."
   }
 };
@@ -2834,7 +2834,7 @@ const html = String.raw`
             <div class="form-row"><input type="text" name="name" placeholder="Name" required><input type="email" name="email" placeholder="Email" required></div>
             <div class="form-row"><input type="text" name="country" placeholder="Country / Region" required><input type="text" name="whatsapp" placeholder="Phone Number"></div>
             <div class="form-row">
-              <select name="product" required><option value="">Product Type</option><option>Lapel Pins</option><option>Medals</option><option>Challenge Coins</option><option>Keychains</option><option>Belt Buckles</option><option>Golf Accessories</option><option>Fridge Magnets</option><option>Bottle Openers</option><option>Cufflinks &amp; Tie Clips</option><option>Patchs</option><option>Others</option><option>Other</option></select>
+              <select name="product" required><option value="">Product Type</option><option>Lapel Pins</option><option>Medals</option><option>Challenge Coins</option><option>Keychains</option><option>Belt Buckles</option><option>Golf Accessories</option><option>Fridge Magnets</option><option>Bottle Openers</option><option>Cufflinks &amp; Tie Clips</option><option>Patches</option><option>Others</option><option>Other</option></select>
               <input type="text" name="quantity" placeholder="Quantity">
             </div>
             <div class="form-field form-field-full"><label for="product-item-quote-details">What can we help you with?</label><textarea id="product-item-quote-details" name="details" placeholder="Notes, Comments, etc."></textarea></div>
@@ -2940,7 +2940,7 @@ const CUSTOM_SOLUTION_PROFILES = {
     accessories: "Rubber magnet, ferrite magnet, soft magnetic sheet, backing card or display card.",
     packaging: "OPP bag, backing card, retail card or gift packaging available."
   },
-  Patchs: {
+  Patches: {
     material: "Polyester fiber, twill fabric, cotton, silk, non-woven fabric or dyed fabric selected by artwork and use.",
     process: "Woven or embroidered patch production based on the approved artwork.",
     size: "Custom size and logo are welcome.",
@@ -2970,7 +2970,7 @@ const getCustomSolutionProfile = (item) => {
   };
   const text = getProductSearchText(item);
 
-  if (productType === "Patchs") {
+  if (productType === "Patches") {
     return {
       ...profile,
       material: item.material || profile.material,

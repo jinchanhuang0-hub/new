@@ -87,7 +87,7 @@ const html = String.raw`
                 <option>Challenge Coins</option>
                 <option>Cufflinks & Tie Clips</option>
                 <option>Keychains</option>
-                <option>Patchs</option>
+                <option>Patches</option>
                 <option>Others</option>
                 <option>Other</option>
               </select>

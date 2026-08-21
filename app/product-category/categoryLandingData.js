@@ -11,7 +11,7 @@ const productOptions = [
   "Fridge Magnets",
   "Bottle Openers",
   "Cufflinks & Tie Clips",
-  "Patchs",
+  "Patches",
   "Others",
   "Other",
 ];
@@ -423,7 +423,7 @@ const renderHeroVisual = (page) => page.heroBackground
 ${renderHeroImages(page.heroImages, page.title)}
         </div>`;
 
-const renderRows = (rows, headingTag = "h2") => {
+export const renderHomeProductLandingRows = (rows, headingTag = "h2") => {
   let visualIndex = 0;
   const rowHeadingTag = headingTag === "h3" ? "h3" : "h2";
 
@@ -438,7 +438,7 @@ const renderRows = (rows, headingTag = "h2") => {
           ${row.image ? `<a class="home-category-mini-media" href="${escapeHtml(row.href)}"><img src="${escapeHtml(row.image)}" alt="${escapeHtml(imageAlt)}"></a>` : ""}
           <div class="home-category-mini-card">
             <span>${escapeHtml(row.eyebrow)}</span>
-            <h2>${escapeHtml(row.title)}</h2>
+            <${rowHeadingTag}>${escapeHtml(row.title)}</${rowHeadingTag}>
             <p>${escapeHtml(row.copy)}</p>
             <a href="${escapeHtml(row.href)}">${escapeHtml(buttonLabel)}</a>
           </div>
@@ -464,13 +464,32 @@ const renderRows = (rows, headingTag = "h2") => {
     .join("\n");
 };
 
-const renderRowsHeading = (page) => page.rowsHeading
+const renderRowsHeading = ({ rowsHeading, rowsHeadingId, rowsIntro }) => rowsHeading
   ? `
       <div class="container home-category-section-head">
-        <h2>${escapeHtml(page.rowsHeading)}</h2>
-        <p>${escapeHtml(page.rowsIntro)}</p>
+        <h2${rowsHeadingId ? ` id="${escapeHtml(rowsHeadingId)}"` : ""}>${escapeHtml(rowsHeading)}</h2>
+        ${rowsIntro ? `<p>${escapeHtml(rowsIntro)}</p>` : ""}
       </div>`
   : "";
+
+export const renderHomeProductLandingRowsSection = (page, options = {}) => {
+  const sectionClass = ["home-category-rows", options.sectionClass].filter(Boolean).join(" ");
+  const rowsHeading = Object.hasOwn(options, "rowsHeading") ? options.rowsHeading : page.rowsHeading;
+  const rowsHeadingId = options.rowsHeadingId || "";
+  const rowsIntro = Object.hasOwn(options, "rowsIntro") ? options.rowsIntro : page.rowsIntro;
+  const includeBackLink = options.includeBackLink ?? true;
+
+  return String.raw`
+    <section class="${escapeHtml(sectionClass)}" data-category-slug="${escapeHtml(page.slug)}" aria-label="${escapeHtml(page.title)} product styles">
+${includeBackLink ? `      <div class="container home-category-row-nav">
+        <a class="home-category-back-home" href="/">Back to Home</a>
+      </div>` : ""}
+${renderRowsHeading({ rowsHeading, rowsHeadingId, rowsIntro })}
+      <div class="container home-category-row-wrap">
+${renderHomeProductLandingRows(page.rows, options.rowHeadingTag || page.rowHeadingTag)}
+      </div>
+    </section>`;
+};
 
 const renderProductOptions = (selectedProduct) => productOptions
   .map((option) => `                  <option${option === selectedProduct ? " selected" : ""}>${escapeHtml(option)}</option>`)
@@ -543,15 +562,7 @@ ${renderHeroBackground(page)}
 ${renderHeroVisual(page)}
       </div>
     </section>
-    <section class="home-category-rows" data-category-slug="${escapeHtml(page.slug)}" aria-label="${escapeHtml(page.title)} product styles">
-      <div class="container home-category-row-nav">
-        <a class="home-category-back-home" href="/">Back to Home</a>
-      </div>
-${renderRowsHeading(page)}
-      <div class="container home-category-row-wrap">
-${renderRows(page.rows, page.rowHeadingTag)}
-      </div>
-    </section>
+${renderHomeProductLandingRowsSection(page)}
 ${renderQuoteForm(page)}
   </main>
   ${footerHtml}`;

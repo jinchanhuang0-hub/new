@@ -68,8 +68,8 @@ export default function StaticPageEffects() {
           description: "Order custom fridge magnets for tourist souvenirs, city gifts, event merchandise and retail gift programs with OEM/ODM support."
         },
         patchs: {
-          title: "Custom Patchs Manufacturer | Embroidered, PVC & Woven Patchs",
-          description: "Order custom patchs for uniforms, clubs, events, apparel brands and promotional merchandise with artwork proofing, material guidance and OEM/ODM support."
+          title: "Custom Patches Manufacturer | Embroidered, PVC & Woven Patches",
+          description: "Order custom patches for uniforms, clubs, events, apparel brands and promotional merchandise with artwork proofing, material guidance and OEM/ODM support."
         },
         others: {
           title: "Other Custom Metal Products | OEM/ODM Gift Manufacturer",
@@ -564,7 +564,8 @@ export default function StaticPageEffects() {
     document.addEventListener("click", handleBlogCategoryClick);
     document.addEventListener("click", handleBlogPaginationClick);
 
-    const productsPerPage = 30;
+    const productsPerPage = 28;
+    const categoryProductsPerPage = 12;
     const productCategoryButtons = document.querySelectorAll(".products-category-nav [data-product-filter]");
     const productCards = document.querySelectorAll(".products-all-grid .product-type-card[data-product-category]");
     const productGrid = document.querySelector(".products-all-grid");
@@ -686,7 +687,7 @@ export default function StaticPageEffects() {
     const categoryPaginationStates = paginatedProductGrids
       .map((grid, index) => {
         const cards = [...grid.querySelectorAll(":scope > .product-type-card")];
-        if (cards.length <= productsPerPage) return null;
+        if (cards.length <= categoryProductsPerPage) return null;
 
         let pagination = grid.nextElementSibling?.classList?.contains("product-pagination")
           ? grid.nextElementSibling
@@ -726,10 +727,10 @@ export default function StaticPageEffects() {
     };
 
     const applyCategoryPagination = (state, page = 1, scrollToGrid = false) => {
-      const pageCount = Math.max(1, Math.ceil(state.cards.length / productsPerPage));
+      const pageCount = Math.max(1, Math.ceil(state.cards.length / categoryProductsPerPage));
       state.page = Math.min(Math.max(page, 1), pageCount);
-      const startIndex = (state.page - 1) * productsPerPage;
-      const endIndex = startIndex + productsPerPage;
+      const startIndex = (state.page - 1) * categoryProductsPerPage;
+      const endIndex = startIndex + categoryProductsPerPage;
 
       state.cards.forEach((card, index) => {
         const shouldShowCard = index >= startIndex && index < endIndex;

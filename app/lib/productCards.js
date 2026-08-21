@@ -69,15 +69,16 @@ const getProductEntriesForCategory = (categoryKey) => {
 };
 
 export const renderProductTypeCards = (categoryKey, options = {}) =>
-  getProductEntriesForCategory(categoryKey).map(([slug, product], index) => {
-    const productPath = getProductPath(slug, product);
-    const quoteProduct = product.quoteProduct || product.categoryLabel;
-    const quotePath = `/contact?product=${encodeURIComponent(quoteProduct)}&item=${encodeURIComponent(product.title)}`;
-    const categoryAttrs = options.includeCategoryData
-      ? `${index === 0 ? ` id="${escapeHtml(categoryKey)}"` : ""} data-product-category="${escapeHtml(categoryKey)}"`
-      : "";
+  getProductEntriesForCategory(categoryKey)
+    .map(([slug, product], index) => {
+      const productPath = getProductPath(slug, product);
+      const quoteProduct = product.quoteProduct || product.categoryLabel;
+      const quotePath = `/contact?product=${encodeURIComponent(quoteProduct)}&item=${encodeURIComponent(product.title)}`;
+      const categoryAttrs = options.includeCategoryData
+        ? `${index === 0 ? ` id="${escapeHtml(categoryKey)}"` : ""} data-product-category="${escapeHtml(categoryKey)}"`
+        : "";
 
-    return `          <article class="product-type-card"${categoryAttrs}>
+      return `          <article class="product-type-card"${categoryAttrs}>
             <a class="product-type-media" href="${escapeHtml(productPath)}"><img src="${escapeHtml(product.image)}" width="800" height="800" loading="lazy" decoding="async" alt="${escapeHtml(product.alt || product.title)}"></a>
             <h2><a href="${escapeHtml(productPath)}">${escapeHtml(product.title)}</a></h2>
             <div class="product-type-actions">
@@ -85,7 +86,7 @@ export const renderProductTypeCards = (categoryKey, options = {}) =>
               <a class="product-type-btn product-type-btn-primary" href="${escapeHtml(quotePath)}" data-product-inquiry-trigger data-product-inquiry-product="${escapeHtml(quoteProduct)}" data-product-inquiry-title="${escapeHtml(product.title)}">GET A QUOTE</a>
             </div>
           </article>`;
-  }).join("\n");
+    }).join("\n");
 
 export const renderAllProductTypeCards = () =>
   productCardCategoryOrder
@@ -93,12 +94,12 @@ export const renderAllProductTypeCards = () =>
     .filter(Boolean)
     .join("\n\n");
 
-export const replaceProductTypeSectionCards = (html, categoryKey) =>
+export const replaceProductTypeSectionCards = (html, categoryKey, options = {}) =>
   html.replace(
     new RegExp(
       `(<section class="product-type-section" data-product-content="${categoryKey}"(?: hidden)?>[\\s\\S]*?<div class="product-type-grid(?: compact)?">\\s*)[\\s\\S]*?(\\s*<\\/div>\\s*<\\/div>\\s*<\\/section>)`
     ),
-    `$1${renderProductTypeCards(categoryKey)}$2`
+    `$1${renderProductTypeCards(categoryKey, options)}$2`
   );
 
 export const replaceAllProductTypeSectionCards = (html) =>

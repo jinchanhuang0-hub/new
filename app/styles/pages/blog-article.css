@@ -836,7 +836,8 @@
   }
 
   .products-page-hero {
-    padding: 56px 0 40px;
+    min-height: 500px;
+    padding: 0;
   }
 
   .products-page-hero .container {

@@ -19,14 +19,14 @@ const html = String.raw`
   <main>
     <section class="page-hero products-page-hero">
       <div class="container about-hero-copy">
-        <h1>Custom Metal Products</h1>
+        <h1>Custom Metal Crafts</h1>
         <p>We specialize in custom enamel pins, medals, challenge coins, keychains and premium metal gifts. From original designs to mass production, we provide reliable OEM solutions for brands, distributors and organizations worldwide.</p>
       </div>
-      ${productCategoryNavHtml({ mode: "filter", active: "all", variant: "inline" })}
     </section>
 
     <section class="product-type-section products-all-section" id="all">
       <div class="container product-type-content">
+        ${productCategoryNavHtml({ mode: "filter", active: "all", variant: "inline" })}
         <div class="product-type-grid products-all-grid">
           <article class="product-type-card" data-product-category="pins"><img src="assets/images/type-pins-yellow-character.jpg" alt="Yellow character hard enamel pin"><h2>Yellow Character Hard Enamel Pin</h2><div class="product-type-actions"><a class="product-type-btn product-type-btn-outline" href="/products/custom-enamel-pins/yellow-character-hard-enamel-pin">View More</a><a class="product-type-btn product-type-btn-primary" href="/contact">GET QUOTE NOW</a></div></article>
           <article class="product-type-card" data-product-category="pins"><img src="assets/images/type-pins-auburn-proud.jpg" alt="Auburn Proud green soft enamel pin"><h2>Auburn Proud Soft Enamel Pin</h2><div class="product-type-actions"><a class="product-type-btn product-type-btn-outline" href="/products/custom-enamel-pins/auburn-proud-soft-enamel-pin">View More</a><a class="product-type-btn product-type-btn-primary" href="/contact">GET QUOTE NOW</a></div></article>

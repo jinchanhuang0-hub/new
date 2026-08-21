@@ -5,7 +5,6 @@ import {
   productItemCategoryKey,
   SITE_URL,
 } from "./lib/siteRoutes";
-import { homeProductLandingPages } from "./product-category/categoryLandingData";
 
 const CONTENT_LAST_MODIFIED = new Date("2026-07-31T00:00:00.000Z");
 
@@ -43,13 +42,6 @@ export default function sitemap() {
     priority: 0.8,
   }));
 
-  const homeProductLandingEntries = homeProductLandingPages.map((page) => ({
-    url: `${SITE_URL}/product-category/${page.slug}`,
-    lastModified: CONTENT_LAST_MODIFIED,
-    changeFrequency: "weekly",
-    priority: 0.85,
-  }));
-
   const itemEntries = Object.entries(productItemCategoryKey).map(
     ([itemSlug, categoryKey]) => ({
       url: `${SITE_URL}${getCategoryPath(categoryKey)}/${itemSlug}`,
@@ -68,7 +60,6 @@ export default function sitemap() {
 
   return [
     ...staticEntries,
-    ...homeProductLandingEntries,
     ...categoryEntries,
     ...itemEntries,
     ...articleEntries,

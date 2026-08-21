@@ -39,7 +39,7 @@ export const productCategories = {
   },
   patchs: {
     slug: "custom-patchs",
-    label: "Custom Patchs",
+    label: "Custom Patches",
   },
   others: {
     slug: "others",
@@ -62,7 +62,7 @@ const categoryKeyByLabel = {
   "Bottle Openers": "bottle-openers",
   "Cufflinks & Tie Clips": "cufflinks-tieclips",
   "Fridge Magnets": "magnets",
-  Patchs: "patchs",
+  Patches: "patchs",
   Others: "others",
   Other: "others",
 };

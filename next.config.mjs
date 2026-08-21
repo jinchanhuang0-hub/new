@@ -14,6 +14,7 @@ const staticHtmlRedirects = [
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  skipTrailingSlashRedirect: true,
   async headers() {
     return [
       {
