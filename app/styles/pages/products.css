@@ -49,6 +49,149 @@
   pointer-events: none;
 }
 
+@media (min-width: 641px) {
+  .product-type-hero-section:is(
+    [data-product-hero="pins"],
+    [data-product-hero="coins"],
+    [data-product-hero="medals"],
+    [data-product-hero="keychains"],
+    [data-product-hero="buckles"],
+    [data-product-hero="golf-accessories"]
+  ) {
+    --product-hero-height: clamp(360px, 31.3vw, 500px);
+    --product-hero-head-height: min(392px, var(--product-hero-height));
+  }
+
+  .product-type-hero-section:is(
+    [data-product-hero="pins"],
+    [data-product-hero="coins"],
+    [data-product-hero="medals"],
+    [data-product-hero="keychains"],
+    [data-product-hero="buckles"],
+    [data-product-hero="golf-accessories"]
+  ) .product-type-hero-bg {
+    object-fit: contain;
+    object-position: right center;
+  }
+
+  .product-type-hero-section.has-product-hero-bg:is(
+    [data-product-hero="pins"],
+    [data-product-hero="coins"],
+    [data-product-hero="medals"],
+    [data-product-hero="keychains"],
+    [data-product-hero="buckles"],
+    [data-product-hero="golf-accessories"]
+  ) .product-type-hero-inner {
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1439px) {
+  .product-type-hero-section.has-product-hero-bg:is(
+    [data-product-hero="pins"],
+    [data-product-hero="coins"],
+    [data-product-hero="medals"],
+    [data-product-hero="keychains"],
+    [data-product-hero="buckles"],
+    [data-product-hero="golf-accessories"]
+  ) .product-type-head,
+  .product-type-hero-section.has-product-hero-bg:is(
+    [data-product-hero="pins"],
+    [data-product-hero="coins"],
+    [data-product-hero="medals"],
+    [data-product-hero="keychains"],
+    [data-product-hero="buckles"],
+    [data-product-hero="golf-accessories"]
+  ) .product-type-head p {
+    max-width: clamp(300px, 40vw, 620px);
+  }
+
+  .product-type-hero-section.has-product-hero-bg:is(
+    [data-product-hero="pins"],
+    [data-product-hero="coins"],
+    [data-product-hero="medals"],
+    [data-product-hero="keychains"],
+    [data-product-hero="buckles"],
+    [data-product-hero="golf-accessories"]
+  ) .product-type-head h1 {
+    font-size: clamp(40px, 4.4vw, 56px);
+  }
+
+  .product-type-hero-section.has-product-hero-bg[data-product-hero="golf-accessories"] .product-type-head,
+  .product-type-hero-section.has-product-hero-bg[data-product-hero="golf-accessories"] .product-type-head p {
+    max-width: clamp(300px, 32vw, 480px);
+  }
+
+  .product-type-hero-section.has-product-hero-bg[data-product-hero="golf-accessories"] .product-type-head h1 {
+    font-size: clamp(36px, 4vw, 52px);
+  }
+}
+
+@media (min-width: 981px) and (max-width: 1199px) {
+  .product-type-hero-section.has-product-hero-bg:is(
+    [data-product-hero="pins"],
+    [data-product-hero="coins"],
+    [data-product-hero="medals"],
+    [data-product-hero="keychains"],
+    [data-product-hero="buckles"],
+    [data-product-hero="golf-accessories"]
+  ) {
+    --product-hero-height: 360px;
+    --product-hero-head-height: 360px;
+  }
+
+  .product-type-hero-section:is(
+    [data-product-hero="pins"],
+    [data-product-hero="coins"],
+    [data-product-hero="medals"],
+    [data-product-hero="keychains"],
+    [data-product-hero="buckles"],
+    [data-product-hero="golf-accessories"]
+  ) .product-type-hero-bg {
+    object-fit: cover;
+    object-position: right center;
+  }
+
+  .product-type-hero-section.has-product-hero-bg:is(
+    [data-product-hero="pins"],
+    [data-product-hero="coins"],
+    [data-product-hero="medals"],
+    [data-product-hero="keychains"],
+    [data-product-hero="buckles"],
+    [data-product-hero="golf-accessories"]
+  ) .product-type-head,
+  .product-type-hero-section.has-product-hero-bg:is(
+    [data-product-hero="pins"],
+    [data-product-hero="coins"],
+    [data-product-hero="medals"],
+    [data-product-hero="keychains"],
+    [data-product-hero="buckles"],
+    [data-product-hero="golf-accessories"]
+  ) .product-type-head p {
+    max-width: clamp(360px, 42vw, 430px);
+  }
+
+  .product-type-hero-section.has-product-hero-bg:is(
+    [data-product-hero="pins"],
+    [data-product-hero="coins"],
+    [data-product-hero="medals"],
+    [data-product-hero="keychains"],
+    [data-product-hero="buckles"],
+    [data-product-hero="golf-accessories"]
+  ) .product-type-head h1 {
+    font-size: clamp(42px, 4.2vw, 48px);
+  }
+
+  .product-type-hero-section.has-product-hero-bg[data-product-hero="golf-accessories"] .product-type-head,
+  .product-type-hero-section.has-product-hero-bg[data-product-hero="golf-accessories"] .product-type-head p {
+    max-width: clamp(330px, 36vw, 370px);
+  }
+
+  .product-type-hero-section.has-product-hero-bg[data-product-hero="golf-accessories"] .product-type-head h1 {
+    font-size: clamp(38px, 3.7vw, 43px);
+  }
+}
+
 .product-type-hero-section.has-product-hero-bg::before {
   content: "";
   position: absolute;
@@ -132,7 +275,7 @@
   text-wrap: balance;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1440px) {
   .product-type-hero-section[data-product-hero="coins"] .product-type-head {
     max-width: 760px;
   }
