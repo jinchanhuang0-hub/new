@@ -11,6 +11,7 @@ import {
   productCategories,
   SITE_URL,
 } from "../../lib/siteRoutes";
+import { CATEGORY_PRODUCTS_PAGE_SIZE } from "../../lib/productCards";
 
 export const dynamicParams = false;
 
@@ -34,8 +35,16 @@ export async function generateMetadata({ params }) {
   };
 }
 
-export default async function ProductCategoryPage({ params }) {
+const getRequestedPage = (searchParams = {}) => {
+  const value = Array.isArray(searchParams.page)
+    ? searchParams.page[0]
+    : searchParams.page;
+  return Math.max(1, Number(value) || 1);
+};
+
+export default async function ProductCategoryPage({ params, searchParams }) {
   const { category } = await params;
+  const query = await searchParams;
   const categoryKey = categoryKeyByRouteSlug[category];
   const categoryDetails = productCategories[categoryKey];
   const metadata = productDetailMetadata[categoryKey];
@@ -76,6 +85,10 @@ export default async function ProductCategoryPage({ params }) {
           productDetailHtml,
           categoryKey,
           categoryDetails.label,
+          {
+            page: getRequestedPage(query),
+            pageSize: CATEGORY_PRODUCTS_PAGE_SIZE,
+          },
         )}
       />
     </>

@@ -38,7 +38,7 @@ export const productCategories = {
     label: "Custom Fridge Magnets",
   },
   patchs: {
-    slug: "custom-patchs",
+    slug: "custom-patches",
     label: "Custom Patches",
   },
   others: {

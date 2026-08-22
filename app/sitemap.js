@@ -6,7 +6,7 @@ import {
   SITE_URL,
 } from "./lib/siteRoutes";
 
-const CONTENT_LAST_MODIFIED = new Date("2026-07-31T00:00:00.000Z");
+const CONTENT_LAST_MODIFIED = new Date("2026-08-22T00:00:00.000Z");
 
 const getArticleLastModified = (article) => {
   const value = article.dateModified || article.datePublished;

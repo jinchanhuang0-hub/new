@@ -1,7 +1,7 @@
 import StaticPage from "../components/StaticPage";
 import { footerHtml } from "../components/footerHtml";
 import { productCategoryNavHtml } from "../components/productCategoryNav";
-import { replaceProductsAllGridCards } from "../lib/productCards";
+import { PRODUCTS_ALL_PAGE_SIZE, replaceProductsAllGridCards } from "../lib/productCards";
 import { siteHeaderHtml } from "../components/siteHeaderHtml";
 
 
@@ -77,6 +77,21 @@ const html = String.raw`
   </main>
   ${footerHtml}`;
 
-export default function Page() {
-  return <StaticPage html={replaceProductsAllGridCards(html)} />;
+const getRequestedPage = (searchParams = {}) => {
+  const value = Array.isArray(searchParams.page)
+    ? searchParams.page[0]
+    : searchParams.page;
+  return Math.max(1, Number(value) || 1);
+};
+
+export default async function Page({ searchParams }) {
+  const params = await searchParams;
+  return (
+    <StaticPage
+      html={replaceProductsAllGridCards(html, {
+        page: getRequestedPage(params),
+        pageSize: PRODUCTS_ALL_PAGE_SIZE,
+      })}
+    />
+  );
 }

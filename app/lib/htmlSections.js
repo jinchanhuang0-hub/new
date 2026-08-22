@@ -1,8 +1,15 @@
-import { replaceProductTypeSectionCards } from "./productCards";
+import {
+  CATEGORY_PRODUCTS_PAGE_SIZE,
+  getProductCountForCategory,
+  getProductPageCount,
+  renderServerProductPagination,
+  replaceProductTypeSectionCards,
+} from "./productCards";
 import {
   homeProductLandingPagesBySlug,
   renderHomeProductLandingRowsSection,
 } from "../product-category/categoryLandingData";
+import { getCategoryPath } from "./siteRoutes";
 
 const getPageShell = (html) => {
   const mainStart = html.indexOf("<main");
@@ -237,6 +244,25 @@ const renderCategoryStyleGuideSection = (categoryKey) => {
   });
 };
 
+const addServerPaginationToCategorySection = (
+  section,
+  { basePath, currentPage, pageCount },
+) =>
+  section
+    .replace(
+      /<div class="product-type-grid([^"]*)">/,
+      '<div class="product-type-grid$1" data-server-paginated="true">',
+    )
+    .replace(
+      /(\s*<\/div>)(\s*<\/div>\s*<\/section>)$/,
+      `$1
+${renderServerProductPagination({
+  basePath,
+  currentPage,
+  pageCount,
+})}$2`,
+    );
+
 const buildProductCategoryHero = (section, categoryKey, categoryLabel) => {
   if (!Object.hasOwn(productCategoryHeroBackgrounds, categoryKey)) {
     return {
@@ -268,14 +294,21 @@ ${head.trim()}
   };
 };
 
-export const buildCategoryHtml = (html, categoryKey, categoryLabel) => {
+export const buildCategoryHtml = (html, categoryKey, categoryLabel, options = {}) => {
   const shell = getPageShell(html);
+  const pageSize = options.pageSize || CATEGORY_PRODUCTS_PAGE_SIZE;
+  const pageCount = getProductPageCount(getProductCountForCategory(categoryKey), pageSize);
+  const currentPage = Math.min(Math.max(1, Number(options.page) || 1), pageCount);
   const sectionPattern = new RegExp(
     `<section class="product-type-section" data-product-content="${categoryKey}"(?: hidden)?>[\\s\\S]*?<\\/section>`,
   );
-  const section = replaceProductTypeSectionCards((
+  const section = addServerPaginationToCategorySection(replaceProductTypeSectionCards((
     html.match(sectionPattern)?.[0]?.replace(/\s+hidden(?=[\s>])/i, "") || ""
-  ), categoryKey);
+  ), categoryKey, { page: currentPage, pageSize }), {
+    basePath: getCategoryPath(categoryKey),
+    currentPage,
+    pageCount,
+  });
   const categoryHero = buildProductCategoryHero(section, categoryKey, categoryLabel);
   const styleGuideSection = renderCategoryStyleGuideSection(categoryKey);
 

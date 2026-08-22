@@ -20,7 +20,7 @@ const header = String.raw`
 const faqGroups = [
   {
     id: "custom-information",
-    title: "Custom",
+    title: "1. Custom Order Basics",
     intro: "Basic questions before starting a custom metal gift order.",
     items: [
       ["How can I start my custom order?", "Send us your logo, sketch, reference image, size, quantity, preferred finish and deadline. We will review the design, recommend a suitable process, and prepare a quotation before moving to artwork proofing."],

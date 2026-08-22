@@ -567,8 +567,11 @@ export default function StaticPageEffects() {
     const productsPerPage = 28;
     const categoryProductsPerPage = 12;
     const productCategoryButtons = document.querySelectorAll(".products-category-nav [data-product-filter]");
-    const productCards = document.querySelectorAll(".products-all-grid .product-type-card[data-product-category]");
     const productGrid = document.querySelector(".products-all-grid");
+    const isServerPaginatedProductsGrid = productGrid?.dataset.serverPaginated === "true";
+    const productCards = isServerPaginatedProductsGrid
+      ? []
+      : document.querySelectorAll(".products-all-grid .product-type-card[data-product-category]");
     let selectedProductCategory = "all";
     let currentProductPage = 1;
     let productPagination = document.querySelector(".product-pagination");
@@ -589,7 +592,7 @@ export default function StaticPageEffects() {
       window.history.pushState(null, "", getProductPageHref(page));
     };
 
-    if (productGrid && !productPagination) {
+    if (productGrid && !isServerPaginatedProductsGrid && !productPagination) {
       productPagination = document.createElement("nav");
       productPagination.className = "product-pagination";
       productPagination.setAttribute("aria-label", "Product pages");
@@ -598,6 +601,7 @@ export default function StaticPageEffects() {
 
     const renderProductPagination = (pageCount) => {
       if (!productPagination) return;
+      if (isServerPaginatedProductsGrid) return;
 
       if (pageCount <= 1) {
         productPagination.hidden = true;
@@ -683,7 +687,8 @@ export default function StaticPageEffects() {
     document.addEventListener("click", handleProductNavClick);
     document.addEventListener("click", handleProductPaginationClick);
 
-    const paginatedProductGrids = [...document.querySelectorAll(".product-type-grid:not(.products-all-grid)")];
+    const paginatedProductGrids = [...document.querySelectorAll(".product-type-grid:not(.products-all-grid)")]
+      .filter((grid) => grid.dataset.serverPaginated !== "true");
     const categoryPaginationStates = paginatedProductGrids
       .map((grid, index) => {
         const cards = [...grid.querySelectorAll(":scope > .product-type-card")];

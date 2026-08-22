@@ -16,14 +16,14 @@ const html = String.raw`
   <main>
     <section class="custom-hero" id="custom">
       <div class="container">
-        <h1>Custom Your Metal Gifts</h1>
+        <h1>Custom Metal Gifts</h1>
         <p>Build custom medals, enamel pins, challenge coins, keychains and metal accessories around your logo, event, brand story and budget.</p>
       </div>
     </section>
 
     <section class="custom-page-nav" aria-label="Custom page navigation">
       <div class="container">
-        <a href="#custom">Custom</a>
+        <a href="#custom">Overview</a>
         <a href="#techniques">Techniques</a>
         <a href="#shipping">Delivery</a>
         <a href="#packaging">Packaging</a>

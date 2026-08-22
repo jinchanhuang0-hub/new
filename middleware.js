@@ -19,6 +19,9 @@ const legacyBlogRedirects = {
   "/blog/custom-challenge-coin-size-attachment-guide": "/blog/challenge-coin-size-guide",
 };
 
+const legacyPatchPath = "/products/custom-patchs";
+const canonicalPatchPath = "/products/custom-patches";
+
 export function middleware(request) {
   const url = request.nextUrl.clone();
   const { pathname, searchParams } = url;
@@ -34,6 +37,13 @@ export function middleware(request) {
   if (legacyBlogRedirects[normalizedPathname]) {
     destination = legacyBlogRedirects[normalizedPathname];
     clearSearch = true;
+  }
+
+  if (
+    normalizedPathname === legacyPatchPath ||
+    normalizedPathname.startsWith(`${legacyPatchPath}/`)
+  ) {
+    destination = normalizedPathname.replace(legacyPatchPath, canonicalPatchPath);
   }
 
   if (pathname === "/product-detail.html" || pathname === "/product-detail") {
