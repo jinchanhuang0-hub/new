@@ -670,6 +670,7 @@ export default function StaticPageEffects() {
     const handleProductPaginationClick = (event) => {
       const button = event.target.closest?.(".product-pagination [data-product-page]");
       if (!button) return;
+      if (button.closest("[data-server-pagination='true']")) return;
 
       event.preventDefault();
       const nextPage = Number(button.dataset.productPage) || 1;

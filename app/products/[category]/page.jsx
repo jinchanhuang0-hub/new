@@ -11,7 +11,11 @@ import {
   productCategories,
   SITE_URL,
 } from "../../lib/siteRoutes";
-import { CATEGORY_PRODUCTS_PAGE_SIZE } from "../../lib/productCards";
+import {
+  CATEGORY_PRODUCTS_PAGE_SIZE,
+  getProductCountForCategory,
+  getProductPageCount,
+} from "../../lib/productCards";
 
 export const dynamicParams = false;
 
@@ -21,8 +25,27 @@ export function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({ params }) {
+const getRequestedPage = (searchParams = {}) => {
+  const value = Array.isArray(searchParams.page)
+    ? searchParams.page[0]
+    : searchParams.page;
+  return Math.max(1, Number(value) || 1);
+};
+
+const getCanonicalPath = (category, categoryKey, searchParams = {}) => {
+  const basePath = `/products/${category}`;
+  const pageCount = getProductPageCount(
+    getProductCountForCategory(categoryKey),
+    CATEGORY_PRODUCTS_PAGE_SIZE,
+  );
+  const currentPage = Math.min(getRequestedPage(searchParams), pageCount);
+
+  return currentPage > 1 ? `${basePath}?page=${currentPage}` : basePath;
+};
+
+export async function generateMetadata({ params, searchParams }) {
   const { category } = await params;
+  const query = await searchParams;
   const categoryKey = categoryKeyByRouteSlug[category];
   const details = productDetailMetadata[categoryKey];
   if (!details) return {};
@@ -30,17 +53,10 @@ export async function generateMetadata({ params }) {
   return {
     ...details,
     alternates: {
-      canonical: `/products/${category}`,
+      canonical: getCanonicalPath(category, categoryKey, query),
     },
   };
 }
-
-const getRequestedPage = (searchParams = {}) => {
-  const value = Array.isArray(searchParams.page)
-    ? searchParams.page[0]
-    : searchParams.page;
-  return Math.max(1, Number(value) || 1);
-};
 
 export default async function ProductCategoryPage({ params, searchParams }) {
   const { category } = await params;

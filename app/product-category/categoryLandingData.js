@@ -187,7 +187,8 @@ export const homeProductLandingPages = [
         title: "Custom Military Challenge Coins",
         image: "assets/images/type-coins-marine-corps-forces-north.jpg",
         alt: "Custom military challenge coins with 3D relief and antique finish",
-        href: "/products/custom-challenge-coins?scenario=military",
+        id: "challenge-coin-military",
+        href: "#challenge-coin-military",
         buttonLabel: "Explore Military Coins",
         copy: "Create custom military challenge coins with unit insignia, 2D or 3D relief, enamel colors and antique finishes for deployments, promotions, veterans and service recognition.",
       },
@@ -196,7 +197,8 @@ export const homeProductLandingPages = [
         title: "Custom Police & Firefighter Challenge Coins",
         image: "assets/images/type-coins-queensland-fire-emergency-service.png",
         alt: "Custom police and firefighter challenge coins with soft enamel",
-        href: "/products/custom-challenge-coins?scenario=public-safety",
+        id: "challenge-coin-public-safety",
+        href: "#challenge-coin-public-safety",
         buttonLabel: "Explore Public Safety Coins",
         copy: "Custom police and firefighter challenge coins featuring department emblems, detailed relief, soft enamel colors and personalized edge designs for awards, retirements and service commemorations.",
       },
@@ -205,7 +207,8 @@ export const homeProductLandingPages = [
         title: "Custom Corporate Challenge Coins",
         image: "assets/images/type-coins-50-years-service.jpg",
         alt: "Custom corporate challenge coins with logo and hard enamel",
-        href: "/products/custom-challenge-coins?scenario=corporate",
+        id: "challenge-coin-corporate",
+        href: "#challenge-coin-corporate",
         buttonLabel: "Explore Corporate Coins",
         copy: "Branded corporate challenge coins with custom logos, hard enamel colors, polished plating and optional presentation packaging for employee recognition, company anniversaries and promotional gifts.",
       },
@@ -214,7 +217,8 @@ export const homeProductLandingPages = [
         title: "Custom Commemorative Challenge Coins",
         image: "assets/images/type-coins-double-sided.jpg",
         alt: "Double-sided commemorative challenge coins with antique plating",
-        href: "/products/custom-challenge-coins?scenario=commemorative",
+        id: "challenge-coin-commemorative",
+        href: "#challenge-coin-commemorative",
         buttonLabel: "Explore Commemorative Coins",
         copy: "Personalized commemorative challenge coins with double-sided artwork, 2D or 3D details and antique plating for anniversaries, retirements, ceremonies and historical milestones.",
       },
@@ -223,7 +227,8 @@ export const homeProductLandingPages = [
         title: "Custom Club & Association Challenge Coins",
         image: "assets/images/type-coins-ibew-eastern-wyoming.png",
         alt: "Custom shaped club challenge coins with enamel colors",
-        href: "/products/custom-challenge-coins?scenario=club",
+        id: "challenge-coin-club",
+        href: "#challenge-coin-club",
         buttonLabel: "Explore Club Coins",
         copy: "Custom club challenge coins featuring logos, mottos, member details, enamel colors and unique shapes for associations, schools, teams and membership recognition programs.",
       },
@@ -232,7 +237,8 @@ export const homeProductLandingPages = [
         title: "Custom Event & Fundraising Challenge Coins",
         image: "assets/images/type-coins-jennifer-jo-cobb-racing.png",
         alt: "Custom event and fundraising challenge coins with full-color printing",
-        href: "/products/custom-challenge-coins?scenario=event",
+        id: "challenge-coin-event",
+        href: "#challenge-coin-event",
         buttonLabel: "Explore Event Coins",
         copy: "Custom event coins with full-color printing, unique shapes, cutouts and optional functional features for fundraisers, charity campaigns, competitions and community events.",
       },
@@ -431,10 +437,11 @@ export const renderHomeProductLandingRows = (rows, headingTag = "h2") => {
     .map((row) => {
       const buttonLabel = row.buttonLabel || "View Product";
       const imageAlt = row.alt || row.title;
+      const rowId = row.id ? ` id="${escapeHtml(row.id)}"` : "";
 
       if (row.compact) {
         return `
-        <article class="home-category-row-mini${row.image ? " has-media" : ""}">
+        <article${rowId} class="home-category-row-mini${row.image ? " has-media" : ""}">
           ${row.image ? `<a class="home-category-mini-media" href="${escapeHtml(row.href)}"><img src="${escapeHtml(row.image)}" alt="${escapeHtml(imageAlt)}"></a>` : ""}
           <div class="home-category-mini-card">
             <span>${escapeHtml(row.eyebrow)}</span>
@@ -449,7 +456,7 @@ export const renderHomeProductLandingRows = (rows, headingTag = "h2") => {
       const isReverse = row.reverse ?? visualIndex % 2 === 0;
 
       return `
-        <article class="home-category-row tone-${visualIndex}${isReverse ? " is-reverse" : ""}">
+        <article${rowId} class="home-category-row tone-${visualIndex}${isReverse ? " is-reverse" : ""}">
           <a class="home-category-row-media" href="${escapeHtml(row.href)}">
             <img src="${escapeHtml(row.image)}" alt="${escapeHtml(imageAlt)}">
           </a>
