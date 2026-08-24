@@ -37,6 +37,15 @@ export const blogHtml = String.raw`
           <button type="button" data-blog-category="Uncategorized">Uncategorized</button>
         </div>
         <div class="blog-card-grid">
+          <a class="blog-feature-card" href="/blog/how-many-race-medals-to-order" data-blog-category="Custom Medals" aria-label="Read How Many Race Medals Should You Order? Quantity Guide">
+            <img src="/assets/images/how-many-race-medals-to-order.webp" width="1600" height="900" alt="Race director calculating how many finisher medals to order">
+            <div class="blog-feature-body">
+              <div class="blog-feature-meta"><span>Custom Medals</span><span>Quantity Guide</span></div>
+              <h2>How Many Race Medals Should You Order? Quantity Guide</h2>
+              <p>Estimate finisher, placement and age-group medal quantities with a practical calculator for registrations, reserves and multiple distances.</p>
+              <span class="blog-feature-link">Read More</span>
+            </div>
+          </a>
           <a class="blog-feature-card" href="/blog/finisher-medals-vs-placement-medals" data-blog-category="Custom Medals" aria-label="Read Finisher Medals vs Placement Medals: Race Award Guide">
             <img src="/assets/images/finisher-vs-placement-medals.webp" width="1672" height="941" alt="Finisher medals and placement medals prepared for a race event">
             <div class="blog-feature-body">
@@ -369,6 +378,247 @@ export const blogHtml = String.raw`
         </div>
       </div>
     </article>
+    <article id="how-many-race-medals-to-order" class="section blog-article-section">
+      <div class="blog-article-shell">
+        <aside class="blog-article-toc" aria-label="Article contents">
+          <strong>In This Guide</strong>
+          <nav>
+            <a href="#quick-calculation">Quick calculation</a>
+            <a href="#define-medal-eligibility">Eligibility rules</a>
+            <a href="#registration-to-finisher-forecast">Forecast funnel</a>
+            <a href="#race-medal-quantity-calculator">Quantity calculator</a>
+            <a href="#worked-example-community-5k">5K example</a>
+            <a href="#multi-distance-events">Multiple distances</a>
+            <a href="#placement-and-age-group-medals">Placement awards</a>
+            <a href="#finisher-medal-reserve">Reserve planning</a>
+            <a href="#registration-still-open">Open registration</a>
+            <a href="#race-day-distribution">Distribution</a>
+            <a href="#leftover-medals">Leftover medals</a>
+            <a href="#final-ordering-checklist">Checklist</a>
+            <a href="#frequently-asked-questions">FAQ</a>
+          </nav>
+        </aside>
+        <div class="container blog-article blog-article-with-toc">
+          <header class="blog-article-header">
+            <a class="blog-back-link" href="/blog">Back to Blog</a>
+            <h1>How Many Race Medals Should You Order? A Practical Calculator for Race Directors</h1>
+            <figure class="blog-article-image blog-article-hero-image blog-article-natural-image">
+              <img src="/assets/images/how-many-race-medals-to-order.webp" width="1600" height="900" fetchpriority="high" decoding="async" alt="Race director calculating how many finisher medals to order">
+              <figcaption>A reliable medal estimate begins with eligibility rules, registration forecasts and separately counted reserves.</figcaption>
+            </figure>
+            <p>Race medal quantities often have to be approved before registration closes, yet every eligible finisher expects a medal at the finish. Order too few and the shortage affects race day. Order too many and dated or distance-specific stock may be difficult to reuse.</p>
+            <p>So, how many race medals should you order? There is no percentage that works for every event. A reliable estimate starts with your medal policy, expected participation and historical event data. It then adds separately counted recipients and a reserve for risks you can explain.</p>
+            <p>This guide provides a practical framework for 5Ks, marathons, multi-distance races and community events. Every numerical example is illustrative; replace its assumptions with your own data.</p>
+          </header>
+
+          <h2 id="quick-calculation">The Quick Calculation</h2>
+          <p>Use this structure as your starting point:</p>
+          <blockquote>
+            <p><strong>Medals to order = expected eligible recipients + late-entry allowance + operational reserve + additional recipients + replacement stock</strong></p>
+          </blockquote>
+          <p>Expected recipients come from your published policy. Late entries, named additional groups, operational risks and replacement commitments are added separately. This is more useful than hiding every uncertainty inside one arbitrary buffer and makes the estimate easier to revise when registrations change.</p>
+
+          <h2 id="define-medal-eligibility">Define Medal Eligibility Before Forecasting Quantity</h2>
+          <p>A quantity calculation is only as accurate as its definition of an eligible recipient. First decide who will receive each medal.</p>
+          <p>Questions to settle include:</p>
+          <ul class="blog-list">
+            <li>Must a participant start the race?</li>
+            <li>Must the participant complete the full registered distance?</li>
+            <li>Is there an official course-closing time?</li>
+            <li>What happens to DNS and DNF participants?</li>
+            <li>Are virtual participants included?</li>
+            <li>Do guide runners and official pacers receive the same medal?</li>
+            <li>Are volunteers, sponsors or guests receiving medals?</li>
+            <li>Are disqualified participants excluded?</li>
+          </ul>
+          <p>There is no universal answer. The <a href="https://runscore.runsignup.com/Race/KY/Berea/BluegrassReaperChallenge" target="_blank" rel="noopener noreferrer">Bluegrass Reaper Challenge</a>, for example, publishes specific rules for registered distances and DNF results. NYRR's <a href="https://www.nyrr.org/tcsnycmarathon/race-day/the-finish-post-finish" target="_blank" rel="noopener noreferrer">New York City Marathon finish information</a> also distinguishes official results from its finish-line medal policy.</p>
+          <p>Do not copy another race's rule. Publish your policy on the registration page and use it as the basis of the forecast.</p>
+
+          <h2 id="registration-to-finisher-forecast">Build a Registration-to-Finisher Forecast</h2>
+          <p>For a typical running event, the useful planning funnel is:</p>
+          <blockquote>
+            <p><strong>Projected registrations &rarr; expected starters &rarr; expected finishers &rarr; eligible medal recipients</strong></p>
+          </blockquote>
+          <figure class="blog-article-image blog-article-natural-image">
+            <img src="/assets/images/race-medal-registration-finisher-funnel.webp" width="1400" height="800" loading="lazy" decoding="async" alt="Registration starter finisher and medal eligibility planning funnel">
+            <figcaption>Forecast registrations, starters, finishers and eligible recipients as separate stages.</figcaption>
+            <ol class="blog-list">
+              <li>Projected Registrations</li>
+              <li>Expected Starters</li>
+              <li>Expected Finishers</li>
+              <li>Eligible Recipients</li>
+              <li>Final Medal Quantity</li>
+            </ol>
+          </figure>
+          <p>Start with projected final registrations, then use previous editions to estimate how many entrants normally start and finish. Calculate each distance separately: a community 5K and a trail half marathon may have different attendance and completion patterns.</p>
+          <p>For a first-year event, avoid presenting a single guess as certainty. Prepare three scenarios:</p>
+          <div class="blog-table-wrap">
+            <table class="blog-table">
+              <thead><tr><th>Scenario</th><th>Purpose</th><th>Appropriate assumption style</th></tr></thead>
+              <tbody>
+                <tr><td>Low</td><td>Tests the risk of excess inventory</td><td>Cautious registration and attendance forecast</td></tr>
+                <tr><td>Base</td><td>Most likely planning case</td><td>Current registration pace and comparable-event evidence</td></tr>
+                <tr><td>High</td><td>Tests shortage risk</td><td>Strong late registration and high attendance</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>Record why each assumption was chosen. The purpose is to understand how the order changes when the assumptions move.</p>
+
+          <h2 id="race-medal-quantity-calculator">A Practical Race Medal Quantity Calculator</h2>
+          <p>Use one row for every medal version. A basic worksheet can contain these fields:</p>
+          <div class="blog-table-wrap">
+            <table class="blog-table">
+              <thead><tr><th>Distance or category</th><th>Projected registrations</th><th>Expected start rate</th><th>Expected finish rate</th><th>Eligible recipients</th><th>Late entries</th><th>Additional recipients</th><th>Operational reserve</th><th>Final quantity</th></tr></thead>
+              <tbody>
+                <tr><td>5K</td><td>Input</td><td>Input</td><td>Input</td><td>Calculated</td><td>Input</td><td>Input</td><td>Input</td><td>Calculated</td></tr>
+                <tr><td>10K</td><td>Input</td><td>Input</td><td>Input</td><td>Calculated</td><td>Input</td><td>Input</td><td>Input</td><td>Calculated</td></tr>
+                <tr><td>Half marathon</td><td>Input</td><td>Input</td><td>Input</td><td>Calculated</td><td>Input</td><td>Input</td><td>Input</td><td>Calculated</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>The underlying calculation can be written as:</p>
+          <blockquote>
+            <p><strong>Eligible recipients = projected registrations &times; expected start rate &times; expected finish rate</strong></p>
+          </blockquote>
+          <p>Then add confirmed groups and the documented reserve. Round up to a whole unit and confirm production requirements before approval.</p>
+          <p>If every registrant receives a medal, do not apply start and finish rates. If medals are limited to eligible finishers, do not count every registration. The worksheet must reflect the policy.</p>
+
+          <h2 id="worked-example-community-5k">Worked Example: A Community 5K</h2>
+          <p>Assume a community 5K projects 600 registrations. Its own past data indicates an 88% start rate and a 98% finish rate among starters. It has promised medals to 20 volunteers.</p>
+          <p>This illustrative calculation would be:</p>
+          <ul class="blog-list">
+            <li>Expected starters: 600 &times; 0.88 = 528</li>
+            <li>Expected finishers: 528 &times; 0.98 = 517.44, rounded up to 518</li>
+            <li>Official volunteers: 20</li>
+            <li>Operational reserve selected by the organizer: 15</li>
+            <li>Replacement and archive stock: 7</li>
+            <li><strong>Illustrative final quantity: 560 medals</strong></li>
+          </ul>
+          <p>These rates and reserves are sample inputs, not recommendations. A first-time race should compare low, base and high scenarios.</p>
+
+          <h2 id="multi-distance-events">Multi-Distance Events Need Separate Counts</h2>
+          <p>Do not use one combined total when distances have different medals, ribbons or packaging. A surplus of 5K medals cannot solve a half-marathon shortage.</p>
+          <figure class="blog-article-image blog-article-natural-image">
+            <img src="/assets/images/multi-distance-race-medal-quantity-plan.webp" width="1200" height="800" loading="lazy" decoding="async" alt="Separate medal quantities planned for 5K 10K and half marathon events">
+            <figcaption>Each distance and medal version should have its own quantity, reserve and packing label.</figcaption>
+            <ul class="blog-list">
+              <li>5K Medal</li>
+              <li>10K Medal</li>
+              <li>Half-Marathon Medal</li>
+            </ul>
+          </figure>
+          <p>Create a version map before confirming the order:</p>
+          <div class="blog-table-wrap">
+            <table class="blog-table">
+              <thead><tr><th>Version</th><th>Eligible recipients</th><th>Other recipients</th><th>Reserve</th><th>Quantity to approve</th></tr></thead>
+              <tbody>
+                <tr><td>5K medal</td><td>420</td><td>10</td><td>15</td><td>445</td></tr>
+                <tr><td>10K medal</td><td>260</td><td>5</td><td>15</td><td>280</td></tr>
+                <tr><td>Half-marathon medal</td><td>180</td><td>5</td><td>10</td><td>195</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>These figures are illustrative. Check artwork, ribbons, carton labels and packing lists against the same version map.</p>
+
+          <h2 id="placement-and-age-group-medals">Calculate Placement and Age-Group Medals Separately</h2>
+          <p>Finisher medals are forecast from participation. Placement awards are normally calculated from the published award structure.</p>
+          <p>Use:</p>
+          <blockquote>
+            <p><strong>Placement medals = award categories &times; places per category &times; divisions</strong></p>
+          </blockquote>
+          <p>Suppose an event recognizes first, second and third place in five age groups for two divisions. The age-group requirement is:</p>
+          <blockquote>
+            <p><strong>5 age groups &times; 3 places &times; 2 divisions = 30 medals</strong></p>
+          </blockquote>
+          <p>Three overall places in two divisions add six awards. Before finalizing the total, decide whether an overall winner may also receive an age-group award and publish that rule.</p>
+          <p>For teams or relays, count eligible roster members, substitutes and any included coaches for each winning place.</p>
+          <figure class="blog-article-image blog-article-natural-image">
+            <img src="/assets/images/finisher-placement-medal-inventory.webp" width="1200" height="800" loading="lazy" decoding="async" alt="Finisher medals stored separately from placement and age group medals">
+            <figcaption>Forecast finisher medals and calculate placement awards as separate inventory lines.</figcaption>
+          </figure>
+          <p>For a fuller distinction between these award types, see our guide to <a href="/blog/finisher-medals-vs-placement-medals">finisher medals vs placement medals</a>.</p>
+
+          <h2 id="finisher-medal-reserve">How Large Should the Finisher Medal Reserve Be?</h2>
+          <p>One fixed percentage can hide the reasons a reserve is needed. Build it from identifiable risks:</p>
+          <ul class="blog-list">
+            <li>Registration remains open after the quantity lock date.</li>
+            <li>On-site registration is permitted.</li>
+            <li>Forecast accuracy is weak because the event is new.</li>
+            <li>Several distances use similar-looking medals that may be sorted incorrectly.</li>
+            <li>Ribbons or medals could be damaged during unpacking and distribution.</li>
+            <li>The event has promised replacements for verified damage or loss.</li>
+            <li>Sponsor, volunteer or media allocations are not yet final.</li>
+          </ul>
+          <p>When an event is close to its cap, planning against that cap may be safer than relying on no-shows. When attendance history is stable, a finisher forecast may be more useful. Document the choice.</p>
+
+          <h2 id="registration-still-open">What If Registration Is Still Open?</h2>
+          <p>Set a quantity-lock date and work backward from the date the medals must be in hand. At that checkpoint, record:</p>
+          <ol class="blog-list">
+            <li>Current paid registrations by distance</li>
+            <li>Recent registration pace</li>
+            <li>Marketing campaigns still scheduled</li>
+            <li>Registration capacity and closing date</li>
+            <li>Whether transfers, deferrals and late entries are allowed</li>
+            <li>Whether another production batch is operationally realistic</li>
+          </ol>
+          <p>Do not assume an emergency reorder can rescue race day. Production and transportation still take time. Consider a soft cap, waiting list or clearly stated post-event delivery policy when entries remain open.</p>
+
+          <h2 id="race-day-distribution">Plan the Race-Day Distribution</h2>
+          <p>Medals can still be lost through poor sorting or an unclear handout process. Before race day:</p>
+          <ul class="blog-list">
+            <li>Label cartons and trays by distance, category and version.</li>
+            <li>Store finisher medals separately from placement awards.</li>
+            <li>Give volunteers a simple visual handout sheet.</li>
+            <li>Count stock when cartons arrive and again when trays are prepared.</li>
+            <li>Keep replacement stock away from the main finish chute.</li>
+            <li>Assign one person to record shortages, damage and approved replacements.</li>
+            <li>Verify results before distributing placement and age-group awards.</li>
+          </ul>
+          <figure class="blog-article-image blog-article-natural-image">
+            <img src="/assets/images/race-day-medal-inventory-distribution.webp" width="1200" height="800" loading="lazy" decoding="async" alt="Volunteers sorting and distributing race medals by event category">
+            <figcaption>Clear sorting, labels and handout procedures reduce race-day inventory errors.</figcaption>
+          </figure>
+          <p>For virtual participants, publish completion and mailing requirements and record their inventory separately.</p>
+
+          <h2 id="leftover-medals">What Should You Do With Leftover Medals?</h2>
+          <p>Hold enough pieces for legitimate replacements and an archive sample. Do not reuse a medal carrying a particular year, race or result in a misleading context. Record remaining stock so the next forecast can distinguish registration, eligibility and distribution errors.</p>
+
+          <h2 id="final-ordering-checklist">Final Ordering Checklist</h2>
+          <p>Before approval, confirm:</p>
+          <ul class="blog-list">
+            <li>Medal eligibility is written and published.</li>
+            <li>Every distance and award version has a separate count.</li>
+            <li>Registration, start and finish assumptions are documented.</li>
+            <li>Volunteers, pacers, guides and other promised recipients are counted.</li>
+            <li>Overall, age-group and team awards are calculated separately.</li>
+            <li>The reserve has a stated purpose rather than an unexplained percentage.</li>
+            <li>Artwork labels match the quantity worksheet.</li>
+            <li>The in-hands date leaves time for counting and sorting.</li>
+            <li>A shortage and replacement policy has been agreed internally.</li>
+          </ul>
+          <p>Once the number is stable, include the event date, medal versions and design requirements in the quotation request. Review our <a href="/blog/custom-marathon-medals-guide">marathon medal size, ribbon and finish guide</a> or explore <a href="/products/custom-medals">custom medals</a>.</p>
+
+          <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
+          <div class="blog-faq">
+            <details open><summary>Should I order a medal for every registered runner?</summary><p>Only if that matches the event's policy or registration is the safest planning ceiling. Otherwise forecast eligible finishers, then add separately counted recipients and a documented reserve.</p></details>
+            <details><summary>How many extra finisher medals should I order?</summary><p>There is no universal figure. Build the reserve from open-registration uncertainty, data quality, operational risks, additional recipients and replacement commitments.</p></details>
+            <details><summary>Should a DNF participant receive a medal?</summary><p>That is an event-policy decision. State the rule before registration and apply it consistently.</p></details>
+            <details><summary>How many medals do I need for a 5K?</summary><p>Estimate eligible recipients, then add late entries, promised recipients, an operational reserve and replacement stock.</p></details>
+            <details><summary>Can one medal design cover several race distances?</summary><p>Yes, if one shared design is intentional. Distances can also be differentiated through ribbons, reverse details or packaging. Use a version map so volunteers distribute the correct pieces.</p></details>
+            <details><summary>What happens if the event runs out of medals?</summary><p>Record affected participants and communicate only a verified remedy and realistic delivery expectations. Afterwards, compare the forecast with actual eligibility and distribution records.</p></details>
+          </div>
+
+          <section class="blog-article-cta">
+            <div class="blog-cta-copy">
+              <p class="blog-cta-title">Plan Custom Race Medals With a Clear Quantity Brief</p>
+              <p>Send your event type, medal versions, estimated quantities, artwork status and in-hands date so the quotation can reflect the real distribution plan.</p>
+            </div>
+            <div class="blog-cta-actions"><a class="btn btn-yellow" href="/contact">Request a Medal Quote</a></div>
+          </section>
+        </div>
+      </div>
+    </article>
+
     <article id="custom-marathon-medals-guide" class="section blog-article-section blog-marathon-medals-article">
       <div class="blog-article-shell">
         <aside class="blog-article-toc" aria-label="Article contents">
@@ -508,7 +758,7 @@ export const blogHtml = String.raw`
             <li>Sponsor logo or personalization details</li>
           </ul>
           <p>If the design is not final, send the event story and reference images first. A factory can suggest whether the medal should be round, custom-shaped, antique plated, color-filled, printed or made with 3D relief.</p>
-          <p>For buyers comparing recognition products, our <a href="/blog/custom-medals-vs-challenge-coins">custom medals vs challenge coins</a> guide explains when medals fit ceremony awards and when coins fit sponsor gifts or collectible recognition. You can also browse finished <a href="/products/custom-medals">custom medals</a> before finalizing size, finish and ribbon direction. If you are still building the product plan, the <a href="/blog/custom-metal-crafts-guide">custom metal crafts guide</a> may also help.</p>
+          <p>For buyers comparing recognition products, our <a href="/blog/custom-medals-vs-challenge-coins">custom medals vs challenge coins</a> guide explains when medals fit ceremony awards and when coins fit sponsor gifts or collectible recognition. You can also browse finished <a href="/products/custom-medals">custom medals</a> before finalizing size, finish and ribbon direction. If you are still building the product plan, the <a href="/blog/custom-metal-crafts-guide">custom metal crafts guide</a> may also help. For event teams working from registration forecasts, use our guide to <a href="/blog/how-many-race-medals-to-order">race medal quantity planning</a>.</p>
 
           <a id="faq"></a>
           <h2>Frequently Asked Questions</h2>
@@ -2021,7 +2271,7 @@ export const blogHtml = String.raw`
 
         <h2 id="how-many-medals-should-an-event-order">How Many Medals Should an Event Order?</h2>
         <p>Start with the award policy and calculate each group separately.</p>
-        <p>For finisher medals, review registrations, historical start and completion patterns, late-entry rules, virtual entries and an approved reserve for replacements or verified distribution errors. Avoid applying an arbitrary percentage without examining the event's records.</p>
+        <p>For finisher medals, review registrations, historical start and completion patterns, late-entry rules, virtual entries and an approved reserve for replacements or verified distribution errors. Avoid applying an arbitrary percentage without examining the event's records. For a worksheet-style approach, see how to <a href="/blog/how-many-race-medals-to-order">calculate how many race medals to order</a>.</p>
         <p>For placement medals, a starting calculation is:</p>
         <blockquote>
           <p>Number of award positions &times; number of categories &times; number of divisions</p>

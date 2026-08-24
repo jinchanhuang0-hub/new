@@ -325,6 +325,50 @@ export const buildBlogAuthorSchema = (article = {}) => {
 };
 
 const blogArticleData = {
+  "how-many-race-medals-to-order": {
+    title: "How Many Race Medals Should You Order? Quantity Guide",
+    headline: "How Many Race Medals Should You Order? A Practical Calculator for Race Directors",
+    description:
+      "Estimate finisher, placement and age-group medal quantities with a practical race medal calculator covering registrations, reserves and multiple distances.",
+    author: "Sunny Huang",
+    authorType: "Person",
+    datePublished: "2026-08-24",
+    dateModified: "2026-08-24",
+    image: "/assets/images/how-many-race-medals-to-order.webp",
+    schemaType: "Article",
+    faq: [
+      {
+        question: "Should I order a medal for every registered runner?",
+        answer:
+          "Only if that matches the event's policy or registration is the safest planning ceiling. Otherwise forecast eligible finishers, then add separately counted recipients and a documented reserve.",
+      },
+      {
+        question: "How many extra finisher medals should I order?",
+        answer:
+          "There is no universal figure. Build the reserve from open-registration uncertainty, data quality, operational risks, additional recipients and replacement commitments.",
+      },
+      {
+        question: "Should a DNF participant receive a medal?",
+        answer:
+          "That is an event-policy decision. State the rule before registration and apply it consistently.",
+      },
+      {
+        question: "How many medals do I need for a 5K?",
+        answer:
+          "Estimate eligible recipients, then add late entries, promised recipients, an operational reserve and replacement stock.",
+      },
+      {
+        question: "Can one medal design cover several race distances?",
+        answer:
+          "Yes, if one shared design is intentional. Distances can also be differentiated through ribbons, reverse details or packaging. Use a version map so volunteers distribute the correct pieces.",
+      },
+      {
+        question: "What happens if the event runs out of medals?",
+        answer:
+          "Record affected participants and communicate only a verified remedy and realistic delivery expectations. Afterwards, compare the forecast with actual eligibility and distribution records.",
+      },
+    ],
+  },
   "finisher-medals-vs-placement-medals": {
     title: "Finisher Medals vs Placement Medals: Race Award Guide",
     headline: "Finisher Medals vs Placement Medals: How to Plan Awards for Races and Sports Events",
@@ -333,7 +377,7 @@ const blogArticleData = {
     author: "Sunny Huang",
     authorType: "Person",
     datePublished: "2026-08-20",
-    dateModified: "2026-08-20",
+    dateModified: "2026-08-24",
     image: "/assets/images/finisher-vs-placement-medals-og.webp",
     schemaType: "Article",
   },
@@ -433,7 +477,7 @@ const blogArticleData = {
     author: "Sunny Huang",
     authorType: "Person",
     datePublished: "2026-08-06",
-    dateModified: "2026-08-06",
+    dateModified: "2026-08-24",
     image: "/assets/images/blog-custom-marathon-medals-hero.webp",
     faq: [
       {
