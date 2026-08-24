@@ -334,7 +334,7 @@ const blogArticleData = {
     authorType: "Person",
     datePublished: "2026-08-24",
     dateModified: "2026-08-24",
-    image: "/assets/images/how-many-race-medals-to-order.webp",
+    image: "/assets/images/how-many-race-medals-to-order-b2.webp",
     schemaType: "Article",
     faq: [
       {
@@ -353,9 +353,9 @@ const blogArticleData = {
           "That is an event-policy decision. State the rule before registration and apply it consistently.",
       },
       {
-        question: "How many medals do I need for a 5K?",
+        question: "How many race medals should I order for a 5K?",
         answer:
-          "Estimate eligible recipients, then add late entries, promised recipients, an operational reserve and replacement stock.",
+          "Estimate eligible finishers, then add late entries, promised recipients, an operational reserve and replacement stock.",
       },
       {
         question: "Can one medal design cover several race distances?",

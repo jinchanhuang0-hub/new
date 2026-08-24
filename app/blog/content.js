@@ -38,7 +38,7 @@ export const blogHtml = String.raw`
         </div>
         <div class="blog-card-grid">
           <a class="blog-feature-card" href="/blog/how-many-race-medals-to-order" data-blog-category="Custom Medals" aria-label="Read How Many Race Medals Should You Order? Quantity Guide">
-            <img src="/assets/images/how-many-race-medals-to-order.webp" width="1600" height="900" alt="Race director calculating how many finisher medals to order">
+            <img src="/assets/images/how-many-race-medals-to-order-b2.webp" width="1600" height="900" alt="Race director calculating how many finisher medals to order">
             <div class="blog-feature-body">
               <div class="blog-feature-meta"><span>Custom Medals</span><span>Quantity Guide</span></div>
               <h2>How Many Race Medals Should You Order? Quantity Guide</h2>
@@ -403,7 +403,7 @@ export const blogHtml = String.raw`
             <a class="blog-back-link" href="/blog">Back to Blog</a>
             <h1>How Many Race Medals Should You Order? A Practical Calculator for Race Directors</h1>
             <figure class="blog-article-image blog-article-hero-image blog-article-natural-image">
-              <img src="/assets/images/how-many-race-medals-to-order.webp" width="1600" height="900" fetchpriority="high" decoding="async" alt="Race director calculating how many finisher medals to order">
+              <img src="/assets/images/how-many-race-medals-to-order-b2.webp" width="1600" height="900" fetchpriority="high" decoding="async" alt="Race director calculating how many finisher medals to order">
               <figcaption>A reliable medal estimate begins with eligibility rules, registration forecasts and separately counted reserves.</figcaption>
             </figure>
             <p>Race medal quantities often have to be approved before registration closes, yet every eligible finisher expects a medal at the finish. Order too few and the shortage affects race day. Order too many and dated or distance-specific stock may be difficult to reuse.</p>
@@ -414,9 +414,10 @@ export const blogHtml = String.raw`
           <h2 id="quick-calculation">The Quick Calculation</h2>
           <p>Use this structure as your starting point:</p>
           <blockquote>
-            <p><strong>Medals to order = expected eligible recipients + late-entry allowance + operational reserve + additional recipients + replacement stock</strong></p>
+            <p><strong>Medals to order = expected eligible finishers + late-entry allowance + operational reserve + additional recipients + replacement stock</strong></p>
           </blockquote>
-          <p>Expected recipients come from your published policy. Late entries, named additional groups, operational risks and replacement commitments are added separately. This is more useful than hiding every uncertainty inside one arbitrary buffer and makes the estimate easier to revise when registrations change.</p>
+          <p>Expected eligible finishers come from your published policy. Late entries, named additional groups, operational risks and replacement commitments are added separately. Only add a late-entry allowance if projected registrations do not already include expected late sign-ups. This is more useful than hiding every uncertainty inside one arbitrary buffer and makes the estimate easier to revise when registrations change.</p>
+          <p>For clarity, eligible finishers are participants who meet the published medal rule. Additional recipients are non-finisher groups such as volunteers, guides, sponsors or staff. Operational reserve covers race-day uncertainty before handout, while replacement stock is held separately for verified damage, loss or archive samples.</p>
 
           <h2 id="define-medal-eligibility">Define Medal Eligibility Before Forecasting Quantity</h2>
           <p>A quantity calculation is only as accurate as its definition of an eligible recipient. First decide who will receive each medal.</p>
@@ -533,7 +534,7 @@ export const blogHtml = String.raw`
           <p>Three overall places in two divisions add six awards. Before finalizing the total, decide whether an overall winner may also receive an age-group award and publish that rule.</p>
           <p>For teams or relays, count eligible roster members, substitutes and any included coaches for each winning place.</p>
           <figure class="blog-article-image blog-article-natural-image">
-            <img src="/assets/images/finisher-placement-medal-inventory.webp" width="1200" height="800" loading="lazy" decoding="async" alt="Finisher medals stored separately from placement and age group medals">
+            <img src="/assets/images/finisher-placement-medal-inventory-b4.webp" width="1536" height="1024" loading="lazy" decoding="async" alt="Finisher medals stored separately from placement and age group medals">
             <figcaption>Forecast finisher medals and calculate placement awards as separate inventory lines.</figcaption>
           </figure>
           <p>For a fuller distinction between these award types, see our guide to <a href="/blog/finisher-medals-vs-placement-medals">finisher medals vs placement medals</a>.</p>
@@ -575,7 +576,7 @@ export const blogHtml = String.raw`
             <li>Verify results before distributing placement and age-group awards.</li>
           </ul>
           <figure class="blog-article-image blog-article-natural-image">
-            <img src="/assets/images/race-day-medal-inventory-distribution.webp" width="1200" height="800" loading="lazy" decoding="async" alt="Volunteers sorting and distributing race medals by event category">
+            <img src="/assets/images/race-day-medal-inventory-distribution-b3.webp" width="1600" height="900" loading="lazy" decoding="async" alt="Volunteers sorting and distributing race medals by event category">
             <figcaption>Clear sorting, labels and handout procedures reduce race-day inventory errors.</figcaption>
           </figure>
           <p>For virtual participants, publish completion and mailing requirements and record their inventory separately.</p>
@@ -603,7 +604,7 @@ export const blogHtml = String.raw`
             <details open><summary>Should I order a medal for every registered runner?</summary><p>Only if that matches the event's policy or registration is the safest planning ceiling. Otherwise forecast eligible finishers, then add separately counted recipients and a documented reserve.</p></details>
             <details><summary>How many extra finisher medals should I order?</summary><p>There is no universal figure. Build the reserve from open-registration uncertainty, data quality, operational risks, additional recipients and replacement commitments.</p></details>
             <details><summary>Should a DNF participant receive a medal?</summary><p>That is an event-policy decision. State the rule before registration and apply it consistently.</p></details>
-            <details><summary>How many medals do I need for a 5K?</summary><p>Estimate eligible recipients, then add late entries, promised recipients, an operational reserve and replacement stock.</p></details>
+            <details><summary>How many race medals should I order for a 5K?</summary><p>Estimate eligible finishers, then add late entries, promised recipients, an operational reserve and replacement stock.</p></details>
             <details><summary>Can one medal design cover several race distances?</summary><p>Yes, if one shared design is intentional. Distances can also be differentiated through ribbons, reverse details or packaging. Use a version map so volunteers distribute the correct pieces.</p></details>
             <details><summary>What happens if the event runs out of medals?</summary><p>Record affected participants and communicate only a verified remedy and realistic delivery expectations. Afterwards, compare the forecast with actual eligibility and distribution records.</p></details>
           </div>
