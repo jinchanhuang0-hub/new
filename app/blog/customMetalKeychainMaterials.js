@@ -23,7 +23,7 @@ export const customMetalKeychainMaterialsArticleHtml = String.raw`
             <a class="blog-back-link" href="/blog">Back to Blog</a>
             <h1>Custom Metal Keychain Materials: Zinc Alloy vs Brass vs Stainless Steel vs Iron</h1>
           <p><strong>The short answer:</strong> zinc alloy suits complex 3D shapes, brass suits heavier premium gifts, stainless steel may suit precise moisture-exposed designs when the grade is appropriate, and iron-based construction can be economical for simple promotional orders.</p>
-          <p>Selecting the right <strong>custom metal keychain materials</strong> affects the practical process, artwork detail, surface protection and daily performance. Compare budget, application and manufacturing method together across the available <a href="/products/custom-metal-keychains">custom metal keychain</a> options.</p>
+          <p>Selecting the right <strong>custom metal keychain materials</strong> affects the practical process, artwork detail, surface protection and daily performance. Compare budget, application and manufacturing method together across the available <a href="/products/custom-metal-keychains">custom metal keychains</a>.</p>
             <figure class="blog-article-image blog-article-hero-image blog-article-natural-image">
               <img src="/assets/images/custom-metal-keychain-materials-comparison.webp" width="1200" height="675" fetchpriority="high" decoding="async" alt="Custom metal keychain materials shown in dark, brass-tone and silver-tone finishes">
               <figcaption>Four keychain designs shown with dark, brass-tone and silver-tone finishes.</figcaption>
@@ -220,7 +220,7 @@ export const customMetalKeychainMaterialsArticleHtml = String.raw`
           <a id="conclusion"></a>
           <h2>Conclusion</h2>
           <p>Material selection is most reliable when the buyer and manufacturer review the budget, application and artwork together. The goal is not simply to select the most expensive metal, but to identify a material-process combination that reproduces the design and performs as required.</p>
-          <p>Before mass production, confirm the material, process, dimensions, finish, hardware, packaging and inspection criteria in writing. For finished style references, review our <a href="/products/custom-metal-keychains">custom metal keychain collection</a>; for measurement and attachment decisions, use the <a href="/blog/custom-metal-keychain-size-attachment-guide">custom metal keychain size guide</a>. Send the artwork for a practical material recommendation.</p>
+          <p>Before mass production, confirm the material, process, dimensions, finish, hardware, packaging and inspection criteria in writing. For finished style references, review our <a href="/products/custom-metal-keychains">custom metal keychain collection</a>; for measurement and attachment decisions, use the <a href="/blog/custom-metal-keychain-size-attachment-guide">keychain size, thickness and attachment guide</a>. Send the artwork for a practical material recommendation.</p>
 
           <section class="blog-article-cta">
             <div class="blog-cta-copy">

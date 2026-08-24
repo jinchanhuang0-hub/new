@@ -2693,6 +2693,188 @@ export const productItems = {
     categories: "Patches, Embroidered Patches, Character Patches",
     quoteProduct: "Patches",
     lead: "This custom embroidered cartoon character patch uses textured thread, bright color areas and a stitched border for apparel, uniforms, bags, toys, pet accessories and promotional events."
+  },
+  "custom-embroidered-death-patch": {
+    title: "Custom Embroidered Death Patch",
+    image: "assets/images/custom-embroidered-death-patch.webp",
+    alt: "Custom embroidered death patch with skull and scythe artwork",
+    categoryLabel: "Patches",
+    categoryHref: "/products/custom-patches",
+    material: "Polyester fiber, twill fabric, cotton, silk, non-woven fabric or dyed fabric options",
+    process: "Embroidery with textured thread and stitched border",
+    sku: "UP-PATCH-003",
+    usage: "Jackets, uniforms, clubs, apparel drops and event merchandise",
+    categories: "Patches, Embroidered Patches, Apparel Patches",
+    quoteProduct: "Patches",
+    lead: "This custom embroidered death patch uses bold skull artwork, vivid thread colors and a stitched border for jackets, uniforms, clubs, apparel drops and event merchandise."
+  },
+  "custom-embroidered-squadron-patch": {
+    title: "Custom Embroidered Squadron Patch",
+    image: "assets/images/custom-embroidered-squadron-patch.webp",
+    alt: "Custom embroidered squadron shield patch",
+    categoryLabel: "Patches",
+    categoryHref: "/products/custom-patches",
+    material: "Polyester fiber, twill fabric, cotton, silk, non-woven fabric or dyed fabric options",
+    process: "Embroidery with textured thread and stitched border",
+    sku: "UP-PATCH-004",
+    usage: "Military units, teams, uniforms, jackets and commemorative programs",
+    categories: "Patches, Embroidered Patches, Squadron Patches",
+    quoteProduct: "Patches",
+    lead: "This custom embroidered squadron patch uses shield artwork, detailed thread areas and a stitched border for military units, teams, uniforms, jackets and commemorative programs."
+  },
+  "custom-embroidered-taco-logo-patch": {
+    title: "Custom Embroidered Taco Logo Patch",
+    image: "assets/images/custom-embroidered-taco-logo-patch.webp",
+    alt: "Custom embroidered taco logo patch",
+    categoryLabel: "Patches",
+    categoryHref: "/products/custom-patches",
+    material: "Polyester fiber, twill fabric, cotton, silk, non-woven fabric or dyed fabric options",
+    process: "Embroidery with textured thread and stitched border",
+    sku: "UP-PATCH-005",
+    usage: "Food brands, staff uniforms, apparel, events and promotional merchandise",
+    categories: "Patches, Embroidered Patches, Logo Patches",
+    quoteProduct: "Patches",
+    lead: "This custom embroidered taco logo patch uses clean text, bold outline stitching and bright food-themed artwork for uniforms, apparel, events and promotional merchandise."
+  },
+  "custom-embroidered-army-wing-patch": {
+    title: "Custom Embroidered Army Wing Patch",
+    image: "assets/images/custom-embroidered-army-wing-patch.webp",
+    alt: "Custom embroidered army wing patch with camouflage background",
+    categoryLabel: "Patches",
+    categoryHref: "/products/custom-patches",
+    material: "Polyester fiber, twill fabric, cotton, silk, non-woven fabric or dyed fabric options",
+    process: "Embroidery with metallic thread detail and stitched border",
+    sku: "UP-PATCH-006",
+    usage: "Uniforms, tactical gear, clubs, teams and recognition programs",
+    categories: "Patches, Embroidered Patches, Uniform Patches",
+    quoteProduct: "Patches",
+    lead: "This custom embroidered army wing patch combines camouflage fabric, fine emblem details and metallic thread accents for uniforms, tactical gear, clubs, teams and recognition programs."
+  },
+  "custom-embroidered-spain-flag-patch": {
+    title: "Custom Embroidered Spain Flag Patch",
+    image: "assets/images/custom-embroidered-spain-flag-patch.webp",
+    alt: "Custom embroidered Spain flag patch",
+    categoryLabel: "Patches",
+    categoryHref: "/products/custom-patches",
+    material: "Polyester fiber, twill fabric, cotton, silk, non-woven fabric or dyed fabric options",
+    process: "Embroidery with flag color blocks and stitched border",
+    sku: "UP-PATCH-007",
+    usage: "Travel gear, uniforms, sports clubs, events and souvenir merchandise",
+    categories: "Patches, Embroidered Patches, Flag Patches",
+    quoteProduct: "Patches",
+    lead: "This custom embroidered Spain flag patch uses bright national colors, detailed crest stitching and a shaped border for travel gear, uniforms, sports clubs, events and souvenir merchandise."
+  },
+  "custom-embroidered-flag-velcro-patch": {
+    title: "Custom Embroidered Flag Velcro Patch",
+    image: "assets/images/custom-embroidered-flag-velcro-patch.webp",
+    alt: "Custom embroidered flag patch with Velcro backing",
+    categoryLabel: "Patches",
+    categoryHref: "/products/custom-patches",
+    material: "Polyester fiber, twill fabric, cotton, silk, non-woven fabric or dyed fabric options",
+    process: "Embroidery with stitched border and hook-and-loop backing option",
+    sku: "UP-PATCH-008",
+    usage: "Uniforms, bags, outdoor gear, tactical gear and team apparel",
+    categories: "Patches, Embroidered Patches, Velcro Patches",
+    quoteProduct: "Patches",
+    lead: "This custom embroidered flag Velcro patch pairs a bright flag front with hook-and-loop backing for uniforms, bags, outdoor gear, tactical gear and team apparel."
+  },
+  "custom-embroidered-nabi-letter-patch": {
+    title: "Custom Embroidered NABI Letter Patch",
+    image: "assets/images/custom-embroidered-nabi-letter-patch.webp",
+    alt: "Custom embroidered NABI letter patch",
+    categoryLabel: "Patches",
+    categoryHref: "/products/custom-patches",
+    material: "Polyester fiber, twill fabric, cotton, silk, non-woven fabric or dyed fabric options",
+    process: "Embroidery with shaped letter artwork and stitched border",
+    sku: "UP-PATCH-009",
+    usage: "School apparel, teams, jackets, bags and branded merchandise",
+    categories: "Patches, Embroidered Patches, Letter Patches",
+    quoteProduct: "Patches",
+    lead: "This custom embroidered NABI letter patch uses oversized letter artwork, layered color stitching and a shaped border for school apparel, teams, jackets, bags and branded merchandise."
+  },
+  "custom-metal-dog-tag": {
+    title: "Custom Metal Dog Tag",
+    image: "assets/images/custom-metal-dog-tag.webp",
+    alt: "Custom metal dog tag set with engraved pet names",
+    categoryLabel: "Others",
+    categoryHref: "/products/others",
+    material: "Stainless steel, brass, aluminum or zinc alloy",
+    process: "Laser engraving, stamping, plating and polishing",
+    sku: "UP-OTH-001",
+    usage: "Pet accessories, retail gifts, promotional merchandise and personalized tags",
+    categories: "Others, Dog Tags, Pet Tags",
+    quoteProduct: "Others",
+    lead: "This custom metal dog tag can be made in personalized bone, round or special shapes with engraved names, icons and logo artwork for pet accessories, retail gifts, promotional merchandise and custom tag projects."
+  },
+  "custom-silicone-planet-qr-dog-tag": {
+    title: "Custom Silicone Planet QR Dog Tag",
+    image: "assets/images/custom-silicone-planet-qr-dog-tag.webp",
+    alt: "Custom silicone planet QR dog tag",
+    categoryLabel: "Others",
+    categoryHref: "/products/others",
+    material: "Silicone rubber",
+    process: "Silicone molding, color filling and QR code printing",
+    sku: "UP-OTH-002",
+    usage: "Pet ID tags, collars, safety tags, retail gifts and custom pet accessories",
+    categories: "Others, Silicone Dog Tags, Pet Tags",
+    quoteProduct: "Others",
+    lead: "This custom silicone planet QR dog tag uses a soft rubber body, raised planet artwork and QR-code ready back design for pet ID tags, collars, safety tags, retail gifts and custom pet accessories."
+  },
+  "custom-silicone-bone-qr-dog-tag": {
+    title: "Custom Silicone Bone QR Dog Tag",
+    image: "assets/images/custom-silicone-bone-qr-dog-tag.webp",
+    alt: "Custom silicone bone QR dog tag",
+    categoryLabel: "Others",
+    categoryHref: "/products/others",
+    material: "Silicone rubber",
+    process: "Silicone molding, color filling and QR code printing",
+    sku: "UP-OTH-003",
+    usage: "Pet ID tags, collars, rescue tags, retail gifts and brand merchandise",
+    categories: "Others, Silicone Dog Tags, Pet Tags",
+    quoteProduct: "Others",
+    lead: "This custom silicone bone QR dog tag combines a classic bone shape, raised color artwork and QR-code ready surface for pet ID tags, collars, rescue tags, retail gifts and brand merchandise."
+  },
+  "custom-silicone-rocket-qr-dog-tag": {
+    title: "Custom Silicone Rocket QR Dog Tag",
+    image: "assets/images/custom-silicone-rocket-qr-dog-tag.webp",
+    alt: "Custom silicone rocket QR dog tag",
+    categoryLabel: "Others",
+    categoryHref: "/products/others",
+    material: "Silicone rubber",
+    process: "Silicone molding, color filling and QR code printing",
+    sku: "UP-OTH-004",
+    usage: "Pet ID tags, collars, safety tags, retail gifts and novelty pet accessories",
+    categories: "Others, Silicone Dog Tags, Pet Tags",
+    quoteProduct: "Others",
+    lead: "This custom silicone rocket QR dog tag uses a playful rocket shape, soft rubber relief and QR-code ready backing for pet ID tags, collars, safety tags, retail gifts and novelty pet accessories."
+  },
+  "custom-silicone-sausage-dog-tag": {
+    title: "Custom Silicone Sausage Dog Tag",
+    image: "assets/images/custom-silicone-sausage-dog-tag.webp",
+    alt: "Custom silicone sausage dog tag",
+    categoryLabel: "Others",
+    categoryHref: "/products/others",
+    material: "Silicone rubber",
+    process: "Silicone molding, color filling and QR code printing",
+    sku: "UP-OTH-005",
+    usage: "Pet ID tags, collars, breed-themed gifts and custom pet accessories",
+    categories: "Others, Silicone Dog Tags, Pet Tags",
+    quoteProduct: "Others",
+    lead: "This custom silicone sausage dog tag features a soft rubber silhouette, layered color details and QR-code ready backing for pet ID tags, collars, breed-themed gifts and custom pet accessories."
+  },
+  "custom-silicone-pink-bone-dog-tag": {
+    title: "Custom Silicone Pink Bone Dog Tag",
+    image: "assets/images/custom-silicone-pink-bone-dog-tag.webp",
+    alt: "Custom silicone pink bone dog tag with pet name and phone number",
+    categoryLabel: "Others",
+    categoryHref: "/products/others",
+    material: "Silicone rubber",
+    process: "Silicone molding, color filling and printed personalization",
+    sku: "UP-OTH-006",
+    usage: "Pet ID tags, collars, personalized gifts, retail sets and pet accessories",
+    categories: "Others, Silicone Dog Tags, Pet Tags",
+    quoteProduct: "Others",
+    lead: "This custom silicone pink bone dog tag supports personalized names, phone numbers and color options in a soft rubber tag format for pet ID tags, collars, personalized gifts, retail sets and pet accessories."
   }
 };
 
@@ -3004,7 +3186,21 @@ const getCustomSolutionProfile = (item) => {
       size: "Custom molded size based on character artwork and intended use.",
       thickness: "Custom molded thickness based on character relief and flexibility.",
       accessories: "Magnet backing, key ring, hanging loop, backing card or retail package.",
-      packaging: "OPP bag, backing card, retail card or gift packaging available."
+      packaging: "OPP bag, backing card, retail card or gift packaging available.",
+      sampleLeadTime: productType === "Keychains" ? "3-5 working days" : profile.sampleLeadTime,
+      productionLeadTime: productType === "Keychains" ? "8-15 working days" : profile.productionLeadTime
+    };
+  }
+
+  if (text.includes("dog tag")) {
+    return {
+      ...profile,
+      material: item.material || "Stainless steel, brass, aluminum or zinc alloy selected by design.",
+      process: item.process || "Laser engraving, stamping, plating and polishing.",
+      size: "Custom bone, round, rectangle or special shape based on artwork and use.",
+      thickness: "Commonly 1.0-2.0 mm, adjusted for metal material, engraving depth and tag size.",
+      accessories: "Split ring, chain, clasp, gift card or retail packaging options.",
+      packaging: "OPP bag as standard; backing card, gift box or retail-ready packaging available."
     };
   }
 

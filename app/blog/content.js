@@ -328,7 +328,7 @@ export const blogHtml = String.raw`
           <li>How will the coin be presented, carried or displayed?</li>
         </ol>
         <p>The answers determine what belongs on the coin. A retirement coin may need dates and a personal message; an anniversary coin may emphasize heritage. Spelling, names, dates and artwork authorization should always be confirmed.</p>
-        <p>For organizations planning <a href="https://uccrafts.com/products/custom-challenge-coins">custom challenge coins</a>, the useful starting information is the recipient group, occasion, required wording, approved artwork and quantity. Manufacturing choices can follow after the message is clear.</p>
+        <p>For organizations planning <a href="https://uccrafts.com/products/custom-challenge-coins">custom challenge coins</a>, the useful starting information is the recipient group, occasion, required wording, approved artwork and quantity. Manufacturing choices can follow after the message is clear; if those production details are still open, review <a href="/blog/how-custom-challenge-coins-are-made">how custom challenge coins are made</a>.</p>
 
         <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
         <h3 id="faq-receiving-meaning">What does receiving a military challenge coin mean?</h3>
@@ -1144,7 +1144,7 @@ export const blogHtml = String.raw`
         <h2>Step 1 - Submit Your Design or Idea</h2>
         <p>The process starts when the customer sends a logo, badge, sketch, text, reference image, or rough concept. Some buyers already have a clean vector file. Others begin with a screenshot, department emblem, event name, or hand-drawn idea that needs to be rebuilt before production.</p>
         <p>At this stage, a custom challenge coin manufacturer is not simply redrawing a file. The artwork must be adjusted for raised metal lines, recessed color areas, coin edge, back-side layout, tooling depth, and the selected metal finish.</p>
-        <p>The application also matters. A military recognition coin, police department coin, corporate anniversary coin, and collector coin may need different choices for finish, presentation box, color contrast, and delivery timing. A coin used at a formal ceremony, for example, usually needs more attention to box presentation and surface consistency than a simple giveaway order.</p>
+        <p>The application also matters. A military recognition coin, police department coin, corporate anniversary coin, and collector coin may need different choices for finish, presentation box, color contrast, and delivery timing. A coin used at a formal ceremony, for example, usually needs more attention to box presentation and surface consistency than a simple giveaway order. For service recognition projects, review <a href="/blog/military-challenge-coin-traditions">challenge coin traditions, meaning and etiquette</a> before finalizing the presentation plan.</p>
         <figure class="blog-article-image blog-article-contain-image">
           <img src="/assets/images/blog-challenge-coin-artwork-proof.webp" alt="custom challenge coin artwork proof prepared on design software before production">
           <figcaption>Production artwork should define the coin size, front and back design, color references, finish and manufacturing notes before tooling begins.</figcaption>

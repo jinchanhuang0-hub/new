@@ -269,6 +269,19 @@ export const productItemCategoryKey = {
   "city-landmark-souvenir-fridge-magnet": "magnets",
   "custom-woven-dragon-round-patch": "patchs",
   "custom-embroidered-cartoon-character-patch": "patchs",
+  "custom-embroidered-death-patch": "patchs",
+  "custom-embroidered-squadron-patch": "patchs",
+  "custom-embroidered-taco-logo-patch": "patchs",
+  "custom-embroidered-army-wing-patch": "patchs",
+  "custom-embroidered-spain-flag-patch": "patchs",
+  "custom-embroidered-flag-velcro-patch": "patchs",
+  "custom-embroidered-nabi-letter-patch": "patchs",
+  "custom-metal-dog-tag": "others",
+  "custom-silicone-planet-qr-dog-tag": "others",
+  "custom-silicone-bone-qr-dog-tag": "others",
+  "custom-silicone-rocket-qr-dog-tag": "others",
+  "custom-silicone-sausage-dog-tag": "others",
+  "custom-silicone-pink-bone-dog-tag": "others",
 };
 
 const DEFAULT_BLOG_AUTHOR = "Sunny Huang";

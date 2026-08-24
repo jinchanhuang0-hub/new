@@ -16,6 +16,7 @@ export const productCardCategoryOrder = [
   "cufflinks-tieclips",
   "magnets",
   "patchs",
+  "others",
 ];
 
 const escapeHtml = (value = "") => String(value)
@@ -48,6 +49,22 @@ const compareKeychainEntriesByMaterialPriority = (entryA, entryB) => {
 const patchProductPriority = {
   "custom-woven-dragon-round-patch": 1,
   "custom-embroidered-cartoon-character-patch": 2,
+  "custom-embroidered-death-patch": 3,
+  "custom-embroidered-squadron-patch": 4,
+  "custom-embroidered-taco-logo-patch": 5,
+  "custom-embroidered-army-wing-patch": 6,
+  "custom-embroidered-spain-flag-patch": 7,
+  "custom-embroidered-flag-velcro-patch": 8,
+  "custom-embroidered-nabi-letter-patch": 9,
+};
+
+const otherProductPriority = {
+  "custom-metal-dog-tag": 1,
+  "custom-silicone-planet-qr-dog-tag": 2,
+  "custom-silicone-bone-qr-dog-tag": 3,
+  "custom-silicone-rocket-qr-dog-tag": 4,
+  "custom-silicone-sausage-dog-tag": 5,
+  "custom-silicone-pink-bone-dog-tag": 6,
 };
 
 const comparePatchEntriesByDisplayPriority = (entryA, entryB) => {
@@ -58,12 +75,22 @@ const comparePatchEntriesByDisplayPriority = (entryA, entryB) => {
   return priorityDiff || compareProductEntriesBySkuDesc(entryA, entryB);
 };
 
+const compareOtherEntriesByDisplayPriority = (entryA, entryB) => {
+  const priorityDiff =
+    (otherProductPriority[entryA[0]] || 999) -
+    (otherProductPriority[entryB[0]] || 999);
+
+  return priorityDiff || compareProductEntriesBySkuDesc(entryA, entryB);
+};
+
 const getProductEntriesForCategory = (categoryKey) => {
   const sorter =
     categoryKey === "keychains"
       ? compareKeychainEntriesByMaterialPriority
       : categoryKey === "patchs"
       ? comparePatchEntriesByDisplayPriority
+      : categoryKey === "others"
+      ? compareOtherEntriesByDisplayPriority
       : compareProductEntriesBySkuDesc;
 
   return Object.entries(productItems)
@@ -166,7 +193,7 @@ export const getAllProductCount = () => getAllProductEntries().length;
 export const replaceProductTypeSectionCards = (html, categoryKey, options = {}) =>
   html.replace(
     new RegExp(
-      `(<section class="product-type-section" data-product-content="${categoryKey}"(?: hidden)?>[\\s\\S]*?<div class="product-type-grid(?: compact)?">\\s*)[\\s\\S]*?(\\s*<\\/div>\\s*<\\/div>\\s*<\\/section>)`
+      `(<section class="product-type-section" data-product-content="${categoryKey}"(?: hidden)?>[\\s\\S]*?<div class="product-type-grid[^"]*">\\s*)[\\s\\S]*?(\\s*<\\/div>\\s*<\\/div>\\s*<\\/section>)`
     ),
     `$1${renderProductTypeCards(categoryKey, options)}$2`
   );
