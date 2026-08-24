@@ -3,7 +3,12 @@ import BlogArticleRepair from "./BlogArticleRepair";
 import JsonLd from "../../components/JsonLd";
 import { blogHtml } from "../content";
 import { buildBlogArticleHtml } from "../../lib/htmlSections";
-import { blogArticles, normalizeSiteHtml, SITE_URL } from "../../lib/siteRoutes";
+import {
+  blogArticles,
+  buildBlogAuthorSchema,
+  normalizeSiteHtml,
+  SITE_URL,
+} from "../../lib/siteRoutes";
 
 export const dynamicParams = false;
 
@@ -60,13 +65,7 @@ export default async function BlogArticlePage({ params }) {
           datePublished: article.datePublished,
           dateModified: article.dateModified || article.datePublished,
           mainEntityOfPage: `${SITE_URL}/blog/${slug}`,
-          author: {
-            "@type": article.authorType || "Organization",
-            name: article.author || "Unique Pin",
-            ...(article.authorUrl
-              ? { url: new URL(article.authorUrl, SITE_URL).toString() }
-              : {}),
-          },
+          author: buildBlogAuthorSchema(article),
           publisher: {
             "@type": "Organization",
             name: "Unique Pin",

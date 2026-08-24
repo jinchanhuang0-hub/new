@@ -284,7 +284,10 @@ export const productItemCategoryKey = {
   "custom-silicone-pink-bone-dog-tag": "others",
 };
 
-const DEFAULT_BLOG_AUTHOR = "Sunny Huang";
+export const DEFAULT_BLOG_AUTHOR_SCHEMA = {
+  "@type": "Person",
+  name: "Sunny Huang",
+};
 
 const getTodayInShanghai = () =>
   new Intl.DateTimeFormat("en-CA", {
@@ -298,10 +301,26 @@ const withBlogArticleDefaults = (article) => {
   const datePublished = article.datePublished || getTodayInShanghai();
 
   return {
-    author: DEFAULT_BLOG_AUTHOR,
+    author: DEFAULT_BLOG_AUTHOR_SCHEMA.name,
+    authorType: DEFAULT_BLOG_AUTHOR_SCHEMA["@type"],
     ...article,
     datePublished,
     dateModified: article.dateModified || datePublished,
+  };
+};
+
+export const buildBlogAuthorSchema = (article = {}) => {
+  const authorName = article.author || DEFAULT_BLOG_AUTHOR_SCHEMA.name;
+  const authorType = authorName === DEFAULT_BLOG_AUTHOR_SCHEMA.name
+    ? DEFAULT_BLOG_AUTHOR_SCHEMA["@type"]
+    : article.authorType || DEFAULT_BLOG_AUTHOR_SCHEMA["@type"];
+
+  return {
+    "@type": authorType,
+    name: authorName,
+    ...(article.authorUrl
+      ? { url: new URL(article.authorUrl, SITE_URL).toString() }
+      : {}),
   };
 };
 

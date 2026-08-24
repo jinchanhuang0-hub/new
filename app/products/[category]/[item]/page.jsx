@@ -40,6 +40,35 @@ export async function generateMetadata({ params }) {
   };
 }
 
+const toAbsoluteSiteUrl = (path) =>
+  new URL(path.startsWith("/") ? path : `/${path}`, SITE_URL).toString();
+
+const buildProductJsonLd = (item, itemSlug) => {
+  const pageUrl = `${SITE_URL}${getProductPath(itemSlug, item)}`;
+  const productJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: item.title,
+    description: item.lead,
+    image: [toAbsoluteSiteUrl(item.image)],
+    url: pageUrl,
+    mainEntityOfPage: pageUrl,
+    category: item.categoryLabel,
+    brand: {
+      "@type": "Brand",
+      name: "Unique Pin",
+    },
+    manufacturer: {
+      "@type": "Organization",
+      name: "Zhongshan Unique Metal Gift Co., Ltd.",
+    },
+  };
+
+  if (item.sku) productJsonLd.sku = item.sku;
+
+  return productJsonLd;
+};
+
 export default async function ProductItemPage({ params }) {
   const { category, item: itemSlug } = await params;
   const item = productItems[itemSlug];
@@ -85,6 +114,7 @@ export default async function ProductItemPage({ params }) {
           ],
         }}
       />
+      <JsonLd data={buildProductJsonLd(item, itemSlug)} />
       <StaticPage html={renderProductItemHtml(item, itemSlug)} />
     </>
   );
