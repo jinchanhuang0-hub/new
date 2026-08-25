@@ -4,6 +4,7 @@ const navItems = [
   { key: "custom", href: "/custom", label: "Custom" },
   { key: "about", href: "/about", label: "About Us" },
   { key: "blog", href: "/blog", label: "Blog" },
+  { key: "faq", href: "/faq", label: "FAQ" },
   { key: "contact", href: "/contact", label: "Contact Us" },
 ];
 

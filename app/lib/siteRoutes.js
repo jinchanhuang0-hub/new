@@ -325,6 +325,18 @@ export const buildBlogAuthorSchema = (article = {}) => {
 };
 
 const blogArticleData = {
+  "uses-for-custom-patches": {
+    title: "11 Creative and Practical Uses for Custom Patches",
+    headline: "11 Creative and Practical Uses for Custom Patches",
+    description:
+      "Discover 11 practical and creative uses for custom patches on clothing, uniforms, hats, bags, event merchandise, wedding gifts, home decor and packaging.",
+    author: "Sunny Huang",
+    authorType: "Person",
+    datePublished: "2026-08-25",
+    dateModified: "2026-08-25",
+    image: "/assets/images/common-uses-for-custom-patches.webp",
+    schemaType: "Article",
+  },
   "how-many-race-medals-to-order": {
     title: "How Many Race Medals Should You Order? Quantity Guide",
     headline: "How Many Race Medals Should You Order? A Practical Calculator for Race Directors",
