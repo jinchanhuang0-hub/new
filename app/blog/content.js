@@ -347,7 +347,7 @@ export const blogHtml = String.raw`
           <li>How will the coin be presented, carried or displayed?</li>
         </ol>
         <p>The answers determine what belongs on the coin. A retirement coin may need dates and a personal message; an anniversary coin may emphasize heritage. Spelling, names, dates and artwork authorization should always be confirmed.</p>
-        <p>For organizations planning <a href="https://uccrafts.com/products/custom-challenge-coins">custom challenge coins</a>, the useful starting information is the recipient group, occasion, required wording, approved artwork and quantity. Manufacturing choices can follow after the message is clear; if those production details are still open, review <a href="/blog/how-custom-challenge-coins-are-made">how custom challenge coins are made</a>.</p>
+        <p>For organizations planning <a href="/products/custom-challenge-coins">custom challenge coins</a>, the useful starting information is the recipient group, occasion, required wording, approved artwork and quantity. Manufacturing choices can follow after the message is clear; if those production details are still open, review <a href="/blog/how-custom-challenge-coins-are-made">how custom challenge coins are made</a>.</p>
 
         <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
         <h3 id="faq-receiving-meaning">What does receiving a military challenge coin mean?</h3>
@@ -379,10 +379,9 @@ export const blogHtml = String.raw`
 
         <nav class="blog-related-links" aria-label="Related buyer guides">
           <strong>Related buyer guides</strong>
-          <a href="https://uccrafts.com/products/custom-challenge-coins">custom challenge coins</a>
-          <a href="https://uccrafts.com/products/custom-challenge-coins">challenge coin types</a>
-          <a href="https://uccrafts.com/blog/challenge-coin-size-guide">challenge coin size and thickness guide</a>
-          <a href="https://uccrafts.com/blog/custom-medals-vs-challenge-coins">custom medals vs challenge coins</a>
+          <a href="/products/custom-challenge-coins">custom challenge coins</a>
+          <a href="/blog/challenge-coin-size-guide">challenge coin size and thickness guide</a>
+          <a href="/blog/custom-medals-vs-challenge-coins">custom medals vs challenge coins</a>
         </nav>
         </div>
         </div>
@@ -769,7 +768,7 @@ export const blogHtml = String.raw`
             <li>Sponsor logo or personalization details</li>
           </ul>
           <p>If the design is not final, send the event story and reference images first. A factory can suggest whether the medal should be round, custom-shaped, antique plated, color-filled, printed or made with 3D relief.</p>
-          <p>For buyers comparing recognition products, our <a href="/blog/custom-medals-vs-challenge-coins">custom medals vs challenge coins</a> guide explains when medals fit ceremony awards and when coins fit sponsor gifts or collectible recognition. You can also browse finished <a href="/products/custom-medals">custom medals</a> before finalizing size, finish and ribbon direction. If you are still building the product plan, the <a href="/blog/custom-metal-crafts-guide">custom metal crafts guide</a> may also help. For event teams working from registration forecasts, use our guide to <a href="/blog/how-many-race-medals-to-order">race medal quantity planning</a>.</p>
+          <p>For buyers comparing recognition products, our <a href="/blog/custom-medals-vs-challenge-coins">custom medals vs challenge coins</a> guide explains when medals fit ceremony awards and when coins fit sponsor gifts or collectible recognition. If your award policy is still being defined, compare <a href="/blog/finisher-medals-vs-placement-medals">finisher medals vs placement medals</a> before finalizing distance and award categories. You can also browse finished <a href="/products/custom-medals">custom medals</a> before finalizing size, finish and ribbon direction. If you are still building the product plan, the <a href="/blog/custom-metal-crafts-guide">custom metal crafts guide</a> may also help. For event teams working from registration forecasts, use our guide to <a href="/blog/how-many-race-medals-to-order">race medal quantity planning</a>.</p>
 
           <a id="faq"></a>
           <h2>Frequently Asked Questions</h2>
@@ -1395,7 +1394,7 @@ export const blogHtml = String.raw`
           <h1>How Are Custom Challenge Coins Made?</h1>
           <p>Custom challenge coins are made through a controlled manufacturing process that turns a logo, badge, sketch, or idea into a finished metal coin. For buyers, the useful part is not only knowing the steps. It is knowing which details must be confirmed before tooling starts, because unclear artwork, weak relief, color mistakes, and late packaging changes can all affect the final order.</p>
           <p>This guide explains the challenge coin manufacturing process from artwork preparation and digital proofing to tooling, die-striking or die-casting, finishing, color filling, final inspection, and shipment preparation. Each step has a practical effect on weight, surface detail, color clarity, delivery planning, and the way the finished coin is presented to the recipient.</p>
-          <p>For related buying decisions, review our <a href="/blog/2d-vs-3d-challenge-coins">2D vs 3D challenge coin comparison</a>, <a href="/products/custom-challenge-coins#challenge-coin-types">challenge coin types</a>, <a href="/products/custom-challenge-coins">custom challenge coins</a> page, <a href="/blog/custom-metal-crafts-guide">custom metal crafts guide</a>, and <a href="/blog/custom-medals-vs-challenge-coins">custom medals vs challenge coins</a> comparison.</p>
+          <p>For related buying decisions, review our <a href="/blog/2d-vs-3d-challenge-coins">2D vs 3D challenge coin comparison</a>, <a href="/products/custom-challenge-coins">custom challenge coins</a> page, <a href="/blog/custom-metal-crafts-guide">custom metal crafts guide</a>, and <a href="/blog/custom-medals-vs-challenge-coins">custom medals vs challenge coins</a> comparison.</p>
           <figure class="blog-article-image blog-article-hero-image">
             <img src="/assets/images/blog-how-challenge-coins-made-hero.webp" width="1600" height="759" alt="three custom challenge coins with blue red and gold enamel finishes">
             <figcaption>Finished custom challenge coins can combine raised metal relief, enamel color and antique finishes.</figcaption>
@@ -1405,7 +1404,7 @@ export const blogHtml = String.raw`
         <h2>Step 1 - Submit Your Design or Idea</h2>
         <p>The process starts when the customer sends a logo, badge, sketch, text, reference image, or rough concept. Some buyers already have a clean vector file. Others begin with a screenshot, department emblem, event name, or hand-drawn idea that needs to be rebuilt before production.</p>
         <p>At this stage, a custom challenge coin manufacturer is not simply redrawing a file. The artwork must be adjusted for raised metal lines, recessed color areas, coin edge, back-side layout, tooling depth, and the selected metal finish.</p>
-        <p>The application also matters. A military recognition coin, police department coin, corporate anniversary coin, and collector coin may need different choices for finish, presentation box, color contrast, and delivery timing. A coin used at a formal ceremony, for example, usually needs more attention to box presentation and surface consistency than a simple giveaway order. For service recognition projects, review <a href="/blog/military-challenge-coin-traditions">challenge coin traditions, meaning and etiquette</a> before finalizing the presentation plan.</p>
+        <p>The application also matters. A military recognition coin, police department coin, corporate anniversary coin, and collector coin may need different choices for finish, presentation box, color contrast, and delivery timing. A coin used at a formal ceremony, for example, usually needs more attention to box presentation and surface consistency than a simple giveaway order. For service recognition projects, review <a href="/blog/military-challenge-coin-traditions">military challenge coin traditions and etiquette</a> before finalizing the presentation plan.</p>
         <figure class="blog-article-image blog-article-contain-image">
           <img src="/assets/images/blog-challenge-coin-artwork-proof.webp" alt="custom challenge coin artwork proof prepared on design software before production">
           <figcaption>Production artwork should define the coin size, front and back design, color references, finish and manufacturing notes before tooling begins.</figcaption>
@@ -2190,7 +2189,7 @@ export const blogHtml = String.raw`
             <figcaption>Finisher and placement medals prepared for race-day award distribution.</figcaption>
           </figure>
           <p>Should every participant receive a medal, or should medals be reserved for the fastest athletes?</p>
-          <p>Race directors rarely use one rule for every event. Finisher medals recognize completion, while placement medals recognize competitive results. Many races use both, but the right structure depends on the event's purpose, participant expectations, categories and budget. It also affects registration information, order quantities, medal wording and race-day distribution. This guide explains how to build a clear policy without treating one approach as universal.</p>
+          <p>Race directors rarely use one rule for every event. A finisher medal recognizes an athlete for completing an event, while a placement medal recognizes a competitive result such as first, second or third place. Some events use both, while others also include age-group awards. The right structure depends on the event's purpose, participant expectations, categories and budget. It also affects registration information, order quantities, medal wording and race-day distribution. This guide explains how to build a clear policy without treating one approach as universal.</p>
         </header>
 
         <h2 id="what-is-the-difference-between-finisher-and-placement-medals">What Is the Difference Between Finisher and Placement Medals?</h2>
@@ -2278,7 +2277,7 @@ export const blogHtml = String.raw`
           <li>Make wording such as <code>FINISHER</code>, <code>1ST PLACE</code> or <code>AGE GROUP</code> readable.</li>
           <li>Avoid so many minor variations that volunteers cannot sort them quickly.</li>
         </ul>
-        <p>A finisher medal should still feel earned; the point is to make each award match the achievement it represents. For physical specifications, use the <a href="https://uccrafts.com/blog/custom-marathon-medals-guide">marathon medal size, ribbon and finish guide</a>.</p>
+        <p>A finisher medal should still feel earned; the point is to make each award match the achievement it represents. For physical specifications, use the <a href="/blog/custom-marathon-medals-guide">marathon medal size, ribbon and finish guide</a>.</p>
 
         <h2 id="how-many-medals-should-an-event-order">How Many Medals Should an Event Order?</h2>
         <p>Start with the award policy and calculate each group separately.</p>
@@ -2323,6 +2322,7 @@ export const blogHtml = String.raw`
         <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
         <div class="blog-faq">
           <details open><summary>Do you get a medal for completing a 5K?</summary><p>It depends on the event. Many charity, themed and community 5Ks provide finisher medals, while some competitive or low-cost races reserve awards for leading finishers. Check the registration page.</p></details>
+          <details><summary>What does a finisher medal mean?</summary><p>A finisher medal represents the completion of a defined event or distance. It recognizes effort and achievement rather than competitive rank.</p></details>
           <details><summary>What is the difference between a finisher medal and a participation medal?</summary><p>A finisher medal recognizes completion of a defined challenge. A participation medal recognizes taking part and may not require completion. The wording should match the eligibility rules.</p></details>
           <details><summary>Can a runner receive both an overall and an age-group award?</summary><p>Some events allow both awards; others move the age-group award to the next eligible athlete. Publish the rule before results are calculated.</p></details>
           <details><summary>Should runners who do not finish receive a medal?</summary><p>There is no universal rule. Eligibility for a finisher medal should match the event's published definition of finishing. Other participants may have a separate recognition policy.</p></details>
@@ -2331,7 +2331,7 @@ export const blogHtml = String.raw`
 
         <h2 id="conclusion">Conclusion</h2>
         <p>The real decision is not simply finisher medals vs placement medals; it is what the event wants to recognize. When eligibility, award hierarchy, quantities and distribution agree, participants understand what they have earned and staff can deliver the right award at the right moment.</p>
-        <p>If your award structure is already defined, explore <a href="https://uccrafts.com/products/custom-medals">custom medals</a> or send our team the event type, participant categories, quantities, artwork status and required delivery date for a project review.</p>
+        <p>If your award structure is already defined, explore <a href="/products/custom-medals">custom medals for races and sports events</a> or send our team the event type, participant categories, quantities, artwork status and required delivery date for a project review.</p>
         </div>
       </div>
     </article>

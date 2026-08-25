@@ -392,6 +392,38 @@ const blogArticleData = {
     dateModified: "2026-08-24",
     image: "/assets/images/finisher-vs-placement-medals-og.webp",
     schemaType: "Article",
+    faq: [
+      {
+        question: "Do you get a medal for completing a 5K?",
+        answer:
+          "It depends on the event. Many charity, themed and community 5Ks provide finisher medals, while some competitive or low-cost races reserve awards for leading finishers. Check the registration page.",
+      },
+      {
+        question: "What does a finisher medal mean?",
+        answer:
+          "A finisher medal represents the completion of a defined event or distance. It recognizes effort and achievement rather than competitive rank.",
+      },
+      {
+        question: "What is the difference between a finisher medal and a participation medal?",
+        answer:
+          "A finisher medal recognizes completion of a defined challenge. A participation medal recognizes taking part and may not require completion. The wording should match the eligibility rules.",
+      },
+      {
+        question: "Can a runner receive both an overall and an age-group award?",
+        answer:
+          "Some events allow both awards; others move the age-group award to the next eligible athlete. Publish the rule before results are calculated.",
+      },
+      {
+        question: "Should runners who do not finish receive a medal?",
+        answer:
+          "There is no universal rule. Eligibility for a finisher medal should match the event's published definition of finishing. Other participants may have a separate recognition policy.",
+      },
+      {
+        question: "How many race medals should an organizer order?",
+        answer:
+          "Calculate finisher, placement, age-group and team medals separately using registration data, event history, category rules, eligible rosters and an approved reserve.",
+      },
+    ],
   },
   "military-challenge-coin-traditions": {
     title: "Military Challenge Coin Traditions, Meaning and Etiquette",

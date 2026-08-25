@@ -163,7 +163,7 @@ export const customMetalKeychainMaterialsArticleHtml = String.raw`
             <li>Total shipment weight.</li>
           </ul>
           <p>Hardware selection and assembly planning should confirm the split ring size, wire diameter, jump ring, chain or swivel, connection method and final orientation. A heavy metal body paired with undersized hardware can reduce the reliability of the complete product.</p>
-          <p>For a more detailed comparison of body dimensions, finished length and hardware options, read our <a href="/blog/custom-metal-keychain-size-attachment-guide">custom metal keychain size, thickness and attachment guide</a>.</p>
+          <p>For a more detailed comparison of body dimensions, finished length and hardware choices, read about <a href="/blog/custom-metal-keychain-size-attachment-guide">keychain size and attachment options</a>.</p>
           <p>The approved proof or purchase specification should also identify plating color, gloss level, antique treatment, enamel colors and any protective coating.</p>
           <figure class="blog-article-image blog-article-natural-image">
             <img src="/assets/images/metal-keychain-material-details.webp" width="1200" height="800" loading="lazy" decoding="async" alt="Metal keychain and bottle opener samples in silver, brass and polished finishes">
