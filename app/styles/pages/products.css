@@ -309,6 +309,30 @@
 }
 
 @media (min-width: 1440px) {
+  .product-type-hero-section[data-product-hero="bottle-openers"] .product-type-head {
+    max-width: 680px;
+  }
+
+  .product-type-hero-section[data-product-hero="bottle-openers"] .product-type-head h1 {
+    text-wrap: nowrap;
+  }
+
+  .product-type-hero-section[data-product-hero="keychains"] .product-type-head {
+    max-width: 720px;
+  }
+
+  .product-type-hero-section[data-product-hero="keychains"] .product-type-head h1 {
+    text-wrap: nowrap;
+  }
+
+  .product-type-hero-section[data-product-hero="magnets"] .product-type-head {
+    max-width: 700px;
+  }
+
+  .product-type-hero-section[data-product-hero="magnets"] .product-type-head h1 {
+    text-wrap: nowrap;
+  }
+
   .product-type-hero-section[data-product-hero="coins"] .product-type-head {
     max-width: 760px;
   }

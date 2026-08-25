@@ -64,7 +64,7 @@ export const productDetailHtml = String.raw`
   <main class="product-types-page" id="custom-details">
     <section class="product-type-section" data-product-content="pins">
       <div class="container product-type-content">
-        <div class="product-type-head"><h1>Custom Enamel Pins</h1><p>Choose from soft enamel, hard enamel, die struck, printed and specialty enamel pin styles for brand promotion, events, clubs and retail programs.</p></div>
+        <div class="product-type-head"><h1>Custom Enamel Pins</h1><p>Explore custom enamel pins for brand promotions, events, clubs, retail programs and collectible projects. Choose from soft enamel, hard enamel, die-struck, printed and specialty styles, with multiple plating, color and attachment options.</p></div>
         ${productCategoryNavHtml({ active: "pins", variant: "inline" })}
         <div class="product-type-grid">
           <article class="product-type-card"><img src="assets/images/type-pins-yellow-character.jpg" alt="Yellow character hard enamel pin"><h2>Yellow Character Hard Enamel Pin</h2><div class="product-type-actions"><a class="product-type-btn product-type-btn-outline" href="/products/custom-enamel-pins/yellow-character-hard-enamel-pin">View More</a><a class="product-type-btn product-type-btn-primary" href="/contact">GET QUOTE NOW</a></div></article>
@@ -79,7 +79,7 @@ export const productDetailHtml = String.raw`
 
     <section class="product-type-section" data-product-content="medals" hidden>
       <div class="container product-type-content">
-        <div class="product-type-head"><h1>Custom Medals</h1><p>Custom medals for sports competitions, school awards, corporate recognition, charity events and commemorative programs.</p></div>
+        <div class="product-type-head"><h1>Custom Medals</h1><p>Explore custom medals for races, sports competitions, school awards, corporate recognition, charity events and commemorative programs. Choose from custom shapes, 2D or 3D relief, enamel colors, plating finishes and personalized ribbons.</p></div>
         ${productCategoryNavHtml({ active: "medals", variant: "inline" })}
         <div class="product-type-grid">
           <article class="product-type-card"><img src="assets/images/type-medals-sports.png" alt="Custom sports medals"><h2>Silver Basketball Sports Medal with Ribbon</h2><div class="product-type-actions"><a class="product-type-btn product-type-btn-outline" href="/products/custom-medals/silver-basketball-sports-medal-with-ribbon">View More</a><a class="product-type-btn product-type-btn-primary" href="/contact">GET QUOTE NOW</a></div></article>
@@ -92,7 +92,7 @@ export const productDetailHtml = String.raw`
 
     <section class="product-type-section" data-product-content="coins" hidden>
       <div class="container product-type-content">
-        <div class="product-type-head"><h1>Custom Challenge Coins</h1><p>Challenge coins and commemorative coins for military units, public service organizations, corporate teams and collector programs. Not sure how to turn artwork into production-ready specifications? Review <a href="/blog/how-custom-challenge-coins-are-made">how challenge coins are made</a>, then explore <a href="/blog/military-challenge-coin-traditions">challenge coin traditions, meaning and etiquette</a> before requesting a quote.</p></div>
+        <div class="product-type-head"><h1>Custom Challenge Coins</h1><p>Explore custom challenge coins for military units, public-service organizations, corporate teams, clubs, events and commemorative programs. Choose from 2D or 3D relief, enamel colors, custom edges and multiple plating finishes.</p></div>
         ${productCategoryNavHtml({ active: "coins", variant: "inline" })}
         <div class="product-type-grid">
           <article class="product-type-card"><img src="assets/images/type-coins-3d.jpg" alt="Custom 3D challenge coins"><h2>3D Antique Firefighter Challenge Coins</h2><div class="product-type-actions"><a class="product-type-btn product-type-btn-outline" href="/products/custom-challenge-coins/3d-antique-firefighter-challenge-coins">View More</a><a class="product-type-btn product-type-btn-primary" href="/contact">GET QUOTE NOW</a></div></article>
@@ -105,7 +105,7 @@ export const productDetailHtml = String.raw`
 
     <section class="product-type-section" data-product-content="keychains" hidden>
       <div class="container product-type-content">
-        <div class="product-type-head"><h1>Custom Metal Keychains</h1><p>Create custom metal keychains for promotional campaigns, retail collections, corporate gifts, events and souvenir programs. Share your logo, preferred size, quantity, finish, attachment and packaging needs, and our team will review the artwork, recommend a practical metal construction, and prepare a clear quotation for approval, sampling and production planning support. Not sure which specification fits your project? Review <a href="/blog/custom-metal-keychain-materials">custom metal keychain materials</a>, then use the <a href="/blog/custom-metal-keychain-size-attachment-guide">keychain size, thickness and attachment guide</a> before submitting your artwork.</p></div>
+        <div class="product-type-head"><h1>Custom Metal Keychains</h1><p>Explore custom metal keychains for promotions, retail collections, corporate gifts, events and souvenir programs. Choose from zinc alloy, brass, stainless steel and iron, with custom shapes, enamel colors, plating finishes, attachments and packaging options for small or bulk orders.</p></div>
         ${productCategoryNavHtml({ active: "keychains", variant: "inline" })}
         <div class="product-type-grid">
           <article class="product-type-card"><img src="assets/images/type-keychains-metal.jpg" alt="Custom metal keychains"><h2>Colorful Flower Metal Keychains</h2><div class="product-type-actions"><a class="product-type-btn product-type-btn-outline" href="/products/custom-metal-keychains/colorful-flower-metal-keychains">View More</a><a class="product-type-btn product-type-btn-primary" href="/contact">GET QUOTE NOW</a></div></article>
@@ -118,7 +118,7 @@ export const productDetailHtml = String.raw`
 
     <section class="product-type-section" data-product-content="magnets" hidden>
       <div class="container product-type-content">
-        <div class="product-type-head"><h1>Custom Fridge Magnets</h1><p>Custom fridge magnets for tourist souvenirs, city gifts, event merchandise and retail gift programs.</p></div>
+        <div class="product-type-head"><h1>Custom Fridge Magnets</h1><p>Explore custom fridge magnets for tourist souvenirs, city and destination gifts, event merchandise, promotional campaigns and retail collections. Choose from custom shapes, enamel colors, 2D or 3D relief, printed details and multiple plating finishes.</p></div>
         ${productCategoryNavHtml({ active: "magnets", variant: "inline" })}
         <div class="product-type-grid">
           <article class="product-type-card"><img src="assets/images/type-magnets-enamel.png" alt="Custom enamel fridge magnets"><h2>Ornate Building Enamel Fridge Magnet</h2><div class="product-type-actions"><a class="product-type-btn product-type-btn-outline" href="/products/custom-fridge-magnets/ornate-building-enamel-fridge-magnet">View More</a><a class="product-type-btn product-type-btn-primary" href="/contact">GET QUOTE NOW</a></div></article>
@@ -131,7 +131,7 @@ export const productDetailHtml = String.raw`
 
     <section class="product-type-section" data-product-content="patchs" hidden>
       <div class="container product-type-content">
-        <div class="product-type-head"><h1>Custom Patches</h1><p>Custom patches for uniforms, jackets, bags, clubs, event merchandise and apparel programs. Share your logo, backing requirement, quantity and deadline so our team can recommend the right material, border and attachment method.</p></div>
+        <div class="product-type-head"><h1>Custom Patches</h1><p>Explore custom patches for uniforms, jackets, bags, hats, clubs, event merchandise and apparel programs. Choose from embroidered, woven and printed styles with custom shapes, borders, colors, backings and attachment options.</p></div>
         ${productCategoryNavHtml({ active: "patchs", variant: "inline" })}
         <div class="product-type-grid">
           <article class="product-type-card"><a class="product-type-media" href="/products/custom-patches/custom-woven-dragon-round-patch"><img src="assets/images/custom-woven-dragon-round-patch.webp" width="800" height="800" alt="Blue and gold custom woven dragon round patch"></a><h2><a href="/products/custom-patches/custom-woven-dragon-round-patch">Custom Woven Dragon Round Patch</a></h2><div class="product-type-actions"><a class="product-type-btn product-type-btn-outline" href="/products/custom-patches/custom-woven-dragon-round-patch">View Details</a><a class="product-type-btn product-type-btn-primary" href="/contact?product=Patches&amp;item=Custom%20Woven%20Dragon%20Round%20Patch">GET A QUOTE</a></div></article>
@@ -142,7 +142,7 @@ export const productDetailHtml = String.raw`
 
     <section class="product-type-section" data-product-content="others" hidden>
       <div class="container product-type-content">
-        <div class="product-type-head"><h1>Other Custom Products</h1><p>Need a product that does not fit the standard categories? We can review custom metal gifts, mixed accessories, event merchandise and special OEM/ODM requests based on your artwork, structure and target use.</p></div>
+        <div class="product-type-head"><h1>Other Custom Products</h1><p>Explore other custom metal products for promotions, events, retail programs, corporate gifts and special projects outside our standard categories. We can develop mixed metal accessories and OEM/ODM designs around your artwork, product structure and intended use.</p></div>
         ${productCategoryNavHtml({ active: "others", variant: "inline" })}
         <div class="product-type-grid custom-category-grid cover-card-grid">
           <article class="product-type-card" id="functional-accessories"><img src="assets/images/type-openers-coin.jpg" alt="Functional custom metal product sample"><h2>Functional Accessories</h2><div class="product-type-actions"><a class="product-type-btn product-type-btn-outline" href="#functional-accessories">View Details</a><a class="product-type-btn product-type-btn-primary" href="/contact?product=Others&amp;item=Functional%20Accessories">GET A QUOTE</a></div></article>
@@ -152,7 +152,7 @@ export const productDetailHtml = String.raw`
 
     <section class="product-type-section" data-product-content="bottle-openers" hidden>
       <div class="container product-type-content">
-        <div class="product-type-head"><h1>Custom Bottle Openers</h1><p>Custom bottle openers that combine practical use with logo promotion, event gifts and retail packaging.</p></div>
+        <div class="product-type-head"><h1>Custom Bottle Openers</h1><p>Explore custom bottle openers for promotional campaigns, event gifts, hospitality brands, retail merchandise and souvenir programs. Choose from bottle opener keychains and handheld designs with custom shapes, 2D or 3D relief, enamel colors, engraved details and multiple plating finishes.</p></div>
         ${productCategoryNavHtml({ active: "bottle-openers", variant: "inline" })}
         <div class="product-type-grid compact">
           <article class="product-type-card"><img src="assets/images/type-openers-coin.jpg" alt="Custom coin bottle openers"><h2>Playing Card Metal Bottle Opener</h2><div class="product-type-actions"><a class="product-type-btn product-type-btn-outline" href="/products/custom-bottle-openers/playing-card-metal-bottle-opener">View More</a><a class="product-type-btn product-type-btn-primary" href="/contact">GET QUOTE NOW</a></div></article>
@@ -163,7 +163,7 @@ export const productDetailHtml = String.raw`
 
     <section class="product-type-section" data-product-content="buckles" hidden>
       <div class="container product-type-content">
-        <div class="product-type-head"><h1>Custom Belt Buckles</h1><p>Custom belt buckles for clubs, fashion brands, Western themes, awards and promotional merchandise.</p></div>
+        <div class="product-type-head"><h1>Custom Belt Buckles</h1><p>Explore custom belt buckles for clubs, fashion brands, Western events, awards and promotional merchandise. Choose from custom shapes, 2D or 3D relief, enamel colors, antique or polished plating, personalized details and multiple buckle fittings.</p></div>
         ${productCategoryNavHtml({ active: "buckles", variant: "inline" })}
         <div class="product-type-grid">
           <article class="product-type-card"><img src="assets/images/type-buckles-western.jpg" alt="Western custom belt buckles"><h2>Western Skull Relief Belt Buckle</h2><div class="product-type-actions"><a class="product-type-btn product-type-btn-outline" href="/products/custom-belt-buckles/western-skull-relief-belt-buckle">View More</a><a class="product-type-btn product-type-btn-primary" href="/contact">GET QUOTE NOW</a></div></article>
@@ -176,7 +176,7 @@ export const productDetailHtml = String.raw`
 
     <section class="product-type-section" data-product-content="golf-accessories" hidden>
       <div class="container product-type-content">
-        <div class="product-type-head"><h1>Custom Golf Ball Markers, Divot Tools & Hat Clips</h1><p>Custom golf accessories for tournaments, clubs, resort gifts, corporate golf events and retail sets.</p></div>
+        <div class="product-type-head"><h1>Custom Golf Ball Markers, Divot Tools & Hat Clips</h1><p>Explore custom golf accessories for tournaments, golf clubs, resort gifts, corporate events and retail sets. Choose from personalized ball markers, divot tools and hat clips with custom shapes, enamel colors, magnetic attachments and multiple plating finishes.</p></div>
         ${productCategoryNavHtml({ active: "golf-accessories", variant: "inline" })}
         <div class="product-type-grid compact">
           <article class="product-type-card"><img src="assets/images/type-golf-ball-marker.jpg" alt="Custom golf ball markers"><h2>Antique Golf Club Divot Tool Ball Marker</h2><div class="product-type-actions"><a class="product-type-btn product-type-btn-outline" href="/products/custom-golf-accessories/antique-golf-club-divot-tool-ball-marker">View More</a><a class="product-type-btn product-type-btn-primary" href="/contact">GET QUOTE NOW</a></div></article>
@@ -188,7 +188,7 @@ export const productDetailHtml = String.raw`
 
     <section class="product-type-section" data-product-content="cufflinks-tieclips" hidden>
       <div class="container product-type-content">
-        <div class="product-type-head"><h1>Cufflinks & Tie Clips</h1><p>Custom cufflinks and tie clips for corporate gifts, retail collections, clubs, formal events and brand accessories.</p></div>
+        <div class="product-type-head"><h1>Cufflinks & Tie Clips</h1><p>Explore custom cufflinks and tie clips for corporate gifts, retail collections, clubs, formal events and branded accessories. Choose from custom shapes, enamel colors, engraved logos, 2D or 3D details and multiple polished or antique plating finishes.</p></div>
         ${productCategoryNavHtml({ active: "cufflinks-tieclips", variant: "inline" })}
         <div class="product-type-grid compact">
           <article class="product-type-card"><img src="assets/images/type-cufflinks-metal.jpg" alt="Custom metal cufflinks"><h2>Blue Carbon Fiber Metal Cufflinks</h2><div class="product-type-actions"><a class="product-type-btn product-type-btn-outline" href="/products/custom-cufflinks-tie-clips/blue-carbon-fiber-metal-cufflinks">View More</a><a class="product-type-btn product-type-btn-primary" href="/contact">GET QUOTE NOW</a></div></article>
