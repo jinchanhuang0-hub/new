@@ -190,11 +190,11 @@ const productCategoryHeroBackgrounds = {
   keychains: "assets/images/home-category-keychains-banner.png",
   buckles: "assets/images/home-category-belt-buckles-banner.png",
   "golf-accessories": "assets/images/home-category-golf-ball-markers-banner.png",
-  "bottle-openers": "",
-  "cufflinks-tieclips": "",
-  magnets: "",
-  patchs: "",
-  others: "",
+  "bottle-openers": "assets/images/custom-bottle-openers-opener.png",
+  "cufflinks-tieclips": "assets/images/custom-cufflinks-tie-clips-hero.png",
+  magnets: "assets/images/custom-fridge-magnets-hero.png",
+  patchs: "assets/images/custom-patches-hero.png",
+  others: "assets/images/custom-others-hero.png",
 };
 
 const categoryStyleGuideSourceByKey = {

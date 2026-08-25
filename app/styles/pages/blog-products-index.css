@@ -12,7 +12,7 @@
   overflow: hidden;
   padding: 0;
   text-align: center;
-  background: #fff;
+  background: #eef4fb;
 }
 
 .products-page-hero::before {
@@ -20,14 +20,25 @@
   position: absolute;
   inset: 0;
   z-index: 0;
-  background: url("/assets/images/products-hero-bg.webp") center center / min(100%, 1579px) auto no-repeat;
-  opacity: 1;
+  background: url("/assets/images/products-hero-custom-metal-crafts.webp") center center / cover no-repeat;
+  opacity: 0.76;
+  pointer-events: none;
+}
+
+.products-page-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    radial-gradient(circle at 50% 52%, rgba(255, 255, 255, 0.84), rgba(255, 255, 255, 0.58) 34%, rgba(255, 255, 255, 0.18) 68%),
+    linear-gradient(90deg, rgba(238, 246, 255, 0.36), rgba(255, 255, 255, 0.16), rgba(238, 246, 255, 0.36));
   pointer-events: none;
 }
 
 .products-page-hero .container {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   transform: translateY(10px);
 }
 
@@ -35,13 +46,15 @@
   color: var(--navy);
   font-size: clamp(44px, 5vw, 72px);
   line-height: 1.04;
+  text-shadow: 0 2px 18px rgba(255, 255, 255, 0.78);
 }
 
 .products-page-hero p {
   margin-left: auto;
   margin-right: auto;
-  color: #40516a;
+  color: #123461;
   line-height: 1.75;
+  text-shadow: 0 1px 14px rgba(255, 255, 255, 0.86);
 }
 
 .blog-page-hero {

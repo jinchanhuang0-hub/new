@@ -49,6 +49,39 @@
   pointer-events: none;
 }
 
+.product-type-hero-section[data-product-hero="bottle-openers"] .product-type-hero-bg {
+  object-fit: contain;
+  object-position: right center;
+  transform: translateY(24px) scale(1.12);
+  transform-origin: right center;
+}
+
+.product-type-hero-section[data-product-hero="cufflinks-tieclips"] .product-type-hero-bg {
+  object-fit: contain;
+  object-position: right center;
+}
+
+.product-type-hero-section[data-product-hero="magnets"] .product-type-hero-bg {
+  object-fit: contain;
+  object-position: right center;
+  transform: scale(1.04);
+  transform-origin: right center;
+}
+
+.product-type-hero-section[data-product-hero="patchs"] .product-type-hero-bg {
+  object-fit: contain;
+  object-position: right center;
+  transform: translateX(28px);
+  transform-origin: right center;
+}
+
+.product-type-hero-section[data-product-hero="others"] .product-type-hero-bg {
+  object-fit: contain;
+  object-position: right center;
+  transform: translateX(160px) scale(0.96);
+  transform-origin: right center;
+}
+
 @media (min-width: 641px) {
   .product-type-hero-section:is(
     [data-product-hero="pins"],
@@ -298,76 +331,6 @@
   font-size: 19px;
   font-weight: 700;
   line-height: 1.62;
-}
-
-.product-type-hero-section.has-product-hero-bg:is(
-  [data-product-hero="bottle-openers"],
-  [data-product-hero="cufflinks-tieclips"],
-  [data-product-hero="magnets"],
-  [data-product-hero="patchs"],
-  [data-product-hero="others"]
-)::before {
-  width: 100%;
-  background:
-    radial-gradient(circle at 14% 18%, rgba(238, 246, 255, 0.82), rgba(238, 246, 255, 0) 34%),
-    radial-gradient(circle at 84% 22%, rgba(238, 246, 255, 0.74), rgba(238, 246, 255, 0) 36%),
-    linear-gradient(90deg, rgba(238, 246, 255, 0.86), rgba(246, 250, 255, 0.96));
-}
-
-.product-type-hero-section.has-product-hero-bg:is(
-  [data-product-hero="bottle-openers"],
-  [data-product-hero="cufflinks-tieclips"],
-  [data-product-hero="magnets"],
-  [data-product-hero="patchs"],
-  [data-product-hero="others"]
-) .product-type-hero-inner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: min(var(--max), calc(100% - 40px));
-  max-width: 100%;
-  margin: 0 auto;
-  padding-bottom: 0;
-}
-
-.product-type-hero-section.has-product-hero-bg:is(
-  [data-product-hero="bottle-openers"],
-  [data-product-hero="cufflinks-tieclips"],
-  [data-product-hero="magnets"],
-  [data-product-hero="patchs"],
-  [data-product-hero="others"]
-) .product-type-head {
-  align-items: center;
-  max-width: 860px;
-  min-height: 0;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.product-type-hero-section.has-product-hero-bg:is(
-  [data-product-hero="bottle-openers"],
-  [data-product-hero="cufflinks-tieclips"],
-  [data-product-hero="magnets"],
-  [data-product-hero="patchs"],
-  [data-product-hero="others"]
-) .product-type-head h1 {
-  margin-top: 0;
-  font-size: clamp(52px, 5.4vw, 66px);
-}
-
-.product-type-hero-section.has-product-hero-bg:is(
-  [data-product-hero="bottle-openers"],
-  [data-product-hero="cufflinks-tieclips"],
-  [data-product-hero="magnets"],
-  [data-product-hero="patchs"],
-  [data-product-hero="others"]
-) .product-type-head p {
-  max-width: 790px;
-  margin: 0 auto;
-  color: #15335d;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.58;
 }
 
 .product-type-section[data-product-content="keychains"] .product-type-head {
@@ -1761,6 +1724,21 @@
     object-position: 62% center;
   }
 
+  .product-type-hero-section[data-product-hero="magnets"] .product-type-hero-bg {
+    object-position: 78% center;
+    transform: none;
+  }
+
+  .product-type-hero-section[data-product-hero="patchs"] .product-type-hero-bg {
+    object-position: 78% center;
+    transform: none;
+  }
+
+  .product-type-hero-section[data-product-hero="others"] .product-type-hero-bg {
+    object-position: 78% center;
+    transform: none;
+  }
+
   .product-type-hero-section.has-product-hero-bg::before {
     width: 100%;
     height: var(--product-hero-height);
@@ -1794,37 +1772,6 @@
   .product-type-hero-section.has-product-hero-bg .product-type-head p {
     font-size: 16px;
     line-height: 1.62;
-  }
-
-  .product-type-hero-section.has-product-hero-bg:is(
-    [data-product-hero="bottle-openers"],
-    [data-product-hero="cufflinks-tieclips"],
-    [data-product-hero="magnets"],
-    [data-product-hero="patchs"],
-    [data-product-hero="others"]
-  ) .product-type-head {
-    text-align: center;
-  }
-
-  .product-type-hero-section.has-product-hero-bg:is(
-    [data-product-hero="bottle-openers"],
-    [data-product-hero="cufflinks-tieclips"],
-    [data-product-hero="magnets"],
-    [data-product-hero="patchs"],
-    [data-product-hero="others"]
-  ) .product-type-head h1 {
-    font-size: 38px;
-  }
-
-  .product-type-hero-section.has-product-hero-bg:is(
-    [data-product-hero="bottle-openers"],
-    [data-product-hero="cufflinks-tieclips"],
-    [data-product-hero="magnets"],
-    [data-product-hero="patchs"],
-    [data-product-hero="others"]
-  ) .product-type-head p {
-    font-size: 16px;
-    font-weight: 500;
   }
 
   .product-type-section[data-product-content="keychains"] .product-type-head {
