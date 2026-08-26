@@ -3,6 +3,7 @@ import { footerHtml } from "../components/footerHtml";
 import { siteHeaderHtml } from "../components/siteHeaderHtml";
 import { customMetalKeychainMaterialsArticleHtml } from "./customMetalKeychainMaterials";
 import { customMetalKeychainSizeAttachmentGuideArticleHtml } from "./customMetalKeychainSizeAttachmentGuide";
+import { memorialChallengeCoinsGuideArticleHtml } from "./memorialChallengeCoinsGuide";
 
 
 export const metadata = {
@@ -71,6 +72,15 @@ export const blogHtml = String.raw`
               <div class="blog-feature-meta"><span>Custom Coins</span><span>Traditions Guide</span></div>
               <h2>Military Challenge Coin Traditions, Meaning and Etiquette</h2>
               <p>Explore military challenge coin traditions, their debated history, meaning, presentation etiquette, coin checks, common types, symbols and modern uses.</p>
+              <span class="blog-feature-link">Read More</span>
+            </div>
+          </a>
+          <a class="blog-feature-card" href="/blog/memorial-challenge-coins-guide" data-blog-category="Custom Coins" aria-label="Read Memorial Challenge Coins: Meaning, Design and Etiquette">
+            <img src="/assets/images/memorial-challenge-coins-guide.webp" width="1600" height="900" alt="Generic memorial challenge coins prepared for a respectful presentation">
+            <div class="blog-feature-body">
+              <div class="blog-feature-meta"><span>Custom Coins</span><span>Memorial Guide</span></div>
+              <h2>Memorial Challenge Coins: Meaning, Design &amp; Etiquette</h2>
+              <p>A practical guide to planning a respectful memorial coin, including wording, symbols, artwork permissions, proof review, quantities and presentation.</p>
               <span class="blog-feature-link">Read More</span>
             </div>
           </a>
@@ -187,6 +197,7 @@ export const blogHtml = String.raw`
     </section>
     ${customMetalKeychainMaterialsArticleHtml}
     ${customMetalKeychainSizeAttachmentGuideArticleHtml}
+    ${memorialChallengeCoinsGuideArticleHtml}
     <article id="military-challenge-coin-traditions" class="section blog-article-section">
       <div class="blog-article-shell">
         <aside class="blog-article-toc" aria-label="Article contents">

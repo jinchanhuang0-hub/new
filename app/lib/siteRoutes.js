@@ -425,6 +425,50 @@ const blogArticleData = {
       },
     ],
   },
+  "memorial-challenge-coins-guide": {
+    title: "Memorial Challenge Coins: Meaning, Design & Etiquette",
+    headline: "Memorial Challenge Coins: How to Create a Respectful Tribute",
+    description:
+      "Learn what memorial challenge coins mean, what to place on each side, and how to choose respectful wording, symbols, finishes and presentation.",
+    author: "Sunny Huang",
+    authorType: "Person",
+    datePublished: "2026-08-26",
+    dateModified: "2026-08-26",
+    image: "/assets/images/memorial-challenge-coins-guide.webp",
+    schemaType: "Article",
+    faq: [
+      {
+        question: "What is a memorial challenge coin?",
+        answer:
+          "It is a metal keepsake created to remember a person, group or meaningful shared experience. It may be carried, displayed or presented to family members, colleagues or organization members.",
+      },
+      {
+        question: "What is the difference between a memorial coin and a commemorative coin?",
+        answer:
+          "A memorial coin focuses on remembrance of a person or loss. A commemorative coin usually marks an event, anniversary, retirement or milestone. One project can serve both purposes.",
+      },
+      {
+        question: "What information should be included?",
+        answer:
+          "Common elements include a name, dates, role, short dedication and one or two meaningful symbols. Include only information that can be verified and read clearly.",
+      },
+      {
+        question: "Can a photograph be used on a memorial coin?",
+        answer:
+          "Yes, when the image quality and usage permission are suitable. It may need to be simplified for relief or reproduced through an appropriate printing method.",
+      },
+      {
+        question: "When are remembrance coins presented?",
+        answer:
+          "They may be given privately, at a memorial service, during an anniversary gathering or at an organization event. Follow the wishes of the recipients and organization rather than an assumed universal custom.",
+      },
+      {
+        question: "Do I need permission to use a department badge or military emblem?",
+        answer:
+          "Often, yes. The rights holder should confirm whether the mark may be reproduced. For U.S. Military Service marks, consult the relevant Trademark Licensing Program Office.",
+      },
+    ],
+  },
   "military-challenge-coin-traditions": {
     title: "Military Challenge Coin Traditions, Meaning and Etiquette",
     headline: "Military Challenge Coin Traditions: Meaning, History and How They Are Presented",

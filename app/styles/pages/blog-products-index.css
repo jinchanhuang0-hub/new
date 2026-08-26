@@ -959,6 +959,14 @@
   font-weight: 900;
 }
 
+.blog-faq summary h3 {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+}
+
 .blog-faq p {
   padding: 0 20px 20px;
 }
