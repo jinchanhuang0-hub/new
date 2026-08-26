@@ -3,6 +3,7 @@ import { footerHtml } from "../components/footerHtml";
 import { siteHeaderHtml } from "../components/siteHeaderHtml";
 import { customMetalKeychainMaterialsArticleHtml } from "./customMetalKeychainMaterials";
 import { customMetalKeychainSizeAttachmentGuideArticleHtml } from "./customMetalKeychainSizeAttachmentGuide";
+import { keychainAttachmentsGuideArticleHtml } from "./keychainAttachmentsGuide";
 import { memorialChallengeCoinsGuideArticleHtml } from "./memorialChallengeCoinsGuide";
 
 
@@ -90,6 +91,15 @@ export const blogHtml = String.raw`
               <div class="blog-feature-meta"><span>Custom Keychains</span><span>Material Guide</span></div>
               <h2>Custom Metal Keychain Materials: Zinc Alloy vs Brass vs Stainless Steel vs Iron</h2>
               <p>Compare four common metals by design flexibility, durability, finish, manufacturing process, application and budget.</p>
+              <span class="blog-feature-link">Read More</span>
+            </div>
+          </a>
+          <a class="blog-feature-card" href="/blog/keychain-attachments-guide" data-blog-category="Custom Keychains" aria-label="Read Keychain Attachments Guide: Rings, Clasps and Chains">
+            <img src="/assets/images/keychain-attachments-guide.webp" width="1600" height="900" alt="Keychain attachments including split rings clasps chains carabiners and loops">
+            <div class="blog-feature-body">
+              <div class="blog-feature-meta"><span>Custom Keychains</span><span>Hardware Guide</span></div>
+              <h2>Keychain Attachments Guide: Rings, Clasps &amp; Chains</h2>
+              <p>The attachment determines how a keychain is carried, removed and presented. Compare common hardware options before approving a sample.</p>
               <span class="blog-feature-link">Read More</span>
             </div>
           </a>
@@ -196,6 +206,7 @@ export const blogHtml = String.raw`
       </div>
     </section>
     ${customMetalKeychainMaterialsArticleHtml}
+    ${keychainAttachmentsGuideArticleHtml}
     ${customMetalKeychainSizeAttachmentGuideArticleHtml}
     ${memorialChallengeCoinsGuideArticleHtml}
     <article id="military-challenge-coin-traditions" class="section blog-article-section">
