@@ -213,7 +213,7 @@ export const replaceProductsAllGridCards = (html, options = {}) => {
     '<div class="product-type-grid products-all-grid">',
     '<div class="product-type-grid products-all-grid" data-server-paginated="true">'
   ).replace(
-    /(<div class="product-type-grid products-all-grid"[^>]*>\s*)[\s\S]*?(\s*<\/div>)(\s*<\/div>\s*<\/section>\s*<\/main>)/,
+    /(<div class="product-type-grid products-all-grid"[^>]*>\s*)[\s\S]*?(\s*<\/div>)(\s*<\/div>\s*<\/div>\s*<\/div>\s*<\/section>\s*<\/main>)/,
     `$1${renderAllProductTypeCards({ page: currentPage, pageSize })}$2
 ${renderServerProductPagination({
       basePath: "/products",

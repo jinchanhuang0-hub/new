@@ -5,6 +5,7 @@ import {
   renderServerProductPagination,
   replaceProductTypeSectionCards,
 } from "./productCards";
+import { productCategorySidebarHtml } from "../components/productCategoryNav";
 import {
   homeProductLandingPagesBySlug,
   renderHomeProductLandingRowsSection,
@@ -294,6 +295,25 @@ ${head.trim()}
   };
 };
 
+const productCategoryInlineNavPattern =
+  /\s*<div class="products-category-section products-category-section-inline">\s*<nav class="mega products-category-nav" aria-label="Product categories">[\s\S]*?<\/nav>\s*<\/div>/;
+
+const addProductListLayoutToCategorySection = (section, categoryKey) =>
+  section
+    .replace(
+      productCategoryInlineNavPattern,
+      `
+        <div class="products-layout">
+${productCategorySidebarHtml({ active: categoryKey, mode: "links" })}
+          <div class="products-list-main">`,
+    )
+    .replace(
+      /(\s*<\/div>\s*<\/section>)$/,
+      `
+          </div>
+        </div>$1`,
+    );
+
 export const buildCategoryHtml = (html, categoryKey, categoryLabel, options = {}) => {
   const shell = getPageShell(html);
   const pageSize = options.pageSize || CATEGORY_PRODUCTS_PAGE_SIZE;
@@ -310,9 +330,10 @@ export const buildCategoryHtml = (html, categoryKey, categoryLabel, options = {}
     pageCount,
   });
   const categoryHero = buildProductCategoryHero(section, categoryKey, categoryLabel);
+  const categorySection = addProductListLayoutToCategorySection(categoryHero.section, categoryKey);
   const styleGuideSection = renderCategoryStyleGuideSection(categoryKey);
 
-  return `${shell.beforeMain}<main class="product-types-page" id="custom-details">${categoryHero.hero}${categoryHero.section}${styleGuideSection}</main>${shell.afterMain}`;
+  return `${shell.beforeMain}<main class="product-types-page" id="custom-details">${categoryHero.hero}${categorySection}${styleGuideSection}</main>${shell.afterMain}`;
 };
 
 const formatArticleDate = (date) => {
