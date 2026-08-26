@@ -483,7 +483,7 @@ const blogArticleData = {
     author: "Sunny Huang",
     authorType: "Person",
     datePublished: "2026-08-17",
-    dateModified: "2026-08-17",
+    dateModified: "2026-08-26",
     image: "/assets/images/custom-metal-keychain-size-attachment-guide.webp",
     faq: [
       {
@@ -668,7 +668,7 @@ const blogArticleData = {
     description:
       "Learn how custom challenge coins are made, from artwork and tooling to die-striking, finishing, color filling, quality inspection and shipment preparation.",
     datePublished: "2026-07-24",
-    dateModified: "2026-07-24",
+    dateModified: "2026-08-26",
     image: "/assets/images/blog-how-challenge-coins-made-card-v3.webp",
   },
   "custom-enamel-pins-no-moq-guide": {

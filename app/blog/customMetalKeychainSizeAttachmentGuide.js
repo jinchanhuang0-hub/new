@@ -31,7 +31,7 @@ export const customMetalKeychainSizeAttachmentGuideArticleHtml = String.raw`
 
           <a id="quick-answer"></a>
           <h2>Quick Answer: How Do You Choose a Custom Metal Keychain Size?</h2>
-          <p>Choose the smallest reasonable size that keeps artwork clear, structure manufacturable, weight practical for the intended use and hardware compatible. There is no universal <strong>standard metal keychain size</strong>. Confirm body size separately from finished length, then review thickness, balance, connections and packaging on the proof before approval. For irregular shapes, state maximum length and width separately and specify whether hardware is included.</p>
+          <p>Choose the smallest reasonable size that keeps artwork clear, structure manufacturable, weight practical for the intended use and hardware compatible. There is no verified universal average keychain size in mm across all custom metal orders, so confirm body size separately from finished length instead of copying a generic average. For thickness, some flat stamped or enamel designs may be discussed at approximately <strong>1.5-2.0 mm</strong> during early quotation, but the final value must follow the approved artwork, material, structure and sample. For irregular shapes, state maximum length and width separately and specify whether hardware is included.</p>
 
           <a id="three-measurements"></a>
           <h2>Understand the Three Key Measurements</h2>
