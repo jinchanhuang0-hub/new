@@ -279,8 +279,42 @@
   width: 100%;
   max-width: none;
   margin: 0;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+  grid-template-columns: 1fr;
+  justify-content: stretch;
   gap: 24px;
+}
+
+@media (min-width: 641px) {
+  .products-layout .product-type-grid,
+  #custom-details .products-layout .product-type-grid,
+  .products-all-section .products-layout .products-all-grid {
+    grid-template-columns: repeat(2, minmax(0, 315px));
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .products-layout .product-type-grid,
+  #custom-details .products-layout .product-type-grid,
+  .products-all-section .products-layout .products-all-grid {
+    justify-content: start;
+  }
+}
+
+@media (min-width: 1200px) {
+  .products-layout .product-type-grid,
+  #custom-details .products-layout .product-type-grid,
+  .products-all-section .products-layout .products-all-grid {
+    grid-template-columns: repeat(3, minmax(0, 315px));
+  }
+}
+
+@media (min-width: 1400px) {
+  .products-layout .product-type-grid,
+  #custom-details .products-layout .product-type-grid,
+  .products-all-section .products-layout .products-all-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
 }
 
 .product-category-sidebar,
@@ -1950,6 +1984,13 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .products-layout .product-type-grid,
+  #custom-details .products-layout .product-type-grid,
+  .products-all-section .products-layout .products-all-grid {
+    grid-template-columns: repeat(2, minmax(0, 315px));
+    justify-content: center;
+  }
+
   .category-seo-panel {
     padding: 36px 28px;
   }
@@ -2114,6 +2155,13 @@
   .product-type-grid.compact {
     grid-template-columns: 1fr;
     gap: 21px;
+  }
+
+  .products-layout .product-type-grid,
+  #custom-details .products-layout .product-type-grid,
+  .products-all-section .products-layout .products-all-grid {
+    grid-template-columns: 1fr;
+    justify-content: stretch;
   }
 
   .product-types-page .products-category-nav {
