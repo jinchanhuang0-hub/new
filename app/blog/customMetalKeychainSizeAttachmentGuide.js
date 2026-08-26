@@ -93,8 +93,9 @@ export const customMetalKeychainSizeAttachmentGuideArticleHtml = String.raw`
           <p>Die-cast, deep-relief, 3D, bottle-opener and moving structures may need a different body thickness from a flat stamped piece. Record body thickness, maximum 3D height and any specified weight as separate fields in the final confirmation document.</p>
 
           <a id="attachment-types"></a>
-          <h2>Common Keychain Attachment Types</h2>
-          <p>Hardware affects how the product connects, hangs, rotates and is removed. These <strong>keychain attachment types</strong> are the main <strong>custom keychain hardware</strong> choices, so select them according to the body and intended use. Buyers comparing <strong>keychain hook types</strong> should also confirm how the hook connects to the body.</p>
+          <h2>How Attachments Affect Finished Dimensions</h2>
+          <p>Attachment choice changes finished length, hanging direction, package clearance and the position of the connection point. In this size guide, record the selected hardware only as part of the completed metal-keychain specification.</p>
+          <p>For a comparison of rings, clasps, chains and loops across metal, PVC, acrylic and fabric products, see our <a href="/blog/keychain-attachments-guide">keychain attachment guide</a>.</p>
           <div class="blog-article-image-pair">
             <figure class="blog-article-image blog-article-cropped-image">
               <img src="/assets/images/metal-keychain-attachment-options.webp?v=20260817-3" width="900" height="1005" loading="lazy" decoding="async" alt="Split ring chain lobster clasp swivel hook and other metal keychain attachment options">
@@ -105,31 +106,15 @@ export const customMetalKeychainSizeAttachmentGuideArticleHtml = String.raw`
           </div>
           <p>These reference sheets illustrate hardware forms only. Confirm the selected model, finish, dimensions and availability on the quotation and physical sample.</p>
           <ul class="blog-list">
-            <li><strong>Round split ring:</strong> familiar direct attachment for keys and compact promotions.</li>
-            <li><strong>Flat split ring:</strong> a ring with a flatter cross-section that may sit closer to the body, depending on its orientation in the assembly.</li>
-            <li><strong>Jump ring:</strong> a small connector whose closure and orientation need inspection.</li>
-            <li><strong>Short link chain:</strong> adds separation and movement between body and ring or hook.</li>
-            <li><strong>Lobster clasp:</strong> a spring clip for bags, straps or removable accessories.</li>
-            <li><strong>Swivel hook:</strong> a clip with rotation that can help the logo face forward.</li>
-            <li><strong>Snap hook:</strong> a promotional clip for bags and loops, not climbing or safety equipment.</li>
-            <li><strong>Ball chain:</strong> a bead-style attachment for lightweight tags and souvenirs.</li>
-            <li><strong>Wire rope loop:</strong> a flexible continuous loop for tags or compact accessories.</li>
-            <li><strong>Leather strap attachment:</strong> combines a metal body with a leather strap at the connection point.</li>
+            <li><strong>Finished length:</strong> measure from the agreed body reference point to the outer end of the selected attachment.</li>
+            <li><strong>Connection point:</strong> identify the eyelet, jump ring, chain or integrated loop used to join the body and hardware.</li>
+            <li><strong>Orientation:</strong> confirm which face of the metal body appears forward when the completed keychain hangs.</li>
+            <li><strong>Packaging clearance:</strong> check that the selected attachment and its movement fit the pouch, backing card or box.</li>
           </ul>
 
           <a id="attachment-comparison"></a>
-          <h2>Split Ring vs Lobster Clasp vs Swivel Hook</h2>
-          <p>No hardware option is universally best. This comparison covers common <strong>metal keychain hardware options</strong>; choose according to direct attachment, removal, rotation, appearance and package size.</p>
-          <div class="blog-table-wrap">
-            <table class="blog-table">
-              <thead><tr><th>Attachment</th><th>Typical use</th><th>Ease of attachment</th><th>Security</th><th>Rotation</th><th>Appearance</th><th>Main limitation</th></tr></thead>
-              <tbody>
-                <tr><td>Split ring</td><td>Direct attachment to keys and compact promotions</td><td>Thread onto ring</td><td>Retention depends on ring closure and assembly</td><td>Natural movement</td><td>Familiar, compact</td><td>Less convenient to remove</td></tr>
-                <tr><td>Lobster clasp</td><td>Bags, straps and removable gifts</td><td>Quick clip-on</td><td>Depends on closure and receiving loop</td><td>Limited without swivel or ring</td><td>Visible, practical</td><td>Bulkier spring mechanism</td></tr>
-                <tr><td>Swivel hook</td><td>Bags where logo direction changes</td><td>Quick clip-on</td><td>Depends on closure and connection</td><td>Designed to rotate</td><td>Functional, prominent</td><td>Can add length and package size</td></tr>
-              </tbody>
-            </table>
-          </div>
+          <h2>Record Attachment Details in the Specification</h2>
+          <p>State the attachment type, finish, connection method, finished length and intended hanging direction on the quotation or approved drawing. This makes the physical sample easier to compare with the agreed dimensions and packaging requirements. For attachment-type selection, use the <a href="/blog/keychain-attachments-guide">keychain attachment guide</a>.</p>
 
           <a id="applications"></a>
           <h2>Match Size and Hardware to the Application</h2>

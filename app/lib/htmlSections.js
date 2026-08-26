@@ -122,19 +122,7 @@ const categorySeoContent = {
               <li>Gold, silver, bronze, antique finish, dual plating, enamel filling, printing and gift packaging.</li>
             </ul>
           </div>`,
-  keychains: String.raw`
-          <div class="category-seo-panel" aria-label="Custom metal keychains manufacturer information">
-            <h2>Custom Metal Keychains for Brand, Retail and Souvenir Programs</h2>
-            <p>Custom metal keychains are compact promotional and retail products for brands, tourism programs, schools, clubs, events and gift campaigns. The product range below includes enamel keychains, leather strap keychains, bottle opener keychains, spinner keychains and shaped metal keychains.</p>
-            <p>Before production, buyers should confirm the keychain body size, finished length, material, thickness reference, artwork complexity, attachment type and packaging. If material selection is still open, compare <a href="/blog/custom-metal-keychain-materials">custom metal keychain materials</a>. For measurement, thickness and hardware decisions, use the <a href="/blog/custom-metal-keychain-size-attachment-guide">custom metal keychain size, thickness and attachments</a> guide.</p>
-            <p>Send the artwork, target quantity, intended use and preferred attachment through the <a href="/contact">quote form</a>. Our team can review whether the design is better suited to zinc alloy, iron, stainless steel, leather, PVC or another construction before preparing a production quote.</p>
-            <h3>Keychain Customization Choices</h3>
-            <ul class="category-seo-list">
-              <li>Split rings, chains, swivel hooks, lobster clasps, leather straps and bottle opener fittings.</li>
-              <li>Enamel color, printing, engraving, antique plating, polished finishes and custom shapes.</li>
-              <li>OPP bags, backing cards, hang cards, velvet pouches, gift boxes and retail-ready packaging.</li>
-            </ul>
-          </div>`,
+  keychains: '',
   buckles: String.raw`
           <div class="category-seo-panel" aria-label="Custom belt buckles manufacturer information">
             <h2>Custom Belt Buckles for Clubs, Brands and Western Merchandise</h2>

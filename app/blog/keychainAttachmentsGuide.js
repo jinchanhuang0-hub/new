@@ -47,7 +47,7 @@ export const keychainAttachmentsGuideArticleHtml = String.raw`
               <li><strong>Connector:</strong> a jump ring, eyelet, chain or swivel joining the body to the hardware.</li>
               <li><strong>Main attachment:</strong> the split ring, clasp, hook, ball chain or loop.</li>
             </ol>
-            <p>These parts work as a system. A strong-looking clasp does not solve a narrow eyelet, open jump ring or connector that makes the design hang sideways. Approve the assembled product, not each component in isolation.</p>
+            <p>These parts work as a system. A sturdy-looking clasp does not compensate for a narrow eyelet, open jump ring or connector that makes the design hang sideways. Approve the assembled product, not each component in isolation.</p>
             <figure class="blog-article-image blog-article-natural-image blog-image-3x2">
               <img src="/assets/images/keychain-attachment-parts.webp" width="1200" height="800" loading="lazy" decoding="async" alt="Keychain body connector chain and split ring shown as separate assembly parts">
               <figcaption>Body or pendant, connector, chain and main attachment should be reviewed as one assembly.</figcaption>
@@ -61,10 +61,10 @@ export const keychainAttachmentsGuideArticleHtml = String.raw`
                 </thead>
                 <tbody>
                   <tr><td>Round or flat split ring</td><td>Keys and promotions</td><td>Familiar and compact</td><td>Ring size and threading</td></tr>
-                  <tr><td>Lobster clasp</td><td>Bag charms and zipper pulls</td><td>Quick to remove</td><td>Gate and receiving-loop fit</td></tr>
+                  <tr><td>Lobster clasp</td><td>Bag charms and zipper pulls</td><td>Quick to remove</td><td>Gate opening and receiving-loop fit</td></tr>
                   <tr><td>Swivel or trigger clasp</td><td>Bags and straps</td><td>Allows rotation</td><td>Length, clearance and movement</td></tr>
                   <tr><td>Short link chain</td><td>Metal, acrylic and PVC pendants</td><td>Adds movement and separation</td><td>Link closure, chain length and body balance</td></tr>
-                  <tr><td>Ball chain</td><td>Lightweight tags and souvenirs</td><td>Flexible and easy to connect through an opening</td><td>Connector fit and closure engagement</td></tr>
+                  <tr><td>Ball chain</td><td>Lightweight tags and souvenirs</td><td>Flexible and easy to connect through an opening</td><td>Connector fit and secure closure</td></tr>
                   <tr><td>Non-climbing carabiner-style clip</td><td>Promotional bag accessories</td><td>Large opening</td><td>Size, gate and decorative use</td></tr>
                   <tr><td>Wire or cord loop</td><td>Phones, cameras and tags</td><td>Fits a narrow slot</td><td>Cord thickness and loop length</td></tr>
                 </tbody>
@@ -74,13 +74,13 @@ export const keychainAttachmentsGuideArticleHtml = String.raw`
 
             <h2 id="how-the-main-options-differ">How the Main Options Differ</h2>
             <h3>Split Rings: Familiar for Everyday Keys</h3>
-            <p>A split ring uses overlapping coils. Keys are threaded around the ring rather than passed through one gap. It suits ordinary keys that do not need frequent removal. Confirm that its size fits the body and intended key set.</p>
+            <p>A split ring uses overlapping coils. Keys are threaded around the ring rather than passed through one gap. It suits ordinary keys that do not need frequent removal. Confirm that the selected ring size fits the body and intended key set.</p>
             <h3>Lobster Clasps: Convenient for Removable Accessories</h3>
             <p>A lobster clasp opens with a spring-operated lever. Its opening must fit the intended bag ring, strap loop or zipper pull. The body may also need a jump ring or chain so it hangs freely. Approve the actual component because dimensions vary.</p>
             <h3>Swivel Clasps: Useful When Orientation Changes</h3>
             <p>A swivel clasp adds a rotating joint. This can help a logo, mascot or two-sided pendant hang naturally, but it also adds length and another moving part. During sampling, rotate the assembly, check for rubbing and confirm which face appears forward.</p>
             <h3>Chains, Ball Chains and Loops: Connectors for Specific Situations</h3>
-            <p>A short chain creates space between a pendant and ring or clasp, helping irregular shapes move freely. Ball chains suit lightweight tags with a suitable opening. Cord or wire loops fit narrow slots instead of metal rings. Select each option around the real opening and expected handling, not a catalog photograph.</p>
+            <p>A short chain creates space between a pendant and ring or clasp, helping irregular shapes move freely. Ball chains suit lightweight tags with a suitable opening. Cord or wire loops fit narrow slots instead of metal rings. Select each option around the real opening and how the finished item will be handled, not a catalog photograph.</p>
 
             <h2 id="choose-the-attachment-by-use-not-by-name">Choose the Attachment by Use, Not by Name</h2>
             <p>Start with the place where the product will be carried:</p>
@@ -111,7 +111,7 @@ export const keychainAttachmentsGuideArticleHtml = String.raw`
               <li>the hardware finish works with the body finish;</li>
               <li>moving clasps and swivels operate consistently;</li>
               <li>the completed assembly fits the pouch, card or box;</li>
-              <li>the sample record identifies the actual hardware or relevant dimensions.</li>
+              <li>the sample approval record identifies the actual hardware and relevant dimensions.</li>
             </ul>
             <p>Matching every part is optional, but the choice should be deliberate. Packaging should limit rubbing between metal parts. Send the supplier the artwork, quantity, use, body material, packaging, destination and required date. If hardware is undecided, explain where the product will be carried and how often it should be removed.</p>
 
