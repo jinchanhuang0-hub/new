@@ -18,7 +18,7 @@
   grid-template-columns: minmax(520px, 1fr) minmax(560px, 1fr);
   align-items: start;
   gap: 48px;
-  padding-bottom: 2px;
+  padding-bottom: 1px;
   margin-bottom: 23px;
   border-bottom: 1px solid rgba(215, 231, 255, 0.58);
 }
