@@ -5,6 +5,7 @@ import { customMetalKeychainMaterialsArticleHtml } from "./customMetalKeychainMa
 import { customMetalKeychainSizeAttachmentGuideArticleHtml } from "./customMetalKeychainSizeAttachmentGuide";
 import { keychainAttachmentsGuideArticleHtml } from "./keychainAttachmentsGuide";
 import { memorialChallengeCoinsGuideArticleHtml } from "./memorialChallengeCoinsGuide";
+import { patchShapesGuideArticleHtml } from "./patchShapesGuide";
 
 
 export const metadata = {
@@ -40,6 +41,15 @@ export const blogHtml = String.raw`
           <button type="button" data-blog-category="Uncategorized">Uncategorized</button>
         </div>
         <div class="blog-card-grid">
+          <a class="blog-feature-card" href="/blog/patch-shapes-guide" data-blog-category="Custom Patches" aria-label="Read Patch Shapes Guide: How to Choose the Right Shape for a Custom Patch">
+            <img src="/assets/images/patch-shapes-guide.webp" width="1600" height="900" alt="Round oval rectangular shield and custom patch shapes">
+            <div class="blog-feature-body">
+              <div class="blog-feature-meta"><span>Custom Patches</span><span>Patch Design Guide</span></div>
+              <h2>Patch Shapes Guide: How to Choose the Right Shape for a Custom Patch</h2>
+              <p>Compare round, oval, rectangular, shield and custom patch shapes by artwork, text, placement, size and border.</p>
+              <span class="blog-feature-link">Read More</span>
+            </div>
+          </a>
           <a class="blog-feature-card" href="/blog/uses-for-custom-patches" data-blog-category="Custom Patches" aria-label="Read 11 Creative and Practical Uses for Custom Patches">
             <img src="/assets/images/creative-custom-patch-applications.webp" width="1200" height="800" alt="Custom patches used for weddings home decor and gift packaging">
             <div class="blog-feature-body">
@@ -209,6 +219,7 @@ export const blogHtml = String.raw`
     ${keychainAttachmentsGuideArticleHtml}
     ${customMetalKeychainSizeAttachmentGuideArticleHtml}
     ${memorialChallengeCoinsGuideArticleHtml}
+    ${patchShapesGuideArticleHtml}
     <article id="military-challenge-coin-traditions" class="section blog-article-section">
       <div class="blog-article-shell">
         <aside class="blog-article-toc" aria-label="Article contents">

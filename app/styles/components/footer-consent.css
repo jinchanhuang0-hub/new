@@ -138,10 +138,6 @@
   font-size: 14px;
 }
 
-.footer-form-notice:empty {
-  display: none;
-}
-
 .form-privacy-note {
   margin: 0;
   color: #5c6c84;
@@ -155,10 +151,6 @@
   font-size: 13px;
   font-weight: 800;
   line-height: 1.5;
-}
-
-.footer-message-row + .form-commitment-note {
-  margin-top: -15px;
 }
 
 .form-privacy-note a {

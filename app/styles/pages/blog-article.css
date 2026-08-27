@@ -269,6 +269,18 @@
   line-height: 1.18;
 }
 
+.blog-placeholder-16x9 .blog-article-placeholder-box {
+  aspect-ratio: 16 / 9;
+}
+
+.blog-placeholder-3x2 .blog-article-placeholder-box {
+  aspect-ratio: 3 / 2;
+}
+
+.blog-placeholder-7x5 .blog-article-placeholder-box {
+  aspect-ratio: 7 / 5;
+}
+
 .blog-article-image-pair .blog-article-cropped-image img {
   object-fit: contain;
   padding: 18px;
@@ -689,6 +701,27 @@
   padding: 0;
   object-fit: cover;
   object-position: center;
+}
+
+#patch-shapes-guide .blog-article-image img {
+  width: 100%;
+  height: auto;
+  max-height: none;
+  aspect-ratio: auto;
+  object-fit: contain;
+  object-position: center;
+}
+
+#patch-shapes-guide .blog-image-16x9 img {
+  aspect-ratio: 16 / 9;
+}
+
+#patch-shapes-guide .blog-image-3x2 img {
+  aspect-ratio: 3 / 2;
+}
+
+#patch-shapes-guide .blog-image-7x5 img {
+  aspect-ratio: 7 / 5;
 }
 
 .blog-quick-answer {

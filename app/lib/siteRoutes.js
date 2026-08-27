@@ -325,6 +325,45 @@ export const buildBlogAuthorSchema = (article = {}) => {
 };
 
 const blogArticleData = {
+  "patch-shapes-guide": {
+    title: "Patch Shapes Guide: How to Choose the Best Custom Shape",
+    headline: "Patch Shapes Guide: How to Choose the Right Shape for a Custom Patch",
+    description:
+      "Compare round, rectangular, shield, oval and custom patch shapes. Learn how artwork, placement, borders and size affect the best shape for your design.",
+    image: "/assets/images/patch-shapes-guide.webp",
+    author: "Sunny Huang",
+    authorType: "Person",
+    datePublished: "2026-08-27",
+    dateModified: "2026-08-27",
+    schemaType: "BlogPosting",
+    faq: [
+      {
+        question: "What are the most common patch shapes?",
+        answer:
+          "Circle, oval, square, rectangle and shield are among the most common choices. Custom patches can also follow a simplified logo, mascot or product silhouette.",
+      },
+      {
+        question: "What is the best shape for a custom patch?",
+        answer:
+          "There is no single best shape. The right option depends on the artwork proportions, text, finished size, border and intended placement.",
+      },
+      {
+        question: "Can a patch follow the exact shape of my logo?",
+        answer:
+          "Often it can, but small projections, deep recesses and disconnected elements may need to be simplified or placed inside a supporting background shape.",
+      },
+      {
+        question: "Which patch shapes work best on hats?",
+        answer:
+          "Compact ovals, rounded rectangles and simple custom shapes are useful starting points. The best choice depends on the hat panel, patch dimensions, material and backing.",
+      },
+      {
+        question: "Can an irregular patch have a merrowed border?",
+        answer:
+          "Some smooth, simple custom outlines may support a merrowed border. Complex shapes with tight corners or deep cut-ins generally require a different edge treatment. The final choice should be confirmed from the actual artwork.",
+      },
+    ],
+  },
   "uses-for-custom-patches": {
     title: "11 Creative and Practical Uses for Custom Patches",
     headline: "11 Creative and Practical Uses for Custom Patches",
