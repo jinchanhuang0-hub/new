@@ -34,14 +34,15 @@ export const blogHtml = String.raw`
           <button type="button" data-blog-category="Custom Keychains">Custom Keychains</button>
           <button type="button" data-blog-category="Custom Belt Buckle">Custom Belt Buckle</button>
           <button type="button" data-blog-category="Golf Accessories">Golf Accessories</button>
+          <button type="button" data-blog-category="Patches" data-blog-category-pinned="true">Patches</button>
+          <button type="button" data-blog-category="Others" data-blog-category-pinned="true">Others</button>
+          <button type="button" data-blog-category="Holidays" data-blog-category-pinned="true">Holidays</button>
           <button type="button" data-blog-category="Custom Lanyards">Custom Lanyards</button>
-          <button type="button" data-blog-category="Custom Patches">Custom Patches</button>
           <button type="button" data-blog-category="Custom Poker Chips">Custom Poker Chips</button>
-          <button type="button" data-blog-category="Holidays">Holidays</button>
           <button type="button" data-blog-category="Uncategorized">Uncategorized</button>
         </div>
         <div class="blog-card-grid">
-          <a class="blog-feature-card" href="/blog/patch-shapes-guide" data-blog-category="Custom Patches" aria-label="Read Patch Shapes Guide: How to Choose the Right Shape for a Custom Patch">
+          <a class="blog-feature-card" href="/blog/patch-shapes-guide" data-blog-category="Patches" aria-label="Read Patch Shapes Guide: How to Choose the Right Shape for a Custom Patch">
             <img src="/assets/images/patch-shapes-guide.webp" width="1600" height="900" alt="Round oval rectangular shield and custom patch shapes">
             <div class="blog-feature-body">
               <div class="blog-feature-meta"><span>Custom Patches</span><span>Patch Design Guide</span></div>
@@ -50,7 +51,7 @@ export const blogHtml = String.raw`
               <span class="blog-feature-link">Read More</span>
             </div>
           </a>
-          <a class="blog-feature-card" href="/blog/uses-for-custom-patches" data-blog-category="Custom Patches" aria-label="Read 11 Creative and Practical Uses for Custom Patches">
+          <a class="blog-feature-card" href="/blog/uses-for-custom-patches" data-blog-category="Patches" aria-label="Read 11 Creative and Practical Uses for Custom Patches">
             <img src="/assets/images/creative-custom-patch-applications.webp" width="1200" height="800" alt="Custom patches used for weddings home decor and gift packaging">
             <div class="blog-feature-body">
               <div class="blog-feature-meta"><span>Custom Patches</span><span>Application Guide</span></div>
@@ -176,7 +177,7 @@ export const blogHtml = String.raw`
               <span class="blog-feature-link">Read More</span>
             </div>
           </a>
-          <a class="blog-feature-card" href="/blog/custom-metal-crafts-guide" data-blog-category="Awareness, Custom Lapel Pins, Custom Medals, Custom Coins, Custom Keychains, Custom Belt Buckle" aria-label="Read Complete Guide to Custom Metal Crafts">
+          <a class="blog-feature-card" href="/blog/custom-metal-crafts-guide" data-blog-category="Awareness, Custom Lapel Pins, Custom Medals, Custom Coins, Custom Keychains, Custom Belt Buckle, Others" aria-label="Read Complete Guide to Custom Metal Crafts">
             <img src="assets/images/blog-custom-metal-crafts.jpg" alt="custom metal crafts manufacturer producing pins medals and coins">
             <div class="blog-feature-body">
               <div class="blog-feature-meta"><span>Awareness</span><span>Multi Category</span></div>
