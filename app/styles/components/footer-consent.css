@@ -66,6 +66,11 @@
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
 }
 
+.footer-quote-form input,
+.footer-quote-form select {
+  padding-bottom: 2px;
+}
+
 .footer-quote-form select {
   color-scheme: dark;
 }
