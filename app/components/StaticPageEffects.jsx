@@ -364,6 +364,8 @@ export default function StaticPageEffects() {
       "Custom Keychains",
       "Custom Belt Buckle",
       "Golf Accessories",
+      "Patches",
+      "Others",
       "Custom Lanyards",
       "Custom Poker Chips",
       "Holidays",
@@ -385,6 +387,8 @@ export default function StaticPageEffects() {
       if (text.includes("coin")) inferredCategories.push("Custom Coins");
       if (text.includes("keychain")) inferredCategories.push("Custom Keychains");
       if (text.includes("belt buckle") || text.includes("buckle")) inferredCategories.push("Custom Belt Buckle");
+      if (text.includes("patch")) inferredCategories.push("Patches");
+      if (text.includes("other") || text.includes("metal crafts")) inferredCategories.push("Others");
       if (text.includes("lanyard")) inferredCategories.push("Custom Lanyards");
       if (text.includes("poker chip")) inferredCategories.push("Custom Poker Chips");
       if (text.includes("holiday") || text.includes("christmas") || text.includes("halloween")) inferredCategories.push("Holidays");
@@ -414,7 +418,8 @@ export default function StaticPageEffects() {
 
     document.querySelectorAll(".blog-category-filter button").forEach((button) => {
       const category = button.dataset.blogCategory || "All";
-      const shouldShow = category === "All" || availableBlogCategories.has(category);
+      const isPinnedCategory = button.dataset.blogCategoryPinned === "true";
+      const shouldShow = category === "All" || isPinnedCategory || availableBlogCategories.has(category);
       button.hidden = !shouldShow;
       button.setAttribute("aria-hidden", shouldShow ? "false" : "true");
     });

@@ -369,6 +369,106 @@ const formatArticleDate = (date) => {
 export const normalizeBlogArticleLinks = (html) =>
   html.replace(/href="\/blog\/([a-z0-9-]+)#\1"/g, 'href="/blog/$1"');
 
+const blogImageWidths = [640, 750, 828, 1080, 1200, 1600];
+const blogCardImageSizes = "(max-width: 767px) calc(100vw - 40px), (max-width: 1023px) calc((100vw - 77px) / 2), 405px";
+const blogArticleImageSizes = "(max-width: 767px) 100vw, (max-width: 1200px) calc(100vw - 48px), 1040px";
+
+const getHtmlAttr = (attrs, name) => {
+  const match = attrs.match(new RegExp(`\\s${name}=(["'])(.*?)\\1`, "i"));
+  return match?.[2] || "";
+};
+
+const setHtmlAttr = (attrs, name, value) => {
+  const safeValue = String(value).replace(/&/g, "&amp;").replace(/"/g, "&quot;");
+  const pattern = new RegExp(`\\s${name}=(["'])(.*?)\\1`, "i");
+
+  if (pattern.test(attrs)) {
+    return attrs.replace(pattern, ` ${name}="${safeValue}"`);
+  }
+
+  return `${attrs} ${name}="${safeValue}"`;
+};
+
+const normalizeBlogImageSrc = (src) => {
+  if (src.startsWith("assets/images/")) return `/${src}`;
+  return src;
+};
+
+const buildBlogImageSrcset = (src, sourceWidth) => {
+  if (!sourceWidth || sourceWidth < 640) return "";
+
+  const widths = blogImageWidths.filter((width) => width <= sourceWidth);
+  if (!widths.length) return "";
+
+  return widths
+    .map((width) => `/_next/image?url=${encodeURIComponent(src)}&w=${width}&q=90 ${width}w`)
+    .join(", ");
+};
+
+const enhanceBlogImageTag = (imgTag, { sizes, priority = false } = {}) =>
+  imgTag.replace(/<img\b([^>]*)>/, (match, attrs) => {
+    const rawSrc = getHtmlAttr(attrs, "src");
+    const src = normalizeBlogImageSrc(rawSrc);
+    if (!src.startsWith("/assets/images/")) return match;
+
+    let nextAttrs = attrs;
+    if (src !== rawSrc) {
+      nextAttrs = setHtmlAttr(nextAttrs, "src", src);
+    }
+
+    const existingSrcset = getHtmlAttr(nextAttrs, "srcset");
+    const canReplaceSrcset = !existingSrcset || existingSrcset.includes("/assets/images/");
+    if (canReplaceSrcset) {
+      const sourceWidth = Number.parseInt(getHtmlAttr(nextAttrs, "width"), 10);
+      const srcset = buildBlogImageSrcset(src, sourceWidth);
+      if (srcset) {
+        nextAttrs = setHtmlAttr(nextAttrs, "srcset", srcset);
+        nextAttrs = setHtmlAttr(nextAttrs, "sizes", sizes || blogArticleImageSizes);
+      }
+    } else if (sizes && !getHtmlAttr(nextAttrs, "sizes")) {
+      nextAttrs = setHtmlAttr(nextAttrs, "sizes", sizes);
+    }
+
+    nextAttrs = setHtmlAttr(nextAttrs, "decoding", "async");
+    if (priority) {
+      nextAttrs = setHtmlAttr(nextAttrs, "loading", "eager");
+      nextAttrs = setHtmlAttr(nextAttrs, "fetchpriority", "high");
+    } else if (!getHtmlAttr(nextAttrs, "loading")) {
+      nextAttrs = setHtmlAttr(nextAttrs, "loading", "lazy");
+    }
+
+    return `<img${nextAttrs}>`;
+  });
+
+const enhanceBlogCardImages = (html) => {
+  let cardIndex = 0;
+
+  return html.replace(
+    /(<a class="blog-feature-card"[\s\S]*?>\s*)(?:<span class="blog-feature-media">)?(<img\b[^>]*>)(?:<\/span>)?/g,
+    (match, opening, imgTag) => {
+      const enhancedImage = enhanceBlogImageTag(imgTag, {
+        sizes: blogCardImageSizes,
+        priority: cardIndex < 3,
+      });
+      cardIndex += 1;
+
+      return `${opening}<span class="blog-feature-media">${enhancedImage}</span>`;
+    },
+  );
+};
+
+const enhanceBlogArticleImages = (html) =>
+  html.replace(
+    /(<figure class="([^"]*\bblog-article-image\b[^"]*)"[^>]*>\s*)(<img\b[^>]*>)/g,
+    (match, opening, className, imgTag) => {
+      const isHeroImage = className.split(/\s+/).includes("blog-article-hero-image");
+      return `${opening}${enhanceBlogImageTag(imgTag, {
+        sizes: blogArticleImageSizes,
+        priority: isHeroImage,
+      })}`;
+    },
+  );
+
 const addBlogCardMeta = (html, articles = {}) =>
   html.replace(
     /(<a class="blog-feature-card" href="\/blog\/([^"#]+)"[\s\S]*?<p>[\s\S]*?<\/p>)\s*<span class="blog-feature-link">Read More<\/span>/g,
@@ -415,10 +515,10 @@ const sortBlogCardsByDate = (html, articles = {}) =>
   );
 
 export const buildBlogIndexHtml = (html, articles = {}) =>
-  addBlogCardMeta(sortBlogCardsByDate(normalizeBlogArticleLinks(html.replace(
+  enhanceBlogCardImages(addBlogCardMeta(sortBlogCardsByDate(normalizeBlogArticleLinks(html.replace(
     /<article id="[^"]+" class="[^"]*\bblog-article-section\b[^"]*">[\s\S]*?<\/article>/g,
     "",
-  )), articles), articles);
+  )), articles), articles));
 
 const addBlogArticleMeta = (articleHtml, articleMeta) => {
   const author = articleMeta?.author;
@@ -454,5 +554,5 @@ export const buildBlogArticleHtml = (html, articleSlug, articleMeta = {}) => {
     (_, className) => `class="${className.includes("is-active") ? className : `${className} is-active`}"`,
   ), articleMeta);
 
-  return normalizeBlogArticleLinks(`${shell.beforeMain}<main>${article}</main>${shell.afterMain}`);
+  return enhanceBlogArticleImages(normalizeBlogArticleLinks(`${shell.beforeMain}<main>${article}</main>${shell.afterMain}`));
 };

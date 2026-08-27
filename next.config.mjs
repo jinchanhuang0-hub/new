@@ -15,6 +15,10 @@ const staticHtmlRedirects = [
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   skipTrailingSlashRedirect: true,
+  images: {
+    deviceSizes: [640, 750, 828, 1080, 1200, 1600],
+    imageSizes: [64, 96, 128, 256, 384],
+  },
   async headers() {
     return [
       {
