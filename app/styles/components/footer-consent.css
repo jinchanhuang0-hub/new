@@ -138,6 +138,10 @@
   font-size: 14px;
 }
 
+.footer-form-notice:empty {
+  display: none;
+}
+
 .form-privacy-note {
   margin: 0;
   color: #5c6c84;
