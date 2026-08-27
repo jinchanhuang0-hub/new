@@ -157,6 +157,10 @@
   line-height: 1.5;
 }
 
+.footer-message-row + .form-commitment-note {
+  margin-top: -15px;
+}
+
 .form-privacy-note a {
   color: var(--navy);
   font-weight: 800;
