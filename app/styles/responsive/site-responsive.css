@@ -211,7 +211,7 @@
 
   .footer-quote {
     gap: 28px;
-    padding-bottom: 1px;
+    padding-bottom: 0;
     margin-bottom: 36px;
   }
 
