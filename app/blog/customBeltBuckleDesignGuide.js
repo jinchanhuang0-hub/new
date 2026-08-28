@@ -22,6 +22,10 @@ export const customBeltBuckleDesignGuideArticleHtml = String.raw`
           <header class="blog-article-header">
             <a class="blog-back-link" href="/blog">Back to Blog</a>
             <h1>How to Design a Custom Belt Buckle: 9 Decisions Before Production</h1>
+            <figure class="blog-article-image blog-article-hero-image blog-article-natural-image blog-belt-buckle-hero-image">
+              <img src="/assets/images/custom-plate-belt-buckle-front.webp" alt="Antique finish zinc alloy plate belt buckle with raised relief" width="1600" height="900" fetchpriority="high" decoding="async">
+              <figcaption>A plate buckle provides a broad face for relief, lettering and decorative metal detail.</figcaption>
+            </figure>
             <p>A custom belt buckle has two jobs. It carries the artwork people see, but it must also connect securely to the belt behind it. A design can look convincing from the front and still require changes if the size, weight or back attachment does not suit the intended strap.</p>
             <p>To design a custom belt buckle, begin with its use and the belt specifications. Then confirm the buckle dimensions, artwork hierarchy, 2D or 3D relief, metal finish, color and hinge-and-hook attachment. Before production, review the front, back and dimensions together on a digital proof.</p>
             <p>The nine decisions below provide a practical starting point for brands, distributors, event organizers and other buyers preparing a custom project.</p>
@@ -47,6 +51,10 @@ export const customBeltBuckleDesignGuideArticleHtml = String.raw`
           <p>Provide the belt width and thickness whenever possible. A photo of the front and back of the belt connection is also useful, particularly when an existing belt will be reused.</p>
           <p>Do not rely on the phrase "standard belt." Belt construction varies, and the decorative face of the buckle can be wider than the connection area behind it. The critical measurement is the part of the strap that meets the attachment.</p>
           <p>If the belt is being sourced from another supplier, share the approved buckle and belt specifications with both parties. This reduces the risk of receiving two individually correct components that do not fit each other.</p>
+          <figure class="blog-article-image blog-image-3x2 blog-belt-buckle-image">
+            <img src="/assets/images/plate-buckle-hinge-hook-back.webp" alt="Back of a plate belt buckle with hinge and hook attachment" width="1200" height="800" loading="lazy" decoding="async">
+            <figcaption>The hinge, hook and available strap space must be checked against the intended belt.</figcaption>
+          </figure>
 
           <h2 id="choose-size-and-shape">3. Choose a Practical Size and Shape</h2>
           <p>Custom zinc alloy plate buckles can be developed in oval, rectangular and other shaped outlines. The appropriate dimensions depend on the artwork, intended use and belt.</p>
@@ -92,6 +100,11 @@ export const customBeltBuckleDesignGuideArticleHtml = String.raw`
           <p>A polished finish reflects more light and can create a bright, clean appearance. A matte effect reduces strong reflections. An antique finish usually creates darker recessed areas, helping relief and texture appear more distinct.</p>
           <p>Finish names describe appearance; they should not be confused with the base material. For example, an antique brass appearance does not necessarily mean the buckle is made from solid brass. Product descriptions, quotations and approvals should distinguish zinc alloy from the selected plating or finish.</p>
           <p>When comparing finishes, use the same artwork where possible. Looking at unrelated buckle designs makes it harder to understand how the surface treatment changes contrast.</p>
+          <figure class="blog-article-image blog-image-3x2 blog-belt-buckle-image">
+            <img src="/assets/images/antique-brass-vs-antique-silver-belt-buckles.webp" alt="Antique brass and antique silver finishes on the same belt buckle design" width="1200" height="800" loading="lazy" decoding="async">
+            <div class="blog-belt-buckle-image-labels" aria-label="Finish labels"><span>Antique brass</span><span>Antique silver</span></div>
+            <figcaption>Using the same artwork makes it easier to compare how antique brass and antique silver change contrast and character.</figcaption>
+          </figure>
 
           <h2 id="decide-on-color">7. Decide Whether to Add Color</h2>
           <p>Soft enamel can separate logos, borders and other clearly defined areas. It is particularly useful when color is necessary for brand recognition, event categories or a coordinated merchandise range.</p>
@@ -137,6 +150,11 @@ export const customBeltBuckleDesignGuideArticleHtml = String.raw`
           </ul>
           <p>At Unique Pin, production begins after the customer approves the digital proof. Revisions can be made before production, so this is the correct stage to resolve unclear text, proportions, finishes or attachment details.</p>
           <p>Do not approve the project based only on an attractive front-view rendering. The front, back, dimensions and belt connection belong to the same product.</p>
+          <figure class="blog-article-image blog-image-3x2 blog-belt-buckle-image">
+            <img src="/assets/images/belt-buckle-proof-to-finished-product.webp" alt="Digital belt buckle proof compared with the finished zinc alloy buckle" width="1200" height="800" loading="lazy" decoding="async">
+            <div class="blog-belt-buckle-image-labels" aria-label="Comparison labels"><span>Digital proof</span><span>Finished buckle</span></div>
+            <figcaption>Comparing the approved artwork with the finished buckle helps verify relief, lettering and the selected antique finish.</figcaption>
+          </figure>
 
           <h2 id="from-artwork-to-finished-buckles">From Approved Artwork to Finished Buckles</h2>
           <p>After approval, a zinc alloy buckle order may move through mold preparation, die casting, polishing, plating and the selected finishing steps. Soft enamel filling or laser engraving is completed where specified. The products then proceed through quality inspection and packaging.</p>

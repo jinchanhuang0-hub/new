@@ -330,6 +330,7 @@ const blogArticleData = {
     headline: "How to Design a Custom Belt Buckle: 9 Decisions Before Production",
     description:
       "Learn how to design a custom belt buckle by confirming the belt, size, zinc alloy relief, finish, color and hinge-and-hook attachment.",
+    image: "/assets/images/custom-plate-belt-buckle-front.webp",
     author: "Sunny Huang",
     authorType: "Person",
     datePublished: "2026-08-28",
