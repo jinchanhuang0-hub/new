@@ -242,6 +242,44 @@
   object-position: center;
 }
 
+#memorial-challenge-coins-guide .blog-article-header > .blog-article-hero-image.blog-article-natural-image {
+  width: calc(100% + (2 * var(--article-pad)));
+  max-width: none;
+  margin-left: calc(var(--article-pad) * -1);
+  margin-right: calc(var(--article-pad) * -1);
+  overflow: hidden;
+}
+
+#memorial-challenge-coins-guide .blog-article-header > .blog-article-hero-image.blog-article-natural-image img {
+  width: 100%;
+  max-width: none;
+  height: auto;
+  max-height: none;
+  padding: 0;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
+}
+
+#uses-for-custom-patches .blog-article-header > .blog-article-hero-image.blog-article-natural-image {
+  width: calc(100% + (2 * var(--article-pad)));
+  max-width: none;
+  margin-left: calc(var(--article-pad) * -1);
+  margin-right: calc(var(--article-pad) * -1);
+  overflow: hidden;
+}
+
+#uses-for-custom-patches .blog-article-header > .blog-article-hero-image.blog-article-natural-image img {
+  width: 100%;
+  max-width: none;
+  height: auto;
+  max-height: none;
+  padding: 0;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
+}
+
 .blog-article-placeholder {
   overflow: hidden;
   border: 1px solid rgba(197, 211, 233, 0.8);
