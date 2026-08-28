@@ -23,8 +23,8 @@ export const customBeltBuckleDesignGuideArticleHtml = String.raw`
             <a class="blog-back-link" href="/blog">Back to Blog</a>
             <h1>How to Design a Custom Belt Buckle: 9 Decisions Before Production</h1>
             <figure class="blog-article-image blog-article-hero-image blog-article-natural-image blog-belt-buckle-hero-image">
-              <img src="/assets/images/custom-plate-belt-buckle-front.webp" alt="Antique finish zinc alloy plate belt buckle with raised relief" width="1600" height="900" fetchpriority="high" decoding="async">
-              <figcaption>A plate buckle provides a broad face for relief, lettering and decorative metal detail.</figcaption>
+              <img src="/assets/images/custom-plate-belt-buckle-front.webp?v=20260828-cover" alt="Digital proof, back attachment and finished zinc alloy plate belt buckle" width="1600" height="900" fetchpriority="high" decoding="async">
+              <figcaption>A digital proof, back attachment and finished buckle make the production specification visible before approval.</figcaption>
             </figure>
             <p>A custom belt buckle has two jobs. It carries the artwork people see, but it must also connect securely to the belt behind it. A design can look convincing from the front and still require changes if the size, weight or back attachment does not suit the intended strap.</p>
             <p>To design a custom belt buckle, begin with its use and the belt specifications. Then confirm the buckle dimensions, artwork hierarchy, 2D or 3D relief, metal finish, color and hinge-and-hook attachment. Before production, review the front, back and dimensions together on a digital proof.</p>
