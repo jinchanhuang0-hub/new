@@ -1933,6 +1933,69 @@
   width: min(1500px, calc(100% - 40px));
 }
 
+/* Keep intrinsic image dimensions from expanding the keychain style rows. */
+#custom-details .product-category-style-guide .home-category-row-media {
+  aspect-ratio: 1;
+}
+
+#custom-details .product-category-style-guide .home-category-row-media img {
+  height: 100%;
+}
+
+@media (min-width: 761px) {
+  /* Scale every medal type copy capsule without changing other category guides. */
+  #custom-details .product-type-section[data-product-content="medals"] ~ .product-category-style-guide .home-category-row-copy,
+  #custom-details .product-type-section[data-product-content="pins"] ~ .product-category-style-guide .home-category-row-copy {
+    transform: scale(0.8);
+    transform-origin: center;
+  }
+
+  #custom-details .product-type-section[data-product-content="coins"] ~ .product-category-style-guide .home-category-row-copy,
+  #custom-details .product-type-section[data-product-content="coins"] ~ .product-category-style-guide .home-category-row-mini {
+    transform: scale(0.8);
+    transform-origin: center;
+  }
+
+  #custom-details .product-type-section[data-product-content="keychains"] ~ .product-category-style-guide .home-category-row-copy,
+  #custom-details .product-type-section[data-product-content="keychains"] ~ .product-category-style-guide .home-category-row-mini {
+    transform: scale(0.8);
+    transform-origin: center;
+  }
+
+  #custom-details .product-type-section[data-product-content="buckles"] ~ .product-category-style-guide .home-category-row-copy,
+  #custom-details .product-type-section[data-product-content="buckles"] ~ .product-category-style-guide .home-category-row-mini {
+    transform: scale(0.8);
+    transform-origin: center;
+  }
+
+  #custom-details .product-type-section[data-product-content="golf-accessories"] ~ .product-category-style-guide .home-category-row-copy,
+  #custom-details .product-type-section[data-product-content="golf-accessories"] ~ .product-category-style-guide .home-category-row-mini {
+    transform: scale(0.8);
+    transform-origin: center;
+  }
+
+  #custom-details .product-type-section[data-product-content] ~ .product-category-style-guide .home-category-row .home-category-row-copy {
+    transform-origin: left center;
+  }
+
+  #custom-details .product-type-section[data-product-content] ~ .product-category-style-guide .home-category-row.is-reverse .home-category-row-copy {
+    transform-origin: right center;
+  }
+
+  #custom-details .product-type-section:is([data-product-content="medals"], [data-product-content="pins"], [data-product-content="coins"], [data-product-content="keychains"], [data-product-content="buckles"], [data-product-content="golf-accessories"]) ~ .product-category-style-guide .home-category-section-head {
+    margin-bottom: 28px;
+  }
+
+  #custom-details .product-type-section:is([data-product-content="medals"], [data-product-content="pins"], [data-product-content="coins"], [data-product-content="keychains"], [data-product-content="buckles"], [data-product-content="golf-accessories"]) ~ .product-category-style-guide .home-category-row-wrap {
+    --category-row-gap: 20px;
+  }
+
+  #custom-details .product-type-section:is([data-product-content="medals"], [data-product-content="pins"], [data-product-content="coins"], [data-product-content="keychains"], [data-product-content="buckles"], [data-product-content="golf-accessories"]) ~ .product-category-style-guide .home-category-row.is-reverse {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
 @media (min-width: 981px) and (max-width: 1120px) {
   .single-product-layout {
     grid-template-columns: minmax(320px, 0.72fr) minmax(0, 1.28fr);

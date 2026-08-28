@@ -781,6 +781,23 @@ const blogArticleData = {
     datePublished: "2026-07-24",
     dateModified: "2026-08-26",
     image: "/assets/images/blog-how-challenge-coins-made-card-v3.webp",
+    faq: [
+      {
+        question: "How long does it take to manufacture challenge coins?",
+        answer:
+          "Manufacturing time depends on artwork approval, mold complexity, quantity, finish, color work, packing method, and shipping route. Share the required delivery date at the first inquiry.",
+      },
+      {
+        question: "What artwork files should I submit?",
+        answer:
+          "Vector files such as AI, PDF, EPS, or SVG are helpful, but a logo, sketch, reference image, or clear concept can also be used for initial review.",
+      },
+      {
+        question: "Can both sides of a challenge coin be customized?",
+        answer:
+          "Yes. Many custom challenge coins use both front and back designs. The back side can include a motto, date, unit name, event name, serial number, QR code, or secondary logo.",
+      },
+    ],
   },
   "custom-enamel-pins-no-moq-guide": {
     title: "Custom Enamel Pins with No MOQ: A Complete Guide",

@@ -14,6 +14,7 @@ import {
 import {
   CATEGORY_PRODUCTS_PAGE_SIZE,
   getProductCountForCategory,
+  getProductEntriesForCategoryPage,
   getProductPageCount,
 } from "../../lib/productCards";
 
@@ -66,7 +67,17 @@ export default async function ProductCategoryPage({ params, searchParams }) {
   const metadata = productDetailMetadata[categoryKey];
   if (!categoryDetails || !metadata) notFound();
 
-  const pageUrl = `${SITE_URL}/products/${category}`;
+  const productCount = getProductCountForCategory(categoryKey);
+  const pageCount = getProductPageCount(productCount, CATEGORY_PRODUCTS_PAGE_SIZE);
+  const currentPage = Math.min(getRequestedPage(query), pageCount);
+  const pageUrl = `${SITE_URL}${getCanonicalPath(category, categoryKey, query)}`;
+  const productEntries =
+    categoryKey === "keychains"
+      ? getProductEntriesForCategoryPage(categoryKey, {
+          page: currentPage,
+          pageSize: CATEGORY_PRODUCTS_PAGE_SIZE,
+        })
+      : [];
 
   return (
     <>
@@ -96,13 +107,30 @@ export default async function ProductCategoryPage({ params, searchParams }) {
           ],
         }}
       />
+      {productEntries.length ? (
+        <JsonLd
+          data={{
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            name: "Custom Metal Keychains",
+            numberOfItems: productEntries.length,
+            itemListOrder: "https://schema.org/ItemListOrderAscending",
+            itemListElement: productEntries.map(({ slug, product }, index) => ({
+              "@type": "ListItem",
+              position: (currentPage - 1) * CATEGORY_PRODUCTS_PAGE_SIZE + index + 1,
+              name: product.title,
+              url: `${SITE_URL}/products/${category}/${slug}`,
+            })),
+          }}
+        />
+      ) : null}
       <StaticPage
         html={buildCategoryHtml(
           productDetailHtml,
           categoryKey,
           categoryDetails.label,
           {
-            page: getRequestedPage(query),
+            page: currentPage,
             pageSize: CATEGORY_PRODUCTS_PAGE_SIZE,
           },
         )}

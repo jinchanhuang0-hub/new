@@ -122,6 +122,11 @@ const getProductPageHref = (basePath, page) =>
 export const getProductCountForCategory = (categoryKey) =>
   getProductEntriesForCategory(categoryKey).length;
 
+export const getProductEntriesForCategoryPage = (categoryKey, options = {}) =>
+  getPaginatedEntries(getProductEntriesForCategory(categoryKey), options).map(
+    ([slug, product]) => ({ slug, product }),
+  );
+
 export const getProductPageCount = (total, pageSize) =>
   Math.max(1, Math.ceil(total / pageSize));
 

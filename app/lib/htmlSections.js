@@ -204,6 +204,10 @@ const productCategoryHeroBackgrounds = {
   others: "assets/images/custom-others-hero.png",
 };
 
+const productCategoryHeroImageDimensions = {
+  keychains: { width: 1913, height: 599 },
+};
+
 const categoryStyleGuideSourceByKey = {
   pins: {
     sourceSlug: "custom-lapel-pins",
@@ -279,6 +283,7 @@ const buildProductCategoryHero = (section, categoryKey, categoryLabel) => {
   }
 
   const heroBackground = productCategoryHeroBackgrounds[categoryKey];
+  const heroImageDimensions = productCategoryHeroImageDimensions[categoryKey];
   const head = section.match(/\s*<div class="product-type-head">[\s\S]*?<\/div>/)?.[0] || "";
   if (!head) {
     return {
@@ -292,7 +297,7 @@ const buildProductCategoryHero = (section, categoryKey, categoryLabel) => {
   return {
     hero: String.raw`
     <section class="product-type-hero-section has-product-hero-bg" data-product-hero="${categoryKey}">
-      ${heroBackground ? `<img class="product-type-hero-bg" src="${heroBackground}" alt="${categoryLabel} banner">` : ""}
+      ${heroBackground ? `<img class="product-type-hero-bg" src="${heroBackground}"${heroImageDimensions ? ` width="${heroImageDimensions.width}" height="${heroImageDimensions.height}"` : ""} alt="${categoryLabel} banner">` : ""}
       <div class="container product-type-hero-inner">
 ${head.trim()}
       </div>

@@ -67,7 +67,6 @@ export const homeProductLandingPages = [
         copy: "Zinc alloy casting supports sculpted relief, dimensional details and complex custom shapes. Well suited for mascots, character designs, commemorative pieces and distinctive brand merchandise.",
       },
       {
-        compact: true,
         eyebrow: "Best Value",
         title: "UV Printed Lapel Pins",
         image: "assets/images/type-pins-uv-printed-masquerade-day.png",
@@ -267,6 +266,8 @@ export const homeProductLandingPages = [
         eyebrow: "Dimensional Detail for Distinctive Designs",
         title: "Custom 3D Metal Keychains",
         image: "assets/images/type-keychains-tire-wheel-rim.jpg",
+        imageWidth: 1185,
+        imageHeight: 1185,
         alt: "Custom 3D metal keychains with sculpted relief",
         href: "/products/custom-metal-keychains/tire-wheel-rim-keychain",
         buttonLabel: "Explore 3D Keychains",
@@ -276,6 +277,8 @@ export const homeProductLandingPages = [
         eyebrow: "Vibrant Color with Defined Metal Detail",
         title: "Custom Enamel Keychains",
         image: "assets/images/type-keychains-enamel.jpg",
+        imageWidth: 750,
+        imageHeight: 750,
         alt: "Custom enamel keychain with colorful logo design",
         href: "/products/custom-metal-keychains/palm-island-enamel-keychain",
         buttonLabel: "Explore Enamel Keychains",
@@ -285,6 +288,8 @@ export const homeProductLandingPages = [
         eyebrow: "Practical Function for Everyday Promotion",
         title: "Custom Bottle Opener Keychains",
         image: "assets/images/type-keychains-basketball-bottle-opener.jpg",
+        imageWidth: 1296,
+        imageHeight: 1500,
         alt: "Custom metal bottle opener keychain with logo",
         href: "/products/custom-metal-keychains/basketball-bottle-opener-keychain",
         buttonLabel: "Explore Opener Keychains",
@@ -294,6 +299,8 @@ export const homeProductLandingPages = [
         eyebrow: "Interactive Movement That Gets Noticed",
         title: "Custom Spinner Keychains",
         image: "assets/images/type-keychains-thin-blue-line-spinner-bottle-opener.jpg",
+        imageWidth: 563,
+        imageHeight: 1500,
         alt: "Custom spinner keychain with rotating center",
         href: "/products/custom-metal-keychains/thin-blue-line-spinner-bottle-opener-keychain",
         buttonLabel: "Explore Spinner Keychains",
@@ -442,7 +449,7 @@ export const renderHomeProductLandingRows = (rows, headingTag = "h2") => {
       if (row.compact) {
         return `
         <article${rowId} class="home-category-row-mini${row.image ? " has-media" : ""}">
-          ${row.image ? `<a class="home-category-mini-media" href="${escapeHtml(row.href)}"><img src="${escapeHtml(row.image)}" alt="${escapeHtml(imageAlt)}"></a>` : ""}
+          ${row.image ? `<a class="home-category-mini-media" href="${escapeHtml(row.href)}"><img src="${escapeHtml(row.image)}"${row.imageWidth && row.imageHeight ? ` width="${row.imageWidth}" height="${row.imageHeight}"` : ""} alt="${escapeHtml(imageAlt)}"></a>` : ""}
           <div class="home-category-mini-card">
             <span>${escapeHtml(row.eyebrow)}</span>
             <${rowHeadingTag}>${escapeHtml(row.title)}</${rowHeadingTag}>
@@ -458,7 +465,7 @@ export const renderHomeProductLandingRows = (rows, headingTag = "h2") => {
       return `
         <article${rowId} class="home-category-row tone-${visualIndex}${isReverse ? " is-reverse" : ""}">
           <a class="home-category-row-media" href="${escapeHtml(row.href)}">
-            <img src="${escapeHtml(row.image)}" alt="${escapeHtml(imageAlt)}">
+            <img src="${escapeHtml(row.image)}"${row.imageWidth && row.imageHeight ? ` width="${row.imageWidth}" height="${row.imageHeight}"` : ""} alt="${escapeHtml(imageAlt)}">
           </a>
           <div class="home-category-row-copy">
             <span>${escapeHtml(row.eyebrow)}</span>
