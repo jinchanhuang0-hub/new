@@ -44,6 +44,7 @@ export const blogHtml = String.raw`
         </div>
         <div class="blog-card-grid">
           <a class="blog-feature-card" href="/blog/how-to-design-a-custom-belt-buckle" data-blog-category="Custom Belt Buckle" aria-label="Read How to Design a Custom Belt Buckle: 9 Decisions Before Production">
+            <img src="/assets/images/custom-plate-belt-buckle-front.webp?v=20260828-cover" width="1600" height="900" alt="Digital proof, back attachment and finished zinc alloy plate belt buckle">
             <div class="blog-feature-body">
               <div class="blog-feature-meta"><span>Custom Belt Buckle</span><span>Design Guide</span></div>
               <h2>How to Design a Custom Belt Buckle: 9 Decisions Before Production</h2>
