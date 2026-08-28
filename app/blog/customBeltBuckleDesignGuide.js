@@ -87,6 +87,10 @@ export const customBeltBuckleDesignGuideArticleHtml = String.raw`
           <p>Neither option is automatically better. The decision should follow the artwork.</p>
           <p>Many buckles use both approaches. A 3D central subject can be combined with a 2D border and lettering. Laser engraving can add selected names, numbering or fine surface information where appropriate. Open areas can also become part of the design, but the remaining structure must still support the buckle and its attachment.</p>
           <p>The digital proof should make each level understandable. If the buyer cannot tell which areas are raised, recessed, colored or engraved, the production specification is not yet clear enough.</p>
+          <figure class="blog-article-image blog-image-3x2 blog-belt-buckle-image">
+            <img src="/assets/images/2d-vs-3d-custom-belt-buckle.webp" alt="2D and 3D relief compared on custom zinc alloy belt buckles" width="1200" height="800" loading="lazy" decoding="async">
+            <figcaption>Defined 2D levels suit clear logos and lettering, while 3D relief creates rounded sculptural forms.</figcaption>
+          </figure>
 
           <h2 id="select-the-metal-finish">6. Select the Metal Finish</h2>
           <p>The confirmed base material for this product is zinc alloy. Its appearance can be changed through plating and surface treatment.</p>
