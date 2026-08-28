@@ -52,8 +52,8 @@ export const customBeltBuckleDesignGuideArticleHtml = String.raw`
           <p>Do not rely on the phrase "standard belt." Belt construction varies, and the decorative face of the buckle can be wider than the connection area behind it. The critical measurement is the part of the strap that meets the attachment.</p>
           <p>If the belt is being sourced from another supplier, share the approved buckle and belt specifications with both parties. This reduces the risk of receiving two individually correct components that do not fit each other.</p>
           <figure class="blog-article-image blog-image-3x2 blog-belt-buckle-image">
-            <img src="/assets/images/plate-buckle-hinge-hook-back.webp" alt="Back of a plate belt buckle with hinge and hook attachment" width="1200" height="800" loading="lazy" decoding="async">
-            <figcaption>The hinge, hook and available strap space must be checked against the intended belt.</figcaption>
+            <img src="/assets/images/plate-buckle-hinge-hook-structure.webp" alt="Front and back of a plate belt buckle with hinge and hook attachment" width="1200" height="800" loading="lazy" decoding="async">
+            <figcaption>The front and back show how the hinge, hook and available strap space must be checked against the intended belt.</figcaption>
           </figure>
 
           <h2 id="choose-size-and-shape">3. Choose a Practical Size and Shape</h2>
