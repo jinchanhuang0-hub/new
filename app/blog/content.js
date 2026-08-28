@@ -1441,7 +1441,7 @@ export const blogHtml = String.raw`
         <p>At this stage, a custom challenge coin manufacturer is not simply redrawing a file. The artwork must be adjusted for raised metal lines, recessed color areas, coin edge, back-side layout, tooling depth, and the selected metal finish.</p>
         <p>The application also matters. A military recognition coin, police department coin, corporate anniversary coin, and collector coin may need different choices for finish, presentation box, color contrast, and delivery timing. A coin used at a formal ceremony, for example, usually needs more attention to box presentation and surface consistency than a simple giveaway order. For service recognition projects, review <a href="/blog/military-challenge-coin-traditions">military challenge coin traditions and etiquette</a> before finalizing the presentation plan.</p>
         <figure class="blog-article-image blog-article-contain-image">
-          <img src="/assets/images/blog-challenge-coin-artwork-proof.webp" alt="custom challenge coin artwork proof prepared on design software before production">
+          <img src="/assets/images/blog-challenge-coin-artwork-proof.webp" width="1067" height="1474" loading="lazy" decoding="async" alt="custom challenge coin artwork proof prepared on design software before production">
           <figcaption>Production artwork should define the coin size, front and back design, color references, finish and manufacturing notes before tooling begins.</figcaption>
         </figure>
 
@@ -1462,7 +1462,7 @@ export const blogHtml = String.raw`
         <p>Design changes after tooling starts may require adjustment or a new mold, which can add cost and delay the schedule. This is why proof review should be treated as a production decision, not only a visual check.</p>
         <p>For designs with deep relief or very small lettering, the tooling review should focus on practical readability. A coin may look dramatic in a rendering, but the die still needs to allow clean metal flow, stable edges, and details that can survive polishing and surface finishing.</p>
         <figure class="blog-article-image">
-          <img src="/assets/images/blog-challenge-coin-mold-making.webp" alt="challenge coin mold detail being checked before mass production">
+          <img src="/assets/images/blog-challenge-coin-mold-making.webp" width="1200" height="900" loading="lazy" decoding="async" alt="challenge coin mold detail being checked before mass production">
           <figcaption>Mold accuracy controls the final relief, lettering, recessed areas and edge detail of a custom challenge coin.</figcaption>
         </figure>
 
@@ -1473,7 +1473,7 @@ export const blogHtml = String.raw`
         <p>The choice between die-striking and die-casting affects detail, cost, texture, production time, and final appearance, so it should be decided before pricing is treated as final.</p>
         <p>In factory review, die-striking is often preferred when the buyer wants a classic coin structure with crisp borders and strong raised metal lines. Die-casting is often considered when the coin shape is not round, when the design includes cutout areas, or when the 3D relief is too deep for a simpler stamped structure.</p>
         <figure class="blog-article-image">
-          <img src="/assets/images/blog-challenge-coin-die-striking.webp" alt="die striking equipment used in custom challenge coin production">
+          <img src="/assets/images/blog-challenge-coin-die-striking.webp" width="1200" height="1177" loading="lazy" decoding="async" alt="die striking equipment used in custom challenge coin production">
           <figcaption>Die-striking uses pressure and tooling to form raised and recessed coin details before finishing.</figcaption>
         </figure>
 
@@ -1494,7 +1494,7 @@ export const blogHtml = String.raw`
         <p>After plating, color may be added to recessed areas. Soft enamel is widely used for colorful challenge coins, while hard enamel can create a smoother surface. For gradients, photos, or very fine details, printing may be more practical than enamel filling.</p>
         <p>Metal finish and coloring should be checked under normal lighting because bright finishes and antique finishes can look different from digital previews. For brand or unit colors, Pantone references help reduce misunderstanding, but buyers should still allow a reasonable tolerance because metal, enamel, and screen colors do not behave exactly the same.</p>
         <figure class="blog-article-image">
-          <img src="/assets/images/blog-challenge-coin-coloring.webp" alt="factory enamel coloring process for custom challenge coins">
+          <img src="/assets/images/blog-challenge-coin-coloring.webp" width="1400" height="1050" loading="lazy" decoding="async" alt="factory enamel coloring process for custom challenge coins">
           <figcaption>Coloring and finish choices affect color contrast, surface texture, durability and the final presentation of the coin.</figcaption>
         </figure>
 
@@ -1508,7 +1508,7 @@ export const blogHtml = String.raw`
         <p>If the coins are for an event, ceremony, or official presentation, leave enough time for final inspection before shipment.</p>
         <p>For bulk orders, inspection should include both appearance checks and packing checks. The factory should compare finished coins against the approved proof, review several cartons from the batch, and confirm that labels, quantities, and packing methods match the customer requirements.</p>
         <figure class="blog-article-image">
-          <img src="/assets/images/blog-challenge-coin-quality-inspection.webp" alt="custom challenge coins being inspected before packaging">
+          <img src="/assets/images/blog-challenge-coin-quality-inspection.webp" width="1200" height="1141" loading="lazy" decoding="async" alt="custom challenge coins being inspected before packaging">
           <figcaption>Final inspection checks coin appearance, surface quality, color consistency, quantity and packing before shipment.</figcaption>
         </figure>
 
@@ -1518,14 +1518,14 @@ export const blogHtml = String.raw`
         <p>Production time depends on artwork approval, mold complexity, order quantity, finish, color work, packaging requirements, and factory schedule. If the order is tied to a ceremony, trade show, or launch date, share the deadline at the first inquiry.</p>
         <p>Before shipping, the packing list, carton marks, gross weight, carton size, destination country, and delivery method should be checked. This step is simple, but it helps avoid shipment delays caused by missing labels, incorrect carton information, or unclear delivery instructions.</p>
         <figure class="blog-article-image">
-          <img src="/assets/images/blog-challenge-coin-packaging-shipping.webp" alt="export cartons prepared for custom challenge coin shipment">
+          <img src="/assets/images/blog-challenge-coin-packaging-shipping.webp" width="1159" height="1357" loading="lazy" decoding="async" alt="export cartons prepared for custom challenge coin shipment">
           <figcaption>Shipment preparation should confirm packing details, carton labels, quantity and delivery schedule before dispatch.</figcaption>
         </figure>
 
         <h2>Die-Struck vs Die-Cast Challenge Coins</h2>
         <p>Both methods can produce professional results when the process matches the artwork. The table below gives a practical comparison before confirming production.</p>
         <figure class="blog-article-image blog-article-contain-image">
-          <img src="/assets/images/blog-challenge-coin-2d-vs-3d.webp" alt="2D and 3D custom challenge coin examples with different finishes">
+          <img src="/assets/images/blog-challenge-coin-2d-vs-3d.webp" width="1200" height="1200" loading="lazy" decoding="async" alt="2D and 3D custom challenge coin examples with different finishes">
           <figcaption>2D and 3D challenge coin designs can use different finishes, relief depths, colors and edge treatments.</figcaption>
         </figure>
         <div class="blog-table-wrap">
