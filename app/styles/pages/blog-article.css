@@ -762,6 +762,51 @@
   aspect-ratio: 7 / 5;
 }
 
+#how-to-design-a-custom-belt-buckle .blog-article-header > .blog-belt-buckle-hero-image {
+  width: calc(100% + (2 * var(--article-pad)));
+  max-width: none;
+  margin-left: calc(var(--article-pad) * -1);
+  margin-right: calc(var(--article-pad) * -1);
+  overflow: hidden;
+}
+
+#how-to-design-a-custom-belt-buckle .blog-article-header > .blog-belt-buckle-hero-image img {
+  width: 100%;
+  max-width: none;
+  height: auto;
+  max-height: none;
+  padding: 0;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
+}
+
+#how-to-design-a-custom-belt-buckle .blog-belt-buckle-image img {
+  width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: cover;
+}
+
+.blog-belt-buckle-image-labels {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.blog-belt-buckle-image-labels span {
+  display: block;
+  padding: 7px 10px;
+  border: 1px solid rgba(197, 211, 233, 0.86);
+  border-radius: 4px;
+  background: #fff;
+  color: var(--navy);
+  font-size: 13px;
+  font-weight: 850;
+  line-height: 1.25;
+}
+
 .blog-quick-answer {
   margin: 24px 0 36px;
   padding: 26px 28px 8px;
