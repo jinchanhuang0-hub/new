@@ -105,9 +105,8 @@ export const customBeltBuckleDesignGuideArticleHtml = String.raw`
           <p>Finish names describe appearance; they should not be confused with the base material. For example, an antique brass appearance does not necessarily mean the buckle is made from solid brass. Product descriptions, quotations and approvals should distinguish zinc alloy from the selected plating or finish.</p>
           <p>When comparing finishes, use the same artwork where possible. Looking at unrelated buckle designs makes it harder to understand how the surface treatment changes contrast.</p>
           <figure class="blog-article-image blog-image-3x2 blog-belt-buckle-image">
-            <img src="/assets/images/antique-brass-vs-antique-silver-belt-buckles.webp" alt="Antique brass and antique silver finishes on the same belt buckle design" width="1200" height="800" loading="lazy" decoding="async">
-            <div class="blog-belt-buckle-image-labels" aria-label="Finish labels"><span>Antique brass</span><span>Antique silver</span></div>
-            <figcaption>Using the same artwork makes it easier to compare how antique brass and antique silver change contrast and character.</figcaption>
+            <img src="/assets/images/custom-belt-buckle-finishes.webp" alt="Polished antique matte and gunmetal finishes on zinc alloy belt buckles" width="1200" height="800" loading="lazy" decoding="async">
+            <figcaption>Comparing the same artwork makes it easier to see how each finish changes contrast and character.</figcaption>
           </figure>
 
           <h2 id="decide-on-color">7. Decide Whether to Add Color</h2>
