@@ -154,9 +154,8 @@ export const customBeltBuckleDesignGuideArticleHtml = String.raw`
           <p>At Unique Pin, production begins after the customer approves the digital proof. Revisions can be made before production, so this is the correct stage to resolve unclear text, proportions, finishes or attachment details.</p>
           <p>Do not approve the project based only on an attractive front-view rendering. The front, back, dimensions and belt connection belong to the same product.</p>
           <figure class="blog-article-image blog-image-3x2 blog-belt-buckle-image">
-            <img src="/assets/images/belt-buckle-proof-to-finished-product.webp" alt="Digital belt buckle proof compared with the finished zinc alloy buckle" width="1200" height="800" loading="lazy" decoding="async">
-            <div class="blog-belt-buckle-image-labels" aria-label="Comparison labels"><span>Digital proof</span><span>Finished buckle</span></div>
-            <figcaption>Comparing the approved artwork with the finished buckle helps verify relief, lettering and the selected antique finish.</figcaption>
+            <img src="/assets/images/belt-buckle-proof-to-product.webp" alt="Custom belt buckle digital proof compared with the finished product" width="1200" height="800" loading="lazy" decoding="async">
+            <figcaption>The approved proof defines the design and finish, while the finished metal reflects real lighting and production texture.</figcaption>
           </figure>
 
           <h2 id="from-artwork-to-finished-buckles">From Approved Artwork to Finished Buckles</h2>
