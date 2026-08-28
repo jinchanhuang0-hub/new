@@ -162,6 +162,10 @@ export const customBeltBuckleDesignGuideArticleHtml = String.raw`
           <p>After approval, a zinc alloy buckle order may move through mold preparation, die casting, polishing, plating and the selected finishing steps. Soft enamel filling or laser engraving is completed where specified. The products then proceed through quality inspection and packaging.</p>
           <p>The exact sequence can vary when an order combines different effects. Timing should therefore be evaluated from the approved design, quantity, sample requirements, packaging and destination instead of being presented as one universal lead time.</p>
           <p>Packaging options can range from protective individual packing to velvet pouches or presentation boxes. The appropriate choice depends on whether the buckle is being shipped as a component, sold as retail merchandise or presented as an award or corporate gift.</p>
+          <figure class="blog-article-image blog-image-3x2 blog-belt-buckle-image">
+            <img src="/assets/images/custom-belt-buckle-packaging.webp" alt="Custom belt buckle packaging with pouch and presentation box options" width="1200" height="800" loading="lazy" decoding="async">
+            <figcaption>Packaging can be selected for bulk components, retail merchandise, corporate gifts or award presentation.</figcaption>
+          </figure>
 
           <h2 id="what-to-send-for-a-quote">What to Send for a Custom Belt Buckle Quote</h2>
           <p>A complete request helps the artwork and quotation process move more efficiently. Send:</p>
