@@ -442,4 +442,15 @@
   .container {
     width: min(var(--max), calc(100% - 28px));
   }
+
+  .product-type-actions,
+  #custom-details .product-type-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .product-type-btn,
+  #custom-details .product-type-btn {
+    padding: 0 8px;
+    font-size: 12px;
+  }
 }
