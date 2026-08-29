@@ -304,7 +304,7 @@ const buildProductCategoryHero = (section, categoryKey, categoryLabel) => {
   return {
     hero: String.raw`
     <section class="product-type-hero-section has-product-hero-bg" data-product-hero="${categoryKey}">
-      ${heroBackground ? `<img class="product-type-hero-bg" src="${heroBackground}" alt="${categoryLabel} banner">` : ""}
+      ${heroBackground ? `<picture><source media="(max-width: 767px)" srcset="/_next/image?url=${encodeURIComponent(heroBackground.startsWith("/") ? heroBackground : `/${heroBackground}`)}&w=828&q=72"><img class="product-type-hero-bg" src="${heroBackground}" alt="${categoryLabel} banner"></picture>` : ""}
       <div class="container product-type-hero-inner">
 ${head.trim()}
       </div>

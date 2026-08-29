@@ -3324,6 +3324,11 @@ export const renderProductItemHtml = (item, currentSlug) => {
       alt: item.alt || item.title,
       imageTag,
     }))
+    .replace(/<img([^>]*class="design-respect-shield-image"[^>]*)>/g, (imageTag) => renderMobilePicture({
+      image: "assets/images/design-protection-shield.webp",
+      alt: "",
+      imageTag,
+    }))
     .replace(/<a class="single-product-inquiry" href="[^"]*"[^>]*>/, `<a class="single-product-inquiry" href="${quotePath}" data-product-inquiry-trigger data-product-inquiry-product="${escapeHtml(quoteProduct)}" data-product-inquiry-title="${safe.title}">`)
     .replace(/<tbody>\s*<tr><td>1<\/td><td>Material<\/td><td>[\s\S]*?<\/tbody>/, `<tbody>\n${buildCustomSolutionRowsHtml(item)}\n            </tbody>`)
     .replace(/<div class="single-product-related-grid" data-product-related-content><\/div>/, `<div class="single-product-related-grid" data-product-related-content>${buildRelatedProductsHtml(currentSlug, item)}
