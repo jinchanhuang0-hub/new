@@ -25,6 +25,11 @@ const escapeHtml = (value = "") => String(value)
   .replaceAll(">", "&gt;")
   .replaceAll('"', "&quot;");
 
+const getMobileImageSource = (image, width) => {
+  const normalizedImage = image.startsWith("/") ? image : `/${image}`;
+  return `/_next/image?url=${encodeURIComponent(normalizedImage)}&w=${width}&q=72`;
+};
+
 const deferredKeychainKeywords = ["pvc", "leather", "woven"];
 
 const isDeferredKeychainProduct = (product) => {
@@ -154,7 +159,7 @@ const renderProductCard = ({
     : "";
 
   return `          <article class="product-type-card"${categoryAttrs}>
-            <a class="product-type-media" href="${escapeHtml(productPath)}"><img src="${escapeHtml(product.image)}" width="800" height="800" loading="lazy" decoding="async" alt="${escapeHtml(product.alt || product.title)}"></a>
+            <a class="product-type-media" href="${escapeHtml(productPath)}"><picture><source media="(max-width: 767px)" srcset="${escapeHtml(getMobileImageSource(product.image, 384))}"><img src="${escapeHtml(product.image)}" width="800" height="800" loading="lazy" decoding="async" alt="${escapeHtml(product.alt || product.title)}"></picture></a>
             <h2><a href="${escapeHtml(productPath)}">${escapeHtml(product.title)}</a></h2>
             <div class="product-type-actions">
               <a class="product-type-btn product-type-btn-outline" href="${escapeHtml(productPath)}">View Details</a>

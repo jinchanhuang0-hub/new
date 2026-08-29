@@ -3266,6 +3266,14 @@ const buildCustomSolutionRowsHtml = (item) => getCustomSolutionRows(item)
   .map(([label, value], index) => `              <tr><td>${index + 1}</td><td>${escapeHtml(label)}</td><td>${escapeHtml(value)}</td></tr>`)
   .join("\n");
 
+const getMobileImageSource = (image, width) => {
+  const normalizedImage = image.startsWith("/") ? image : `/${image}`;
+  return `/_next/image?url=${encodeURIComponent(normalizedImage)}&w=${width}&q=72`;
+};
+
+const renderMobilePicture = ({ image, alt, imageTag }) => `
+              <picture><source media="(max-width: 767px)" srcset="${escapeHtml(getMobileImageSource(image, 640))}">${imageTag.replace(/src="[^"]*"/, `src="${escapeHtml(image)}"`).replace(/alt="[^"]*"/, `alt="${escapeHtml(alt)}"`)}</picture>`;
+
 const buildRelatedProductsHtml = (currentSlug, item) => {
   const relatedProducts = Object.entries(productItems)
     .filter(([slug, product]) => slug !== currentSlug && product.categoryLabel === item.categoryLabel)
@@ -3279,7 +3287,7 @@ const buildRelatedProductsHtml = (currentSlug, item) => {
     const quotePath = `/contact?product=${encodeURIComponent(quoteProduct)}&item=${encodeURIComponent(product.title)}`;
     return `
           <article class="single-product-related-card">
-            <a class="single-product-related-media" href="${escapeHtml(productPath)}"><img src="${escapeHtml(product.image)}" alt="${escapeHtml(product.alt || product.title)}"></a>
+            <a class="single-product-related-media" href="${escapeHtml(productPath)}"><picture><source media="(max-width: 767px)" srcset="${escapeHtml(getMobileImageSource(product.image, 640))}"><img src="${escapeHtml(product.image)}" alt="${escapeHtml(product.alt || product.title)}"></picture></a>
             <h3><a href="${escapeHtml(productPath)}">${escapeHtml(product.title)}</a></h3>
             <p>${escapeHtml(description)}</p>
             <div class="single-product-related-actions">
@@ -3311,7 +3319,11 @@ export const renderProductItemHtml = (item, currentSlug) => {
     .replace(/<span data-product-spec="sku">[^<]*<\/span>/g, `<span data-product-spec="sku">${safe.sku}</span>`)
     .replace(/<span data-product-spec="usage">[^<]*<\/span>/g, `<span data-product-spec="usage">${safe.usage}</span>`)
     .replace(/<span data-product-spec="categories">[^<]*<\/span>/g, `<span data-product-spec="categories">${safe.categories}</span>`)
-    .replace(/<img([^>]*data-product-item-image[^>]*)src="[^"]*"([^>]*)alt="[^"]*"/g, `<img$1src="${safe.image}"$2alt="${safe.alt || safe.title}"`)
+    .replace(/<img([^>]*data-product-item-image[^>]*)>/g, (imageTag) => renderMobilePicture({
+      image: item.image,
+      alt: item.alt || item.title,
+      imageTag,
+    }))
     .replace(/<a class="single-product-inquiry" href="[^"]*"[^>]*>/, `<a class="single-product-inquiry" href="${quotePath}" data-product-inquiry-trigger data-product-inquiry-product="${escapeHtml(quoteProduct)}" data-product-inquiry-title="${safe.title}">`)
     .replace(/<tbody>\s*<tr><td>1<\/td><td>Material<\/td><td>[\s\S]*?<\/tbody>/, `<tbody>\n${buildCustomSolutionRowsHtml(item)}\n            </tbody>`)
     .replace(/<div class="single-product-related-grid" data-product-related-content><\/div>/, `<div class="single-product-related-grid" data-product-related-content>${buildRelatedProductsHtml(currentSlug, item)}

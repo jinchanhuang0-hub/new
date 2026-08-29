@@ -69,6 +69,16 @@
     min-width: 44px;
   }
 
+  .privacy-consent {
+    position: static;
+    max-height: none;
+    overflow: visible;
+  }
+
+  .privacy-consent-actions button {
+    min-height: 48px;
+  }
+
   /* Product category and collection pages. */
   .product-type-head h1,
   .product-type-hero-section.has-product-hero-bg .product-type-head h1,
