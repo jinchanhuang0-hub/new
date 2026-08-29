@@ -415,12 +415,20 @@ export const homeProductLandingPathBySlug = Object.fromEntries(
   homeProductLandingPages.map((page) => [page.slug, `/product-category/${page.slug}`]),
 );
 
+const getMobileImageSource = (image, width) => {
+  const normalizedImage = image.startsWith("/") ? image : `/${image}`;
+  return `/_next/image?url=${encodeURIComponent(normalizedImage)}&w=${width}&q=72`;
+};
+
+const renderResponsiveImage = (image, alt, className = "", width = 640) => `
+            <picture><source media="(max-width: 767px)" srcset="${escapeHtml(getMobileImageSource(image, width))}"><img${className ? ` class="${escapeHtml(className)}"` : ""} src="${escapeHtml(image)}" alt="${escapeHtml(alt)}"></picture>`;
+
 const renderHeroImages = (images, title) => images
-  .map((image, index) => `            <img class="home-category-hero-image image-${index + 1}" src="${escapeHtml(image)}" alt="${escapeHtml(title)} sample ${index + 1}">`)
+  .map((image, index) => renderResponsiveImage(image, `${title} sample ${index + 1}`, `home-category-hero-image image-${index + 1}`, 640))
   .join("\n");
 
 const renderHeroBackground = (page) => page.heroBackground
-  ? `      <img class="home-category-hero-bg" src="${escapeHtml(page.heroBackground)}" alt="${escapeHtml(page.title)} banner">`
+  ? `      ${renderResponsiveImage(page.heroBackground, `${page.title} banner`, "home-category-hero-bg", 828)}`
   : "";
 
 const renderHeroVisual = (page) => page.heroBackground
@@ -442,7 +450,7 @@ export const renderHomeProductLandingRows = (rows, headingTag = "h2") => {
       if (row.compact) {
         return `
         <article${rowId} class="home-category-row-mini${row.image ? " has-media" : ""}">
-          ${row.image ? `<a class="home-category-mini-media" href="${escapeHtml(row.href)}"><img src="${escapeHtml(row.image)}" alt="${escapeHtml(imageAlt)}"></a>` : ""}
+          ${row.image ? `<a class="home-category-mini-media" href="${escapeHtml(row.href)}">${renderResponsiveImage(row.image, imageAlt)}</a>` : ""}
           <div class="home-category-mini-card">
             <span>${escapeHtml(row.eyebrow)}</span>
             <${rowHeadingTag}>${escapeHtml(row.title)}</${rowHeadingTag}>
@@ -458,7 +466,7 @@ export const renderHomeProductLandingRows = (rows, headingTag = "h2") => {
       return `
         <article${rowId} class="home-category-row tone-${visualIndex}${isReverse ? " is-reverse" : ""}">
           <a class="home-category-row-media" href="${escapeHtml(row.href)}">
-            <img src="${escapeHtml(row.image)}" alt="${escapeHtml(imageAlt)}">
+            ${renderResponsiveImage(row.image, imageAlt)}
           </a>
           <div class="home-category-row-copy">
             <span>${escapeHtml(row.eyebrow)}</span>

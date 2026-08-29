@@ -35,13 +35,14 @@ const normalizeImageUrl = (value) => {
 
 const collectPageImages = () => {
   const sources = new Set();
+  const isMobileViewport = window.matchMedia("(max-width: 767px)").matches;
 
   document.querySelectorAll("img").forEach((image) => {
-    [
-      image.dataset.src,
-      image.currentSrc,
-      image.getAttribute("src"),
-    ].forEach((source) => {
+    const imageSources = isMobileViewport
+      ? [image.currentSrc]
+      : [image.dataset.src, image.currentSrc, image.getAttribute("src")];
+
+    imageSources.forEach((source) => {
       const normalized = normalizeImageUrl(source);
       if (normalized) sources.add(normalized);
     });
