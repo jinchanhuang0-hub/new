@@ -304,6 +304,7 @@ const withBlogArticleDefaults = (article) => {
   return {
     author: DEFAULT_BLOG_AUTHOR_SCHEMA.name,
     authorType: DEFAULT_BLOG_AUTHOR_SCHEMA["@type"],
+    authorUrl: DEFAULT_BLOG_AUTHOR_SCHEMA.url,
     ...article,
     datePublished,
     dateModified: article.dateModified || datePublished,

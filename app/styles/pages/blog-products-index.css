@@ -98,6 +98,24 @@
   line-height: 1.7;
 }
 
+.blog-page-hero .blog-author-profile-entry {
+  margin-top: 12px;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.blog-author-profile-entry a {
+  color: var(--navy);
+  text-decoration: underline;
+  text-decoration-color: var(--yellow);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+.blog-author-profile-entry a:hover {
+  color: #1e5e9a;
+}
+
 .blog-feature-section {
   padding: 56px 0 70px;
   background:
