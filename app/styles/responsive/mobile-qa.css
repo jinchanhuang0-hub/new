@@ -175,6 +175,36 @@
     white-space: nowrap;
   }
 
+  /* Keep the custom-page process steps readable without changing their content. */
+  .custom-how-section .how-steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    margin-top: 24px;
+  }
+
+  .custom-how-section .how-step-card {
+    min-height: 142px;
+    gap: 10px;
+    padding: 14px 10px;
+    border-radius: 12px;
+  }
+
+  .custom-how-section .step-icon {
+    width: 52px;
+    height: 52px;
+  }
+
+  .custom-how-section .step-icon svg {
+    width: 27px;
+    height: 27px;
+  }
+
+  .custom-how-section .how-step-card span:last-child {
+    min-height: 0;
+    font-size: 15px;
+    line-height: 1.3;
+  }
+
   /* Product collection cards have narrow two-column actions at this breakpoint. */
   .products-all-section .products-layout .product-type-actions,
   #custom-details .products-layout .product-type-actions {
