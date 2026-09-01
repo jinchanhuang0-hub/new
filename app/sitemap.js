@@ -19,6 +19,7 @@ const staticPages = [
   { path: "/products", priority: 0.9 },
   { path: "/custom", priority: 0.85 },
   { path: "/about", priority: 0.8 },
+  { path: "/about/sunny-huang", priority: 0.5, lastModified: new Date("2026-09-01T00:00:00.000Z") },
   { path: "/contact", priority: 0.8 },
   { path: "/blog", priority: 0.7 },
   { path: "/faq", priority: 0.65 },
@@ -28,9 +29,9 @@ const staticPages = [
 ];
 
 export default function sitemap() {
-  const staticEntries = staticPages.map(({ path, priority }) => ({
+  const staticEntries = staticPages.map(({ path, priority, lastModified }) => ({
     url: `${SITE_URL}${path}`,
-    lastModified: CONTENT_LAST_MODIFIED,
+    lastModified: lastModified || CONTENT_LAST_MODIFIED,
     changeFrequency: "weekly",
     priority,
   }));

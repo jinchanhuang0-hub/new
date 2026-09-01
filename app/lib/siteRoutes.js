@@ -287,6 +287,7 @@ export const productItemCategoryKey = {
 export const DEFAULT_BLOG_AUTHOR_SCHEMA = {
   "@type": "Person",
   name: "Sunny Huang",
+  url: `${SITE_URL}/about/sunny-huang`,
 };
 
 const getTodayInShanghai = () =>
@@ -309,22 +310,48 @@ const withBlogArticleDefaults = (article) => {
   };
 };
 
-export const buildBlogAuthorSchema = (article = {}) => {
-  const authorName = article.author || DEFAULT_BLOG_AUTHOR_SCHEMA.name;
-  const authorType = authorName === DEFAULT_BLOG_AUTHOR_SCHEMA.name
-    ? DEFAULT_BLOG_AUTHOR_SCHEMA["@type"]
-    : article.authorType || DEFAULT_BLOG_AUTHOR_SCHEMA["@type"];
-
-  return {
-    "@type": authorType,
-    name: authorName,
-    ...(article.authorUrl
-      ? { url: new URL(article.authorUrl, SITE_URL).toString() }
-      : {}),
-  };
-};
+export const buildBlogAuthorSchema = () => ({ ...DEFAULT_BLOG_AUTHOR_SCHEMA });
 
 const blogArticleData = {
+  "how-to-design-a-custom-belt-buckle": {
+    title: "How to Design a Custom Belt Buckle: 9 Key Decisions",
+    headline: "How to Design a Custom Belt Buckle: 9 Decisions Before Production",
+    description:
+      "Learn how to design a custom belt buckle by confirming the belt, size, zinc alloy relief, finish, color and hinge-and-hook attachment.",
+    image: "/assets/images/custom-plate-belt-buckle-front.webp",
+    author: "Sunny Huang",
+    authorType: "Person",
+    datePublished: "2026-08-28",
+    dateModified: "2026-08-28",
+    schemaType: "BlogPosting",
+    faq: [
+      {
+        question: "How do I design a custom belt buckle?",
+        answer:
+          "Begin with the intended use and belt specifications. Then confirm the size, artwork hierarchy, relief, finish, color and back attachment before approving the digital proof.",
+      },
+      {
+        question: "How can I make sure the buckle fits my belt?",
+        answer:
+          "Provide the belt width, thickness and photos of its connection area. The hinge, hook and available clearance should be reviewed against those specifications.",
+      },
+      {
+        question: "Is 2D or 3D better for a logo buckle?",
+        answer:
+          "2D relief usually suits clean logos, lettering and defined color areas. 3D relief is useful for rounded, sculptural subjects. A combined design may work when the central motif needs depth but the wording needs clear levels.",
+      },
+      {
+        question: "Can the buckle combine enamel and an antique finish?",
+        answer:
+          "Yes, a design can use soft enamel in selected areas while retaining an antique metal effect elsewhere, subject to artwork review. The proof should clearly identify colored and exposed metal areas.",
+      },
+      {
+        question: "Can I order a sample before bulk production?",
+        answer:
+          "A physical sample can be produced, and photos or video may be provided for review. Sample cost and timing depend on the design and should be confirmed with the quotation.",
+      },
+    ],
+  },
   "patch-shapes-guide": {
     title: "Patch Shapes Guide: How to Choose the Best Custom Shape",
     headline: "Patch Shapes Guide: How to Choose the Right Shape for a Custom Patch",

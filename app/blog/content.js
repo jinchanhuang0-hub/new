@@ -3,6 +3,7 @@ import { footerHtml } from "../components/footerHtml";
 import { siteHeaderHtml } from "../components/siteHeaderHtml";
 import { customMetalKeychainMaterialsArticleHtml } from "./customMetalKeychainMaterials";
 import { customMetalKeychainSizeAttachmentGuideArticleHtml } from "./customMetalKeychainSizeAttachmentGuide";
+import { customBeltBuckleDesignGuideArticleHtml } from "./customBeltBuckleDesignGuide";
 import { keychainAttachmentsGuideArticleHtml } from "./keychainAttachmentsGuide";
 import { memorialChallengeCoinsGuideArticleHtml } from "./memorialChallengeCoinsGuide";
 import { patchShapesGuideArticleHtml } from "./patchShapesGuide";
@@ -42,6 +43,15 @@ export const blogHtml = String.raw`
           <button type="button" data-blog-category="Uncategorized">Uncategorized</button>
         </div>
         <div class="blog-card-grid">
+          <a class="blog-feature-card" href="/blog/how-to-design-a-custom-belt-buckle" data-blog-category="Custom Belt Buckle" aria-label="Read How to Design a Custom Belt Buckle: 9 Decisions Before Production">
+            <img src="/assets/images/custom-plate-belt-buckle-front.webp?v=20260828-cover" width="1600" height="900" alt="Digital proof, back attachment and finished zinc alloy plate belt buckle">
+            <div class="blog-feature-body">
+              <div class="blog-feature-meta"><span>Custom Belt Buckle</span><span>Design Guide</span></div>
+              <h2>How to Design a Custom Belt Buckle: 9 Decisions Before Production</h2>
+              <p>Prepare a belt buckle project by confirming the belt, dimensions, relief, finish, color and hinge-and-hook attachment.</p>
+              <span class="blog-feature-link">Read More</span>
+            </div>
+          </a>
           <a class="blog-feature-card" href="/blog/patch-shapes-guide" data-blog-category="Patches" aria-label="Read Patch Shapes Guide: How to Choose the Right Shape for a Custom Patch">
             <img src="/assets/images/patch-shapes-guide.webp" width="1600" height="900" alt="Round oval rectangular shield and custom patch shapes">
             <div class="blog-feature-body">
@@ -221,6 +231,7 @@ export const blogHtml = String.raw`
     ${customMetalKeychainSizeAttachmentGuideArticleHtml}
     ${memorialChallengeCoinsGuideArticleHtml}
     ${patchShapesGuideArticleHtml}
+    ${customBeltBuckleDesignGuideArticleHtml}
     <article id="military-challenge-coin-traditions" class="section blog-article-section">
       <div class="blog-article-shell">
         <aside class="blog-article-toc" aria-label="Article contents">
@@ -1043,7 +1054,27 @@ export const blogHtml = String.raw`
     </article>
 
     <article id="2d-vs-3d-challenge-coins" class="section blog-article-section">
-      <div class="container blog-article">
+      <div class="blog-article-shell">
+        <aside class="blog-article-toc" aria-label="Article contents">
+          <strong>In This Guide</strong>
+          <nav>
+            <a href="#2d-vs-3d-overview">Overview</a>
+            <a href="#what-is-a-2d-challenge-coin">2D relief</a>
+            <a href="#what-is-a-3d-challenge-coin">3D relief</a>
+            <a href="#logos-and-text">Logos and text</a>
+            <a href="#enamel-color">Enamel color</a>
+            <a href="#plating-and-appearance">Plating</a>
+            <a href="#detail-and-clarity">Detail</a>
+            <a href="#2d-artwork-requirements">2D artwork</a>
+            <a href="#3d-artwork-requirements">3D artwork</a>
+            <a href="#3d-challenge-coin-cost">Cost</a>
+            <a href="#combined-2d-and-3d">Hybrid designs</a>
+            <a href="#choosing-between-2d-and-3d">How to choose</a>
+            <a href="#2d-vs-3d-frequently-asked-questions">FAQ</a>
+            <a href="#2d-vs-3d-conclusion">Conclusion</a>
+          </nav>
+        </aside>
+        <div class="container blog-article blog-article-with-toc">
         <header class="blog-article-header">
           <a class="blog-back-link" href="/blog">Back to Blog</a>
           <h1>2D vs 3D Challenge Coins: Which Is Better for Your Design?</h1>
@@ -1057,7 +1088,7 @@ export const blogHtml = String.raw`
           </figure>
         </header>
 
-        <h2>2D vs 3D Challenge Coins at a Glance</h2>
+        <h2 id="2d-vs-3d-overview">2D vs 3D Challenge Coins at a Glance</h2>
         <div class="blog-table-wrap">
           <table class="blog-table">
             <thead><tr><th>Feature</th><th>2D Challenge Coins</th><th>3D Challenge Coins</th></tr></thead>
@@ -1080,7 +1111,7 @@ export const blogHtml = String.raw`
           <figcaption>A visual comparison of defined 2D relief and gradual 3D relief across different challenge coin designs.</figcaption>
         </figure>
 
-        <h2>What Is a 2D Challenge Coin?</h2>
+        <h2 id="what-is-a-2d-challenge-coin">What Is a 2D Challenge Coin?</h2>
         <p>A 2D challenge coin is not completely flat. Its raised and recessed areas can still be seen and felt. The term "2D" refers to the way the artwork is divided into clearly separated height levels rather than smooth, sculpted contours.</p>
         <p>Imagine a police shield with a raised outline, raised lettering and a recessed background. The elements have physical depth, but the top of each raised section remains relatively flat. The change from one level to another is clearly defined.</p>
         <p>This structure is useful when the design depends on accuracy. A letter must keep its shape. A small date must remain open and readable. A brand color needs a defined area rather than a sloping surface.</p>
@@ -1100,7 +1131,7 @@ export const blogHtml = String.raw`
           <figcaption>This 2D challenge coin uses defined metal borders to separate lettering, graphic shapes and enamel colors.</figcaption>
         </figure>
 
-        <h2>What Is a 3D Challenge Coin?</h2>
+        <h2 id="what-is-a-3d-challenge-coin">What Is a 3D Challenge Coin?</h2>
         <p>A 3D challenge coin uses gradual transitions between different heights. Its surface can include slopes, rounded edges and natural contours rather than moving directly from one flat level to another.</p>
         <p>Consider a portrait. The forehead, eyes, nose and cheeks cannot be represented convincingly as a few flat blocks. The same applies to an eagle's feathers, the facade of a building or the body of an aircraft. These subjects need controlled changes in depth.</p>
         <p>Commercial 3D challenge coin artwork is typically produced as bas-relief. The sculpted design rises from the background while remaining attached to the coin surface. It is not a freestanding sculpture that can be viewed from every angle.</p>
@@ -1111,34 +1142,34 @@ export const blogHtml = String.raw`
           <figcaption>Gradual height changes give this antique-finished 3D challenge coin a sculpted sense of depth.</figcaption>
         </figure>
 
-        <h2>Which Style Works Better for Logos and Text?</h2>
+        <h2 id="logos-and-text">Which Style Works Better for Logos and Text?</h2>
         <p>For most company logos, unit insignia and text-heavy designs, 2D is the safer choice.</p>
         <p>Letters need sufficient line thickness, open internal spaces and separation from nearby artwork. A stepped structure helps them retain those qualities after coloring and finishing.</p>
         <p>Small wording becomes harder to read when it crosses an uneven 3D surface. Sculpted relief also produces shadows, which may reduce contrast around dates, names or fine lettering.</p>
         <p>That does not mean every logo must remain entirely 2D. A shield, crest or emblem can gain depth from partial sculpting. The important distinction is between decorative form and essential information. The emblem may be dimensional, while the organization name and date remain on a flatter border.</p>
         <p>When a coin needs both depth and readable wording, a hybrid design is often more successful than forcing everything into one relief style.</p>
 
-        <h2>Which Style Works Better with Enamel Color?</h2>
+        <h2 id="enamel-color">Which Style Works Better with Enamel Color?</h2>
         <p>A 2D coin is usually easier to combine with several enamel colors.</p>
         <p>In color-filled 2D artwork, raised metal borders create clearly separated cells. Each enamel color can be placed within a defined area without merging visually with the next section.</p>
         <p>Continuous 3D contours behave differently. A slope or rounded surface does not provide the same type of enclosed cell, and covering it with enamel can soften the relief that made the section worth sculpting in the first place.</p>
         <p>Color can still play an important role in a 3D design. A coin might use a metal-only portrait in the center, enamel lettering around the edge and a colored 2D background. Printed details can also be added to selected flat areas when the artwork requires them.</p>
         <p>The goal is not to remove color from a 3D coin. It is to place color where it supports the relief rather than hides it.</p>
 
-        <h2>How Does Plating Change the Appearance?</h2>
+        <h2 id="plating-and-appearance">How Does Plating Change the Appearance?</h2>
         <p>Bright gold or silver plating and other polished finishes reflect more light. They can give a coin a clean, formal appearance, especially when the artwork uses crisp borders and open metal areas.</p>
         <p>The same reflections can make subtle relief difficult to judge in photographs. A shallow curve that is visible in hand may disappear under direct studio lighting.</p>
         <p>Antique gold, silver and bronze finishes create darker tones in recessed areas while leaving raised surfaces lighter. That contrast often makes sculpted contours easier to see. Historical portraits, monuments and detailed emblems frequently benefit from this treatment.</p>
         <p>There is no rule that 2D coins must be bright or 3D coins must be antique. A modern 3D corporate emblem may look better with polished silver, while a traditional 2D badge may suit antique bronze. The subject and intended presentation should guide the finish.</p>
 
-        <h2>Is 3D Always More Detailed Than 2D?</h2>
+        <h2 id="detail-and-clarity">Is 3D Always More Detailed Than 2D?</h2>
         <p>No. Three-dimensional relief creates more natural depth, but it does not guarantee better clarity.</p>
         <p>The clarity of the finished coin depends on its diameter, thickness, available design area, line spacing, relief depth, finish and the amount of information competing for attention.</p>
         <p>A small portrait that also contains a long motto, dates and background scenery can become crowded. Increasing the relief will not necessarily solve that problem. The better answer may be to enlarge the central subject, simplify the background or move the wording to the reverse.</p>
         <p>A carefully prepared 2D design can reproduce small graphic details more clearly because its outlines are controlled and separated. Conversely, a larger 3D design can show natural forms that would feel stiff or unrecognizable in 2D.</p>
         <p>The useful question is not which method can reproduce more detail in theory. It is which relief style can reproduce the required detail most clearly at the intended coin size.</p>
 
-        <h2>Artwork Requirements for 2D Coins</h2>
+        <h2 id="2d-artwork-requirements">Artwork Requirements for 2D Coins</h2>
         <p>Vector files such as AI, EPS, SVG or vector-based PDF are helpful for 2D artwork because they preserve scalable outlines and clean paths.</p>
         <p>The proof should make the following information easy to identify:</p>
         <ul class="blog-list">
@@ -1152,13 +1183,13 @@ export const blogHtml = String.raw`
         <p>Pantone references can be supplied for enamel colors, although reasonable tolerance should be expected. Screen colors, printed charts, metal finishes and cured enamel do not reproduce color in exactly the same way.</p>
         <p>A buyer reviewing a 2D proof should look beyond the overall appearance. Check that small letters remain open, narrow gaps are not closing up and each color area has a practical metal boundary. Our guide to <a href="/blog/how-custom-challenge-coins-are-made">how custom challenge coins are made</a> explains where artwork approval fits into the wider production process.</p>
 
-        <h2>Artwork Requirements for 3D Coins</h2>
+        <h2 id="3d-artwork-requirements">Artwork Requirements for 3D Coins</h2>
         <p>A finished 3D model is helpful but not always necessary. Clear artwork, photographs and reference images may provide enough information to develop a 3D challenge coin design.</p>
         <p>Portraits are easier to interpret when the reference has even lighting and visible facial features. Side or three-quarter views can help clarify the shape of a face, animal, vehicle or building. Strong shadows and low-resolution photographs leave more room for misinterpretation.</p>
         <p>Useful notes should identify which details matter most. For a portrait, that may be facial recognition rather than every fold in the clothing. For a building, it may be the roofline and entrance rather than every individual window.</p>
         <p>Before approving the relief, review proportions, feature recognition, text position and the relationship between high and low areas. A dramatic digital rendering is appealing, but it should still represent a design that makes sense at the finished coin size.</p>
 
-        <h2>Do 3D Challenge Coins Cost More?</h2>
+        <h2 id="3d-challenge-coin-cost">Do 3D Challenge Coins Cost More?</h2>
         <p>Under comparable specifications, 3D challenge coins often have a higher quoted price because artwork interpretation, digital sculpting and tooling tend to be more complex.</p>
         <p>A fixed percentage would be misleading, though. The final quotation may also depend on:</p>
         <ul class="blog-list">
@@ -1183,7 +1214,7 @@ export const blogHtml = String.raw`
           <div class="blog-cta-actions"><a class="btn btn-yellow" href="/contact">Upload Your Artwork</a><a class="btn btn-primary" href="/products/custom-challenge-coins">View Challenge Coins</a></div>
         </section>
 
-        <h2>Can 2D and 3D Be Combined?</h2>
+        <h2 id="combined-2d-and-3d">Can 2D and 3D Be Combined?</h2>
         <p>Yes. In many cases, combining them produces a clearer coin.</p>
         <p>Consider a corporate anniversary design. The founder's portrait might use 3D relief in the center. The company name and anniversary dates can remain in 2D around the border, with enamel added to the brand mark on the reverse.</p>
         <p>Each method then has a specific job:</p>
@@ -1199,7 +1230,7 @@ export const blogHtml = String.raw`
           <figcaption>A hybrid challenge coin can pair sculpted central elements with readable 2D lettering and enamel-filled areas.</figcaption>
         </figure>
 
-        <h2>How to Choose Between 2D and 3D</h2>
+        <h2 id="choosing-between-2d-and-3d">How to Choose Between 2D and 3D</h2>
         <p>Three typical projects illustrate the decision.</p>
         <p>A company coin with a wordmark, short slogan and several brand colors will usually be clearer in 2D. The artwork depends more on accurate shapes and color separation than on natural contours.</p>
         <p>A memorial coin centered on a recognizable portrait may justify 3D relief, particularly when paired with an antique finish. The face is the emotional focus, so dimensional modeling adds value.</p>
@@ -1215,7 +1246,7 @@ export const blogHtml = String.raw`
         </ol>
         <p>If the answers still point in different directions, <a href="/contact">request an artwork review</a> before settling on the relief. Buyers who are also comparing product formats may find our <a href="/blog/custom-medals-vs-challenge-coins">custom medals vs challenge coins</a> guide useful.</p>
 
-        <h2>Frequently Asked Questions</h2>
+        <h2 id="2d-vs-3d-frequently-asked-questions">Frequently Asked Questions</h2>
         <div class="blog-faq">
           <details><summary>What is the main difference between 2D and 3D challenge coins?</summary><p>A 2D challenge coin uses clearly separated raised and recessed levels. A 3D challenge coin uses gradual, sculpted transitions that create rounded surfaces and more natural depth. Both have physical relief, but they interpret artwork differently.</p></details>
           <details><summary>Can 3D challenge coins include enamel color?</summary><p>Yes. Enamel can be placed in defined recessed areas or surrounding 2D sections. It is less suitable for continuous sculpted contours because it may cover or reduce the visible relief.</p></details>
@@ -1224,7 +1255,7 @@ export const blogHtml = String.raw`
           <details><summary>Do I need to provide a finished 3D model?</summary><p>Not always. Clear artwork and high-resolution reference images may be enough to prepare a relief rendering. Complex portraits, vehicles and buildings benefit from references showing more than one angle.</p></details>
         </div>
 
-        <h2>Conclusion</h2>
+        <h2 id="2d-vs-3d-conclusion">Conclusion</h2>
         <p>The best choice begins with the artwork, not with the assumption that 3D is automatically more valuable.</p>
         <p>Use 2D when the design depends on logos, lettering, geometric shapes and enamel color. Use 3D when portraits, buildings, animals or other realistic subjects need gradual contours. Combine the two when depth and readability are equally important. The <a href="/products/custom-challenge-coins">custom challenge coins</a> page provides an overview of available formats and customization options.</p>
         <p>Before approving the design, confirm the size, relief structure, text, finish, color areas and front-to-back layout. A clear proof at this stage is more useful than adding complexity that the artwork does not need.</p>
@@ -1236,6 +1267,7 @@ export const blogHtml = String.raw`
           </div>
           <div class="blog-cta-actions"><a class="btn btn-yellow" href="/contact">Upload Your Artwork</a><a class="btn btn-primary" href="/products/custom-challenge-coins">View Custom Challenge Coins</a></div>
         </section>
+      </div>
       </div>
     </article>
     <article id="how-to-choose-personalized-golf-ball-markers" class="section blog-article-section">
@@ -1422,7 +1454,26 @@ export const blogHtml = String.raw`
       </div>
     </article>
     <article id="how-custom-challenge-coins-are-made" class="section blog-article-section">
-      <div class="container blog-article">
+      <div class="blog-article-shell">
+        <aside class="blog-article-toc" aria-label="Article contents">
+          <strong>In This Guide</strong>
+          <nav>
+            <a href="#coin-production-design">Design</a>
+            <a href="#coin-production-specifications">Specifications</a>
+            <a href="#coin-production-proof">Digital proof</a>
+            <a href="#coin-production-tooling">Tooling</a>
+            <a href="#coin-production-forming">Forming</a>
+            <a href="#coin-production-finishing">Finishing</a>
+            <a href="#coin-production-color">Plating and color</a>
+            <a href="#coin-production-curing">Curing</a>
+            <a href="#coin-production-inspection">Inspection</a>
+            <a href="#coin-production-packaging">Packaging</a>
+            <a href="#coin-production-methods">Production methods</a>
+            <a href="#coin-production-faq">FAQ</a>
+            <a href="#coin-production-conclusion">Conclusion</a>
+          </nav>
+        </aside>
+        <div class="container blog-article blog-article-with-toc">
         <header class="blog-article-header">
           <a class="blog-back-link" href="/blog">Back to Blog</a>
           <h1>How Are Custom Challenge Coins Made?</h1>
@@ -1436,7 +1487,7 @@ export const blogHtml = String.raw`
           </figure>
         </header>
 
-        <h2>Step 1 - Submit Your Design or Idea</h2>
+        <h2 id="coin-production-design">Step 1 - Submit Your Design or Idea</h2>
         <p>The process starts when the customer sends a logo, badge, sketch, text, reference image, or rough concept. Some buyers already have a clean vector file. Others begin with a screenshot, department emblem, event name, or hand-drawn idea that needs to be rebuilt before production.</p>
         <p>At this stage, a custom challenge coin manufacturer is not simply redrawing a file. The artwork must be adjusted for raised metal lines, recessed color areas, coin edge, back-side layout, tooling depth, and the selected metal finish.</p>
         <p>The application also matters. A military recognition coin, police department coin, corporate anniversary coin, and collector coin may need different choices for finish, presentation box, color contrast, and delivery timing. A coin used at a formal ceremony, for example, usually needs more attention to box presentation and surface consistency than a simple giveaway order. For service recognition projects, review <a href="/blog/military-challenge-coin-traditions">military challenge coin traditions and etiquette</a> before finalizing the presentation plan.</p>
@@ -1445,18 +1496,18 @@ export const blogHtml = String.raw`
           <figcaption>Production artwork should define the coin size, front and back design, color references, finish and manufacturing notes before tooling begins.</figcaption>
         </figure>
 
-        <h2>Step 2 - Confirm Size, Thickness and Specifications</h2>
+        <h2 id="coin-production-specifications">Step 2 - Confirm Size, Thickness and Specifications</h2>
         <p>Before digital proofing, the main specifications need to be fixed. Common challenge coin sizes are usually around 1.5 to 2.5 inches, with 1.75 inches and 2 inches being practical choices for many projects. Larger coins can show more detail, but they also use more metal and increase shipping weight.</p>
         <p>Thickness affects both cost and perceived quality. The order confirmation should also cover 2D or 3D design, one-sided or double-sided artwork, color filling, metal finish, edge style, numbering, and presentation option. These details make the quotation more accurate and reduce the risk of changes after tooling has started.</p>
         <p>For export orders, it is useful to keep these specifications in the quotation or production confirmation. A small difference in thickness, finish, or presentation box can change the unit cost, carton volume, and final delivery plan. Clear specifications also give the factory a stable standard for sample checking and mass production inspection.</p>
 
-        <h2>Step 3 - Create and Approve the Digital Proof</h2>
+        <h2 id="coin-production-proof">Step 3 - Create and Approve the Digital Proof</h2>
         <p>After the specifications are clear, the factory prepares a digital proof. This proof shows how the custom challenge coin will be produced, including the front design, back design, size, metal finish, color references, edge style, and any special details.</p>
         <p>Proof approval is the point where small problems are still easy to correct. Check spelling, dates, logo position, text readability, Pantone references, border balance, front and back alignment, and final size. Small text or thin lines may need adjustment before tooling begins.</p>
         <p>If a design includes fine badge details, curved text, gradients, QR codes, or photo-like artwork, the manufacturer should explain whether color filling, printing, 2D relief, or 3D relief is more practical.</p>
         <p>A useful production proof should also show which areas are raised metal, which areas are recessed, and where enamel or printing will be applied. This helps the buyer approve the real manufacturing structure instead of looking only at a flat graphic image.</p>
 
-        <h2>Step 4 - Create the Mold</h2>
+        <h2 id="coin-production-tooling">Step 4 - Create the Mold</h2>
         <p>Once the digital proof is approved, the factory prepares the production tooling. The mold or die determines the raised and recessed metal areas of the coin. For detailed designs, tooling accuracy is critical because it controls the final relief, texture, and overall shape.</p>
         <p>Tooling development may involve CNC engraving or other precision equipment. Complex shapes, deep 3D relief, cutout areas, multiple levels, or detailed artwork take more time to convert into a workable production structure.</p>
         <p>Design changes after tooling starts may require adjustment or a new mold, which can add cost and delay the schedule. This is why proof review should be treated as a production decision, not only a visual check.</p>
@@ -1466,7 +1517,7 @@ export const blogHtml = String.raw`
           <figcaption>Mold accuracy controls the final relief, lettering, recessed areas and edge detail of a custom challenge coin.</figcaption>
         </figure>
 
-        <h2>Step 5 - Die-Striking or Die-Casting</h2>
+        <h2 id="coin-production-forming">Step 5 - Die-Striking or Die-Casting</h2>
         <p>Challenge coins are commonly produced by die-striking or die-casting. The right method depends on the design, metal material, shape, relief depth, budget, and how the coin needs to feel in hand.</p>
         <p>Die-struck challenge coins are made by pressing the design into metal using a die. This method is suitable for traditional coins with clean relief, strong metal detail, and a premium hand feel. It works well for military coins, police coins, corporate recognition coins, and classic emblem designs.</p>
         <p>Die-cast challenge coins are made by injecting molten metal into a casting tool. This method is useful for complex shapes, deep 3D relief, cutout designs, and irregular outlines. It gives more flexibility for sculpted details, but the final effect still depends on tooling quality and finishing.</p>
@@ -1485,11 +1536,11 @@ export const blogHtml = String.raw`
           <div class="blog-cta-actions"><a class="btn btn-yellow" href="/contact">Send Your Requirements</a><a class="btn btn-primary" href="/products/custom-challenge-coins">View Challenge Coin Options</a></div>
         </section>
 
-        <h2>Step 6 - Trimming, Polishing and Edge Finishing</h2>
+        <h2 id="coin-production-finishing">Step 6 - Trimming, Polishing and Edge Finishing</h2>
         <p>After the coin body is formed, excess metal and rough edges are removed. Trimming and polishing help the coin reach its final shape before surface finishing. Edge options may include plain edge, rope edge, reeded edge, wave edge, diamond-cut edge, edge text, or numbering.</p>
         <p>A clean edge makes the coin feel more professional in hand and helps the finished product match the approved proof.</p>
 
-        <h2>Step 7 - Plating and Enamel Coloring</h2>
+        <h2 id="coin-production-color">Step 7 - Plating and Enamel Coloring</h2>
         <p>Plating gives the coin its visible metal tone. Common options include gold, silver, copper, bronze, black nickel, antique gold, antique silver, and antique bronze. Antique finishes are often used for 3D challenge coins because they highlight depth and relief. Bright gold or silver can look clean and formal, while black nickel creates strong contrast with bright colors.</p>
         <p>After plating, color may be added to recessed areas. Soft enamel is widely used for colorful challenge coins, while hard enamel can create a smoother surface. For gradients, photos, or very fine details, printing may be more practical than enamel filling.</p>
         <p>Metal finish and coloring should be checked under normal lighting because bright finishes and antique finishes can look different from digital previews. For brand or unit colors, Pantone references help reduce misunderstanding, but buyers should still allow a reasonable tolerance because metal, enamel, and screen colors do not behave exactly the same.</p>
@@ -1498,11 +1549,11 @@ export const blogHtml = String.raw`
           <figcaption>Coloring and finish choices affect color contrast, surface texture, durability and the final presentation of the coin.</figcaption>
         </figure>
 
-        <h2>Step 8 - Baking and Final Polishing</h2>
+        <h2 id="coin-production-curing">Step 8 - Baking and Final Polishing</h2>
         <p>After enamel coloring, the coins may go through baking or curing so the color can harden properly. Without enough curing time, colored areas are more likely to mark during later polishing or handling.</p>
         <p>Final polishing cleans the surface and improves appearance. Bright finishes need careful handling because small marks can be more visible, while antique finishes should keep darker recessed areas and clear raised details.</p>
 
-        <h2>Step 9 - Quality Inspection</h2>
+        <h2 id="coin-production-inspection">Step 9 - Quality Inspection</h2>
         <p>Quality inspection should be done before packing and shipment. For export orders, it is usually cheaper to slow down at this stage than to discover surface defects or quantity errors after the cartons arrive.</p>
         <p>Inspection usually includes size and thickness, artwork clarity, front and back alignment, color accuracy, finish consistency, surface scratches, edge smoothness, color overflow, packing accuracy, and quantity confirmation.</p>
         <p>If the coins are for an event, ceremony, or official presentation, leave enough time for final inspection before shipment.</p>
@@ -1512,7 +1563,7 @@ export const blogHtml = String.raw`
           <figcaption>Final inspection checks coin appearance, surface quality, color consistency, quantity and packing before shipment.</figcaption>
         </figure>
 
-        <h2>Step 10 - Packaging and Shipping</h2>
+        <h2 id="coin-production-packaging">Step 10 - Packaging and Shipping</h2>
         <p>Packaging depends on how the coins will be used. Simple poly bags may be suitable for internal distribution or bulk handouts. Velvet pouches, acrylic capsules, paper boxes, or gift boxes are better for formal recognition, corporate gifts, collector coins, and retail products.</p>
         <p>The packing method should be confirmed before mass production because it affects cost, carton size, and shipment planning. Retail orders may require barcode labels, SKU labels, backing cards, inner cartons, or specific export carton markings.</p>
         <p>Production time depends on artwork approval, mold complexity, order quantity, finish, color work, packaging requirements, and factory schedule. If the order is tied to a ceremony, trade show, or launch date, share the deadline at the first inquiry.</p>
@@ -1522,7 +1573,7 @@ export const blogHtml = String.raw`
           <figcaption>Shipment preparation should confirm packing details, carton labels, quantity and delivery schedule before dispatch.</figcaption>
         </figure>
 
-        <h2>Die-Struck vs Die-Cast Challenge Coins</h2>
+        <h2 id="coin-production-methods">Die-Struck vs Die-Cast Challenge Coins</h2>
         <p>Both methods can produce professional results when the process matches the artwork. The table below gives a practical comparison before confirming production.</p>
         <figure class="blog-article-image blog-article-contain-image">
           <img src="/assets/images/blog-challenge-coin-2d-vs-3d.webp" width="1200" height="1200" loading="lazy" decoding="async" alt="2D and 3D custom challenge coin examples with different finishes">
@@ -1541,7 +1592,7 @@ export const blogHtml = String.raw`
           </table>
         </div>
 
-        <h2>Frequently Asked Questions</h2>
+        <h2 id="coin-production-faq">Frequently Asked Questions</h2>
         <h3>How long does it take to manufacture challenge coins?</h3>
         <p>Manufacturing time depends on artwork approval, mold complexity, quantity, finish, color work, packing method, and shipping route. Share the required delivery date at the first inquiry.</p>
 
@@ -1551,7 +1602,7 @@ export const blogHtml = String.raw`
         <h3>Can both sides of a challenge coin be customized?</h3>
         <p>Yes. Many custom challenge coins use both front and back designs. The back side can include a motto, date, unit name, event name, serial number, QR code, or secondary logo.</p>
 
-        <h2>Conclusion</h2>
+        <h2 id="coin-production-conclusion">Conclusion</h2>
         <p>Custom challenge coins are made through a detailed process, from design submission and digital proofing to tooling, die-striking or die-casting, surface finishing, color work, polishing, inspection, packing, and shipment.</p>
         <p>The strongest orders usually start with clear artwork, confirmed specifications, a careful proof review, the right production method, and agreed packing details before mass production. Those decisions help the finished coins match the intended application instead of simply looking acceptable in a digital preview.</p>
 
@@ -1562,6 +1613,7 @@ export const blogHtml = String.raw`
           </div>
       <div class="blog-cta-actions"><a class="btn btn-yellow" href="/contact">Get a Free Quote</a><a class="btn btn-primary" href="/products/custom-challenge-coins">View Challenge Coins</a></div>
         </section>
+      </div>
       </div>
     </article>
     <article id="custom-enamel-pins-no-moq-guide" class="section blog-article-section">
@@ -2223,6 +2275,7 @@ export const blogHtml = String.raw`
             <img src="/assets/images/finisher-vs-placement-medals.webp" width="1672" height="941" fetchpriority="high" decoding="async" alt="Finisher medals and placement medals prepared for a race event">
             <figcaption>Finisher and placement medals prepared for race-day award distribution.</figcaption>
           </figure>
+          <p>Finisher medals are given to participants who complete an event, while placement medals recognize top finishers such as overall winners or age-group winners. Many races use both: finisher medals for every qualified participant and placement medals for competitive award categories.</p>
           <p>Should every participant receive a medal, or should medals be reserved for the fastest athletes?</p>
           <p>Race directors rarely use one rule for every event. A finisher medal recognizes an athlete for completing an event, while a placement medal recognizes a competitive result such as first, second or third place. Some events use both, while others also include age-group awards. The right structure depends on the event's purpose, participant expectations, categories and budget. It also affects registration information, order quantities, medal wording and race-day distribution. This guide explains how to build a clear policy without treating one approach as universal.</p>
         </header>

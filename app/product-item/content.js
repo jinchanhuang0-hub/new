@@ -3,6 +3,10 @@ import { footerHtml } from "../components/footerHtml";
 import { getProductPath } from "../lib/siteRoutes";
 import { compareProductEntriesBySkuDesc } from "../lib/productSorting";
 import { siteHeaderHtml } from "../components/siteHeaderHtml";
+import {
+  buildProcurementContentHtml,
+  productProcurementProfiles,
+} from "./procurementContent";
 
 
 export const productItems = {
@@ -2920,10 +2924,10 @@ const html = String.raw`
             <span data-product-item-title>Green Character Soft Enamel Pin Set</span>
           </nav>
           <div class="single-product-main">
-            <img class="single-product-main-image" data-product-item-image src="assets/images/type-pins-soft-enamel.jpg" alt="Green character soft enamel pin set">
+            <img class="single-product-main-image" data-product-item-image width="800" height="800" src="assets/images/type-pins-soft-enamel.jpg" alt="Green character soft enamel pin set">
           </div>
           <div class="single-product-example-thumb" aria-hidden="true">
-            <img data-product-item-image src="assets/images/type-pins-soft-enamel.jpg" alt="">
+            <img data-product-item-image width="800" height="800" src="assets/images/type-pins-soft-enamel.jpg" alt="">
           </div>
         </div>
 
@@ -2978,10 +2982,12 @@ const html = String.raw`
               <tr><td>8</td><td>Production lead time</td><td>12-15 working days</td></tr>
             </tbody>
           </table>
-          <div class="custom-solutions-visual"><img data-product-item-image src="assets/images/type-pins-soft-enamel.jpg" alt="Custom product sample"></div>
+          <div class="custom-solutions-visual"><img data-product-item-image width="800" height="800" src="assets/images/type-pins-soft-enamel.jpg" alt="Custom product sample"></div>
         </div>
       </div>
     </section>
+
+    <div data-product-procurement-content></div>
 
     <section class="single-product-faq-section" aria-label="Frequently asked questions">
       <div class="container">
@@ -3297,6 +3303,7 @@ export const renderProductItemHtml = (item, currentSlug) => {
   const quoteProduct = item.quoteProduct || item.categoryLabel;
   const quotePath = escapeHtml(`/contact?product=${encodeURIComponent(quoteProduct)}&item=${encodeURIComponent(item.title)}`);
   const solutionProfile = getCustomSolutionProfile(item);
+  const procurementProfile = productProcurementProfiles[currentSlug];
   const displayProcess = escapeHtml(solutionProfile.process);
 
   return html
@@ -3314,6 +3321,7 @@ export const renderProductItemHtml = (item, currentSlug) => {
     .replace(/<img([^>]*data-product-item-image[^>]*)src="[^"]*"([^>]*)alt="[^"]*"/g, `<img$1src="${safe.image}"$2alt="${safe.alt || safe.title}"`)
     .replace(/<a class="single-product-inquiry" href="[^"]*"[^>]*>/, `<a class="single-product-inquiry" href="${quotePath}" data-product-inquiry-trigger data-product-inquiry-product="${escapeHtml(quoteProduct)}" data-product-inquiry-title="${safe.title}">`)
     .replace(/<tbody>\s*<tr><td>1<\/td><td>Material<\/td><td>[\s\S]*?<\/tbody>/, `<tbody>\n${buildCustomSolutionRowsHtml(item)}\n            </tbody>`)
+    .replace(/<div data-product-procurement-content><\/div>/, buildProcurementContentHtml(procurementProfile))
     .replace(/<div class="single-product-related-grid" data-product-related-content><\/div>/, `<div class="single-product-related-grid" data-product-related-content>${buildRelatedProductsHtml(currentSlug, item)}
         </div>`)
     .replace(/data-product-inquiry-product="[^"]*"/g, `data-product-inquiry-product="${escapeHtml(quoteProduct)}"`);

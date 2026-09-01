@@ -19,5 +19,7 @@ public/assets/videos/factory-capability.mp4
 # Draft and audit notes should stay out of production deployments.
 *.md
 SEO*/
+uccrafts-audit-*/
+console.log*
 seo-shizhan-mima-5th-page-md-patch/
 uccrafts-com-disavow-from-csv-2026-07-16.txt
