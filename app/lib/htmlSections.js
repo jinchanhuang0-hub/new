@@ -493,7 +493,7 @@ const addBlogCardMeta = (html, articles = {}) =>
 
       return `${cardContent}
               <div class="blog-feature-footer">
-                <span class="blog-feature-author"><span class="blog-author-avatar" aria-hidden="true">${author.charAt(0).toUpperCase()}</span>${author}</span>
+                <span class="blog-feature-author"><span class="blog-author-avatar"><img src="/assets/images/sunny-huang-author-avatar.webp" alt="" width="39" height="39"></span>${author}</span>
                 <time datetime="${date}">${formatArticleDate(date)}</time>
               </div>
               <span class="blog-feature-link">Read More</span>`;
