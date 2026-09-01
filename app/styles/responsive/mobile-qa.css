@@ -178,15 +178,16 @@
   /* Product collection cards have narrow two-column actions at this breakpoint. */
   .products-all-section .products-layout .product-type-actions,
   #custom-details .products-layout .product-type-actions {
-    gap: 4px;
-    padding: 0 4px 8px;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 0 12px 12px;
   }
 
   .products-all-section .products-layout .product-type-btn,
   #custom-details .products-layout .product-type-btn {
-    min-height: 44px;
-    padding: 0 1px;
-    font-size: 10px;
+    min-height: 46px;
+    padding: 0 12px;
+    font-size: 12px;
     line-height: 1.1;
   }
 
