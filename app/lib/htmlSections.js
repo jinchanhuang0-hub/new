@@ -309,7 +309,7 @@ const buildProductCategoryHero = (section, categoryKey, categoryLabel) => {
   return {
     hero: String.raw`
     <section class="product-type-hero-section has-product-hero-bg" data-product-hero="${categoryKey}">
-      ${heroBackground ? `<img class="product-type-hero-bg" src="${heroBackground}"${heroImageDimensions ? ` width="${heroImageDimensions.width}" height="${heroImageDimensions.height}"` : ""} alt="${categoryLabel} banner">` : ""}
+      ${heroBackground ? `<picture><source media="(max-width: 767px)" srcset="/_next/image?url=${encodeURIComponent(heroBackground.startsWith("/") ? heroBackground : `/${heroBackground}`)}&w=828&q=72"><img class="product-type-hero-bg" src="${heroBackground}"${heroImageDimensions ? ` width="${heroImageDimensions.width}" height="${heroImageDimensions.height}"` : ""} alt="${categoryLabel} banner"></picture>` : ""}
       <div class="container product-type-hero-inner">
 ${head.trim()}
       </div>
@@ -498,7 +498,7 @@ const addBlogCardMeta = (html, articles = {}) =>
 
       return `${cardContent}
               <div class="blog-feature-footer">
-                <span class="blog-feature-author"><span class="blog-author-avatar" aria-hidden="true">${author.charAt(0).toUpperCase()}</span>${author}</span>
+                <span class="blog-feature-author"><span class="blog-author-avatar"><img src="/assets/images/sunny-huang-author-avatar.webp" alt="" width="39" height="39"></span>${author}</span>
                 <time datetime="${date}">${formatArticleDate(date)}</time>
               </div>
               <span class="blog-feature-link">Read More</span>`;
@@ -544,10 +544,31 @@ const addBlogArticleMeta = (articleHtml, articleMeta) => {
   const dateModified = articleMeta?.dateModified;
   if (!author && !datePublished) return articleHtml;
 
+  const authorMarkup = authorUrl ? `<a href="${authorUrl}">${author}</a>` : author;
+  const isSunnyAuthor = author === "Sunny Huang";
+  const authorProfileId = "sunny-huang-author-card";
+  const authorAvatar = isSunnyAuthor
+    ? '<img src="/assets/images/sunny-huang-author-avatar.webp" alt="" width="28" height="28">'
+    : "";
+  const sunnyAuthorCard = isSunnyAuthor
+    ? `<div class="blog-article-author" data-author-profile>
+          <button class="blog-article-author-trigger" type="button" aria-expanded="false" aria-controls="${authorProfileId}" aria-describedby="${authorProfileId}">
+            ${authorAvatar}
+            <span>By ${author}</span>
+          </button>
+          <aside class="blog-author-profile-card" id="${authorProfileId}" role="dialog" aria-label="About Sunny Huang" tabindex="0" hidden>
+            <img src="/assets/images/sunny-huang-author-avatar.webp" alt="Sunny Huang, Website Operations and Content Manager at Unique Pin" width="96" height="96">
+            <div>
+              <p class="blog-author-profile-name">Sunny Huang</p>
+              <p class="blog-author-profile-title">Website Operations &amp; Content Manager</p>
+              <p>Sunny Huang manages Unique Pin's website content, product presentation and SEO improvements, turning custom manufacturing information into clearer guidance for global buyers.</p>
+            </div>
+          </aside>
+        </div>`
+    : `<span class="blog-article-author">${authorAvatar}By ${authorMarkup}</span>`;
+
   const metaItems = [
-    author
-      ? `<span>By ${authorUrl ? `<a href="${authorUrl}">${author}</a>` : author}</span>`
-      : "",
+    author ? sunnyAuthorCard : "",
     datePublished ? `<time datetime="${datePublished}">${formatArticleDate(datePublished)}</time>` : "",
     dateModified && dateModified !== datePublished
       ? `<time datetime="${dateModified}">Updated ${formatArticleDate(dateModified)}</time>`
