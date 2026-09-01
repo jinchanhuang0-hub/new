@@ -22,7 +22,6 @@ export const blogHtml = String.raw`
         <span class="blog-hero-kicker">Insights for Custom Metal Gifts</span>
         <h1>Unique Blog</h1>
         <p>Practical guides for enamel pins, medals, coins, keychains, packaging, production and sourcing decisions.</p>
-        <p class="blog-author-profile-entry"><a href="/about/sunny-huang">About Sunny Huang</a></p>
       </div>
     </section>
     <section class="section blog-feature-section">
