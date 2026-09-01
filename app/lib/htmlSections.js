@@ -539,9 +539,14 @@ const addBlogArticleMeta = (articleHtml, articleMeta) => {
   const dateModified = articleMeta?.dateModified;
   if (!author && !datePublished) return articleHtml;
 
+  const authorMarkup = authorUrl ? `<a href="${authorUrl}">${author}</a>` : author;
+  const authorAvatar = author === "Sunny Huang"
+    ? '<img src="/assets/images/sunny-huang-author-avatar.webp" alt="" width="28" height="28">'
+    : "";
+
   const metaItems = [
     author
-      ? `<span>By ${authorUrl ? `<a href="${authorUrl}">${author}</a>` : author}</span>`
+      ? `<span class="blog-article-author">${authorAvatar}By ${authorMarkup}</span>`
       : "",
     datePublished ? `<time datetime="${datePublished}">${formatArticleDate(datePublished)}</time>` : "",
     dateModified && dateModified !== datePublished

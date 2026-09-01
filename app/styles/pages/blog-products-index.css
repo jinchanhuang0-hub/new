@@ -519,6 +519,18 @@
   align-items: center;
 }
 
+.blog-article-author {
+  gap: 8px;
+}
+
+.blog-article-author img {
+  width: 28px;
+  height: 28px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 .blog-article-meta span + time::before {
   content: "";
   width: 5px;
