@@ -123,6 +123,7 @@ export const customChristmasOrnamentsGuideArticleHtml = String.raw`
               <p>Custom Christmas ornaments can support employee appreciation, corporate gifting, holiday events and seasonal merchandise when the design and presentation are planned around the recipient. Start with the purpose of the program, then confirm the artwork, size, hanging option, finish and packaging.</p>
               <p>For custom Christmas ornaments, share your design idea, quantity, preferred size, packaging requirements and delivery destination to discuss artwork and product requirements.</p>
             </div>
+            <div class="blog-cta-actions"><a class="btn btn-yellow" href="/contact?product=Others&amp;source=custom-christmas-ornaments-guide">Request an Ornament Quote</a></div>
           </section>
         </div>
       </div>
