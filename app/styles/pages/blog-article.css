@@ -280,6 +280,32 @@
   object-position: center;
 }
 
+#custom-christmas-ornaments-guide .blog-article-header > .blog-article-hero-image.blog-article-natural-image {
+  width: calc(100% + (2 * var(--article-pad)));
+  max-width: none;
+  margin-left: calc(var(--article-pad) * -1);
+  margin-right: calc(var(--article-pad) * -1);
+  overflow: hidden;
+}
+
+#custom-christmas-ornaments-guide .blog-article-header > .blog-article-hero-image.blog-article-natural-image img {
+  width: 100%;
+  max-width: none;
+  height: auto;
+  max-height: none;
+  padding: 0;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
+}
+
+#custom-christmas-ornaments-guide .blog-article > .blog-article-natural-image img {
+  height: auto;
+  max-height: none;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+
 .blog-article-placeholder {
   overflow: hidden;
   border: 1px solid rgba(197, 211, 233, 0.8);
@@ -585,7 +611,8 @@
   hyphens: auto;
 }
 
-.blog-article-main [id] {
+.blog-article-main [id],
+.blog-article [id] {
   scroll-margin-top: 118px;
 }
 
@@ -901,6 +928,10 @@
 }
 
 @media (max-width: 640px) {
+  .blog-article [id] {
+    scroll-margin-top: 96px;
+  }
+
   .blog-article-section {
     padding: 30px 0 52px;
     scroll-margin-top: 96px;

@@ -237,10 +237,6 @@
   padding: 10px;
 }
 
-.blog-feature-card[href^="/blog/custom-metal-keychain-materials"] img {
-  object-fit: contain;
-}
-
 .blog-feature-card[data-card-image-fit="full"] img {
   object-fit: cover;
   object-position: center;
@@ -640,6 +636,10 @@
 .blog-article-author {
   position: relative;
   z-index: 3;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 32px;
 }
 
 .blog-article-author-trigger {
@@ -665,6 +665,7 @@
   outline-offset: 4px;
 }
 
+.blog-article-author > img,
 .blog-article-author-trigger > img {
   width: 28px;
   height: 28px;
@@ -1031,6 +1032,32 @@
 
 .blog-article-image:not(.blog-article-image-split):not(.blog-article-contain-image) img {
   max-height: 520px;
+}
+
+#custom-christmas-ornaments-guide .blog-article-header > .blog-article-hero-image.blog-article-natural-image {
+  width: calc(100% + (2 * var(--article-pad)));
+  max-width: none;
+  margin-left: calc(var(--article-pad) * -1);
+  margin-right: calc(var(--article-pad) * -1);
+  overflow: hidden;
+}
+
+#custom-christmas-ornaments-guide .blog-article-header > .blog-article-hero-image.blog-article-natural-image img {
+  width: 100%;
+  max-width: none;
+  height: auto;
+  max-height: none;
+  padding: 0;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
+}
+
+#custom-christmas-ornaments-guide .blog-article > .blog-article-natural-image img {
+  height: auto;
+  max-height: none;
+  aspect-ratio: auto;
+  object-fit: contain;
 }
 
 .blog-article-image-split {
@@ -1589,6 +1616,62 @@
   font-weight: 800;
 }
 
+.blog-author-bio {
+  display: grid;
+  grid-template-columns: 96px minmax(0, 1fr);
+  gap: 20px;
+  align-items: start;
+  margin: 48px 0 0;
+  padding: 22px 24px;
+  border: 1px solid rgba(197, 211, 233, 0.9);
+  border-left: 4px solid var(--yellow);
+  border-radius: 8px;
+  background: #f7fbff;
+}
+
+.blog-author-bio > img {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.blog-author-bio p {
+  margin: 0;
+}
+
+.blog-author-bio .blog-author-bio-kicker {
+  margin-bottom: 5px;
+  color: #52647c;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.blog-author-bio .blog-author-bio-name {
+  margin-bottom: 7px;
+  color: var(--navy);
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.blog-author-bio > div > p:not(.blog-author-bio-kicker):not(.blog-author-bio-name) {
+  max-width: 780px;
+  color: #40516a;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.blog-author-bio a {
+  display: inline-block;
+  margin-top: 10px;
+  color: var(--navy);
+  font-size: 14px;
+  font-weight: 900;
+}
+
 @media (max-width: 767px) {
   .blog-article-author {
     position: static;
@@ -1605,5 +1688,25 @@
 
   .blog-article .blog-author-profile-card p {
     font-size: 12px;
+  }
+
+  .blog-author-bio {
+    grid-template-columns: 64px minmax(0, 1fr);
+    gap: 14px;
+    margin-top: 38px;
+    padding: 18px;
+  }
+
+  .blog-author-bio > img {
+    width: 64px;
+    height: 64px;
+  }
+
+  .blog-author-bio .blog-author-bio-name {
+    font-size: 18px;
+  }
+
+  .blog-author-bio > div > p:not(.blog-author-bio-kicker):not(.blog-author-bio-name) {
+    font-size: 14px;
   }
 }

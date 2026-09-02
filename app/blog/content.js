@@ -7,6 +7,7 @@ import { customBeltBuckleDesignGuideArticleHtml } from "./customBeltBuckleDesign
 import { keychainAttachmentsGuideArticleHtml } from "./keychainAttachmentsGuide";
 import { memorialChallengeCoinsGuideArticleHtml } from "./memorialChallengeCoinsGuide";
 import { patchShapesGuideArticleHtml } from "./patchShapesGuide";
+import { customChristmasOrnamentsGuideArticleHtml } from "./customChristmasOrnamentsGuide";
 
 
 export const metadata = {
@@ -43,6 +44,15 @@ export const blogHtml = String.raw`
           <button type="button" data-blog-category="Uncategorized">Uncategorized</button>
         </div>
         <div class="blog-card-grid">
+          <a class="blog-feature-card" href="/blog/custom-christmas-ornaments-guide" data-card-image-fit="full" data-blog-category="Holidays" aria-label="Read Custom Christmas Ornaments for Corporate Gifts, Holiday Events and Seasonal Merchandise">
+            <img src="/assets/images/custom-christmas-ornaments-corporate-gifts.webp" width="1600" height="900" alt="Custom metal Christmas ornaments for corporate gifts and holiday events">
+            <div class="blog-feature-body">
+              <div class="blog-feature-meta"><span>Holidays</span><span>Buyer Guide</span></div>
+              <h2>Custom Christmas Ornaments for Corporate Gifts, Holiday Events and Seasonal Merchandise</h2>
+              <p>Plan custom metal Christmas ornaments for employee gifts, client keepsakes, holiday events, retail merchandise and fundraisers.</p>
+              <span class="blog-feature-link">Read More</span>
+            </div>
+          </a>
           <a class="blog-feature-card" href="/blog/how-to-design-a-custom-belt-buckle" data-blog-category="Custom Belt Buckle" aria-label="Read How to Design a Custom Belt Buckle: 9 Decisions Before Production">
             <img src="/assets/images/custom-plate-belt-buckle-front.webp?v=20260828-cover" width="1600" height="900" alt="Digital proof, back attachment and finished zinc alloy plate belt buckle">
             <div class="blog-feature-body">
@@ -106,7 +116,7 @@ export const blogHtml = String.raw`
               <span class="blog-feature-link">Read More</span>
             </div>
           </a>
-          <a class="blog-feature-card" href="/blog/custom-metal-keychain-materials" data-card-image-fit="contain" data-blog-category="Custom Keychains" aria-label="Read Custom Metal Keychain Materials: Zinc Alloy vs Brass vs Stainless Steel vs Iron">
+          <a class="blog-feature-card" href="/blog/custom-metal-keychain-materials" data-card-image-fit="full" data-blog-category="Custom Keychains" aria-label="Read Custom Metal Keychain Materials: Zinc Alloy vs Brass vs Stainless Steel vs Iron">
             <img src="/assets/images/custom-metal-keychain-materials-comparison.webp" width="1200" height="675" alt="Custom metal keychain materials compared in zinc alloy, brass, stainless steel and iron finishes">
             <div class="blog-feature-body">
               <div class="blog-feature-meta"><span>Custom Keychains</span><span>Material Guide</span></div>
@@ -232,6 +242,7 @@ export const blogHtml = String.raw`
     ${memorialChallengeCoinsGuideArticleHtml}
     ${patchShapesGuideArticleHtml}
     ${customBeltBuckleDesignGuideArticleHtml}
+    ${customChristmasOrnamentsGuideArticleHtml}
     <article id="military-challenge-coin-traditions" class="section blog-article-section">
       <div class="blog-article-shell">
         <aside class="blog-article-toc" aria-label="Article contents">

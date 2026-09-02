@@ -61,6 +61,7 @@ export default async function BlogArticlePage({ params }) {
           "@type": article.schemaType || "BlogPosting",
           headline: article.headline || article.title,
           description: article.description,
+          url: `${SITE_URL}/blog/${slug}`,
           image: article.image ? `${SITE_URL}${article.image}` : undefined,
           datePublished: article.datePublished,
           dateModified: article.dateModified || article.datePublished,

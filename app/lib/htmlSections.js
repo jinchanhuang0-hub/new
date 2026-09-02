@@ -545,30 +545,13 @@ const addBlogArticleMeta = (articleHtml, articleMeta) => {
   if (!author && !datePublished) return articleHtml;
 
   const authorMarkup = authorUrl ? `<a href="${authorUrl}">${author}</a>` : author;
-  const isSunnyAuthor = author === "Sunny Huang";
-  const authorProfileId = "sunny-huang-author-card";
-  const authorAvatar = isSunnyAuthor
+  const authorAvatar = author === "Sunny Huang"
     ? '<img src="/assets/images/sunny-huang-author-avatar.webp" alt="" width="28" height="28">'
     : "";
-  const sunnyAuthorCard = isSunnyAuthor
-    ? `<div class="blog-article-author" data-author-profile>
-          <button class="blog-article-author-trigger" type="button" aria-expanded="false" aria-controls="${authorProfileId}" aria-describedby="${authorProfileId}">
-            ${authorAvatar}
-            <span>By ${author}</span>
-          </button>
-          <aside class="blog-author-profile-card" id="${authorProfileId}" role="dialog" aria-label="About Sunny Huang" tabindex="0" hidden>
-            <img src="/assets/images/sunny-huang-author-avatar.webp" alt="Sunny Huang, Website Operations and Content Manager at Unique Pin" width="96" height="96">
-            <div>
-              <p class="blog-author-profile-name">Sunny Huang</p>
-              <p class="blog-author-profile-title">Website Operations &amp; Content Manager</p>
-              <p>Sunny Huang manages Unique Pin's website content, product presentation and SEO improvements, turning custom manufacturing information into clearer guidance for global buyers.</p>
-            </div>
-          </aside>
-        </div>`
-    : `<span class="blog-article-author">${authorAvatar}By ${authorMarkup}</span>`;
+  const authorByline = `<span class="blog-article-author">${authorAvatar}By ${authorMarkup}</span>`;
 
   const metaItems = [
-    author ? sunnyAuthorCard : "",
+    author ? authorByline : "",
     datePublished ? `<time datetime="${datePublished}">${formatArticleDate(datePublished)}</time>` : "",
     dateModified && dateModified !== datePublished
       ? `<time datetime="${dateModified}">Updated ${formatArticleDate(dateModified)}</time>`
