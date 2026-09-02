@@ -33,6 +33,12 @@
   text-wrap: wrap;
 }
 
+@media (min-width: 1440px) {
+  #custom-christmas-ornaments-guide .blog-article h1 {
+    font-size: 40px;
+  }
+}
+
 .blog-article h2 {
   max-width: 980px;
   margin: 58px auto 18px;
