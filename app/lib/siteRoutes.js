@@ -314,6 +314,40 @@ const withBlogArticleDefaults = (article) => {
 export const buildBlogAuthorSchema = () => ({ ...DEFAULT_BLOG_AUTHOR_SCHEMA });
 
 const blogArticleData = {
+  "lapel-pin-attachments-guide": {
+    title: "Lapel Pin Attachments: 12 Backings and Accessories Guide",
+    headline: "Lapel Pin Attachments: 12 Backings and Accessories for Custom Pins",
+    description:
+      "Compare 12 lapel pin attachments, including clutches, magnets, tie tacks, cuff links and key rings. Choose by use, fabric, size and presentation.",
+    image: "/assets/images/blog-lapel-pin-showcase.webp",
+    author: "Sunny Huang",
+    authorType: "Person",
+    datePublished: "2026-09-03",
+    dateModified: "2026-09-03",
+    schemaType: "BlogPosting",
+    faq: [
+      {
+        question: "What is the most common attachment for a custom lapel pin?",
+        answer:
+          "Military Clutches and Rubber Clutches are common choices for standard lapel pins. The right option still depends on the design, garment, and user experience required.",
+      },
+      {
+        question: "Can one custom design be made with different attachments?",
+        answer:
+          "Yes. The same front design may be adapted as a lapel pin, cuff link, tie accessory, key ring, or ball-chain item when the structure is reviewed for each use.",
+      },
+      {
+        question: "Do larger lapel pins always need two posts?",
+        answer:
+          "No. Some wider, heavier, or direction-sensitive designs may benefit from two posts and two clutches, but the decision should be made from the actual design and intended use.",
+      },
+      {
+        question: "Can lapel pin attachments be confirmed after the artwork is finished?",
+        answer:
+          "They can be discussed later, but it is better to confirm them before final proof approval. The attachment affects the back view, post placement, packaging, and sometimes the best orientation for the artwork.",
+      },
+    ],
+  },
   "custom-christmas-ornaments-guide": {
     title: "Custom Christmas Ornaments for Corporate Gifts and Events",
     headline: "Custom Christmas Ornaments for Corporate Gifts, Holiday Events and Seasonal Merchandise",

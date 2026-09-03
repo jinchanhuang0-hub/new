@@ -8,6 +8,7 @@ import { keychainAttachmentsGuideArticleHtml } from "./keychainAttachmentsGuide"
 import { memorialChallengeCoinsGuideArticleHtml } from "./memorialChallengeCoinsGuide";
 import { patchShapesGuideArticleHtml } from "./patchShapesGuide";
 import { customChristmasOrnamentsGuideArticleHtml } from "./customChristmasOrnamentsGuide";
+import { lapelPinAttachmentsGuideArticleHtml } from "./lapelPinAttachmentsGuide";
 
 
 export const metadata = {
@@ -44,6 +45,15 @@ export const blogHtml = String.raw`
           <button type="button" data-blog-category="Uncategorized">Uncategorized</button>
         </div>
         <div class="blog-card-grid">
+          <a class="blog-feature-card" href="/blog/lapel-pin-attachments-guide" data-blog-category="Custom Lapel Pins" aria-label="Read Lapel Pin Attachments: 12 Backings and Accessories for Custom Pins">
+            <img src="/assets/images/blog-lapel-pin-showcase.webp" width="1600" height="900" alt="Custom lapel pins displayed as finished metal gift items">
+            <div class="blog-feature-body">
+              <div class="blog-feature-meta"><span>Custom Lapel Pins</span><span>Buyer Guide</span></div>
+              <h2>Lapel Pin Attachments: 12 Backings and Accessories for Custom Pins</h2>
+              <p>Compare common fittings and accessory formats by use, fabric, structure and presentation.</p>
+              <span class="blog-feature-link">Read More</span>
+            </div>
+          </a>
           <a class="blog-feature-card" href="/blog/custom-christmas-ornaments-guide" data-card-image-fit="full" data-blog-category="Holidays" aria-label="Read Custom Christmas Ornaments for Corporate Gifts, Holiday Events and Seasonal Merchandise">
             <img src="/assets/images/custom-christmas-ornaments-corporate-gifts.webp" width="1600" height="900" alt="Custom metal Christmas ornaments for corporate gifts and holiday events">
             <div class="blog-feature-body">
@@ -243,6 +253,7 @@ export const blogHtml = String.raw`
     ${patchShapesGuideArticleHtml}
     ${customBeltBuckleDesignGuideArticleHtml}
     ${customChristmasOrnamentsGuideArticleHtml}
+    ${lapelPinAttachmentsGuideArticleHtml}
     <article id="military-challenge-coin-traditions" class="section blog-article-section">
       <div class="blog-article-shell">
         <aside class="blog-article-toc" aria-label="Article contents">
