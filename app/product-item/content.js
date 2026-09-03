@@ -2882,7 +2882,7 @@ export const productItems = {
   },
   "custom-gold-snowflake-metal-ornament": {
     title: "Custom Gold Snowflake Metal Ornament",
-    image: "assets/images/custom-gold-snowflake-metal-ornament.webp",
+    image: "assets/images/custom-gold-snowflake-metal-ornament.webp?v=20260903",
     alt: "Custom gold snowflake metal ornament with hanging cord",
     categoryLabel: "Others",
     categoryHref: "/products/others",
@@ -2896,7 +2896,7 @@ export const productItems = {
   },
   "custom-christmas-tree-metal-ornament": {
     title: "Custom Christmas Tree Metal Ornament",
-    image: "assets/images/custom-christmas-tree-metal-ornament.webp",
+    image: "assets/images/custom-christmas-tree-metal-ornament.webp?v=20260903",
     alt: "Custom Christmas tree metal ornament with red hanging ribbon",
     categoryLabel: "Others",
     categoryHref: "/products/others",
@@ -2910,7 +2910,7 @@ export const productItems = {
   },
   "custom-snowman-metal-ornament": {
     title: "Custom Snowman Metal Ornament",
-    image: "assets/images/custom-snowman-metal-ornament.webp",
+    image: "assets/images/custom-snowman-metal-ornament.webp?v=20260903",
     alt: "Custom snowman metal ornament with green hanging ribbon",
     categoryLabel: "Others",
     categoryHref: "/products/others",
@@ -2924,7 +2924,7 @@ export const productItems = {
   },
   "custom-candy-cane-metal-ornament": {
     title: "Custom Candy Cane Metal Ornament",
-    image: "assets/images/custom-candy-cane-metal-ornament.webp",
+    image: "assets/images/custom-candy-cane-metal-ornament.webp?v=20260903",
     alt: "Custom candy cane metal ornament with blue hanging ribbon",
     categoryLabel: "Others",
     categoryHref: "/products/others",
@@ -2938,7 +2938,7 @@ export const productItems = {
   },
   "custom-gingerbread-man-metal-ornament": {
     title: "Custom Gingerbread Man Metal Ornament",
-    image: "assets/images/custom-gingerbread-man-metal-ornament.webp",
+    image: "assets/images/custom-gingerbread-man-metal-ornament.webp?v=20260903",
     alt: "Custom gingerbread man metal ornament with red hanging ribbon",
     categoryLabel: "Others",
     categoryHref: "/products/others",
@@ -2952,7 +2952,7 @@ export const productItems = {
   },
   "custom-classic-snowflake-metal-ornament": {
     title: "Custom Classic Snowflake Metal Ornament",
-    image: "assets/images/custom-classic-snowflake-metal-ornament.webp",
+    image: "assets/images/custom-classic-snowflake-metal-ornament.webp?v=20260903",
     alt: "Custom classic snowflake metal ornament with hanging ribbon",
     categoryLabel: "Others",
     categoryHref: "/products/others",
