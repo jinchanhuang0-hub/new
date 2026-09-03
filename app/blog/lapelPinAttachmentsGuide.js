@@ -5,7 +5,7 @@ export const lapelPinAttachmentsGuideArticleHtml = String.raw`
           <strong>In This Guide</strong>
           <nav>
             <a href="#quick-answer-which-lapel-pin-attachment-should-you-choose">Quick Answer</a>
-            <a href="#what-are-lapel-pin-attachments">What attachments are</a>
+            <a href="#what-are-lapel-pin-attachments">What They Are</a>
             <a href="#twelve-lapel-pin-attachments-and-accessories">12 attachments</a>
             <a href="#how-to-choose-the-right-attachment">Choose the right attachment</a>
             <a href="#what-to-confirm-on-the-digital-proof">Digital proof</a>
@@ -22,7 +22,7 @@ export const lapelPinAttachmentsGuideArticleHtml = String.raw`
             </figure>
             <p>A <a href="https://uccrafts.com/products/custom-enamel-pins">custom lapel pin</a> is not finished when the front artwork is approved. The attachment on the back affects how the pin is worn, whether it stays aligned, how it feels on the fabric, and whether the same design can become a cuff link, key ring, tie accessory, or collectible item.</p>
 
-            <p>For brands, distributors, event organizers, and corporate buyers, choosing the attachment early makes the <a href="https://uccrafts.com/blog/how-to-make-your-own-custom-lapel-pins">production proof</a> more useful. It avoids a common problem: approving a good-looking pin face without confirming how the finished item will actually be used.</p>
+            <p>For brands, distributors, event organizers, and corporate buyers, choosing the attachment early makes the <a href="https://uccrafts.com/blog/how-to-make-your-own-custom-lapel-pins">production proof</a> more useful. It avoids a common problem: approving an attractive front design without confirming how the finished item will actually be used.</p>
           </header>
 
           <div class="blog-article-main">
@@ -30,7 +30,7 @@ export const lapelPinAttachmentsGuideArticleHtml = String.raw`
               <summary>Table of Contents</summary>
               <nav>
                 <a href="#quick-answer-which-lapel-pin-attachment-should-you-choose">Quick Answer</a>
-                <a href="#what-are-lapel-pin-attachments">What attachments are</a>
+                <a href="#what-are-lapel-pin-attachments">What They Are</a>
                 <a href="#twelve-lapel-pin-attachments-and-accessories">12 attachments</a>
                 <a href="#how-to-choose-the-right-attachment">Choose the right attachment</a>
                 <a href="#what-to-confirm-on-the-digital-proof">Digital proof</a>
@@ -43,7 +43,7 @@ export const lapelPinAttachmentsGuideArticleHtml = String.raw`
             <p>Choose lapel pin attachments according to the product’s intended use, pin size, shape, weight, fabric, and presentation. Military clutches and rubber clutches suit many standard lapel pins. Magnets, tie tacks, safety pins, and specialty accessories may be better for specific garments or uses. For some wider, heavier, or direction-sensitive designs, a double-post structure with two clutches may be considered during proof review.</p>
 
             <h2 id="what-are-lapel-pin-attachments">What Are Lapel Pin Attachments?</h2>
-            <p>Lapel pin attachments are the fittings fixed to the back of a custom pin. Some secure the pin to clothing, while others adapt the same metal design for another purpose.</p>
+            <p>Lapel pin attachments include fittings that secure a custom pin to clothing, as well as hardware that adapts the same front design for another use.</p>
 
             <p>For example, a traditional enamel pin may use a Military Clutch or Rubber Clutch. The same front design can also be supplied as a Cuff Link, Key Ring, Tie Pin, or Ball Chain item when the project calls for a different use.</p>
 
@@ -117,13 +117,13 @@ export const lapelPinAttachmentsGuideArticleHtml = String.raw`
             <p>Clear approval at this stage reduces the risk of a pin that looks right from the front but does not perform as expected in use.</p>
 
             <h2 id="what-to-send-when-requesting-a-quote">What to Send When Requesting a Quote</h2>
-            <p>For a practical quote, provide your artwork or reference image, <a href="https://uccrafts.com/blog/custom-enamel-pins-no-moq-guide">quantity</a>, intended use, preferred attachment, finished size, target delivery date, and packaging preference. If the pin will be worn on a specific uniform, jacket, tie, or other material, share that detail as well.</p>
+            <p>For a practical quote, provide your artwork or reference image, quantity, intended use, preferred attachment, finished size, target delivery date, and packaging preference. You can also <a href="https://uccrafts.com/blog/custom-enamel-pins-no-moq-guide">plan a small custom enamel pin order</a> before requesting a quote. If the pin will be worn on a specific uniform, jacket, tie, or other material, share that detail as well.</p>
 
             <p>A factory can then recommend whether the design is better suited to a standard clutch, magnet, tie accessory, safety pin, or another option from the lapel pin accessories range.</p>
 
             <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
             <div class="blog-faq">
-              <details open><summary><h3>What is the most common attachment for a custom lapel pin?</h3></summary><p>Military Clutches and Rubber Clutches are common choices for standard lapel pins. The right option still depends on the design, garment, and user experience required.</p></details>
+              <details open><summary><h3>What is the most common attachment for a custom lapel pin?</h3></summary><p>Military Clutches and Rubber Clutches are common choices for standard lapel pins. The right option still depends on the design, garment, and intended use.</p></details>
               <details><summary><h3>Can one custom design be made with different attachments?</h3></summary><p>Yes. The same front design may be adapted as a lapel pin, cuff link, tie accessory, key ring, or ball-chain item when the structure is reviewed for each use.</p></details>
               <details><summary><h3>Do larger lapel pins always need two posts?</h3></summary><p>No. Some wider, heavier, or direction-sensitive designs may benefit from two posts and two clutches, but the decision should be made from the actual design and intended use.</p></details>
               <details><summary><h3>Can lapel pin attachments be confirmed after the artwork is finished?</h3></summary><p>They can be discussed later, but it is better to confirm them before final proof approval. The attachment affects the back view, post placement, packaging, and sometimes the best orientation for the artwork.</p></details>
