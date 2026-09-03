@@ -17,8 +17,8 @@ export const lapelPinAttachmentsGuideArticleHtml = String.raw`
           <header class="blog-article-header">
             <a class="blog-back-link" href="/blog">Back to Blog</a>
             <h1>Lapel Pin Attachments: 12 Backings and Accessories for Custom Pins</h1>
-            <figure class="blog-article-image blog-article-placeholder blog-placeholder-3x2">
-              <div class="blog-article-placeholder-box" role="img" aria-label="Twelve lapel pin attachments and accessories for custom metal pins"><span>Image placeholder: Product accessories overview</span></div>
+            <figure class="blog-article-image blog-article-hero-image blog-article-natural-image">
+              <img src="/assets/images/lapel-pin-attachments-guide.webp" width="1600" height="900" fetchpriority="high" decoding="async" alt="Twelve lapel pin attachments and accessories for custom metal pins">
               <figcaption>Attachment choice affects how a custom pin is worn, presented or adapted for another use.</figcaption>
             </figure>
             <p><strong>Updated:</strong> September 3, 2026</p>
