@@ -46,7 +46,7 @@ export const blogHtml = String.raw`
         </div>
         <div class="blog-card-grid">
           <a class="blog-feature-card" href="/blog/lapel-pin-attachments-guide" data-blog-category="Custom Lapel Pins" aria-label="Read Lapel Pin Attachments: 12 Backings and Accessories for Custom Pins">
-            <img src="/assets/images/lapel-pin-attachments-guide.webp" width="1600" height="900" alt="Twelve lapel pin attachments and accessories for custom metal pins">
+            <img src="/assets/images/lapel-pin-attachments-guide.webp?v=20260903-labeled" width="1600" height="900" alt="Twelve lapel pin attachments and accessories for custom metal pins">
             <div class="blog-feature-body">
               <div class="blog-feature-meta"><span>Custom Lapel Pins</span><span>Buyer Guide</span></div>
               <h2>Lapel Pin Attachments: 12 Backings and Accessories for Custom Pins</h2>

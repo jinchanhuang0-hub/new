@@ -319,7 +319,7 @@ const blogArticleData = {
     headline: "Lapel Pin Attachments: 12 Backings and Accessories for Custom Pins",
     description:
       "Compare 12 lapel pin attachments, including clutches, magnets, tie tacks, cuff links and key rings. Choose by use, fabric, size and presentation.",
-    image: "/assets/images/lapel-pin-attachments-guide.webp",
+    image: "/assets/images/lapel-pin-attachments-guide.webp?v=20260903-labeled",
     author: "Sunny Huang",
     authorType: "Person",
     datePublished: "2026-09-03",
