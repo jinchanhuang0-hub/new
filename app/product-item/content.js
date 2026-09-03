@@ -780,6 +780,34 @@ export const productItems = {
     quoteProduct: "Challenge Coins",
     lead: "These antique squadron coins combine military-style emblems with durable metal relief. They are suited for unit recognition, group identity, veteran gifts and official ceremonies."
   },
+  "custom-christmas-tree-medal": {
+    title: "Custom Christmas Tree Medal",
+    image: "assets/images/custom-christmas-tree-medal.webp",
+    alt: "Custom Christmas tree medal with candy cane details and navy ribbon",
+    categoryLabel: "Medals",
+    categoryHref: "/products/custom-medals",
+    material: "Zinc alloy",
+    process: "Die casting, color filling, gold plating and ribbon assembly",
+    sku: "UP-MEDAL-044",
+    usage: "Christmas gifts, holiday events, winter programs and commemorative awards",
+    categories: "Medals, Christmas Medals, Holiday Gifts",
+    quoteProduct: "Medals",
+    lead: "This custom Christmas tree medal combines a decorated tree, candy cane details and a navy ribbon for seasonal award programs, holiday events and winter gifts."
+  },
+  "custom-reindeer-christmas-medal": {
+    title: "Custom Reindeer Christmas Medal",
+    image: "assets/images/custom-reindeer-christmas-medal.webp",
+    alt: "Custom reindeer Christmas medal with red and green ribbon",
+    categoryLabel: "Medals",
+    categoryHref: "/products/custom-medals",
+    material: "Zinc alloy",
+    process: "Die casting, color filling, gold plating and ribbon assembly",
+    sku: "UP-MEDAL-043",
+    usage: "Christmas gifts, holiday events, winter programs and commemorative awards",
+    categories: "Medals, Christmas Medals, Holiday Gifts",
+    quoteProduct: "Medals",
+    lead: "This custom reindeer Christmas medal features a reindeer, winter trees and seasonal color details with a red and green ribbon for holiday programs and commemorative gifts."
+  },
   "kinderprinz-mascot-ribbon-medal": {
     title: "Kinderprinz Mascot Ribbon Medal",
     image: "assets/images/type-medals-kinderprinz-mascot-ribbon.png",
@@ -1353,6 +1381,48 @@ export const productItems = {
     categories: "Medals, Ribbon Medals",
     quoteProduct: "Medals",
     lead: "This gold SCN ribbon medal combines polished gold plating, black enamel details and a red, white and blue ribbon for race events, sports awards and branded finisher programs."
+  },
+  "custom-pvc-gingerbread-man-christmas-keychain": {
+    title: "Custom PVC Gingerbread Man Christmas Keychain",
+    image: "assets/images/custom-pvc-gingerbread-man-christmas-keychain.webp",
+    alt: "Custom PVC gingerbread man Christmas keychain with candy cane",
+    categoryLabel: "Keychains",
+    categoryHref: "/products/custom-metal-keychains",
+    material: "Soft PVC and metal key ring",
+    process: "PVC molding, color filling and key ring assembly",
+    sku: "UP-KEY-041",
+    usage: "Christmas gifts, holiday events, seasonal retail and promotional merchandise",
+    categories: "Keychains, PVC Keychains, Christmas Gifts",
+    quoteProduct: "Keychains",
+    lead: "This custom PVC gingerbread man Christmas keychain features a Santa hat, candy cane and holiday colors for seasonal gifts, festive events and retail merchandise."
+  },
+  "custom-reindeer-snowflake-metal-keychain": {
+    title: "Custom Reindeer Snowflake Metal Keychain",
+    image: "assets/images/custom-reindeer-snowflake-metal-keychain.webp",
+    alt: "Custom reindeer snowflake metal keychain with gold key ring",
+    categoryLabel: "Keychains",
+    categoryHref: "/products/custom-metal-keychains",
+    material: "Zinc alloy",
+    process: "Die casting, color filling, gold plating and key ring assembly",
+    sku: "UP-KEY-042",
+    usage: "Christmas gifts, holiday events, seasonal retail and promotional merchandise",
+    categories: "Keychains, Metal Keychains, Christmas Gifts",
+    quoteProduct: "Keychains",
+    lead: "This custom reindeer snowflake metal keychain combines seasonal foliage, snowflakes and a gold key ring for holiday gifts, winter events and branded merchandise."
+  },
+  "custom-gingerbread-man-christmas-metal-keychain": {
+    title: "Custom Gingerbread Man Christmas Metal Keychain",
+    image: "assets/images/custom-gingerbread-man-christmas-metal-keychain.webp",
+    alt: "Custom gingerbread man Christmas metal keychain with candy cane",
+    categoryLabel: "Keychains",
+    categoryHref: "/products/custom-metal-keychains",
+    material: "Zinc alloy",
+    process: "Die casting, color filling, gold plating and key ring assembly",
+    sku: "UP-KEY-040",
+    usage: "Christmas gifts, holiday events, seasonal retail and promotional merchandise",
+    categories: "Keychains, Metal Keychains, Christmas Gifts",
+    quoteProduct: "Keychains",
+    lead: "This custom gingerbread man Christmas metal keychain features a candy cane, snowflake and gold key ring for festive gift programs, seasonal retail and holiday promotions."
   },
   "oval-office-leather-emblem-keychain": {
     title: "Oval Office Leather Emblem Keychain",
@@ -2963,6 +3033,76 @@ export const productItems = {
     categories: "Others, Christmas Metal Ornaments, Holiday Gifts",
     quoteProduct: "Others",
     lead: "This custom classic snowflake metal ornament uses a detailed openwork pattern, polished finish and hanging ribbon for holiday gifts, retail collections and seasonal promotions."
+  },
+  "custom-santa-claus-metal-lapel-pin": {
+    title: "Custom Santa Claus Metal Lapel Pin",
+    image: "assets/images/custom-santa-claus-metal-lapel-pin.webp",
+    alt: "Custom Santa Claus metal lapel pin with gold finish",
+    categoryLabel: "Lapel Pins",
+    categoryHref: "/products/custom-enamel-pins",
+    material: "Zinc alloy",
+    process: "Die casting, color filling, gold plating and pin attachment assembly",
+    sku: "UP-PIN-020",
+    usage: "Christmas gifts, seasonal retail, holiday events and branded lapel pins",
+    categories: "Lapel Pins, Christmas Pins, Holiday Gifts",
+    quoteProduct: "Lapel Pins",
+    lead: "This custom Santa Claus metal lapel pin features a shaped holiday design, colored details and a gold-tone finish for Christmas gifts, seasonal retail and event merchandise."
+  },
+  "custom-christmas-bow-metal-lapel-pin": {
+    title: "Custom Christmas Bow Metal Lapel Pin",
+    image: "assets/images/custom-christmas-bow-metal-lapel-pin.webp",
+    alt: "Custom Christmas bow metal lapel pin with candy canes and holly",
+    categoryLabel: "Lapel Pins",
+    categoryHref: "/products/custom-enamel-pins",
+    material: "Zinc alloy",
+    process: "Die casting, color filling, gold plating and pin attachment assembly",
+    sku: "UP-PIN-019",
+    usage: "Christmas gifts, seasonal retail, holiday events and branded lapel pins",
+    categories: "Lapel Pins, Christmas Pins, Holiday Gifts",
+    quoteProduct: "Lapel Pins",
+    lead: "This custom Christmas bow metal lapel pin combines candy canes, holly leaves and a red bow in a shaped holiday design for seasonal gifts, retail collections and event merchandise."
+  },
+  "custom-pvc-snowman-lapel-pin": {
+    title: "Custom PVC Snowman Lapel Pin",
+    image: "assets/images/custom-pvc-snowman-lapel-pin.webp",
+    alt: "Custom PVC snowman lapel pin with red and green scarf",
+    categoryLabel: "Lapel Pins",
+    categoryHref: "/products/custom-enamel-pins",
+    material: "PVC",
+    process: "PVC molding, color filling and pin attachment assembly",
+    sku: "UP-PIN-018",
+    usage: "Christmas gifts, seasonal retail, holiday events and branded lapel pins",
+    categories: "Lapel Pins, PVC Pins, Christmas Pins, Holiday Gifts",
+    quoteProduct: "Lapel Pins",
+    lead: "This custom PVC snowman lapel pin uses a flexible molded PVC format with festive color details for Christmas gifts, seasonal retail and holiday event merchandise."
+  },
+  "custom-snowman-winter-challenge-coin": {
+    title: "Custom Snowman Winter Challenge Coin",
+    image: "assets/images/custom-snowman-winter-challenge-coin.webp",
+    alt: "Custom snowman winter challenge coin with snowflakes and evergreen trees",
+    categoryLabel: "Challenge Coins",
+    categoryHref: "/products/custom-challenge-coins",
+    material: "Zinc alloy",
+    process: "Die casting, color filling, plated finish and edge detailing",
+    sku: "UP-COIN-039",
+    usage: "Christmas gifts, winter events, seasonal retail and commemorative programs",
+    categories: "Challenge Coins, Christmas Coins, Winter Gifts",
+    quoteProduct: "Challenge Coins",
+    lead: "This custom snowman winter challenge coin combines a snowman, evergreen trees and snowflake details in a full-color seasonal design for holiday gifts, winter events and retail collections."
+  },
+  "custom-reindeer-christmas-challenge-coin": {
+    title: "Custom Reindeer Christmas Challenge Coin",
+    image: "assets/images/custom-reindeer-christmas-challenge-coin.webp",
+    alt: "Custom reindeer Christmas challenge coin with gold edge detail",
+    categoryLabel: "Challenge Coins",
+    categoryHref: "/products/custom-challenge-coins",
+    material: "Zinc alloy",
+    process: "Die casting, color filling, plated finish and edge detailing",
+    sku: "UP-COIN-038",
+    usage: "Christmas gifts, winter events, seasonal retail and commemorative programs",
+    categories: "Challenge Coins, Christmas Coins, Winter Gifts",
+    quoteProduct: "Challenge Coins",
+    lead: "This custom reindeer Christmas challenge coin features a winter forest scene, colored details and a defined coin edge for holiday gifts, commemorative programs and seasonal retail."
   }
 };
 
@@ -3269,13 +3409,21 @@ const getCustomSolutionProfile = (item) => {
   }
 
   if (text.includes("soft pvc") || text.includes("pvc molding")) {
+    const isPvcLapelPin = productType === "Lapel Pins";
+
     return {
       ...profile,
-      material: "Soft PVC or flexible rubber material matched to the design.",
-      process: "PVC molding, color filling and magnet or accessory assembly.",
+      material: isPvcLapelPin
+        ? item.material
+        : "Soft PVC or flexible rubber material matched to the design.",
+      process: isPvcLapelPin
+        ? item.process
+        : "PVC molding, color filling and magnet or accessory assembly.",
       size: "Custom molded size based on character artwork and intended use.",
       thickness: "Custom molded thickness based on character relief and flexibility.",
-      accessories: "Magnet backing, key ring, hanging loop, backing card or retail package.",
+      accessories: isPvcLapelPin
+        ? "Pin attachment and backing card options confirmed on the approved proof."
+        : "Magnet backing, key ring, hanging loop, backing card or retail package.",
       packaging: "OPP bag, backing card, retail card or gift packaging available.",
       sampleLeadTime: productType === "Keychains" ? "3-5 working days" : profile.sampleLeadTime,
       productionLeadTime: productType === "Keychains" ? "8-15 working days" : profile.productionLeadTime
