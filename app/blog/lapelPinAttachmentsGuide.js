@@ -19,9 +19,7 @@ export const lapelPinAttachmentsGuideArticleHtml = String.raw`
             <h1>Lapel Pin Attachments: 12 Backings and Accessories for Custom Pins</h1>
             <figure class="blog-article-image blog-article-hero-image blog-article-natural-image">
               <img src="/assets/images/lapel-pin-attachments-guide.webp" width="1600" height="900" fetchpriority="high" decoding="async" alt="Twelve lapel pin attachments and accessories for custom metal pins">
-              <figcaption>Attachment choice affects how a custom pin is worn, presented or adapted for another use.</figcaption>
             </figure>
-            <p><strong>Updated:</strong> September 3, 2026</p>
             <p>A <a href="https://uccrafts.com/products/custom-enamel-pins">custom lapel pin</a> is not finished when the front artwork is approved. The attachment on the back affects how the pin is worn, whether it stays aligned, how it feels on the fabric, and whether the same design can become a cuff link, key ring, tie accessory, or collectible item.</p>
 
             <p>For brands, distributors, event organizers, and corporate buyers, choosing the attachment early makes the <a href="https://uccrafts.com/blog/how-to-make-your-own-custom-lapel-pins">production proof</a> more useful. It avoids a common problem: approving a good-looking pin face without confirming how the finished item will actually be used.</p>
