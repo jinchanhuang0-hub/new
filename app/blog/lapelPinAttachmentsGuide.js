@@ -87,7 +87,7 @@ export const lapelPinAttachmentsGuideArticleHtml = String.raw`
             <p>A Ball Chain can adapt a custom metal design for hanging, carrying, or display. It may be used for tags, collectibles, souvenir items, and selected promotional products. Confirm the chain length, connection point, and packaging method before production.</p>
 
             <figure class="blog-article-image blog-article-natural-image">
-              <img src="/assets/images/custom-lapel-pin-accessory-options.webp" width="1672" height="941" loading="lazy" decoding="async" alt="Custom metal designs adapted as cuff links key rings tie tacks and ball chain items">
+              <img src="/assets/images/custom-lapel-pin-accessory-options.webp?v=20260903-user-supplied" width="1672" height="941" loading="lazy" decoding="async" alt="Custom metal designs adapted as cuff links key rings tie tacks and ball chain items">
               <figcaption>One custom metal design can be adapted for formal accessories, gifts and everyday merchandise.</figcaption>
             </figure>
 
@@ -99,7 +99,7 @@ export const lapelPinAttachmentsGuideArticleHtml = String.raw`
             <p>Pin size and shape matter too. A compact round pin may work well with one post and a standard clutch. A wider pin, an irregular outline, or a design that must remain upright may require a different back structure. In some applicable cases, two posts with two clutches can help control rotation and improve stability. This is not a universal rule; the correct structure should be confirmed from the actual artwork, dimensions, and use case.</p>
 
             <figure class="blog-article-image blog-article-natural-image">
-              <img src="/assets/images/lapel-pin-fasteners-by-use.webp" width="1200" height="675" loading="lazy" decoding="async" alt="Butterfly rubber magnetic and safety pin fasteners for custom lapel pins">
+              <img src="/assets/images/lapel-pin-fasteners-by-use.webp?v=20260903-user-supplied" width="1200" height="675" loading="lazy" decoding="async" alt="Butterfly rubber magnetic and safety pin fasteners for custom lapel pins">
               <figcaption>The best fastening method depends on the garment, pin structure and intended use.</figcaption>
             </figure>
 
