@@ -98,8 +98,8 @@ export const lapelPinAttachmentsGuideArticleHtml = String.raw`
 
             <p>Pin size and shape matter too. A compact round pin may work well with one post and a standard clutch. A wider pin, an irregular outline, or a design that must remain upright may require a different back structure. In some applicable cases, two posts with two clutches can help control rotation and improve stability. This is not a universal rule; the correct structure should be confirmed from the actual artwork, dimensions, and use case.</p>
 
-            <figure class="blog-article-image blog-article-placeholder blog-placeholder-3x2">
-              <div class="blog-article-placeholder-box" role="img" aria-label="Butterfly rubber magnetic and safety pin fasteners for custom lapel pins"><span>Image placeholder: fastening by use</span></div>
+            <figure class="blog-article-image blog-article-natural-image">
+              <img src="/assets/images/lapel-pin-fasteners-by-use.webp" width="1200" height="675" loading="lazy" decoding="async" alt="Butterfly rubber magnetic and safety pin fasteners for custom lapel pins">
               <figcaption>The best fastening method depends on the garment, pin structure and intended use.</figcaption>
             </figure>
 
