@@ -1,8 +1,6 @@
 import JsonLd from "./components/JsonLd";
 import AnalyticsConsent from "./components/AnalyticsConsent";
 import PerformanceMetrics from "./components/PerformanceMetrics";
-import ResourceHints from "./components/ResourceHints";
-import ImagePreloader from "./components/ImagePreloader";
 import Script from "next/script";
 import { SITE_URL } from "./lib/siteRoutes";
 import "../styles.css";
@@ -34,7 +32,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <ResourceHints />
         <JsonLd
           data={{
             "@context": "https://schema.org",
@@ -77,7 +74,6 @@ export default function RootLayout({ children }) {
         {children}
         <AnalyticsConsent />
         <PerformanceMetrics />
-        <ImagePreloader />
         <a
           className="whatsapp-float"
           href="https://api.whatsapp.com/send?phone=8618895316838&amp;text=Hello%2C%20I%20am%20interested%20in%20your%20products.%20Please%20send%20me%20more%20details."
