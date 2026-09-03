@@ -282,6 +282,12 @@ export const productItemCategoryKey = {
   "custom-silicone-rocket-qr-dog-tag": "others",
   "custom-silicone-sausage-dog-tag": "others",
   "custom-silicone-pink-bone-dog-tag": "others",
+  "custom-gold-snowflake-metal-ornament": "others",
+  "custom-christmas-tree-metal-ornament": "others",
+  "custom-snowman-metal-ornament": "others",
+  "custom-candy-cane-metal-ornament": "others",
+  "custom-gingerbread-man-metal-ornament": "others",
+  "custom-classic-snowflake-metal-ornament": "others",
 };
 
 export const DEFAULT_BLOG_AUTHOR_SCHEMA = {

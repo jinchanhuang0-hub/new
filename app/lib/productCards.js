@@ -64,12 +64,18 @@ const patchProductPriority = {
 };
 
 const otherProductPriority = {
-  "custom-metal-dog-tag": 1,
-  "custom-silicone-planet-qr-dog-tag": 2,
-  "custom-silicone-bone-qr-dog-tag": 3,
-  "custom-silicone-rocket-qr-dog-tag": 4,
-  "custom-silicone-sausage-dog-tag": 5,
-  "custom-silicone-pink-bone-dog-tag": 6,
+  "custom-gold-snowflake-metal-ornament": 1,
+  "custom-christmas-tree-metal-ornament": 2,
+  "custom-snowman-metal-ornament": 3,
+  "custom-candy-cane-metal-ornament": 4,
+  "custom-gingerbread-man-metal-ornament": 5,
+  "custom-classic-snowflake-metal-ornament": 6,
+  "custom-metal-dog-tag": 7,
+  "custom-silicone-planet-qr-dog-tag": 8,
+  "custom-silicone-bone-qr-dog-tag": 9,
+  "custom-silicone-rocket-qr-dog-tag": 10,
+  "custom-silicone-sausage-dog-tag": 11,
+  "custom-silicone-pink-bone-dog-tag": 12,
 };
 
 const comparePatchEntriesByDisplayPriority = (entryA, entryB) => {
