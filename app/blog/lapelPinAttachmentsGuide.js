@@ -86,8 +86,8 @@ export const lapelPinAttachmentsGuideArticleHtml = String.raw`
             <h3>12. Ball Chain</h3>
             <p>A Ball Chain can adapt a custom metal design for hanging, carrying, or display. It may be used for tags, collectibles, souvenir items, and selected promotional products. Confirm the chain length, connection point, and packaging method before production.</p>
 
-            <figure class="blog-article-image blog-article-placeholder blog-placeholder-3x2">
-              <div class="blog-article-placeholder-box" role="img" aria-label="Custom metal designs adapted as cuff links key rings tie tacks and ball chain items"><span>Image placeholder: accessory options</span></div>
+            <figure class="blog-article-image blog-article-natural-image">
+              <img src="/assets/images/custom-lapel-pin-accessory-options.webp" width="1672" height="941" loading="lazy" decoding="async" alt="Custom metal designs adapted as cuff links key rings tie tacks and ball chain items">
               <figcaption>One custom metal design can be adapted for formal accessories, gifts and everyday merchandise.</figcaption>
             </figure>
 
