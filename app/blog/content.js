@@ -9,6 +9,7 @@ import { memorialChallengeCoinsGuideArticleHtml } from "./memorialChallengeCoins
 import { patchShapesGuideArticleHtml } from "./patchShapesGuide";
 import { customChristmasOrnamentsGuideArticleHtml } from "./customChristmasOrnamentsGuide";
 import { lapelPinAttachmentsGuideArticleHtml } from "./lapelPinAttachmentsGuide";
+import { corporateChallengeCoinsEmployeeRecognitionArticleHtml } from "./corporateChallengeCoinsEmployeeRecognition";
 
 
 export const metadata = {
@@ -45,6 +46,17 @@ export const blogHtml = String.raw`
           <button type="button" data-blog-category="Uncategorized">Uncategorized</button>
         </div>
         <div class="blog-card-grid">
+          <a class="blog-feature-card" href="/blog/corporate-challenge-coins-employee-recognition" data-blog-category="Custom Coins" aria-label="Read Corporate Challenge Coins for Employee Recognition">
+            <div class="blog-feature-placeholder" role="img" aria-label="Manager presenting a corporate challenge coin during employee recognition">
+              <span>Image placeholder: corporate-challenge-coins-employee-recognition.webp</span>
+            </div>
+            <div class="blog-feature-body">
+              <div class="blog-feature-meta"><span>Custom Coins</span><span>Employee Recognition</span></div>
+              <h2>Corporate Challenge Coins: How to Build an Employee Recognition Program</h2>
+              <p>Learn how to build a fair employee recognition program with corporate challenge coins, from award criteria and coin design to presentation and review.</p>
+              <span class="blog-feature-link">Read More</span>
+            </div>
+          </a>
           <a class="blog-feature-card" href="/blog/lapel-pin-attachments-guide" data-blog-category="Custom Lapel Pins" aria-label="Read Lapel Pin Attachments: 12 Backings and Accessories for Custom Pins">
             <img src="/assets/images/lapel-pin-attachments-guide.webp?v=20260903-labeled" width="1600" height="900" alt="Twelve lapel pin attachments and accessories for custom metal pins">
             <div class="blog-feature-body">
@@ -254,6 +266,7 @@ export const blogHtml = String.raw`
     ${customBeltBuckleDesignGuideArticleHtml}
     ${customChristmasOrnamentsGuideArticleHtml}
     ${lapelPinAttachmentsGuideArticleHtml}
+    ${corporateChallengeCoinsEmployeeRecognitionArticleHtml}
     <article id="military-challenge-coin-traditions" class="section blog-article-section">
       <div class="blog-article-shell">
         <aside class="blog-article-toc" aria-label="Article contents">
