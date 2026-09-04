@@ -263,7 +263,7 @@ const renderCategoryStyleGuideSection = (categoryKey) => {
     rowHeadingTag: "h3",
     rowsHeading: guide.heading,
     rowsHeadingId: guide.id,
-    sectionClass: "product-category-style-guide",
+    sectionClass: "product-category-style-guide responsive-category-guide",
   });
 };
 
