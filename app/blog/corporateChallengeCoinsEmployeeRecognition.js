@@ -22,7 +22,7 @@ export const corporateChallengeCoinsEmployeeRecognitionArticleHtml = String.raw`
             <a class="blog-back-link" href="/blog">Back to Blog</a>
             <h1>Corporate Challenge Coins: How to Build an Employee Recognition Program</h1>
             <figure class="blog-article-image blog-article-hero-image blog-article-natural-image">
-              <img src="/assets/images/corporate-challenge-coins-employee-recognition.webp" width="1600" height="900" alt="Manager presenting a corporate challenge coin during employee recognition">
+              <img src="/assets/images/corporate-challenge-coins-employee-recognition.webp" width="1600" height="900" style="object-fit: cover; object-position: center;" alt="Manager presenting a corporate challenge coin during employee recognition">
               <figcaption>A recognition coin gains meaning from the achievement, the explanation and the way it is presented.</figcaption>
             </figure>
             <p>Corporate challenge coins can give employee recognition a physical form, but the coin is only one part of the program. The meaning comes from what the organization recognizes, how consistently it applies the rules and how the award is presented.</p>
