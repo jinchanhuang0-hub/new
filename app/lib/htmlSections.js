@@ -532,10 +532,10 @@ const sortBlogCardsByDate = (html, articles = {}) =>
   );
 
 export const buildBlogIndexHtml = (html, articles = {}) =>
-  enhanceBlogCardImages(addBlogCardMeta(sortBlogCardsByDate(normalizeBlogArticleLinks(html.replace(
+  addBlogCardMeta(enhanceBlogCardImages(sortBlogCardsByDate(normalizeBlogArticleLinks(html.replace(
     /<article id="[^"]+" class="[^"]*\bblog-article-section\b[^"]*">[\s\S]*?<\/article>/g,
     "",
-  )), articles), articles));
+  )), articles)), articles);
 
 const addBlogArticleMeta = (articleHtml, articleMeta) => {
   const author = articleMeta?.author;
