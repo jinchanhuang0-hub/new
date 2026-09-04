@@ -330,17 +330,6 @@ const withBlogArticleDefaults = (article) => {
 export const buildBlogAuthorSchema = () => ({ ...DEFAULT_BLOG_AUTHOR_SCHEMA });
 
 const blogArticleData = {
-  "corporate-challenge-coins-employee-recognition": {
-    title: "Corporate Challenge Coins for Employee Recognition",
-    headline: "Corporate Challenge Coins: How to Build an Employee Recognition Program",
-    description:
-      "Learn how to build a fair employee recognition program with corporate challenge coins, from award criteria and coin design to presentation and review.",
-    author: "Sunny Huang",
-    authorType: "Person",
-    datePublished: "2026-09-04",
-    dateModified: "2026-09-04",
-    schemaType: "BlogPosting",
-  },
   "lapel-pin-attachments-guide": {
     title: "Lapel Pin Attachments: 12 Backings and Accessories Guide",
     headline: "Lapel Pin Attachments: 12 Backings and Accessories for Custom Pins",
