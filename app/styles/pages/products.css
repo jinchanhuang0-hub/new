@@ -2019,6 +2019,20 @@
   height: 100%;
 }
 
+#custom-details .product-category-style-guide.responsive-category-guide .home-category-row-media {
+  overflow: visible;
+}
+
+#custom-details .product-category-style-guide.responsive-category-guide #challenge-coin-club .home-category-row-media img {
+  padding: 12px;
+}
+
+#custom-details .product-category-style-guide.responsive-category-guide #medal-sports .home-category-row-media img,
+#custom-details .product-category-style-guide.responsive-category-guide #belt-buckle-enamel .home-category-row-media img,
+#custom-details .product-category-style-guide.responsive-category-guide #golf-accessory-gift-set .home-category-row-media img {
+  padding: 12px;
+}
+
 @media (min-width: 761px) {
   /* Scale every medal type copy capsule without changing other category guides. */
   #custom-details .product-type-section[data-product-content="medals"] ~ .product-category-style-guide .home-category-row-copy,
