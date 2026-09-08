@@ -1010,10 +1010,23 @@ const blogArticleData = {
 };
 
 export const blogArticles = Object.fromEntries(
-  Object.entries(blogArticleData).map(([slug, article]) => [
+  [...Object.entries(blogArticleData).map(([slug, article]) => [
     slug,
     withBlogArticleDefaults(article),
   ]),
+  ["custom-medal-design-proof-checklist", {
+    title: "Custom Medal Design: Artwork Approval Checklist",
+    headline: "Custom Medal Design: What to Check Before Approving Your Proof",
+    description:
+      "Check medal dimensions, wording, printing, finishes and ribbon details with a practical checklist before approving your custom medal design for production.",
+    author: DEFAULT_BLOG_AUTHOR_SCHEMA.name,
+    authorType: DEFAULT_BLOG_AUTHOR_SCHEMA["@type"],
+    authorUrl: DEFAULT_BLOG_AUTHOR_SCHEMA.url,
+    datePublished: "2026-09-08",
+    dateModified: "2026-09-08",
+    image: "/assets/images/custom-medal-front-back-photo.webp",
+    schemaType: "BlogPosting",
+  }]],
 );
 
 const addImagePerformanceDefaults = (html) =>
