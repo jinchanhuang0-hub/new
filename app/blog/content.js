@@ -11,6 +11,7 @@ import { customChristmasOrnamentsGuideArticleHtml } from "./customChristmasOrnam
 import { lapelPinAttachmentsGuideArticleHtml } from "./lapelPinAttachmentsGuide";
 import { corporateChallengeCoinsEmployeeRecognitionArticleHtml } from "./corporateChallengeCoinsEmployeeRecognition";
 import { customMedalDesignProofChecklistArticleHtml } from "./customMedalDesignProofChecklist";
+import { christmasGiftProposalsDistributorsArticleHtml } from "./christmasGiftProposalsDistributors";
 
 
 export const metadata = {
@@ -47,6 +48,15 @@ export const blogHtml = String.raw`
           <button type="button" data-blog-category="Uncategorized">Uncategorized</button>
         </div>
         <div class="blog-card-grid">
+          <a class="blog-feature-card" href="/blog/christmas-gift-proposals-distributors" data-card-image-fit="full" data-blog-category="Holidays" aria-label="Read Christmas Gift Proposals for Distributors: Comparing Metal Keepsakes">
+            <img src="/assets/images/christmas-metal-keepsakes-comparison.webp?v=a4835a4b" width="1536" height="1024" alt="Concept designs featuring a snowflake ornament, gingerbread keychain, Santa and Christmas tree pins, and two commemorative coin faces.">
+            <div class="blog-feature-body">
+              <div class="blog-feature-meta"><span>Holidays</span><span>Gift Proposals</span></div>
+              <h2>Christmas Gift Proposals for Distributors: Comparing Metal Keepsakes</h2>
+              <p>Compare ornaments, keychains, lapel pins, and coins for corporate Christmas gifts. Align specifications, packaging, quantities, and quote inclusions.</p>
+              <span class="blog-feature-link">Read More</span>
+            </div>
+          </a>
           <a class="blog-feature-card" href="/blog/custom-medal-design-proof-checklist" data-card-image-fit="full" data-blog-category="Custom Medals" aria-label="Read Custom Medal Design: What to Check Before Approving Your Proof">
             <img src="/assets/images/custom-medal-front-back-photo.webp" width="1536" height="1024" alt="Front and back of a first-place tournament medal with a yellow ribbon">
             <div class="blog-feature-body">
@@ -276,6 +286,7 @@ export const blogHtml = String.raw`
     ${lapelPinAttachmentsGuideArticleHtml}
     ${corporateChallengeCoinsEmployeeRecognitionArticleHtml}
     ${customMedalDesignProofChecklistArticleHtml}
+    ${christmasGiftProposalsDistributorsArticleHtml}
     <article id="military-challenge-coin-traditions" class="section blog-article-section">
       <div class="blog-article-shell">
         <aside class="blog-article-toc" aria-label="Article contents">

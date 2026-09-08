@@ -1026,6 +1026,19 @@ export const blogArticles = Object.fromEntries(
     dateModified: "2026-09-08",
     image: "/assets/images/custom-medal-front-back-photo.webp",
     schemaType: "BlogPosting",
+  }],
+  ["christmas-gift-proposals-distributors", {
+    title: "Corporate Christmas Gifts: A Distributor's Comparison Guide",
+    headline: "Christmas Gift Proposals for Distributors: Comparing Metal Keepsakes",
+    description:
+      "Compare ornaments, keychains, lapel pins, and coins for corporate Christmas gifts. Align specifications, packaging, quantities, and quote inclusions.",
+    author: DEFAULT_BLOG_AUTHOR_SCHEMA.name,
+    authorType: DEFAULT_BLOG_AUTHOR_SCHEMA["@type"],
+    authorUrl: DEFAULT_BLOG_AUTHOR_SCHEMA.url,
+    datePublished: "2026-09-08",
+    dateModified: "2026-09-08",
+    image: "/assets/images/christmas-metal-keepsakes-comparison.webp?v=a4835a4b",
+    schemaType: "BlogPosting",
   }]],
 );
 
