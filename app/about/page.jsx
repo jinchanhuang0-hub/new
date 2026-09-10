@@ -101,7 +101,7 @@ const html = String.raw`
       <button class="cert-lightbox-backdrop" type="button" data-cert-lightbox-close aria-label="Close certificate preview"></button>
       <div class="cert-lightbox-panel">
         <button class="cert-lightbox-close" type="button" data-cert-lightbox-close aria-label="Close certificate preview">&times;</button>
-        <img class="cert-lightbox-img" src="" alt="">
+        <img class="cert-lightbox-img" alt="">
         <div class="cert-lightbox-copy">
           <p class="cert-lightbox-caption"></p>
         </div>
@@ -260,14 +260,13 @@ const html = String.raw`
 
     <section class="section cta-section">
       <div class="container">
-        <div class="cta-band">
-          <div>
-            <h2>Ready to Start Your Custom Metal Gift Project?</h2>
-            <p>Send us your idea, logo or reference image. We will help turn it into a production-ready design.</p>
+        <div class="about-cta-band cta-band inquiry-cta-band" data-inquiry-cta>
+          <div class="inquiry-cta-copy">
+            <h2>Have a Custom Project in Mind?</h2>
+            <p>Share your artwork, quantity and project requirements with our team. We&rsquo;ll help confirm the materials, size, finish and packaging, then prepare a personalized quote.</p>
           </div>
-          <div class="cta-actions">
-            <a class="btn btn-yellow" href="/contact">Get a Free Quote</a>
-            <a class="btn btn-outline" href="https://api.whatsapp.com/send?phone=8618895316838&amp;text=Hello%2C%20I%20am%20interested%20in%20your%20products.%20Please%20send%20me%20more%20details." target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
+          <div class="cta-actions inquiry-cta-actions">
+            <a class="btn btn-yellow inquiry-cta-button" href="/contact"><span>Request a Custom Quote</span><span class="inquiry-cta-arrow" aria-hidden="true">&rarr;</span></a>
           </div>
         </div>
       </div>

@@ -359,7 +359,7 @@ export const buildCategoryHtml = (html, categoryKey, categoryLabel, options = {}
     ? categorySeoContent[categoryKey] || ""
     : "";
 
-  return `${shell.beforeMain}<main class="product-types-page" id="custom-details">${categoryHero.hero}${categorySection}${styleGuideSection}${seoPanelSection}</main>${shell.afterMain}`;
+  return `${shell.beforeMain}<main class="product-types-page" id="custom-details">${categoryHero.hero}${categorySection}${styleGuideSection}${options.afterStyleGuide || ""}${seoPanelSection}</main>${shell.afterMain}`;
 };
 
 const formatArticleDate = (date) => {
@@ -499,7 +499,7 @@ const addBlogCardMeta = (html, articles = {}) =>
       return `${cardContent}
               <div class="blog-feature-footer">
                 <span class="blog-feature-author"><span class="blog-author-avatar"><img src="/assets/images/sunny-huang-author-avatar.webp" alt="" width="39" height="39"></span>${author}</span>
-                <time datetime="${date}">${formatArticleDate(date)}</time>
+                ${date ? `<time datetime="${date}">${formatArticleDate(date)}</time>` : ""}
               </div>
               <span class="blog-feature-link">Read More</span>`;
     },

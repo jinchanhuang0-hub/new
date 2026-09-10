@@ -371,6 +371,23 @@
   object-position: center 52%;
 }
 
+#lapel-pin-attachments-guide .blog-article-header > .blog-article-hero-image.blog-article-natural-image {
+  overflow: hidden;
+}
+
+#lapel-pin-attachments-guide .blog-article-header > .blog-article-hero-image.blog-article-natural-image img {
+  width: 100%;
+  max-width: none;
+  height: auto;
+  max-height: none;
+  padding: 0;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
+  transform: scale(1.08);
+  transform-origin: center;
+}
+
 .blog-article-contain-image.blog-lapel-pin-options-image img,
 .blog-article-contain-image.blog-lapel-pin-badge-types-image img {
   width: min(760px, 100%);

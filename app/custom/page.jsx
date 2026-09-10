@@ -188,14 +188,13 @@ const html = String.raw`
 
     <section class="section custom-cta-section">
       <div class="container">
-        <div class="custom-cta-band">
-          <div>
-            <h2>Ready to Create Your Custom Metal Gifts?</h2>
-            <p>Send your logo, quantity and deadline. Our team will reply with a clear quote and artwork guidance.</p>
+        <div class="custom-cta-band cta-band inquiry-cta-band" data-inquiry-cta>
+          <div class="inquiry-cta-copy">
+            <h2>Have a Custom Project in Mind?</h2>
+            <p>Share your artwork, quantity and project requirements with our team. We&rsquo;ll help confirm the materials, size, finish and packaging, then prepare a personalized quote.</p>
           </div>
-          <div class="hero-actions">
-          <a class="btn btn-yellow" href="/contact">Get a Free Quote</a>
-            <a class="btn btn-outline" href="/contact">Upload Artwork</a>
+          <div class="hero-actions inquiry-cta-actions">
+          <a class="btn btn-yellow inquiry-cta-button" href="/contact"><span>Request a Custom Quote</span><span class="inquiry-cta-arrow" aria-hidden="true">&rarr;</span></a>
           </div>
         </div>
       </div>

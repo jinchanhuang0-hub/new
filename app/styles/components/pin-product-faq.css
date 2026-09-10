@@ -1,0 +1,72 @@
+.pin-product-faq {
+  padding: 64px 0;
+  background: #fff;
+  color: var(--navy);
+}
+
+.pin-product-faq .pin-product-faq-container {
+  width: min(960px, calc(100% - 40px));
+  margin-inline: auto;
+}
+
+.pin-product-faq h2 {
+  margin: 0 0 32px;
+  text-align: center;
+  color: var(--navy);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.pin-product-faq-item { border-bottom: 1px solid #d5e1ef; }
+.pin-product-faq-item:first-child { border-top: 1px solid #d5e1ef; }
+.pin-product-faq-item h3 { margin: 0; font: inherit; }
+
+.pin-product-faq-item button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  min-height: 64px;
+  padding: 20px 16px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--navy);
+  font: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: left;
+  cursor: pointer;
+}
+
+.pin-product-faq-item button > span:first-child { min-width: 0; }
+.pin-product-faq-item button:focus-visible { outline: 3px solid var(--navy); outline-offset: -3px; }
+.pin-product-faq-item button[aria-expanded="true"] { background: #f5f9fd; }
+.pin-product-faq-icon { position: relative; flex: 0 0 20px; width: 20px; height: 20px; }
+.pin-product-faq-icon::before,
+.pin-product-faq-icon::after { content: ""; position: absolute; background: currentColor; }
+.pin-product-faq-icon::before { width: 16px; height: 2px; left: 2px; top: 9px; }
+.pin-product-faq-icon::after { width: 2px; height: 16px; left: 9px; top: 2px; }
+.pin-product-faq-item button[aria-expanded="true"] .pin-product-faq-icon::after { display: none; }
+.pin-product-faq-answer { padding: 4px 56px 22px 16px; }
+.pin-product-faq-answer[hidden] { display: none; }
+.pin-product-faq-answer p { margin: 0; color: var(--text, #40516a); font-size: 16px; line-height: 1.7; }
+
+@media (hover: hover) and (pointer: fine) {
+  .pin-product-faq-item button:hover { background: #f5f9fd; }
+}
+
+@media (max-width: 767px) {
+  .pin-product-faq { padding: 44px 0; }
+  .pin-product-faq .pin-product-faq-container { width: calc(100% - 32px); }
+  .pin-product-faq h2 { font-size: 28px; margin-bottom: 24px; }
+  .pin-product-faq-item button { padding: 16px 8px; gap: 16px; }
+  .pin-product-faq-answer { padding: 4px 8px 20px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pin-product-faq *, .pin-product-faq *::before, .pin-product-faq *::after { animation: none !important; transition: none !important; }
+}

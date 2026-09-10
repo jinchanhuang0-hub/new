@@ -1,6 +1,17 @@
 import { notFound } from "next/navigation";
 import JsonLd from "../../components/JsonLd";
 import StaticPage from "../../components/StaticPage";
+import { renderFinishGallery } from "../../components/finishGalleryHtml";
+import { renderArtworkComparison } from "../../components/artworkComparisonHtml";
+import { renderProductFaq } from "../../components/productFaqHtml";
+import { enamelPinFaq } from "../enamelPinFaq";
+import "../../styles/components/pin-product-faq.css";
+import { platingFinishes } from "../platingFinishes";
+import { pinAttachments } from "../pinAttachments";
+import { pinBacksides } from "../pinBacksides";
+import { pinPackaging } from "../pinPackaging";
+import "../../styles/components/finish-gallery.css";
+import "../../styles/components/artwork-comparison.css";
 import {
   productDetailHtml,
   productDetailMetadata,
@@ -17,6 +28,15 @@ import {
   getProductEntriesForCategoryPage,
   getProductPageCount,
 } from "../../lib/productCards";
+
+const fabricationOptionsCategories = new Set([
+  "custom-enamel-pins",
+  "custom-medals",
+  "custom-challenge-coins",
+  "custom-belt-buckles",
+  "custom-golf-accessories",
+  "custom-bottle-openers",
+]);
 
 export const dynamicParams = false;
 
@@ -132,6 +152,14 @@ export default async function ProductCategoryPage({ params, searchParams }) {
           {
             page: currentPage,
             pageSize: CATEGORY_PRODUCTS_PAGE_SIZE,
+            afterStyleGuide: fabricationOptionsCategories.has(category)
+              ? `${renderFinishGallery(
+                  platingFinishes,
+                  category === "custom-enamel-pins"
+                    ? [pinAttachments, pinBacksides, pinPackaging]
+                    : [],
+                )}${category === "custom-enamel-pins" ? renderArtworkComparison() + renderProductFaq(enamelPinFaq) : ""}`
+              : "",
           },
         )}
       />

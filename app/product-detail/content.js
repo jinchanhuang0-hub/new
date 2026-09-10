@@ -200,9 +200,14 @@ export const productDetailHtml = String.raw`
 
     <section class="section product-type-cta">
       <div class="container">
-        <div class="cta-band">
-          <div><h2>Need a Price for Your Design?</h2><p>Send product type, logo, size, quantity and deadline. Our team will recommend the right process and quote clearly.</p></div>
-          <a class="btn btn-yellow" href="/contact">Get a Free Quote</a>
+        <div class="cta-band inquiry-cta-band" data-inquiry-cta>
+          <div class="inquiry-cta-copy">
+            <h2>Have a Custom Project in Mind?</h2>
+            <p>Share your artwork, quantity and project requirements with our team. We&rsquo;ll help confirm the materials, size, finish and packaging, then prepare a personalized quote.</p>
+          </div>
+          <div class="cta-actions inquiry-cta-actions">
+            <a class="btn btn-yellow inquiry-cta-button" href="/contact"><span>Request a Custom Quote</span><span class="inquiry-cta-arrow" aria-hidden="true">&rarr;</span></a>
+          </div>
         </div>
       </div>
     </section>

@@ -142,8 +142,67 @@ const html = String.raw`
             </div>
           </a>
         </div>
-        <div class="product-actions">
-          <a class="btn btn-primary" href="/products">View All Products</a>
+      </div>
+    </section>
+
+    <section class="section product-ideas-banner-section" aria-label="Custom quote inquiry">
+      <div class="container">
+        <div class="cta-band inquiry-cta-band" data-inquiry-cta>
+          <div class="inquiry-cta-copy">
+            <h2>Have a Custom Project in Mind?</h2>
+            <p>Share your artwork, quantity and project requirements with our team. We&rsquo;ll help confirm the materials, size, finish and packaging, then prepare a personalized quote.</p>
+          </div>
+          <div class="cta-actions inquiry-cta-actions">
+            <a class="btn btn-yellow inquiry-cta-button" href="/contact"><span>Request a Custom Quote</span><span class="inquiry-cta-arrow" aria-hidden="true">&rarr;</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section more-custom-products-section" aria-labelledby="more-custom-products-title">
+      <div class="container more-custom-products-wrap">
+        <h2 id="more-custom-products-title">More Custom Products</h2>
+        <div class="more-custom-products-grid">
+          <a class="more-custom-product" href="/products/others">
+            <img src="/assets/images/custom-christmas-tree-metal-ornament.webp" width="800" height="800" loading="lazy" decoding="async" alt="Custom Christmas tree metal ornament with red hanging ribbon">
+            <span>Custom Metal Ornaments</span>
+          </a>
+          <a class="more-custom-product" href="/products/custom-patches">
+            <img src="/assets/images/custom-woven-dragon-round-patch.webp" width="800" height="800" loading="lazy" decoding="async" alt="Blue and gold custom woven dragon round patch">
+            <span>Custom Woven Patches</span>
+          </a>
+          <a class="more-custom-product" href="/products/custom-patches">
+            <img src="/assets/images/custom-embroidered-cartoon-character-patch.webp" width="800" height="800" loading="lazy" decoding="async" alt="Custom embroidered cartoon character patch">
+            <span>Custom Embroidered Patches</span>
+          </a>
+          <a class="more-custom-product" href="/products/others">
+            <img src="/assets/images/custom-metal-dog-tag.webp" width="800" height="800" loading="lazy" decoding="async" alt="Custom engraved metal dog tags">
+            <span>Custom Metal Dog Tags</span>
+          </a>
+          <a class="more-custom-product" href="/products/custom-metal-keychains">
+            <img src="/assets/images/type-keychains-yellow-mouse-pvc.jpg" width="800" height="800" loading="lazy" decoding="async" alt="Yellow character custom PVC keychain">
+            <span>Custom PVC Keychains</span>
+          </a>
+          <a class="more-custom-product" href="/products/custom-metal-keychains">
+            <img src="/assets/images/type-keychains-never-give-up-woven-label.jpg" width="800" height="800" loading="lazy" decoding="async" alt="Custom woven label keychain">
+            <span>Custom Woven Keychains</span>
+          </a>
+          <a class="more-custom-product" href="/products/custom-bottle-openers">
+            <img src="/assets/images/type-openers-cap-lifter-keychain.jpg" width="800" height="800" loading="lazy" decoding="async" alt="Custom cap lifter keychain bottle opener">
+            <span>Custom Bottle Openers</span>
+          </a>
+          <a class="more-custom-product" href="/products/custom-cufflinks-tie-clips">
+            <img src="/assets/images/type-cufflinks-metal.jpg" width="800" height="800" loading="lazy" decoding="async" alt="Blue carbon fiber custom metal cufflinks">
+            <span>Custom Cufflinks</span>
+          </a>
+          <a class="more-custom-product" href="/products/custom-cufflinks-tie-clips">
+            <img src="/assets/images/type-cufflinks-enamel.jpg" width="800" height="800" loading="lazy" decoding="async" alt="Custom color plated metal tie clips">
+            <span>Custom Tie Clips</span>
+          </a>
+          <a class="more-custom-product" href="/products/custom-fridge-magnets">
+            <img src="/assets/images/type-magnets-enamel.png" width="800" height="800" loading="lazy" decoding="async" alt="Custom ornate building enamel fridge magnet">
+            <span>Custom Fridge Magnets</span>
+          </a>
         </div>
       </div>
     </section>
@@ -409,7 +468,7 @@ const html = String.raw`
       <button class="cert-lightbox-backdrop" type="button" data-cert-lightbox-close aria-label="Close certificate preview"></button>
       <div class="cert-lightbox-panel">
         <button class="cert-lightbox-close" type="button" data-cert-lightbox-close aria-label="Close certificate preview">&times;</button>
-        <img class="cert-lightbox-img" src="" alt="">
+        <img class="cert-lightbox-img" alt="">
         <div class="cert-lightbox-copy">
           <p class="cert-lightbox-caption"></p>
         </div>

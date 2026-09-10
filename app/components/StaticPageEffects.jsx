@@ -145,6 +145,51 @@ export default function StaticPageEffects() {
 
     const cleanupAuthorProfileCard = setupAuthorProfileCard();
 
+    const setupInquiryCtaAnimation = () => {
+      const ctaBlocks = Array.from(document.querySelectorAll("[data-inquiry-cta]"));
+      if (!ctaBlocks.length) return () => {};
+
+      const showCta = (cta) => {
+        cta.dataset.visible = "true";
+      };
+
+      const reducedMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
+      if (reducedMotion || !("IntersectionObserver" in window)) {
+        ctaBlocks.forEach(showCta);
+        return () => {};
+      }
+
+      const getVisibleRatio = (element) => {
+        const rect = element.getBoundingClientRect();
+        const visibleHeight = Math.min(rect.bottom, window.innerHeight) - Math.max(rect.top, 0);
+        return Math.max(0, Math.min(visibleHeight, rect.height)) / rect.height;
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.intersectionRatio < 0.28) return;
+
+          showCta(entry.target);
+          observer.unobserve(entry.target);
+        });
+      }, {
+        threshold: [0, 0.28, 0.35]
+      });
+
+      ctaBlocks.forEach((cta) => {
+        cta.dataset.animateReady = "true";
+        if (getVisibleRatio(cta) >= 0.28) {
+          showCta(cta);
+        } else {
+          observer.observe(cta);
+        }
+      });
+
+      return () => observer.disconnect();
+    };
+
+    const cleanupInquiryCtaAnimation = setupInquiryCtaAnimation();
+
     const activateProductContent = () => {
       const productSections = document.querySelectorAll("[data-product-content]");
       if (!productSections.length) return;
@@ -905,6 +950,7 @@ export default function StaticPageEffects() {
 
     return () => {
       cleanupAuthorProfileCard();
+      cleanupInquiryCtaAnimation();
       document.removeEventListener("click", handleBlogCardClick);
       document.removeEventListener("click", handleProductInquiryTriggerClick);
       document.removeEventListener("click", handleProductInquiryModalClick);
