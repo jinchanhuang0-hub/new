@@ -2,9 +2,9 @@ const escapeHtml = (value) => String(value).replace(/[&<>"']/g, (character) => (
   "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;",
 })[character]);
 
-const renderFabricationOptionGrid = ({ id, items, imageScale = "cropped" }) => `
-      <ul class="finish-gallery-grid" id="${escapeHtml(id)}" data-image-scale="${escapeHtml(imageScale)}">
-        ${items.map(item => `<li class="finish-gallery-card" data-finish-id="${escapeHtml(item.id)}">
+const renderFabricationOptionGrid = ({ id, items, imageScale = "cropped", desktopColumns }) => `
+      <ul class="finish-gallery-grid" id="${escapeHtml(id)}" data-image-scale="${escapeHtml(imageScale)}"${[5, 6].includes(desktopColumns) ? ` data-desktop-columns="${desktopColumns}"` : ""}>
+        ${items.map(item => `<li class="finish-gallery-card" data-finish-id="${escapeHtml(item.id)}"${item.imageTopInset > 0 ? ` style="--image-top-inset: ${Number(item.imageTopInset) / Number(item.width) * 100}%"` : ""}>
           <figure>
             <div class="finish-gallery-media"><img src="${escapeHtml(item.image)}" srcset="${[256, 384, 640, 750].map(width => `/_next/image?url=${encodeURIComponent(item.image)}&amp;w=${width}&amp;q=90 ${width}w`).join(", ")}, ${escapeHtml(item.image)} ${item.width}w" sizes="(max-width: 767px) calc((100vw - 44px) / 2), (max-width: 1023px) calc((100vw - 64px) / 3), calc((65vw - 72px) / 7)" width="${item.width}" height="${item.height}" loading="lazy" decoding="async" alt="${escapeHtml(item.alt)}"></div>
             <figcaption>${escapeHtml(item.label)}</figcaption>
@@ -13,7 +13,7 @@ const renderFabricationOptionGrid = ({ id, items, imageScale = "cropped" }) => `
       </ul>`;
 
 const renderFabricationOptionSection = (
-  { id, title, description, items, imageScale, gridId },
+  { id, title, description, items, imageScale, gridId, desktopColumns },
   { isTabbed = false, isActive = false } = {},
 ) => `
       <div class="finish-gallery-option-section" id="${escapeHtml(id)}-panel"${isTabbed ? ` role="tabpanel" aria-labelledby="${escapeHtml(id)}-tab" tabindex="0"${isActive ? "" : " hidden"}` : ` aria-labelledby="${escapeHtml(id)}-title"`}>
@@ -21,7 +21,7 @@ const renderFabricationOptionSection = (
           <h3 id="${escapeHtml(id)}-title"${isTabbed ? ` aria-label="${escapeHtml(title)}"` : ""}>${isTabbed ? "" : escapeHtml(title)}</h3>
           <p>${escapeHtml(description)}</p>
         </div>
-        ${renderFabricationOptionGrid({ id: gridId || `${id}-grid`, items, imageScale })}
+        ${renderFabricationOptionGrid({ id: gridId || `${id}-grid`, items, imageScale, desktopColumns })}
       </div>`;
 
 // Match the site's server-rendered HTML sections; keep every fabrication grid in SSR.

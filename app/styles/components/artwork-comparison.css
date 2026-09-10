@@ -53,6 +53,9 @@
   -webkit-user-select: none;
 }
 
+#artwork-to-finished-coin .artwork-comparison-stage { width: min(600px, 100%); }
+.artwork-comparison-instruction[aria-hidden="true"] { visibility: hidden; }
+
 .artwork-comparison-image,
 .artwork-comparison-artwork-layer {
   position: absolute;

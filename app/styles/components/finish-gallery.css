@@ -84,7 +84,8 @@
 .finish-gallery-media { aspect-ratio: 6 / 5; background: #fff; border: 1px solid #dce5ef; border-radius: 10px; overflow: hidden; }
 .finish-gallery-media img { display: block; width: 100%; height: 100%; object-fit: contain; transform: scale(1.27); transform-origin: center; }
 .finish-gallery-grid[data-image-scale="natural"] .finish-gallery-media img { transform: scale(1); }
-.finish-gallery-grid[data-image-scale="natural"] .finish-gallery-card figcaption { height: 58px; min-height: 58px; }
+.finish-gallery-grid[data-image-scale="natural"] .finish-gallery-card figcaption,
+.finish-gallery-grid[data-image-scale="top-aligned"] .finish-gallery-card figcaption { height: 58px; min-height: 58px; }
 .finish-gallery-card figcaption { display: flex; align-items: center; justify-content: center; min-height: 48px; padding: 6px 8px; box-sizing: border-box; text-align: center; font-size: 17px; font-weight: 700; line-height: 1.35; }
 @media (hover: hover) and (pointer: fine) {
   .finish-gallery-media img { transition: transform 220ms ease-out; }
@@ -93,9 +94,23 @@
 }
 @media (min-width: 1024px) {
   .finish-gallery-subheading { width: 65%; }
-  .finish-gallery-grid { grid-template-columns: repeat(7, minmax(0, 1fr)); width: 65%; gap: 2px 9px; }
+  .finish-gallery-grid { --finish-gallery-column-gap: 9px; grid-template-columns: repeat(7, minmax(0, 1fr)); width: 65%; gap: 2px var(--finish-gallery-column-gap); }
+  /* Custom column counts retain the seven-column gallery's card width and gap. */
+  .finish-gallery-grid[data-desktop-columns="5"] { --finish-gallery-desktop-columns: 5; }
+  .finish-gallery-grid[data-desktop-columns="6"] { --finish-gallery-desktop-columns: 6; }
+  .finish-gallery-grid[data-desktop-columns] {
+    grid-template-columns: repeat(var(--finish-gallery-desktop-columns), minmax(0, calc((100% - 6 * var(--finish-gallery-column-gap)) / 7)));
+    justify-content: start;
+  }
   .finish-gallery-card figcaption { min-height: 37px; padding: 5px 7px; font-size: 13.5px; }
-  .finish-gallery-grid[data-image-scale="natural"] .finish-gallery-card figcaption { height: 48px; min-height: 48px; }
+  .finish-gallery-grid[data-image-scale="natural"] .finish-gallery-card figcaption,
+  .finish-gallery-grid[data-image-scale="top-aligned"] .finish-gallery-card figcaption { height: 48px; min-height: 48px; }
+}
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .finish-gallery-grid[data-desktop-columns="6"][data-image-scale="natural"] .finish-gallery-card figcaption {
+    height: calc(5.4em + 10px);
+    min-height: calc(5.4em + 10px);
+  }
 }
 @media (min-width: 1200px) {
   .finish-gallery-tabs .finish-gallery-subheading p { white-space: nowrap; }
@@ -130,4 +145,16 @@
 @media (prefers-reduced-motion: reduce) {
   .finish-gallery .finish-gallery-media img { transform: scale(1.27); transition: none; }
   .finish-gallery .finish-gallery-grid[data-image-scale="natural"] .finish-gallery-media img { transform: scale(1); }
+}
+/* Trim roughly half the lower whitespace, keeping the coin and its shadow intact. */
+.finish-gallery .finish-gallery-grid[data-image-scale="top-aligned"] .finish-gallery-media {
+  aspect-ratio: 20 / 13;
+}
+/* Keep original proportions; align the source's cut edge to the frame, without hover motion. */
+.finish-gallery .finish-gallery-grid[data-image-scale="top-aligned"] .finish-gallery-media img {
+  height: auto;
+  object-position: center top;
+  margin-top: calc(-1 * var(--image-top-inset, 0%));
+  transform: none;
+  transition: none;
 }

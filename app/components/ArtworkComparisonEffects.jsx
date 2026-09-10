@@ -24,7 +24,8 @@ export default function ArtworkComparisonEffects() {
       let startX = 0;
       let startY = 0;
       let dragging = false;
-      let suppressClick = false;
+      let suppressClick = true;
+      const finishedNoun = comparison.dataset.finishedNoun || "finished pin";
       const imageStatus = {
         artwork: artworkImage.complete && artworkImage.naturalWidth > 0,
         finished: finishedImage.complete && finishedImage.naturalWidth > 0,
@@ -36,10 +37,11 @@ export default function ArtworkComparisonEffects() {
         handle.setAttribute("aria-valuenow", String(Math.round(position)));
         handle.setAttribute(
           "aria-valuetext",
-          `Artwork ${Math.round(position)}%, finished pin ${Math.round(100 - position)}%`,
+          `Artwork ${Math.round(position)}%, ${finishedNoun} ${Math.round(100 - position)}%`,
         );
-        artworkLabel?.toggleAttribute("hidden", position === 0);
-        finishedLabel?.toggleAttribute("hidden", position === 100);
+        const ready = imageStatus.artwork && imageStatus.finished;
+        artworkLabel?.toggleAttribute("hidden", !imageStatus.artwork || (ready && position === 0));
+        finishedLabel?.toggleAttribute("hidden", !imageStatus.finished || (ready && position === 100));
       };
 
       const setPositionFromPointer = (clientX) => {
@@ -57,7 +59,8 @@ export default function ArtworkComparisonEffects() {
         comparison.classList.toggle("is-unavailable", !hasUsableImage);
         handle.tabIndex = ready ? 0 : -1;
         handle.setAttribute("aria-disabled", String(!ready));
-        if (instruction) instruction.hidden = !ready;
+        if (instruction) instruction.setAttribute("aria-hidden", String(!ready));
+        setPosition(position);
       };
 
       const handleImageLoad = (event) => {
@@ -71,8 +74,12 @@ export default function ArtworkComparisonEffects() {
       };
 
       const endPointer = (event) => {
+        // Touch starts with implicit capture on a child (layer or handle).
+        // Transferring that capture to the stage emits a bubbling child loss;
+        // it is not cancellation of the stage's newly captured drag.
+        if (event.type === "lostpointercapture" && event.target !== comparison) return;
         if (event.pointerId !== activePointer) return;
-        if (event.type !== "pointerup") suppressClick = true;
+        suppressClick = event.type !== "pointerup" || dragging;
         activePointer = null;
         dragging = false;
         comparison.classList.remove("is-dragging");
@@ -82,19 +89,31 @@ export default function ArtworkComparisonEffects() {
       const handleClick = (event) => {
         if (!comparison.classList.contains("is-ready")) return;
         if (suppressClick) {
-          suppressClick = false;
           return;
         }
         setPositionFromPointer(event.clientX);
+        suppressClick = true;
       };
 
       const handlePointerDown = (event) => {
-        if (!comparison.classList.contains("is-ready") || !event.isPrimary) return;
+        if (!comparison.classList.contains("is-ready") || !event.isPrimary || event.button !== 0) return;
         activePointer = event.pointerId;
         startX = event.clientX;
         startY = event.clientY;
         dragging = false;
-        suppressClick = false;
+        suppressClick = true;
+      };
+
+      // A second finger may land outside this canvas. Cancel only this instance's
+      // pending gesture; never prevent the browser's page zoom or vertical scroll.
+      const handleAdditionalPointer = (event) => {
+        if (activePointer !== null && event.pointerId !== activePointer && event.pointerType === "touch") {
+          endPointer({ pointerId: activePointer, type: "pointercancel" });
+        }
+      };
+
+      const handlePointerLeave = (event) => {
+        if (!dragging) endPointer({ pointerId: event.pointerId, type: "pointercancel" });
       };
 
       const handlePointerMove = (event) => {
@@ -104,7 +123,7 @@ export default function ArtworkComparisonEffects() {
 
         if (!dragging) {
           if (movementY > movementX && movementY > 8) {
-            activePointer = null;
+            endPointer({ pointerId: event.pointerId, type: "pointercancel" });
             return;
           }
           if (movementX < 6) return;
@@ -118,6 +137,7 @@ export default function ArtworkComparisonEffects() {
       };
 
       const handleKeyDown = (event) => {
+        if (!comparison.classList.contains("is-ready")) return;
         let nextPosition = position;
         if (event.key === "ArrowLeft" || event.key === "ArrowDown") nextPosition -= 5;
         else if (event.key === "ArrowRight" || event.key === "ArrowUp") nextPosition += 5;
@@ -135,8 +155,10 @@ export default function ArtworkComparisonEffects() {
       finishedImage.addEventListener("error", handleImageError);
       comparison.addEventListener("pointerdown", handlePointerDown);
       comparison.addEventListener("pointermove", handlePointerMove);
-      comparison.addEventListener("pointerup", endPointer);
-      comparison.addEventListener("pointercancel", endPointer);
+      window.addEventListener("pointerdown", handleAdditionalPointer);
+      window.addEventListener("pointerup", endPointer);
+      window.addEventListener("pointercancel", endPointer);
+      comparison.addEventListener("pointerleave", handlePointerLeave);
       comparison.addEventListener("lostpointercapture", endPointer);
       comparison.addEventListener("click", handleClick);
       handle.addEventListener("keydown", handleKeyDown);
@@ -151,8 +173,10 @@ export default function ArtworkComparisonEffects() {
         finishedImage.removeEventListener("error", handleImageError);
         comparison.removeEventListener("pointerdown", handlePointerDown);
         comparison.removeEventListener("pointermove", handlePointerMove);
-        comparison.removeEventListener("pointerup", endPointer);
-        comparison.removeEventListener("pointercancel", endPointer);
+        window.removeEventListener("pointerdown", handleAdditionalPointer);
+        window.removeEventListener("pointerup", endPointer);
+        window.removeEventListener("pointercancel", endPointer);
+        comparison.removeEventListener("pointerleave", handlePointerLeave);
         comparison.removeEventListener("lostpointercapture", endPointer);
         comparison.removeEventListener("click", handleClick);
         handle.removeEventListener("keydown", handleKeyDown);

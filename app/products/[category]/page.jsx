@@ -5,11 +5,15 @@ import { renderFinishGallery } from "../../components/finishGalleryHtml";
 import { renderArtworkComparison } from "../../components/artworkComparisonHtml";
 import { renderProductFaq } from "../../components/productFaqHtml";
 import { enamelPinFaq } from "../enamelPinFaq";
+import { challengeCoinFaq, challengeCoinFaqOptions } from "../challengeCoinFaq";
 import "../../styles/components/pin-product-faq.css";
 import { platingFinishes } from "../platingFinishes";
 import { pinAttachments } from "../pinAttachments";
 import { pinBacksides } from "../pinBacksides";
 import { pinPackaging } from "../pinPackaging";
+import { coinEdges } from "../coinEdges";
+import { coinPackaging } from "../coinPackaging";
+import { coinArtworkComparison } from "../coinArtworkComparison";
 import "../../styles/components/finish-gallery.css";
 import "../../styles/components/artwork-comparison.css";
 import {
@@ -158,9 +162,9 @@ export default async function ProductCategoryPage({ params, searchParams }) {
                   category === "custom-enamel-pins"
                     ? [pinAttachments, pinBacksides, pinPackaging]
                     : category === "custom-challenge-coins"
-                      ? [{ ...pinPackaging, title: "Packaging Options" }]
+                      ? [coinEdges, coinPackaging]
                       : [],
-                )}${category === "custom-enamel-pins" ? renderArtworkComparison() + renderProductFaq(enamelPinFaq) : ""}`
+                )}${category === "custom-enamel-pins" ? renderArtworkComparison() + renderProductFaq(enamelPinFaq) : category === "custom-challenge-coins" ? renderArtworkComparison(coinArtworkComparison) + renderProductFaq(challengeCoinFaq, challengeCoinFaqOptions) : ""}`
               : "",
           },
         )}
