@@ -158,7 +158,7 @@ export default async function ProductCategoryPage({ params, searchParams }) {
                   category === "custom-enamel-pins"
                     ? [pinAttachments, pinBacksides, pinPackaging]
                     : category === "custom-challenge-coins"
-                      ? [pinPackaging]
+                      ? [{ ...pinPackaging, title: "Packaging Options" }]
                       : [],
                 )}${category === "custom-enamel-pins" ? renderArtworkComparison() + renderProductFaq(enamelPinFaq) : ""}`
               : "",
