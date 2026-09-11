@@ -13,6 +13,7 @@ import { corporateChallengeCoinsEmployeeRecognitionArticleHtml } from "./corpora
 import { customMedalDesignProofChecklistArticleHtml } from "./customMedalDesignProofChecklist";
 import { christmasGiftProposalsDistributorsArticleHtml } from "./christmasGiftProposalsDistributors";
 import { customBaseballTradingPinsTeamOrderingGuideArticleHtml } from "./customBaseballTradingPinsTeamOrderingGuide";
+import { halloweenEnamelPinsArticleHtml } from "./halloweenEnamelPins";
 
 
 export const metadata = {
@@ -49,6 +50,15 @@ export const blogHtml = String.raw`
           <button type="button" data-blog-category="Uncategorized">Uncategorized</button>
         </div>
         <div class="blog-card-grid">
+          <a class="blog-feature-card" href="/blog/halloween-enamel-pins-retail-collection" data-card-image-fit="full" data-blog-category="Custom Lapel Pins,Holidays" aria-label="Read Halloween Enamel Pins: Planning a Custom Retail Collection">
+            <img src="/assets/images/halloween-enamel-pins-retail-collection.webp" width="1672" height="941" alt="Halloween enamel pin designs featuring a pumpkin, ghost, black cat, bat, witch hat, and candy corn">
+            <div class="blog-feature-body">
+              <div class="blog-feature-meta"><span>Custom Lapel Pins</span><span>Holidays</span></div>
+              <h2>Halloween Enamel Pins: Planning a Custom Retail Collection</h2>
+              <p>Plan a custom Halloween enamel pin collection with guidance on design mix, quantities per style, retail packaging, proof approval, and delivery planning.</p>
+              <span class="blog-feature-link">Read More</span>
+            </div>
+          </a>
           <a class="blog-feature-card" href="/blog/custom-baseball-trading-pins-team-ordering-guide" data-card-image-fit="full" data-blog-category="Custom Lapel Pins" aria-label="Read Custom Baseball Trading Pins: A Team Ordering Guide">
             <img src="/assets/images/baseball-trading-pins-team-order-examples.webp" width="1448" height="1086" alt="Three baseball team trading pin designs with team names, player numbers and glitter details on clear stands">
             <div class="blog-feature-body">
@@ -298,6 +308,7 @@ export const blogHtml = String.raw`
     ${customMedalDesignProofChecklistArticleHtml}
     ${christmasGiftProposalsDistributorsArticleHtml}
     ${customBaseballTradingPinsTeamOrderingGuideArticleHtml}
+    ${halloweenEnamelPinsArticleHtml}
     <article id="military-challenge-coin-traditions" class="section blog-article-section">
       <div class="blog-article-shell">
         <aside class="blog-article-toc" aria-label="Article contents">

@@ -340,6 +340,17 @@ const blogArticleData = {
     datePublished: "2026-09-11",
     dateModified: "2026-09-11",
   },
+  "halloween-enamel-pins-retail-collection": {
+    title: "Halloween Enamel Pins: A Retail Collection Planning Guide",
+    headline: "Halloween Enamel Pins: Planning a Custom Retail Collection",
+    description: "Plan a custom Halloween enamel pin collection with guidance on design mix, quantities per style, retail packaging, proof approval, and delivery planning.",
+    author: "Sunny Huang",
+    authorType: "Person",
+    image: "/assets/images/halloween-enamel-pins-retail-collection.webp",
+    schemaType: "BlogPosting",
+    // Publication date confirmed for the production release.
+    datePublished: "2026-09-11",
+  },
   "corporate-challenge-coins-employee-recognition": {
     title: "Corporate Challenge Coins for Employee Recognition",
     headline: "Corporate Challenge Coins: How to Build an Employee Recognition Program",

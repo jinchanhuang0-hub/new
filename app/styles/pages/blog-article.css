@@ -3,6 +3,26 @@
 */
 
 /* PC styles */
+#halloween-enamel-pins-retail-collection .blog-article-header {
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#halloween-enamel-pins-retail-collection .blog-article-image img {
+  width: 100%;
+  height: auto;
+  max-height: none;
+  padding: 0;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+
+#halloween-enamel-pins-retail-collection .blog-table-wrap {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
 /* Blog article readability refresh */
 
 .blog-article-section {
