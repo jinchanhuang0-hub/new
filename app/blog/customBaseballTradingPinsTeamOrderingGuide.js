@@ -74,5 +74,13 @@ export const customBaseballTradingPinsTeamOrderingGuideArticleHtml = String.raw`
 <h2 id="preparing-your-teams-inquiry">Preparing your team’s inquiry</h2>
 <p>Send your team artwork or idea, estimated quantity, preferred dimensions, packaging requirements, and required arrival date. Include the quantities for different versions if you need them.</p>
 <p>Unique Pin provides free artwork assistance and a digital proof for review. You can explore our <a href="https://uccrafts.com/products/custom-enamel-pins">custom enamel pin options</a> and submit those details to start planning your custom baseball trading pins order.</p>
+<section class="blog-article-cta blog-inquiry-cta" aria-labelledby="baseball-team-inquiry-title">
+  <div>
+    <h2 id="baseball-team-inquiry-title" class="blog-cta-title">Ready to Plan Your Team’s Pins?</h2>
+    <p>Share your artwork or idea, estimated quantity and required arrival date using the inquiry form below.</p>
+  </div>
+  <div class="blog-cta-actions">
+    <a class="btn btn-yellow" href="#footer">Request a Team Quote</a>
+  </div>
+</section>
 </div></div></article>`;
-
