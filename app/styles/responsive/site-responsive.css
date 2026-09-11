@@ -28,13 +28,7 @@
     gap: 12px;
   }
 
-  .latest-products-head {
-    margin-bottom: 30px;
-  }
 
-  .latest-products-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
 
   .blog-article-image-split {
     grid-template-columns: 1fr;
@@ -211,16 +205,6 @@
 
   .grid-3,
   .grid-4,
-  .latest-products-grid,
-  .why-grid,
-  .process-line,
-  .process-line.process-six,
-  .brand-slide,
-  .mega,
-  .tech-list,
-  .cert-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
 
   .brand-arrow {
     display: none;
@@ -276,9 +260,6 @@
     margin-top: 26px;
   }
 
-  .latest-product-card {
-    grid-template-rows: 226px auto auto;
-  }
 
   .cert {
     min-height: 0;
@@ -432,37 +413,13 @@
     font-size: 11px;
   }
 
-  .latest-products-section {
-    padding: 58px 0;
-  }
 
-  .latest-products-head {
-    margin-bottom: 20px;
-  }
 
-  .latest-products-head h2 {
-    font-size: 34px;
-  }
 
-  .latest-products-head p {
-    font-size: 16px;
-  }
 
-  .latest-products-grid {
-    grid-template-columns: 1fr;
-  }
 
-  .latest-product-card {
-    grid-template-rows: 260px auto auto;
-  }
 
-  .latest-product-body h3 {
-    font-size: 21px;
-  }
 
-  .latest-product-quote {
-    margin: 0 18px 20px;
-  }
 
   .about-profile-copy {
     padding: 34px 20px;

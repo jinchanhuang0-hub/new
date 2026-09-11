@@ -531,60 +531,6 @@ const html = String.raw`
       </div>
     </section>
 
-    <section class="section latest-products-section" aria-labelledby="latest-products-title">
-      <div class="container latest-products-wrap">
-        <div class="latest-products-head product-heading">
-          <div>
-            <span class="brand-kicker" aria-hidden="true"></span>
-            <h2 id="latest-products-title">Latest Custom Metal Creations</h2>
-            <p>Explore our newest badges, medals, coins, and metal gifts designed for brands, events, and wholesale projects.</p>
-          </div>
-        </div>
-        <div class="latest-products-grid">
-          <article class="latest-product-card">
-            <span class="latest-product-badge">NEW</span>
-            <a class="latest-product-media" href="/products/custom-enamel-pins/christmas-enamel-pin-set" aria-label="View Christmas Enamel Pin Set">
-              <img src="assets/images/latest-christmas-enamel-pins.jpg" alt="Christmas enamel pin set" loading="lazy">
-            </a>
-            <div class="latest-product-body">
-              <h3><a href="/products/custom-enamel-pins/christmas-enamel-pin-set">Christmas Enamel Pin Set</a></h3>
-            </div>
-            <a class="latest-product-quote" href="/contact" data-product-inquiry-trigger data-product-inquiry-product="Lapel Pins" data-product-inquiry-title="Christmas Enamel Pin Set">Get a Free Quote</a>
-          </article>
-          <article class="latest-product-card">
-            <span class="latest-product-badge">NEW</span>
-            <a class="latest-product-media" href="/products/custom-medals/gold-scn-ribbon-medal" aria-label="View Gold SCN Ribbon Medal">
-              <img src="assets/images/latest-gold-scn-ribbon-medal.webp" alt="Gold SCN ribbon medal" loading="lazy">
-            </a>
-            <div class="latest-product-body">
-              <h3><a href="/products/custom-medals/gold-scn-ribbon-medal">Gold SCN Ribbon Medal</a></h3>
-            </div>
-            <a class="latest-product-quote" href="/contact" data-product-inquiry-trigger data-product-inquiry-product="Medals" data-product-inquiry-title="Gold SCN Ribbon Medal">Get a Free Quote</a>
-          </article>
-          <article class="latest-product-card">
-            <span class="latest-product-badge">NEW FINISH</span>
-            <a class="latest-product-media" href="/products/custom-challenge-coins/christmas-bell-challenge-coin" aria-label="View Christmas Bell Challenge Coin">
-              <img src="assets/images/latest-christmas-bell-challenge-coin.jpg" alt="Christmas bell challenge coin" loading="lazy">
-            </a>
-            <div class="latest-product-body">
-              <h3><a href="/products/custom-challenge-coins/christmas-bell-challenge-coin">Christmas Bell Challenge Coin</a></h3>
-            </div>
-            <a class="latest-product-quote" href="/contact" data-product-inquiry-trigger data-product-inquiry-product="Challenge Coins" data-product-inquiry-title="Christmas Bell Challenge Coin">Get a Free Quote</a>
-          </article>
-          <article class="latest-product-card">
-            <span class="latest-product-badge">NEW</span>
-            <a class="latest-product-media" href="/products/custom-metal-keychains/travel-charm-spinner-keychain" aria-label="View Travel Charm Spinner Keychain">
-              <img src="assets/images/type-keychains-spinner.jpg" alt="Travel charm spinner keychain" loading="lazy">
-            </a>
-            <div class="latest-product-body">
-              <h3><a href="/products/custom-metal-keychains/travel-charm-spinner-keychain">Travel Charm Spinner Keychain</a></h3>
-            </div>
-            <a class="latest-product-quote" href="/contact" data-product-inquiry-trigger data-product-inquiry-product="Keychains" data-product-inquiry-title="Travel Charm Spinner Keychain">Get a Free Quote</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
   </main>
   ${footerHtml}`;
 
