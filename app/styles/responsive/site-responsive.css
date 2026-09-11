@@ -176,11 +176,19 @@
 
   .hero-bg {
     display: block;
+    top: auto;
+    bottom: 0;
+    height: 33.35vw;
+    object-position: center;
   }
 
   .hero h1 {
     max-width: 650px;
-    font-size: 56px;
+    font-size: clamp(42px, 5.5vw, 46px);
+  }
+
+  .hero-title-line {
+    white-space: normal;
   }
 
   .review-carousel {
