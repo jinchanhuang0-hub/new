@@ -330,6 +330,16 @@ const withBlogArticleDefaults = (article) => {
 export const buildBlogAuthorSchema = () => ({ ...DEFAULT_BLOG_AUTHOR_SCHEMA });
 
 const blogArticleData = {
+  "custom-baseball-trading-pins-team-ordering-guide": {
+    title: "Custom Baseball Trading Pins: A Team Ordering Guide",
+    headline: "Custom Baseball Trading Pins: A Team Ordering Guide",
+    description:
+      "Plan custom baseball trading pins for your team: compare designs, estimate quantities, check proofs, and work backward from your tournament arrival date.",
+    image: "/assets/images/custom-baseball-trading-pins-team-guide.webp",
+    schemaType: "BlogPosting",
+    datePublished: "2026-09-11",
+    dateModified: "2026-09-11",
+  },
   "corporate-challenge-coins-employee-recognition": {
     title: "Corporate Challenge Coins for Employee Recognition",
     headline: "Corporate Challenge Coins: How to Build an Employee Recognition Program",

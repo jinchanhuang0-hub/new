@@ -12,6 +12,7 @@ import { lapelPinAttachmentsGuideArticleHtml } from "./lapelPinAttachmentsGuide"
 import { corporateChallengeCoinsEmployeeRecognitionArticleHtml } from "./corporateChallengeCoinsEmployeeRecognition";
 import { customMedalDesignProofChecklistArticleHtml } from "./customMedalDesignProofChecklist";
 import { christmasGiftProposalsDistributorsArticleHtml } from "./christmasGiftProposalsDistributors";
+import { customBaseballTradingPinsTeamOrderingGuideArticleHtml } from "./customBaseballTradingPinsTeamOrderingGuide";
 
 
 export const metadata = {
@@ -48,6 +49,15 @@ export const blogHtml = String.raw`
           <button type="button" data-blog-category="Uncategorized">Uncategorized</button>
         </div>
         <div class="blog-card-grid">
+          <a class="blog-feature-card" href="/blog/custom-baseball-trading-pins-team-ordering-guide" data-card-image-fit="full" data-blog-category="Custom Lapel Pins" aria-label="Read Custom Baseball Trading Pins: A Team Ordering Guide">
+            <img src="/assets/images/custom-baseball-trading-pins-team-guide.webp" width="1600" height="900" alt="Concept baseball trading pins beside a baseball and glove on navy fabric">
+            <div class="blog-feature-body">
+              <div class="blog-feature-meta"><span>Custom Lapel Pins</span></div>
+              <h2>Custom Baseball Trading Pins: A Team Ordering Guide</h2>
+              <p>A practical guide for team managers and parents planning pin quantities, design versions, proof approval, packaging, and delivery before a tournament.</p>
+              <span class="blog-feature-link">Read More</span>
+            </div>
+          </a>
           <a class="blog-feature-card" href="/blog/christmas-gift-proposals-distributors" data-card-image-fit="full" data-blog-category="Holidays" aria-label="Read Christmas Gift Proposals for Distributors: Comparing Metal Keepsakes">
             <img src="/assets/images/christmas-metal-keepsakes-comparison.webp?v=a4835a4b" width="1536" height="1024" alt="Concept designs featuring a snowflake ornament, gingerbread keychain, Santa and Christmas tree pins, and two commemorative coin faces.">
             <div class="blog-feature-body">
@@ -287,6 +297,7 @@ export const blogHtml = String.raw`
     ${corporateChallengeCoinsEmployeeRecognitionArticleHtml}
     ${customMedalDesignProofChecklistArticleHtml}
     ${christmasGiftProposalsDistributorsArticleHtml}
+    ${customBaseballTradingPinsTeamOrderingGuideArticleHtml}
     <article id="military-challenge-coin-traditions" class="section blog-article-section">
       <div class="blog-article-shell">
         <aside class="blog-article-toc" aria-label="Article contents">

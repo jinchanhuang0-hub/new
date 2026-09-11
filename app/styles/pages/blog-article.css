@@ -330,6 +330,20 @@
   object-fit: contain;
 }
 
+#custom-baseball-trading-pins-team-ordering-guide .blog-article-image img {
+  width: 100%;
+  height: auto;
+  max-height: none;
+  padding: 0;
+  aspect-ratio: 1600 / 900;
+  object-fit: contain;
+}
+
+#custom-baseball-trading-pins-team-ordering-guide .blog-table-wrap {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
 .blog-article-placeholder {
   overflow: hidden;
   border: 1px solid rgba(197, 211, 233, 0.8);
