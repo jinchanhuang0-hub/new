@@ -25,7 +25,7 @@ export const customMetalKeychainSizeAttachmentGuideArticleHtml = String.raw`
             <figure class="blog-article-image blog-article-hero-image blog-article-natural-image">
               <img src="/assets/images/custom-metal-keychain-size-attachment-guide.webp?v=20260817-2" width="1200" height="675" fetchpriority="high" decoding="async" alt="Custom metal keychains in different sizes with split ring chain and swivel hook attachments">
             </figure>
-            <p>Choosing a <strong>custom metal keychain size</strong> is not only a visual decision. Buyers also need to confirm the metal body, overall finished length, <strong>custom keychain thickness</strong>, weight, artwork complexity, connection position and <strong>keychain attachment</strong> before approving production artwork.</p>
+            <p>Before ordering a custom metal keychain, confirm three separate measurements: the metal body's length and width, its thickness, and the overall length with hardware attached. This guide explains what to mark on the drawing and what to check on the assembled sample.</p>
             <p class="blog-category-prompt"><strong>Looking for finished styles or a project quote?</strong> Explore our <a href="/products/custom-metal-keychains">custom metal keychains</a>. This guide covers size, thickness and attachment specifications.</p>
           </header>
 
@@ -41,7 +41,7 @@ export const customMetalKeychainSizeAttachmentGuideArticleHtml = String.raw`
               <thead><tr><th>Measurement</th><th>What it means</th><th>Why buyers should state it</th></tr></thead>
               <tbody>
                 <tr><td>Metal body size</td><td>Length and width of the custom metal component at agreed reference points.</td><td>Controls logo area, readability, weight and room for holes or openings.</td></tr>
-                <tr><td>Overall finished length</td><td>Complete assembled length, including rings, chain, hook, clasp or other hardware.</td><td>Affects carry, packaging, hanging orientation and carton packing.</td></tr>
+                <tr><td>Overall finished length</td><td>Overall finished length is the end-to-end length of the complete assembled keychain in an agreed position. Mark both endpoints and the hardware position on the approval drawing. Record body dimensions separately.</td><td>Affects carry, packaging, hanging orientation and carton packing.</td></tr>
                 <tr><td>Body thickness / maximum 3D height</td><td>Body thickness is measured through the metal edge; maximum 3D height is measured from the agreed reference surface to the highest relief point. Record them as separate fields.</td><td>Affects weight, package clearance and forming-process choice.</td></tr>
               </tbody>
             </table>
@@ -106,7 +106,7 @@ export const customMetalKeychainSizeAttachmentGuideArticleHtml = String.raw`
           </div>
           <p>These reference sheets illustrate hardware forms only. Confirm the selected model, finish, dimensions and availability on the quotation and physical sample.</p>
           <ul class="blog-list">
-            <li><strong>Finished length:</strong> measure from the agreed body reference point to the outer end of the selected attachment.</li>
+            <li><strong>Overall finished length:</strong> measure the complete assembled keychain end to end in the agreed position, including the selected hardware.</li>
             <li><strong>Connection point:</strong> identify the eyelet, jump ring, chain or integrated loop used to join the body and hardware.</li>
             <li><strong>Orientation:</strong> confirm which face of the metal body appears forward when the completed keychain hangs.</li>
             <li><strong>Packaging clearance:</strong> check that the selected attachment and its movement fit the pouch, backing card or box.</li>
@@ -160,7 +160,7 @@ export const customMetalKeychainSizeAttachmentGuideArticleHtml = String.raw`
           <ul class="blog-list">
             <li>Metal body length and width.</li>
             <li>Body thickness and maximum 3D height.</li>
-            <li>Finished overall length from the agreed reference points.</li>
+            <li>Overall finished length, measured end to end in the agreed position with hardware attached.</li>
             <li>Weight, when it is part of the specification.</li>
             <li>Front and back appearance, including logo direction and relief.</li>
             <li>Hardware type, finish and attachment orientation.</li>
@@ -195,7 +195,7 @@ export const customMetalKeychainSizeAttachmentGuideArticleHtml = String.raw`
           <div class="blog-faq">
             <details open><summary>What is the standard size of a custom metal keychain?</summary><p>There is no single standard size for every custom metal keychain. Choose a body size that keeps the artwork clear and the finished assembly practical, then confirm body dimensions separately from the overall finished length.</p></details>
             <details><summary>How thick should a metal keychain be?</summary><p>Some flat stamped or enamel designs may be discussed at approximately 1.5-2.0 mm during early quotation. That reference does not apply to every design. Die-cast, deep-relief, 3D, bottle-opener and moving structures may need a different body thickness after artwork review.</p></details>
-            <details><summary>What is the difference between body size and finished length?</summary><p>Body size describes the custom metal component. Finished length describes the assembled product, including rings, chains, hooks or clasps. Both should appear separately on the quotation or approval drawing.</p></details>
+            <details><summary>What is the difference between body size and finished length?</summary><p>Body size describes the custom metal component. Overall finished length is the end-to-end length of the complete assembled keychain in an agreed position, including rings, chains, hooks or clasps. Record both separately on the quotation or approval drawing.</p></details>
             <details><summary>Which keychain attachment is the most practical?</summary><p>A split ring is often practical for direct key attachment, while a lobster clasp or swivel hook can be easier for bags and removable merchandise. The best choice depends on handling, orientation, appearance, package size and the complete assembly.</p></details>
             <details><summary>Should buyers approve a physical sample before mass production?</summary><p>A physical sample is recommended when size, thickness, weight, relief, hardware, function, finish or packaging matters. It lets the buyer check the real assembly before those details are repeated in bulk production.</p></details>
           </div>

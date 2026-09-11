@@ -553,11 +553,11 @@ const blogArticleData = {
     title: "Finisher Medals vs Placement Medals: Race Award Guide",
     headline: "Finisher Medals vs Placement Medals: How to Plan Awards for Races and Sports Events",
     description:
-      "Compare finisher, placement and age-group medals, then plan fair award categories and race-day distribution for 5Ks, marathons and sports events.",
+      "Understand finisher, placement and age-group medals. Compare eligibility, award quantities and distribution to plan a clear race medal policy.",
     author: "Sunny Huang",
     authorType: "Person",
     datePublished: "2026-08-20",
-    dateModified: "2026-08-24",
+    dateModified: "2026-09-11",
     image: "/assets/images/finisher-vs-placement-medals-og.webp",
     schemaType: "Article",
     faq: [
@@ -719,11 +719,11 @@ const blogArticleData = {
     title: "Custom Metal Keychain Size, Thickness & Attachment Guide",
     headline: "Custom Metal Keychain Size, Thickness and Attachment Guide",
     description:
-      "Compare custom metal keychain sizes, thicknesses, split rings, chains, swivel hooks and other attachments before approving artwork or placing a bulk order.",
+      "Learn how to measure metal keychain size, thickness and finished length. Use diagrams and a sample checklist to confirm specifications before ordering.",
     author: "Sunny Huang",
     authorType: "Person",
     datePublished: "2026-08-17",
-    dateModified: "2026-08-26",
+    dateModified: "2026-09-11",
     image: "/assets/images/custom-metal-keychain-size-attachment-guide.webp",
     faq: [
       {
@@ -739,7 +739,7 @@ const blogArticleData = {
       {
         question: "What is the difference between body size and finished length?",
         answer:
-          "Body size describes the custom metal component. Finished length describes the assembled product, including rings, chains, hooks or clasps. Both should appear separately on the quotation or approval drawing.",
+          "Body size describes the custom metal component. Overall finished length is the end-to-end length of the complete assembled keychain in an agreed position, including rings, chains, hooks or clasps. Record both separately on the quotation or approval drawing.",
       },
       {
         question: "Which keychain attachment is the most practical?",

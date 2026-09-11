@@ -2332,8 +2332,7 @@ export const blogHtml = String.raw`
             <figcaption>Finisher and placement medals prepared for race-day award distribution.</figcaption>
           </figure>
           <p>Finisher medals are given to participants who complete an event, while placement medals recognize top finishers such as overall winners or age-group winners. Many races use both: finisher medals for every qualified participant and placement medals for competitive award categories.</p>
-          <p>Should every participant receive a medal, or should medals be reserved for the fastest athletes?</p>
-          <p>Race directors rarely use one rule for every event. A finisher medal recognizes an athlete for completing an event, while a placement medal recognizes a competitive result such as first, second or third place. Some events use both, while others also include age-group awards. The right structure depends on the event's purpose, participant expectations, categories and budget. It also affects registration information, order quantities, medal wording and race-day distribution. This guide explains how to build a clear policy without treating one approach as universal.</p>
+          <p>Start with eligibility, then calculate quantities and decide how each award will be identified and distributed. The comparison below separates completion, placement, age-group and participation awards.</p>
         </header>
 
         <h2 id="what-is-the-difference-between-finisher-and-placement-medals">What Is the Difference Between Finisher and Placement Medals?</h2>
@@ -2429,6 +2428,9 @@ export const blogHtml = String.raw`
         <p>For placement medals, a starting calculation is:</p>
         <blockquote>
           <p>Number of award positions &times; number of categories &times; number of divisions</p>
+        </blockquote>
+        <blockquote>
+          <p><strong>Illustrative example:</strong> If an event awards three places in each of eight age groups across two divisions, it needs 48 age-group medals before any approved reserve. Count overall awards separately and apply the event's duplicate-award policy.</p>
         </blockquote>
         <p>Adjust the result for the actual rules. For team sports, use the eligible roster rather than only the expected starting lineup and confirm whether substitutes, coaches or support staff are included. Record every category as a separate line item before ordering.</p>
 
