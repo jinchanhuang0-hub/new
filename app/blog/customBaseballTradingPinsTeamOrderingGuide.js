@@ -9,7 +9,7 @@ export const customBaseballTradingPinsTeamOrderingGuideArticleHtml = String.raw`
 <a href="#questions-before-placing-the-order">Questions before placing the order</a>
 <a href="#preparing-your-teams-inquiry">Preparing your team’s inquiry</a></nav></aside><div class="container blog-article">
 <header class="blog-article-header"><a class="blog-back-link" href="/blog">Back to Blog</a><h1>Custom Baseball Trading Pins: A Team Ordering Guide</h1>
-<figure class="blog-article-image blog-article-hero-image blog-article-natural-image"><img src="/assets/images/custom-baseball-trading-pins-team-guide.webp" width="1600" height="900" fetchpriority="high" decoding="async" alt="Concept baseball trading pins beside a baseball and glove on navy fabric"><figcaption>Concept illustration of original baseball trading pin designs. Final specifications depend on the approved artwork.</figcaption></figure>
+<figure class="blog-article-image blog-article-hero-image blog-article-natural-image baseball-team-order-image"><img src="/assets/images/baseball-trading-pins-team-order-examples.webp" width="1448" height="1086" fetchpriority="high" decoding="async" alt="Three baseball team trading pin designs with team names, player numbers and glitter details on clear stands"><figcaption>Team-order product examples supplied by Unique Pin, showing team names, player numbers and glitter details. These products are separate from the illustrative quantity calculation in this guide.</figcaption></figure>
 </header>
 <p>To order custom baseball trading pins, agree on your team’s quantity and budget, choose a design that stays clear at its finished size, and approve the artwork with the specifications. Ask for a production and shipping schedule based on when the pins need to reach your team.</p>
 <p>For a coach, team manager, or parent coordinating the order, the work extends beyond choosing a mascot. Families need to know what they are paying for, players need their pins before trading begins, and the supplier needs one clear set of instructions. The following guide helps you organize those decisions.</p>
@@ -54,6 +54,13 @@ export const customBaseballTradingPinsTeamOrderingGuideArticleHtml = String.raw`
 <p>A digital proof shows the proposed layout and specifications. It cannot fully demonstrate weight, surface texture, or how a clutch feels in use. Screen colors also do not reproduce every metal finish accurately.</p>
 <p>If a physical sample is requested, agree on what will be checked and how approval will be recorded. Photos or video can help review appearance; handling a sample lets you assess features such as weight and the fastener more directly.</p>
 <p>After approval, send any requested change to the supplier before assuming it can be made. Its effect depends on what changes and which production work has already been completed.</p>
+<figure class="blog-article-image baseball-proof-comparison">
+  <div class="baseball-proof-comparison-grid">
+    <div><strong>Earlier proof</strong><img src="/assets/images/baseball-cyclones-earlier-proof.webp" width="1352" height="886" loading="lazy" decoding="async" alt="Earlier Cyclones team pin proof showing the front design, back and specifications"></div>
+    <div><strong>Finished pin</strong><img src="/assets/images/baseball-cyclones-finished-pin.webp" width="1254" height="1254" loading="lazy" decoding="async" alt="Finished Cyclones team trading pin after revisions, displayed on a clear stand"></div>
+  </div>
+  <figcaption>Earlier proof and finished pin from the same customer order, supplied by Unique Pin. The finished pin includes subsequent revisions, including changes to the age-group and team lettering; the earlier proof shown here is not the final approved artwork.</figcaption>
+</figure>
 <h2 id="plan-backward-from-when-the-team-needs-the-pins">Plan backward from when the team needs the pins</h2>
 <p>Use the date the coordinator needs the shipment in hand, allowing time to count and distribute it before travel. The tournament’s opening day may be too late for a team leaving several days earlier.</p>
 <p>Ask for a schedule that separates artwork preparation, sampling if requested, production, and shipping. Confirm what must be approved before production starts. A stated production period does not automatically include delivery to your address.</p>

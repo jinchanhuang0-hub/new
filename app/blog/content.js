@@ -50,7 +50,7 @@ export const blogHtml = String.raw`
         </div>
         <div class="blog-card-grid">
           <a class="blog-feature-card" href="/blog/custom-baseball-trading-pins-team-ordering-guide" data-card-image-fit="full" data-blog-category="Custom Lapel Pins" aria-label="Read Custom Baseball Trading Pins: A Team Ordering Guide">
-            <img src="/assets/images/custom-baseball-trading-pins-team-guide.webp" width="1600" height="900" alt="Concept baseball trading pins beside a baseball and glove on navy fabric">
+            <img src="/assets/images/baseball-trading-pins-team-order-examples.webp" width="1448" height="1086" alt="Three baseball team trading pin designs with team names, player numbers and glitter details on clear stands">
             <div class="blog-feature-body">
               <div class="blog-feature-meta"><span>Custom Lapel Pins</span></div>
               <h2>Custom Baseball Trading Pins: A Team Ordering Guide</h2>

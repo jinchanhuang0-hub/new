@@ -335,7 +335,7 @@ const blogArticleData = {
     headline: "Custom Baseball Trading Pins: A Team Ordering Guide",
     description:
       "Plan custom baseball trading pins for your team: compare designs, estimate quantities, check proofs, and work backward from your tournament arrival date.",
-    image: "/assets/images/custom-baseball-trading-pins-team-guide.webp",
+    image: "/assets/images/baseball-trading-pins-team-order-examples.webp",
     schemaType: "BlogPosting",
     datePublished: "2026-09-11",
     dateModified: "2026-09-11",

@@ -344,6 +344,38 @@
   overflow-x: auto;
 }
 
+#custom-baseball-trading-pins-team-ordering-guide .baseball-team-order-image img {
+  aspect-ratio: 1448 / 1086;
+}
+
+#custom-baseball-trading-pins-team-ordering-guide .baseball-proof-comparison-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+#custom-baseball-trading-pins-team-ordering-guide .baseball-proof-comparison-grid strong {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--navy);
+}
+
+#custom-baseball-trading-pins-team-ordering-guide .baseball-proof-comparison img {
+  aspect-ratio: 1;
+  object-fit: contain;
+  background: #fff;
+}
+
+@media (max-width: 640px) {
+  #custom-baseball-trading-pins-team-ordering-guide .baseball-proof-comparison-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  #custom-baseball-trading-pins-team-ordering-guide .baseball-proof-comparison img {
+    aspect-ratio: auto;
+  }
+}
+
 #custom-baseball-trading-pins-team-ordering-guide .blog-inquiry-cta {
   margin-top: 32px;
   margin-bottom: 0;
