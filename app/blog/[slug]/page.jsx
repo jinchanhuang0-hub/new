@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import BlogArticleRepair from "./BlogArticleRepair";
+import BlogInquiryEffects from "../../components/BlogInquiryEffects";
 import JsonLd from "../../components/JsonLd";
 import { blogHtml } from "../content";
 import { buildBlogArticleHtml } from "../../lib/htmlSections";
@@ -124,6 +125,7 @@ export default async function BlogArticlePage({ params }) {
         dangerouslySetInnerHTML={{ __html: articleHtml }}
       />
       <BlogArticleRepair slug={slug} />
+      <BlogInquiryEffects />
     </>
   );
 }

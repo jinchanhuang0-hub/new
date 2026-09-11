@@ -84,10 +84,10 @@ export const customBaseballTradingPinsTeamOrderingGuideArticleHtml = String.raw`
 <section class="blog-article-cta blog-inquiry-cta" aria-labelledby="baseball-team-inquiry-title">
   <div>
     <h2 id="baseball-team-inquiry-title" class="blog-cta-title">Ready to Plan Your Team’s Pins?</h2>
-    <p>Share your artwork or idea, estimated quantity and required arrival date using the inquiry form below.</p>
+    <p>Share your artwork or idea, estimated quantity and required arrival date using our contact form.</p>
   </div>
   <div class="blog-cta-actions">
-    <a class="btn btn-yellow" href="#footer">Request a Team Quote</a>
+    <a class="btn btn-yellow" href="/contact">Request a Team Quote</a>
   </div>
 </section>
 </div></div></article>`;
