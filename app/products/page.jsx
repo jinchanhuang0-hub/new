@@ -1,17 +1,21 @@
 import StaticPage from "../components/StaticPage";
 import { footerHtml } from "../components/footerHtml";
 import { productCategorySidebarHtml } from "../components/productCategoryNav";
-import { PRODUCTS_ALL_PAGE_SIZE, replaceProductsAllGridCards } from "../lib/productCards";
+import {
+  PRODUCTS_ALL_PAGE_SIZE,
+  getAllProductCount,
+  getProductPageCount,
+  replaceProductsAllGridCards,
+} from "../lib/productCards";
 import { siteHeaderHtml } from "../components/siteHeaderHtml";
 
 
-export const metadata = {
+const productsMetadata = {
   title: "Custom Metal Products | Pins, Medals, Coins & Keychains",
   description: "Explore custom enamel pins, medals, challenge coins, keychains, buckles, golf accessories and other OEM metal gifts from Unique Pin.",
-  alternates: {
-    canonical: "/products",
-  },
 };
+
+const productsCanonicalBase = "https://uccrafts.com/products";
 
 const html = String.raw`
   ${siteHeaderHtml({ active: "products" })}
@@ -47,12 +51,31 @@ const getRequestedPage = (searchParams = {}) => {
   return Math.max(1, Number(value) || 1);
 };
 
+const getEffectivePage = (searchParams = {}) => Math.min(
+  getRequestedPage(searchParams),
+  getProductPageCount(getAllProductCount(), PRODUCTS_ALL_PAGE_SIZE),
+);
+
+export async function generateMetadata({ searchParams }) {
+  const params = await searchParams;
+  const page = getEffectivePage(params);
+
+  return {
+    ...productsMetadata,
+    alternates: {
+      canonical: page > 1
+        ? `${productsCanonicalBase}?page=${page}`
+        : productsCanonicalBase,
+    },
+  };
+}
+
 export default async function Page({ searchParams }) {
   const params = await searchParams;
   return (
     <StaticPage
       html={replaceProductsAllGridCards(html, {
-        page: getRequestedPage(params),
+        page: getEffectivePage(params),
         pageSize: PRODUCTS_ALL_PAGE_SIZE,
       })}
     />
