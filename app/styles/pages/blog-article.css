@@ -78,6 +78,24 @@
   hyphens: auto;
 }
 
+#custom-metal-keychain-size-attachment-guide .blog-article-header .blog-category-prompt {
+  margin: 4px 0 24px;
+  padding: 16px 18px;
+  border-left: 4px solid var(--yellow);
+  border-radius: 0 6px 6px 0;
+  background: #f5f8fd;
+  color: #344966;
+  font-size: 16px;
+  line-height: 1.55;
+  text-align: left;
+  text-align-last: auto;
+  hyphens: none;
+}
+
+#custom-metal-keychain-size-attachment-guide .blog-article-header .blog-category-prompt strong {
+  color: var(--navy);
+}
+
 .blog-article-image,
 .blog-table-wrap,
 .blog-article-cta {
