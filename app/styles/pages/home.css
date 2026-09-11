@@ -322,6 +322,10 @@
   background: var(--soft);
 }
 
+.reviews-section {
+  padding: 48px 0;
+}
+
 .contact-products-cta-section {
   background: #fff;
 }
@@ -1185,9 +1189,148 @@
   transform: scale(1.02);
 }
 
+.home-buying-guides {
+  position: relative;
+  overflow: hidden;
+  padding: 48px 0;
+  border-top: 1px solid rgba(169, 194, 229, 0.34);
+  border-bottom: 1px solid rgba(169, 194, 229, 0.34);
+  background:
+    radial-gradient(circle at 14% 8%, rgba(243, 198, 0, 0.12), transparent 30%),
+    linear-gradient(180deg, #f9fbff 0%, #fff 100%);
+}
+
+.home-buying-guides .container {
+  width: min(1360px, calc(100% - 64px));
+}
+
+.home-buying-guides-head {
+  max-width: 684px;
+  margin-right: auto;
+  margin-bottom: 31px;
+  margin-left: auto;
+}
+
+.home-buying-guides-head h2 {
+  font-size: clamp(27px, 2.3vw, 38px);
+  font-weight: 800;
+}
+
+.home-buying-guides-head p {
+  max-width: 648px;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 14.4px;
+}
+
+.home-buying-guides-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.home-buying-guide-card {
+  display: grid;
+  grid-template-rows: 196px 1fr;
+  overflow: hidden;
+  border: 1px solid rgba(169, 194, 229, 0.72);
+  border-radius: 13px;
+  color: inherit;
+  background: #fff;
+  box-shadow: 0 18px 42px rgba(11, 47, 99, 0.08);
+  text-decoration: none;
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.home-buying-guide-card:hover,
+.home-buying-guide-card:focus-visible {
+  border-color: rgba(243, 198, 0, 0.9);
+  box-shadow: 0 26px 56px rgba(11, 47, 99, 0.14);
+  transform: translateY(-5px);
+  outline: none;
+}
+
+.home-buying-guide-media {
+  display: block;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(169, 194, 229, 0.46);
+  background: #eef4fb;
+}
+
+.home-buying-guide-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 220ms ease;
+}
+
+.home-buying-guide-card:hover .home-buying-guide-media img,
+.home-buying-guide-card:focus-visible .home-buying-guide-media img {
+  transform: scale(1.025);
+}
+
+.home-buying-guide-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 22px;
+}
+
+.home-buying-guide-category {
+  margin-bottom: 11px;
+  color: #9b7800;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.home-buying-guide-card h3 {
+  margin: 0 0 11px;
+  color: var(--navy);
+  font-size: 19px;
+  line-height: 1.32;
+}
+
+.home-buying-guide-card p {
+  margin: 0 0 18px;
+  color: var(--muted);
+  font-size: 14.4px;
+  line-height: 1.65;
+}
+
+.home-buying-guide-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: auto;
+  color: var(--navy);
+  font-size: 13.5px;
+  font-weight: 900;
+}
+
+.home-buying-guide-link span {
+  color: #c89f00;
+  font-size: 18px;
+  line-height: 1;
+  transition: transform 180ms ease;
+}
+
+@media (max-width: 1199px) and (min-width: 768px) {
+  .home-buying-guides-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.home-buying-guide-card:hover .home-buying-guide-link span,
+.home-buying-guide-card:focus-visible .home-buying-guide-link span {
+  transform: translateX(4px);
+}
+
 .latest-products-section {
   position: relative;
   overflow: hidden;
+  padding: 48px 0;
   background:
     radial-gradient(circle at 50% 0%, rgba(243, 198, 0, 0.08), rgba(255, 255, 255, 0) 34%),
     #fff;
@@ -1591,6 +1734,17 @@ body.quote-modal-open {
   body:has(main > .hero) .cert { flex: 0 0 144px; min-height: 0; padding: 10px; border-radius: 12px; scroll-snap-align: start; }
   body:has(main > .hero) .cert img { width: 100%; height: 144px; max-height: none; object-fit: contain; }
   body:has(main > .hero) .cert-name { margin-top: 8px; font-size: 13px; }
+
+  body:has(main > .hero) .home-buying-guides-head { margin-bottom: 22px; }
+  body:has(main > .hero) .home-buying-guides-grid { grid-template-columns: minmax(0, 1fr); gap: 14px; }
+  body:has(main > .hero) .home-buying-guide-card { grid-template-columns: 112px minmax(0, 1fr); grid-template-rows: auto; min-height: 156px; border-radius: 12px; }
+  body:has(main > .hero) .home-buying-guide-media { min-height: 100%; border-right: 1px solid rgba(169, 194, 229, 0.46); border-bottom: 0; }
+  body:has(main > .hero) .home-buying-guide-body { padding: 14px; }
+  body:has(main > .hero) .home-buying-guide-category { margin-bottom: 6px; font-size: 9px; }
+  body:has(main > .hero) .home-buying-guide-card h3 { margin-bottom: 7px; font-size: 15px; line-height: 1.3; }
+  body:has(main > .hero) .home-buying-guide-card p { margin-bottom: 10px; font-size: 11px; line-height: 1.45; }
+  body:has(main > .hero) .home-buying-guide-link { gap: 4px; font-size: 12px; }
+  body:has(main > .hero) .home-buying-guide-link span { font-size: 16px; }
 
   body:has(main > .hero) .latest-products-grid { padding-bottom: 8px; }
   body:has(main > .hero) .latest-product-card { flex: 0 0 184px; grid-template-rows: 118px minmax(48px, 1fr) auto; min-height: 218px; border-radius: 12px; scroll-snap-align: start; }

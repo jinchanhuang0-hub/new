@@ -103,21 +103,21 @@ const html = String.raw`
             <img src="assets/images/home-lapel-pins-cat.jpg" alt="Custom lapel pin with cat and colorful umbrella">
             <div class="body">
               <h3>Lapel Pins</h3>
-              <p>An exquisite accessory that captures your brand's identity and sparks conversation.</p>
+              <p>Compare soft enamel, hard enamel and printed pins, with custom shapes, plating and attachments.</p>
             </div>
           </a>
           <a class="product-card home-product-card" href="/products/custom-medals" aria-label="View Custom Medals details">
             <img src="assets/images/home-medals-floral.webp" alt="Custom medal with floral enamel and ribbon">
             <div class="body">
               <h3>Medals</h3>
-              <p>A meaningful award piece that celebrates achievement with lasting visual impact.</p>
+              <p>Create event and recognition medals with custom artwork, finishes, ribbons and packaging.</p>
             </div>
           </a>
           <a class="product-card home-product-card" href="/products/custom-challenge-coins" aria-label="View Challenge Coins details">
             <img src="assets/images/home-challenge-coins-police.jpg" alt="Custom challenge coins with police emblems">
             <div class="body">
               <h3>Challenge Coins</h3>
-              <p>A premium keepsake that honors teams, milestones and shared stories.</p>
+              <p>Explore custom shapes, relief details and finishes for commemorative and recognition projects.</p>
             </div>
           </a>
           <a class="product-card home-product-card" href="/products/custom-metal-keychains" aria-label="View Custom Keychains details">
@@ -474,6 +474,62 @@ const html = String.raw`
         </div>
       </div>
     </div>
+
+    <section class="section home-buying-guides" aria-labelledby="home-buying-guides-title">
+      <div class="container">
+        <div class="center-head home-buying-guides-head">
+          <span class="brand-kicker" aria-hidden="true"></span>
+          <h2 id="home-buying-guides-title">Procurement Guides</h2>
+          <p>Use these practical guides to compare production options, plan recognition programs and approve artwork with confidence.</p>
+        </div>
+        <div class="home-buying-guides-grid">
+          <a class="home-buying-guide-card" href="/blog/soft-enamel-vs-hard-enamel-pins" aria-label="Read Soft Enamel vs Hard Enamel Pins: Cost, Durability and Best Uses">
+            <span class="home-buying-guide-media">
+              <img src="/assets/images/blog-soft-hard-enamel-pins-v2.webp" width="1200" height="720" loading="lazy" decoding="async" alt="Soft enamel and hard enamel custom pins compared side by side">
+            </span>
+            <span class="home-buying-guide-body">
+              <span class="home-buying-guide-category">Pin Buying Guide</span>
+              <h3>Soft Enamel vs Hard Enamel Pins: How to Choose</h3>
+              <p>Compare texture, durability, cost and the best finish for your artwork and intended use.</p>
+              <span class="home-buying-guide-link">Read Guide <span aria-hidden="true">&rarr;</span></span>
+            </span>
+          </a>
+          <a class="home-buying-guide-card" href="/blog/corporate-challenge-coins-employee-recognition" aria-label="Read Corporate Challenge Coins: How to Build an Employee Recognition Program">
+            <span class="home-buying-guide-media">
+              <img src="/assets/images/employee-recognition-challenge-coin-series.webp" width="1200" height="675" loading="lazy" decoding="async" alt="Corporate challenge coin series for an employee recognition program">
+            </span>
+            <span class="home-buying-guide-body">
+              <span class="home-buying-guide-category">Recognition Planning</span>
+              <h3>Corporate Challenge Coins: How to Build an Employee Recognition Program</h3>
+              <p>Plan award criteria, coin design, presentation and review for a consistent recognition program.</p>
+              <span class="home-buying-guide-link">Read Guide <span aria-hidden="true">&rarr;</span></span>
+            </span>
+          </a>
+          <a class="home-buying-guide-card" href="/blog/custom-medal-design-proof-checklist" aria-label="Read Custom Medal Design: What to Check Before Approving Your Proof">
+            <span class="home-buying-guide-media">
+              <img src="/assets/images/custom-medal-front-back-photo.webp" width="1536" height="1024" loading="lazy" decoding="async" alt="Front and back medal details for artwork proof review">
+            </span>
+            <span class="home-buying-guide-body">
+              <span class="home-buying-guide-category">Artwork Approval</span>
+              <h3>Custom Medal Design: What to Check Before Approving Your Proof</h3>
+              <p>Review dimensions, wording, finishes, ribbon details and production notes before tooling begins.</p>
+              <span class="home-buying-guide-link">Read Guide <span aria-hidden="true">&rarr;</span></span>
+            </span>
+          </a>
+          <a class="home-buying-guide-card" href="/blog/how-custom-challenge-coins-are-made" aria-label="Read How Are Custom Challenge Coins Made? A Step-by-Step Manufacturing Guide">
+            <span class="home-buying-guide-media">
+              <img src="/assets/images/blog-how-challenge-coins-made-card-v3.webp" width="1200" height="675" loading="lazy" decoding="async" alt="Custom challenge coin manufacturing process from tooling to finishing">
+            </span>
+            <span class="home-buying-guide-body">
+              <span class="home-buying-guide-category">Manufacturing Guide</span>
+              <h3>How Are Custom Challenge Coins Made?</h3>
+              <p>Follow the process from artwork and tooling through striking, finishing, color filling and inspection.</p>
+              <span class="home-buying-guide-link">Read Guide <span aria-hidden="true">&rarr;</span></span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
 
     <section class="section latest-products-section" aria-labelledby="latest-products-title">
       <div class="container latest-products-wrap">
