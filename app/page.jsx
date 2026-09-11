@@ -1,6 +1,9 @@
 import StaticPage from "./components/StaticPage";
 import { footerHtml } from "./components/footerHtml";
 import { siteHeaderHtml } from "./components/siteHeaderHtml";
+import { renderProductFaq } from "./components/productFaqHtml";
+import { homeFaqItems } from "./homeFaq";
+import "./styles/components/pin-product-faq.css";
 
 
 export const metadata = {
@@ -531,6 +534,7 @@ const html = String.raw`
       </div>
     </section>
 
+    ${renderProductFaq(homeFaqItems, { id: "home-faq", idPrefix: "home-faq", title: "Frequently Asked Questions" })}
   </main>
   ${footerHtml}`;
 
