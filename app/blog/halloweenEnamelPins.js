@@ -24,7 +24,7 @@ export const halloweenEnamelPinsArticleHtml = String.raw`
 <figure class="blog-article-image blog-article-natural-image"><img src="/assets/images/halloween-enamel-pins-retail-collection.webp" width="1672" height="941" loading="lazy" decoding="async" alt="Halloween enamel pin designs featuring a pumpkin, ghost, black cat, bat, witch hat, and candy corn"><figcaption>Illustrative concept: six original designs share a coordinated palette and metal outline.</figcaption></figure>
 <h2 id="define-the-collection-and-the-sales-channel">Define the Collection and the Sales Channel</h2>
 <p>Write a short brief before commissioning artwork. Identify the intended customer, sales channel, price range, and planned launch date. A playful collection for a general gift shop may need a different visual style from merchandise for a horror-focused brand.</p>
-<p>Also decide where customers will encounter the pins. A small counter display, a hanging retail fixture, and an online product page each present the collection differently. Review the design both close up and at the scale customers will first see.</p>
+<p>Also decide where customers will encounter the pins. A small counter display, a hanging retail fixture, and an online product page each present the collection differently. Review each design both close up and at the scale customers will first see.</p>
 <p>Use previous sales, customer requests, or confirmed retailer interest where available. If this is your first seasonal collection, treat the initial quantities as a test with a defined budget. A popular theme alone does not establish demand for your particular designs.</p>
 <p>Set an inventory budget for the collection as a whole, then decide how much belongs to each design. If you have no sales history, record why you chose the initial mix. That gives you something concrete to review after launch instead of treating every unsold piece as a design failure.</p>
 <h2 id="choose-a-coordinated-design-mix">Choose a Coordinated Design Mix</h2>
@@ -47,20 +47,20 @@ export const halloweenEnamelPinsArticleHtml = String.raw`
 <p>Individual pins let customers choose a favorite design. Sets present several pieces together, but they also commit inventory to a particular combination.</p>
 <p>Decide whether sets will arrive assembled or be packed by your own team. Factory assembly needs an agreed layout and contents list. In-house assembly needs time, space, and someone responsible for checking every package.</p>
 <figure class="blog-article-image blog-article-natural-image"><img src="/assets/images/halloween-pin-singles-and-sets.webp" width="1536" height="1024" loading="lazy" decoding="async" alt="A pumpkin pin on an individual backing card beside a three-pin Halloween set"><figcaption>Illustrative concept: individual packaging and a three-pin set use different card layouts.</figcaption></figure>
-<p>In the example above, individual sales and sets require different card layouts. They may also need different protective bags and product identifiers. Include those requirements when comparing quotations.</p>
+<p>For this singles-and-sets configuration, individual sales and sets require different card layouts. They may also need different protective bags and product identifiers. Include those requirements when comparing quotations.</p>
 <p>Create a separate item code for each sellable format in your records. A pumpkin sold alone and that same pumpkin inside a set draw from related stock, but they are different retail products. Share the final packing list with whoever handles fulfillment.</p>
 <p>Compare the total cost of the complete order: pins, tooling, cards, assembly, protective packaging, and freight, with other inclusions or exclusions stated. A lower pin price alone does not show which finished retail option costs less.</p>
 <h2 id="review-finishes-backings-and-retail-packaging">Review Finishes, Backings, and Retail Packaging</h2>
-<p>Select the surface finish around the artwork. Soft enamel leaves color below raised metal outlines, creating a textured face. Hard enamel produces a smoother surface with color and metal borders nearly level. The <a href="https://uccrafts.com/blog/soft-enamel-vs-hard-enamel-pins">soft and hard enamel comparison</a> explains those differences in more detail.</p>
+<p>Choose the enamel style for the pin face. Soft enamel leaves color below raised metal outlines, creating a textured face. Hard enamel produces a smoother surface with color and metal borders nearly level. The <a href="https://uccrafts.com/blog/soft-enamel-vs-hard-enamel-pins">soft and hard enamel comparison</a> explains those differences in more detail.</p>
 <p>Evaluate the outline color, enamel colors, and finish together. Keep choices consistent where consistency helps the collection, but review any design that needs a different treatment.</p>
-<p>The backing card is the printed display card; the clutch is the fastening behind the pin. Check both as part of the packed product. The <a href="https://uccrafts.com/blog/lapel-pin-attachments-guide">pin attachment guide</a> can help you compare fastening options.</p>
+<p>The backing card is the printed display card. A pin post is attached to the pin, and a clutch is one type of pin back that fastens to the post. Check the card and pin back as part of the packed product. The <a href="https://uccrafts.com/blog/lapel-pin-attachments-guide">pin attachment guide</a> can help you compare fastening options.</p>
 <p>Review the following:</p>
 <ul class="blog-list"><li>Does the card leave the artwork visible?</li>
 <li>Do the pin posts align with the intended mounting positions?</li>
 <li>Is there space behind the card for the clutches?</li>
 <li>Does the card fit the bag, box, or retail fixture?</li>
 <li>Are any product details or barcodes positioned where they can be used?</li></ul>
-<p>If packaging matters to the buying experience, review an assembled sample rather than approving the card artwork in isolation.</p>
+<p>If packaging matters to the buying experience, review a physical sample of the assembled package rather than approving the card artwork in isolation.</p>
 <h2 id="confirm-the-proof-and-delivery-plan">Confirm the Proof and Delivery Plan</h2>
 <p>Compare each proof with the quotation and order breakdown. Check the design, dimensions, colors, selected finish, post arrangement, fastening, and packaging. Keep the base material agreed in the quotation consistent with the order; it need not be repeated on every drawing to remain part of the specification.</p>
 <p>A digital proof communicates the intended design. It does not let you judge the actual weight, surface feel, or clutch fit. If those details affect approval, discuss physical sampling and its timing before committing to a launch.</p>
@@ -72,7 +72,7 @@ export const halloweenEnamelPinsArticleHtml = String.raw`
 <p>A useful inquiry describes the collection design by design. Include:</p>
 <ul class="blog-list"><li>Artwork, sketches, or reference ideas for each style.</li>
 <li>Intended dimensions and preferred finish.</li>
-<li>Quantity of each design, separating singles and sets.</li>
+<li>Quantity of each design and each retail package format, separating individual-pin packages from sets.</li>
 <li>Fastening and backing-card requirements.</li>
 <li>Who will assemble the retail packages.</li>
 <li>Delivery destination and required arrival date.</li></ul>
