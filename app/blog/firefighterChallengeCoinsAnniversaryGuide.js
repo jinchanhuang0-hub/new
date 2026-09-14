@@ -8,7 +8,6 @@ const firefighterAnniversaryImages = {
     height: 900,
     className: "blog-article-hero-image blog-article-natural-image",
     alt: "Firefighters approaching an emergency scene with firefighter challenge coin front and back designs",
-    caption: "Illustrative firefighter anniversary scene showing the front and back coin designs.",
   },
   versions: {
     src: "/assets/images/fire-department-coin-design-versions.webp",
