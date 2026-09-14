@@ -16,7 +16,6 @@ const firefighterAnniversaryImages = {
     height: 1086,
     className: "blog-article-natural-image",
     alt: "Front and back firefighter challenge coins displayed on clear stands",
-    caption: "Illustrative front and back views show how the emblem, message and edge treatment work as one coin design.",
   },
   artworkReview: {
     src: "/assets/images/anniversary-coin-artwork-review.webp",
