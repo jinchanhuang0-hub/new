@@ -113,7 +113,7 @@ export const firefighterChallengeCoinsAnniversaryGuideArticleHtml = String.raw`
             <p>Members and guests can receive the same coin. If the message is shared, different boxes or printed cards may provide the distinction your event needs without changing the metal artwork.</p>
             <p>Separate versions become useful when the coin itself needs different information, such as a station name or a dedication for a specific group. Individual names introduce another decision: whether they can be added by engraving in a suitable area or require a different production approach.</p>
             <p>Ask the manufacturer to explain the method and quote each version clearly. Sharing artwork on one side does not automatically remove tooling charges for the other side. Compare the complete order cost, including personalization, packaging and shipping.</p>
-            <p>When comparing suppliers, keep the diameter, thickness, finish, quantity and packaging consistent. Ask for tooling, coin production and additional services to be identified in the quotation. A lower unit price is difficult to evaluate if the other offer includes engraving or presentation boxes.</p>
+            <p>When comparing suppliers, use the same specifications for material, diameter, thickness, relief, finish, personalization, quantity and packaging. Ask for tooling, coin production and additional services to be identified in the quotation. A lower unit price is difficult to evaluate if the other offer includes engraving or presentation boxes.</p>
             <p>For a personalized order, keep one approved name file with an entry for each coin. Assign version codes and use those same codes on proofs, order documents and packing instructions.</p>
             ${renderConfiguredImage(firefighterAnniversaryImages.versions)}
 
@@ -135,7 +135,7 @@ export const firefighterChallengeCoinsAnniversaryGuideArticleHtml = String.raw`
               <li>Metal finish, enamel references, edge style and personalization position.</li>
               <li>Version codes, quantities and packaging requirements in the accompanying order specification.</li>
             </ul>
-            <p>Choose one person to collect committee comments and return a consolidated revision. Keep the final approved files together so that a superseded image or name list is not sent back into production.</p>
+            <p>Choose one person to collect committee comments and send the manufacturer one consolidated set of requested changes. Keep the final approved files together so that a superseded image or name list is not sent back into production.</p>
             <p>If appearance or packaging fit needs a physical check, discuss a sample before approving the bulk run, including its cost and effect on the schedule. Compare the sample with the agreed specification and record any required changes.</p>
             <p>For a detailed station scene, check which features remain recognizable in hand. For a named coin, inspect the longest name as well as shorter examples. These checks can reveal layout problems that are easy to miss in an enlarged preview.</p>
             <p>Once tooling starts, artwork changes may require rework or new tooling. Our <a href="/blog/how-custom-challenge-coins-are-made">manufacturing guide</a> explains where proof approval fits into the process.</p>
@@ -143,7 +143,7 @@ export const firefighterChallengeCoinsAnniversaryGuideArticleHtml = String.raw`
 
             <h2 id="work-backward-from-your-required-delivery-date">Work Backward from Your Required Delivery Date</h2>
             <p>Give the supplier the date the coins must be in your hands, together with the U.S. delivery address and ZIP code. Allow time after receipt to count the order, check personalized pieces and prepare presentations.</p>
-            <p>At Unique Pin, custom challenge coin production typically takes 12–15 working days after final artwork approval; shipping is additional. Confirm the schedule for your specifications, especially if the project includes a physical sample or several personalized versions. <a href="/products/custom-challenge-coins">View our current product information</a>.</p>
+            <p>At Unique Pin, custom challenge coin production typically takes 12–15 working days after final artwork approval and receipt of any agreed payment; shipping time is additional. Confirm the schedule for your specifications, especially if the project includes a physical sample or several personalized versions. <a href="/products/custom-challenge-coins">View our current product information</a>.</p>
             <p>Build the plan around artwork review, any sampling, production, transit and receiving checks. Ask which date depends on your approval and how later changes would affect dispatch. Share the event deadline at the first inquiry so feasibility can be checked before detailed artwork is developed.</p>
 
             <h2 id="prepare-a-complete-anniversary-coin-brief">Prepare a Complete Anniversary Coin Brief</h2>
@@ -161,7 +161,7 @@ export const firefighterChallengeCoinsAnniversaryGuideArticleHtml = String.raw`
             <div class="blog-faq">
               <details open><summary><h3>Can a small volunteer department place an order?</h3></summary><p>Yes. Unique Pin offers custom challenge coins without a minimum order quantity. When custom tooling is needed, a small order spreads that cost across fewer pieces, which can increase the cost per coin.</p></details>
               <details><summary><h3>Can we start without finished artwork?</h3></summary><p>Yes. Unique Pin provides free design assistance and a digital proof. Send your logo, sketch or reference images with the exact wording and anniversary dates you want reviewed.</p></details>
-              <details><summary><h3>Should every coin carry a member's name?</h3></summary><p>Only when individual identification serves the project. A shared anniversary design can cover several recipient groups, while a separate card carries a personal message. If names go on the coins, confirm the production method and final name list before approval.</p></details>
+              <details><summary><h3>Should every coin carry a member's name?</h3></summary><p>Add names only if each coin needs to identify its recipient. A shared anniversary design can cover several recipient groups, while a separate card carries a personal message. If names go on the coins, confirm the production method and final name list before approval.</p></details>
             </div>
 
             <h2 id="request-an-anniversary-coin-quote">Request an Anniversary Coin Quote</h2>
@@ -169,7 +169,7 @@ export const firefighterChallengeCoinsAnniversaryGuideArticleHtml = String.raw`
             <section class="blog-article-cta blog-inquiry-cta firefighter-coin-inquiry" aria-labelledby="firefighter-coin-inquiry-title">
               <div>
                 <h2 id="firefighter-coin-inquiry-title" class="blog-cta-title">Ready to Plan Your Anniversary Coins?</h2>
-                <p>Share your department's artwork, estimated quantity and event date through our contact form.</p>
+                <p>Share your department's artwork, estimated quantity and required arrival date through our contact form.</p>
               </div>
               <div class="blog-cta-actions">
                 <a class="btn btn-yellow" href="/contact">Request a Coin Quote</a>
