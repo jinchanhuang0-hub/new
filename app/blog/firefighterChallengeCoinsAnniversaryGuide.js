@@ -142,7 +142,7 @@ export const firefighterChallengeCoinsAnniversaryGuideArticleHtml = String.raw`
             ${renderConfiguredImage(firefighterAnniversaryImages.artworkReview)}
 
             <h2 id="work-backward-from-your-required-delivery-date">Work Backward from Your Required Delivery Date</h2>
-            <p>Give the supplier the date the coins must be in your hands, together with the U.S. delivery address and ZIP code. Allow time after receipt to count the order, check personalized pieces and prepare presentations.</p>
+            <p>Give the supplier the complete delivery address, country, and postal or ZIP code, together with the date the coins must be in your hands. Allow time after receipt to count the order, check personalized pieces and prepare presentations.</p>
             <p>At Unique Pin, custom challenge coin production typically takes 12–15 working days after final artwork approval and receipt of any agreed payment; shipping time is additional. Confirm the schedule for your specifications, especially if the project includes a physical sample or several personalized versions. <a href="/products/custom-challenge-coins">View our current product information</a>.</p>
             <p>Build the plan around artwork review, any sampling, production, transit and receiving checks. Ask which date depends on your approval and how later changes would affect dispatch. Share the event deadline at the first inquiry so feasibility can be checked before detailed artwork is developed.</p>
 
