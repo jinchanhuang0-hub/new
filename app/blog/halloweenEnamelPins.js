@@ -87,4 +87,13 @@ export const halloweenEnamelPinsArticleHtml = String.raw`
 <p>Ask about tooling retention, reorder pricing, and scheduling before relying on a later order. Keep the approved specifications available. A repeat order still needs its quantity, finish, packaging, and delivery requirements confirmed.</p>
 <h2 id="discuss-your-halloween-pin-collection">Discuss Your Halloween Pin Collection</h2>
 <p>Send Unique Pin your artwork or ideas, quantities for each style, packaging requirements, destination, and required arrival date. Include whether the pins will be sold individually, in sets, or both, so the quotation can reflect the collection you intend to launch.</p>
+<section class="blog-article-cta blog-inquiry-cta halloween-pin-inquiry" aria-labelledby="halloween-pin-inquiry-title">
+  <div>
+    <h2 id="halloween-pin-inquiry-title" class="blog-cta-title">Ready to Plan Your Halloween Pins?</h2>
+    <p>Share your designs, quantities and launch date through our contact form.</p>
+  </div>
+  <div class="blog-cta-actions">
+    <a class="btn btn-yellow" href="/contact">Request a Pin Quote</a>
+  </div>
+</section>
 </div></div></article>`;

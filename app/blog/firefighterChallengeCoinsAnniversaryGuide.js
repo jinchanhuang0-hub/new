@@ -166,6 +166,15 @@ export const firefighterChallengeCoinsAnniversaryGuideArticleHtml = String.raw`
 
             <h2 id="request-an-anniversary-coin-quote">Request an Anniversary Coin Quote</h2>
             <p>Send Unique Pin your anniversary details, estimated quantity, artwork references and required arrival date. We can review the requirements for your custom firefighter challenge coins, help develop both sides and prepare a quotation based on the agreed specifications. <a href="/products/custom-challenge-coins">Explore custom challenge coin options</a>.</p>
+            <section class="blog-article-cta blog-inquiry-cta firefighter-coin-inquiry" aria-labelledby="firefighter-coin-inquiry-title">
+              <div>
+                <h2 id="firefighter-coin-inquiry-title" class="blog-cta-title">Ready to Plan Your Anniversary Coins?</h2>
+                <p>Share your department's artwork, estimated quantity and event date through our contact form.</p>
+              </div>
+              <div class="blog-cta-actions">
+                <a class="btn btn-yellow" href="/contact">Request a Coin Quote</a>
+              </div>
+            </section>
           </div>
         </div>
       </div>

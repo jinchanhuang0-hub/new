@@ -100,4 +100,13 @@ export const embroideredPatchesNoMinimumArticleHtml = String.raw`
 <p>An approved sample and recorded specifications provide a comparison reference, but they do not guarantee identical results across batches. Agree how dimensions, thread colors, and border appearance will be compared with the approved sample, including acceptable differences. Confirm any specification changes before a reorder proceeds.</p>
 <h2 id="request-a-small-batch-patch-quote">Request a Small-Batch Patch Quote</h2>
 <p>Share your artwork, patch dimensions, garment details, preferred backing, pilot quantity, and required arrival date with Unique Pin. Include your anticipated bulk quantity if known. Explore our <a href="https://uccrafts.com/products/custom-patches">custom patches</a> and <a href="https://uccrafts.com/contact">request a quote</a> for the specifications you want to test.</p>
+<section class="blog-article-cta blog-inquiry-cta patch-pilot-inquiry" aria-labelledby="patch-pilot-inquiry-title">
+  <div>
+    <h2 id="patch-pilot-inquiry-title" class="blog-cta-title">Ready to Plan Your Patch Order?</h2>
+    <p>Share your artwork, backing preferences, pilot quantity and required arrival date through our contact form.</p>
+  </div>
+  <div class="blog-cta-actions">
+    <a class="btn btn-yellow" href="/contact">Request a Patch Quote</a>
+  </div>
+</section>
 </div></div></article>`;
