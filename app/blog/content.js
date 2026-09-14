@@ -53,6 +53,7 @@ export const blogHtml = String.raw`
         </div>
         <div class="blog-card-grid">
           <a class="blog-feature-card" href="/blog/firefighter-challenge-coins-anniversary-guide" data-blog-category="Custom Coins" aria-label="Read Firefighter Challenge Coins: Planning a Department Anniversary">
+            <img src="/assets/images/firefighter-anniversary-challenge-coins.webp" width="1600" height="900" alt="Firefighters approaching an emergency scene with firefighter challenge coin front and back designs">
             <div class="blog-feature-body">
               <div class="blog-feature-meta"><span>Custom Coins</span><span>Anniversary Planning</span></div>
               <h2>Firefighter Challenge Coins: Planning a Department Anniversary</h2>

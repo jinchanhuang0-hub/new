@@ -335,6 +335,7 @@ const blogArticleData = {
     headline: "Firefighter Challenge Coins: Planning a Department Anniversary",
     description:
       "Plan custom firefighter challenge coins for a department anniversary. Compare designs, recipient groups, packaging, proof checks and delivery requirements.",
+    image: "/assets/images/firefighter-anniversary-challenge-coins.webp",
     author: "Sunny Huang",
     authorType: "Person",
     datePublished: "2026-09-14",

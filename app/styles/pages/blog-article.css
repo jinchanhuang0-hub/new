@@ -809,6 +809,19 @@
   aspect-ratio: 3 / 2;
 }
 
+#firefighter-challenge-coins-anniversary-guide .blog-article-image img {
+  height: auto;
+  max-height: none;
+  aspect-ratio: auto;
+  object-fit: contain;
+  object-position: center;
+}
+
+#firefighter-challenge-coins-anniversary-guide .blog-article-header > .blog-article-hero-image img {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
 .blog-article-main .blog-image-7x4 img {
   aspect-ratio: 7 / 4;
 }
