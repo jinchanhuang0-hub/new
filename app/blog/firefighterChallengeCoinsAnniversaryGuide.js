@@ -32,7 +32,6 @@ const firefighterAnniversaryImages = {
     height: 1000,
     className: "blog-article-natural-image blog-image-3x2",
     alt: "Firefighter challenge coins presented in a clear pouch and navy presentation box",
-    caption: "Illustrative packaging comparison showing a clear pouch and a fitted presentation box for the same coin design.",
   },
 };
 
@@ -43,7 +42,7 @@ const renderConfiguredImage = (image, { priority = false } = {}) => {
   return String.raw`
             <figure class="blog-article-image ${image.className}">
               <img src="${image.src}" width="${image.width}" height="${image.height}" ${priority ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async" alt="${image.alt}">
-              <figcaption>${image.caption}</figcaption>
+              ${image.caption ? `<figcaption>${image.caption}</figcaption>` : ""}
             </figure>`;
 };
 
