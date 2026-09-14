@@ -575,5 +575,12 @@ export const buildBlogArticleHtml = (html, articleSlug, articleMeta = {}) => {
     (_, className) => `class="${className.includes("is-active") ? className : `${className} is-active`}"`,
   ), articleMeta);
 
-  return enhanceBlogArticleImages(normalizeBlogArticleLinks(`${shell.beforeMain}<main>${article}</main>${shell.afterMain}`));
+  const afterMain = articleMeta.inquiryHeading
+    ? shell.afterMain.replace(
+      "<h2>Ready to Start Your Custom Metal Gift Project?</h2>",
+      `<h2>${articleMeta.inquiryHeading}</h2>`,
+    )
+    : shell.afterMain;
+
+  return enhanceBlogArticleImages(normalizeBlogArticleLinks(`${shell.beforeMain}<main>${article}</main>${afterMain}`));
 };

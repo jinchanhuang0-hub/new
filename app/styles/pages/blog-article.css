@@ -3,6 +3,57 @@
 */
 
 /* PC styles */
+#custom-embroidered-patches-no-minimum .blog-article-header,
+#custom-embroidered-patches-no-minimum .patch-pilot-cover,
+#custom-embroidered-patches-no-minimum .patch-garment-test-image,
+#custom-embroidered-patches-no-minimum .patch-bulk-approval-image,
+#custom-embroidered-patches-no-minimum .blog-table-wrap {
+  width: 100%;
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#custom-embroidered-patches-no-minimum .blog-article-header {
+  margin-bottom: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+#custom-embroidered-patches-no-minimum .patch-pilot-cover {
+  margin-top: 0;
+}
+
+#custom-embroidered-patches-no-minimum .patch-pilot-cover img {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  padding: 0;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+}
+
+#custom-embroidered-patches-no-minimum .patch-garment-test-image img,
+#custom-embroidered-patches-no-minimum .patch-bulk-approval-image img {
+  width: 100%;
+  height: auto;
+  max-height: none;
+  padding: 0;
+  aspect-ratio: 3 / 2;
+  object-fit: contain;
+}
+
+@media (max-width: 640px) {
+  #custom-embroidered-patches-no-minimum .blog-article p,
+  #custom-embroidered-patches-no-minimum .blog-article li {
+    text-align: left;
+    text-align-last: auto;
+    hyphens: none;
+  }
+}
+
 #halloween-enamel-pins-retail-collection .blog-article-header {
   max-width: none;
   margin-left: 0;

@@ -5,6 +5,9 @@ import { renderFinishGallery } from "../../components/finishGalleryHtml";
 import { renderArtworkComparison } from "../../components/artworkComparisonHtml";
 import { renderProductFaq } from "../../components/productFaqHtml";
 import { enamelPinFaq } from "../enamelPinFaq";
+import { medalFaq, medalFaqOptions } from "../medalFaq";
+import { medalArtworkComparison } from "../medalArtworkComparison";
+import MedalComparisonEffects from "../../components/MedalComparisonEffects";
 import { challengeCoinFaq, challengeCoinFaqOptions } from "../challengeCoinFaq";
 import "../../styles/components/pin-product-faq.css";
 import { platingFinishes } from "../platingFinishes";
@@ -13,6 +16,10 @@ import { pinBacksides } from "../pinBacksides";
 import { pinPackaging } from "../pinPackaging";
 import { coinEdges } from "../coinEdges";
 import { coinPackaging } from "../coinPackaging";
+import { medalPackaging } from "../medalPackaging";
+import { medalBacksides } from "../medalBacksides";
+import { medalLoops } from "../medalLoops";
+import { medalRibbons } from "../medalRibbons";
 import { coinArtworkComparison } from "../coinArtworkComparison";
 import "../../styles/components/finish-gallery.css";
 import "../../styles/components/artwork-comparison.css";
@@ -163,12 +170,15 @@ export default async function ProductCategoryPage({ params, searchParams }) {
                     ? [pinAttachments, pinBacksides, pinPackaging]
                     : category === "custom-challenge-coins"
                       ? [coinEdges, coinPackaging]
+                      : category === "custom-medals"
+                        ? [medalBacksides, medalLoops, medalRibbons, medalPackaging]
                       : [],
-                )}${category === "custom-enamel-pins" ? renderArtworkComparison() + renderProductFaq(enamelPinFaq) : category === "custom-challenge-coins" ? renderArtworkComparison(coinArtworkComparison) + renderProductFaq(challengeCoinFaq, challengeCoinFaqOptions) : ""}`
+                )}${category === "custom-enamel-pins" ? renderArtworkComparison() + renderProductFaq(enamelPinFaq) : category === "custom-challenge-coins" ? renderArtworkComparison(coinArtworkComparison) + renderProductFaq(challengeCoinFaq, challengeCoinFaqOptions) : category === "custom-medals" ? renderArtworkComparison(medalArtworkComparison) + renderProductFaq(medalFaq, medalFaqOptions) : ""}`
               : "",
           },
         )}
       />
+      {category === "custom-medals" ? <MedalComparisonEffects /> : null}
     </>
   );
 }

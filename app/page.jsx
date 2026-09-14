@@ -3,6 +3,7 @@ import { footerHtml } from "./components/footerHtml";
 import { siteHeaderHtml } from "./components/siteHeaderHtml";
 import { renderProductFaq } from "./components/productFaqHtml";
 import { homeFaqItems } from "./homeFaq";
+import { blogArticles } from "./lib/siteRoutes";
 import "./styles/components/pin-product-faq.css";
 
 
@@ -13,6 +14,32 @@ export const metadata = {
     canonical: "https://uccrafts.com/"
   }
 };
+
+const escapeHtml = (value) => String(value).replace(/[&<>"']/g, (character) => ({
+  "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;",
+}[character]));
+
+const latestArticlesHtml = Object.entries(blogArticles)
+  .filter(([, article]) => Number.isFinite(Date.parse(article.datePublished)))
+  .sort(([, a], [, b]) => Date.parse(b.datePublished) - Date.parse(a.datePublished))
+  .slice(0, 4)
+  .map(([slug, article]) => {
+    const headline = escapeHtml(article.headline || article.title);
+    const date = new Intl.DateTimeFormat("en-US", {
+      month: "long", day: "numeric", year: "numeric", timeZone: "UTC",
+    }).format(new Date(article.datePublished));
+    return `<a class="home-buying-guide-card" href="/blog/${escapeHtml(slug)}">
+      <span class="home-buying-guide-media">
+        <img src="${escapeHtml(article.image)}" width="1200" height="800" loading="lazy" decoding="async" alt="${headline}">
+      </span>
+      <span class="home-buying-guide-body">
+        <time class="home-buying-guide-date" datetime="${escapeHtml(article.datePublished)}">${date}</time>
+        <h3>${headline}</h3>
+        <p>${escapeHtml(article.description)}</p>
+        <span class="home-buying-guide-link">Read Guide <span aria-hidden="true">&rarr;</span></span>
+      </span>
+    </a>`;
+  }).join("\n");
 
 const html = String.raw`
   ${siteHeaderHtml({ active: "home" })}
@@ -482,54 +509,11 @@ const html = String.raw`
       <div class="container">
         <div class="center-head home-buying-guides-head">
           <span class="brand-kicker" aria-hidden="true"></span>
-          <h2 id="home-buying-guides-title">Procurement Guides</h2>
-          <p>Use these practical guides to compare production options, plan recognition programs and approve artwork with confidence.</p>
+          <h2 id="home-buying-guides-title">Latest Articles</h2>
+          <p>Explore our latest guides to planning, designing and ordering custom metal gifts.</p>
         </div>
         <div class="home-buying-guides-grid">
-          <a class="home-buying-guide-card" href="/blog/soft-enamel-vs-hard-enamel-pins" aria-label="Read Soft Enamel vs Hard Enamel Pins: Cost, Durability and Best Uses">
-            <span class="home-buying-guide-media">
-              <img src="/assets/images/blog-soft-hard-enamel-pins-v2.webp" width="1200" height="720" loading="lazy" decoding="async" alt="Soft enamel and hard enamel custom pins compared side by side">
-            </span>
-            <span class="home-buying-guide-body">
-              <span class="home-buying-guide-category">Pin Buying Guide</span>
-              <h3>Soft Enamel vs Hard Enamel Pins: How to Choose</h3>
-              <p>Compare texture, durability, cost and the best finish for your artwork and intended use.</p>
-              <span class="home-buying-guide-link">Read Guide <span aria-hidden="true">&rarr;</span></span>
-            </span>
-          </a>
-          <a class="home-buying-guide-card" href="/blog/corporate-challenge-coins-employee-recognition" aria-label="Read Corporate Challenge Coins: How to Build an Employee Recognition Program">
-            <span class="home-buying-guide-media">
-              <img src="/assets/images/employee-recognition-challenge-coin-series.webp" width="1200" height="675" loading="lazy" decoding="async" alt="Corporate challenge coin series for an employee recognition program">
-            </span>
-            <span class="home-buying-guide-body">
-              <span class="home-buying-guide-category">Recognition Planning</span>
-              <h3>Corporate Challenge Coins: How to Build an Employee Recognition Program</h3>
-              <p>Plan award criteria, coin design, presentation and review for a consistent recognition program.</p>
-              <span class="home-buying-guide-link">Read Guide <span aria-hidden="true">&rarr;</span></span>
-            </span>
-          </a>
-          <a class="home-buying-guide-card" href="/blog/custom-medal-design-proof-checklist" aria-label="Read Custom Medal Design: What to Check Before Approving Your Proof">
-            <span class="home-buying-guide-media">
-              <img src="/assets/images/custom-medal-front-back-photo.webp" width="1536" height="1024" loading="lazy" decoding="async" alt="Front and back medal details for artwork proof review">
-            </span>
-            <span class="home-buying-guide-body">
-              <span class="home-buying-guide-category">Artwork Approval</span>
-              <h3>Custom Medal Design: What to Check Before Approving Your Proof</h3>
-              <p>Review dimensions, wording, finishes, ribbon details and production notes before tooling begins.</p>
-              <span class="home-buying-guide-link">Read Guide <span aria-hidden="true">&rarr;</span></span>
-            </span>
-          </a>
-          <a class="home-buying-guide-card" href="/blog/how-custom-challenge-coins-are-made" aria-label="Read How Are Custom Challenge Coins Made? A Step-by-Step Manufacturing Guide">
-            <span class="home-buying-guide-media">
-              <img src="/assets/images/blog-how-challenge-coins-made-card-v3.webp" width="1200" height="675" loading="lazy" decoding="async" alt="Custom challenge coin manufacturing process from tooling to finishing">
-            </span>
-            <span class="home-buying-guide-body">
-              <span class="home-buying-guide-category">Manufacturing Guide</span>
-              <h3>How Are Custom Challenge Coins Made?</h3>
-              <p>Follow the process from artwork and tooling through striking, finishing, color filling and inspection.</p>
-              <span class="home-buying-guide-link">Read Guide <span aria-hidden="true">&rarr;</span></span>
-            </span>
-          </a>
+          ${latestArticlesHtml}
         </div>
       </div>
     </section>

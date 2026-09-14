@@ -14,6 +14,7 @@ import { customMedalDesignProofChecklistArticleHtml } from "./customMedalDesignP
 import { christmasGiftProposalsDistributorsArticleHtml } from "./christmasGiftProposalsDistributors";
 import { customBaseballTradingPinsTeamOrderingGuideArticleHtml } from "./customBaseballTradingPinsTeamOrderingGuide";
 import { halloweenEnamelPinsArticleHtml } from "./halloweenEnamelPins";
+import { embroideredPatchesNoMinimumArticleHtml } from "./embroideredPatchesNoMinimum";
 
 
 export const metadata = {
@@ -50,6 +51,15 @@ export const blogHtml = String.raw`
           <button type="button" data-blog-category="Uncategorized">Uncategorized</button>
         </div>
         <div class="blog-card-grid">
+          <a class="blog-feature-card" href="/blog/custom-embroidered-patches-no-minimum" data-card-image-fit="full" data-blog-category="Patches" aria-label="Read Custom Embroidered Patches with No Minimum: A Pilot Order Guide">
+            <img src="/assets/images/embroidered-patches-pilot-order.webp" width="1600" height="900" alt="Embroidered patch samples beside a navy uniform shirt and charcoal jacket">
+            <div class="blog-feature-body">
+              <div class="blog-feature-meta"><span>Custom Patches</span><span>Buyer Guide</span></div>
+              <h2>Custom Embroidered Patches with No Minimum: A Pilot Order Guide</h2>
+              <p>Plan custom embroidered patches with no minimum. Compare small-order costs, test samples on real garments, and prepare your approved design for bulk production.</p>
+              <span class="blog-feature-link">Read More</span>
+            </div>
+          </a>
           <a class="blog-feature-card" href="/blog/halloween-enamel-pins-retail-collection" data-card-image-fit="full" data-blog-category="Custom Lapel Pins,Holidays" aria-label="Read Halloween Enamel Pins: Planning a Custom Retail Collection">
             <img src="/assets/images/halloween-enamel-pins-retail-collection.webp" width="1672" height="941" alt="Halloween enamel pin designs featuring a pumpkin, ghost, black cat, bat, witch hat, and candy corn">
             <div class="blog-feature-body">
@@ -309,6 +319,7 @@ export const blogHtml = String.raw`
     ${christmasGiftProposalsDistributorsArticleHtml}
     ${customBaseballTradingPinsTeamOrderingGuideArticleHtml}
     ${halloweenEnamelPinsArticleHtml}
+    ${embroideredPatchesNoMinimumArticleHtml}
     <article id="military-challenge-coin-traditions" class="section blog-article-section">
       <div class="blog-article-shell">
         <aside class="blog-article-toc" aria-label="Article contents">
@@ -2469,8 +2480,8 @@ export const blogHtml = String.raw`
         </ul>
         <p>When medal designs look similar, color-coded ribbons or removable tray labels can reduce mistakes without adding unnecessary variations to the artwork.</p>
         <figure class="blog-article-image blog-article-natural-image blog-race-day-distribution-image">
-          <img src="/assets/images/race-day-medal-distribution.webp" width="1536" height="1024" loading="lazy" decoding="async" alt="Volunteers organizing and distributing finisher medals on race day">
-          <figcaption>Organized trays, labels and volunteers help distribute race medals accurately on event day.</figcaption>
+          <img src="/assets/images/customer-race-day-medals.png" width="1040" height="682" loading="lazy" decoding="async" alt="Customer race event with organizers holding custom medals made by Unique Pin">
+          <figcaption>Customer race-day photo showing event medals manufactured by Unique Pin.</figcaption>
         </figure>
 
         <h2 id="publish-the-medal-policy-before-registration">Publish the Medal Policy Before Registration</h2>

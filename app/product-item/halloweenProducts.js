@@ -1,0 +1,122 @@
+export const halloweenProducts = {
+  "halloween-black-cat-enamel-pin": {
+    "title": "Halloween Black Cat Enamel Pin",
+    "sku": "UP-PIN-023",
+    "alt": "Black cat enamel pin with a crescent moon, pumpkins and a pointed arch",
+    "lead": "A black cat sits beneath a crescent moon within a pointed arch, surrounded by pumpkins and autumn leaves. Use this Halloween pin design as a starting point for a coordinated seasonal collection.",
+    "image": "assets/images/halloween-black-cat-enamel-pin.webp",
+    "categoryLabel": "Lapel Pins",
+    "categoryHref": "/products/custom-enamel-pins",
+    "quoteProduct": "Lapel Pins",
+    "material": "To be confirmed for the approved design",
+    "process": "Production method and finish confirmed with the artwork",
+    "usage": "Halloween retail collections, seasonal gifts and event merchandise",
+    "categories": "Lapel Pins, Halloween Pins",
+    "specifications": {
+      "material": "Confirm the metal material with your quotation.",
+      "process": "Confirm the production method, color treatment and finish with the artwork.",
+      "size": "Custom dimensions to be confirmed before production.",
+      "thickness": "To be confirmed for the approved size and design.",
+      "accessories": "Confirm the number and position of pin posts and the preferred clutches.",
+      "packaging": "Confirm individual packaging, backing cards or gift boxes in the quotation.",
+      "sampleLeadTime": "Confirmed according to the sample request.",
+      "productionLeadTime": "Confirmed after specifications, quantity and delivery requirements are agreed."
+    }
+  },
+  "halloween-raven-enamel-pin": {
+    "title": "Halloween Raven Enamel Pin",
+    "sku": "UP-PIN-022",
+    "alt": "Raven enamel pin with a crescent moon, purple flowers and a pumpkin",
+    "lead": "This Halloween pin design pairs a raven and crescent moon with purple flowers, curling branches and a pumpkin. Discuss the finished size and fine feather details when preparing your custom artwork.",
+    "image": "assets/images/halloween-raven-enamel-pin.webp",
+    "categoryLabel": "Lapel Pins",
+    "categoryHref": "/products/custom-enamel-pins",
+    "quoteProduct": "Lapel Pins",
+    "material": "To be confirmed for the approved design",
+    "process": "Production method and finish confirmed with the artwork",
+    "usage": "Halloween retail collections, seasonal gifts and event merchandise",
+    "categories": "Lapel Pins, Halloween Pins",
+    "specifications": {
+      "material": "Confirm the metal material with your quotation.",
+      "process": "Confirm the production method, color treatment and finish with the artwork.",
+      "size": "Custom dimensions to be confirmed before production.",
+      "thickness": "To be confirmed for the approved size and design.",
+      "accessories": "Confirm the number and position of pin posts and the preferred clutches.",
+      "packaging": "Confirm individual packaging, backing cards or gift boxes in the quotation.",
+      "sampleLeadTime": "Confirmed according to the sample request.",
+      "productionLeadTime": "Confirmed after specifications, quantity and delivery requirements are agreed."
+    }
+  },
+  "halloween-pumpkin-enamel-pin": {
+    "title": "Halloween Pumpkin Enamel Pin",
+    "sku": "UP-PIN-021",
+    "alt": "Jack-o-lantern enamel pin with a crescent moon, stars and autumn leaves",
+    "lead": "A jack-o-lantern, crescent moon and hanging stars fill this pointed-arch Halloween pin design. Autumn leaves and curling vines connect the orange, green and dark purple areas.",
+    "image": "assets/images/halloween-pumpkin-enamel-pin.webp",
+    "categoryLabel": "Lapel Pins",
+    "categoryHref": "/products/custom-enamel-pins",
+    "quoteProduct": "Lapel Pins",
+    "material": "To be confirmed for the approved design",
+    "process": "Production method and finish confirmed with the artwork",
+    "usage": "Halloween retail collections, seasonal gifts and event merchandise",
+    "categories": "Lapel Pins, Halloween Pins",
+    "specifications": {
+      "material": "Confirm the metal material with your quotation.",
+      "process": "Confirm the production method, color treatment and finish with the artwork.",
+      "size": "Custom dimensions to be confirmed before production.",
+      "thickness": "To be confirmed for the approved size and design.",
+      "accessories": "Confirm the number and position of pin posts and the preferred clutches.",
+      "packaging": "Confirm individual packaging, backing cards or gift boxes in the quotation.",
+      "sampleLeadTime": "Confirmed according to the sample request.",
+      "productionLeadTime": "Confirmed after specifications, quantity and delivery requirements are agreed."
+    }
+  },
+  "halloween-pumpkin-double-sided-coin": {
+    "title": "Halloween Pumpkin Double-Sided Coin",
+    "sku": "UP-COIN-041",
+    "alt": "Two sides of a Halloween coin showing a jack-o-lantern and a pumpkin spiderweb design",
+    "lead": "This double-sided Halloween coin design features a jack-o-lantern beneath the moon on one side and a pumpkin-centered spiderweb on the other. Leaf borders and matching colors connect the two faces.",
+    "image": "assets/images/halloween-pumpkin-double-sided-coin.webp",
+    "categoryLabel": "Challenge Coins",
+    "categoryHref": "/products/custom-challenge-coins",
+    "quoteProduct": "Challenge Coins",
+    "material": "To be confirmed for the approved design",
+    "process": "Production method and finish confirmed with the artwork",
+    "usage": "Halloween retail collections, seasonal gifts and event merchandise",
+    "categories": "Challenge Coins, Halloween Coins, Double-Sided Coins",
+    "specifications": {
+      "material": "Confirm the metal material with your quotation.",
+      "process": "Confirm the production method, color treatment and finish with the artwork.",
+      "size": "Custom dimensions to be confirmed before production.",
+      "thickness": "To be confirmed for the approved size and design.",
+      "accessories": "Confirm any capsule, display stand or presentation case required.",
+      "packaging": "Confirm individual packaging, backing cards or gift boxes in the quotation.",
+      "sampleLeadTime": "Confirmed according to the sample request.",
+      "productionLeadTime": "Confirmed after specifications, quantity and delivery requirements are agreed."
+    }
+  },
+  "halloween-black-cat-double-sided-coin": {
+    "title": "Halloween Black Cat Double-Sided Coin",
+    "sku": "UP-COIN-040",
+    "alt": "Two sides of a Halloween coin showing a black cat and a steaming cauldron",
+    "lead": "This double-sided Halloween coin design pairs a black cat, pumpkins and a crescent moon with a steaming cauldron on the reverse. Pointed arches, vines and stars give both sides a coordinated appearance.",
+    "image": "assets/images/halloween-black-cat-double-sided-coin.webp",
+    "categoryLabel": "Challenge Coins",
+    "categoryHref": "/products/custom-challenge-coins",
+    "quoteProduct": "Challenge Coins",
+    "material": "To be confirmed for the approved design",
+    "process": "Production method and finish confirmed with the artwork",
+    "usage": "Halloween retail collections, seasonal gifts and event merchandise",
+    "categories": "Challenge Coins, Halloween Coins, Double-Sided Coins",
+    "specifications": {
+      "material": "Confirm the metal material with your quotation.",
+      "process": "Confirm the production method, color treatment and finish with the artwork.",
+      "size": "Custom dimensions to be confirmed before production.",
+      "thickness": "To be confirmed for the approved size and design.",
+      "accessories": "Confirm any capsule, display stand or presentation case required.",
+      "packaging": "Confirm individual packaging, backing cards or gift boxes in the quotation.",
+      "sampleLeadTime": "Confirmed according to the sample request.",
+      "productionLeadTime": "Confirmed after specifications, quantity and delivery requirements are agreed."
+    }
+  }
+};

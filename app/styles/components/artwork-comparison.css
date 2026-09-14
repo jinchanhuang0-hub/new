@@ -54,6 +54,18 @@
 }
 
 #artwork-to-finished-coin .artwork-comparison-stage { width: min(600px, 100%); }
+#artwork-to-finished-medal .artwork-comparison-stage {
+  width: min(488.8px, 94%);
+  aspect-ratio: 4 / 5;
+  overflow: visible;
+}
+#artwork-to-finished-medal .artwork-comparison-image,
+#artwork-to-finished-medal .artwork-comparison-artwork-layer {
+  border-radius: inherit;
+}
+#artwork-to-finished-medal .is-unavailable .artwork-comparison-image {
+  visibility: hidden;
+}
 .artwork-comparison-instruction[aria-hidden="true"] { visibility: hidden; }
 
 .artwork-comparison-image,

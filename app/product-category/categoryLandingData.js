@@ -130,7 +130,7 @@ export const homeProductLandingPages = [
         copy: "Custom finisher medals for marathons, 5K and 10K races, charity runs, trail races and virtual events, available with personalized artwork, finishes and event ribbons.",
       },
       {
-        eyebrow: "iCelebrate Student Achievement",
+        eyebrow: "Celebrate Student Achievement",
         title: "Custom School & Academic Medals",
         image: "assets/images/type-medals-3d.png",
         href: "/products/custom-medals/3d-shield-logo-award-medal",

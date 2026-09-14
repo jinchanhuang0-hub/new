@@ -147,6 +147,65 @@
   .finish-gallery .finish-gallery-grid[data-image-scale="natural"] .finish-gallery-media img { transform: scale(1); }
 }
 /* Trim roughly half the lower whitespace, keeping the coin and its shadow intact. */
+.finish-gallery:has(#medal-ribbon-panel) .finish-gallery-subheading p {
+  white-space: normal;
+}
+
+.finish-gallery:has(#medal-ribbon-panel) .finish-gallery-card figcaption {
+  height: auto;
+}
+
+@media (max-width: 1199px) {
+  .finish-gallery:has(#medal-ribbon-panel) .finish-gallery-tabs {
+    width: 100%;
+  }
+  .finish-gallery:has(#medal-ribbon-panel) .finish-gallery-tablist {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .finish-gallery:has(#medal-ribbon-panel) .finish-gallery-tabpanels {
+    /* Override the shared desktop script's tallest-panel reservation on smaller screens. */
+    min-height: 0 !important;
+  }
+  .finish-gallery:has(#medal-ribbon-panel) .finish-gallery-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px 16px;
+  }
+  .finish-gallery:has(#medal-ribbon-panel) .finish-gallery-card figcaption {
+    height: auto;
+    min-height: 0;
+    display: block;
+    padding: 10px 4px 0;
+    font-size: 15px;
+    line-height: 1.5;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+}
+
+@media (max-width: 899px) and (min-width: 768px) {
+  .finish-gallery:has(#medal-ribbon-panel) .finish-gallery-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 767px) {
+  .finish-gallery:has(#medal-ribbon-panel) .finish-gallery-tablist,
+  .finish-gallery:has(#medal-ribbon-panel) .finish-gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px 12px;
+  }
+  .finish-gallery:has(#medal-ribbon-panel) .finish-gallery-tab {
+    min-width: 0;
+    line-height: 1.45;
+  }
+  .finish-gallery:has(#medal-ribbon-panel) .finish-gallery-subheading p {
+    line-height: 1.65;
+  }
+  .finish-gallery:has(#medal-ribbon-panel) .finish-gallery-card figcaption {
+    font-size: 14px;
+  }
+}
+
 .finish-gallery .finish-gallery-grid[data-image-scale="top-aligned"] .finish-gallery-media {
   aspect-ratio: 20 / 13;
 }

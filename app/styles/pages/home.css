@@ -1276,6 +1276,24 @@
   padding: 22px;
 }
 
+body:has(main > .hero) .how-visual .process-flow {
+  border-color: transparent;
+  background: none;
+  box-shadow: none;
+}
+
+body:has(main > .hero) .how-visual .process-flow::before,
+body:has(main > .hero) .how-visual .process-flow::after {
+  display: none;
+}
+
+.home-buying-guide-date {
+  margin-bottom: 11px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
 .home-buying-guide-category {
   margin-bottom: 11px;
   color: #9b7800;

@@ -10,8 +10,10 @@ const CONTENT_LAST_MODIFIED = new Date("2026-08-22T00:00:00.000Z");
 
 const getArticleLastModified = (article) => {
   const value = article.dateModified || article.datePublished;
-  const date = value ? new Date(`${value}T00:00:00.000Z`) : CONTENT_LAST_MODIFIED;
-  return Number.isNaN(date.getTime()) ? CONTENT_LAST_MODIFIED : date;
+  // An undated article must not inherit an unrelated site's fallback date.
+  if (!value) return undefined;
+  const date = new Date(`${value}T00:00:00.000Z`);
+  return Number.isNaN(date.getTime()) ? undefined : date;
 };
 
 const staticPages = [

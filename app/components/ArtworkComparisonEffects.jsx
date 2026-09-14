@@ -9,7 +9,8 @@ export default function ArtworkComparisonEffects() {
   const pathname = usePathname();
 
   useEffect(() => {
-    const comparisons = Array.from(document.querySelectorAll("[data-artwork-comparison]"));
+    const comparisons = Array.from(document.querySelectorAll("[data-artwork-comparison]"))
+      .filter((element) => !element.closest("#artwork-to-finished-medal"));
     const cleanups = comparisons.map((comparison) => {
       const handle = comparison.querySelector('[role="slider"]');
       const artworkImage = comparison.querySelector('[data-comparison-image="artwork"]');

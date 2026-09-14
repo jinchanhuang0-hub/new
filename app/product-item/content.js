@@ -1,4 +1,5 @@
 import StaticPage from "../components/StaticPage";
+import { halloweenProducts } from "./halloweenProducts";
 import { footerHtml } from "../components/footerHtml";
 import { getProductPath } from "../lib/siteRoutes";
 import { compareProductEntriesBySkuDesc } from "../lib/productSorting";
@@ -10,6 +11,7 @@ import {
 
 
 export const productItems = {
+  ...halloweenProducts,
   "uv-printed-masquerade-day-lapel-pin": {
     title: "UV Printed Masquerade Day Lapel Pin",
     image: "assets/images/type-pins-uv-printed-masquerade-day.png",
@@ -3375,6 +3377,7 @@ const getProductSearchText = (item) => [
 const includesAny = (text, terms) => terms.some((term) => text.includes(term));
 
 const getCustomSolutionProfile = (item) => {
+  if (item.specifications) return item.specifications;
   const productType = item.quoteProduct || item.categoryLabel;
   const profile = {
     ...DEFAULT_CUSTOM_SOLUTION_PROFILE,

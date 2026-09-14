@@ -23,3 +23,12 @@ uccrafts-audit-*/
 console.log*
 seo-shizhan-mima-5th-page-md-patch/
 uccrafts-com-disavow-from-csv-2026-07-16.txt
+
+# Local diagnostics and one-off maintenance helpers.
+.learnings/
+blog-text-align-check.cjs
+scripts/align-medal-comparison.py
+public/assets/images/pin-artwork-comparison/alignment-holdout-residuals.png
+public/assets/images/pin-artwork-comparison/alignment-overlay-50.png
+public/assets/images/pin-artwork-comparison/alignment-report.json
+{console.error(e)

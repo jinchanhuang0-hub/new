@@ -1,0 +1,15 @@
+export const medalArtworkComparison = {
+  id: "artwork-to-finished-medal",
+  titleId: "medal-artwork-comparison-title",
+  kicker: "FROM ARTWORK TO FINISHED MEDAL",
+  title: "See your medal design take shape.",
+  description: "Compare the artwork with the finished medal, from the overall shape and lettering to its color, texture and dimensional details.",
+  artworkImage: "/assets/images/medal-artwork-comparison/medal-artwork-aligned.webp",
+  finishedImage: "/assets/images/medal-artwork-comparison/medal-finished-aligned.webp",
+  artworkAlt: "Artwork for a rectangular medal with a tower, castle, runner and event lettering",
+  finishedAlt: "Finished rectangular medal with colorful details, a gold-tone border and a dark ribbon",
+  finishedLabel: "FINISHED MEDAL",
+  finishedNoun: "finished medal",
+  imageWidth: 1000,
+  imageHeight: 1250,
+};
