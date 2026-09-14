@@ -190,6 +190,18 @@
   box-shadow: 0 32px 67px rgba(11, 47, 99, 0.14);
 }
 
+.blog-feature-card[href="/blog/firefighter-challenge-coins-anniversary-guide"] {
+  background:
+    radial-gradient(circle at 88% 12%, rgba(243, 198, 0, 0.18), transparent 34%),
+    linear-gradient(145deg, #ffffff 0%, #f3f7fc 100%);
+}
+
+.blog-feature-card[href="/blog/firefighter-challenge-coins-anniversary-guide"] .blog-feature-body {
+  justify-content: flex-end;
+  min-height: 360px;
+  padding: 28px;
+}
+
 .blog-feature-media {
   position: relative;
   display: block;
@@ -509,6 +521,11 @@
   .blog-feature-body {
     gap: 10px;
     padding: 14px;
+  }
+
+  .blog-feature-card[href="/blog/firefighter-challenge-coins-anniversary-guide"] .blog-feature-body {
+    min-height: 300px;
+    padding: 22px;
   }
 
   .blog-feature-card h2 {

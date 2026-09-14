@@ -330,6 +330,17 @@ const withBlogArticleDefaults = (article) => {
 export const buildBlogAuthorSchema = () => ({ ...DEFAULT_BLOG_AUTHOR_SCHEMA });
 
 const blogArticleData = {
+  "firefighter-challenge-coins-anniversary-guide": {
+    title: "Firefighter Challenge Coins for Department Anniversaries",
+    headline: "Firefighter Challenge Coins: Planning a Department Anniversary",
+    description:
+      "Plan custom firefighter challenge coins for a department anniversary. Compare designs, recipient groups, packaging, proof checks and delivery requirements.",
+    author: "Sunny Huang",
+    authorType: "Person",
+    datePublished: "2026-09-14",
+    dateModified: "2026-09-14",
+    schemaType: "BlogPosting",
+  },
   "custom-baseball-trading-pins-team-ordering-guide": {
     title: "Custom Baseball Trading Pins: A Team Ordering Guide",
     headline: "Custom Baseball Trading Pins: A Team Ordering Guide",

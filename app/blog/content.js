@@ -15,6 +15,7 @@ import { christmasGiftProposalsDistributorsArticleHtml } from "./christmasGiftPr
 import { customBaseballTradingPinsTeamOrderingGuideArticleHtml } from "./customBaseballTradingPinsTeamOrderingGuide";
 import { halloweenEnamelPinsArticleHtml } from "./halloweenEnamelPins";
 import { embroideredPatchesNoMinimumArticleHtml } from "./embroideredPatchesNoMinimum";
+import { firefighterChallengeCoinsAnniversaryGuideArticleHtml } from "./firefighterChallengeCoinsAnniversaryGuide";
 
 
 export const metadata = {
@@ -51,6 +52,14 @@ export const blogHtml = String.raw`
           <button type="button" data-blog-category="Uncategorized">Uncategorized</button>
         </div>
         <div class="blog-card-grid">
+          <a class="blog-feature-card" href="/blog/firefighter-challenge-coins-anniversary-guide" data-blog-category="Custom Coins" aria-label="Read Firefighter Challenge Coins: Planning a Department Anniversary">
+            <div class="blog-feature-body">
+              <div class="blog-feature-meta"><span>Custom Coins</span><span>Anniversary Planning</span></div>
+              <h2>Firefighter Challenge Coins: Planning a Department Anniversary</h2>
+              <p>Plan a department anniversary coin order around recipient groups, design versions, proof approval, packaging and the date the coins need to arrive.</p>
+              <span class="blog-feature-link">Read More</span>
+            </div>
+          </a>
           <a class="blog-feature-card" href="/blog/custom-embroidered-patches-no-minimum" data-card-image-fit="full" data-blog-category="Patches" aria-label="Read Custom Embroidered Patches with No Minimum: A Pilot Order Guide">
             <img src="/assets/images/embroidered-patches-pilot-order.webp" width="1600" height="900" alt="Embroidered patch samples beside a navy uniform shirt and charcoal jacket">
             <div class="blog-feature-body">
@@ -320,6 +329,7 @@ export const blogHtml = String.raw`
     ${customBaseballTradingPinsTeamOrderingGuideArticleHtml}
     ${halloweenEnamelPinsArticleHtml}
     ${embroideredPatchesNoMinimumArticleHtml}
+    ${firefighterChallengeCoinsAnniversaryGuideArticleHtml}
     <article id="military-challenge-coin-traditions" class="section blog-article-section">
       <div class="blog-article-shell">
         <aside class="blog-article-toc" aria-label="Article contents">
