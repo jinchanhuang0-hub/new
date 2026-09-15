@@ -132,42 +132,42 @@ const html = String.raw`
           <a class="product-card home-product-card" href="/products/custom-enamel-pins" aria-label="View Custom Enamel Pins details">
             <img src="assets/images/home-lapel-pins-cat.jpg" alt="Custom lapel pin with cat and colorful umbrella">
             <div class="body">
-              <h3>Lapel Pins</h3>
+              <h3>Custom Lapel Pins</h3>
               <p>Compare soft enamel, hard enamel and printed pins, with custom shapes, plating and attachments.</p>
             </div>
           </a>
           <a class="product-card home-product-card" href="/products/custom-medals" aria-label="View Custom Medals details">
             <img src="assets/images/home-medals-floral.webp" alt="Custom medal with floral enamel and ribbon">
             <div class="body">
-              <h3>Medals</h3>
+              <h3>Custom Medals</h3>
               <p>Create event and recognition medals with custom artwork, finishes, ribbons and packaging.</p>
             </div>
           </a>
           <a class="product-card home-product-card" href="/products/custom-challenge-coins" aria-label="View Challenge Coins details">
             <img src="assets/images/home-challenge-coins-police.jpg" alt="Custom challenge coins with police emblems">
             <div class="body">
-              <h3>Challenge Coins</h3>
+              <h3>Custom Challenge Coins</h3>
               <p>Explore custom shapes, relief details and finishes for commemorative and recognition projects.</p>
             </div>
           </a>
           <a class="product-card home-product-card" href="/products/custom-metal-keychains" aria-label="View Custom Keychains details">
             <img src="assets/images/home-keychains-charms.jpg" alt="Custom metal keychain with enamel charms">
             <div class="body">
-              <h3>Keychains</h3>
+              <h3>Custom Keychains</h3>
               <p>A practical everyday gift that keeps your brand close at hand.</p>
             </div>
           </a>
           <a class="product-card home-product-card" href="/products/custom-belt-buckles" aria-label="View Custom Belt Buckles details">
             <img src="assets/images/home-belt-buckles-arizona.jpg" alt="Custom antique belt buckle with Arizona design">
             <div class="body">
-              <h3>Belt Buckles</h3>
+              <h3>Custom Belt Buckles</h3>
               <p>A bold statement piece that turns custom detail into wearable style.</p>
             </div>
           </a>
           <a class="product-card home-product-card" href="/products/custom-golf-accessories" aria-label="View Custom Golf Ball Markers details">
             <img src="assets/images/home-golf-ball-marker.jpg" alt="Custom golf ball marker and divot tool">
             <div class="body">
-              <h3>Golf Ball Markers</h3>
+              <h3>Custom Golf Ball Markers</h3>
               <p>A refined golf accessory that adds personality to every round.</p>
             </div>
           </a>
