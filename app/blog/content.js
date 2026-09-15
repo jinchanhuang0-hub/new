@@ -16,6 +16,7 @@ import { customBaseballTradingPinsTeamOrderingGuideArticleHtml } from "./customB
 import { halloweenEnamelPinsArticleHtml } from "./halloweenEnamelPins";
 import { embroideredPatchesNoMinimumArticleHtml } from "./embroideredPatchesNoMinimum";
 import { firefighterChallengeCoinsAnniversaryGuideArticleHtml } from "./firefighterChallengeCoinsAnniversaryGuide";
+import { customTurkeyTrotMedalsGuideArticleHtml } from "./customTurkeyTrotMedalsGuide";
 
 
 export const metadata = {
@@ -52,6 +53,15 @@ export const blogHtml = String.raw`
           <button type="button" data-blog-category="Uncategorized">Uncategorized</button>
         </div>
         <div class="blog-card-grid">
+          <a class="blog-feature-card" href="/blog/custom-turkey-trot-medals-guide" data-blog-category="Custom Medals,Holidays" aria-label="Read Custom Turkey Trot Medals: A Planning Guide for Race Directors">
+            <img src="/assets/images/custom-turkey-trot-medals-guide.webp" width="1600" height="900" alt="Turkey Trot medal concepts with navy and orange ribbons">
+            <div class="blog-feature-body">
+              <div class="blog-feature-meta"><span>Custom Medals</span><span>Holidays</span></div>
+              <h2>Custom Turkey Trot Medals: A Planning Guide for Race Directors</h2>
+              <p>Plan custom turkey trot medals for your 5K and kids’ run. Compare medal versions, sponsor logo placement, artwork approval and delivery checkpoints.</p>
+              <span class="blog-feature-link">Read More</span>
+            </div>
+          </a>
           <a class="blog-feature-card" href="/blog/firefighter-challenge-coins-anniversary-guide" data-blog-category="Custom Coins" aria-label="Read Firefighter Challenge Coins: Planning a Department Anniversary">
             <img src="/assets/images/firefighter-anniversary-challenge-coins.webp" width="1600" height="900" alt="Firefighters approaching an emergency scene with firefighter challenge coin front and back designs">
             <div class="blog-feature-body">
@@ -331,6 +341,7 @@ export const blogHtml = String.raw`
     ${halloweenEnamelPinsArticleHtml}
     ${embroideredPatchesNoMinimumArticleHtml}
     ${firefighterChallengeCoinsAnniversaryGuideArticleHtml}
+    ${customTurkeyTrotMedalsGuideArticleHtml}
     <article id="military-challenge-coin-traditions" class="section blog-article-section">
       <div class="blog-article-shell">
         <aside class="blog-article-toc" aria-label="Article contents">
