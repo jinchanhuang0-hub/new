@@ -330,40 +330,6 @@ const withBlogArticleDefaults = (article) => {
 export const buildBlogAuthorSchema = () => ({ ...DEFAULT_BLOG_AUTHOR_SCHEMA });
 
 const blogArticleData = {
-  "custom-turkey-trot-medals-guide": {
-    title: "Custom Turkey Trot Medals: Race Director Planning Guide",
-    headline: "Custom Turkey Trot Medals: A Planning Guide for Race Directors",
-    description:
-      "Plan custom turkey trot medals for your 5K and kids’ run. Compare medal versions, sponsor logo placement, artwork approval and delivery checkpoints.",
-    author: "Sunny Huang",
-    authorType: "Person",
-    datePublished: "2026-09-15",
-    dateModified: "2026-09-15",
-    schemaType: "BlogPosting",
-    hideFooterInquiry: true,
-    faq: [
-      {
-        question: "Can a small community race order custom medals?",
-        answer:
-          "Yes. Unique Pin offers custom medals with no minimum order quantity. For designs requiring a custom mold, smaller orders typically carry a higher tooling cost per medal. Share your quantities and specifications for a quote.",
-      },
-      {
-        question: "Can we start with an event logo or a sketch?",
-        answer:
-          "Yes. Unique Pin provides free design assistance and a digital proof. Include event wording, race categories, sponsor requirements, and ribbon preferences so the proposed design reflects the order.",
-      },
-      {
-        question: "Can we request a physical sample?",
-        answer:
-          "A physical sample can be arranged. Specify whether you also need the proposed ribbon and packaging included; sample costs and lead time depend on the requirements.",
-      },
-      {
-        question: "When should we order Turkey Trot medals?",
-        answer:
-          "Begin when your event requirements are clear enough to discuss. Agree on a schedule working backward from the required arrival date, including approvals, any sample review, production, and shipping.",
-      },
-    ],
-  },
   "firefighter-challenge-coins-anniversary-guide": {
     title: "Firefighter Challenge Coins for Department Anniversaries",
     headline: "Firefighter Challenge Coins: Planning a Department Anniversary",

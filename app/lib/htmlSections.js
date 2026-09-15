@@ -575,19 +575,12 @@ export const buildBlogArticleHtml = (html, articleSlug, articleMeta = {}) => {
     (_, className) => `class="${className.includes("is-active") ? className : `${className} is-active`}"`,
   ), articleMeta);
 
-  const footerHtml = articleMeta.hideFooterInquiry
-    ? shell.afterMain.replace(
-      /<div class="container footer-quote">[\s\S]*?<\/form>\s*<\/div>/,
-      "",
-    )
-    : shell.afterMain;
-
   const afterMain = articleMeta.inquiryHeading
-    ? footerHtml.replace(
+    ? shell.afterMain.replace(
       "<h2>Ready to Start Your Custom Metal Gift Project?</h2>",
       `<h2>${articleMeta.inquiryHeading}</h2>`,
     )
-    : footerHtml;
+    : shell.afterMain;
 
   return enhanceBlogArticleImages(normalizeBlogArticleLinks(`${shell.beforeMain}<main>${article}</main>${afterMain}`));
 };
