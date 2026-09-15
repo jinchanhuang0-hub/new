@@ -505,8 +505,7 @@
 
 #custom-turkey-trot-medals-guide .turkey-trot-ribbon-versions-image img,
 #custom-turkey-trot-medals-guide .turkey-trot-sponsor-placement-image img {
-  transform: scale(1.12);
-  transform-origin: center;
+  transform: none;
 }
 
 
