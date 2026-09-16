@@ -330,6 +330,18 @@ const withBlogArticleDefaults = (article) => {
 export const buildBlogAuthorSchema = () => ({ ...DEFAULT_BLOG_AUTHOR_SCHEMA });
 
 const blogArticleData = {
+  "custom-western-belt-buckles-women-retail-guide": {
+    title: "Custom Western Belt Buckles for Women: Retail Buying Guide",
+    headline: "Custom Western Belt Buckles for Women: A Retail Buying Guide",
+    description: "Plan a custom western belt buckle collection for women. Compare belt fit, finish options, sample checks, packaging and reorder requirements before buying.",
+    author: "Sunny Huang",
+    authorType: "Person",
+    datePublished: "2026-09-16",
+    dateModified: "2026-09-16",
+    schemaType: "BlogPosting",
+    image: "/assets/images/custom-western-belt-buckles-women-collection.webp",
+    hideFooterInquiry: true,
+  },
   "custom-turkey-trot-medals-guide": {
     title: "Custom Turkey Trot Medals: Race Director Planning Guide",
     headline: "Custom Turkey Trot Medals: A Planning Guide for Race Directors",

@@ -21,6 +21,7 @@ export async function generateMetadata({ params }) {
   const { slug } = await params;
   const article = blogArticles[slug];
   if (!article) return {};
+  const socialImage = article.image || article.socialImage;
 
   return {
     title: article.title,
@@ -35,15 +36,15 @@ export async function generateMetadata({ params }) {
       type: "article",
       publishedTime: article.datePublished,
       modifiedTime: article.dateModified || article.datePublished,
-      ...(article.image
-        ? { images: [{ url: `${SITE_URL}${article.image}` }] }
+      ...(socialImage
+        ? { images: [{ url: `${SITE_URL}${socialImage}` }] }
         : {}),
     },
     twitter: {
       card: "summary_large_image",
       title: article.title,
       description: article.description,
-      ...(article.image ? { images: [`${SITE_URL}${article.image}`] } : {}),
+      ...(socialImage ? { images: [`${SITE_URL}${socialImage}`] } : {}),
     },
   };
 }

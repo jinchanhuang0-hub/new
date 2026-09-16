@@ -16,6 +16,7 @@ import { customBaseballTradingPinsTeamOrderingGuideArticleHtml } from "./customB
 import { halloweenEnamelPinsArticleHtml } from "./halloweenEnamelPins";
 import { embroideredPatchesNoMinimumArticleHtml } from "./embroideredPatchesNoMinimum";
 import { firefighterChallengeCoinsAnniversaryGuideArticleHtml } from "./firefighterChallengeCoinsAnniversaryGuide";
+import { customWesternBeltBucklesWomenRetailGuideArticleHtml } from "./customWesternBeltBucklesWomenRetailGuide";
 import { customTurkeyTrotMedalsGuideArticleHtml } from "./customTurkeyTrotMedalsGuide";
 
 
@@ -53,6 +54,9 @@ export const blogHtml = String.raw`
           <button type="button" data-blog-category="Uncategorized">Uncategorized</button>
         </div>
         <div class="blog-card-grid">
+          <a class="blog-feature-card" href="/blog/custom-western-belt-buckles-women-retail-guide" data-blog-category="Custom Belt Buckle" aria-label="Read Custom Western Belt Buckles for Women: A Retail Buying Guide">
+            <img src="/assets/images/custom-western-belt-buckles-women-collection.webp" width="1600" height="900" alt="Three western belt buckle concepts arranged for a women’s retail collection">
+            <div class="blog-feature-body"><div class="blog-feature-meta"><span>Custom Belt Buckle</span></div><h2>Custom Western Belt Buckles for Women: A Retail Buying Guide</h2><p>Planning a women’s western buckle collection? Work through belt compatibility, style quantities, sample approval and packaging before placing your first order.</p><span class="blog-feature-link">Read More</span></div></a>
           <a class="blog-feature-card" href="/blog/custom-turkey-trot-medals-guide" data-blog-category="Custom Medals,Holidays" aria-label="Read Custom Turkey Trot Medals: A Planning Guide for Race Directors">
             <img src="/assets/images/custom-turkey-trot-medals-guide.webp" width="1600" height="900" alt="Turkey Trot medal concepts with navy and orange ribbons">
             <div class="blog-feature-body">
@@ -342,6 +346,7 @@ export const blogHtml = String.raw`
     ${embroideredPatchesNoMinimumArticleHtml}
     ${firefighterChallengeCoinsAnniversaryGuideArticleHtml}
     ${customTurkeyTrotMedalsGuideArticleHtml}
+    ${customWesternBeltBucklesWomenRetailGuideArticleHtml}
     <article id="military-challenge-coin-traditions" class="section blog-article-section">
       <div class="blog-article-shell">
         <aside class="blog-article-toc" aria-label="Article contents">

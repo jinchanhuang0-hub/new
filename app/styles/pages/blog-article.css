@@ -532,6 +532,68 @@
   }
 }
 
+#custom-western-belt-buckles-women-retail-guide .blog-table-wrap {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+#custom-western-belt-buckles-women-retail-guide .western-buckle-finish-image img,
+#custom-western-belt-buckles-women-retail-guide .western-buckle-sample-image img,
+#custom-western-belt-buckles-women-retail-guide .western-buckle-packaging-image img {
+  height: auto;
+  max-height: none;
+  aspect-ratio: 3 / 2;
+  object-fit: contain;
+}
+
+#custom-western-belt-buckles-women-retail-guide .blog-article-hero-image img {
+  height: auto;
+  max-height: none;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+}
+
+#custom-western-belt-buckles-women-retail-guide .blog-article-cta {
+  background: var(--navy);
+  border-left-color: var(--yellow);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 240px);
+}
+
+#custom-western-belt-buckles-women-retail-guide .blog-article-cta h2,
+#custom-western-belt-buckles-women-retail-guide .blog-article-cta p {
+  color: #fff;
+}
+
+#custom-western-belt-buckles-women-retail-guide .blog-cta-actions,
+#custom-western-belt-buckles-women-retail-guide .blog-article-cta .btn {
+  min-width: 0;
+}
+
+#custom-western-belt-buckles-women-retail-guide .blog-article-cta .btn {
+  min-height: 48px;
+  white-space: normal;
+  text-align: center;
+}
+
+#custom-western-belt-buckles-women-retail-guide a:focus-visible,
+#custom-western-belt-buckles-women-retail-guide summary:focus-visible,
+#custom-western-belt-buckles-women-retail-guide .blog-table-wrap:focus-visible {
+  outline: 3px solid var(--yellow);
+  outline-offset: 4px;
+}
+
+@media (max-width: 700px) {
+  #custom-western-belt-buckles-women-retail-guide .blog-article p {
+    text-align: left;
+    hyphens: none;
+  }
+
+  #custom-western-belt-buckles-women-retail-guide .blog-article-cta {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
 .blog-article-placeholder {
   overflow: hidden;
   border: 1px solid rgba(197, 211, 233, 0.8);
