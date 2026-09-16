@@ -154,6 +154,14 @@ export async function POST(request) {
     );
   }
 
+  const contentLength = Number(request.headers.get("content-length") || 0);
+  if (contentLength > 4 * 1024 * 1024 + 128 * 1024) {
+    return Response.json(
+      { message: "Attachments must total 4 MB or less. Please compress your files." },
+      { status: 413 },
+    );
+  }
+
   let formData;
   try {
     formData = await request.formData();
@@ -197,9 +205,20 @@ export async function POST(request) {
     );
   }
 
-  const upload = formData.get("artwork");
+  const uploads = formData.getAll("artwork").filter((upload) =>
+    upload && typeof upload === "object" && typeof upload.arrayBuffer === "function"
+    && (upload.name || upload.size > 0));
+  if (uploads.length > 3) {
+    return Response.json(
+      { message: "Please select no more than 3 files." },
+      { status: 400 },
+    );
+  }
+  if (uploads.reduce((total, upload) => total + upload.size, 0) > 4 * 1024 * 1024) {
+    return Response.json({ message: "Attachments must total 4 MB or less. Please compress your files." }, { status: 413 });
+  }
   const attachments = [];
-  if (upload && typeof upload === "object" && typeof upload.arrayBuffer === "function" && upload.size > 0) {
+  for (const upload of uploads) {
     if (upload.size > maxAttachmentBytes) {
       return Response.json(
         { message: "Uploaded file is larger than 10MB. Please send a smaller file." },

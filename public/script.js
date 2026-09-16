@@ -130,12 +130,61 @@ document.querySelectorAll("[data-review-carousel]").forEach((carousel) => {
   setReviewSlide(0);
 });
 
-document.querySelectorAll(".upload-box input[type='file']").forEach((input) => {
-  input.addEventListener("change", () => {
-    const label = input.closest(".upload-box")?.querySelector("span:last-child");
-    if (!label) return;
-    label.textContent = input.files?.[0]?.name || "Drag and drop a file here or click to choose";
+const artworkSelections = new WeakMap();
+const renderArtworkSelection = (input, files, message = "") => {
+  artworkSelections.set(input, files);
+  const transfer = new DataTransfer();
+  files.forEach((file) => transfer.items.add(file));
+  input.files = transfer.files;
+  input.setCustomValidity("");
+  input.removeAttribute("aria-invalid");
+  const status = input.form?.querySelector("#artwork-status");
+  if (!status) return;
+  status.replaceChildren();
+  const summary = document.createElement("span");
+  summary.textContent = message || (files.length ? files.length + " of 3 files selected" : "");
+  summary.style.color = message ? "#b42318" : "var(--navy)";
+  status.append(summary);
+  files.forEach((file, index) => {
+    const row = document.createElement("span");
+    row.style.cssText = "display:flex;align-items:center;gap:12px;justify-content:space-between;overflow-wrap:anywhere;";
+    const name = document.createElement("span");
+    name.textContent = file.name;
+    const remove = document.createElement("button");
+    remove.type = "button";
+    remove.textContent = "Remove";
+    remove.setAttribute("aria-label", "Remove " + file.name);
+    remove.style.cssText = "min-height:44px;flex-shrink:0;padding:8px;";
+    remove.addEventListener("click", () => {
+      renderArtworkSelection(input, files.filter((_, position) => position !== index));
+    });
+    row.append(name, remove);
+    status.append(row);
   });
+};
+document.addEventListener("change", (event) => {
+  const input = event.target;
+  if (!input.matches(".upload-box input[type='file']")) return;
+  const files = Array.from(input.files || []);
+  if (input.dataset.maxFiles) {
+    const previous = artworkSelections.get(input) || [];
+    const combined = [...previous];
+    files.forEach((file) => {
+      if (!combined.some((existing) => existing.name === file.name && existing.size === file.size && existing.lastModified === file.lastModified)) combined.push(file);
+    });
+    const maxFiles = Number(input.dataset.maxFiles);
+    if (combined.reduce((total, file) => total + file.size, 0) > 4 * 1024 * 1024) {
+      renderArtworkSelection(input, previous, "Attachments must total 4 MB or less. Please compress your files before adding them.");
+    } else if (combined.length > maxFiles) {
+      renderArtworkSelection(input, previous, "You can upload up to 3 files. Remove a file before adding more.");
+    } else renderArtworkSelection(input, combined);
+  } else {
+    const label = input.closest(".upload-box")?.querySelector("span:last-child");
+    if (label) label.textContent = files.map((file) => file.name).join(", ") || "Click to choose a file";
+  }
+});
+document.addEventListener("reset", (event) => {
+  event.target.querySelectorAll("input[type='file'][data-max-files]").forEach((input) => renderArtworkSelection(input, []));
 });
 
 document.querySelectorAll("[data-gallery]").forEach((gallery) => {

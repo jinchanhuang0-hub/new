@@ -101,10 +101,12 @@ const html = String.raw`
             <div class="form-field form-field-full">
               <label for="artwork">Upload Artwork for a Free Proof</label>
               <label class="upload-box" for="artwork">
-                <input id="artwork" type="file" name="artwork" accept=".jpg,.jpeg,.png,.pdf,.ai,.eps,.psd,.cdr" aria-label="Upload artwork">
+                <input id="artwork" type="file" name="artwork" multiple data-max-files="3" accept=".jpg,.jpeg,.png,.pdf,.ai,.eps,.psd,.cdr" aria-label="Upload artwork" aria-describedby="artwork-help artwork-status">
                 <span class="upload-icon" aria-hidden="true">&#8593;</span>
                 <span>Upload artwork or reference files for a free proof</span>
               </label>
+              <small id="artwork-help">Add up to 3 files, together or one at a time. Maximum 4 MB combined.</small>
+              <span id="artwork-status" aria-live="polite" style="overflow-wrap: anywhere;"></span>
             </div>
             <button class="btn btn-primary" type="submit">Get a Free Quote</button>
             <p class="form-commitment-note">We reply within 1 business day. Your artwork and project information are kept confidential.</p>
