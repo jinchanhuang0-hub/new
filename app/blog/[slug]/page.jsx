@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import BlogArticleRepair from "./BlogArticleRepair";
 import BlogInquiryEffects from "../../components/BlogInquiryEffects";
+import { buildRelatedBlogsHtml } from "./RelatedBlogs";
 import JsonLd from "../../components/JsonLd";
 import { blogHtml } from "../content";
 import { buildBlogArticleHtml } from "../../lib/htmlSections";
@@ -53,7 +54,9 @@ export default async function BlogArticlePage({ params }) {
   const { slug } = await params;
   const article = blogArticles[slug];
   if (!article) notFound();
-  const articleHtml = normalizeSiteHtml(buildBlogArticleHtml(blogHtml, slug, article));
+  const relatedBlogsHtml = buildRelatedBlogsHtml(blogHtml, slug);
+  const articleHtml = normalizeSiteHtml(buildBlogArticleHtml(blogHtml, slug, article))
+    .replace("</main>", `${relatedBlogsHtml}</main>`);
 
   return (
     <>
