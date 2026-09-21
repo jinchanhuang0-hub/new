@@ -989,13 +989,13 @@ const blogArticleData = {
     description:
       "Learn how custom challenge coins are made, from artwork and tooling to die-striking, finishing, color filling, quality inspection and shipment preparation.",
     datePublished: "2026-07-24",
-    dateModified: "2026-08-26",
+    dateModified: "2026-09-21",
     image: "/assets/images/blog-how-challenge-coins-made-card-v3.webp",
     faq: [
       {
         question: "How long does it take to manufacture challenge coins?",
         answer:
-          "Manufacturing time depends on artwork approval, mold complexity, quantity, finish, color work, packing method, and shipping route. Share the required delivery date at the first inquiry.",
+          "Manufacturing time depends on artwork approval, tooling complexity, quantity, finish, color work, packing method, and shipping route. Share the required delivery date at the first inquiry.",
       },
       {
         question: "What artwork files should I submit?",
@@ -1006,6 +1006,16 @@ const blogArticleData = {
         question: "Can both sides of a challenge coin be customized?",
         answer:
           "Yes. Many custom challenge coins use both front and back designs. The back side can include a motto, date, unit name, event name, serial number, QR code, or secondary logo.",
+      },
+      {
+        question: "What metals are challenge coins made from?",
+        answer:
+          "Common base metals include brass, iron and zinc alloy. The best choice depends on whether the design will be die-struck or die-cast, as well as its shape, relief depth, required weight and finish. Gold, silver, copper and black nickel often refer to plating rather than solid base metal.",
+      },
+      {
+        question: "What is the difference between die-struck and die-cast challenge coins?",
+        answer:
+          "Die-struck coins are formed by pressing engraved dies into a metal blank and are well suited to traditional shapes and crisp relief. Die-cast coins are formed in a casting mold and are often selected for deep 3D relief, cutouts and irregular shapes.",
       },
     ],
   },

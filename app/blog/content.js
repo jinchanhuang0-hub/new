@@ -1573,11 +1573,14 @@ export const blogHtml = String.raw`
         <aside class="blog-article-toc" aria-label="Article contents">
           <strong>In This Guide</strong>
           <nav>
+            <a href="#coin-production-overview">Process overview</a>
+            <a href="#coin-production-materials">Materials</a>
             <a href="#coin-production-design">Design</a>
             <a href="#coin-production-specifications">Specifications</a>
             <a href="#coin-production-proof">Digital proof</a>
             <a href="#coin-production-tooling">Tooling</a>
             <a href="#coin-production-forming">Forming</a>
+            <a href="#coin-factory-video">Factory video</a>
             <a href="#coin-production-finishing">Finishing</a>
             <a href="#coin-production-color">Plating and color</a>
             <a href="#coin-production-curing">Curing</a>
@@ -1594,13 +1597,45 @@ export const blogHtml = String.raw`
           <h1>How Are Custom Challenge Coins Made?</h1>
           <p><strong>The short answer:</strong> challenge coins are commonly produced by preparing the artwork, creating a die or mold, forming the metal blank, polishing, plating, adding enamel or other finishes when required, inspecting and packaging. The exact process varies with the design, material, relief and finish.</p>
           <p>Custom challenge coins are made through a controlled manufacturing process that turns a logo, badge, sketch, or idea into a finished metal coin. For buyers, the useful part is not only knowing the steps. It is knowing which details must be confirmed before tooling starts, because unclear artwork, weak relief, color mistakes, and late packaging changes can all affect the final order.</p>
-          <p>This guide explains the challenge coin manufacturing process from artwork preparation and digital proofing to tooling, die-striking or die-casting, finishing, color filling, final inspection, and shipment preparation. Each step has a practical effect on weight, surface detail, color clarity, delivery planning, and the way the finished coin is presented to the recipient.</p>
           <p>For related buying decisions, review our <a href="/blog/2d-vs-3d-challenge-coins">2D vs 3D challenge coin comparison</a>, <a href="/products/custom-challenge-coins">custom challenge coins</a> page, <a href="/blog/custom-metal-crafts-guide">custom metal crafts guide</a>, and <a href="/blog/custom-medals-vs-challenge-coins">custom medals vs challenge coins</a> comparison.</p>
           <figure class="blog-article-image blog-article-hero-image">
             <img src="/assets/images/blog-how-challenge-coins-made-hero.webp" width="1600" height="759" alt="three custom challenge coins with blue red and gold enamel finishes">
             <figcaption>Finished custom challenge coins can combine raised metal relief, enamel color and antique finishes.</figcaption>
           </figure>
         </header>
+
+        <h2 id="coin-production-overview">How Are Challenge Coins Made?</h2>
+        <p>Custom challenge coins move through ten main production stages, but the exact forming method depends on the base metal, shape, relief depth and approved artwork.</p>
+        <div class="blog-table-wrap" tabindex="0" role="region" aria-label="Ten-stage challenge coin manufacturing overview">
+          <table class="blog-table">
+            <thead><tr><th scope="col">Stage</th><th scope="col">What happens</th><th scope="col">What the buyer confirms</th></tr></thead>
+            <tbody>
+              <tr><td>1. Design submission</td><td>Logo, text or reference artwork is reviewed</td><td>Intended use and required details</td></tr>
+              <tr><td>2. Specifications</td><td>Size, thickness, shape and quantity are confirmed</td><td>Final dimensions and order requirements</td></tr>
+              <tr><td>3. Digital proof</td><td>Production artwork defines raised, recessed and colored areas</td><td>Spelling, layout, colors and alignment</td></tr>
+              <tr><td>4. Tooling</td><td>An engraved die or casting mold is prepared</td><td>Relief depth and manufacturability</td></tr>
+              <tr><td>5. Metal forming</td><td>The coin is die-struck or die-cast</td><td>Base metal and production method</td></tr>
+              <tr><td>6. Trimming and polishing</td><td>Rough edges and surface marks are removed</td><td>Edge and surface requirements</td></tr>
+              <tr><td>7. Plating and color</td><td>Metal finish, enamel or printing is applied</td><td>Finish and Pantone references</td></tr>
+              <tr><td>8. Curing and final polishing</td><td>Color is hardened and the surface is finished</td><td>Expected surface appearance</td></tr>
+              <tr><td>9. Quality inspection</td><td>Size, alignment, color and finish are checked</td><td>Approved proof and QC requirements</td></tr>
+              <tr><td>10. Packaging and shipping</td><td>Coins are packed for distribution or presentation</td><td>Packaging, labels and deadline</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 id="coin-production-materials">What Are Challenge Coins Made Of?</h2>
+        <p>Most custom challenge coins use a base metal such as brass, iron or zinc alloy. Brass and iron are commonly associated with die-struck designs, while zinc alloy is often die-cast for deep 3D relief, cutouts and custom shapes. Gold, silver, copper and black nickel usually describe the plated finish rather than the coin&rsquo;s solid base metal.</p>
+        <div class="blog-table-wrap" tabindex="0" role="region" aria-label="Challenge coin base metal comparison">
+          <table class="blog-table">
+            <thead><tr><th scope="col">Base metal</th><th scope="col">Typical process</th><th scope="col">Suitable for</th><th scope="col">Buyer consideration</th></tr></thead>
+            <tbody>
+              <tr><td>Brass</td><td>Die striking</td><td>Traditional shapes, crisp relief and a heavier feel</td><td>Usually increases weight and material cost</td></tr>
+              <tr><td>Iron</td><td>Stamping or die striking</td><td>Straightforward 2D designs and cost-sensitive orders</td><td>Confirm plating and corrosion protection</td></tr>
+              <tr><td>Zinc alloy</td><td>Die casting</td><td>Deep 3D relief, cutouts and irregular shapes</td><td>Suitable for complex forms and custom outlines</td></tr>
+            </tbody>
+          </table>
+        </div>
 
         <h2 id="coin-production-design">Step 1 - Submit Your Design or Idea</h2>
         <p>The process starts when the customer sends a logo, badge, sketch, text, reference image, or rough concept. Some buyers already have a clean vector file. Others begin with a screenshot, department emblem, event name, or hand-drawn idea that needs to be rebuilt before production.</p>
@@ -1622,34 +1657,32 @@ export const blogHtml = String.raw`
         <p>If a design includes fine badge details, curved text, gradients, QR codes, or photo-like artwork, the manufacturer should explain whether color filling, printing, 2D relief, or 3D relief is more practical.</p>
         <p>A useful production proof should also show which areas are raised metal, which areas are recessed, and where enamel or printing will be applied. This helps the buyer approve the real manufacturing structure instead of looking only at a flat graphic image.</p>
 
-        <h2 id="coin-production-tooling">Step 4 - Create the Mold</h2>
-        <p>Once the digital proof is approved, the factory prepares the production tooling. The mold or die determines the raised and recessed metal areas of the coin. For detailed designs, tooling accuracy is critical because it controls the final relief, texture, and overall shape.</p>
+        <h2 id="coin-production-tooling">Step 4 &ndash; Create the Die or Casting Mold</h2>
+        <p>Once the digital proof is approved, the factory prepares the production tooling. Die-struck coins require engraved production dies, while die-cast coins require a casting mold. The material, shape, relief depth and structure determine which tooling is appropriate.</p>
         <p>Tooling development may involve CNC engraving or other precision equipment. Complex shapes, deep 3D relief, cutout areas, multiple levels, or detailed artwork take more time to convert into a workable production structure.</p>
-        <p>Design changes after tooling starts may require adjustment or a new mold, which can add cost and delay the schedule. This is why proof review should be treated as a production decision, not only a visual check.</p>
+        <p>Structural changes after tooling starts may require an adjustment or replacement tool, which can add cost and delay the schedule. This is why proof review should be treated as a production decision, not only a visual check.</p>
         <p>For designs with deep relief or very small lettering, the tooling review should focus on practical readability. A coin may look dramatic in a rendering, but the die still needs to allow clean metal flow, stable edges, and details that can survive polishing and surface finishing.</p>
         <figure class="blog-article-image">
-          <img src="/assets/images/blog-challenge-coin-mold-making.webp" width="1200" height="900" loading="lazy" decoding="async" alt="challenge coin mold detail being checked before mass production">
-          <figcaption>Mold accuracy controls the final relief, lettering, recessed areas and edge detail of a custom challenge coin.</figcaption>
+          <img src="/assets/images/blog-challenge-coin-mold-making.webp" width="1200" height="900" loading="lazy" decoding="async" alt="technician inspecting engraved challenge coin production tooling">
+          <figcaption>Production tooling controls the final relief, lettering, recessed areas and edge detail of a custom challenge coin.</figcaption>
         </figure>
 
-        <h2 id="coin-production-forming">Step 5 - Die-Striking or Die-Casting</h2>
+        <h2 id="coin-production-forming">Step 5 &ndash; Form the Coin: Die Striking or Die Casting</h2>
         <p>Challenge coins are commonly produced by die-striking or die-casting. The right method depends on the design, metal material, shape, relief depth, budget, and how the coin needs to feel in hand.</p>
-        <p>Common challenge coin materials include iron, brass and zinc alloy: iron is often selected for straightforward stamped 2D designs and cost-sensitive projects; brass is denser and suits crisp die-struck detail; zinc alloy is typically die-cast when a design needs deep 3D relief, cutouts or a custom outline. The material should be confirmed with the artwork and finish, because it affects the manufacturing method, perceived weight, detail limits and surface result.</p>
-        <p>Die-struck challenge coins are made by pressing the design into metal using a die. This method is suitable for traditional coins with clean relief, strong metal detail, and a premium hand feel. It works well for military coins, police coins, corporate recognition coins, and classic emblem designs.</p>
-        <p>Die-cast challenge coins are made by injecting molten metal into a casting tool. This method is useful for complex shapes, deep 3D relief, cutout designs, and irregular outlines. It gives more flexibility for sculpted details, but the final effect still depends on tooling quality and finishing.</p>
-        <p>The choice between die-striking and die-casting affects detail, cost, texture, production time, and final appearance, so it should be decided before pricing is treated as final.</p>
-        <p>In factory review, die-striking is often preferred when the buyer wants a classic coin structure with crisp borders and strong raised metal lines. Die-casting is often considered when the coin shape is not round, when the design includes cutout areas, or when the 3D relief is too deep for a simpler stamped structure.</p>
+        <p>Die-struck challenge coins are formed by pressing engraved dies into a metal blank. This method is suitable for traditional shapes with clean relief and crisp metal detail.</p>
+        <p>Die-cast challenge coins are formed by injecting molten metal into a casting mold. Zinc alloy is often selected when a design needs deep 3D relief, cutouts or an irregular outline. The final effect still depends on the artwork, tooling and finishing.</p>
         <figure class="blog-article-image">
           <img src="/assets/images/blog-challenge-coin-die-striking.webp" width="1200" height="1177" loading="lazy" decoding="async" alt="die striking equipment used in custom challenge coin production">
           <figcaption>Die-striking uses pressure and tooling to form raised and recessed coin details before finishing.</figcaption>
         </figure>
 
-        <section class="blog-article-cta">
-          <div class="blog-cta-copy">
-            <h2>Need Help Reviewing a Challenge Coin Design?</h2>
-            <p>Send your logo, quantity, size, finish preference and deadline. We can review the best production method before quoting.</p>
+        <section aria-labelledby="coin-factory-video">
+          <h2 id="coin-factory-video">Inside Our Challenge Coin Factory</h2>
+          <p>Watch a real production video from Unique Pin&rsquo;s factory. The footage provides a closer look at our metal craft manufacturing environment and complements the step-by-step process explained in this guide.</p>
+          <div class="challenge-coin-factory-video">
+            <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F897164166385988%3Flocale%3Dzh_CN&amp;show_text=false&amp;width=560" title="Real challenge coin factory production video from Unique Pin" width="560" height="315" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p>If the video is unavailable in your region or browser, <a href="https://www.facebook.com/reel/897164166385988?locale=zh_CN" target="_blank" rel="noopener noreferrer">watch it on Facebook</a>.</p>
           </div>
-          <div class="blog-cta-actions"><a class="btn btn-yellow" href="/contact">Send Your Requirements</a><a class="btn btn-primary" href="/products/custom-challenge-coins">View Challenge Coin Options</a></div>
         </section>
 
         <h2 id="coin-production-finishing">Step 6 - Trimming, Polishing and Edge Finishing</h2>
@@ -1710,7 +1743,7 @@ export const blogHtml = String.raw`
 
         <h2 id="coin-production-faq">Frequently Asked Questions</h2>
         <h3>How long does it take to manufacture challenge coins?</h3>
-        <p>Manufacturing time depends on artwork approval, mold complexity, quantity, finish, color work, packing method, and shipping route. Share the required delivery date at the first inquiry.</p>
+        <p>Manufacturing time depends on artwork approval, tooling complexity, quantity, finish, color work, packing method, and shipping route. Share the required delivery date at the first inquiry.</p>
 
         <h3>What artwork files should I submit?</h3>
         <p>Vector files such as AI, PDF, EPS, or SVG are helpful, but a logo, sketch, reference image, or clear concept can also be used for initial review.</p>
@@ -1718,17 +1751,15 @@ export const blogHtml = String.raw`
         <h3>Can both sides of a challenge coin be customized?</h3>
         <p>Yes. Many custom challenge coins use both front and back designs. The back side can include a motto, date, unit name, event name, serial number, QR code, or secondary logo.</p>
 
+        <h3>What metals are challenge coins made from?</h3>
+        <p>Common base metals include brass, iron and zinc alloy. The best choice depends on whether the design will be die-struck or die-cast, as well as its shape, relief depth, required weight and finish. Gold, silver, copper and black nickel often refer to plating rather than solid base metal.</p>
+
+        <h3>What is the difference between die-struck and die-cast challenge coins?</h3>
+        <p>Die-struck coins are formed by pressing engraved dies into a metal blank and are well suited to traditional shapes and crisp relief. Die-cast coins are formed in a casting mold and are often selected for deep 3D relief, cutouts and irregular shapes.</p>
+
         <h2 id="coin-production-conclusion">Conclusion</h2>
-        <p>Custom challenge coins are made through a detailed process, from design submission and digital proofing to tooling, die-striking or die-casting, surface finishing, color work, polishing, inspection, packing, and shipment.</p>
         <p>The strongest orders usually start with clear artwork, confirmed specifications, a careful proof review, the right production method, and agreed packing details before mass production. Those decisions help the finished coins match the intended application instead of simply looking acceptable in a digital preview.</p>
 
-        <section class="blog-article-cta">
-          <div class="blog-cta-copy">
-            <h2>Ready to Make Custom Challenge Coins?</h2>
-            <p>Send your artwork and requirements to Unique Pin. We will review your design, recommend the right manufacturing process, and prepare a practical factory quotation.</p>
-          </div>
-      <div class="blog-cta-actions"><a class="btn btn-yellow" href="/contact">Get a Free Quote</a><a class="btn btn-primary" href="/products/custom-challenge-coins">View Challenge Coins</a></div>
-        </section>
       </div>
       </div>
     </article>
