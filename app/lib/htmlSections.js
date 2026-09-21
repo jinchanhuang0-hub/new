@@ -542,6 +542,7 @@ const addBlogArticleMeta = (articleHtml, articleMeta) => {
   const authorUrl = articleMeta?.authorUrl;
   const datePublished = articleMeta?.datePublished;
   const dateModified = articleMeta?.dateModified;
+  const hideModifiedDate = articleMeta?.hideModifiedDate;
   if (!author && !datePublished) return articleHtml;
 
   const authorMarkup = authorUrl ? `<a href="${authorUrl}">${author}</a>` : author;
@@ -553,7 +554,7 @@ const addBlogArticleMeta = (articleHtml, articleMeta) => {
   const metaItems = [
     author ? authorByline : "",
     datePublished ? `<time datetime="${datePublished}">${formatArticleDate(datePublished)}</time>` : "",
-    dateModified && dateModified !== datePublished
+    dateModified && dateModified !== datePublished && !hideModifiedDate
       ? `<time datetime="${dateModified}">Updated ${formatArticleDate(dateModified)}</time>`
       : "",
   ].filter(Boolean).join("");

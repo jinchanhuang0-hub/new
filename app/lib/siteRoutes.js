@@ -638,6 +638,7 @@ const blogArticleData = {
     authorType: "Person",
     datePublished: "2026-08-20",
     dateModified: "2026-09-21",
+    hideModifiedDate: true,
     image: "/assets/images/finisher-vs-placement-medals-og.webp",
     schemaType: "Article",
     faq: [

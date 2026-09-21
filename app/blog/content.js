@@ -2392,7 +2392,7 @@ export const blogHtml = String.raw`
             <img src="/assets/images/finisher-vs-placement-medals.webp" width="1672" height="941" fetchpriority="high" decoding="async" alt="Finisher medals and placement medals prepared for a race event">
             <figcaption>Finisher and placement medals prepared for race-day award distribution.</figcaption>
           </figure>
-          <p>Finisher medals are given to participants who complete an event, while placement medals recognize top finishers such as overall winners or age-group winners. Many races use both: finisher medals for every qualified participant and placement medals for competitive award categories.</p>
+          <p>Race organizers often need to recognize both eligible completion and competitive results. A clear medal structure helps participants understand each award and allows staff to calculate quantities, label inventory and manage race-day distribution.</p>
           <p>Start with eligibility, then calculate quantities and decide how each award will be identified and distributed. The comparison below separates completion, placement, age-group and participation awards.</p>
         </header>
 
