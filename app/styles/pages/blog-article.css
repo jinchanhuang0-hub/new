@@ -897,6 +897,24 @@
   line-height: 1.62;
 }
 
+#custom-metal-keychain-size-attachment-guide .keychain-size-planning-table {
+  min-width: 900px;
+}
+
+#custom-metal-keychain-size-attachment-guide .keychain-size-planning-table th:first-child,
+#custom-metal-keychain-size-attachment-guide .keychain-size-planning-table td:first-child {
+  width: 21%;
+}
+
+#custom-metal-keychain-size-attachment-guide .blog-article-meta time:nth-of-type(2) {
+  display: none;
+}
+
+#custom-metal-keychain-size-attachment-guide .keychain-size-planning-table-wrap:focus-visible {
+  outline: 3px solid var(--yellow);
+  outline-offset: 4px;
+}
+
 .blog-article-cta {
   margin-top: 68px;
   margin-bottom: 40px;

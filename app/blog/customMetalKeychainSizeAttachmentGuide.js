@@ -5,11 +5,11 @@ export const customMetalKeychainSizeAttachmentGuideArticleHtml = String.raw`
           <strong>In This Guide</strong>
           <nav>
             <a href="#quick-answer">Quick Answer</a>
+            <a href="#size-planning-ranges">Size Planning Ranges</a>
             <a href="#three-measurements">Three Measurements</a>
             <a href="#size-artwork-usability">Artwork and Usability</a>
             <a href="#thickness">Thickness by Construction</a>
-            <a href="#attachment-types">Attachment Types</a>
-            <a href="#attachment-comparison">Hardware Dimensions</a>
+            <a href="#attachment-types">Attachments and Hardware</a>
             <a href="#applications">Applications</a>
             <a href="#structural-risks">Structural Risks</a>
             <a href="#sample-checklist">Sample Checklist</a>
@@ -25,14 +25,36 @@ export const customMetalKeychainSizeAttachmentGuideArticleHtml = String.raw`
             <figure class="blog-article-image blog-article-hero-image blog-article-natural-image">
               <img src="/assets/images/custom-metal-keychain-size-attachment-guide.webp?v=20260817-2" width="1200" height="675" fetchpriority="high" decoding="async" alt="Custom metal keychains in different sizes with split ring chain and swivel hook attachments">
             </figure>
-            <p>Before ordering a custom metal keychain, confirm three separate measurements: the metal body's length and width, its thickness, and the overall length with hardware attached. This guide explains what to mark on the drawing and what to check on the assembled sample.</p>
+            <p>Before ordering a custom metal keychain, define how the metal body, hardware and completed assembly will be measured. This guide explains what buyers should record on the drawing, quotation and physical sample.</p>
             <p class="blog-category-prompt"><strong>Looking for finished styles or a project quote?</strong> Explore our <a href="/products/custom-metal-keychains">custom metal keychains</a>. This guide covers size, thickness and attachment specifications.</p>
           </header>
 
           <a id="quick-answer"></a>
           <h2>Quick Answer: How Do You Choose a Custom Metal Keychain Size?</h2>
-          <p>Specify three values separately: metal body length and width, body thickness, and overall finished length with hardware. There is no single standard keychain size that fits every metal material, construction or use. Choose dimensions that preserve artwork clarity, structural support and practical weight, then confirm the connection point, selected hardware, packaging clearance and assembled size on the approved drawing and physical sample.</p>
+          <p>Specify three values separately: metal body length and width, body thickness, and overall finished length with hardware. Use the planning ranges below for early comparison, then choose dimensions that preserve artwork clarity, structural support and practical weight. Confirm the connection point, selected hardware, packaging clearance and assembled size on the approved drawing and physical sample.</p>
 
+          <a id="size-planning-ranges"></a>
+          <h2>Practical Metal Keychain Size Planning Ranges</h2>
+          <p>Custom metal keychains can be made in many sizes, but the metal body should be measured separately from the complete assembly. The ranges below are practical starting points based on sizes publicly offered by custom keychain suppliers. They are not universal industry standards. Final dimensions should follow the artwork, material, structure, hardware and intended use.</p>
+          <div class="blog-table-wrap keychain-size-planning-table-wrap" tabindex="0" role="region" aria-label="Scrollable metal keychain size planning ranges">
+            <table class="blog-table keychain-size-planning-table">
+              <thead>
+                <tr>
+                  <th scope="col">Design type</th>
+                  <th scope="col">Body size planning range</th>
+                  <th scope="col">Thickness reference</th>
+                  <th scope="col">Check before production</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Compact logo keychain</td><td>19–25 mm (0.75–1 in)</td><td>Often discussed around 1.5 mm for a simple flat enamel construction</td><td>Logo clarity, small details and connection-point strength</td></tr>
+                <tr><td>Standard promotional keychain</td><td>32–38 mm (1.25–1.5 in)</td><td>Often discussed around 1.5–2.0 mm for flat stamped or enamel construction</td><td>Text readability, finished weight, hanging direction and packaging</td></tr>
+                <tr><td>Large or detailed keychain</td><td>44–51 mm (1.75–2 in)</td><td>Confirm from the artwork, material and relief</td><td>Weight, narrow metal bridges, relief depth and hardware balance</td></tr>
+                <tr><td>Oversized display keychain</td><td>57–76 mm (2.25–3 in)</td><td>Confirm from the structure and intended use</td><td>Carry comfort, package clearance, attachment load and shipping protection</td></tr>
+                <tr><td>3D or functional keychain</td><td>Determined by function and structure</td><td>Determined by body thickness, maximum relief height and required clearances</td><td>Relief height, moving parts, opening dimensions, balance and physical sample</td></tr>
+              </tbody>
+            </table>
+          </div>
           <a id="three-measurements"></a>
           <h2>Understand the Three Key Measurements</h2>
           <p>When requesting a quote, define how every measurement is taken. For illustration only, two suppliers may both specify 50 mm, but one may mean the metal body while the other means the complete product from the top of the ring to the lowest point. Those are different purchasing specifications and should not be compared until the measurement method is clear.</p>
@@ -94,7 +116,7 @@ export const customMetalKeychainSizeAttachmentGuideArticleHtml = String.raw`
               </tbody>
             </table>
           </div>
-          <p>Die-cast, deep-relief, 3D, bottle-opener and moving structures may need a different body thickness from a flat stamped piece. Record body thickness, maximum 3D height and any specified weight as separate fields in the final confirmation document.</p>
+          <p>Record any construction-specific exceptions and the approved finished weight, when required, in the final confirmation document.</p>
 
           <a id="attachment-types"></a>
           <h2>How Attachments Affect Finished Dimensions</h2>
@@ -115,10 +137,7 @@ export const customMetalKeychainSizeAttachmentGuideArticleHtml = String.raw`
             <li><strong>Orientation:</strong> confirm which face of the metal body appears forward when the completed keychain hangs.</li>
             <li><strong>Packaging clearance:</strong> check that the selected attachment and its movement fit the pouch, backing card or box.</li>
           </ul>
-
-          <a id="attachment-comparison"></a>
-          <h2>Record Hardware Dimensions in the Specification</h2>
-          <p>State the hardware type, finish, relevant dimensions, connection method, finished length and intended hanging direction on the quotation or approved drawing. This makes the physical sample easier to compare with the agreed dimensions and packaging requirements.</p>
+          <p>State the hardware type, finish, relevant dimensions and connection method on the quotation or approved drawing so the physical sample can be checked against the agreed assembly.</p>
 
           <a id="applications"></a>
           <h2>Match Size and Hardware to the Application</h2>
@@ -199,7 +218,7 @@ export const customMetalKeychainSizeAttachmentGuideArticleHtml = String.raw`
           <a id="faq"></a>
           <h2>Frequently Asked Questions</h2>
           <div class="blog-faq">
-            <details open><summary>What is the standard size of a custom metal keychain?</summary><p>There is no single standard size for every custom metal keychain. Choose a body size that keeps the artwork clear and the finished assembly practical, then confirm body dimensions separately from the overall finished length.</p></details>
+            <details open><summary>What is the standard size of a custom metal keychain?</summary><p>Published supplier options span roughly 19–76 mm for some custom enamel keychains, but those options are not a universal standard or an industry average. Use the planning ranges above as comparison points, then confirm body dimensions separately from the overall finished length.</p></details>
             <details><summary>How thick should a metal keychain be?</summary><p>Some flat stamped or enamel designs may be discussed at approximately 1.5-2.0 mm during early quotation. That reference does not apply to every design. Die-cast, deep-relief, 3D, bottle-opener and moving structures may need a different body thickness after artwork review.</p></details>
             <details><summary>What is the difference between body size and finished length?</summary><p>Body size describes the custom metal component. Overall finished length is the end-to-end length of the complete assembled keychain in an agreed position, including rings, chains, hooks or clasps. Record both separately on the quotation or approval drawing.</p></details>
             <details><summary>Which keychain attachment is the most practical?</summary><p>A split ring is often practical for direct key attachment, while a lobster clasp or swivel hook can be easier for bags and removable merchandise. The best choice depends on handling, orientation, appearance, package size and the complete assembly.</p></details>
@@ -209,7 +228,7 @@ export const customMetalKeychainSizeAttachmentGuideArticleHtml = String.raw`
           <a id="conclusion"></a>
           <h2>Conclusion</h2>
           <p>The right specification is not the largest size or thickest metal. Balance artwork clarity, dimensions, thickness, weight, connections, hardware, application, packaging and budget. State measurement points, separate body size from finished length and confirm the assembly with a sample.</p>
-          <p>For a comparison of zinc alloy, brass, stainless steel and iron, read our <a href="/blog/custom-metal-keychain-materials">custom metal keychain materials</a> guide. For the broader production context, see our <a href="/blog/custom-metal-crafts-guide">custom metal crafts manufacturing process</a> guide. When you are ready to review a <strong>custom metal keychain size</strong> and product route, explore our <a href="/products/custom-metal-keychains">custom metal keychains</a> and send your logo, quantity, intended use, preferred attachment and delivery date.</p>
+          <p>For a comparison of zinc alloy, brass, stainless steel and iron, read our <a href="/blog/custom-metal-keychain-materials">custom metal keychain materials</a> guide. For the broader production context, see our <a href="/blog/custom-metal-crafts-guide">custom metal crafts manufacturing process</a> guide. You can also explore our <a href="/products/custom-metal-keychains">custom metal keychains</a> before preparing a project brief.</p>
 
           <section class="blog-article-cta">
             <div class="blog-cta-copy">
