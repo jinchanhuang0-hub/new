@@ -228,12 +228,12 @@ export const blogHtml = String.raw`
               <span class="blog-feature-link">Read More</span>
             </div>
           </a>
-          <a class="blog-feature-card" href="/blog/custom-metal-keychain-size-attachment-guide" data-card-image-fit="full" data-blog-category="Custom Keychains" aria-label="Read Custom Metal Keychain Size, Thickness and Attachment Guide">
+          <a class="blog-feature-card" href="/blog/custom-metal-keychain-size-attachment-guide" data-card-image-fit="full" data-blog-category="Custom Keychains" aria-label="Read Custom Metal Keychain Size, Thickness and Measurement Guide">
             <img src="/assets/images/custom-metal-keychain-size-attachment-guide.webp?v=20260817-2" width="1200" height="675" alt="Custom metal keychains in different sizes with split ring chain and swivel hook attachments">
             <div class="blog-feature-body">
               <div class="blog-feature-meta"><span>Custom Keychains</span><span>Specification Guide</span></div>
-              <h2>Custom Metal Keychain Size, Thickness and Attachment Guide</h2>
-              <p>Compare metal keychain body dimensions, thickness, finished length and attachment options before approving a sample or placing a bulk order.</p>
+              <h2>Custom Metal Keychain Size, Thickness and Measurement Guide</h2>
+              <p>Compare metal keychain body size, thickness, relief height, finished length and connection points before approving a sample or placing a bulk order.</p>
               <span class="blog-feature-link">Read More</span>
             </div>
           </a>

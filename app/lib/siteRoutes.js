@@ -796,14 +796,14 @@ const blogArticleData = {
     ],
   },
   "custom-metal-keychain-size-attachment-guide": {
-    title: "Custom Metal Keychain Size, Thickness & Attachment Guide",
-    headline: "Custom Metal Keychain Size, Thickness and Attachment Guide",
+    title: "Metal Keychain Size Guide: Dimensions and Thickness",
+    headline: "Custom Metal Keychain Size, Thickness and Measurement Guide",
     description:
-      "Learn how to measure metal keychain size, thickness and finished length. Use diagrams and a sample checklist to confirm specifications before ordering.",
+      "Learn how to specify metal keychain body size, thickness and finished length, and what to check for artwork, connection points, hardware and samples.",
     author: "Sunny Huang",
     authorType: "Person",
     datePublished: "2026-08-17",
-    dateModified: "2026-09-11",
+    dateModified: "2026-09-21",
     image: "/assets/images/custom-metal-keychain-size-attachment-guide.webp",
     faq: [
       {

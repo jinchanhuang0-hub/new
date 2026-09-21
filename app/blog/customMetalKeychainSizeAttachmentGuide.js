@@ -9,7 +9,7 @@ export const customMetalKeychainSizeAttachmentGuideArticleHtml = String.raw`
             <a href="#size-artwork-usability">Artwork and Usability</a>
             <a href="#thickness">Thickness by Construction</a>
             <a href="#attachment-types">Attachment Types</a>
-            <a href="#attachment-comparison">Hardware Comparison</a>
+            <a href="#attachment-comparison">Hardware Dimensions</a>
             <a href="#applications">Applications</a>
             <a href="#structural-risks">Structural Risks</a>
             <a href="#sample-checklist">Sample Checklist</a>
@@ -21,7 +21,7 @@ export const customMetalKeychainSizeAttachmentGuideArticleHtml = String.raw`
         <div class="container blog-article">
           <header class="blog-article-header">
             <a class="blog-back-link" href="/blog">Back to Blog</a>
-            <h1>Custom Metal Keychain Size, Thickness and Attachment Guide</h1>
+            <h1>Custom Metal Keychain Size, Thickness and Measurement Guide</h1>
             <figure class="blog-article-image blog-article-hero-image blog-article-natural-image">
               <img src="/assets/images/custom-metal-keychain-size-attachment-guide.webp?v=20260817-2" width="1200" height="675" fetchpriority="high" decoding="async" alt="Custom metal keychains in different sizes with split ring chain and swivel hook attachments">
             </figure>
@@ -31,18 +31,22 @@ export const customMetalKeychainSizeAttachmentGuideArticleHtml = String.raw`
 
           <a id="quick-answer"></a>
           <h2>Quick Answer: How Do You Choose a Custom Metal Keychain Size?</h2>
-          <p>Choose the smallest reasonable size that keeps artwork clear, structure manufacturable, weight practical for the intended use and hardware compatible. There is no verified universal average keychain size in mm across all custom metal orders, so confirm body size separately from finished length instead of copying a generic average. For thickness, some flat stamped or enamel designs may be discussed at approximately <strong>1.5-2.0 mm</strong> during early quotation, but the final value must follow the approved artwork, material, structure and sample. For irregular shapes, state maximum length and width separately and specify whether hardware is included.</p>
+          <p>Specify three values separately: metal body length and width, body thickness, and overall finished length with hardware. There is no single standard keychain size that fits every metal material, construction or use. Choose dimensions that preserve artwork clarity, structural support and practical weight, then confirm the connection point, selected hardware, packaging clearance and assembled size on the approved drawing and physical sample.</p>
 
           <a id="three-measurements"></a>
           <h2>Understand the Three Key Measurements</h2>
           <p>When requesting a quote, define how every measurement is taken. For illustration only, two suppliers may both specify 50 mm, but one may mean the metal body while the other means the complete product from the top of the ring to the lowest point. Those are different purchasing specifications and should not be compared until the measurement method is clear.</p>
           <div class="blog-table-wrap">
             <table class="blog-table">
-              <thead><tr><th>Measurement</th><th>What it means</th><th>Why buyers should state it</th></tr></thead>
+              <thead><tr><th>Specification</th><th>What it means</th><th>Why it matters</th><th>What buyers should confirm</th></tr></thead>
               <tbody>
-                <tr><td>Metal body size</td><td>Length and width of the custom metal component at agreed reference points.</td><td>Controls logo area, readability, weight and room for holes or openings.</td></tr>
-                <tr><td>Overall finished length</td><td>Overall finished length is the end-to-end length of the complete assembled keychain in an agreed position. Mark both endpoints and the hardware position on the approval drawing. Record body dimensions separately.</td><td>Affects carry, packaging, hanging orientation and carton packing.</td></tr>
-                <tr><td>Body thickness / maximum 3D height</td><td>Body thickness is measured through the metal edge; maximum 3D height is measured from the agreed reference surface to the highest relief point. Record them as separate fields.</td><td>Affects weight, package clearance and forming-process choice.</td></tr>
+                <tr><td>Metal body length and width</td><td>Maximum dimensions of the custom metal component at agreed reference points, excluding rings, chains, hooks and clasps.</td><td>Controls artwork area, readability, weight and room for openings.</td><td>Mark the measurement points and maximum dimensions on the approved drawing.</td></tr>
+                <tr><td>Overall finished length</td><td>End-to-end length of the complete assembled keychain in an agreed position, including the selected hardware.</td><td>Affects carrying, display, packaging and carton planning.</td><td>Mark both endpoints and the hardware position; keep body dimensions as separate fields.</td></tr>
+                <tr><td>Body thickness</td><td>Thickness measured through the metal body or its agreed edge reference.</td><td>Affects rigidity, weight, edge feel and process choice.</td><td>Record the approved thickness separately from any raised relief.</td></tr>
+                <tr><td>Maximum 3D relief height</td><td>Distance from an agreed reference surface to the highest sculpted point.</td><td>Affects relief appearance, total depth and package clearance.</td><td>Identify the reference surface and highest point on the drawing and sample record.</td></tr>
+                <tr><td>Connection point or attachment hole</td><td>The eyelet, hole, integrated loop or other point joining the body to the connector.</td><td>Affects structural support, balance and hanging direction.</td><td>Confirm its position, surrounding metal and compatibility with the selected connector.</td></tr>
+                <tr><td>Selected hardware dimensions</td><td>Relevant ring, chain, clasp, hook or connector dimensions.</td><td>Changes finished length, movement, orientation and packaging space.</td><td>Identify the exact hardware model and dimensions used for quotation and sampling.</td></tr>
+                <tr><td>Finished product weight, when required</td><td>Weight of the complete approved assembly rather than the metal body alone.</td><td>Helps assess handling, balance, packaging and shipping calculations.</td><td>State whether the recorded weight includes all hardware and packaging.</td></tr>
               </tbody>
             </table>
           </div>
@@ -113,8 +117,8 @@ export const customMetalKeychainSizeAttachmentGuideArticleHtml = String.raw`
           </ul>
 
           <a id="attachment-comparison"></a>
-          <h2>Record Attachment Details in the Specification</h2>
-          <p>State the attachment type, finish, connection method, finished length and intended hanging direction on the quotation or approved drawing. This makes the physical sample easier to compare with the agreed dimensions and packaging requirements. For attachment-type selection, use the <a href="/blog/keychain-attachments-guide">keychain attachment guide</a>.</p>
+          <h2>Record Hardware Dimensions in the Specification</h2>
+          <p>State the hardware type, finish, relevant dimensions, connection method, finished length and intended hanging direction on the quotation or approved drawing. This makes the physical sample easier to compare with the agreed dimensions and packaging requirements.</p>
 
           <a id="applications"></a>
           <h2>Match Size and Hardware to the Application</h2>
@@ -143,6 +147,8 @@ export const customMetalKeychainSizeAttachmentGuideArticleHtml = String.raw`
           <a id="structural-risks"></a>
           <h2>Connection Point, Orientation and Structural Risks</h2>
           <p>Connection areas are common approval points when the proof shows front artwork but not how the assembly hangs. Mark the attachment hole position and front direction.</p>
+          <h3>How to Specify the Keychain Hole Size</h3>
+          <p>Specify the attachment hole or connection point together with the jump-ring wire diameter and connection method. Review the metal remaining around the opening, the product weight, the body structure and the intended hanging direction. There is no verified universal hole size for every custom metal keychain, so record the final opening and connector on the approved drawing and confirm the assembled result with a physical sample.</p>
           <ul class="blog-list">
             <li><strong>Attachment hole position:</strong> confirm vertical, horizontal or angled hanging.</li>
             <li><strong>Narrow metal bridges:</strong> review thin connections for the selected material and process.</li>
