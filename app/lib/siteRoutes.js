@@ -630,46 +630,46 @@ const blogArticleData = {
     ],
   },
   "finisher-medals-vs-placement-medals": {
-    title: "Finisher Medals vs Placement Medals: Race Award Guide",
-    headline: "Finisher Medals vs Placement Medals: How to Plan Awards for Races and Sports Events",
+    title: "What Is a Finisher Medal? Finisher vs Race Awards",
+    headline: "Finisher Medals vs Race Awards: How to Plan Your Medal Structure",
     description:
-      "Understand finisher, placement and age-group medals. Compare eligibility, award quantities and distribution to plan a clear race medal policy.",
+      "What does a finisher medal mean? Compare finisher medals with placement, age-group and participation awards, and plan your race medal program.",
     author: "Sunny Huang",
     authorType: "Person",
     datePublished: "2026-08-20",
-    dateModified: "2026-09-11",
+    dateModified: "2026-09-21",
     image: "/assets/images/finisher-vs-placement-medals-og.webp",
     schemaType: "Article",
     faq: [
       {
-        question: "Do you get a medal for completing a 5K?",
-        answer:
-          "It depends on the event. Many charity, themed and community 5Ks provide finisher medals, while some competitive or low-cost races reserve awards for leading finishers. Check the registration page.",
-      },
-      {
         question: "What does a finisher medal mean?",
         answer:
-          "A finisher medal represents the completion of a defined event or distance. It recognizes effort and achievement rather than competitive rank.",
+          "A finisher medal recognizes a participant who completes an event according to its published eligibility and completion rules. It normally represents completion rather than finishing position.",
       },
       {
-        question: "What is the difference between a finisher medal and a participation medal?",
+        question: "Is a finisher medal the same as a participation medal?",
         answer:
-          "A finisher medal recognizes completion of a defined challenge. A participation medal recognizes taking part and may not require completion. The wording should match the eligibility rules.",
+          "Not always. A finisher medal usually requires completion, while a participation medal may recognize taking part without requiring the participant to finish. Each event should publish its own eligibility rules.",
       },
       {
-        question: "Can a runner receive both an overall and an age-group award?",
+        question: "What is the difference between finisher medals and placement medals?",
         answer:
-          "Some events allow both awards; others move the age-group award to the next eligible athlete. Publish the rule before results are calculated.",
+          "Finisher medals recognize eligible completion. Placement medals or race awards recognize competitive results, such as overall, age-group or podium positions.",
       },
       {
-        question: "Should runners who do not finish receive a medal?",
+        question: "What is a runner-up medal?",
         answer:
-          "There is no universal rule. Eligibility for a finisher medal should match the event's published definition of finishing. Other participants may have a separate recognition policy.",
+          "A runner-up medal recognizes a participant or team that finishes behind the winner. Depending on the competition format, it may refer specifically to second place or more broadly to a finalist who did not win.",
       },
       {
-        question: "How many race medals should an organizer order?",
+        question: "Can overall winners also receive age-group awards?",
         answer:
-          "Calculate finisher, placement, age-group and team medals separately using registration data, event history, category rules, eligible rosters and an approved reserve.",
+          "Yes, but the organizer must decide this before the event. Some races allow participants to receive both awards, while others remove overall winners from age-group rankings and move the next eligible finisher up.",
+      },
+      {
+        question: "How many finisher medals should an event order?",
+        answer:
+          "The quantity should be based on expected eligible finishers, registration patterns, the event's completion rules and a controlled reserve for replacements or late changes. There is no universal percentage suitable for every event.",
       },
     ],
   },
