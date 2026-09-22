@@ -375,6 +375,12 @@
     margin-bottom: 24px;
   }
 
+  .about-profile-video-portrait,
+  .about-profile-video-facebook {
+    width: min(100%, 360px);
+    justify-self: center;
+  }
+
   .faq-product-layout {
     grid-template-columns: 1fr;
   }

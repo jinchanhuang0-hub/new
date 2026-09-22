@@ -205,6 +205,7 @@ const closeVideoLightbox = () => {
   videoLightboxPlayer.pause();
   videoLightboxPlayer.removeAttribute("src");
   videoLightboxPlayer.load();
+  videoLightbox.classList.remove("is-portrait");
   videoLightbox.hidden = true;
   videoLightbox.setAttribute("aria-hidden", "true");
   document.body.classList.remove("is-video-lightbox-open");
@@ -217,6 +218,7 @@ document.querySelectorAll("[data-video-lightbox-trigger]").forEach((trigger) => 
     inlineVideo?.pause();
     videoLightboxPlayer.src = trigger.dataset.videoSrc || inlineVideo?.currentSrc || "";
     videoLightboxPlayer.poster = trigger.dataset.videoPoster || inlineVideo?.poster || "";
+    videoLightbox.classList.toggle("is-portrait", trigger.dataset.videoOrientation === "portrait");
     videoLightbox.hidden = false;
     videoLightbox.setAttribute("aria-hidden", "false");
     document.body.classList.add("is-video-lightbox-open");

@@ -34,7 +34,7 @@ export function getBlogCards(blogHtml) {
       slug,
       href,
       categories,
-      image: getAttribute(imageMarkup, "src") || blogArticles[slug].image,
+      image: getAttribute(imageMarkup, "src").replace(/^assets\//, "/assets/"),
       imageAlt: decodeHtml(getAttribute(imageMarkup, "alt")),
       imageFit: getAttribute(attributes, "data-card-image-fit"),
       title: decodeHtml(body.match(/<h2[^>]*>([\s\S]*?)<\/h2>/)?.[1])
@@ -84,12 +84,18 @@ export function buildRelatedBlogsHtml(blogHtml, slug) {
       .map((category) => `<span>${escapeHtml(category)}</span>`)
       .join("");
     const imageClass = item.imageFit ? ` class="related-blog-image-${escapeHtml(item.imageFit)}"` : "";
-
-    return `<a class="related-blog-card" href="${escapeHtml(item.href)}">
-      <span class="related-blog-media">
+    const media = item.image
+      ? `<span class="related-blog-media">
         <img src="${escapeHtml(item.image)}" alt="${escapeHtml(item.imageAlt)}" width="1600" height="900" loading="lazy" decoding="async"${imageClass}>
         <span class="related-blog-tags" aria-hidden="true">${tags}</span>
-      </span>
+      </span>`
+      : `<span class="related-blog-media">
+        <span class="blog-feature-placeholder" role="img" aria-label="Image pending upload"><span>${escapeHtml(item.title)}</span></span>
+        <span class="related-blog-tags" aria-hidden="true">${tags}</span>
+      </span>`;
+
+    return `<a class="related-blog-card" href="${escapeHtml(item.href)}">
+      ${media}
       <span class="related-blog-content">
         <strong>${escapeHtml(item.title)}</strong>
         <span>${escapeHtml(item.excerpt)}</span>

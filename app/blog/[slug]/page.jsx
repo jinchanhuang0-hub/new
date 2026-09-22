@@ -1,3 +1,5 @@
+import { existsSync } from "node:fs";
+import { join } from "node:path";
 import { notFound } from "next/navigation";
 import BlogArticleRepair from "./BlogArticleRepair";
 import BlogInquiryEffects from "../../components/BlogInquiryEffects";
@@ -14,6 +16,16 @@ import {
 
 export const dynamicParams = false;
 
+const getAvailableArticleImage = (article) => {
+  const image = article?.image || article?.socialImage || "";
+  if (!image) return "";
+  if (/^https?:\/\//.test(image)) return image;
+
+  const imagePath = image.split("?")[0];
+  const filePath = join(process.cwd(), "public", ...imagePath.split("/").filter(Boolean));
+  return existsSync(filePath) ? image : "";
+};
+
 export function generateStaticParams() {
   return Object.keys(blogArticles).map((slug) => ({ slug }));
 }
@@ -22,7 +34,10 @@ export async function generateMetadata({ params }) {
   const { slug } = await params;
   const article = blogArticles[slug];
   if (!article) return {};
-  const socialImage = article.image || article.socialImage;
+  const socialImage = getAvailableArticleImage(article);
+  const socialImageUrl = socialImage
+    ? (/^https?:\/\//.test(socialImage) ? socialImage : `${SITE_URL}${socialImage}`)
+    : "";
 
   return {
     title: article.title,
@@ -38,14 +53,14 @@ export async function generateMetadata({ params }) {
       publishedTime: article.datePublished,
       modifiedTime: article.dateModified || article.datePublished,
       ...(socialImage
-        ? { images: [{ url: `${SITE_URL}${socialImage}` }] }
+        ? { images: [{ url: socialImageUrl }] }
         : {}),
     },
     twitter: {
       card: "summary_large_image",
       title: article.title,
       description: article.description,
-      ...(socialImage ? { images: [`${SITE_URL}${socialImage}`] } : {}),
+      ...(socialImage ? { images: [socialImageUrl] } : {}),
     },
   };
 }
@@ -54,6 +69,7 @@ export default async function BlogArticlePage({ params }) {
   const { slug } = await params;
   const article = blogArticles[slug];
   if (!article) notFound();
+  const articleImage = getAvailableArticleImage(article);
   const relatedBlogsHtml = buildRelatedBlogsHtml(blogHtml, slug);
   const articleHtml = normalizeSiteHtml(buildBlogArticleHtml(blogHtml, slug, article))
     .replace("</main>", `${relatedBlogsHtml}</main>`);
@@ -67,7 +83,9 @@ export default async function BlogArticlePage({ params }) {
           headline: article.headline || article.title,
           description: article.description,
           url: `${SITE_URL}/blog/${slug}`,
-          image: article.image ? `${SITE_URL}${article.image}` : undefined,
+          image: articleImage
+            ? (/^https?:\/\//.test(articleImage) ? articleImage : `${SITE_URL}${articleImage}`)
+            : undefined,
           datePublished: article.datePublished,
           dateModified: article.dateModified || article.datePublished,
           mainEntityOfPage: `${SITE_URL}/blog/${slug}`,

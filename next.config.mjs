@@ -23,7 +23,7 @@ const contentSecurityPolicyReportOnly = [
   "img-src 'self' data: blob: https:",
   "font-src 'self' data: https:",
   "connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com",
-  "frame-src 'self' https://www.google.com",
+  "frame-src 'self' https://www.google.com https://www.facebook.com",
   "media-src 'self' blob:",
   "worker-src 'self' blob:",
   "manifest-src 'self'",

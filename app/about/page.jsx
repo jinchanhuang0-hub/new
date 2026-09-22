@@ -34,17 +34,21 @@ const html = String.raw`
             </video>
             <span class="video-expand-hint" aria-hidden="true">Watch larger</span>
           </div>
-          <div class="about-profile-video" data-video-lightbox-trigger data-video-src="assets/videos/factory-original-web.mp4" data-video-poster="assets/images/factory-original-frame-poster.jpg" role="button" tabindex="0" aria-label="Watch original factory video larger">
-            <video class="factory-video-card" controls playsinline preload="metadata" poster="assets/images/factory-original-frame-poster.jpg" aria-label="Original factory video">
+          <div class="about-profile-video about-profile-video-portrait" data-video-lightbox-trigger data-video-orientation="portrait" data-video-src="assets/videos/factory-original-web.mp4" role="button" tabindex="0" aria-label="Watch original factory video larger">
+            <video class="factory-video-card" controls playsinline preload="auto" aria-label="Original factory video">
               <source src="assets/videos/factory-original-web.mp4" type="video/mp4">
             </video>
             <span class="video-expand-hint" aria-hidden="true">Watch larger</span>
           </div>
-          <div class="about-profile-video" data-video-lightbox-trigger data-video-src="assets/videos/factory-view-1.mp4" data-video-poster="assets/images/factory-production-frame-poster.jpg" role="button" tabindex="0" aria-label="Watch production line video larger">
-            <video class="factory-video-card" controls playsinline preload="metadata" poster="assets/images/factory-production-frame-poster.jpg" aria-label="Production line video">
-              <source src="assets/videos/factory-view-1.mp4" type="video/mp4">
-            </video>
-            <span class="video-expand-hint" aria-hidden="true">Watch larger</span>
+          <div class="about-profile-video about-profile-video-facebook">
+            <iframe
+              class="facebook-video-embed"
+              src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1767950932006090%3Flocale%3Dzh_CN&show_text=false&width=560"
+              title="Unique Pin Facebook Reel"
+              loading="lazy"
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture"
+              allowfullscreen>
+            </iframe>
           </div>
         </div>
       </div>

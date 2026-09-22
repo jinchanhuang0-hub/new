@@ -330,6 +330,40 @@ const withBlogArticleDefaults = (article) => {
 export const buildBlogAuthorSchema = () => ({ ...DEFAULT_BLOG_AUTHOR_SCHEMA });
 
 const blogArticleData = {
+  "die-struck-vs-die-cast-pins": {
+    title: "Die Struck vs Die Cast Pins: Which Process Fits?",
+    headline: "Die Struck vs Die Cast Pins: Which Process Fits Your Design?",
+    description: "Compare die struck and die cast pins by artwork, relief, shape, color and production requirements before choosing a process for your custom pin project.",
+    author: "Sunny Huang",
+    authorType: "Person",
+    datePublished: "2026-09-22",
+    dateModified: "2026-09-22",
+    schemaType: "BlogPosting",
+    image: "/assets/images/die-struck-vs-die-cast-pins.webp",
+    hideFooterInquiry: true,
+    faq: [
+      {
+        question: "Is die struck the same as soft enamel?",
+        answer: "No. Die striking forms the metal body. Soft enamel is a color-filling method in which the colored areas usually remain below the raised metal borders. A die struck pin may use soft enamel, another suitable finish or no color.",
+      },
+      {
+        question: "Are die cast pins always 3D?",
+        answer: "No. Die casting can produce sculpted relief, but it can also create flatter levels or combine 2D and 3D areas. The mold design and approved proof determine the finished structure.",
+      },
+      {
+        question: "Is die striking always less expensive than die casting?",
+        answer: "No. The final cost depends on dimensions, thickness, material, tooling, relief, quantity, plating, color, attachments and packaging. Prices should only be compared when the quoted specifications are equivalent.",
+      },
+      {
+        question: "Can the same design be made using either process?",
+        answer: "Some artwork can be adapted to both processes, but the finished structure may differ. A manufacturer should review the actual design and explain what would change under each option.",
+      },
+      {
+        question: "Should I approve the digital proof or request a physical sample?",
+        answer: "A digital proof is necessary for confirming dimensions, layout, colors, finish and attachment placement. A physical sample may be useful when weight, relief, surface feel, attachment performance or retail presentation affects approval. Sampling requirements should be discussed before the production schedule is confirmed.",
+      },
+    ],
+  },
   "custom-western-belt-buckles-women-retail-guide": {
     title: "Custom Western Belt Buckles for Women: Retail Buying Guide",
     headline: "Custom Western Belt Buckles for Women: A Retail Buying Guide",
