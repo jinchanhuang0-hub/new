@@ -1153,6 +1153,23 @@
   aspect-ratio: 3 / 2;
 }
 
+#how-to-choose-custom-medal-ribbons .blog-article-header > .blog-article-hero-image {
+  overflow: hidden;
+}
+
+#how-to-choose-custom-medal-ribbons .blog-article-header > .blog-article-hero-image img {
+  width: 100%;
+  max-width: none;
+  height: auto;
+  max-height: none;
+  padding: 0;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
+  transform: scale(1.06);
+  transform-origin: center bottom;
+}
+
 #how-to-choose-custom-medal-ribbons .blog-article-main .blog-article-natural-image img {
   width: 100%;
   height: auto;

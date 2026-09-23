@@ -26,6 +26,9 @@ export const howToChooseCustomMedalRibbonsArticleHtml = String.raw`
             </figure>
             <p>A medal ribbon does more than hold the medal. A race organizer may want it to display an event name or sponsor logo. A school may need to distinguish award groups, while an institution may have colors that the finished award must follow. For an importer, the challenge may be selecting a ribbon that suits a customer’s medal design without making the artwork difficult to read.</p>
             <p>The first question is what the ribbon needs to do <strong>alongside the medal</strong>. Its colors, artwork, width and connection should work as one finished award. This guide explains how to choose between the ribbon options Unique Pin offers and what to confirm before ordering custom medals and ribbons together.</p>
+            <div class="blog-quick-answer">
+              <p><strong>Quick answer:</strong> Choose a plain ribbon when the medal carries the main artwork and the ribbon only needs one color. Choose heat-transfer printing when the ribbon needs logos, text or multiple colors. Unique Pin commonly compares 25 mm and 30 mm widths, but the final choice should be checked with the medal’s artwork, weight and attachment.</p>
+            </div>
           </header>
           <div class="blog-article-main">
             <details class="blog-mobile-toc"><summary>Table of Contents</summary><nav>
