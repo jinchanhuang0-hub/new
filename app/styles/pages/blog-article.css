@@ -1153,6 +1153,15 @@
   aspect-ratio: 3 / 2;
 }
 
+#how-to-choose-custom-medal-ribbons .blog-article-main .blog-article-natural-image img {
+  width: 100%;
+  height: auto;
+  max-height: none;
+  aspect-ratio: auto;
+  object-fit: contain;
+  object-position: center;
+}
+
 #firefighter-challenge-coins-anniversary-guide .blog-article-image img {
   height: auto;
   max-height: none;

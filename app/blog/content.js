@@ -18,6 +18,7 @@ import { embroideredPatchesNoMinimumArticleHtml } from "./embroideredPatchesNoMi
 import { firefighterChallengeCoinsAnniversaryGuideArticleHtml } from "./firefighterChallengeCoinsAnniversaryGuide";
 import { customWesternBeltBucklesWomenRetailGuideArticleHtml } from "./customWesternBeltBucklesWomenRetailGuide";
 import { customTurkeyTrotMedalsGuideArticleHtml } from "./customTurkeyTrotMedalsGuide";
+import { howToChooseCustomMedalRibbonsArticleHtml } from "./howToChooseCustomMedalRibbons";
 import {
   dieStruckVsDieCastPinsCardMediaHtml,
   dieStruckVsDieCastPinsGuideArticleHtml,
@@ -58,6 +59,15 @@ export const blogHtml = String.raw`
           <button type="button" data-blog-category="Uncategorized">Uncategorized</button>
         </div>
         <div class="blog-card-grid">
+          <a class="blog-feature-card" href="/blog/how-to-choose-custom-medal-ribbons" data-card-image-fit="full" data-blog-category="Custom Medals" aria-label="Read How to Choose the Right Ribbon for Custom Medals">
+            <img src="/assets/images/custom-medal-with-ribbon-selection.webp" width="1671" height="941" alt="Custom metal medal displayed with its neck ribbon">
+            <div class="blog-feature-body">
+              <div class="blog-feature-meta"><span>Custom Medals</span><span>Ribbon Guide</span></div>
+              <h2>How to Choose the Right Ribbon for Custom Medals</h2>
+              <p>Compare plain and heat-transfer medal ribbons, then choose colors, width, length and attachments for the complete award.</p>
+              <span class="blog-feature-link">Read More</span>
+            </div>
+          </a>
           <a class="blog-feature-card" href="/blog/die-struck-vs-die-cast-pins" data-blog-category="Custom Lapel Pins" aria-label="Read Die Struck vs Die Cast Pins: Which Process Fits Your Design?">
             ${dieStruckVsDieCastPinsCardMediaHtml}
             <div class="blog-feature-body">
@@ -359,6 +369,7 @@ export const blogHtml = String.raw`
     ${embroideredPatchesNoMinimumArticleHtml}
     ${firefighterChallengeCoinsAnniversaryGuideArticleHtml}
     ${customTurkeyTrotMedalsGuideArticleHtml}
+    ${howToChooseCustomMedalRibbonsArticleHtml}
     ${customWesternBeltBucklesWomenRetailGuideArticleHtml}
     ${dieStruckVsDieCastPinsGuideArticleHtml}
     <article id="military-challenge-coin-traditions" class="section blog-article-section">

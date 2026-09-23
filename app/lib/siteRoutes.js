@@ -330,6 +330,36 @@ const withBlogArticleDefaults = (article) => {
 export const buildBlogAuthorSchema = () => ({ ...DEFAULT_BLOG_AUTHOR_SCHEMA });
 
 const blogArticleData = {
+  "how-to-choose-custom-medal-ribbons": {
+    title: "Custom Medal Ribbons: Width, Colors & Printing Guide",
+    headline: "How to Choose the Right Ribbon for Custom Medals",
+    description:
+      "Compare plain and heat-transfer custom medal ribbons, then choose colors, 25 or 30 mm widths, length and attachment for your medal order.",
+    author: DEFAULT_BLOG_AUTHOR_SCHEMA.name,
+    authorType: DEFAULT_BLOG_AUTHOR_SCHEMA["@type"],
+    authorUrl: DEFAULT_BLOG_AUTHOR_SCHEMA.url,
+    datePublished: "2026-09-23",
+    dateModified: "2026-09-23",
+    image: "/assets/images/custom-medal-with-ribbon-selection.webp",
+    schemaType: "BlogPosting",
+    faq: [
+      {
+        question: "What is the most durable type of custom medal ribbon?",
+        answer:
+          "There is no reliable answer based only on whether a ribbon is plain or heat-transfer printed. How it performs depends on its construction, print requirements, connection and handling. If durability matters to your order, ask for a sample made to the proposed specification and check the print, edges and assembled connection for the intended use.",
+      },
+      {
+        question: "Is a 30 mm ribbon always better than a 25 mm ribbon?",
+        answer:
+          "No. A 30 mm ribbon gives artwork more width, but it may look too prominent with some medals. A 25 mm ribbon can work well for a plain color or compact design, provided the attachment fits and any text remains readable. Compare the two widths with your medal rather than applying a fixed diameter rule.",
+      },
+      {
+        question: "Can I put sponsor logos on a heat-transfer medal ribbon?",
+        answer:
+          "Yes, subject to the logo’s detail and available space. Supply the original file and identify any required size or position. Ask to review the mark at the proposed ribbon width and in the assembled view, especially if it repeats close to a fold or connection.",
+      },
+    ],
+  },
   "die-struck-vs-die-cast-pins": {
     title: "Die Struck vs Die Cast Pins: Which Process Fits?",
     headline: "Die Struck vs Die Cast Pins: Which Process Fits Your Design?",
