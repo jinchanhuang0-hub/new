@@ -22,7 +22,7 @@ export const howToChooseCustomMedalRibbonsArticleHtml = String.raw`
             <h1>How to Choose the Right Ribbon for Custom Medals</h1>
             <figure class="blog-article-image blog-article-hero-image blog-article-natural-image">
               <img src="/assets/images/custom-medal-with-ribbon-selection.webp" width="1671" height="941" fetchpriority="high" decoding="async" title="Custom Medal and Ribbon Selection" alt="Custom metal medal displayed with its neck ribbon">
-              <figcaption>A completed medal and ribbon shown together to introduce the ribbon choices covered in this guide.</figcaption>
+              <figcaption>A customer-authorized running medal shown with its finished green ribbon as a real production example.</figcaption>
             </figure>
             <p>A medal ribbon does more than hold the medal. A race organizer may want it to display an event name or sponsor logo. A school may need to distinguish award groups, while an institution may have colors that the finished award must follow. For an importer, the challenge may be selecting a ribbon that suits a customer’s medal design without making the artwork difficult to read.</p>
             <p>The first question is what the ribbon needs to do <strong>alongside the medal</strong>. Its colors, artwork, width and connection should work as one finished award. This guide explains how to choose between the ribbon options Unique Pin offers and what to confirm before ordering custom medals and ribbons together.</p>
