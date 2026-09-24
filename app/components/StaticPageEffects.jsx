@@ -190,6 +190,211 @@ export default function StaticPageEffects() {
 
     const cleanupInquiryCtaAnimation = setupInquiryCtaAnimation();
 
+    const setupCustomerPhotoGallery = () => {
+      const gallery = document.querySelector("[data-customer-photo-gallery]");
+      if (!gallery) return () => {};
+
+      const carousel = gallery.querySelector("[data-customer-gallery-carousel]");
+      const dataElement = gallery.querySelector("[data-customer-gallery-data]");
+      const mainImage = gallery.querySelector("[data-customer-gallery-main-image]");
+      const caption = gallery.querySelector("[data-customer-gallery-caption]");
+      const count = gallery.querySelector("[data-customer-gallery-count]");
+      const status = gallery.querySelector("[data-customer-gallery-status]");
+      const prevButton = gallery.querySelector("[data-customer-gallery-prev]");
+      const nextButton = gallery.querySelector("[data-customer-gallery-next]");
+      const toggleButton = gallery.querySelector("[data-customer-gallery-toggle]");
+      const previewButtons = [...gallery.querySelectorAll("[data-customer-gallery-preview]")];
+      if (!carousel || !dataElement || !mainImage || !caption || !count || !prevButton || !nextButton || !toggleButton) return () => {};
+
+      let photos = [];
+      try {
+        photos = JSON.parse(dataElement.textContent || "[]");
+      } catch {
+        return () => {};
+      }
+      if (!photos.length) return () => {};
+
+      const reducedMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)");
+      let currentIndex = 0;
+      let userPaused = Boolean(reducedMotion?.matches);
+      let hoverPaused = false;
+      let focusPaused = false;
+      let touchPaused = false;
+      let touchStartX = 0;
+      let autoplayTimer;
+      let transitionTimer;
+
+      const getPreviewIndexes = () => [-2, -1, 1, 2]
+        .map((offset) => (currentIndex + offset + photos.length) % photos.length)
+        .filter((index, position, indexes) => index !== currentIndex && indexes.indexOf(index) === position);
+
+      const isInteractionPaused = () => hoverPaused || focusPaused || touchPaused;
+      const stopAutoplay = () => window.clearInterval(autoplayTimer);
+
+      const setImage = (image, photo, isMain = false) => {
+        image.src = isMain ? photo.src : photo.thumbSrc;
+        if (isMain) {
+          image.srcset = photo.srcSet;
+          image.sizes = "(max-width: 767px) calc(100vw - 32px), (max-width: 1199px) 56vw, 620px";
+          image.alt = photo.alt;
+          image.width = photo.width;
+          image.height = photo.height;
+          image.style.objectPosition = photo.objectPosition || "center";
+        } else {
+          image.removeAttribute("srcset");
+          image.removeAttribute("sizes");
+          image.alt = "";
+          image.width = photo.thumbWidth;
+          image.height = photo.thumbHeight;
+          image.style.objectPosition = photo.objectPosition || "center";
+        }
+      };
+
+      const updateToggle = () => {
+        toggleButton.setAttribute("aria-pressed", userPaused ? "true" : "false");
+        toggleButton.setAttribute("aria-label", userPaused ? "Play automatic slideshow" : "Pause automatic slideshow");
+      };
+
+      const render = (announce = false) => {
+        const photo = photos[currentIndex];
+        carousel.classList.add("is-changing");
+        setImage(mainImage, photo, true);
+        caption.textContent = photo.categoryLabel || "";
+        count.textContent = `Photo ${currentIndex + 1} of ${photos.length}`;
+
+        const indexes = getPreviewIndexes();
+        previewButtons.forEach((button, slot) => {
+          const index = indexes[slot];
+          button.hidden = index === undefined;
+          if (index === undefined) return;
+          const previewPhoto = photos[index];
+          button.dataset.photoIndex = String(index);
+          button.setAttribute("aria-label", `Show ${previewPhoto.alt} as the main photo`);
+          setImage(button.querySelector("img"), previewPhoto);
+        });
+
+        if (announce && status) status.textContent = `${photo.categoryLabel || "Customer photo"}, photo ${currentIndex + 1} of ${photos.length}.`;
+        window.clearTimeout(transitionTimer);
+        transitionTimer = window.setTimeout(() => carousel.classList.remove("is-changing"), reducedMotion?.matches ? 0 : 180);
+      };
+
+      const startAutoplay = () => {
+        stopAutoplay();
+        if (photos.length <= 1 || userPaused || isInteractionPaused()) return;
+        autoplayTimer = window.setInterval(() => {
+          currentIndex = (currentIndex + 1) % photos.length;
+          render(true);
+        }, 5500);
+      };
+
+      const showPhoto = (index, announce = true) => {
+        currentIndex = (index + photos.length) % photos.length;
+        render(announce);
+        startAutoplay();
+      };
+
+      const handleClick = (event) => {
+        const preview = event.target.closest?.("[data-customer-gallery-preview]");
+        if (preview) {
+          showPhoto(Number(preview.dataset.photoIndex) || 0);
+          return;
+        }
+        if (event.target.closest?.("[data-customer-gallery-prev]")) showPhoto(currentIndex - 1);
+        if (event.target.closest?.("[data-customer-gallery-next]")) showPhoto(currentIndex + 1);
+        if (event.target.closest?.("[data-customer-gallery-toggle]")) {
+          userPaused = !userPaused;
+          updateToggle();
+          startAutoplay();
+        }
+      };
+
+      const handlePointerEnter = (event) => {
+        if (event.pointerType && event.pointerType !== "mouse") return;
+        hoverPaused = true;
+        stopAutoplay();
+      };
+      const handlePointerLeave = (event) => {
+        if (event.pointerType && event.pointerType !== "mouse") return;
+        hoverPaused = false;
+        startAutoplay();
+      };
+      const handleFocusIn = () => {
+        focusPaused = true;
+        stopAutoplay();
+      };
+      const handleFocusOut = (event) => {
+        if (gallery.contains(event.relatedTarget)) return;
+        focusPaused = false;
+        startAutoplay();
+      };
+      const handleTouchStart = (event) => {
+        touchPaused = true;
+        touchStartX = event.touches[0]?.clientX || 0;
+        stopAutoplay();
+      };
+      const handleTouchEnd = (event) => {
+        const touchEndX = event.changedTouches[0]?.clientX || touchStartX;
+        const distance = touchEndX - touchStartX;
+        touchPaused = false;
+        if (Math.abs(distance) >= 42) showPhoto(currentIndex + (distance < 0 ? 1 : -1));
+        else startAutoplay();
+      };
+      const handleTouchCancel = () => {
+        touchPaused = false;
+        startAutoplay();
+      };
+      const handleKeyDown = (event) => {
+        if (event.key === "ArrowLeft") {
+          event.preventDefault();
+          showPhoto(currentIndex - 1);
+        } else if (event.key === "ArrowRight") {
+          event.preventDefault();
+          showPhoto(currentIndex + 1);
+        }
+      };
+      const handleMotionChange = (event) => {
+        userPaused = event.matches;
+        updateToggle();
+        render();
+        startAutoplay();
+      };
+
+      gallery.addEventListener("click", handleClick);
+      carousel.addEventListener("pointerenter", handlePointerEnter);
+      carousel.addEventListener("pointerleave", handlePointerLeave);
+      carousel.addEventListener("focusin", handleFocusIn);
+      carousel.addEventListener("focusout", handleFocusOut);
+      carousel.addEventListener("touchstart", handleTouchStart, { passive: true });
+      carousel.addEventListener("touchend", handleTouchEnd, { passive: true });
+      carousel.addEventListener("touchcancel", handleTouchCancel, { passive: true });
+      carousel.addEventListener("keydown", handleKeyDown);
+      reducedMotion?.addEventListener?.("change", handleMotionChange);
+
+      prevButton.disabled = photos.length <= 1;
+      nextButton.disabled = photos.length <= 1;
+      toggleButton.disabled = photos.length <= 1;
+      updateToggle();
+      render();
+      startAutoplay();
+
+      return () => {
+        stopAutoplay();
+        window.clearTimeout(transitionTimer);
+        gallery.removeEventListener("click", handleClick);
+        carousel.removeEventListener("pointerenter", handlePointerEnter);
+        carousel.removeEventListener("pointerleave", handlePointerLeave);
+        carousel.removeEventListener("focusin", handleFocusIn);
+        carousel.removeEventListener("focusout", handleFocusOut);
+        carousel.removeEventListener("touchstart", handleTouchStart);
+        carousel.removeEventListener("touchend", handleTouchEnd);
+        carousel.removeEventListener("touchcancel", handleTouchCancel);
+        carousel.removeEventListener("keydown", handleKeyDown);
+        reducedMotion?.removeEventListener?.("change", handleMotionChange);
+      };
+    };
+
+    const cleanupCustomerPhotoGallery = setupCustomerPhotoGallery();
+
     const activateProductContent = () => {
       const productSections = document.querySelectorAll("[data-product-content]");
       if (!productSections.length) return;
@@ -951,6 +1156,7 @@ export default function StaticPageEffects() {
     return () => {
       cleanupAuthorProfileCard();
       cleanupInquiryCtaAnimation();
+      cleanupCustomerPhotoGallery();
       document.removeEventListener("click", handleBlogCardClick);
       document.removeEventListener("click", handleProductInquiryTriggerClick);
       document.removeEventListener("click", handleProductInquiryModalClick);

@@ -2,6 +2,7 @@ import StaticPage from "./components/StaticPage";
 import { footerHtml } from "./components/footerHtml";
 import { siteHeaderHtml } from "./components/siteHeaderHtml";
 import { renderProductFaq } from "./components/productFaqHtml";
+import { customerPhotoGalleryHtml } from "./components/customerPhotoGalleryHtml";
 import { homeFaqItems } from "./homeFaq";
 import { blogArticles } from "./lib/siteRoutes";
 import "./styles/components/pin-product-faq.css";
@@ -338,6 +339,8 @@ const html = String.raw`
         </div>
       </div>
     </section>
+
+    ${customerPhotoGalleryHtml}
 
     <section class="section section-soft why-choice-section">
       <div class="container">

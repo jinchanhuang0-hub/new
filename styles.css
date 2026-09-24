@@ -4,6 +4,7 @@
 @import "./app/styles/pages/home.css";
 @import "./app/styles/pages/products.css";
 @import "./app/styles/components/shared-sections.css";
+@import "./app/styles/components/customer-photo-gallery.css";
 @import "./app/styles/pages/blog-products-index.css";
 @import "./app/styles/pages/custom-faq.css";
 @import "./app/styles/pages/about-contact.css";
