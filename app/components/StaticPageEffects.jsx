@@ -202,9 +202,8 @@ export default function StaticPageEffects() {
       const status = gallery.querySelector("[data-customer-gallery-status]");
       const prevButton = gallery.querySelector("[data-customer-gallery-prev]");
       const nextButton = gallery.querySelector("[data-customer-gallery-next]");
-      const toggleButton = gallery.querySelector("[data-customer-gallery-toggle]");
       const previewButtons = [...gallery.querySelectorAll("[data-customer-gallery-preview]")];
-      if (!carousel || !dataElement || !mainImage || !caption || !count || !prevButton || !nextButton || !toggleButton) return () => {};
+      if (!carousel || !dataElement || !mainImage || !caption || !count || !prevButton || !nextButton) return () => {};
 
       let photos = [];
       try {
@@ -216,20 +215,12 @@ export default function StaticPageEffects() {
 
       const reducedMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)");
       let currentIndex = 0;
-      let userPaused = Boolean(reducedMotion?.matches);
-      let hoverPaused = false;
-      let focusPaused = false;
-      let touchPaused = false;
       let touchStartX = 0;
-      let autoplayTimer;
       let transitionTimer;
 
       const getPreviewIndexes = () => [-2, -1, 1, 2]
         .map((offset) => (currentIndex + offset + photos.length) % photos.length)
         .filter((index, position, indexes) => index !== currentIndex && indexes.indexOf(index) === position);
-
-      const isInteractionPaused = () => hoverPaused || focusPaused || touchPaused;
-      const stopAutoplay = () => window.clearInterval(autoplayTimer);
 
       const setImage = (image, photo, isMain = false) => {
         image.src = isMain ? photo.src : photo.thumbSrc;
@@ -248,11 +239,6 @@ export default function StaticPageEffects() {
           image.height = photo.thumbHeight;
           image.style.objectPosition = photo.objectPosition || "center";
         }
-      };
-
-      const updateToggle = () => {
-        toggleButton.setAttribute("aria-pressed", userPaused ? "true" : "false");
-        toggleButton.setAttribute("aria-label", userPaused ? "Play automatic slideshow" : "Pause automatic slideshow");
       };
 
       const render = (announce = false) => {
@@ -278,19 +264,9 @@ export default function StaticPageEffects() {
         transitionTimer = window.setTimeout(() => carousel.classList.remove("is-changing"), reducedMotion?.matches ? 0 : 180);
       };
 
-      const startAutoplay = () => {
-        stopAutoplay();
-        if (photos.length <= 1 || userPaused || isInteractionPaused()) return;
-        autoplayTimer = window.setInterval(() => {
-          currentIndex = (currentIndex + 1) % photos.length;
-          render(true);
-        }, 5500);
-      };
-
       const showPhoto = (index, announce = true) => {
         currentIndex = (index + photos.length) % photos.length;
         render(announce);
-        startAutoplay();
       };
 
       const handleClick = (event) => {
@@ -301,47 +277,15 @@ export default function StaticPageEffects() {
         }
         if (event.target.closest?.("[data-customer-gallery-prev]")) showPhoto(currentIndex - 1);
         if (event.target.closest?.("[data-customer-gallery-next]")) showPhoto(currentIndex + 1);
-        if (event.target.closest?.("[data-customer-gallery-toggle]")) {
-          userPaused = !userPaused;
-          updateToggle();
-          startAutoplay();
-        }
       };
 
-      const handlePointerEnter = (event) => {
-        if (event.pointerType && event.pointerType !== "mouse") return;
-        hoverPaused = true;
-        stopAutoplay();
-      };
-      const handlePointerLeave = (event) => {
-        if (event.pointerType && event.pointerType !== "mouse") return;
-        hoverPaused = false;
-        startAutoplay();
-      };
-      const handleFocusIn = () => {
-        focusPaused = true;
-        stopAutoplay();
-      };
-      const handleFocusOut = (event) => {
-        if (gallery.contains(event.relatedTarget)) return;
-        focusPaused = false;
-        startAutoplay();
-      };
       const handleTouchStart = (event) => {
-        touchPaused = true;
         touchStartX = event.touches[0]?.clientX || 0;
-        stopAutoplay();
       };
       const handleTouchEnd = (event) => {
         const touchEndX = event.changedTouches[0]?.clientX || touchStartX;
         const distance = touchEndX - touchStartX;
-        touchPaused = false;
         if (Math.abs(distance) >= 42) showPhoto(currentIndex + (distance < 0 ? 1 : -1));
-        else startAutoplay();
-      };
-      const handleTouchCancel = () => {
-        touchPaused = false;
-        startAutoplay();
       };
       const handleKeyDown = (event) => {
         if (event.key === "ArrowLeft") {
@@ -352,44 +296,21 @@ export default function StaticPageEffects() {
           showPhoto(currentIndex + 1);
         }
       };
-      const handleMotionChange = (event) => {
-        userPaused = event.matches;
-        updateToggle();
-        render();
-        startAutoplay();
-      };
-
       gallery.addEventListener("click", handleClick);
-      carousel.addEventListener("pointerenter", handlePointerEnter);
-      carousel.addEventListener("pointerleave", handlePointerLeave);
-      carousel.addEventListener("focusin", handleFocusIn);
-      carousel.addEventListener("focusout", handleFocusOut);
       carousel.addEventListener("touchstart", handleTouchStart, { passive: true });
       carousel.addEventListener("touchend", handleTouchEnd, { passive: true });
-      carousel.addEventListener("touchcancel", handleTouchCancel, { passive: true });
       carousel.addEventListener("keydown", handleKeyDown);
-      reducedMotion?.addEventListener?.("change", handleMotionChange);
 
       prevButton.disabled = photos.length <= 1;
       nextButton.disabled = photos.length <= 1;
-      toggleButton.disabled = photos.length <= 1;
-      updateToggle();
       render();
-      startAutoplay();
 
       return () => {
-        stopAutoplay();
         window.clearTimeout(transitionTimer);
         gallery.removeEventListener("click", handleClick);
-        carousel.removeEventListener("pointerenter", handlePointerEnter);
-        carousel.removeEventListener("pointerleave", handlePointerLeave);
-        carousel.removeEventListener("focusin", handleFocusIn);
-        carousel.removeEventListener("focusout", handleFocusOut);
         carousel.removeEventListener("touchstart", handleTouchStart);
         carousel.removeEventListener("touchend", handleTouchEnd);
-        carousel.removeEventListener("touchcancel", handleTouchCancel);
         carousel.removeEventListener("keydown", handleKeyDown);
-        reducedMotion?.removeEventListener?.("change", handleMotionChange);
       };
     };
 

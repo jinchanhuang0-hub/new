@@ -210,18 +210,6 @@
   stroke-linejoin: round;
 }
 
-.customer-gallery-toggle .customer-gallery-play-icon {
-  display: none;
-}
-
-.customer-gallery-toggle[aria-pressed="true"] .customer-gallery-pause-icon {
-  display: none;
-}
-
-.customer-gallery-toggle[aria-pressed="true"] .customer-gallery-play-icon {
-  display: block;
-}
-
 @media (min-width: 1024px) and (max-width: 1279px) {
   .customer-gallery-carousel {
     max-width: 980px;

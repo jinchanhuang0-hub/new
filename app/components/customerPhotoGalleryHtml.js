@@ -242,10 +242,6 @@ export const customerPhotoGalleryHtml = (() => {
             <button type="button" class="customer-gallery-control" data-customer-gallery-prev aria-label="Show previous customer photo">
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
             </button>
-            <button type="button" class="customer-gallery-control customer-gallery-toggle" data-customer-gallery-toggle aria-label="Pause automatic slideshow" aria-pressed="false">
-              <svg class="customer-gallery-pause-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 7v10M15 7v10"/></svg>
-              <svg class="customer-gallery-play-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 7 8 5-8 5Z"/></svg>
-            </button>
             <button type="button" class="customer-gallery-control" data-customer-gallery-next aria-label="Show next customer photo">
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
             </button>
