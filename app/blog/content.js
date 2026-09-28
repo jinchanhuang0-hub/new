@@ -52,6 +52,8 @@ export const blogHtml = String.raw`
           <button type="button" data-blog-category="Custom Keychains">Custom Keychains</button>
           <button type="button" data-blog-category="Custom Belt Buckle">Custom Belt Buckle</button>
           <button type="button" data-blog-category="Golf Accessories">Golf Accessories</button>
+          <button type="button" data-blog-category="Bottle Openers" data-blog-category-pinned="true">Bottle Openers</button>
+          <button type="button" data-blog-category="Fridge Magnets" data-blog-category-pinned="true">Fridge Magnets</button>
           <button type="button" data-blog-category="Patches" data-blog-category-pinned="true">Patches</button>
           <button type="button" data-blog-category="Others" data-blog-category-pinned="true">Others</button>
           <button type="button" data-blog-category="Holidays" data-blog-category-pinned="true">Holidays</button>
@@ -60,7 +62,7 @@ export const blogHtml = String.raw`
           <button type="button" data-blog-category="Uncategorized">Uncategorized</button>
         </div>
         <div class="blog-card-grid">
-          <a class="blog-feature-card" href="/blog/types-of-bottle-openers-for-branded-merchandise" data-card-image-fit="full" data-blog-category="Others" aria-label="Read Types of Bottle Openers: Choosing a Custom Metal Style for Your Brand">
+          <a class="blog-feature-card" href="/blog/types-of-bottle-openers-for-branded-merchandise" data-card-image-fit="full" data-blog-category="Bottle Openers" aria-label="Read Types of Bottle Openers: Choosing a Custom Metal Style for Your Brand">
             <img src="/assets/images/types-of-custom-metal-bottle-openers.webp" width="1673" height="940" alt="Five custom metal bottle opener styles arranged side by side: keychain, coin style, shaped, handheld and card style">
             <div class="blog-feature-body">
               <div class="blog-feature-meta"><span>Bottle Openers</span><span>Buyer Guide</span></div>

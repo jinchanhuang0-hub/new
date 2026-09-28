@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
+import { BLOG_ITEMS_PER_PAGE } from "../blog/config";
 import { getCategoryPath } from "../lib/siteRoutes";
 
 export default function StaticPageEffects() {
@@ -214,19 +215,58 @@ export default function StaticPageEffects() {
       if (!photos.length) return () => {};
 
       const reducedMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)");
+      const mainImageSizes = "(max-width: 767px) calc(100vw - 32px), (max-width: 1199px) 56vw, 620px";
+      const imageLoads = new Map();
       let currentIndex = 0;
       let touchStartX = 0;
-      let transitionTimer;
+      let isLoading = false;
+      let destroyed = false;
+      let preloadObserver;
 
-      const getPreviewIndexes = () => [-2, -1, 1, 2]
-        .map((offset) => (currentIndex + offset + photos.length) % photos.length)
-        .filter((index, position, indexes) => index !== currentIndex && indexes.indexOf(index) === position);
+      const getPreviewIndexes = (index = currentIndex) => [-2, -1, 1, 2]
+        .map((offset) => (index + offset + photos.length) % photos.length)
+        .filter((photoIndex, position, indexes) => photoIndex !== index && indexes.indexOf(photoIndex) === position);
+
+      const preloadImage = (photo, isMain = false) => {
+        const key = `${isMain ? "main" : "preview"}:${photo.id || photo.src}`;
+        if (imageLoads.has(key)) return imageLoads.get(key);
+
+        const image = new Image();
+        image.decoding = "async";
+        const load = new Promise((resolve) => {
+          const finish = () => resolve();
+          image.addEventListener("load", finish, { once: true });
+          image.addEventListener("error", finish, { once: true });
+          if (isMain) {
+            image.srcset = photo.srcSet || "";
+            image.sizes = mainImageSizes;
+          }
+          image.src = isMain ? photo.src : photo.thumbSrc;
+          if (image.complete) finish();
+        }).then(() => image.decode?.().catch(() => {}));
+
+        imageLoads.set(key, load);
+        return load;
+      };
+
+      const preloadState = (index) => Promise.all([
+        preloadImage(photos[index], true),
+        ...getPreviewIndexes(index).map((previewIndex) => preloadImage(photos[previewIndex])),
+      ]);
+
+      const warmNearbyPhotos = (index) => {
+        [-2, -1, 1, 2].forEach((offset) => {
+          const nearbyIndex = (index + offset + photos.length) % photos.length;
+          preloadImage(photos[nearbyIndex], true);
+          preloadImage(photos[nearbyIndex]);
+        });
+      };
 
       const setImage = (image, photo, isMain = false) => {
         image.src = isMain ? photo.src : photo.thumbSrc;
         if (isMain) {
           image.srcset = photo.srcSet;
-          image.sizes = "(max-width: 767px) calc(100vw - 32px), (max-width: 1199px) 56vw, 620px";
+          image.sizes = mainImageSizes;
           image.alt = photo.alt;
           image.width = photo.width;
           image.height = photo.height;
@@ -243,7 +283,6 @@ export default function StaticPageEffects() {
 
       const render = (announce = false) => {
         const photo = photos[currentIndex];
-        carousel.classList.add("is-changing");
         setImage(mainImage, photo, true);
         caption.textContent = photo.categoryLabel || "";
         count.textContent = `Photo ${currentIndex + 1} of ${photos.length}`;
@@ -260,13 +299,35 @@ export default function StaticPageEffects() {
         });
 
         if (announce && status) status.textContent = `${photo.categoryLabel || "Customer photo"}, photo ${currentIndex + 1} of ${photos.length}.`;
-        window.clearTimeout(transitionTimer);
-        transitionTimer = window.setTimeout(() => carousel.classList.remove("is-changing"), reducedMotion?.matches ? 0 : 180);
       };
 
-      const showPhoto = (index, announce = true) => {
-        currentIndex = (index + photos.length) % photos.length;
+      const setBusy = (busy) => {
+        carousel.toggleAttribute("aria-busy", busy);
+        carousel.classList.toggle("is-changing", busy && !reducedMotion?.matches);
+        prevButton.disabled = busy || photos.length <= 1;
+        nextButton.disabled = busy || photos.length <= 1;
+        previewButtons.forEach((button) => {
+          button.disabled = busy;
+        });
+      };
+
+      const showPhoto = async (index, announce = true) => {
+        const nextIndex = (index + photos.length) % photos.length;
+        if (isLoading || nextIndex === currentIndex) return;
+
+        isLoading = true;
+        setBusy(true);
+        await preloadState(nextIndex);
+        if (destroyed) return;
+
+        currentIndex = nextIndex;
         render(announce);
+        await new Promise((resolve) => window.requestAnimationFrame(() => window.requestAnimationFrame(resolve)));
+        if (destroyed) return;
+
+        isLoading = false;
+        setBusy(false);
+        warmNearbyPhotos(currentIndex);
       };
 
       const handleClick = (event) => {
@@ -301,12 +362,22 @@ export default function StaticPageEffects() {
       carousel.addEventListener("touchend", handleTouchEnd, { passive: true });
       carousel.addEventListener("keydown", handleKeyDown);
 
-      prevButton.disabled = photos.length <= 1;
-      nextButton.disabled = photos.length <= 1;
       render();
+      setBusy(false);
+      if ("IntersectionObserver" in window) {
+        preloadObserver = new IntersectionObserver((entries) => {
+          if (!entries.some((entry) => entry.isIntersecting)) return;
+          warmNearbyPhotos(currentIndex);
+          preloadObserver.disconnect();
+        }, { rootMargin: "600px 0px" });
+        preloadObserver.observe(gallery);
+      } else {
+        warmNearbyPhotos(currentIndex);
+      }
 
       return () => {
-        window.clearTimeout(transitionTimer);
+        destroyed = true;
+        preloadObserver?.disconnect();
         gallery.removeEventListener("click", handleClick);
         carousel.removeEventListener("touchstart", handleTouchStart);
         carousel.removeEventListener("touchend", handleTouchEnd);
@@ -466,8 +537,13 @@ export default function StaticPageEffects() {
 
       const href = card.getAttribute("href") || "";
       if (href.startsWith("/blog/")) {
+        if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
         event.preventDefault();
-        window.location.assign(card.href);
+        const articleUrl = new URL(card.href, window.location.origin);
+        if (window.location.pathname === "/blog") {
+          articleUrl.searchParams.set("from", getBlogPageHref(activeBlogCategory, currentBlogPage));
+        }
+        window.location.assign(`${articleUrl.pathname}${articleUrl.search}${articleUrl.hash}`);
         return;
       }
 
@@ -654,6 +730,8 @@ export default function StaticPageEffects() {
       "Custom Keychains",
       "Custom Belt Buckle",
       "Golf Accessories",
+      "Bottle Openers",
+      "Fridge Magnets",
       "Patches",
       "Others",
       "Custom Lanyards",
@@ -677,6 +755,8 @@ export default function StaticPageEffects() {
       if (text.includes("coin")) inferredCategories.push("Custom Coins");
       if (text.includes("keychain")) inferredCategories.push("Custom Keychains");
       if (text.includes("belt buckle") || text.includes("buckle")) inferredCategories.push("Custom Belt Buckle");
+      if (text.includes("bottle opener")) inferredCategories.push("Bottle Openers");
+      if (text.includes("fridge magnet")) inferredCategories.push("Fridge Magnets");
       if (text.includes("patch")) inferredCategories.push("Patches");
       if (text.includes("other") || text.includes("metal crafts")) inferredCategories.push("Others");
       if (text.includes("lanyard")) inferredCategories.push("Custom Lanyards");
@@ -687,7 +767,6 @@ export default function StaticPageEffects() {
 
     const blogGrid = document.querySelector(".blog-card-grid");
     const blogCards = [...document.querySelectorAll(".blog-feature-card")];
-    const blogItemsPerPage = 12;
     let activeBlogCategory = "All";
     let currentBlogPage = 1;
     let blogPagination = document.querySelector(".blog-pagination");
@@ -751,6 +830,42 @@ export default function StaticPageEffects() {
           .includes(category);
       });
 
+    const getBlogStateFromUrl = () => {
+      const searchParams = new URLSearchParams(window.location.search);
+      const requestedCategory = searchParams.get("category") || "All";
+      const category = requestedCategory === "All" || blogCategories.includes(requestedCategory)
+        ? requestedCategory
+        : "All";
+      const page = Math.max(1, Number(searchParams.get("page")) || 1);
+      return { category, page };
+    };
+
+    const getBlogPageHref = (category = activeBlogCategory, page = currentBlogPage) => {
+      const url = new URL(window.location.href);
+      url.hash = "";
+      if (category && category !== "All") {
+        url.searchParams.set("category", category);
+      } else {
+        url.searchParams.delete("category");
+      }
+      if (page > 1) {
+        url.searchParams.set("page", String(page));
+      } else {
+        url.searchParams.delete("page");
+      }
+      return `${url.pathname}${url.search}`;
+    };
+
+    const updateBlogUrl = (category, page) => {
+      window.history.pushState(null, "", getBlogPageHref(category, page));
+    };
+
+    const setActiveBlogCategoryButton = (category) => {
+      document.querySelectorAll(".blog-category-filter button").forEach((button) => {
+        button.classList.toggle("active", (button.dataset.blogCategory || "All") === category);
+      });
+    };
+
     const getBlogPageItems = (currentPage, totalPages) => {
       if (totalPages <= 7) {
         return Array.from({ length: totalPages }, (_, index) => index + 1);
@@ -799,12 +914,12 @@ export default function StaticPageEffects() {
 
       activeBlogCategory = category || "All";
       const filteredCards = getBlogCardsForCategory(activeBlogCategory);
-      const totalPages = Math.ceil(filteredCards.length / blogItemsPerPage);
+      const totalPages = Math.ceil(filteredCards.length / BLOG_ITEMS_PER_PAGE);
       currentBlogPage = totalPages
         ? Math.min(Math.max(page, 1), totalPages)
         : 1;
-      const startIndex = (currentBlogPage - 1) * blogItemsPerPage;
-      const visibleCards = new Set(filteredCards.slice(startIndex, startIndex + blogItemsPerPage));
+      const startIndex = (currentBlogPage - 1) * BLOG_ITEMS_PER_PAGE;
+      const visibleCards = new Set(filteredCards.slice(startIndex, startIndex + BLOG_ITEMS_PER_PAGE));
 
       blogGrid.classList.add("is-updating");
       window.requestAnimationFrame(() => {
@@ -837,7 +952,9 @@ export default function StaticPageEffects() {
       document.querySelectorAll(".blog-category-filter button").forEach((categoryButton) => {
         categoryButton.classList.toggle("active", categoryButton === button);
       });
-      applyBlogCategory(button.dataset.blogCategory || "All", 1, true);
+      const category = button.dataset.blogCategory || "All";
+      applyBlogCategory(category, 1, true);
+      updateBlogUrl(category, 1);
     };
 
     const handleBlogPaginationClick = (event) => {
@@ -853,11 +970,20 @@ export default function StaticPageEffects() {
           : Number(pageAction) || 1;
 
       applyBlogCategory(activeBlogCategory, nextPage, true);
+      updateBlogUrl(activeBlogCategory, currentBlogPage);
     };
 
-    applyBlogCategory("All");
+    const initialBlogState = getBlogStateFromUrl();
+    setActiveBlogCategoryButton(initialBlogState.category);
+    applyBlogCategory(initialBlogState.category, initialBlogState.page);
+    const handleBlogPopState = () => {
+      const blogState = getBlogStateFromUrl();
+      setActiveBlogCategoryButton(blogState.category);
+      applyBlogCategory(blogState.category, blogState.page);
+    };
     document.addEventListener("click", handleBlogCategoryClick);
     document.addEventListener("click", handleBlogPaginationClick);
+    window.addEventListener("popstate", handleBlogPopState);
 
     const productsPerPage = 28;
     const categoryProductsPerPage = 12;
@@ -1085,6 +1211,7 @@ export default function StaticPageEffects() {
       document.removeEventListener("submit", handleInquirySubmit);
       document.removeEventListener("click", handleBlogCategoryClick);
       document.removeEventListener("click", handleBlogPaginationClick);
+      window.removeEventListener("popstate", handleBlogPopState);
       document.removeEventListener("click", handleProductCategoryClick);
       document.removeEventListener("click", handleProductNavClick);
       document.removeEventListener("click", handleProductPaginationClick);

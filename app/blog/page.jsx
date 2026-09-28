@@ -13,7 +13,13 @@ export const metadata = {
   },
 };
 
-export default function BlogPage() {
+export default async function BlogPage({ searchParams }) {
+  const query = await searchParams;
+  const initialState = {
+    category: typeof query?.category === "string" ? query.category : "All",
+    page: Math.max(1, Number(query?.page) || 1),
+  };
+
   return (
     <>
       <JsonLd
@@ -24,7 +30,7 @@ export default function BlogPage() {
           url: `${SITE_URL}/blog`,
         }}
       />
-      <StaticPage html={buildBlogIndexHtml(blogHtml, blogArticles)} />
+      <StaticPage html={buildBlogIndexHtml(blogHtml, blogArticles, initialState)} />
     </>
   );
 }

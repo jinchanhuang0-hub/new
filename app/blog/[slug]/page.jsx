@@ -1,6 +1,7 @@
 import { existsSync } from "node:fs";
 import { join } from "node:path";
 import { notFound } from "next/navigation";
+import { BLOG_ITEMS_PER_PAGE } from "../config";
 import BlogArticleRepair from "./BlogArticleRepair";
 import BlogInquiryEffects from "../../components/BlogInquiryEffects";
 import { buildRelatedBlogsHtml } from "./RelatedBlogs";
@@ -15,6 +16,21 @@ import {
 } from "../../lib/siteRoutes";
 
 export const dynamicParams = false;
+
+const getDefaultBlogReturnHref = (slug) => {
+  const cardSlugs = [...blogHtml.matchAll(/<a class="blog-feature-card" href="\/blog\/([^"#]+)"/g)]
+    .map((match, index) => ({
+      slug: match[1],
+      index,
+      timestamp: Date.parse(blogArticles[match[1]]?.datePublished || "") || 0,
+    }))
+    .sort((a, b) => b.timestamp - a.timestamp || a.index - b.index);
+  const articleIndex = cardSlugs.findIndex((card) => card.slug === slug);
+  if (articleIndex < 0) return "/blog";
+
+  const page = Math.floor(articleIndex / BLOG_ITEMS_PER_PAGE) + 1;
+  return page > 1 ? `/blog?page=${page}` : "/blog";
+};
 
 const getAvailableArticleImage = (article) => {
   const image = article?.image || article?.socialImage || "";
@@ -71,7 +87,12 @@ export default async function BlogArticlePage({ params }) {
   if (!article) notFound();
   const articleImage = getAvailableArticleImage(article);
   const relatedBlogsHtml = buildRelatedBlogsHtml(blogHtml, slug);
+  const defaultBlogReturnHref = getDefaultBlogReturnHref(slug);
   const articleHtml = normalizeSiteHtml(buildBlogArticleHtml(blogHtml, slug, article))
+    .replace(
+      'class="blog-back-link" href="/blog"',
+      `class="blog-back-link" href="${defaultBlogReturnHref}"`,
+    )
     .replace("</main>", `${relatedBlogsHtml}</main>`);
 
   return (

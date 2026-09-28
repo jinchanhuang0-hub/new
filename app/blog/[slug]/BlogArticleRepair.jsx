@@ -121,9 +121,37 @@ const setupAuthorProfileCard = () => {
   };
 };
 
+const applyBlogReturnLink = () => {
+  const backLink = document.querySelector(".blog-back-link");
+  if (!backLink) return "";
+
+  try {
+    const articleUrl = new URL(window.location.href);
+    const source = articleUrl.searchParams.get("from");
+    if (!source) return backLink.getAttribute("href") || "/blog";
+
+    const returnUrl = new URL(source, window.location.origin);
+    const returnHref = returnUrl.origin === window.location.origin && returnUrl.pathname === "/blog"
+      ? `${returnUrl.pathname}${returnUrl.search}${returnUrl.hash}`
+      : backLink.getAttribute("href") || "/blog";
+    backLink.setAttribute("href", returnHref);
+
+    articleUrl.searchParams.delete("from");
+    window.history.replaceState(
+      window.history.state,
+      "",
+      `${articleUrl.pathname}${articleUrl.search}${articleUrl.hash}`,
+    );
+    return returnHref;
+  } catch {
+    return backLink.getAttribute("href") || "/blog";
+  }
+};
+
 export default function BlogArticleRepair({ slug }) {
   useEffect(() => {
     let cancelled = false;
+    const blogReturnHref = applyBlogReturnLink();
     const cleanupAuthorProfileCard = setupAuthorProfileCard();
 
     const restoreArticleMain = async () => {
@@ -142,6 +170,9 @@ export default function BlogArticleRepair({ slug }) {
         const restoredMain = doc.querySelector("main");
         if (restoredMain?.textContent?.trim().length > 100) {
           currentMain.replaceWith(document.importNode(restoredMain, true));
+          if (blogReturnHref) {
+            document.querySelector(".blog-back-link")?.setAttribute("href", blogReturnHref);
+          }
         }
       } catch {
         // Leave the server-rendered output in place if the repair fetch fails.

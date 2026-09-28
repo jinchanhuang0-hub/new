@@ -10,6 +10,7 @@ import {
   homeProductLandingPagesBySlug,
   renderHomeProductLandingRowsSection,
 } from "../product-category/categoryLandingData";
+import { BLOG_ITEMS_PER_PAGE } from "../blog/config";
 import { getCategoryPath } from "./siteRoutes";
 
 const getPageShell = (html) => {
@@ -531,11 +532,70 @@ const sortBlogCardsByDate = (html, articles = {}) =>
     },
   );
 
-export const buildBlogIndexHtml = (html, articles = {}) =>
-  addBlogCardMeta(enhanceBlogCardImages(sortBlogCardsByDate(normalizeBlogArticleLinks(html.replace(
-    /<article id="[^"]+" class="[^"]*\bblog-article-section\b[^"]*">[\s\S]*?<\/article>/g,
-    "",
-  )), articles)), articles);
+const applyBlogIndexState = (
+  html,
+  { category = "All", page = 1, itemsPerPage = BLOG_ITEMS_PER_PAGE } = {},
+) => {
+  let selectedCategory = category || "All";
+  if (selectedCategory !== "All" && !html.includes(`data-blog-category="${selectedCategory}"`)) {
+    selectedCategory = "All";
+  }
+
+  const statefulHtml = html.replace(
+    /(<div class="blog-card-grid">\s*)([\s\S]*?)(\s*<\/div>)(\s*<\/div>\s*<\/section>)/,
+    (match, opening, cardsHtml, gridClosing, sectionClosing) => {
+      const cards = [...cardsHtml.matchAll(/<a class="blog-feature-card"[^>]*>[\s\S]*?<\/a>/g)]
+        .map((cardMatch) => cardMatch[0]);
+      if (!cards.length) return match;
+
+      const getCategories = (cardHtml) => {
+        const categoryMatch = cardHtml.match(/data-blog-category="([^"]*)"/);
+        return (categoryMatch?.[1] || "")
+          .split(",")
+          .map((value) => value.trim())
+          .filter(Boolean);
+      };
+      const matchingCards = selectedCategory === "All"
+        ? cards
+        : cards.filter((cardHtml) => getCategories(cardHtml).includes(selectedCategory));
+
+      const pageCount = Math.max(1, Math.ceil(matchingCards.length / itemsPerPage));
+      const currentPage = Math.min(Math.max(Number(page) || 1, 1), pageCount);
+      const startIndex = (currentPage - 1) * itemsPerPage;
+      const visibleCards = new Set(matchingCards.slice(startIndex, startIndex + itemsPerPage));
+      const renderedCards = cards.map((cardHtml) => (
+        visibleCards.has(cardHtml)
+          ? cardHtml
+          : cardHtml.replace('<a class="blog-feature-card"', '<a class="blog-feature-card" hidden')
+      ));
+
+      const emptyState = `<p class="blog-empty-state"${matchingCards.length ? " hidden" : ""}>No articles found in this category.</p>`;
+      return `${opening}${renderedCards.join("\n          ")}${gridClosing}\n        ${emptyState}${sectionClosing}`;
+    },
+  );
+
+  return statefulHtml.replace(
+    /(<div class="blog-category-filter"[^>]*>)([\s\S]*?)(<\/div>)/,
+    (match, opening, buttonsHtml, closing) => {
+      const renderedButtons = buttonsHtml.replace(
+        /<button(?: class="active")?([^>]*data-blog-category="([^"]+)"[^>]*)>/g,
+        (buttonMatch, attributes, buttonCategory) => (
+          `<button${buttonCategory === selectedCategory ? ' class="active"' : ""}${attributes}>`
+        ),
+      );
+      return `${opening}${renderedButtons}${closing}`;
+    },
+  );
+};
+
+export const buildBlogIndexHtml = (html, articles = {}, initialState = {}) =>
+  applyBlogIndexState(
+    addBlogCardMeta(enhanceBlogCardImages(sortBlogCardsByDate(normalizeBlogArticleLinks(html.replace(
+      /<article id="[^"]+" class="[^"]*\bblog-article-section\b[^"]*">[\s\S]*?<\/article>/g,
+      "",
+    )), articles)), articles),
+    initialState,
+  );
 
 const addBlogArticleMeta = (articleHtml, articleMeta) => {
   const author = articleMeta?.author;
