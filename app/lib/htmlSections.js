@@ -583,12 +583,28 @@ export const buildBlogArticleHtml = (html, articleSlug, articleMeta = {}) => {
     )
     : shell.afterMain;
 
-  const afterMain = articleMeta.inquiryHeading
-    ? footerHtml.replace(
+  let afterMain = footerHtml;
+
+  if (articleMeta.inquiryHeading) {
+    afterMain = afterMain.replace(
       "<h2>Ready to Start Your Custom Metal Gift Project?</h2>",
       `<h2>${articleMeta.inquiryHeading}</h2>`,
-    )
-    : footerHtml;
+    );
+  }
+
+  if (articleMeta.inquiryDescription) {
+    afterMain = afterMain.replace(
+      "<p>Send us your idea, logo or reference image.<br>Our team will help turn it into a production-ready design.</p>",
+      `<p>${articleMeta.inquiryDescription}</p>`,
+    );
+  }
+
+  if (articleMeta.inquiryButtonLabel) {
+    afterMain = afterMain.replace(
+      '<button type="submit">Get a Free Quote</button>',
+      `<button type="submit">${articleMeta.inquiryButtonLabel}</button>`,
+    );
+  }
 
   return enhanceBlogArticleImages(normalizeBlogArticleLinks(`${shell.beforeMain}<main>${article}</main>${afterMain}`));
 };

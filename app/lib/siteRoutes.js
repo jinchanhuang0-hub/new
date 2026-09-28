@@ -628,6 +628,10 @@ const blogArticleData = {
     headline: "Patch Shapes Guide: How to Choose the Right Shape for a Custom Patch",
     description:
       "Compare round, rectangular, shield, oval and custom patch shapes. Learn how artwork, placement, borders and size affect the best shape for your design.",
+    inquiryHeading: "Need Help Choosing a Shape for Your Custom Patch?",
+    inquiryDescription:
+      "Tell us what artwork or reference image is available, along with the intended placement, approximate dimensions, quantity and required delivery date. Include your preferred material and backing, if known, so we can review the outline and edge options.",
+    inquiryButtonLabel: "Request a Custom Patch Quote",
     image: "/assets/images/patch-shapes-guide.webp",
     author: "Sunny Huang",
     authorType: "Person",
