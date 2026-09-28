@@ -1218,6 +1218,7 @@ export const blogHtml = String.raw`
             <a href="#detail-and-clarity">Detail</a>
             <a href="#2d-artwork-requirements">2D artwork</a>
             <a href="#3d-artwork-requirements">3D artwork</a>
+            <a href="#proof-approval-checklist">Proof checklist</a>
             <a href="#3d-challenge-coin-cost">Cost</a>
             <a href="#combined-2d-and-3d">Hybrid designs</a>
             <a href="#choosing-between-2d-and-3d">How to choose</a>
@@ -1265,18 +1266,7 @@ export const blogHtml = String.raw`
         <h2 id="what-is-a-2d-challenge-coin">What Is a 2D Challenge Coin?</h2>
         <p>A 2D challenge coin is not completely flat. Its raised and recessed areas can still be seen and felt. The term "2D" refers to the way the artwork is divided into clearly separated height levels rather than smooth, sculpted contours.</p>
         <p>Imagine a police shield with a raised outline, raised lettering and a recessed background. The elements have physical depth, but the top of each raised section remains relatively flat. The change from one level to another is clearly defined.</p>
-        <p>This structure is useful when the design depends on accuracy. A letter must keep its shape. A small date must remain open and readable. A brand color needs a defined area rather than a sloping surface.</p>
-        <p>A 2D challenge coin design is therefore a strong fit for:</p>
-        <ul class="blog-list">
-          <li>Corporate logos and wordmarks</li>
-          <li>Military and public-service insignia</li>
-          <li>School and university emblems</li>
-          <li>Flags and geometric patterns</li>
-          <li>Event names and anniversary dates</li>
-          <li>Graphic mascots</li>
-          <li>Designs with several enamel colors</li>
-        </ul>
-        <p>If the artwork already works well as a flat logo or badge, 2D is usually the sensible place to begin.</p>
+        <p>Flat-topped raised areas and clearly defined recesses help separate lettering, graphic elements and enamel cells. This makes 2D a practical starting point for badges, wordmarks and color-driven layouts. Final clarity still depends on the finished diameter and spacing in the artwork, so review the proof at production size rather than assume every small detail will remain clear.</p>
         <figure class="blog-article-image blog-article-contain-image blog-article-edge-to-edge-image">
           <img src="/assets/images/2d-challenge-coin-stepped-relief.webp" width="1600" height="841" loading="lazy" decoding="async" alt="2D challenge coin with stepped raised lettering and recessed enamel color areas">
           <figcaption>This 2D challenge coin uses defined metal borders to separate lettering, graphic shapes and enamel colors.</figcaption>
@@ -1294,11 +1284,15 @@ export const blogHtml = String.raw`
         </figure>
 
         <h2 id="logos-and-text">Which Style Works Better for Logos and Text?</h2>
-        <p>For most company logos, unit insignia and text-heavy designs, 2D is the safer choice.</p>
-        <p>Letters need sufficient line thickness, open internal spaces and separation from nearby artwork. A stepped structure helps them retain those qualities after coloring and finishing.</p>
-        <p>Small wording becomes harder to read when it crosses an uneven 3D surface. Sculpted relief also produces shadows, which may reduce contrast around dates, names or fine lettering.</p>
-        <p>That does not mean every logo must remain entirely 2D. A shield, crest or emblem can gain depth from partial sculpting. The important distinction is between decorative form and essential information. The emblem may be dimensional, while the organization name and date remain on a flatter border.</p>
-        <p>When a coin needs both depth and readable wording, a hybrid design is often more successful than forcing everything into one relief style.</p>
+        <p>For most company logos, unit insignia and text-heavy designs, 2D is the safer choice to evaluate first. This does not mean every logo must remain entirely 2D: a shield, crest or emblem can use sculpted relief while essential wording stays on a flatter border.</p>
+        <p>Review the proof at the planned coin diameter and check:</p>
+        <ul class="blog-list">
+          <li>whether the open spaces inside letters are still visible;</li>
+          <li>whether adjacent strokes and letters remain separated;</li>
+          <li>whether outer-ring text is readable without enlarging the artwork on screen; and</li>
+          <li>whether a sculpted emblem can be separated from the flatter areas needed for essential wording.</li>
+        </ul>
+        <p>Do not assume that every small character can be manufactured clearly. If critical wording fails any of these checks, enlarge it, shorten it or move it to a less crowded area.</p>
 
         <h2 id="enamel-color">Which Style Works Better with Enamel Color?</h2>
         <p>A 2D coin is usually easier to combine with several enamel colors.</p>
@@ -1340,62 +1334,45 @@ export const blogHtml = String.raw`
         <p>Useful notes should identify which details matter most. For a portrait, that may be facial recognition rather than every fold in the clothing. For a building, it may be the roofline and entrance rather than every individual window.</p>
         <p>Before approving the relief, review proportions, feature recognition, text position and the relationship between high and low areas. A dramatic digital rendering is appealing, but it should still represent a design that makes sense at the finished coin size.</p>
 
+        <h2 id="proof-approval-checklist">What to Check Before Approving the Proof</h2>
+        <p>Review the proof at the coin's planned physical diameter, not only as an enlarged image on screen. Confirm that names, dates and the defining features of any 3D subject remain recognizable. Mark raised metal, recessed metal, enamel areas, printed details and finishes on both sides so each production area has one clear treatment. In a hybrid design, define where sculpted relief ends and flatter lettering or color-filled areas begin. If an important detail cannot be judged reliably from the digital proof, ask the supplier whether a physical sample is needed and available before bulk production. Finally, compare the approved front, back and edge requirements against the final specification, including the selected edge treatment, before authorization.</p>
+
         <h2 id="3d-challenge-coin-cost">Do 3D Challenge Coins Cost More?</h2>
-        <p>Under comparable specifications, 3D challenge coins often have a higher quoted price because artwork interpretation, digital sculpting and tooling tend to be more complex.</p>
-        <p>A fixed percentage would be misleading, though. The final quotation may also depend on:</p>
-        <ul class="blog-list">
-          <li>Diameter and thickness</li>
-          <li>One-sided or double-sided relief</li>
-          <li>Complexity of the sculpting</li>
-          <li>Metal and production method</li>
-          <li>Order quantity</li>
-          <li>Plating and enamel</li>
-          <li>Custom edges or numbering</li>
-          <li>Packaging</li>
-          <li>Shipping destination</li>
-        </ul>
-        <p>A simple one-sided 3D emblem may cost less than a large double-sided 2D coin with numerous colors, special edges, sequential numbering and premium boxes.</p>
-        <p>The clearest comparison is to request 2D and 3D quotations using the same size, quantity, finish and packaging. That shows the cost of changing the relief without mixing in unrelated specifications.</p>
+        <p>Under comparable specifications, 3D challenge coins often receive a higher quote because relief interpretation, digital sculpting and tooling tend to be more complex. There is no universal fixed premium.</p>
+        <ol class="blog-list">
+          <li><strong>Hold the comparison conditions constant:</strong> diameter, thickness, quantity, number of decorated sides, plating, packaging and shipping destination.</li>
+          <li><strong>Identify requirements that may add cost:</strong> complex relief, extra colors, a special edge or individual numbering.</li>
+        </ol>
+        <p>Ask the supplier to show separately how the proposed relief changes the quote. This isolates the 2D-versus-3D decision from unrelated specification changes.</p>
 
         <section class="blog-article-cta">
           <div class="blog-cta-copy">
             <h2>Not Sure Which Option Fits Your Artwork?</h2>
-            <p>Send your design, preferred size, quantity and delivery date. We can review whether a 2D, 3D or hybrid layout is the most practical starting point.</p>
+            <p>Send the front and back artwork, planned diameter and quantity for a practical 2D, 3D or hybrid review.</p>
           </div>
           <div class="blog-cta-actions"><a class="btn btn-yellow" href="/contact">Upload Your Artwork</a><a class="btn btn-primary" href="/products/custom-challenge-coins">View Challenge Coins</a></div>
         </section>
 
         <h2 id="combined-2d-and-3d">Can 2D and 3D Be Combined?</h2>
-        <p>Yes. In many cases, combining them produces a clearer coin.</p>
-        <p>Consider a corporate anniversary design. The founder's portrait might use 3D relief in the center. The company name and anniversary dates can remain in 2D around the border, with enamel added to the brand mark on the reverse.</p>
-        <p>Each method then has a specific job:</p>
-        <ul class="blog-list">
-          <li>3D relief gives the main subject depth.</li>
-          <li>2D relief keeps text and borders readable.</li>
-          <li>Recessed cells contain enamel colors.</li>
-          <li>Flatter areas provide space for printing or identification details.</li>
-        </ul>
-        <p>The design does not need to be classified as entirely 2D or entirely 3D. What matters is whether each element uses the structure that communicates it best.</p>
+        <p>Yes. <strong>Example:</strong> on a corporate anniversary coin, the front could place a 3D portrait or main subject in the center, with the organization name and date in flatter 2D lettering around the border. The reverse could use clearly defined 2D recesses for brand colors and a short message.</p>
+        <p>If the layout becomes crowded, simplify the background or move nonessential wording to the reverse. Leave enough separation between sculpted relief, required text and color-filled areas.</p>
         <figure class="blog-article-image blog-article-contain-image blog-article-edge-to-edge-image">
           <img src="/assets/images/hybrid-2d-3d-challenge-coin.webp" width="1600" height="841" loading="lazy" decoding="async" alt="hybrid 2D and 3D challenge coin with enamel colors, raised lettering and sculpted figures">
           <figcaption>A hybrid challenge coin can pair sculpted central elements with readable 2D lettering and enamel-filled areas.</figcaption>
         </figure>
 
         <h2 id="choosing-between-2d-and-3d">How to Choose Between 2D and 3D</h2>
-        <p>Three typical projects illustrate the decision.</p>
-        <p>A company coin with a wordmark, short slogan and several brand colors will usually be clearer in 2D. The artwork depends more on accurate shapes and color separation than on natural contours.</p>
-        <p>A memorial coin centered on a recognizable portrait may justify 3D relief, particularly when paired with an antique finish. The face is the emotional focus, so dimensional modeling adds value.</p>
-        <p>A firefighter coin containing a sculpted helmet, department name and colored station emblem may benefit from a hybrid layout. The helmet can be 3D, while the wording and enamel areas remain 2D.</p>
-        <p>Before selecting a 2D or 3D challenge coin, ask:</p>
-        <ol class="blog-list">
-          <li>Is the main subject a graphic logo or a realistic object?</li>
-          <li>Does the design depend on several enamel colors?</li>
-          <li>Is small text essential?</li>
-          <li>Would curved contours improve recognition?</li>
-          <li>Is the planned coin large enough for the required detail?</li>
-          <li>Would a hybrid structure solve competing design needs?</li>
-        </ol>
-        <p>If the answers still point in different directions, <a href="/contact">request an artwork review</a> before settling on the relief. Buyers who are also comparing product formats may find our <a href="/blog/custom-medals-vs-challenge-coins">custom medals vs challenge coins</a> guide useful.</p>
+        <div class="blog-table-wrap">
+          <table class="blog-table">
+            <thead><tr><th>Artwork need</th><th>Evaluate first</th><th>Approval check</th></tr></thead>
+            <tbody>
+              <tr><td>Logo, date, fine lines or multiple enamel colors</td><td>2D</td><td>Text spacing, open letterforms and color boundaries</td></tr>
+              <tr><td>Portrait, animal, building or another subject that needs rounded form</td><td>3D</td><td>Recognition of key features at the finished coin diameter</td></tr>
+              <tr><td>Sculpted subject plus essential text or color</td><td>Hybrid 2D + 3D</td><td>Enough space for each relief, text and color area</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>If the artwork still points in different directions, <a href="/contact">request an artwork review</a> before settling on the relief. Buyers who are also comparing product formats may find our <a href="/blog/custom-medals-vs-challenge-coins">custom medals vs challenge coins</a> guide useful.</p>
 
         <h2 id="2d-vs-3d-frequently-asked-questions">Frequently Asked Questions</h2>
         <div class="blog-faq">

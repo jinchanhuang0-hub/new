@@ -1016,7 +1016,8 @@ const blogArticleData = {
     author: "Sunny Huang",
     authorType: "Person",
     datePublished: "2026-07-29",
-    dateModified: "2026-07-29",
+    dateModified: "2026-09-28",
+    hideModifiedDate: true,
     image: "/assets/images/2d-vs-3d-challenge-coins.webp",
     faq: [
       {
