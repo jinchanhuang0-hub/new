@@ -334,11 +334,11 @@ export const blogHtml = String.raw`
             </div>
           </a>
           <a class="blog-feature-card" href="/blog/soft-enamel-vs-hard-enamel-pins" data-blog-category="Custom Lapel Pins" aria-label="Read Soft Enamel vs Hard Enamel Pins">
-            <img src="/assets/images/blog-soft-hard-enamel-pins-v2.webp" width="1200" height="720" alt="two custom enamel pins with detailed sports and character artwork">
+            <img src="/assets/images/soft-vs-hard-enamel-pins-comparison.webp" width="1536" height="1024" title="Soft vs Hard Enamel Pins Comparison" alt="Two pins with the same design showing recessed soft enamel and a smooth polished hard enamel finish">
             <div class="blog-feature-body">
               <div class="blog-feature-meta"><span>Custom Lapel Pins</span><span>Buyer Guide</span></div>
               <h2>Soft Enamel vs Hard Enamel Pins: Cost, Durability and Best Uses</h2>
-              <p>Compare texture, price factors, wear resistance, artwork limits and the best finish for retail, events and branded merchandise.</p>
+              <p>Compare texture, price factors, cleaning, artwork limits and specification checks for retail, events and branded merchandise.</p>
               <span class="blog-feature-link">Read More</span>
             </div>
           </a>
@@ -2163,10 +2163,10 @@ export const blogHtml = String.raw`
         <header class="blog-article-header">
           <a class="blog-back-link" href="/blog">Back to Blog</a>
           <h1>Soft Enamel vs Hard Enamel Pins: Cost, Durability and Best Uses</h1>
-          <p><strong>The short answer:</strong> choose soft enamel when you want noticeable metal texture, bold color separation and a cost-effective finish for promotions or merchandise. Choose hard enamel when you want a smooth, polished surface for premium retail, corporate identity or pins that will be worn frequently.</p>
-          <p>The better process still depends on the artwork, quantity, target price and product use. This buyer guide compares how soft and hard enamel pins look, feel, wear and affect production so you can request the right specification before tooling begins.</p>
+          <p><strong>The short answer:</strong> choose soft enamel when you want noticeable metal texture, bold color separation and a cost-effective finish for promotions or merchandise. Choose hard enamel when you want a smooth, polished surface and a more level transition between the color and metal lines.</p>
+          <p>The better process still depends on the artwork, quantity, target price and product use. This buyer guide compares how soft and hard enamel pins look, feel, clean and affect a quotation so you can request the right specification before tooling begins.</p>
           <figure class="blog-article-image blog-article-hero-image">
-            <img src="/assets/images/blog-soft-hard-enamel-pins-v2.webp" width="1200" height="720" alt="two custom enamel pins with detailed sports and character artwork">
+            <img src="/assets/images/soft-vs-hard-enamel-pins-comparison.webp" width="1536" height="1024" title="Soft vs Hard Enamel Pins Comparison" alt="Two pins with the same design showing recessed soft enamel and a smooth polished hard enamel finish">
             <figcaption>Enamel type changes the surface level, texture and overall presentation of a custom pin.</figcaption>
           </figure>
         </header>
@@ -2179,42 +2179,45 @@ export const blogHtml = String.raw`
               <tr><td>Surface feel</td><td>Textured; color sits below raised metal lines</td><td>Smooth; enamel and metal are polished nearly level</td></tr>
               <tr><td>Visual style</td><td>Bold outlines, deeper shadows and stronger relief</td><td>Clean, flat and jewelry-like presentation</td></tr>
               <tr><td>Relative cost</td><td>Usually more economical</td><td>Usually higher because of extra filling and polishing</td></tr>
-              <tr><td>Wear resistance</td><td>Good for normal promotional and merchandise use</td><td>Better resistance to everyday surface wear</td></tr>
-              <tr><td>Best applications</td><td>Events, clubs, giveaways, fan merchandise and bold artwork</td><td>Retail, corporate identity, recognition and premium collections</td></tr>
-              <tr><td>Optional coating</td><td>Epoxy can protect recessed colors and create a domed surface</td><td>Normally does not need epoxy</td></tr>
+              <tr><td>Cleaning and wear review</td><td>Recesses can collect dust; assess enamel, plating, posts and intended use</td><td>Level face is usually easier to wipe; overall durability still requires a like-for-like review</td></tr>
+              <tr><td>Best applications</td><td>Artwork that benefits from recessed color and raised metal lines</td><td>Artwork that benefits from a smooth, polished face</td></tr>
+              <tr><td>Optional coating</td><td>Epoxy creates a domed face and changes the original texture</td><td>Confirm any added coating as part of the requested finish</td></tr>
               <tr><td>Design character</td><td>Texture is part of the design</td><td>Smoothness and precise polishing are part of the design</td></tr>
             </tbody>
           </table>
         </div>
+
+        <figure class="blog-article-image blog-article-natural-image">
+          <img src="/assets/images/soft-hard-enamel-surface-closeup.webp" width="1536" height="1024" loading="lazy" decoding="async" title="Soft and Hard Enamel Surface Close-Up" alt="Close-up comparison of raised metal borders and recessed soft enamel beside a nearly level polished enamel surface">
+        </figure>
 
         <h2>What Are Soft Enamel Pins?</h2>
         <p>Soft enamel pins use raised metal borders to separate recessed color areas. After the metal base is stamped or cast and plated, enamel is filled below the top of those borders. You can see and feel the difference in height between the color and the metal.</p>
         <p>This construction creates small highlights and shadows that make outlines look more pronounced. It is especially effective for mascots, sports graphics, event icons, lettering and designs where the metal itself should remain visible. Soft enamel does not mean the finished pin is flexible; the name describes the recessed enamel surface.</p>
 
         <h2>When Soft Enamel Pins Work Best</h2>
-        <p>Soft enamel is a practical choice when texture supports the design or when unit cost matters across a larger quantity. Buyers commonly select it for trade shows, school clubs, sports teams, tourism souvenirs, fan products, fundraising campaigns and distributor programs.</p>
-        <ul class="blog-list">
-          <li><strong>Promotional orders:</strong> the process balances color impact with an economical finish.</li>
-          <li><strong>Artwork with strong outlines:</strong> raised borders keep separate color areas clear.</li>
-          <li><strong>Vintage or dimensional styling:</strong> recessed enamel gives the surface visible depth.</li>
-          <li><strong>Design testing:</strong> buyers can evaluate size, plating and color before committing to a premium treatment.</li>
-        </ul>
+        <p>Soft enamel works well when recessed color, raised metal lines and a noticeable hand feel are intended parts of the artwork. It suits bold outlines, separated color fields and designs that use small highlights and shadows to emphasize depth.</p>
+        <p>It is not limited to giveaways: retail merchandise can also use soft enamel when texture supports the design. For a new design or small initial run, a sample can help the buyer evaluate the size, plating, color and surface character before approving a larger quantity.</p>
 
         <h2>What Are Hard Enamel Pins?</h2>
-        <p>Hard enamel pins are filled in stages and polished so the enamel and metal borders sit at nearly the same level. The surface feels smooth when a finger moves across it. This process is also known as imitation hard enamel.</p>
-        <p>The additional filling and polishing create a refined, jewelry-like appearance. The process usually costs more and may require more production time than soft enamel, but it can raise perceived value for retail and presentation-focused orders.</p>
+        <p>Hard enamel pins are filled and polished so the enamel and metal borders sit at nearly the same level. The surface feels smooth when a finger moves across it. In supplier quotations, &ldquo;hard enamel&rdquo; can refer to different enamel systems; this article uses the term for the filled-and-polished custom-pin finish described here. Buyers should confirm whether a quote specifies imitation hard enamel, traditional vitreous enamel or another material and finishing method.</p>
+        <p>The filling and polishing create a refined, jewelry-like appearance and can add production steps compared with soft enamel. The quotation should identify the actual process rather than relying on the finish name alone.</p>
 
         <h2>When Hard Enamel Pins Work Best</h2>
-        <p>Hard enamel is often preferred for premium retail collections, employee service pins, membership programs, corporate identity, school recognition and long-term branded merchandise. It is also useful when pins will be handled or worn frequently and the buyer wants a smooth surface that is easy to wipe clean.</p>
+        <p>Hard enamel is a useful starting point when the artwork calls for a level, polished face with minimal height difference between color and metal. The smooth surface is usually easier to wipe clean, but retail, corporate or frequently worn pins do not automatically require this finish.</p>
         <p>Its polished finish works best with artwork that can be divided into clear metal and color areas. Very fine gradients, photographic effects and details that cannot be separated by metal may require screen printing or offset printing on top of the pin rather than enamel alone.</p>
 
         <h2>Which Type Costs More?</h2>
         <p>Hard enamel pins generally cost more because the colors are filled and polished through additional production steps. Soft enamel is usually the more economical starting point, particularly for bulk promotional orders. Enamel type is only one part of the quotation, however.</p>
-        <p>Size, thickness, order quantity, number of colors, plating, cutouts, printing, attachments and packaging can all change the total. A large soft enamel pin with many colors and custom packaging may cost more than a smaller, simpler hard enamel pin. For an accurate comparison, ask the factory to quote the same artwork, size, quantity and packaging in both finishes.</p>
+        <p>Size, thickness, order quantity, number of colors, plating, cutouts, printing, attachments and packaging can all change the total. For an accurate comparison, ask the factory to quote the same artwork, size, quantity and packaging in both finishes. Confirm whether tooling, samples, printed details, pin attachments, packaging and freight are included or charged separately. Suppliers may structure quotations differently, so the goal is a comparable scope rather than a mandatory line-item format.</p>
 
         <h2>Which Type Is More Durable?</h2>
-        <p>Both pin types can perform well when the metal base, plating, enamel filling and attachments are properly produced. Hard enamel generally resists everyday surface wear better because the polished enamel sits level with the metal. This makes it a strong option for pins that will be worn often or sold as long-term collectibles.</p>
-        <p>Soft enamel has exposed recesses where dust and surface marks can be more noticeable, but it is durable enough for most events, clubs and promotional programs. Buyers who want additional protection can request clear epoxy. Epoxy creates a smooth, slightly domed coating over the entire face, which protects the color but also reduces the original recessed texture and may change how light reflects from the pin.</p>
+        <p>A level surface alone does not establish that one finished pin is more durable overall. Hard enamel is usually easier to wipe because the color and metal are nearly level, while soft enamel recesses can collect more dust. Scratch behavior depends on the enamel and surface finish; impact performance also involves the metal body; plating wear depends on the plating system and use; and post security depends on the post, soldering and clutch.</p>
+        <p>When a project has a specific performance requirement, state the metric that matters and ask for comparable samples or relevant test information using the same size, base metal, plating and attachment. Epoxy changes a soft enamel pin to a smoother, domed face, but it should not be treated as universal proof of better scratch, impact or plating performance.</p>
+
+        <figure class="blog-article-image blog-article-natural-image">
+          <img src="/assets/images/soft-enamel-pin-epoxy-coating-comparison.webp" width="1536" height="1024" loading="lazy" decoding="async" title="Soft Enamel Pin With and Without Epoxy" alt="Identical soft enamel pins showing recessed colors without epoxy and a clear domed coating over the other pin">
+        </figure>
 
         <h2>How Artwork Changes the Decision</h2>
         <p>The best finish starts with the design, not with a generic quality ranking. Enamel colors normally need metal borders between them, and those borders must be thick enough to survive tooling, filling and polishing. Small text, narrow gaps and highly detailed logos may need to be enlarged or simplified.</p>
@@ -2225,68 +2228,49 @@ export const blogHtml = String.raw`
           <li>Review the proof at the pin's actual physical size; artwork that looks clear on a large monitor may not remain readable at 25 or 30 mm.</li>
         </ul>
 
-        <h2>Best Finish by Buyer Use Case</h2>
-        <div class="blog-table-wrap">
-          <table class="blog-table">
-            <thead><tr><th>Project</th><th>Recommended Starting Point</th><th>Reason</th></tr></thead>
-            <tbody>
-              <tr><td>Trade show giveaway</td><td>Soft enamel</td><td>Strong color impact and economical volume production</td></tr>
-              <tr><td>Retail collectible</td><td>Hard enamel or premium soft enamel</td><td>Choose smooth polish for a refined look or texture for artistic character</td></tr>
-              <tr><td>Corporate lapel pin</td><td>Hard enamel</td><td>Clean surface suits formal, repeat-wear use</td></tr>
-              <tr><td>Sports club or fan pin</td><td>Soft enamel</td><td>Raised outlines work well for mascots and team graphics</td></tr>
-              <tr><td>Employee recognition</td><td>Hard enamel</td><td>Polished finish supports long-term perceived value</td></tr>
-              <tr><td>Small trial order</td><td>Either</td><td>Use the sample to validate artwork, color, size and market response</td></tr>
-            </tbody>
-          </table>
-        </div>
-
         <h2>Plating, Attachments and Packaging Still Matter</h2>
         <p>Gold, silver, black nickel, rose gold and antique finishes can make the same enamel artwork feel very different. High-polish plating emphasizes clean hard enamel surfaces, while antique plating can strengthen the recessed, dimensional character of soft enamel. The factory should show the selected plating in the artwork proof because metal color affects contrast.</p>
         <p>Back attachments should match how the pin will be used. Butterfly clutches are common for general orders, rubber clutches are comfortable for casual merchandise, locking clutches help secure frequently worn pins, and magnets can avoid piercing fabric. Retail orders may also need branded backing cards, individual bags, barcodes or gift boxes. These choices should be confirmed before final pricing, not added after production begins.</p>
 
         <h2>Artwork Preparation Before Production</h2>
-        <p>Send the manufacturer the original logo file or vector artwork if available, along with the intended pin size, quantity, plating, color references, attachment and packaging. If those details are not final, explain the application and target price so the supplier can recommend practical options.</p>
-        <ol class="blog-list">
-          <li>Confirm whether the quotation is for soft enamel, hard enamel or both.</li>
-          <li>Check every Pantone color and the selected metal plating on the proof.</li>
-          <li>Verify minimum line widths, small lettering and cutout areas before approving tooling.</li>
-          <li>Confirm pin dimensions at actual size, including overall shape and metal borders.</li>
-          <li>Specify the clutch, number of posts, back stamp and packaging.</li>
-          <li>Approve the digital proof and any required physical sample before mass production.</li>
-        </ol>
+        <p><strong>When requesting a quote:</strong> Provide the available artwork or a clear reference image, expected finished size, quantity, intended use, color or plating requirements, pin attachments and packaging. If some choices are still open, state the target price and use case so the supplier can prepare comparable options.</p>
+        <p><strong>Before approving artwork:</strong> Review text, fine lines, gaps, metal dividers and color areas at the intended finished size. Confirm colors, plating and post positions, and decide whether a physical sample is needed. Ask the factory to mark any detail that should be thickened, enlarged, simplified or repositioned for the specific artwork and dimensions rather than relying on a universal minimum line width or font size.</p>
+
+        <figure class="blog-article-image blog-article-natural-image">
+          <img src="/assets/images/enamel-pin-artwork-proof-review.webp" width="1536" height="1024" loading="lazy" decoding="async" title="Enamel Pin Artwork Proof Review" alt="Printed enamel pin artwork beside a matching sample for checking color areas and fine metal dividers">
+        </figure>
+
         <p>For more preparation detail, use our <a href="/blog/how-to-make-your-own-custom-lapel-pins">custom lapel pin production guide</a>. Buyers testing a design or ordering a limited run can also review the <a href="/blog/custom-enamel-pins-no-moq-guide">No MOQ enamel pin guide</a>.</p>
 
-        <h2>Factory Quality Checks and Pre-Shipment Inspection</h2>
-        <p>For soft enamel, inspection should check fill coverage, recessed color consistency, clean metal borders and unwanted overflow. For hard enamel, inspectors should also check surface level, polishing consistency and whether metal details remain sharp after finishing.</p>
-        <p>Both types should be reviewed for plating color, scratches, pits, sharp edges, post alignment, clutch fit, logo orientation, packaging accuracy and order quantity. Ask how the supplier separates defective pieces and whether spare units or replacements are available for time-sensitive event or retail orders.</p>
+        <h2>Sample and Pre-Shipment Checks for Buyers</h2>
+        <p>Use an approved sample, when required, to review the details that matter to the order. For soft enamel, these may include fill coverage, recessed color consistency, metal borders and overflow. For hard enamel, they may include surface level, polishing consistency and whether metal details remain clear after finishing.</p>
+        <p>Before shipment, agree on the checks relevant to the project, such as plating color, visible scratches or pits, sharp edges, post alignment, clutch fit, logo orientation, packaging and quantity. Ask the supplier how inspection results, nonconforming pieces and any replacement arrangement will be documented; do not assume every order receives the same inspection plan.</p>
 
         <h2>Common Ordering Mistakes</h2>
         <ul class="blog-list">
           <li>Choosing hard enamel only because it is assumed to be universally better, even when the artwork relies on recessed texture.</li>
-          <li>Approving a proof at high screen magnification without checking readability at actual pin size.</li>
           <li>Comparing quotations that use different thicknesses, attachments, plating or packaging.</li>
           <li>Adding epoxy to soft enamel without understanding that it changes the tactile surface.</li>
-          <li>Leaving the delivery date until after sampling, especially for launches and fixed event dates.</li>
         </ul>
 
         <h2>Frequently Asked Questions</h2>
         <div class="blog-faq">
           <details open><summary>What is the main difference between soft enamel and hard enamel pins?</summary><p>Soft enamel pins have recessed color areas and raised metal lines, creating a textured surface. Hard enamel pins are filled and polished so the enamel and metal sit nearly level, creating a smooth finish.</p></details>
-          <details><summary>Are hard enamel pins more durable than soft enamel pins?</summary><p>Hard enamel generally offers better resistance to everyday surface wear because of its polished, level finish. Soft enamel remains suitable for most promotional uses, and an epoxy coating can add protection while changing the surface appearance.</p></details>
+          <details><summary>Are hard enamel pins more durable than soft enamel pins?</summary><p>Not necessarily in every respect. A level hard enamel face is usually easier to wipe, but scratch behavior, impact performance, plating wear and post security depend on the complete specification and use. Compare like-for-like samples or relevant test information when a project has a defined performance requirement.</p></details>
           <details><summary>Which enamel pin type is more cost-effective for bulk orders?</summary><p>Soft enamel is usually the more economical choice because it requires fewer finishing and polishing steps. Final price still depends on size, quantity, plating, number of colors, attachments and packaging.</p></details>
           <details><summary>Should retail enamel pins use soft or hard enamel?</summary><p>Both can work for retail. Hard enamel suits a smooth, premium presentation, while soft enamel provides stronger texture and raised metal detail. The best choice depends on the artwork, target price and brand position.</p></details>
         </div>
 
+        <h2>Conclusion</h2>
+        <p>Choose soft enamel when recessed color and raised metal support the artwork; choose hard enamel when a level, polished face is the priority. Compare both on the same specification, then confirm the quoted material, plating, attachments, packaging and approval requirements.</p>
+
         <section class="blog-article-cta">
           <div class="blog-cta-copy">
             <h2>Need Help Choosing the Right Enamel Finish?</h2>
-            <p>Send your artwork, size, quantity, target price and intended use. We can compare soft enamel, hard enamel and epoxy options on the same project specification.</p>
+            <p>Prepare the same artwork for both options and include the size, quantity, intended use and target price in your inquiry. Note which artwork or reference file is available so the finishes can be compared on the same specification.</p>
           </div>
-      <div class="blog-cta-actions"><a class="btn btn-yellow" href="/contact">Get a Free Quote</a><a class="btn btn-primary" href="/products/custom-enamel-pins">View Pin Styles</a></div>
+      <div class="blog-cta-actions"><a class="btn btn-yellow" href="/contact?product=Lapel%20Pins&amp;source=soft-enamel-vs-hard-enamel-pins">Request a Finish Comparison</a><a class="btn btn-primary" href="/products/custom-enamel-pins">View Pin Styles</a></div>
         </section>
-
-        <h2>Conclusion</h2>
-        <p>Soft enamel is the stronger starting point for textured artwork, promotional value and bold raised outlines. Hard enamel is better when buyers need a smooth, polished and wear-resistant presentation. Neither is automatically right for every order. Compare both against the same artwork and specification, then confirm plating, attachments, packaging and inspection standards before mass production. Explore available processes on our <a href="/products/custom-enamel-pins">custom enamel pins</a> page.</p>
       </div>
     </article>
 

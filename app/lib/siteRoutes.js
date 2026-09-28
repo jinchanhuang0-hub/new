@@ -1135,7 +1135,7 @@ const blogArticleData = {
       "Compare soft enamel vs hard enamel pins by texture, cost, durability, artwork limits and best uses before ordering custom pins.",
     datePublished: "2026-07-15",
     dateModified: "2026-08-05",
-    image: "/assets/images/blog-soft-hard-enamel-pins-v2.webp",
+    image: "/assets/images/soft-vs-hard-enamel-pins-comparison.webp",
     faq: [
       {
         question: "What is the main difference between soft enamel and hard enamel pins?",
@@ -1145,7 +1145,7 @@ const blogArticleData = {
       {
         question: "Are hard enamel pins more durable than soft enamel pins?",
         answer:
-          "Hard enamel generally offers better resistance to everyday surface wear because of its polished, level finish. Soft enamel remains suitable for most promotional uses, and an epoxy coating can add protection while changing the surface appearance.",
+          "Not necessarily in every respect. A level hard enamel face is usually easier to wipe, but scratch behavior, impact performance, plating wear and post security depend on the complete specification and use. Compare like-for-like samples or relevant test information when a project has a defined performance requirement.",
       },
       {
         question: "Which enamel pin type is more cost-effective for bulk orders?",
