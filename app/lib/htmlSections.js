@@ -224,7 +224,7 @@ const productCategoryHeroImageDimensions = {
 const categoryStyleGuideSourceByKey = {
   pins: {
     sourceSlug: "custom-lapel-pins",
-    heading: "Lapel Pin Types & Techniques",
+    heading: "Lapel Pin Types",
     id: "lapel-pin-types",
   },
   medals: {
@@ -264,7 +264,12 @@ const renderCategoryStyleGuideSection = (categoryKey) => {
     rowHeadingTag: "h3",
     rowsHeading: guide.heading,
     rowsHeadingId: guide.id,
-    sectionClass: "product-category-style-guide responsive-category-guide",
+    rowsIntro: categoryKey === "pins"
+      ? "Compare six lapel pin techniques and explore a product example for a closer look at each style."
+      : sourcePage.description,
+    rowsLabel: "Featured Styles",
+    cardLayout: "style-cards",
+    sectionClass: "product-category-style-guide responsive-category-guide product-card-style-guide",
   });
 };
 

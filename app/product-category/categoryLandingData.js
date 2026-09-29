@@ -511,6 +511,20 @@ export const renderHomeProductLandingRows = (rows, headingTag = "h2") => {
     .join("\n");
 };
 
+const renderHomeProductLandingStyleCards = (rows) => rows
+  .map((row) => `
+        <article${row.id ? ` id="${escapeHtml(row.id)}"` : ""} class="product-style-card">
+          <a class="product-style-card-link" href="${escapeHtml(row.href)}">
+            <div class="product-style-card-media">
+              ${renderResponsiveImage(row.image, row.alt || row.title, "", 640, row.imageWidth, row.imageHeight)}
+            </div>
+            <div class="product-style-card-footer">
+              <h3 class="product-style-card-title">${escapeHtml(row.title)} <span aria-hidden="true">→</span></h3>
+            </div>
+          </a>
+        </article>`)
+  .join("\n");
+
 const renderRowsHeading = ({ rowsHeading, rowsHeadingId, rowsIntro }) => rowsHeading
   ? `
       <div class="container home-category-section-head">
@@ -525,6 +539,7 @@ export const renderHomeProductLandingRowsSection = (page, options = {}) => {
   const rowsHeadingId = options.rowsHeadingId || "";
   const rowsIntro = Object.hasOwn(options, "rowsIntro") ? options.rowsIntro : page.rowsIntro;
   const includeBackLink = options.includeBackLink ?? true;
+  const cardLayout = options.cardLayout === "style-cards";
 
   return String.raw`
     <section class="${escapeHtml(sectionClass)}" data-category-slug="${escapeHtml(page.slug)}" aria-label="${escapeHtml(page.title)} product styles">
@@ -532,8 +547,9 @@ ${includeBackLink ? `      <div class="container home-category-row-nav">
         <a class="home-category-back-home" href="/">Back to Home</a>
       </div>` : ""}
 ${renderRowsHeading({ rowsHeading, rowsHeadingId, rowsIntro })}
-      <div class="container home-category-row-wrap">
-${renderHomeProductLandingRows(page.rows, options.rowHeadingTag || page.rowHeadingTag)}
+${options.rowsLabel ? `      <div class="container product-style-section-label"><span>${escapeHtml(options.rowsLabel)}</span></div>` : ""}
+      <div class="container ${cardLayout ? "product-style-card-grid" : "home-category-row-wrap"}"${cardLayout ? ` data-card-count="${page.rows.length}"` : ""}>
+${cardLayout ? renderHomeProductLandingStyleCards(page.rows) : renderHomeProductLandingRows(page.rows, options.rowHeadingTag || page.rowHeadingTag)}
       </div>
     </section>`;
 };
