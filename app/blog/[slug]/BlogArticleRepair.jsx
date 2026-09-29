@@ -148,11 +148,36 @@ const applyBlogReturnLink = () => {
   }
 };
 
+const setupInlineYouTubeVideo = () => {
+  const handleVideoClick = (event) => {
+    const button = event.target.closest(".blog-video-thumbnail");
+    const container = button?.closest(".blog-video-embed[data-youtube-video-id]");
+    if (!container) return;
+
+    const videoId = container.dataset.youtubeVideoId;
+    if (!/^[A-Za-z0-9_-]{11}$/.test(videoId)) return;
+
+    const iframe = document.createElement("iframe");
+    iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&playsinline=1&rel=0`;
+    iframe.title = "Authorized customer metal souvenir magnet product video";
+    iframe.width = "760";
+    iframe.height = "428";
+    iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+    iframe.referrerPolicy = "strict-origin-when-cross-origin";
+    iframe.allowFullscreen = true;
+    container.replaceChildren(iframe);
+  };
+
+  document.addEventListener("click", handleVideoClick);
+  return () => document.removeEventListener("click", handleVideoClick);
+};
+
 export default function BlogArticleRepair({ slug }) {
   useEffect(() => {
     let cancelled = false;
     const blogReturnHref = applyBlogReturnLink();
     const cleanupAuthorProfileCard = setupAuthorProfileCard();
+    const cleanupInlineYouTubeVideo = setupInlineYouTubeVideo();
 
     const restoreArticleMain = async () => {
       const article = document.getElementById(slug);
@@ -186,6 +211,7 @@ export default function BlogArticleRepair({ slug }) {
     return () => {
       cancelled = true;
       cleanupAuthorProfileCard();
+      cleanupInlineYouTubeVideo();
     };
   }, [slug]);
 
