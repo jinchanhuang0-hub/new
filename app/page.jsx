@@ -465,7 +465,7 @@ const html = String.raw`
     <section class="section about-cert-section" id="certificates">
       <div class="container">
         <div class="center-head about-heading">
-          <span class="heading-mark" aria-hidden="true"></span>
+          <span class="brand-kicker" aria-hidden="true"></span>
           <h2>Certificates</h2>
         </div>
         <div class="cert-grid">

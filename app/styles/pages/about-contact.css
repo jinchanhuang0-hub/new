@@ -1082,6 +1082,27 @@ body.is-video-lightbox-open {
   display: none;
 }
 
+.about-cert-section .about-heading .brand-kicker {
+  margin-bottom: 24px;
+}
+
+.about-cert-section .about-heading h2 {
+  font-size: clamp(30px, 2.55vw, 42px);
+  font-weight: 800;
+  line-height: 1.05;
+}
+
+@media (max-width: 767px) {
+  .about-cert-section .about-heading .brand-kicker {
+    margin-bottom: 12px;
+  }
+
+  .about-cert-section .about-heading h2 {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+}
+
 .about-review-section.reviews-section {
   background: #fff;
 }
