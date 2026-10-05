@@ -296,6 +296,7 @@ const html = String.raw`
       <div class="container how-layout">
         <div class="how-content">
           <div class="how-heading">
+            <span class="brand-kicker" aria-hidden="true"></span>
             <h2>How It Works</h2>
             <p>We Make Custom Metal Crafts Simple and Reliable.</p>
           </div>
@@ -345,6 +346,7 @@ const html = String.raw`
     <section class="section section-soft why-choice-section">
       <div class="container">
         <div class="why-choice-head">
+          <span class="brand-kicker" aria-hidden="true"></span>
           <h2>Why Choose Us?</h2>
         </div>
         <div class="why-grid">

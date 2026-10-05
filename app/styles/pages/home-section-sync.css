@@ -1,0 +1,115 @@
+/* Keep homepage content sections visually consistent with Customer Photos. */
+body:has(main > .hero) .product-showcase-section,
+body:has(main > .hero) .how-section,
+body:has(main > .hero) .reviews-section,
+body:has(main > .hero) .home-buying-guides {
+  background: #fff;
+}
+
+body:has(main > .hero) .more-custom-products-section,
+body:has(main > .hero) .customer-photo-gallery-section,
+body:has(main > .hero) .home-company-section,
+body:has(main > .hero) .about-cert-section,
+body:has(main > .hero) .pin-product-faq {
+  background: #f7f9fc;
+}
+
+body:has(main > .hero) .product-showcase-section::before,
+body:has(main > .hero) .how-section::before,
+body:has(main > .hero) .how-section::after {
+  display: none;
+}
+
+body:has(main > .hero) .product-showcase-section,
+body:has(main > .hero) .more-custom-products-section,
+body:has(main > .hero) .how-section,
+body:has(main > .hero) .why-choice-section,
+body:has(main > .hero) .home-company-section,
+body:has(main > .hero) .reviews-section,
+body:has(main > .hero) .about-cert-section,
+body:has(main > .hero) .home-buying-guides,
+body:has(main > .hero) .pin-product-faq {
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+
+body:has(main > .hero) .why-choice-section {
+  background: #fff;
+}
+
+body:has(main > .hero) .how-heading,
+body:has(main > .hero) .why-choice-head {
+  padding-top: 0;
+}
+
+body:has(main > .hero) .how-heading::before,
+body:has(main > .hero) .how-heading::after,
+body:has(main > .hero) .why-choice-head::before,
+body:has(main > .hero) .why-choice-head::after {
+  display: none;
+}
+
+body:has(main > .hero) .how-heading .brand-kicker,
+body:has(main > .hero) .why-choice-head .brand-kicker {
+  margin-bottom: 24px;
+}
+
+body:has(main > .hero) .how-heading h2,
+body:has(main > .hero) .why-choice-head h2 {
+  font-size: clamp(30px, 2.55vw, 42px);
+  font-weight: 800;
+}
+
+body:has(main > .hero) .about-cert-section .about-heading .brand-kicker {
+  margin-bottom: 24px;
+}
+
+body:has(main > .hero) .about-cert-section .about-heading h2 {
+  font-size: clamp(30px, 2.55vw, 42px);
+  font-weight: 800;
+  line-height: 1.05;
+}
+
+body:has(main > .hero) .product-heading p,
+body:has(main > .hero) .how-heading p,
+body:has(main > .hero) .reviews-head p,
+body:has(main > .hero) .home-buying-guides-head p {
+  margin-top: 12px;
+  color: #5b6980;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+@media (max-width: 767px) {
+  body:has(main > .hero) .product-showcase-section,
+  body:has(main > .hero) .more-custom-products-section,
+  body:has(main > .hero) .how-section,
+  body:has(main > .hero) .why-choice-section,
+  body:has(main > .hero) .home-company-section,
+  body:has(main > .hero) .reviews-section,
+  body:has(main > .hero) .about-cert-section,
+  body:has(main > .hero) .home-buying-guides,
+  body:has(main > .hero) .pin-product-faq {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+
+  body:has(main > .hero) .how-heading .brand-kicker,
+  body:has(main > .hero) .why-choice-head .brand-kicker {
+    margin-bottom: 12px;
+  }
+
+  body:has(main > .hero) .why-choice-head h2 {
+    font-size: 24px;
+  }
+
+  body:has(main > .hero) .about-cert-section .about-heading .brand-kicker {
+    margin-bottom: 12px;
+  }
+
+  body:has(main > .hero) .about-cert-section .about-heading h2 {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+
+}
