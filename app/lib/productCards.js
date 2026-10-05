@@ -52,15 +52,57 @@ const compareKeychainEntriesByMaterialPriority = (entryA, entryB) => {
 };
 
 const patchProductPriority = {
-  "custom-woven-dragon-round-patch": 1,
-  "custom-embroidered-cartoon-character-patch": 2,
-  "custom-embroidered-death-patch": 3,
-  "custom-embroidered-squadron-patch": 4,
-  "custom-embroidered-taco-logo-patch": 5,
-  "custom-embroidered-army-wing-patch": 6,
-  "custom-embroidered-spain-flag-patch": 7,
-  "custom-embroidered-flag-velcro-patch": 8,
-  "custom-embroidered-nabi-letter-patch": 9,
+  "custom-raccoon-trash-can-embroidered-patch": 1,
+  "custom-raccoon-trash-can-character-patch": 2,
+  "custom-cat-fish-embroidered-patch": 3,
+  "custom-floral-black-cat-embroidered-patch": 4,
+  "custom-with-god-all-things-possible-embroidered-patch": 5,
+  "custom-energy-skeleton-embroidered-patch": 6,
+  "custom-god-is-good-embroidered-patch": 7,
+  "custom-bears-mascot-embroidered-patch": 8,
+  "custom-cake-embroidered-patch": 9,
+  "custom-eagles-mascot-embroidered-patch": 10,
+  "custom-football-poodle-embroidered-patch": 11,
+  "custom-the-lovers-cat-embroidered-patch": 12,
+  "custom-woven-dragon-round-patch": 13,
+  "custom-embroidered-cartoon-character-patch": 14,
+  "custom-embroidered-death-patch": 15,
+  "custom-embroidered-squadron-patch": 16,
+  "custom-embroidered-taco-logo-patch": 17,
+  "custom-embroidered-army-wing-patch": 18,
+  "custom-embroidered-spain-flag-patch": 19,
+  "custom-embroidered-flag-velcro-patch": 20,
+  "custom-embroidered-nabi-letter-patch": 21,
+};
+
+const magnetProductPriority = {
+  "custom-colorful-hot-air-balloon-fridge-magnet": 1,
+  "custom-chevron-hot-air-balloon-fridge-magnet": 2,
+  "custom-pittsburgh-skyline-fridge-magnet": 3,
+  "custom-hangzhou-west-lake-fridge-magnet": 4,
+  "custom-mini-food-fridge-magnet-set": 5,
+  "custom-vacation-drink-fridge-magnet-set": 6,
+  "custom-san-diego-souvenir-fridge-magnet": 7,
+  "custom-san-antonio-landmark-fridge-magnet": 8,
+  "custom-american-eagle-fridge-magnet": 9,
+  "custom-magnetic-picture-frame-set": 10,
+  "custom-hawaii-letter-fridge-magnet": 11,
+  "custom-usa-map-fridge-magnet": 12,
+  "custom-kitchen-food-fridge-magnet-set": 13,
+  "custom-germany-map-fridge-magnet": 14,
+  "custom-texas-cowboy-boots-fridge-magnet": 15,
+  "custom-texas-bottle-opener-fridge-magnet": 16,
+  "custom-new-york-skyline-fridge-magnet": 17,
+  "custom-tennessee-landmark-fridge-magnet": 18,
+  "custom-antique-axe-bottle-opener-fridge-magnet": 19,
+  "custom-camera-mardi-gras-fridge-magnet-set": 20,
+  "custom-beatles-logo-fridge-magnet-set": 21,
+  "custom-city-fly-drone-fridge-magnet": 22,
+  "custom-blue-city-car-fridge-magnet": 23,
+  "ornate-building-enamel-fridge-magnet": 24,
+  "ferris-wheel-3d-metal-fridge-magnet": 25,
+  "cartoon-character-soft-pvc-fridge-magnet": 26,
+  "city-landmark-souvenir-fridge-magnet": 27,
 };
 
 const otherProductPriority = {
@@ -86,6 +128,14 @@ const comparePatchEntriesByDisplayPriority = (entryA, entryB) => {
   return priorityDiff || compareProductEntriesBySkuDesc(entryA, entryB);
 };
 
+const compareMagnetEntriesByDisplayPriority = (entryA, entryB) => {
+  const priorityDiff =
+    (magnetProductPriority[entryA[0]] || 999) -
+    (magnetProductPriority[entryB[0]] || 999);
+
+  return priorityDiff || compareProductEntriesBySkuDesc(entryA, entryB);
+};
+
 const compareOtherEntriesByDisplayPriority = (entryA, entryB) => {
   const priorityDiff =
     (otherProductPriority[entryA[0]] || 999) -
@@ -100,6 +150,8 @@ const getProductEntriesForCategory = (categoryKey) => {
       ? compareKeychainEntriesByMaterialPriority
       : categoryKey === "patchs"
       ? comparePatchEntriesByDisplayPriority
+      : categoryKey === "magnets"
+      ? compareMagnetEntriesByDisplayPriority
       : categoryKey === "others"
       ? compareOtherEntriesByDisplayPriority
       : compareProductEntriesBySkuDesc;
@@ -170,7 +222,7 @@ const renderProductCard = ({
     : "";
 
   return `          <article class="product-type-card"${categoryAttrs}>
-            <a class="product-type-media" href="${escapeHtml(productPath)}"><picture><source media="(max-width: 767px)" srcset="${escapeHtml(getMobileImageSource(product.image, 384))}"><img src="${escapeHtml(product.image)}" width="800" height="800" loading="lazy" decoding="async" alt="${escapeHtml(product.alt || product.title)}"></picture></a>
+            <a class="product-type-media" href="${escapeHtml(productPath)}"><picture><source media="(max-width: 767px)" srcset="${escapeHtml(getMobileImageSource(product.image, 384))}"><img src="${escapeHtml(product.image)}" width="800" height="800" loading="lazy" decoding="async" alt="${escapeHtml(product.alt || product.title)}" title="${escapeHtml(product.imageTitle || product.title)}"></picture></a>
             <h2><a href="${escapeHtml(productPath)}">${escapeHtml(product.title)}</a></h2>
             <div class="product-type-actions">
               <a class="product-type-btn product-type-btn-outline" href="${escapeHtml(productPath)}">View Details</a>
