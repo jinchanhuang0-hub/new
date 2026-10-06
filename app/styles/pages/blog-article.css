@@ -259,6 +259,18 @@
   object-fit: cover;
 }
 
+#custom-metal-keychain-materials .blog-table-wrap {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+}
+
+#custom-metal-keychain-materials .blog-table-wrap:focus-visible {
+  outline: 3px solid var(--yellow);
+  outline-offset: 4px;
+}
+
 #keychain-attachments-guide .blog-article-header > .blog-article-hero-image.blog-article-natural-image {
   width: calc(100% + (2 * var(--article-pad)));
   max-width: none;
