@@ -193,12 +193,12 @@ export const blogHtml = String.raw`
               <span class="blog-feature-link">Read More</span>
             </div>
           </a>
-          <a class="blog-feature-card" href="/blog/custom-christmas-ornaments-guide" data-card-image-fit="full" data-blog-category="Holidays" aria-label="Read Custom Christmas Ornaments for Corporate Gifts, Holiday Events and Seasonal Merchandise">
+          <a class="blog-feature-card" href="/blog/custom-christmas-ornaments-guide" data-card-image-fit="full" data-blog-category="Holidays" aria-label="Read How to Choose Custom Metal Christmas Ornaments for Corporate Gifts and Events">
             <img src="/assets/images/custom-christmas-ornaments-corporate-gifts.webp" width="1600" height="900" alt="Custom metal Christmas ornaments for corporate gifts and holiday events">
             <div class="blog-feature-body">
               <div class="blog-feature-meta"><span>Holidays</span><span>Buyer Guide</span></div>
-              <h2>Custom Christmas Ornaments for Corporate Gifts, Holiday Events and Seasonal Merchandise</h2>
-              <p>Plan custom metal Christmas ornaments for employee gifts, client keepsakes, holiday events, retail merchandise and fundraisers.</p>
+              <h2>How to Choose Custom Metal Christmas Ornaments for Corporate Gifts and Events</h2>
+              <p>Compare design, finishes, hanging and packaging before preparing a bulk ornament order.</p>
               <span class="blog-feature-link">Read More</span>
             </div>
           </a>
