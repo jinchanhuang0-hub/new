@@ -451,6 +451,55 @@
   overflow-x: auto;
 }
 
+#custom-bottle-opener-keychains-event-order-guide .event-order-table-wrap {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+}
+
+#custom-bottle-opener-keychains-event-order-guide .blog-article-header > .blog-article-hero-image {
+  overflow: hidden;
+}
+
+#custom-bottle-opener-keychains-event-order-guide .blog-article-header > .blog-article-hero-image img {
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: auto;
+  max-height: none;
+  padding: 0;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  object-position: center;
+}
+
+#custom-bottle-opener-keychains-event-order-guide .event-backing-card-image img,
+#custom-bottle-opener-keychains-event-order-guide .customer-bottle-opener-example-image img {
+  height: auto;
+  max-height: none;
+  aspect-ratio: 3 / 2;
+  object-fit: contain;
+}
+
+#custom-bottle-opener-keychains-event-order-guide .event-order-table-wrap:focus-visible {
+  outline: 3px solid var(--yellow);
+  outline-offset: 4px;
+}
+
+#custom-bottle-opener-keychains-event-order-guide .event-order-matrix-table {
+  min-width: 1040px;
+}
+
+#custom-bottle-opener-keychains-event-order-guide .event-order-quantity-table {
+  min-width: 620px;
+}
+
+#custom-bottle-opener-keychains-event-order-guide .blog-table caption {
+  padding: 0 0 14px;
+  color: #344966;
+}
+
 #custom-baseball-trading-pins-team-ordering-guide .baseball-team-order-image img {
   aspect-ratio: 1448 / 1086;
 }
