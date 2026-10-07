@@ -106,18 +106,26 @@ const magnetProductPriority = {
 };
 
 const otherProductPriority = {
-  "custom-gold-snowflake-metal-ornament": 1,
-  "custom-christmas-tree-metal-ornament": 2,
-  "custom-snowman-metal-ornament": 3,
-  "custom-candy-cane-metal-ornament": 4,
-  "custom-gingerbread-man-metal-ornament": 5,
-  "custom-classic-snowflake-metal-ornament": 6,
-  "custom-metal-dog-tag": 7,
-  "custom-silicone-planet-qr-dog-tag": 8,
-  "custom-silicone-bone-qr-dog-tag": 9,
-  "custom-silicone-rocket-qr-dog-tag": 10,
-  "custom-silicone-sausage-dog-tag": 11,
-  "custom-silicone-pink-bone-dog-tag": 12,
+  "custom-multicolor-metal-feather-bookmark-set": 1,
+  "custom-gold-cutout-metal-bookmark-set": 2,
+  "custom-gold-botanical-metal-bookmark-set": 3,
+  "custom-black-gold-metal-rpg-dice-set": 4,
+  "custom-white-drinking-game-dice-set": 5,
+  "custom-colorful-translucent-dice-set": 6,
+  "custom-brushed-silver-metal-business-card": 7,
+  "custom-black-gold-metal-business-card": 8,
+  "custom-gold-snowflake-metal-ornament": 9,
+  "custom-christmas-tree-metal-ornament": 10,
+  "custom-snowman-metal-ornament": 11,
+  "custom-candy-cane-metal-ornament": 12,
+  "custom-gingerbread-man-metal-ornament": 13,
+  "custom-classic-snowflake-metal-ornament": 14,
+  "custom-metal-dog-tag": 15,
+  "custom-silicone-planet-qr-dog-tag": 16,
+  "custom-silicone-bone-qr-dog-tag": 17,
+  "custom-silicone-rocket-qr-dog-tag": 18,
+  "custom-silicone-sausage-dog-tag": 19,
+  "custom-silicone-pink-bone-dog-tag": 20,
 };
 
 const comparePatchEntriesByDisplayPriority = (entryA, entryB) => {
