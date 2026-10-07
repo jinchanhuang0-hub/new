@@ -119,8 +119,8 @@ const configuredCustomerPhotos = [
     height: 640,
     thumbWidth: 360,
     thumbHeight: 480,
-    categoryLabel: "Bottle Openers",
-    alt: "Metal bottle opener clipped to a black cap",
+    categoryLabel: "Golf Accessories",
+    alt: "Golf divot repair tool with ball marker clipped to a black cap",
   },
   {
     id: "embroidered-keychains",
