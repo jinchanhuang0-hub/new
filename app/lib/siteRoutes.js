@@ -381,6 +381,41 @@ const withBlogArticleDefaults = (article) => {
 export const buildBlogAuthorSchema = () => ({ ...DEFAULT_BLOG_AUTHOR_SCHEMA });
 
 const blogArticleData = {
+  "custom-metal-bookmarks-buying-guide": {
+    title: "Custom Metal Bookmarks: Design & Bulk Buying Guide",
+    headline: "How to Choose Custom Metal Bookmarks for Retail and Branded Gifts",
+    description:
+      "Choosing custom metal bookmarks for retail or branded gifts? Compare formats, thickness, artwork, packaging and sample checks before placing a bulk order.",
+    author: "Sunny Huang",
+    authorType: "Person",
+    datePublished: "2026-10-08",
+    dateModified: "2026-10-08",
+    image: "/assets/images/custom-metal-bookmarks-buying-guide.webp",
+    schemaType: "BlogPosting",
+    hideFooterInquiry: true,
+    faq: [
+      {
+        question: "Can one metal bookmark combine printing and cutouts?",
+        answer:
+          "You can request both. Identify the printed and open areas separately, and have the supplier assess print placement around openings before confirming the combination.",
+      },
+      {
+        question: "Can I use the same artwork on both sides?",
+        answer:
+          "Yes, subject to process suitability. Define the orientation when the bookmark is turned over, and confirm that the quoted price includes the requested treatment on both sides.",
+      },
+      {
+        question: "Can a small trial order use the same design as a later bulk order?",
+        answer:
+          "It can use the approved design and specifications. Keep the version reference, record changes and reconfirm pricing; trial and bulk orders may have different unit and setup costs.",
+      },
+      {
+        question: "What if I have artwork but no final size or material?",
+        answer:
+          "Send the intended use, target book dimensions and appearance references. Ask for options, then agree on the specifications before production.",
+      },
+    ],
+  },
   "custom-bottle-opener-keychains-event-order-guide": {
     title: "Custom Bottle Opener Keychains: Event Ordering Guide",
     headline: "Custom Bottle Opener Keychains: Planning an Event Giveaway Order",

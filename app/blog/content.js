@@ -26,6 +26,7 @@ import {
 import { typesOfBottleOpenersForBrandedMerchandiseArticleHtml } from "./typesOfBottleOpenersForBrandedMerchandise";
 import { customBottleOpenerKeychainsEventOrderGuideArticleHtml } from "./customBottleOpenerKeychainsEventOrderGuide";
 import { customMetalFridgeMagnetsMuseumSouvenirShopArticleHtml } from "./customMetalFridgeMagnetsMuseumSouvenirShop";
+import { customMetalBookmarksBuyingGuideArticleHtml } from "./customMetalBookmarksBuyingGuide";
 
 
 export const metadata = {
@@ -64,6 +65,15 @@ export const blogHtml = String.raw`
           <button type="button" data-blog-category="Uncategorized">Uncategorized</button>
         </div>
         <div class="blog-card-grid">
+          <a class="blog-feature-card" href="/blog/custom-metal-bookmarks-buying-guide" data-card-image-fit="full" data-blog-category="Others" aria-label="Read How to Choose Custom Metal Bookmarks for Retail and Branded Gifts">
+            <img src="/assets/images/custom-metal-bookmarks-buying-guide.webp" width="1536" height="1024" title="Custom Metal Bookmarks for Retail and Branded Gifts" alt="Flat and top-decorated metal bookmarks beside a paperback and backing card">
+            <div class="blog-feature-body">
+              <div class="blog-feature-meta"><span>Others</span><span>Buyer Guide</span></div>
+              <h2>How to Choose Custom Metal Bookmarks for Retail and Branded Gifts</h2>
+              <p>Compare bookmark formats, dimensions, artwork processes and packaging before ordering custom metal bookmarks for retail or branded gifts.</p>
+              <span class="blog-feature-link">Read More</span>
+            </div>
+          </a>
           <a class="blog-feature-card" href="/blog/custom-bottle-opener-keychains-event-order-guide" data-card-image-fit="full" data-blog-category="Bottle Openers" aria-label="Read Custom Bottle Opener Keychains: Planning an Event Giveaway Order">
             <img src="/assets/images/custom-bottle-opener-keychains-event-giveaways.webp" width="1536" height="1024" title="Custom Bottle Opener Keychains for Event Giveaways" alt="Custom metal bottle opener keychains beside backing cards and an event gift bag">
             <div class="blog-feature-body">
@@ -407,6 +417,7 @@ export const blogHtml = String.raw`
     ${typesOfBottleOpenersForBrandedMerchandiseArticleHtml}
     ${customBottleOpenerKeychainsEventOrderGuideArticleHtml}
     ${customMetalFridgeMagnetsMuseumSouvenirShopArticleHtml}
+    ${customMetalBookmarksBuyingGuideArticleHtml}
     <article id="military-challenge-coin-traditions" class="section blog-article-section">
       <div class="blog-article-shell">
         <aside class="blog-article-toc" aria-label="Article contents">
