@@ -698,7 +698,9 @@ export default function StaticPageEffects() {
         const result = await response.json().catch(() => ({}));
 
         if (!response.ok) {
-          throw new Error(result.message || "Inquiry could not be sent. Please email ceo@chinauniquepin.com directly.");
+          throw new Error(response.status === 413
+            ? "Attachments must total 4 MB or less. Remove attachments and submit your inquiry again, then email the original design files to our sales team when they contact you."
+            : result.message || "Inquiry could not be sent. Please email ceo@chinauniquepin.com directly.");
         }
 
         if (notice) {

@@ -174,7 +174,7 @@ document.addEventListener("change", (event) => {
     });
     const maxFiles = Number(input.dataset.maxFiles);
     if (combined.reduce((total, file) => total + file.size, 0) > 4 * 1024 * 1024) {
-      renderArtworkSelection(input, previous, "Attachments must total 4 MB or less. Please compress your files before adding them.");
+      renderArtworkSelection(input, previous, "These files were not added because attachments must total 4 MB or less. You can submit with your current selection, or remove all attachments and email the original design files to our sales team when they contact you.");
     } else if (combined.length > maxFiles) {
       renderArtworkSelection(input, previous, "You can upload up to 3 files. Remove a file before adding more.");
     } else renderArtworkSelection(input, combined);
