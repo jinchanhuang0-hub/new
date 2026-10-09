@@ -381,6 +381,20 @@ const withBlogArticleDefaults = (article) => {
 export const buildBlogAuthorSchema = () => ({ ...DEFAULT_BLOG_AUTHOR_SCHEMA });
 
 const blogArticleData = {
+  "custom-pet-tags": {
+    title: "Custom Pet Tags: Bulk Personalization for Pet Brands",
+    headline: "Custom Pet Tags: One Brand Design, Different Pet Details",
+    description:
+      "Plan custom pet tags with one brand design and different names, phone numbers or QR codes. Review layouts, finishes and bulk order data before requesting a quote.",
+    author: "Sunny Huang",
+    authorType: "Person",
+    authorUrl: DEFAULT_BLOG_AUTHOR_SCHEMA.url,
+    datePublished: "2026-10-09",
+    dateModified: "2026-10-09",
+    image: "/assets/images/custom-pet-tags-different-names.webp",
+    schemaType: "BlogPosting",
+    hideFooterInquiry: true,
+  },
   "custom-metal-bookmarks-buying-guide": {
     title: "Custom Metal Bookmarks: Design & Bulk Buying Guide",
     headline: "How to Choose Custom Metal Bookmarks for Retail and Branded Gifts",

@@ -295,6 +295,81 @@
   object-position: center;
 }
 
+#custom-pet-tags .blog-article-header > .blog-article-hero-image img {
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: auto;
+  max-height: none;
+  padding: 0;
+  aspect-ratio: 1672 / 941;
+  object-fit: cover;
+  object-position: center;
+}
+
+#custom-pet-tags .pet-tag-front-back-image img,
+#custom-pet-tags .pet-tag-qr-review-image img,
+#custom-pet-tags .pet-tag-size-attachment-image img {
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: auto;
+  max-height: none;
+  padding: 0;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  object-position: center;
+}
+
+#custom-pet-tags .pet-tag-data-table-wrap {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+}
+
+#custom-pet-tags .pet-tag-data-table-wrap:focus-visible {
+  outline: 3px solid var(--yellow);
+  outline-offset: 4px;
+}
+
+#custom-pet-tags .pet-tag-data-table {
+  min-width: 980px;
+}
+
+#custom-pet-tags .pet-tag-data-table caption {
+  padding: 0 0 14px;
+  color: #344966;
+  font-size: 15px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+#custom-pet-tags .pet-tag-cta p {
+  margin: 0;
+}
+
+#custom-pet-tags .pet-tag-cta .btn {
+  margin-left: 8px;
+  white-space: normal;
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  #custom-pet-tags .blog-article p,
+  #custom-pet-tags .blog-faq p {
+    text-align: left;
+    text-align-last: auto;
+    hyphens: none;
+  }
+
+  #custom-pet-tags .pet-tag-cta .btn {
+    display: block;
+    width: 100%;
+    margin: 18px 0 0;
+  }
+}
+
 #keychain-attachments-guide .blog-article-header > .blog-article-hero-image.blog-article-natural-image {
   width: calc(100% + (2 * var(--article-pad)));
   max-width: none;

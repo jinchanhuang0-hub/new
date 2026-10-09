@@ -27,6 +27,7 @@ import { typesOfBottleOpenersForBrandedMerchandiseArticleHtml } from "./typesOfB
 import { customBottleOpenerKeychainsEventOrderGuideArticleHtml } from "./customBottleOpenerKeychainsEventOrderGuide";
 import { customMetalFridgeMagnetsMuseumSouvenirShopArticleHtml } from "./customMetalFridgeMagnetsMuseumSouvenirShop";
 import { customMetalBookmarksBuyingGuideArticleHtml } from "./customMetalBookmarksBuyingGuide";
+import { customPetTagsArticleHtml } from "./customPetTags";
 
 
 export const metadata = {
@@ -65,6 +66,15 @@ export const blogHtml = String.raw`
           <button type="button" data-blog-category="Uncategorized">Uncategorized</button>
         </div>
         <div class="blog-card-grid">
+          <a class="blog-feature-card" href="/blog/custom-pet-tags" data-card-image-fit="full" data-blog-category="Others" aria-label="Read Custom Pet Tags: One Brand Design, Different Pet Details">
+            <img src="/assets/images/custom-pet-tags-different-names.webp" width="1672" height="941" title="Custom Pet Tags with Different Names" alt="Three matching bone-shaped pet tags with the same brand design and the names Bella, Max and Luna.">
+            <div class="blog-feature-body">
+              <div class="blog-feature-meta"><span>Others</span><span>Personalization Guide</span></div>
+              <h2>Custom Pet Tags: One Brand Design, Different Pet Details</h2>
+              <p>Plan a bulk pet tag order with shared brand artwork, individual names and phone numbers, printed QR codes, and a clear personalization data sheet.</p>
+              <span class="blog-feature-link">Read More</span>
+            </div>
+          </a>
           <a class="blog-feature-card" href="/blog/custom-metal-bookmarks-buying-guide" data-card-image-fit="full" data-blog-category="Others" aria-label="Read How to Choose Custom Metal Bookmarks for Retail and Branded Gifts">
             <img src="/assets/images/custom-metal-bookmarks-buying-guide.webp" width="1536" height="1024" title="Custom Metal Bookmarks for Retail and Branded Gifts" alt="Flat and top-decorated metal bookmarks beside a paperback and backing card">
             <div class="blog-feature-body">
@@ -418,6 +428,7 @@ export const blogHtml = String.raw`
     ${customBottleOpenerKeychainsEventOrderGuideArticleHtml}
     ${customMetalFridgeMagnetsMuseumSouvenirShopArticleHtml}
     ${customMetalBookmarksBuyingGuideArticleHtml}
+    ${customPetTagsArticleHtml}
     <article id="military-challenge-coin-traditions" class="section blog-article-section">
       <div class="blog-article-shell">
         <aside class="blog-article-toc" aria-label="Article contents">
