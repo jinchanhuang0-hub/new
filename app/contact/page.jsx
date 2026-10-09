@@ -105,7 +105,7 @@ const html = String.raw`
                 <span class="upload-icon" aria-hidden="true">&#8593;</span>
                 <span>Upload artwork or reference files for a free proof</span>
               </label>
-              <small id="artwork-help">Add up to 3 files, together or one at a time. Maximum 4 MB combined.</small>
+              <small id="artwork-help">Add up to 3 files, together or one at a time. Maximum 4 MB combined. Uploads are optional. For larger files, submit your inquiry without attachments, then email the original design files to our sales team when they contact you.</small>
               <span id="artwork-status" aria-live="polite" style="overflow-wrap: anywhere;"></span>
             </div>
             <button class="btn btn-primary" type="submit">Get a Free Quote</button>
