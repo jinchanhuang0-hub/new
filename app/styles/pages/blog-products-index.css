@@ -380,7 +380,8 @@
   display: none;
 }
 
-.blog-pagination button {
+.blog-pagination button,
+.blog-pagination a {
   min-width: 42px;
   height: 42px;
   padding: 0 15px;
@@ -394,12 +395,14 @@
   transition: border-color 180ms ease, background 180ms ease, color 180ms ease, box-shadow 180ms ease;
 }
 
-.blog-pagination button:hover:not(:disabled) {
+.blog-pagination button:hover:not(:disabled),
+.blog-pagination a:hover {
   border-color: var(--navy);
   background: #f7fbff;
 }
 
-.blog-pagination button.active {
+.blog-pagination button.active,
+.blog-pagination a.active {
   border-color: var(--navy);
   background: var(--navy);
   color: #fff;
@@ -1740,3 +1743,5 @@
     font-size: 14px;
   }
 }
+
+.blog-pagination a { display: inline-flex; align-items: center; justify-content: center; text-decoration: none; }

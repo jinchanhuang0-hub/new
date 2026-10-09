@@ -537,14 +537,33 @@ const sortBlogCardsByDate = (html, articles = {}) =>
     },
   );
 
+// Resolve once for rendered cards, metadata and structured data.
+export const resolveBlogIndexState = (html, query = {}) => {
+  const categories = [...html.matchAll(/<button[^>]*data-blog-category="([^"]+)"/g)]
+    .map((match) => match[1]);
+  const category = typeof query.category === "string" && categories.includes(query.category)
+    ? query.category : "All";
+  const cards = [...html.matchAll(/<a class="blog-feature-card"[^>]*>/g)];
+  const count = cards.filter(([card]) => category === "All" ||
+    (card.match(/data-blog-category="([^"]*)"/)?.[1] || "")
+      .split(",").map((value) => value.trim()).includes(category)).length;
+  const pageCount = Math.max(1, Math.ceil(count / BLOG_ITEMS_PER_PAGE));
+  const requestedPage = typeof query.page === "string" || typeof query.page === "number"
+    ? Number(query.page) : 1;
+  const page = Math.min(pageCount, Number.isSafeInteger(requestedPage) && requestedPage > 0
+    ? requestedPage : 1);
+  const params = new URLSearchParams();
+  if (category !== "All") params.set("category", category);
+  if (page > 1) params.set("page", String(page));
+  return { category, page, pageCount, href: `/blog${params.size ? `?${params}` : ""}` };
+};
+
 const applyBlogIndexState = (
   html,
   { category = "All", page = 1, itemsPerPage = BLOG_ITEMS_PER_PAGE } = {},
 ) => {
-  let selectedCategory = category || "All";
-  if (selectedCategory !== "All" && !html.includes(`data-blog-category="${selectedCategory}"`)) {
-    selectedCategory = "All";
-  }
+  const state = resolveBlogIndexState(html, { category, page });
+  const selectedCategory = state.category;
 
   const statefulHtml = html.replace(
     /(<div class="blog-card-grid">\s*)([\s\S]*?)(\s*<\/div>)(\s*<\/div>\s*<\/section>)/,
@@ -565,7 +584,7 @@ const applyBlogIndexState = (
         : cards.filter((cardHtml) => getCategories(cardHtml).includes(selectedCategory));
 
       const pageCount = Math.max(1, Math.ceil(matchingCards.length / itemsPerPage));
-      const currentPage = Math.min(Math.max(Number(page) || 1, 1), pageCount);
+      const currentPage = Math.min(state.page, pageCount);
       const startIndex = (currentPage - 1) * itemsPerPage;
       const visibleCards = new Set(matchingCards.slice(startIndex, startIndex + itemsPerPage));
       const renderedCards = cards.map((cardHtml) => (
@@ -574,8 +593,15 @@ const applyBlogIndexState = (
           : cardHtml.replace('<a class="blog-feature-card"', '<a class="blog-feature-card" hidden')
       ));
 
+      const pagination = pageCount > 1
+        ? `<nav class="blog-pagination" data-server-paginated="true" aria-label="Blog pages">${
+          Array.from({ length: pageCount }, (_, index) => {
+            const number = index + 1;
+            const href = resolveBlogIndexState(html, { category: selectedCategory, page: number }).href;
+            return `<a href="${href.replaceAll("&", "&amp;")}"${number === currentPage ? ' class="active" aria-current="page"' : ""}>${number}</a>`;
+          }).join("")}</nav>` : "";
       const emptyState = `<p class="blog-empty-state"${matchingCards.length ? " hidden" : ""}>No articles found in this category.</p>`;
-      return `${opening}${renderedCards.join("\n          ")}${gridClosing}\n        ${emptyState}${sectionClosing}`;
+      return `${opening}${renderedCards.join("\n          ")}${gridClosing}\n        ${emptyState}\n        ${pagination}${sectionClosing}`;
     },
   );
 
