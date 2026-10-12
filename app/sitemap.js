@@ -6,7 +6,26 @@ import {
   SITE_URL,
 } from "./lib/siteRoutes";
 
+import { productLastModified } from "./lib/productDates";
+
 const CONTENT_LAST_MODIFIED = new Date("2026-08-22T00:00:00.000Z");
+
+// Preserve legacy dates for products without a verified newer content date.
+const getProductLastModified = (slug) => productLastModified[slug]
+  ? new Date(`${productLastModified[slug]}T00:00:00.000Z`)
+  : CONTENT_LAST_MODIFIED;
+
+// A listing changes when products are added or their displayed content changes.
+const getCategoryLastModified = (categoryKey) => new Date(Math.max(
+  CONTENT_LAST_MODIFIED.getTime(),
+  ...Object.entries(productItemCategoryKey)
+    .filter(([, key]) => key === categoryKey)
+    .map(([slug]) => getProductLastModified(slug).getTime()),
+));
+
+const getCatalogLastModified = () => new Date(Math.max(
+  ...Object.keys(productCategories).map((key) => getCategoryLastModified(key).getTime()),
+));
 
 const getArticleLastModified = (article) => {
   const value = article.dateModified || article.datePublished;
@@ -33,14 +52,16 @@ const staticPages = [
 export default function sitemap() {
   const staticEntries = staticPages.map(({ path, priority, lastModified }) => ({
     url: `${SITE_URL}${path}`,
-    lastModified: lastModified || CONTENT_LAST_MODIFIED,
+    lastModified: lastModified || (path === "/products"
+      ? getCatalogLastModified()
+      : CONTENT_LAST_MODIFIED),
     changeFrequency: "weekly",
     priority,
   }));
 
   const categoryEntries = Object.keys(productCategories).map((categoryKey) => ({
     url: `${SITE_URL}${getCategoryPath(categoryKey)}`,
-    lastModified: CONTENT_LAST_MODIFIED,
+    lastModified: getCategoryLastModified(categoryKey),
     changeFrequency: "weekly",
     priority: 0.8,
   }));
@@ -48,7 +69,7 @@ export default function sitemap() {
   const itemEntries = Object.entries(productItemCategoryKey).map(
     ([itemSlug, categoryKey]) => ({
       url: `${SITE_URL}${getCategoryPath(categoryKey)}/${itemSlug}`,
-      lastModified: CONTENT_LAST_MODIFIED,
+      lastModified: getProductLastModified(itemSlug),
       changeFrequency: "monthly",
       priority: 0.65,
     }),
