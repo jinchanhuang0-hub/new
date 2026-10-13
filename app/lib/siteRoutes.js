@@ -1,1 +1,1441 @@
-{h®×(žËR!1D
+export const SITE_URL = "https://uccrafts.com";
+
+export const productCategories = {
+  pins: {
+    slug: "custom-enamel-pins",
+    label: "Custom Enamel Pins",
+  },
+  coins: {
+    slug: "custom-challenge-coins",
+    label: "Custom Challenge Coins",
+  },
+  medals: {
+    slug: "custom-medals",
+    label: "Custom Medals",
+  },
+  keychains: {
+    slug: "custom-metal-keychains",
+    label: "Custom Metal Keychains",
+  },
+  buckles: {
+    slug: "custom-belt-buckles",
+    label: "Custom Belt Buckles",
+  },
+  "golf-accessories": {
+    slug: "custom-golf-accessories",
+    label: "Custom Golf Accessories",
+  },
+  "bottle-openers": {
+    slug: "custom-bottle-openers",
+    label: "Custom Bottle Openers",
+  },
+  "cufflinks-tieclips": {
+    slug: "custom-cufflinks-tie-clips",
+    label: "Custom Cufflinks & Tie Clips",
+  },
+  magnets: {
+    slug: "custom-fridge-magnets",
+    label: "Custom Fridge Magnets",
+  },
+  patchs: {
+    slug: "custom-patches",
+    label: "Custom Patches",
+  },
+  others: {
+    slug: "others",
+    label: "Other Custom Products",
+  },
+};
+
+export const categoryKeyByRouteSlug = Object.fromEntries(
+  Object.entries(productCategories).map(([key, value]) => [value.slug, key]),
+);
+
+const categoryKeyByLabel = {
+  "Lapel Pins": "pins",
+  "Challenge Coins": "coins",
+  Medals: "medals",
+  Keychains: "keychains",
+  "Belt Buckles": "buckles",
+  "Golf Ball Markers & Hat Clips": "golf-accessories",
+  "Golf Accessories": "golf-accessories",
+  "Bottle Openers": "bottle-openers",
+  "Cufflinks & Tie Clips": "cufflinks-tieclips",
+  "Fridge Magnets": "magnets",
+  Patches: "patchs",
+  Others: "others",
+  Other: "others",
+};
+
+export const getCategoryKeyForItem = (item) =>
+  categoryKeyByLabel[item?.categoryLabel] || "pins";
+
+export const getCategoryPath = (categoryKey) =>
+  `/products/${productCategories[categoryKey]?.slug || productCategories.pins.slug}`;
+
+export const getProductPath = (itemSlug, item) =>
+  `${getCategoryPath(getCategoryKeyForItem(item))}/${itemSlug}`;
+
+export const productItemCategoryKey = {
+  "uv-printed-masquerade-day-lapel-pin": "pins",
+  "custom-santa-claus-metal-lapel-pin": "pins",
+  "custom-christmas-bow-metal-lapel-pin": "pins",
+  "custom-pvc-snowman-lapel-pin": "pins",
+  "skull-axe-3d-zinc-alloy-lapel-pin": "pins",
+  "aaa-antique-round-lapel-pin": "pins",
+  "halloween-letter-s-soft-enamel-pin": "pins",
+  "fire-breathing-queen-soft-enamel-pin": "pins",
+  "winged-anime-character-soft-enamel-pin-set": "pins",
+  "wizard-bunny-soft-enamel-pin-set": "pins",
+  "horror-guts-soft-enamel-pin": "pins",
+  "rosemount-irish-soft-enamel-pin": "pins",
+  "tiger-face-soft-enamel-pin": "pins",
+  "christmas-enamel-pin-set": "pins",
+  "lost-my-way-floral-hard-enamel-pin": "pins",
+  "yellow-character-hard-enamel-pin": "pins",
+  "auburn-proud-soft-enamel-pin": "pins",
+  "green-character-soft-enamel-pin-set": "pins",
+  "box-cat-and-umbrella-cat-enamel-pins": "pins",
+  "antique-silver-guitar-crest-enamel-pin": "pins",
+  "glitter-tour-truck-printed-enamel-pin": "pins",
+  "victoria-police-st-michael-challenge-coin": "coins",
+  "custom-snowman-winter-challenge-coin": "coins",
+  "custom-reindeer-christmas-challenge-coin": "coins",
+  "jennifer-jo-cobb-racing-challenge-coin": "coins",
+  "marine-nationale-commandant-challenge-coin": "coins",
+  "houston-community-college-emt-challenge-coin": "coins",
+  "dice-dungeons-inspiration-challenge-coin": "coins",
+  "ibew-eastern-wyoming-challenge-coin": "coins",
+  "marine-corps-daniel-joseph-moran-challenge-coin": "coins",
+  "queensland-fire-emergency-service-challenge-coin": "coins",
+  "wenatchee-ibew-local-191-challenge-coin": "coins",
+  "canada-border-services-pacific-region-challenge-coin": "coins",
+  "pow-mia-you-are-not-forgotten-challenge-coin": "coins",
+  "norwegian-defense-family-legion-challenge-coin": "coins",
+  "vancouver-police-retired-challenge-coin": "coins",
+  "marina-de-guerra-peru-challenge-coin": "coins",
+  "punish-blue-errors-aggressors-challenge-coin": "coins",
+  "hmcs-bras-dor-royal-canadian-navy-challenge-coin": "coins",
+  "saint-florian-firefighter-challenge-coin": "coins",
+  "40-years-port-authority-challenge-coin": "coins",
+  "stay-sharp-excellence-challenge-coin": "coins",
+  "congressman-stephen-womack-challenge-coin": "coins",
+  "marine-corps-forces-north-challenge-coin": "coins",
+  "united-states-space-force-challenge-coin": "coins",
+  "cocoa-fire-department-challenge-coin": "coins",
+  "arikara-horns-up-front-challenge-coin": "coins",
+  "dod-cyber-red-team-conference-challenge-coin": "coins",
+  "storm-troopers-highway-patrol-challenge-coin": "coins",
+  "vancouver-police-service-challenge-coin": "coins",
+  "emergency-task-force-challenge-coin": "coins",
+  "enlisted-advisor-military-challenge-coin": "coins",
+  "information-warfare-capabilities-challenge-coin": "coins",
+  "musee-de-larmee-1670-challenge-coin": "coins",
+  "50-years-of-service-challenge-coin": "coins",
+  "3d-antique-firefighter-challenge-coins": "coins",
+  "double-sided-anniversary-challenge-coin": "coins",
+  "christmas-bell-challenge-coin": "coins",
+  "cut-shape-route-map-challenge-coin": "coins",
+  "antique-military-squadron-challenge-coins": "coins",
+  "custom-christmas-tree-medal": "medals",
+  "custom-reindeer-christmas-medal": "medals",
+  "kinderprinz-mascot-ribbon-medal": "medals",
+  "weiss-blau-prinzenpaar-ribbon-medal": "medals",
+  "grielacher-ellene-anniversary-medal": "medals",
+  "aachener-stadtkadettchen-carnival-medal": "medals",
+  "oecher-jonge-cathedral-ribbon-medal": "medals",
+  "run-for-a-cause-rectangle-medal": "medals",
+  "br-fernsehsitzung-carnival-ribbon-medal": "medals",
+  "king-william-fair-ribbon-medal": "medals",
+  "bergroup-beach-cup-ribbon-medal": "medals",
+  "four-winds-kungfu-tournament-medal": "medals",
+  "basketball-rope-design-ribbon-medal": "medals",
+  "dreigestirn-carnival-ribbon-medal": "medals",
+  "sea-doo-summer-series-medal-set": "medals",
+  "new-zealand-open-jiu-jitsu-medal": "medals",
+  "winter-bear-snow-sports-ribbon-medal": "medals",
+  "hollywood-carnival-ribbon-medal": "medals",
+  "butterfly-cocoon-ribbon-medal": "medals",
+  "city-finisher-52195-ribbon-medal": "medals",
+  "dongfeng-trucks-cup-marathon-medal": "medals",
+  "medal-depot-carnival-run-ribbon-medal": "medals",
+  "halloween-bicycle-race-ribbon-medal": "medals",
+  "halloween-finisher-ribbon-medal": "medals",
+  "swim-ribbon-medal-set": "medals",
+  "hofgrafen-kalscheuren-carnival-medal": "medals",
+  "world-run-triathlon-medal-set": "medals",
+  "ski-federation-ribbon-medal": "medals",
+  "kolding-light-run-ribbon-medal": "medals",
+  "bali-hogz-ribbon-medal": "medals",
+  "half-marathon-ribbon-medal-set": "medals",
+  "triko-gas-mask-ribbon-medal": "medals",
+  "hanover-falcons-ribbon-medal": "medals",
+  "altenhofen-summer-ribbon-medal": "medals",
+  "wimbledon-common-half-marathon-medal": "medals",
+  "carnival-family-ribbon-medal": "medals",
+  "ocher-bojjerwenn-anniversary-ribbon-medal": "medals",
+  "wish-cup-hockey-ribbon-medal": "medals",
+  "silver-basketball-sports-medal-with-ribbon": "medals",
+  "3d-shield-logo-award-medal": "medals",
+  "silver-race-award-medal-with-ribbon": "medals",
+  "blue-marathon-ribbon-medal": "medals",
+  "gold-scn-ribbon-medal": "medals",
+  "custom-pvc-gingerbread-man-christmas-keychain": "keychains",
+  "custom-reindeer-snowflake-metal-keychain": "keychains",
+  "custom-gingerbread-man-christmas-metal-keychain": "keychains",
+  "oval-office-leather-emblem-keychain": "keychains",
+  "bradley-leather-emblem-keychain": "keychains",
+  "wolf-emblem-leather-keychain": "keychains",
+  "shield-emblem-leather-keychain": "keychains",
+  "netherlands-map-leather-keychain": "keychains",
+  "rainbow-balloon-pvc-keychain-set": "keychains",
+  "monster-round-pvc-keychain-set": "keychains",
+  "spooky-pumpkin-pvc-keychain": "keychains",
+  "297-society-pvc-keychain": "keychains",
+  "yellow-mouse-pvc-keychain": "keychains",
+  "never-give-up-woven-label-keychain": "keychains",
+  "anime-eyes-woven-label-keychain-set": "keychains",
+  "japan-travel-woven-label-keychain-set": "keychains",
+  "red-performance-woven-label-keychain-set": "keychains",
+  "powerdays-woven-label-keychain-set": "keychains",
+  "black-pet-paw-leather-keychain": "keychains",
+  "memorial-paw-leather-keychain-set": "keychains",
+  "brown-memorial-paw-leather-keychain": "keychains",
+  "colorful-leather-strap-keychain-set": "keychains",
+  "basketball-bottle-opener-keychain": "keychains",
+  "thin-blue-line-spinner-bottle-opener-keychain": "keychains",
+  "silver-logo-bottle-opener-keychain": "keychains",
+  "yellow-team-bottle-opener-keychain": "keychains",
+  "snowflake-charm-cluster-keychain": "keychains",
+  "tire-wheel-rim-keychain": "keychains",
+  "black-braided-leather-loop-keychain": "keychains",
+  "purple-flower-pot-metal-keychain": "keychains",
+  "plant-shop-storefront-keychain": "keychains",
+  "graduate-school-logo-keychain-set": "keychains",
+  "variegated-leaf-enamel-keychain": "keychains",
+  "monstera-leaf-glitter-keychain": "keychains",
+  "green-heart-leaf-metal-keychain": "keychains",
+  "round-christmas-logo-keychain-set": "keychains",
+  "san-andres-shark-enamel-keychain": "keychains",
+  "colorful-flower-metal-keychains": "keychains",
+  "palm-island-enamel-keychain": "keychains",
+  "round-school-logo-bottle-opener-keychain": "keychains",
+  "travel-charm-spinner-keychain": "keychains",
+  "celtic-knot-antique-silver-belt-buckle": "buckles",
+  "united-states-eagle-flag-belt-buckle": "buckles",
+  "australia-horse-relief-belt-buckle": "buckles",
+  "kowow-star-enamel-belt-buckle": "buckles",
+  "blue-knights-mc-antique-belt-buckle": "buckles",
+  "sunflower-horse-western-belt-buckle": "buckles",
+  "california-highway-patrol-western-belt-buckle": "buckles",
+  "motorcycle-rider-relief-belt-buckle": "buckles",
+  "arizona-antique-relief-belt-buckle": "buckles",
+  "cowboys-music-festival-belt-buckle": "buckles",
+  "wood-badge-staff-belt-buckle": "buckles",
+  "elephant-triangle-enamel-belt-buckle": "buckles",
+  "nupe-logo-rectangle-belt-buckle": "buckles",
+  "purple-horseshoe-oval-belt-buckle": "buckles",
+  "gold-monogram-frame-belt-buckle": "buckles",
+  "gold-anchor-monogram-belt-buckle": "buckles",
+  "western-skull-relief-belt-buckle": "buckles",
+  "oval-relief-logo-metal-belt-buckle": "buckles",
+  "antique-silver-rectangle-logo-belt-buckle": "buckles",
+  "oval-club-logo-enamel-belt-buckle": "buckles",
+  "worlds-okayist-golfer-golf-hat-clip": "golf-accessories",
+  "just-tap-it-in-golf-hat-clip": "golf-accessories",
+  "hole-in-one-club-golf-hat-clip": "golf-accessories",
+  "golfing-bad-golf-hat-clip": "golf-accessories",
+  "weekend-forecast-golf-hat-clip": "golf-accessories",
+  "usa-flag-golf-divot-tool": "golf-accessories",
+  "jk-logo-golf-divot-tool-marker": "golf-accessories",
+  "golf-player-divot-tool-gift-set": "golf-accessories",
+  "price-is-wrong-golf-hat-clip": "golf-accessories",
+  "bogey-king-logo-golf-hat-clip": "golf-accessories",
+  "donut-golf-hat-clip-ball-marker": "golf-accessories",
+  "animal-character-golf-ball-marker-set": "golf-accessories",
+  "tap-tap-taparoo-golf-hat-clip": "golf-accessories",
+  "bogey-king-golf-hat-clip": "golf-accessories",
+  "born-to-golf-ball-marker": "golf-accessories",
+  "life-is-always-good-golf-ball-marker": "golf-accessories",
+  "antique-golf-club-divot-tool-ball-marker": "golf-accessories",
+  "avocado-golf-hat-clip-ball-marker": "golf-accessories",
+  "color-logo-golf-divot-tool-set": "golf-accessories",
+  "playing-card-metal-bottle-opener": "bottle-openers",
+  "skull-coin-keychain-bottle-opener": "bottle-openers",
+  "round-logo-keychain-bottle-opener": "bottle-openers",
+  "fish-shape-keychain-bottle-opener": "bottle-openers",
+  "guitar-metal-bottle-opener": "bottle-openers",
+  "red-logo-keychain-bottle-opener": "bottle-openers",
+  "cap-lifter-keychain-bottle-opener": "bottle-openers",
+  "ring-bottle-opener": "bottle-openers",
+  "colorful-aluminum-keychain-bottle-opener": "bottle-openers",
+  "souvenir-shape-bottle-opener": "bottle-openers",
+  "blue-carbon-fiber-metal-cufflinks": "cufflinks-tieclips",
+  "color-plated-metal-tie-clips": "cufflinks-tieclips",
+  "black-skull-logo-cufflinks": "cufflinks-tieclips",
+  "custom-silver-filigree-red-cufflinks": "cufflinks-tieclips",
+  "custom-purple-iridescent-stripe-cufflinks": "cufflinks-tieclips",
+  "custom-black-sugar-skull-cufflinks": "cufflinks-tieclips",
+  "custom-american-flag-round-cufflinks": "cufflinks-tieclips",
+  "custom-blue-globe-cufflinks": "cufflinks-tieclips",
+  "custom-two-tone-metal-knot-cufflinks": "cufflinks-tieclips",
+  "custom-assorted-metal-tie-clip-collection": "cufflinks-tieclips",
+  "custom-rainbow-stripe-square-cufflinks": "cufflinks-tieclips",
+  "ornate-building-enamel-fridge-magnet": "magnets",
+  "ferris-wheel-3d-metal-fridge-magnet": "magnets",
+  "cartoon-character-soft-pvc-fridge-magnet": "magnets",
+  "city-landmark-souvenir-fridge-magnet": "magnets",
+  "custom-colorful-hot-air-balloon-fridge-magnet": "magnets",
+  "custom-chevron-hot-air-balloon-fridge-magnet": "magnets",
+  "custom-pittsburgh-skyline-fridge-magnet": "magnets",
+  "custom-hangzhou-west-lake-fridge-magnet": "magnets",
+  "custom-mini-food-fridge-magnet-set": "magnets",
+  "custom-vacation-drink-fridge-magnet-set": "magnets",
+  "custom-san-diego-souvenir-fridge-magnet": "magnets",
+  "custom-san-antonio-landmark-fridge-magnet": "magnets",
+  "custom-american-eagle-fridge-magnet": "magnets",
+  "custom-magnetic-picture-frame-set": "magnets",
+  "custom-hawaii-letter-fridge-magnet": "magnets",
+  "custom-usa-map-fridge-magnet": "magnets",
+  "custom-kitchen-food-fridge-magnet-set": "magnets",
+  "custom-germany-map-fridge-magnet": "magnets",
+  "custom-texas-cowboy-boots-fridge-magnet": "magnets",
+  "custom-texas-bottle-opener-fridge-magnet": "magnets",
+  "custom-new-york-skyline-fridge-magnet": "magnets",
+  "custom-tennessee-landmark-fridge-magnet": "magnets",
+  "custom-antique-axe-bottle-opener-fridge-magnet": "magnets",
+  "custom-camera-mardi-gras-fridge-magnet-set": "magnets",
+  "custom-beatles-logo-fridge-magnet-set": "magnets",
+  "custom-city-fly-drone-fridge-magnet": "magnets",
+  "custom-blue-city-car-fridge-magnet": "magnets",
+  "custom-woven-dragon-round-patch": "patchs",
+  "custom-embroidered-cartoon-character-patch": "patchs",
+  "custom-embroidered-death-patch": "patchs",
+  "custom-embroidered-squadron-patch": "patchs",
+  "custom-embroidered-taco-logo-patch": "patchs",
+  "custom-embroidered-army-wing-patch": "patchs",
+  "custom-embroidered-spain-flag-patch": "patchs",
+  "custom-embroidered-flag-velcro-patch": "patchs",
+  "custom-embroidered-nabi-letter-patch": "patchs",
+  "custom-raccoon-trash-can-embroidered-patch": "patchs",
+  "custom-raccoon-trash-can-character-patch": "patchs",
+  "custom-cat-fish-embroidered-patch": "patchs",
+  "custom-floral-black-cat-embroidered-patch": "patchs",
+  "custom-with-god-all-things-possible-embroidered-patch": "patchs",
+  "custom-energy-skeleton-embroidered-patch": "patchs",
+  "custom-god-is-good-embroidered-patch": "patchs",
+  "custom-bears-mascot-embroidered-patch": "patchs",
+  "custom-cake-embroidered-patch": "patchs",
+  "custom-eagles-mascot-embroidered-patch": "patchs",
+  "custom-football-poodle-embroidered-patch": "patchs",
+  "custom-the-lovers-cat-embroidered-patch": "patchs",
+  "custom-metal-dog-tag": "others",
+  "custom-silicone-planet-qr-dog-tag": "others",
+  "custom-silicone-bone-qr-dog-tag": "others",
+  "custom-silicone-rocket-qr-dog-tag": "others",
+  "custom-silicone-sausage-dog-tag": "others",
+  "custom-silicone-pink-bone-dog-tag": "others",
+  "custom-gold-snowflake-metal-ornament": "others",
+  "custom-christmas-tree-metal-ornament": "others",
+  "custom-snowman-metal-ornament": "others",
+  "custom-candy-cane-metal-ornament": "others",
+  "custom-gingerbread-man-metal-ornament": "others",
+  "custom-classic-snowflake-metal-ornament": "others",
+  "custom-brushed-silver-metal-business-card": "others",
+  "custom-black-gold-metal-business-card": "others",
+  "custom-multicolor-metal-feather-bookmark-set": "others",
+  "custom-gold-cutout-metal-bookmark-set": "others",
+  "custom-gold-botanical-metal-bookmark-set": "others",
+  "custom-black-gold-metal-rpg-dice-set": "others",
+  "custom-white-drinking-game-dice-set": "others",
+  "custom-colorful-translucent-dice-set": "others",
+};
+
+export const DEFAULT_BLOG_AUTHOR_SCHEMA = {
+  "@type": "Person",
+  name: "Sunny Huang",
+  url: `${SITE_URL}/about/sunny-huang`,
+};
+
+const getTodayInShanghai = () =>
+  new Intl.DateTimeFormat("en-CA", {
+    timeZone: "Asia/Shanghai",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).format(new Date());
+
+const withBlogArticleDefaults = (article) => {
+  const datePublished = article.datePublished || getTodayInShanghai();
+
+  return {
+    author: DEFAULT_BLOG_AUTHOR_SCHEMA.name,
+    authorType: DEFAULT_BLOG_AUTHOR_SCHEMA["@type"],
+    authorUrl: DEFAULT_BLOG_AUTHOR_SCHEMA.url,
+    ...article,
+    datePublished,
+    dateModified: article.dateModified || datePublished,
+  };
+};
+
+export const buildBlogAuthorSchema = () => ({ ...DEFAULT_BLOG_AUTHOR_SCHEMA });
+
+const blogArticleData = {
+  "custom-cufflinks-logo-layout": {
+    title: "Custom Cufflinks: Logo Layout, Shape and Fit on the Cuff",
+    headline: "Custom Cufflinks: How Your Logo Works on the Cuff",
+    description:
+      "Explore custom cufflink shapes, logo layouts and rear fittings. See how lettering and design work on a shirt cuff for corporate gifts and branded accessories.",
+    datePublished: "2026-10-13",
+    dateModified: "2026-10-13",
+    image: "/assets/images/custom-cufflinks-letter-face-shaped-design.webp",
+    schemaType: "BlogPosting",
+    hideFooterInquiry: true,
+  },
+  "custom-pet-tags": {
+    title: "Custom Pet Tags: Bulk Personalization for Pet Brands",
+    headline: "Custom Pet Tags: One Brand Design, Different Pet Details",
+    description:
+      "Plan custom pet tags with one brand design and different names, phone numbers or QR codes. Review layouts, finishes and bulk order data before requesting a quote.",
+    author: "Sunny Huang",
+    authorType: "Person",
+    authorUrl: DEFAULT_BLOG_AUTHOR_SCHEMA.url,
+    datePublished: "2026-10-09",
+    dateModified: "2026-10-09",
+    image: "/assets/images/custom-pet-tags-different-names.webp",
+    schemaType: "BlogPosting",
+    hideFooterInquiry: true,
+  },
+  "custom-metal-bookmarks-buying-guide": {
+    title: "Custom Metal Bookmarks: Design & Bulk Buying Guide",
+    headline: "How to Choose Custom Metal Bookmarks for Retail and Branded Gifts",
+    description:
+      "Choosing custom metal bookmarks for retail or branded gifts? Compare formats, thickness, artwork, packaging and sample checks before placing a bulk order.",
+    author: "Sunny Huang",
+    authorType: "Person",
+    datePublished: "2026-10-08",
+    dateModified: "2026-10-08",
+    image: "/assets/images/custom-metal-bookmarks-buying-guide.webp",
+    schemaType: "BlogPosting",
+    hideFooterInquiry: true,
+    faq: [
+      {
+        question: "Can one metal bookmark combine printing and cutouts?",
+        answer:
+          "You can request both. Identify the printed and open areas separately, and have the supplier assess print placement around openings before confirming the combination.",
+      },
+      {
+        question: "Can I use the same artwork on both sides?",
+        answer:
+          "Yes, subject to process suitability. Define the orientation when the bookmark is turned over, and confirm that the quoted price includes the requested treatment on both sides.",
+      },
+      {
+        question: "Can a small trial order use the same design as a later bulk order?",
+        answer:
+          "It can use the approved design and specifications. Keep the version reference, record changes and reconfirm pricing; trial and bulk orders may have different unit and setup costs.",
+      },
+      {
+        question: "What if I have artwork but no final size or material?",
+        answer:
+          "Send the intended use, target book dimensions and appearance references. Ask for options, then agree on the specifications before production.",
+      },
+    ],
+  },
+  "custom-bottle-opener-keychains-event-order-guide": {
+    title: "Custom Bottle Opener Keychains: Event Ordering Guide",
+    headline: "Custom Bottle Opener Keychains: Planning an Event Giveaway Order",
+    description:
+      "Plan custom bottle opener keychains for event giveaways. Set quantities by logo version, clarify packaging tasks, and coordinate deliveries before ordering.",
+    author: "Sunny Huang",
+    authorType: "Person",
+    datePublished: "2026-10-06",
+    dateModified: "2026-10-06",
+    image: "/assets/images/custom-bottle-opener-keychains-event-giveaways.webp",
+    schemaType: "BlogPosting",
+    hideFooterInquiry: true,
+  },
+  "custom-metal-fridge-magnets-museum-souvenir-shop": {
+    title: "Custom Metal Fridge Magnets for Museums & Souvenir Shops",
+    headline: "How to Choose Custom Metal Fridge Magnets for a Museum or Souvenir Shop",
+    description:
+      "Plan custom metal fridge magnets for a museum or souvenir shop. Compare designs, finishes, backing and packaging, then prepare a sample and bulk order brief.",
+    author: "Sunny Huang",
+    authorType: "Person",
+    datePublished: "2026-09-29",
+    dateModified: "2026-09-29",
+    image: "/assets/images/custom-metal-fridge-magnets-souvenir-shop.webp",
+    schemaType: "BlogPosting",
+    faq: [
+      {
+        question: "Can I order several designs together?",
+        answer:
+          "Yes. List the quantity for each design separately. Tooling, sampling and production requirements may differ between designs, so an overall total alone may not be enough for an accurate quote.",
+      },
+      {
+        question: "Can a metal magnet have a custom outline?",
+        answer:
+          "Custom outlines can be reviewed from your artwork and target size. Ask the supplier to check narrow sections, small projections and fine details before approving the design for production.",
+      },
+      {
+        question: "How long do sampling and production take?",
+        answer:
+          "Timing depends on the approved design, quantity, finish, backing and packaging. Request a schedule that separates artwork approval, sampling, bulk production and shipping, then confirm whether it meets your required arrival date.",
+      },
+    ],
+  },
+  "types-of-bottle-openers-for-branded-merchandise": {
+    title: "Types of Bottle Openers for Branded Merchandise",
+    headline: "Types of Bottle Openers: Choosing a Custom Metal Style for Your Brand",
+    description:
+      "Compare five custom metal bottle opener styles for events and retail. Choose by use, logo space and packaging, then check a physical sample before ordering.",
+    author: "Sunny Huang",
+    authorType: "Person",
+    datePublished: "2026-09-24",
+    dateModified: "2026-09-24",
+    image: "/assets/images/types-of-custom-metal-bottle-openers.webp",
+    schemaType: "BlogPosting",
+    hideFooterInquiry: true,
+    faq: [
+      {
+        question: "Can one opener design be used for both giveaways and retail?",
+        answer:
+          "Possibly. Start with the same proposed opener, then review each distribution format separately. A giveaway may need compact individual packing, while a retail version may need a backing card or box that displays the design. Confirm the finished product and both packaging options before combining them in one order plan.",
+      },
+      {
+        question: "Are handheld and card-style openers available for custom orders?",
+        answer:
+          "Yes. We have produced customer designs in these formats and can quote a new project. They are made to order rather than supplied as ready-stock items, so the shape, artwork and packaging need to be confirmed.",
+      },
+    ],
+  },
+  "how-to-choose-custom-medal-ribbons": {
+    title: "Custom Medal Ribbons: Width, Colors & Printing Guide",
+    headline: "How to Choose the Right Ribbon for Custom Medals",
+    description:
+      "Compare plain and heat-transfer custom medal ribbons, then choose colors, 25 or 30 mm widths, length and attachment for your medal order.",
+    author: DEFAULT_BLOG_AUTHOR_SCHEMA.name,
+    authorType: DEFAULT_BLOG_AUTHOR_SCHEMA["@type"],
+    authorUrl: DEFAULT_BLOG_AUTHOR_SCHEMA.url,
+    datePublished: "2026-09-23",
+    dateModified: "2026-09-23",
+    image: "/assets/images/custom-medal-with-ribbon-selection.webp",
+    schemaType: "BlogPosting",
+    faq: [
+      {
+        question: "What is the most durable type of custom medal ribbon?",
+        answer:
+          "There is no reliable answer based only on whether a ribbon is plain or heat-transfer printed. How it performs depends on its construction, print requirements, connection and handling. If durability matters to your order, ask for a sample made to the proposed specification and check the print, edges and assembled connection for the intended use.",
+      },
+      {
+        question: "Is a 30 mm ribbon always better than a 25 mm ribbon?",
+        answer:
+          "No. A 30 mm ribbon gives artwork more width, but it may look too prominent with some medals. A 25 mm ribbon can work well for a plain color or compact design, provided the attachment fits and any text remains readable. Compare the two widths with your medal rather than applying a fixed diameter rule.",
+      },
+      {
+        question: "Can I put sponsor logos on a heat-transfer medal ribbon?",
+        answer:
+          "Yes, subject to the logoâ€™s detail and available space. Supply the original file and identify any required size or position. Ask to review the mark at the proposed ribbon width and in the assembled view, especially if it repeats close to a fold or connection.",
+      },
+    ],
+  },
+  "die-struck-vs-die-cast-pins": {
+    title: "Die Struck vs Die Cast Pins: Which Process Fits?",
+    headline: "Die Struck vs Die Cast Pins: Which Process Fits Your Design?",
+    description: "Compare die struck and die cast pins by artwork, relief, shape, color and production requirements before choosing a process for your custom pin project.",
+    author: "Sunny Huang",
+    authorType: "Person",
+    datePublished: "2026-09-22",
+    dateModified: "2026-09-22",
+    schemaType: "BlogPosting",
+    image: "/assets/images/die-struck-vs-die-cast-pins.webp",
+    hideFooterInquiry: true,
+    faq: [
+      {
+        question: "Is die struck the same as soft enamel?",
+        answer: "No. Die striking forms the metal body. Soft enamel is a color-filling method in which the colored areas usually remain below the raised metal borders. A die struck pin may use soft enamel, another suitable finish or no color.",
+      },
+      {
+        question: "Are die cast pins always 3D?",
+        answer: "No. Die casting can produce sculpted relief, but it can also create flatter levels or combine 2D and 3D areas. The mold design and approved proof determine the finished structure.",
+      },
+      {
+        question: "Is die striking always less expensive than die casting?",
+        answer: "No. The final cost depends on dimensions, thickness, material, tooling, relief, quantity, plating, color, attachments and packaging. Prices should only be compared when the quoted specifications are equivalent.",
+      },
+      {
+        question: "Can the same design be made using either process?",
+        answer: "Some artwork can be adapted to both processes, but the finished structure may differ. A manufacturer should review the actual design and explain what would change under each option.",
+      },
+      {
+        question: "Should I approve the digital proof or request a physical sample?",
+        answer: "A digital proof is necessary for confirming dimensions, layout, colors, finish and attachment placement. A physical sample may be useful when weight, relief, surface feel, attachment performance or retail presentation affects approval. Sampling requirements should be discussed before the production schedule is confirmed.",
+      },
+    ],
+  },
+  "custom-western-belt-buckles-women-retail-guide": {
+    title: "Custom Western Belt Buckles for Women: Retail Buying Guide",
+    headline: "Custom Western Belt Buckles for Women: A Retail Buying Guide",
+    description: "Plan a custom western belt buckle collection for women. Compare belt fit, finish options, sample checks, packaging and reorder requirements before buying.",
+    author: "Sunny Huang",
+    authorType: "Person",
+    datePublished: "2026-09-16",
+    dateModified: "2026-09-16",
+    schemaType: "BlogPosting",
+    image: "/assets/images/custom-western-belt-buckles-women-collection.webp",
+    hideFooterInquiry: true,
+  },
+  "custom-turkey-trot-medals-guide": {
+    title: "Custom Turkey Trot Medals: Race Director Planning Guide",
+    headline: "Custom Turkey Trot Medals: A Planning Guide for Race Directors",
+    description:
+      "Plan custom turkey trot medals for your 5K and kidsâ€™ run. Compare medal versions, sponsor logo placement, artwork approval and delivery checkpoints.",
+    image: "/assets/images/custom-turkey-trot-medals-guide.webp",
+    author: "Sunny Huang",
+    authorType: "Person",
+    datePublished: "2026-09-15",
+    dateModified: "2026-09-15",
+    schemaType: "BlogPosting",
+    hideFooterInquiry: true,
+    faq: [
+      {
+        question: "Can a small community race order custom medals?",
+        answer:
+          "Yes. Unique Pin offers custom medals with no minimum order quantity. For designs requiring a custom mold, smaller orders typically carry a higher tooling cost per medal. Share your quantities and specifications for a quote.",
+      },
+      {
+        question: "Can we start with an event logo or a sketch?",
+        answer:
+          "Yes. Unique Pin provides free design assistance and a digital proof. Include event wording, race categories, sponsor requirements, and ribbon preferences so the proposed design reflects the order.",
+      },
+      {
+        question: "Can we request a physical sample?",
+        answer:
+          "A physical sample can be arranged. Specify whether you also need the proposed ribbon and packaging included; sample costs and lead time depend on the requirements.",
+      },
+      {
+        question: "When should we order Turkey Trot medals?",
+        answer:
+          "Begin when your event requirements are clear enough to discuss. Agree on a schedule working backward from the required arrival date, including approvals, any sample review, production, and shipping.",
+      },
+    ],
+  },
+  "firefighter-challenge-coins-anniversary-guide": {
+    title: "Firefighter Challenge Coins for Department Anniversaries",
+    headline: "Firefighter Challenge Coins: Planning a Department Anniversary",
+    description:
+      "Plan custom firefighter challenge coins for a department anniversary. Compare designs, recipient groups, packaging, proof checks and delivery requirements.",
+    image: "/assets/images/firefighter-anniversary-challenge-coins.webp",
+    author: "Sunny Huang",
+    authorType: "Person",
+    datePublished: "2026-09-14",
+    dateModified: "2026-09-14",
+    schemaType: "BlogPosting",
+  },
+  "custom-baseball-trading-pins-team-ordering-guide": {
+    title: "Custom Baseball Trading Pins: A Team Ordering Guide",
+    headline: "Custom Baseball Trading Pins: A Team Ordering Guide",
+    description:
+      "Plan custom baseball trading pins for your team: compare designs, estimate quantities, check proofs, and work backward from your tournament arrival date.",
+    image: "/assets/images/baseball-trading-pins-team-order-examples.webp",
+    schemaType: "BlogPosting",
+    datePublished: "2026-09-11",
+    dateModified: "2026-09-11",
+  },
+  "halloween-enamel-pins-retail-collection": {
+    title: "Halloween Enamel Pins: A Retail Collection Planning Guide",
+    headline: "Halloween Enamel Pins: Planning a Custom Retail Collection",
+    description: "Plan a custom Halloween enamel pin collection with guidance on design mix, quantities per style, retail packaging, proof approval, and delivery planning.",
+    author: "Sunny Huang",
+    authorType: "Person",
+    image: "/assets/images/halloween-enamel-pins-retail-collection.webp",
+    schemaType: "BlogPosting",
+    // Publication date confirmed for the production release.
+    datePublished: "2026-09-11",
+  },
+  "corporate-challenge-coins-employee-recognition": {
+    title: "Corporate Challenge Coins for Employee Recognition",
+    headline: "Corporate Challenge Coins: How to Build an Employee Recognition Program",
+    description:
+      "Learn how to build a fair employee recognition program with corporate challenge coins, from award criteria and coin design to presentation and review.",
+    author: "Sunny Huang",
+    authorType: "Person",
+    datePublished: "2026-09-04",
+    dateModified: "2026-09-04",
+    image: "/assets/images/corporate-challenge-coins-employee-recognition.webp",
+    schemaType: "BlogPosting",
+  },
+  "lapel-pin-attachments-guide": {
+    title: "Lapel Pin Attachments: 12 Backings and Accessories Guide",
+    headline: "Lapel Pin Attachments: 12 Backings and Accessories for Custom Pins",
+    description:
+      "Compare 12 lapel pin attachments, including clutches, magnets, tie tacks, cuff links and key rings. Choose by use, fabric, size and presentation.",
+    image: "/assets/images/lapel-pin-attachments-guide.webp?v=20260903-labeled",
+    author: "Sunny Huang",
+    authorType: "Person",
+    datePublished: "2026-09-03",
+    dateModified: "2026-09-03",
+    schemaType: "BlogPosting",
+    faq: [
+      {
+        question: "What is the most common attachment for a custom lapel pin?",
+        answer:
+          "Military Clutches and Rubber Clutches are common choices for standard lapel pins. The right option still depends on the design, garment, and intended use.",
+      },
+      {
+        question: "Can one custom design be made with different attachments?",
+        answer:
+          "Yes. The same front design may be adapted as a lapel pin, cuff link, tie accessory, key ring, or ball-chain item when the structure is reviewed for each use.",
+      },
+      {
+        question: "Do larger lapel pins always need two posts?",
+        answer:
+          "No. Some wider, heavier, or direction-sensitive designs may benefit from two posts and two clutches, but the decision should be made from the actual design and intended use.",
+      },
+      {
+        question: "Can lapel pin attachments be confirmed after the artwork is finished?",
+        answer:
+          "They can be discussed later, but it is better to confirm them before final proof approval. The attachment affects the back view, post placement, packaging, and sometimes the best orientation for the artwork.",
+      },
+    ],
+  },
+  "custom-christmas-ornaments-guide": {
+    title: "Custom Metal Christmas Ornaments: Bulk Buying Guide",
+    headline: "How to Choose Custom Metal Christmas Ornaments for Corporate Gifts and Events",
+    description:
+      "Compare metal Christmas ornaments for corporate gifts and events by design, finish, hanging method and packaging, then plan specifications for bulk orders.",
+    image: "/assets/images/custom-christmas-ornaments-corporate-gifts.webp",
+    author: "Sunny Huang",
+    authorType: "Person",
+    datePublished: "2026-09-01",
+    dateModified: "2026-10-07",
+    schemaType: "BlogPosting",
+    faq: [
+      {
+        question: "How should quantities be split across several ornament designs?",
+        answer:
+          "List each design and its quantity separately, then check that the sum matches the total order. If cards or gift boxes differ by destination, show those allocations too. This lets the supplier quote the intended mix rather than treating every piece as identical.",
+      },
+      {
+        question: "How are different names or years quoted and approved?",
+        answer:
+          "Give each artwork version a reference and quantity. Ask which production or decoration setup can be shared, and approve the proof for every version before production. Pricing and setup requirements should be confirmed for the actual version mix.",
+      },
+      {
+        question: "What should I check on a physical ornament sample?",
+        answer:
+          "Hang it using the specified ribbon or cord and check its balance and front-facing direction. Review weight, edge and hole finish, legibility at actual size, and how the ornament sits in its proposed packaging. A digital proof cannot verify these physical details.",
+      },
+      {
+        question: "How do I plan an ornament order around an event date?",
+        answer:
+          "Share the use date, required arrival date and destination first. Then request a schedule covering proof approval, any needed sample, production, packing, inspection and transit. Allow for approval time; the quoted schedule depends on the design and order configuration.",
+      },
+      {
+        question: "Can a company logo be used on a metal Christmas ornament?",
+        answer:
+          "Yes, the logo can be part of the outline or face artwork. Simplify details that may disappear at the finished size, and confirm placement, colors and legibility on the proof and, when needed, a physical sample.",
+      },
+    ],
+  },
+  "how-to-design-a-custom-belt-buckle": {
+    title: "How to Design a Custom Belt Buckle: 9 Key Decisions",
+    headline: "How to Design a Custom Belt Buckle: 9 Decisions Before Production",
+    description:
+      "Learn how to design a custom belt buckle by confirming the belt, size, zinc alloy relief, finish, color and hinge-and-hook attachment.",
+    image: "/assets/images/custom-plate-belt-buckle-front.webp",
+    author: "Sunny Huang",
+    authorType: "Person",
+    datePublished: "2026-08-28",
+    dateModified: "2026-08-28",
+    schemaType: "BlogPosting",
+    faq: [
+      {
+        question: "How do I design a custom belt buckle?",
+        answer:
+          "Begin with the intended use and belt specifications. Then confirm the size, artwork hierarchy, relief, finish, color and back attachment before approving the digital proof.",
+      },
+      {
+        question: "How can I make sure the buckle fits my belt?",
+        answer:
+          "Provide the belt width, thickness and photos of its connection area. The hinge, hook and available clearance should be reviewed against those specifications.",
+      },
+      {
+        question: "Is 2D or 3D better for a logo buckle?",
+        answer:
+          "2D relief usually suits clean logos, lettering and defined color areas. 3D relief is useful for rounded, sculptural subjects. A combined design may work when the central motif needs depth but the wording needs clear levels.",
+      },
+      {
+        question: "Can the buckle combine enamel and an antique finish?",
+        answer:
+          "Yes, a design can use soft enamel in selected areas while retaining an antique metal effect elsewhere, subject to artwork review. The proof should clearly identify colored and exposed metal areas.",
+      },
+      {
+        question: "Can I order a sample before bulk production?",
+        answer:
+          "A physical sample can be produced, and photos or video may be provided for review. Sample cost and timing depend on the design and should be confirmed with the quotation.",
+      },
+    ],
+  },
+  "patch-shapes-guide": {
+    title: "Patch Shapes Guide: How to Choose the Best Custom Shape",
+    headline: "Patch Shapes Guide: How to Choose the Right Shape for a Custom Patch",
+    description:
+      "Compare round, rectangular, shield, oval and custom patch shapes. Learn how artwork, placement, borders and size affect the best shape for your design.",
+    inquiryHeading: "Need Help Choosing a Shape for Your Custom Patch?",
+    inquiryDescription:
+      "Tell us what artwork or reference image is available, along with the intended placement, approximate dimensions, quantity and required delivery date. Include your preferred material and backing, if known, so we can review the outline and edge options.",
+    inquiryButtonLabel: "Request a Custom Patch Quote",
+    image: "/assets/images/patch-shapes-guide.webp",
+    author: "Sunny Huang",
+    authorType: "Person",
+    datePublished: "2026-08-27",
+    dateModified: "2026-08-27",
+    schemaType: "BlogPosting",
+    faq: [
+      {
+        question: "What are the most common patch shapes?",
+        answer:
+          "Circle, oval, square, rectangle and shield are among the most common choices. Custom patches can also follow a simplified logo, mascot or product silhouette.",
+      },
+      {
+        question: "What is the best shape for a custom patch?",
+        answer:
+          "There is no single best shape. The right option depends on the artwork proportions, text, finished size, border and intended placement.",
+      },
+      {
+        question: "Can a patch follow the exact shape of my logo?",
+        answer:
+          "Often it can, but small projections, deep recesses and disconnected elements may need to be simplified or placed inside a supporting background shape.",
+      },
+      {
+        question: "Which patch shapes work best on hats?",
+        answer:
+          "Compact ovals, rounded rectangles and simple custom shapes are useful starting points. The best choice depends on the hat panel, patch dimensions, material and backing.",
+      },
+      {
+        question: "Can an irregular patch have a merrowed border?",
+        answer:
+          "Some smooth, simple custom outlines may support a merrowed border. Complex shapes with tight corners or deep cut-ins generally require a different edge treatment. The final choice should be confirmed from the actual artwork.",
+      },
+    ],
+  },
+  "uses-for-custom-patches": {
+    title: "11 Creative and Practical Uses for Custom Patches",
+    headline: "11 Creative and Practical Uses for Custom Patches",
+    description:
+      "Discover 11 practical and creative uses for custom patches on clothing, uniforms, hats, bags, event merchandise, wedding gifts, home decor and packaging.",
+    author: "Sunny Huang",
+    authorType: "Person",
+    datePublished: "2026-08-25",
+    dateModified: "2026-08-25",
+    image: "/assets/images/common-uses-for-custom-patches.webp",
+    schemaType: "Article",
+  },
+  "how-many-race-medals-to-order": {
+    title: "How Many Race Medals Should You Order? Quantity Guide",
+    headline: "How Many Race Medals Should You Order? A Practical Calculator for Race Directors",
+    description:
+      "Estimate finisher, placement and age-group medal quantities with a practical race medal calculator covering registrations, reserves and multiple distances.",
+    author: "Sunny Huang",
+    authorType: "Person",
+    datePublished: "2026-08-24",
+    dateModified: "2026-08-24",
+    image: "/assets/images/how-many-race-medals-to-order-b2.webp",
+    schemaType: "Article",
+    faq: [
+      {
+        question: "Should I order a medal for every registered runner?",
+        answer:
+          "Only if that matches the event's policy or registration is the safest planning ceiling. Otherwise forecast eligible finishers, then add separately counted recipients and a documented reserve.",
+      },
+      {
+        question: "How many extra finisher medals should I order?",
+        answer:
+          "There is no universal figure. Build the reserve from open-registration uncertainty, data quality, operational risks, additional recipients and replacement commitments.",
+      },
+      {
+        question: "Should a DNF participant receive a medal?",
+        answer:
+          "That is an event-policy decision. State the rule before registration and apply it consistently.",
+      },
+      {
+        question: "How many race medals should I order for a 5K?",
+        answer:
+          "Estimate eligible finishers, then add late entries, promised recipients, an operational reserve and replacement stock.",
+      },
+      {
+        question: "Can one medal design cover several race distances?",
+        answer:
+          "Yes, if one shared design is intentional. Distances can also be differentiated through ribbons, reverse details or packaging. Use a version map so volunteers distribute the correct pieces.",
+      },
+      {
+        question: "What happens if the event runs out of medals?",
+        answer:
+          "Record affected participants and communicate only a verified remedy and realistic delivery expectations. Afterwards, compare the forecast with actual eligibility and distribution records.",
+      },
+    ],
+  },
+  "finisher-medals-vs-placement-medals": {
+    title: "What Is a Finisher Medal? Finisher vs Race Awards",
+    headline: "Finisher Medals vs Race Awards: How to Plan Your Medal Structure",
+    description:
+      "What does a finisher medal mean? Compare finisher medals with placement, age-group and participation awards, and plan your race medal program.",
+    author: "Sunny Huang",
+    authorType: "Person",
+    datePublished: "2026-08-20",
+    dateModified: "2026-09-21",
+    hideModifiedDate: true,
+    image: "/assets/images/finisher-vs-placement-medals-og.webp",
+    schemaType: "Article",
+    faq: [
+      {
+        question: "What does a finisher medal mean?",
+        answer:
+          "A finisher medal recognizes a participant who completes an event according to its published eligibility and completion rules. It normally represents completion rather than finishing position.",
+      },
+      {
+        question: "Is a finisher medal the same as a participation medal?",
+        answer:
+          "Not always. A finisher medal usually requires completion, while a participation medal may recognize taking part without requiring the participant to finish. Each event should publish its own eligibility rules.",
+      },
+      {
+        question: "What is the difference between finisher medals and placement medals?",
+        answer:
+          "Finisher medals recognize eligible completion. Placement medals or race awards recognize competitive results, such as overall, age-group or podium positions.",
+      },
+      {
+        question: "What is a runner-up medal?",
+        answer:
+          "A runner-up medal recognizes a participant or team that finishes behind the winner. Depending on the competition format, it may refer specifically to second place or more broadly to a finalist who did not win.",
+      },
+      {
+        question: "Can overall winners also receive age-group awards?",
+        answer:
+          "Yes, but the organizer must decide this before the event. Some races allow participants to receive both awards, while others remove overall winners from age-group rankings and move the next eligible finisher up.",
+      },
+      {
+        question: "How many finisher medals should an event order?",
+        answer:
+          "The quantity should be based on expected eligible finishers, registration patterns, the event's completion rules and a controlled reserve for replacements or late changes. There is no universal percentage suitable for every event.",
+      },
+    ],
+  },
+  "memorial-challenge-coins-guide": {
+    title: "Memorial Challenge Coins: Meaning, Design & Etiquette",
+    headline: "Memorial Challenge Coins: How to Create a Respectful Tribute",
+    description:
+      "Learn what memorial challenge coins mean, what to place on each side, and how to choose respectful wording, symbols, finishes and presentation.",
+    author: "Sunny Huang",
+    authorType: "Person",
+    datePublished: "2026-08-26",
+    dateModified: "2026-08-26",
+    image: "/assets/images/memorial-challenge-coins-guide.webp",
+    schemaType: "Article",
+    faq: [
+      {
+        question: "What is a memorial challenge coin?",
+        answer:
+          "It is a metal keepsake created to remember a person, group or meaningful shared experience. It may be carried, displayed or presented to family members, colleagues or organization members.",
+      },
+      {
+        question: "What is the difference between a memorial coin and a commemorative coin?",
+        answer:
+          "A memorial coin focuses on remembrance of a person or loss. A commemorative coin usually marks an event, anniversary, retirement or milestone. One project can serve both purposes.",
+      },
+      {
+        question: "What information should be included?",
+        answer:
+          "Common elements include a name, dates, role, short dedication and one or two meaningful symbols. Include only information that can be verified and read clearly.",
+      },
+      {
+        question: "Can a photograph be used on a memorial coin?",
+        answer:
+          "Yes, when the image quality and usage permission are suitable. It may need to be simplified for relief or reproduced through an appropriate printing method.",
+      },
+      {
+        question: "When are remembrance coins presented?",
+        answer:
+          "They may be given privately, at a memorial service, during an anniversary gathering or at an organization event. Follow the wishes of the recipients and organization rather than an assumed universal custom.",
+      },
+      {
+        question: "Do I need permission to use a department badge or military emblem?",
+        answer:
+          "Often, yes. The rights holder should confirm whether the mark may be reproduced. For U.S. Military Service marks, consult the relevant Trademark Licensing Program Office.",
+      },
+    ],
+  },
+  "military-challenge-coin-traditions": {
+    title: "Military Challenge Coin Traditions, Meaning and Etiquette",
+    headline: "Military Challenge Coin Traditions: Meaning, History and How They Are Presented",
+    description:
+      "Explore military challenge coin traditions, their debated history, meaning, presentation etiquette, coin checks, common types, symbols and modern uses.",
+    author: "Sunny Huang",
+    authorType: "Person",
+    datePublished: "2026-08-18",
+    dateModified: "2026-08-18",
+    image: "/assets/images/military-challenge-coin-tradition-handshake-clean-og.webp",
+    schemaType: "Article",
+  },
+  "custom-metal-keychain-materials": {
+    title: "Custom Metal Keychain Materials: 4 Metals Compared",
+    headline: "Custom Metal Keychain Materials: Zinc Alloy vs Brass vs Stainless Steel vs Iron",
+    description:
+      "Compare zinc alloy, brass, stainless steel and iron for custom metal keychains. Choose the right metal by design, durability, finish, application and budget.",
+    author: "Sunny Huang",
+    authorType: "Person",
+    datePublished: "2026-08-12",
+    dateModified: "2026-08-12",
+    image: "/assets/images/custom-metal-keychain-materials-comparison.webp",
+    faq: [
+      {
+        question: "What metals are custom keychains made from?",
+        answer:
+          "Common options include zinc alloy, brass, stainless steel and iron-based steel. The choice depends on the shape, manufacturing process, finish and intended use. Confirm the body material separately from the ring, chain and other attachments, which may use different metals.",
+      },
+      {
+        question: "Is zinc alloy better than stainless steel?",
+        answer:
+          "Neither is universally better. Zinc alloy offers greater freedom for die-cast shapes and sculpted relief. Stainless steel is more suitable for many flat, engraved or moisture-exposed applications.",
+      },
+      {
+        question: "Which material is normally the most economical?",
+        answer:
+          "Iron-based steel is often economical for a simple stamped design. However, tooling, size, thickness, surface treatment, hardware, packaging and quantity determine the total project cost.",
+      },
+      {
+        question: "Can an iron-based keychain rust?",
+        answer:
+          "Unprotected iron-based steel can corrode. Plating or coating reduces the risk, but damaged or incompletely covered areas may remain vulnerable. Surface protection and packaging should be confirmed for humid destinations.",
+      },
+      {
+        question: "Should buyers approve a physical sample?",
+        answer:
+          "A physical sample is recommended when thickness, weight, surface finish, 3D relief, functionality or retail presentation matters. Photographs cannot fully communicate balance, surface feel or hardware performance.",
+      },
+    ],
+  },
+  "keychain-attachments-guide": {
+    title: "Keychain Attachments Guide: Rings, Clasps & Chains",
+    headline: "Keychain Attachments: How to Choose Rings, Clasps, Chains and Loops",
+    description:
+      "Compare keychain rings, clasps, chains and loops, then choose the right attachment for your product material, weight, use and packaging.",
+    author: "Sunny Huang",
+    authorType: "Person",
+    datePublished: "2026-08-26",
+    dateModified: "2026-08-26",
+    image: "/assets/images/keychain-attachments-guide.webp",
+    faq: [
+      {
+        question: "Is a split ring better than a lobster clasp?",
+        answer:
+          "Neither is universally better. A split ring suits ordinary keys; a lobster clasp is easier to clip onto bags or straps. Choose according to the receiving point and removal frequency.",
+      },
+      {
+        question: "What attachment should I use for a bag charm?",
+        answer:
+          "A lobster or swivel clasp can clip onto a suitable bag ring or loop. Measure that receiving point and confirm the clasp opening.",
+      },
+      {
+        question: "Can the attachment be changed after the artwork is approved?",
+        answer:
+          "Sometimes, but it may change the connector, hanging direction, finished length and packaging. Review an updated proof or sample.",
+      },
+    ],
+  },
+  "custom-metal-keychain-size-attachment-guide": {
+    title: "Metal Keychain Size Guide: Dimensions and Thickness",
+    headline: "Custom Metal Keychain Size, Thickness and Measurement Guide",
+    description:
+      "Compare metal keychain sizes in mm, body thickness and finished length, with practical checks for artwork, connection points, hardware and samples.",
+    author: "Sunny Huang",
+    authorType: "Person",
+    datePublished: "2026-08-17",
+    dateModified: "2026-09-21",
+    image: "/assets/images/custom-metal-keychain-size-attachment-guide.webp",
+    faq: [
+      {
+        question: "What is the standard size of a custom metal keychain?",
+        answer:
+          "Published supplier options span roughly 19â€“76 mm for some custom enamel keychains, but those options are not a universal standard or an industry average. Use the planning ranges above as comparison points, then confirm body dimensions separately from the overall finished length.",
+      },
+      {
+        question: "How thick should a metal keychain be?",
+        answer:
+          "Some flat stamped or enamel designs may be discussed at approximately 1.5-2.0 mm during early quotation. That reference does not apply to every design. Die-cast, deep-relief, 3D, bottle-opener and moving structures may need a different body thickness after artwork review.",
+      },
+      {
+        question: "What is the difference between body size and finished length?",
+        answer:
+          "Body size describes the custom metal component. Overall finished length is the end-to-end length of the complete assembled keychain in an agreed position, including rings, chains, hooks or clasps. Record both separately on the quotation or approval drawing.",
+      },
+      {
+        question: "Which keychain attachment is the most practical?",
+        answer:
+          "A split ring is often practical for direct key attachment, while a lobster clasp or swivel hook can be easier for bags and removable merchandise. The best choice depends on handling, orientation, appearance, package size and the complete assembly.",
+      },
+      {
+        question: "Should buyers approve a physical sample before mass production?",
+        answer:
+          "A physical sample is recommended when size, thickness, weight, relief, hardware, function, finish or packaging matters. It lets the buyer check the real assembly before those details are repeated in bulk production.",
+      },
+    ],
+  },
+  "custom-marathon-medals-guide": {
+    title: "Custom Marathon Medals: Size, Ribbon, Finish & QC Guide",
+    headline: "Custom Marathon Medals Guide: Size, Ribbon, Finish and Factory QC Tips",
+    description:
+      "Plan custom marathon medals for running events with practical tips on size, ribbon, finish, lead time, factory testing and shipment inspection.",
+    author: "Sunny Huang",
+    authorType: "Person",
+    datePublished: "2026-08-06",
+    dateModified: "2026-08-24",
+    image: "/assets/images/blog-custom-marathon-medals-hero.webp",
+    faq: [
+      {
+        question: "What size should custom marathon medals be?",
+        answer:
+          "Many full marathon medals start around 80 to 90 mm, while 50 to 70 mm can work for 5K, 10K and community races. The right size depends on artwork detail, medal weight, ribbon comfort, budget and packaging.",
+      },
+      {
+        question: "What information should be on a race medal?",
+        answer:
+          "A race medal usually includes the event name, distance, year and main visual identity. It may also include the city, route shape, sponsor mark, charity symbol or finisher wording.",
+      },
+      {
+        question: "Are 2D or 3D medals better for running events?",
+        answer:
+          "2D medals are better for clean logos, text and race distance marks. 3D medals are better for sculpted landmarks, runners, mountains and premium depth. Many custom race medals use both methods.",
+      },
+      {
+        question: "How early should I order custom running medals?",
+        answer:
+          "Order as early as possible and allow time for artwork proofing, sample approval, production, shipment inspection, international shipping and local distribution before race day.",
+      },
+      {
+        question: "What affects the production time for custom marathon medals?",
+        answer:
+          "Artwork changes, custom shapes, 3D relief, enamel colors, ribbon printing, packaging and shipping method can all affect the schedule. Share the required in-hands date so the factory can plan proofing, production and inspection backward from race day.",
+      },
+      {
+        question: "Can one medal design be used for different race distances?",
+        answer:
+          "Yes. Many buyers use the same medal body with different ribbon colors, back printing, inserts or packaging labels for 5K, 10K, half marathon and full marathon categories.",
+      },
+    ],
+  },
+  "challenge-coin-size-guide": {
+    title: "Challenge Coin Size Guide: Diameter, Thickness and Uses",
+    headline: "Challenge Coin Size and Thickness Guide: How to Choose the Right Dimensions",
+    description:
+      "Compare challenge coin sizes and thicknesses, from 1.5 to 2.5 inches. Learn how artwork, 3D relief, use and packaging affect your choice.",
+    author: "Sunny Huang",
+    authorType: "Person",
+    datePublished: "2026-08-05",
+    dateModified: "2026-08-05",
+    image: "/assets/images/blog-challenge-coin-size-guide-hero.webp",
+    faq: [
+      {
+        question: "What is the standard challenge coin size?",
+        answer:
+          "There is no mandatory standard. Common custom sizes range from about 1.5 to 2.5 inches. Start around 1.75 inches for concise pocket-carry designs and 2 inches for more detailed artwork.",
+      },
+      {
+        question: "Is a 1.75-inch or 2-inch challenge coin better?",
+        answer:
+          "Choose 1.75 inches for a clear emblem and limited wording. Choose 2 inches for a detailed seal, several text lines or complex double-sided artwork. Compare both layouts at actual size.",
+      },
+      {
+        question: "How thick should a challenge coin be?",
+        answer:
+          "For standard round coins, our current production reference is 2.0 to 3.0 mm for diameters of 25 to 45 mm, 3.0 to 3.5 mm for 46 to 70 mm, about 3.5 mm for 71 to 90 mm, and 4 mm or more for diameters of 91 mm and above. Artwork, relief and shape can change the final recommendation.",
+      },
+      {
+        question: "Does a thicker coin always mean better quality?",
+        answer:
+          "No. Quality also depends on artwork, tooling, plating, enamel, polishing, inspection and packaging. Extra thickness can add weight without improving readability or finish.",
+      },
+      {
+        question: "What size is best for a 3D challenge coin?",
+        answer:
+          "Many 3D projects benefit from 2 inches or more because sculpted contours need room to transition. Portraits, buildings, vehicles and detailed scenes may require more diameter and relief height than a simple raised emblem.",
+      },
+      {
+        question: "How is an irregular challenge coin measured?",
+        answer:
+          "Specify custom-shaped coins by maximum width and height, with the quoted size tied to the longest dimension. Mark cutouts, narrow sections and projections on the proof.",
+      },
+    ],
+  },
+  "2d-vs-3d-challenge-coins": {
+    title: "2D vs 3D Challenge Coins: Which Is Better for Your Design?",
+    description:
+      "Compare 2D and 3D challenge coins by relief, detail, enamel color, cost and best uses. Learn which option fits your custom coin design.",
+    author: "Sunny Huang",
+    authorType: "Person",
+    datePublished: "2026-07-29",
+    dateModified: "2026-09-28",
+    hideModifiedDate: true,
+    image: "/assets/images/2d-vs-3d-challenge-coins.webp",
+    faq: [
+      {
+        question: "What is the main difference between 2D and 3D challenge coins?",
+        answer:
+          "A 2D challenge coin uses clearly separated raised and recessed levels. A 3D challenge coin uses gradual, sculpted transitions that create rounded surfaces and more natural depth. Both have physical relief, but they interpret artwork differently.",
+      },
+      {
+        question: "Can 3D challenge coins include enamel color?",
+        answer:
+          "Yes. Enamel can be placed in defined recessed areas or surrounding 2D sections. It is less suitable for continuous sculpted contours because it may cover or reduce the visible relief.",
+      },
+      {
+        question: "Is 2D or 3D better for a company logo?",
+        answer:
+          "Most flat company logos work well in 2D because the 2D format preserves clean outlines, lettering and brand colors. A dimensional crest or emblem may benefit from partial 3D relief.",
+      },
+      {
+        question: "Can one side be 2D and the other side be 3D?",
+        answer:
+          "Yes. One side can feature sculpted artwork while the reverse uses 2D text, enamel colors or a secondary logo. This is a practical option when the two sides have different visual purposes.",
+      },
+      {
+        question: "Do I need to provide a finished 3D model?",
+        answer:
+          "Not always. Clear artwork and high-resolution reference images may be enough to prepare a relief rendering. Complex portraits, vehicles and buildings benefit from references showing more than one angle.",
+      },
+    ],
+  },
+  "how-to-choose-personalized-golf-ball-markers": {
+    title: "Personalized Golf Ball Markers with Hat Clips: Buyer Guide",
+    description:
+      "Compare sizes, materials, logo methods, magnetic hat clips, packaging and inspection requirements before ordering personalized golf ball markers.",
+    author: "Sunny Huang",
+    authorType: "Person",
+    datePublished: "2026-07-28",
+    dateModified: "2026-07-28",
+    image: "/assets/images/blog-personalized-golf-ball-markers-card.webp",
+    faq: [
+      {
+        question: "What is the best material for personalized golf ball markers?",
+        answer:
+          "There is no single best material. Zinc alloy suits die-cast shapes; iron can suit flatter magnetic pieces; brass feels premium; and stainless steel looks modern. Choose according to process, weight, finish, and clip construction.",
+      },
+      {
+        question: "What size should a custom golf ball marker be?",
+        answer:
+          "For many standard hat-clip configurations, approximately 24-30 mm is a useful starting range, not a universal rule. Confirm the final size against the logo, weight, clip geometry, and packaging, then review the artwork at 100% physical scale.",
+      },
+      {
+        question: "Should golf tournament ball markers include a hat clip?",
+        answer:
+          "A hat clip keeps the marker accessible and creates a more complete event gift. A loose marker may better suit economical giveaways or sets that already include a magnetic divot tool.",
+      },
+    ],
+  },
+  "how-custom-challenge-coins-are-made": {
+    title: "How Are Custom Challenge Coins Made? A Step-by-Step Manufacturing Guide",
+    description:
+      "Learn how custom challenge coins are made, from artwork and tooling to die-striking, finishing, color filling, quality inspection and shipment preparation.",
+    datePublished: "2026-07-24",
+    dateModified: "2026-09-21",
+    image: "/assets/images/blog-how-challenge-coins-made-card-v3.webp",
+    faq: [
+      {
+        question: "How long does it take to manufacture challenge coins?",
+        answer:
+          "Manufacturing time depends on artwork approval, tooling complexity, quantity, finish, color work, packing method, and shipping route. Share the required delivery date at the first inquiry.",
+      },
+      {
+        question: "What artwork files should I submit?",
+        answer:
+          "Vector files such as AI, PDF, EPS, or SVG are helpful, but a logo, sketch, reference image, or clear concept can also be used for initial review.",
+      },
+      {
+        question: "Can both sides of a challenge coin be customized?",
+        answer:
+          "Yes. Many custom challenge coins use both front and back designs. The back side can include a motto, date, unit name, event name, serial number, QR code, or secondary logo.",
+      },
+      {
+        question: "What metals are challenge coins made from?",
+        answer:
+          "Common base metals include brass, iron and zinc alloy. The best choice depends on whether the design will be die-struck or die-cast, as well as its shape, relief depth, required weight and finish. Gold, silver, copper and black nickel often refer to plating rather than solid base metal.",
+      },
+      {
+        question: "What is the difference between die-struck and die-cast challenge coins?",
+        answer:
+          "Die-struck coins are formed by pressing engraved dies into a metal blank and are well suited to traditional shapes and crisp relief. Die-cast coins are formed in a casting mold and are often selected for deep 3D relief, cutouts and irregular shapes.",
+      },
+    ],
+  },
+  "custom-enamel-pins-no-moq-guide": {
+    title: "Custom Enamel Pins with No MOQ: A Complete Guide",
+    description:
+      "Learn how No MOQ custom enamel pin orders work for samples, small batches and bulk orders, including artwork review, mold setup, unit cost, inspection and shipment preparation. Mold fees and unit prices are calculated by project.",
+    datePublished: "2026-07-23",
+    dateModified: "2026-07-23",
+    image: "/assets/images/blog-custom-enamel-pins-no-moq-products.png",
+  },
+  "custom-metal-crafts-guide": {
+    title: "Complete Guide to Custom Metal Crafts: From Design to Production",
+    description:
+      "Learn how custom metal crafts are designed, manufactured, inspected and sourced for global B2B orders.",
+    datePublished: "2026-07-15",
+    dateModified: "2026-07-15",
+    image: "/assets/images/blog-custom-metal-crafts.jpg",
+  },
+  "soft-enamel-vs-hard-enamel-pins": {
+    title: "Soft Enamel vs Hard Enamel Pins: Cost, Durability & Uses",
+    description:
+      "Compare soft enamel vs hard enamel pins by texture, cost, durability, artwork limits and best uses before ordering custom pins.",
+    datePublished: "2026-07-15",
+    dateModified: "2026-08-05",
+    image: "/assets/images/soft-vs-hard-enamel-pins-comparison.webp",
+    faq: [
+      {
+        question: "What is the main difference between soft enamel and hard enamel pins?",
+        answer:
+          "Soft enamel pins have recessed color areas and raised metal lines, creating a textured surface. Hard enamel pins are filled and polished so the enamel and metal sit nearly level, creating a smooth finish.",
+      },
+      {
+        question: "Are hard enamel pins more durable than soft enamel pins?",
+        answer:
+          "Not necessarily in every respect. A level hard enamel face is usually easier to wipe, but scratch behavior, impact performance, plating wear and post security depend on the complete specification and use. Compare like-for-like samples or relevant test information when a project has a defined performance requirement.",
+      },
+      {
+        question: "Which enamel pin type is more cost-effective for bulk orders?",
+        answer:
+          "Soft enamel is usually the more economical choice because it requires fewer finishing and polishing steps. Final price still depends on size, quantity, plating, number of colors, attachments and packaging.",
+      },
+      {
+        question: "Should retail enamel pins use soft or hard enamel?",
+        answer:
+          "Both can work for retail. Hard enamel suits a smooth, premium presentation, while soft enamel provides stronger texture and raised metal detail. The best choice depends on the artwork, target price and brand position.",
+      },
+    ],
+  },
+  "how-to-make-your-own-custom-lapel-pins": {
+    title: "How to Make Your Own Custom Lapel Pins | Buyer Guide",
+    description:
+      "Learn how to make your own custom lapel pins, from artwork and material selection to sample approval, quality inspection, packaging and shipment.",
+    datePublished: "2026-07-22",
+    dateModified: "2026-07-22",
+    image: "/assets/images/blog-lapel-pin-animal-samples.webp",
+  },
+  "custom-medals-vs-challenge-coins": {
+    title: "Custom Medals vs Challenge Coins for Events & Soccer",
+    description:
+      "Compare custom medals vs challenge coins for soccer tournaments, team recognition, events and collectible gifts, including cost and design factors.",
+    datePublished: "2026-07-15",
+    dateModified: "2026-08-05",
+    image: "/assets/images/blog-medal-xball-front-back.png",
+    faq: [
+      {
+        question: "Are medals or challenge coins better for a soccer tournament?",
+        answer:
+          "Medals are usually better for player participation, finalist and champion awards because they can be worn during the ceremony. Challenge coins are better for coaches, volunteers, sponsors, club anniversaries and collectible team gifts.",
+      },
+      {
+        question: "Can a soccer event use both medals and challenge coins?",
+        answer:
+          "Yes. A tournament can award medals to players and use matching challenge coins for officials, sponsors, VIPs or commemorative merchandise. Shared artwork and plating can keep both products visually consistent.",
+      },
+      {
+        question: "Which product usually needs more packaging?",
+        answer:
+          "Medals commonly need ribbons and individual bags, while challenge coins may use pouches, capsules or presentation boxes. Packaging should be selected according to the recipient and distribution method.",
+      },
+    ],
+  },
+};
+
+export const blogArticles = Object.fromEntries(
+  [...Object.entries(blogArticleData).map(([slug, article]) => [
+    slug,
+    withBlogArticleDefaults(article),
+  ]),
+  ["custom-embroidered-patches-no-minimum", {
+    inquiryHeading: "Ready to Start Your Custom Patch Project?",
+    title: "Custom Embroidered Patches with No Minimum: Pilot Guide",
+    headline: "Custom Embroidered Patches with No Minimum: A Pilot Order Guide",
+    description: "Plan custom embroidered patches with no minimum. Compare small-order costs, test samples on real garments, and prepare your approved design for bulk production.",
+    author: DEFAULT_BLOG_AUTHOR_SCHEMA.name,
+    authorType: DEFAULT_BLOG_AUTHOR_SCHEMA["@type"],
+    authorUrl: DEFAULT_BLOG_AUTHOR_SCHEMA.url,
+    schemaType: "BlogPosting",
+    image: "/assets/images/embroidered-patches-pilot-order.webp",
+    datePublished: "2026-09-12",
+    dateModified: "2026-09-12",
+  }],
+  ["custom-medal-design-proof-checklist", {
+    title: "Custom Medal Design: Artwork Approval Checklist",
+    headline: "Custom Medal Design: What to Check Before Approving Your Proof",
+    description:
+      "Check medal dimensions, wording, printing, finishes and ribbon details with a practical checklist before approving your custom medal design for production.",
+    author: DEFAULT_BLOG_AUTHOR_SCHEMA.name,
+    authorType: DEFAULT_BLOG_AUTHOR_SCHEMA["@type"],
+    authorUrl: DEFAULT_BLOG_AUTHOR_SCHEMA.url,
+    datePublished: "2026-09-08",
+    dateModified: "2026-09-08",
+    image: "/assets/images/custom-medal-front-back-photo.webp",
+    schemaType: "BlogPosting",
+  }],
+  ["christmas-gift-proposals-distributors", {
+    title: "Corporate Christmas Gifts: A Distributor's Comparison Guide",
+    headline: "Christmas Gift Proposals for Distributors: Comparing Metal Keepsakes",
+    description:
+      "Compare ornaments, keychains, lapel pins, and coins for corporate Christmas gifts. Align specifications, packaging, quantities, and quote inclusions.",
+    author: DEFAULT_BLOG_AUTHOR_SCHEMA.name,
+    authorType: DEFAULT_BLOG_AUTHOR_SCHEMA["@type"],
+    authorUrl: DEFAULT_BLOG_AUTHOR_SCHEMA.url,
+    datePublished: "2026-09-08",
+    dateModified: "2026-09-08",
+    image: "/assets/images/christmas-metal-keepsakes-comparison.webp?v=a4835a4b",
+    schemaType: "BlogPosting",
+  }]],
+);
+
+const addImagePerformanceDefaults = (html) =>
+  html.replace(/<img\b([^>]*)>/g, (match, attrs) => {
+    let nextAttrs = attrs;
+    const isPriorityImage = /\bfetchpriority=/.test(nextAttrs)
+      || /\bclass=["'][^"']*\bhero-bg\b/.test(nextAttrs)
+      || /\bclass=["'][^"']*\bsingle-product-main-image\b/.test(nextAttrs)
+      || /\bdata-main-image\b/.test(nextAttrs)
+      || /\balt=["']Unique Pin logo["']/.test(nextAttrs);
+
+    if (!/\bdecoding=/.test(nextAttrs)) {
+      nextAttrs += ' decoding="async"';
+    }
+
+    if (!isPriorityImage && !/\bloading=/.test(nextAttrs)) {
+      nextAttrs += ' loading="lazy"';
+    }
+
+    return `<img${nextAttrs}>`;
+  });
+
+export const normalizeSiteHtml = (html) =>
+  addImagePerformanceDefaults(html
+    .replaceAll("Golf Ball Markers &amp;Hat Clips", "Golf Accessories")
+    .replaceAll("Golf Ball Markers &amp; Hat Clips", "Golf Accessories")
+    .replace(/href="\/blog\/([a-z0-9-]+)#\1"/g, 'href="/blog/$1"')
+    .replace(
+      /(<a class="mega-product"[^>]*>\s*)<img(?![^>]*\bloading=)(?![^>]*\bfetchpriority=)/g,
+      '$1<img loading="lazy" decoding="async"',
+    )
+    .replace(
+      /(<article class="product-type-card"[^>]*>\s*)<img(?![^>]*\bloading=)(?![^>]*\bfetchpriority=)/g,
+      '$1<img loading="lazy" decoding="async"',
+    )
+    .replace(
+      /(<a class="single-product-related-media"[^>]*>\s*)<img(?![^>]*\bloading=)(?![^>]*\bfetchpriority=)/g,
+      '$1<img loading="lazy" decoding="async"',
+    )
+    .replace(
+      /(<div class="cert">\s*)<img(?![^>]*\bloading=)(?![^>]*\bfetchpriority=)/g,
+      '$1<img loading="lazy" decoding="async"',
+    )
+    .replaceAll('src="assets/', 'src="/assets/')
+    .replaceAll('href="assets/', 'href="/assets/')
+    .replaceAll('poster="assets/', 'poster="/assets/')
+    .replaceAll('data-video-src="assets/', 'data-video-src="/assets/')
+    .replaceAll('data-video-poster="assets/', 'data-video-poster="/assets/'));
