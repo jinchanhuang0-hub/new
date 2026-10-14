@@ -462,7 +462,8 @@
     font-size: 13px;
   }
 
-  .blog-pagination button {
+  .blog-pagination button,
+.blog-pagination a {
     min-width: 44px;
     height: 44px;
   }

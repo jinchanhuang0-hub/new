@@ -838,7 +838,8 @@ export default function StaticPageEffects() {
       const category = requestedCategory === "All" || blogCategories.includes(requestedCategory)
         ? requestedCategory
         : "All";
-      const page = Math.max(1, Number(searchParams.get("page")) || 1);
+      const requestedPage = Number(searchParams.get("page"));
+      const page = Number.isSafeInteger(requestedPage) && requestedPage > 0 ? requestedPage : 1;
       return { category, page };
     };
 
@@ -885,7 +886,7 @@ export default function StaticPageEffects() {
     };
 
     const renderBlogPagination = (totalPages) => {
-      if (!blogPagination) return;
+      if (!blogPagination || blogPagination.dataset.serverPaginated === "true") return;
 
       if (totalPages <= 1) {
         blogPagination.hidden = true;
@@ -955,13 +956,12 @@ export default function StaticPageEffects() {
         categoryButton.classList.toggle("active", categoryButton === button);
       });
       const category = button.dataset.blogCategory || "All";
-      applyBlogCategory(category, 1, true);
-      updateBlogUrl(category, 1);
+      window.location.assign(getBlogPageHref(category, 1));
     };
 
     const handleBlogPaginationClick = (event) => {
       const button = event.target.closest?.(".blog-pagination [data-blog-page]");
-      if (!button || button.disabled) return;
+      if (!button || button.disabled || button.tagName === "A") return;
 
       event.preventDefault();
       const pageAction = button.dataset.blogPage;
@@ -971,8 +971,7 @@ export default function StaticPageEffects() {
           ? currentBlogPage + 1
           : Number(pageAction) || 1;
 
-      applyBlogCategory(activeBlogCategory, nextPage, true);
-      updateBlogUrl(activeBlogCategory, currentBlogPage);
+      window.location.assign(getBlogPageHref(activeBlogCategory, nextPage));
     };
 
     const initialBlogState = getBlogStateFromUrl();
