@@ -1,4 +1,4 @@
-import { blogArticles } from "../../lib/siteRoutes";
+import { blogArticles } from "../articles";
 
 const decodeHtml = (value = "") =>
   value

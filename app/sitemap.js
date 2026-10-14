@@ -1,10 +1,10 @@
 import {
-  blogArticles,
   getCategoryPath,
   productCategories,
   productItemCategoryKey,
   SITE_URL,
 } from "./lib/siteRoutes";
+import { blogArticles } from "./blog/articles";
 
 import { productLastModified } from "./lib/productDates";
 

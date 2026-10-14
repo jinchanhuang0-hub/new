@@ -755,6 +755,33 @@
   object-fit: contain;
 }
 
+#custom-wooden-medal-designs .custom-wooden-medal-featured-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  aspect-ratio: 1672 / 941;
+  object-fit: contain;
+}
+
+#custom-wooden-medal-designs .custom-wooden-medal-event-examples img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  aspect-ratio: 1672 / 941;
+  object-fit: contain;
+}
+
+#custom-wooden-medal-designs .custom-wooden-medal-detail-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  aspect-ratio: 3 / 2;
+  object-fit: contain;
+}
+
 #custom-cufflinks-logo-layout .custom-cufflinks-featured-image {
   overflow: hidden;
 }

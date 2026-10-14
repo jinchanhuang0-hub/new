@@ -29,6 +29,7 @@ import { customMetalFridgeMagnetsMuseumSouvenirShopArticleHtml } from "./customM
 import { customMetalBookmarksBuyingGuideArticleHtml } from "./customMetalBookmarksBuyingGuide";
 import { customPetTagsArticleHtml } from "./customPetTags";
 import { customCufflinksLogoLayoutArticleHtml } from "./customCufflinksLogoLayout";
+import { customWoodenMedalDesignsArticleHtml } from "./customWoodenMedalDesigns";
 
 
 export const metadata = {
@@ -67,6 +68,15 @@ export const blogHtml = String.raw`
           <button type="button" data-blog-category="Uncategorized">Uncategorized</button>
         </div>
         <div class="blog-card-grid">
+          <a class="blog-feature-card" href="/blog/custom-wooden-medal-designs" data-blog-category="Custom Medals" aria-label="Read One Logo, Three Custom Wooden Medal Designs">
+            <img src="/assets/images/four-wooden-event-medal-design-concepts.webp" width="1672" height="941" title="Illustrative Wooden Medal Designs for Different Events" alt="Four wooden medal design concepts for trail running, swimming, cycling and city running, with matching ribbons">
+            <div class="blog-feature-body">
+              <div class="blog-feature-meta"><span>Custom Medals</span><span>Design Comparison</span></div>
+              <h2>One Logo, Three Custom Wooden Medal Designs</h2>
+              <p>Compare three ways to adapt an event logo for a wooden medal, with practical guidance on color, layered construction and finished feel.</p>
+              <span class="blog-feature-link">Read More</span>
+            </div>
+          </a>
           <a class="blog-feature-card" href="/blog/custom-cufflinks-logo-layout" data-card-image-fit="full" data-blog-category="Others" aria-label="Read Custom Cufflinks: How Your Logo Works on the Cuff">
             <img src="/assets/images/custom-cufflinks-letter-face-shaped-design.webp" width="1600" height="900" title="Custom Cufflinks: Letter Faces and Shaped Designs" alt="Round letter cufflinks beside skull-shaped cufflinks, showing two approaches to the decorative face and outline">
             <div class="blog-feature-body">
@@ -440,6 +450,7 @@ export const blogHtml = String.raw`
     ${customMetalBookmarksBuyingGuideArticleHtml}
     ${customPetTagsArticleHtml}
     ${customCufflinksLogoLayoutArticleHtml}
+    ${customWoodenMedalDesignsArticleHtml}
     <article id="military-challenge-coin-traditions" class="section blog-article-section">
       <div class="blog-article-shell">
         <aside class="blog-article-toc" aria-label="Article contents">

@@ -2,7 +2,8 @@ import JsonLd from "../components/JsonLd";
 import StaticPage from "../components/StaticPage";
 import { blogHtml } from "./content";
 import { buildBlogIndexHtml } from "../lib/htmlSections";
-import { blogArticles, SITE_URL } from "../lib/siteRoutes";
+import { SITE_URL } from "../lib/siteRoutes";
+import { blogArticles } from "./articles";
 
 export const metadata = {
   title: "Custom Metal Crafts Manufacturing Guides | Unique Pin",
