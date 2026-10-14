@@ -69,7 +69,7 @@ export const blogHtml = String.raw`
         </div>
         <div class="blog-card-grid">
           <a class="blog-feature-card" href="/blog/custom-wooden-medal-designs" data-blog-category="Custom Medals" aria-label="Read One Logo, Three Custom Wooden Medal Designs">
-            <img src="/assets/images/four-wooden-event-medal-design-concepts.webp" width="1672" height="941" title="Illustrative Wooden Medal Designs for Different Events" alt="Four wooden medal design concepts for trail running, swimming, cycling and city running, with matching ribbons">
+            <img src="/assets/images/wooden-medal-design-concepts-printed-ribbons.webp" width="1600" height="900" title="Wooden Medal Design Concepts with Printed Ribbons" alt="Four RIDGE RUN wooden medal concepts showing engraving, color printing, layering and cutouts with matching printed ribbons">
             <div class="blog-feature-body">
               <div class="blog-feature-meta"><span>Custom Medals</span><span>Design Comparison</span></div>
               <h2>One Logo, Three Custom Wooden Medal Designs</h2>

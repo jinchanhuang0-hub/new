@@ -20,7 +20,7 @@ export const customWoodenMedalDesignsArticleHtml = String.raw`
             <a class="blog-back-link" href="/blog">Back to Blog</a>
             <h1>One Logo, Three Custom Wooden Medal Designs</h1>
             <figure class="blog-article-image blog-article-hero-image blog-article-natural-image custom-wooden-medal-featured-image">
-              <img src="/assets/images/four-wooden-event-medal-design-concepts.webp" width="1672" height="941" fetchpriority="high" decoding="async" title="Illustrative Wooden Medal Designs for Different Events" alt="Four wooden medal design concepts: engraved TRAIL RUN mountains, colorful OCEAN SWIM waves, layered SUMMIT RIDE cycling artwork and a cutout CITY RUN skyline, with matching ribbons">
+              <img src="/assets/images/wooden-medal-design-concepts-printed-ribbons.webp" width="1600" height="900" fetchpriority="high" decoding="async" title="Wooden Medal Design Concepts with Printed Ribbons" alt="Four RIDGE RUN wooden medal concepts showing engraving, color printing, layering and cutouts with matching printed ribbons">
             </figure>
             <p>You already have an event logo and are considering custom wooden medals for your next race or charity run. Should you choose engraving, full-color printing or a layered design? And will the finished medal feel too light or thin to mark the achievement?</p>
             <p>The choice depends on which parts of your logo must remain recognizable and what participants expect from the award. Front views help compare artwork and color; side views show construction. A complete physical sample lets you judge the feel before committing to a design.</p>
