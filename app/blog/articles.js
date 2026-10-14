@@ -10,7 +10,7 @@ const customWoodenMedalDesigns = {
   authorUrl: `${SITE_URL}/about/sunny-huang`,
   datePublished: "2026-10-14",
   dateModified: "2026-10-14",
-  image: "/assets/images/wooden-medal-design-concepts-printed-ribbons.webp",
+  image: "/assets/images/four-wooden-event-medal-design-concepts.webp",
   schemaType: "BlogPosting",
   hideFooterInquiry: true,
   faq: [
