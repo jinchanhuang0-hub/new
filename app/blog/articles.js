@@ -32,7 +32,40 @@ const customWoodenMedalDesigns = {
   ],
 };
 
+const customGraduationMedalsSchoolAwards = {
+  title: "Custom Graduation Medals for Schools: Award Options",
+  headline: "Custom Graduation Medals: One for Every Graduate or Separate Honors?",
+  description:
+    "Should every graduate receive a medal? Compare shared and honor-only awards, plus two combined models, to plan school graduation recognition with clarity.",
+  author: "Sunny Huang",
+  authorType: "Person",
+  authorUrl: `${SITE_URL}/about/sunny-huang`,
+  datePublished: "2026-10-15",
+  dateModified: "2026-10-15",
+  image: "/assets/images/custom-graduation-medal-school-honor-awards.webp",
+  schemaType: "BlogPosting",
+  hideFooterInquiry: true,
+  faq: [
+    {
+      question: "Can one student receive more than one honor medal?",
+      answer:
+        "Yes, if the school's recognition policy allows separate medals for multiple achievements. The committee should determine whether each honor requires an individual award and how those awards will be presented.",
+    },
+    {
+      question: "Should schools use medals if they already award honor cords?",
+      answer:
+        "They can, but it is not always necessary. Honor cords may provide sufficient recognition during commencement, while medals can serve as school-specific keepsakes. Their purposes should be distinct.",
+    },
+    {
+      question: "What if the final honor recipients have not been confirmed?",
+      answer:
+        "Schools can establish shared design elements and award categories before individual names are finalized. Any personalized details should remain subject to the school's final approval and the manufacturer's confirmed production arrangements.",
+    },
+  ],
+};
+
 export const blogArticles = {
+  "custom-graduation-medals-school-awards": customGraduationMedalsSchoolAwards,
   "custom-wooden-medal-designs": customWoodenMedalDesigns,
   ...existingBlogArticles,
 };

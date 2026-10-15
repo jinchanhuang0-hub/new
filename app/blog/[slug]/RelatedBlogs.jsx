@@ -90,7 +90,7 @@ export function buildRelatedBlogsHtml(blogHtml, slug) {
         <span class="related-blog-tags" aria-hidden="true">${tags}</span>
       </span>`
       : `<span class="related-blog-media">
-        <span class="blog-feature-placeholder" role="img" aria-label="Image pending upload"><span>${escapeHtml(item.title)}</span></span>
+        <span class="blog-feature-placeholder" role="img" aria-label="${escapeHtml(item.title)}"><span>${escapeHtml(item.title)}</span></span>
         <span class="related-blog-tags" aria-hidden="true">${tags}</span>
       </span>`;
 

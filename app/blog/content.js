@@ -30,6 +30,7 @@ import { customMetalBookmarksBuyingGuideArticleHtml } from "./customMetalBookmar
 import { customPetTagsArticleHtml } from "./customPetTags";
 import { customCufflinksLogoLayoutArticleHtml } from "./customCufflinksLogoLayout";
 import { customWoodenMedalDesignsArticleHtml } from "./customWoodenMedalDesigns";
+import { customGraduationMedalsSchoolAwardsArticleHtml } from "./customGraduationMedalsSchoolAwards";
 
 
 export const metadata = {
@@ -74,6 +75,15 @@ export const blogHtml = String.raw`
               <div class="blog-feature-meta"><span>Custom Medals</span><span>Design Comparison</span></div>
               <h2>One Logo, Three Custom Wooden Medal Designs</h2>
               <p>Compare three ways to adapt an event logo for a wooden medal, with practical guidance on color, layered construction and finished feel.</p>
+              <span class="blog-feature-link">Read More</span>
+            </div>
+          </a>
+          <a class="blog-feature-card" href="/blog/custom-graduation-medals-school-awards" data-blog-category="Custom Medals" aria-label="Read Custom Graduation Medals: One for Every Graduate or Separate Honors?">
+            <img src="/assets/images/custom-graduation-medal-school-honor-awards.webp" width="1672" height="941" title="Custom Graduation Medals for School and Honor Awards" alt="Four custom graduation medal concepts showing one shared graduate medal and three distinct school honor awards">
+            <div class="blog-feature-body">
+              <div class="blog-feature-meta"><span>Custom Medals</span><span>School Recognition</span></div>
+              <h2>Custom Graduation Medals: One for Every Graduate or Separate Honors?</h2>
+              <p>Should schools give every graduate a medal or reserve them for special honors? Compare recognition models, award designs and quantities for a graduation ceremony.</p>
               <span class="blog-feature-link">Read More</span>
             </div>
           </a>
@@ -2734,6 +2744,7 @@ export const blogHtml = String.raw`
         </div>
       </div>
     </article>
+  ${customGraduationMedalsSchoolAwardsArticleHtml}
 </main>
   ${footerHtml}`;
 
