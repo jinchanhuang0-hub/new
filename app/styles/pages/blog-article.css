@@ -1976,6 +1976,18 @@
   line-height: 1.3;
 }
 
+/* Size the two long headings to the reading column, including tablet widths. */
+#custom-graduation-medals-school-awards .blog-article-main {
+  container-type: inline-size;
+}
+
+#custom-graduation-medals-school-awards #when-do-separate-honors-deserve-their-own-medals,
+#custom-graduation-medals-school-awards #three-graduation-award-models {
+  font-size: clamp(20px, 3.45cqw, 30px);
+  letter-spacing: -0.02em;
+  text-wrap: wrap;
+}
+
 #custom-graduation-medals-school-awards .blog-article-main > p {
   margin-bottom: 18px;
   line-height: 1.78;
@@ -2081,9 +2093,36 @@
   height: auto;
   max-height: none;
   padding: 0;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
+  aspect-ratio: auto 1672 / 941;
+  object-fit: contain;
   object-position: center;
+}
+
+#custom-graduation-medals-school-awards .blog-article-main .blog-article-image {
+  width: 100%;
+  max-width: 100%;
+}
+
+#custom-graduation-medals-school-awards .blog-article-main .blog-article-image img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: none;
+  padding: 0;
+  aspect-ratio: auto 1672 / 941;
+  object-fit: contain;
+}
+
+#custom-graduation-medals-school-awards + .related-blogs .related-blog-media {
+  aspect-ratio: auto;
+}
+
+#custom-graduation-medals-school-awards + .related-blogs .related-blog-media img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 #custom-graduation-medals-school-awards .blog-article-header > .blog-article-hero-image figcaption {
