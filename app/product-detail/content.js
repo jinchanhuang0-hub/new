@@ -79,7 +79,7 @@ export const productDetailHtml = String.raw`
 
     <section class="product-type-section" data-product-content="medals" hidden>
       <div class="container product-type-content">
-        <div class="product-type-head"><h1>Custom Medals</h1><p>Explore custom medals for races, sports competitions, school awards, corporate recognition, charity events and commemorative programs. Choose from custom shapes, 2D or 3D relief, enamel colors, plating finishes and personalized ribbons.</p></div>
+        <div class="product-type-head"><h1>Custom Medals</h1><p>Explore custom medals for races, sports competitions, school awards, corporate recognition, charity events and commemorative programs. Choose from custom shapes, 2D or 3D relief, enamel colors, plating finishes and personalized ribbons.</p><p>Planning a school awards program? Compare <a href="/blog/custom-graduation-medals-school-awards">graduation medal award models</a> for recognizing every graduate and individual honors.</p></div>
         ${productCategoryNavHtml({ active: "medals", variant: "inline" })}
         <div class="product-type-grid">
           <article class="product-type-card"><img src="assets/images/type-medals-sports.png" alt="Custom sports medals"><h2>Silver Basketball Sports Medal with Ribbon</h2><div class="product-type-actions"><a class="product-type-btn product-type-btn-outline" href="/products/custom-medals/silver-basketball-sports-medal-with-ribbon">View More</a><a class="product-type-btn product-type-btn-primary" href="/contact">GET QUOTE NOW</a></div></article>
