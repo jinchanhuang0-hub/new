@@ -40,15 +40,11 @@ const html = String.raw`
             </video>
             <span class="video-expand-hint" aria-hidden="true">Watch larger</span>
           </div>
-          <div class="about-profile-video about-profile-video-facebook">
-            <iframe
-              class="facebook-video-embed"
-              src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1767950932006090%3Flocale%3Dzh_CN&show_text=false&width=560"
-              title="Unique Pin Facebook Reel"
-              loading="lazy"
-              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture"
-              allowfullscreen>
-            </iframe>
+          <div class="about-profile-video about-profile-video-portrait" data-video-lightbox-trigger data-video-orientation="portrait" data-video-src="/assets/videos/ray.mp4" role="button" tabindex="0" aria-label="Watch factory reel larger">
+            <video class="factory-video-card" controls playsinline preload="metadata" aria-label="Factory reel video">
+              <source src="/assets/videos/ray.mp4" type="video/mp4">
+            </video>
+            <span class="video-expand-hint" aria-hidden="true">Watch larger</span>
           </div>
         </div>
       </div>
@@ -180,7 +176,7 @@ const html = String.raw`
               <img class="about-team-cutout" src="assets/images/team-cutout-director.png" alt="Unique Pin director" loading="lazy">
             </figure>
             <p class="about-team-name">Jake</p>
-            <h3>Managing Director</h3>
+            <h3>General Manager</h3>
           </article>
           <article class="about-team-member about-team-member-business">
             <figure class="about-team-portrait">
@@ -188,7 +184,7 @@ const html = String.raw`
               <img class="about-team-cutout" src="assets/images/team-cutout-business-supervisor.png" alt="Unique Pin business supervisor" loading="lazy">
             </figure>
             <p class="about-team-name">Eva</p>
-            <h3>Business Supervisor</h3>
+            <h3>Business Manager</h3>
           </article>
           <article class="about-team-member about-team-member-designer">
             <figure class="about-team-portrait">
