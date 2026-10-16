@@ -8,6 +8,8 @@ import { blogArticles } from "./blog/articles";
 
 import { productLastModified } from "./lib/productDates";
 
+import { productLastModified } from "./lib/productDates";
+
 const CONTENT_LAST_MODIFIED = new Date("2026-08-22T00:00:00.000Z");
 
 // Preserve legacy dates for products without a verified newer content date.
