@@ -1,5 +1,37 @@
 import { blogArticles as existingBlogArticles, SITE_URL } from "../lib/siteRoutes";
 
+const yearsOfServiceLapelPins = {
+  title: "Years of Service Pins: One Design or Different Tiers?",
+  headline: "Years of Service Lapel Pins: Should Every Milestone Look the Same?",
+  description:
+    "Compare years-of-service lapel pin designs for 5-, 10- and 20-year awards, with guidance on milestone variations, wearing options and future reorders.",
+  author: "Sunny Huang",
+  authorType: "Person",
+  authorUrl: `${SITE_URL}/about/sunny-huang`,
+  datePublished: "2026-10-16",
+  dateModified: "2026-10-16",
+  image: "/assets/images/years-of-service-lapel-pins-5-10-20.webp",
+  schemaType: "BlogPosting",
+  hideFooterInquiry: true,
+  faq: [
+    {
+      question: "Should employees wear only their latest service pin?",
+      answer:
+        "That depends on company guidelines. Employees may wear their current milestone pin while keeping earlier versions as personal mementos. Collecting previous awards does not require wearing them together.",
+    },
+    {
+      question: "Can a company introduce service pins when employees have already passed several milestones?",
+      answer:
+        "Yes. HR can decide whether to recognize employees at their current service level or also acknowledge earlier anniversaries. The policy should be consistent and clearly communicated.",
+    },
+    {
+      question: "Can the same milestone pin designs be reordered in future years?",
+      answer:
+        "Matching designs can be discussed for future orders. Retaining approved artwork and version records helps maintain consistency, while current production details should be confirmed with the manufacturer.",
+    },
+  ],
+};
+
 const customWoodenMedalDesigns = {
   title: "Custom Wooden Medals: One Logo, Three Design Options",
   headline: "One Logo, Three Custom Wooden Medal Designs",
@@ -65,6 +97,7 @@ const customGraduationMedalsSchoolAwards = {
 };
 
 export const blogArticles = {
+  "years-of-service-lapel-pins": yearsOfServiceLapelPins,
   "custom-graduation-medals-school-awards": customGraduationMedalsSchoolAwards,
   "custom-wooden-medal-designs": customWoodenMedalDesigns,
   ...existingBlogArticles,

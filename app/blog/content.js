@@ -31,6 +31,7 @@ import { customPetTagsArticleHtml } from "./customPetTags";
 import { customCufflinksLogoLayoutArticleHtml } from "./customCufflinksLogoLayout";
 import { customWoodenMedalDesignsArticleHtml } from "./customWoodenMedalDesigns";
 import { customGraduationMedalsSchoolAwardsArticleHtml } from "./customGraduationMedalsSchoolAwards";
+import { yearsOfServiceLapelPinsArticleHtml } from "./yearsOfServiceLapelPins";
 
 
 export const metadata = {
@@ -69,6 +70,15 @@ export const blogHtml = String.raw`
           <button type="button" data-blog-category="Uncategorized">Uncategorized</button>
         </div>
         <div class="blog-card-grid">
+          <a class="blog-feature-card" href="/blog/years-of-service-lapel-pins" data-card-image-fit="full" data-blog-category="Custom Lapel Pins" aria-label="Read Years of Service Lapel Pins: Should Every Milestone Look the Same?">
+            <img src="/assets/images/years-of-service-lapel-pins-5-10-20.webp" width="1672" height="941" title="Years of Service Lapel Pins for 5, 10 and 20 Years" alt="Three coordinated company service lapel pins marked 5 YEARS, 10 YEARS and 20 YEARS with a matching corporate emblem.">
+            <div class="blog-feature-body">
+              <div class="blog-feature-meta"><span>Custom Lapel Pins</span><span>Employee Recognition</span></div>
+              <h2>Years of Service Lapel Pins: Should Every Milestone Look the Same?</h2>
+              <p>Compare milestone pin designs, replacement and collection options, and annual planning for employee service awards.</p>
+              <span class="blog-feature-link">Read More</span>
+            </div>
+          </a>
           <a class="blog-feature-card" href="/blog/custom-wooden-medal-designs" data-blog-category="Custom Medals" aria-label="Read One Logo, Three Custom Wooden Medal Designs">
             <img src="/assets/images/four-wooden-event-medal-design-concepts.webp" width="1672" height="941" title="Illustrative Wooden Medal Designs for Different Events" alt="Four wooden medal design concepts for trail running, swimming, cycling and city running, with matching ribbons">
             <div class="blog-feature-body">
@@ -2745,6 +2755,7 @@ export const blogHtml = String.raw`
       </div>
     </article>
   ${customGraduationMedalsSchoolAwardsArticleHtml}
+  ${yearsOfServiceLapelPinsArticleHtml}
 </main>
   ${footerHtml}`;
 
