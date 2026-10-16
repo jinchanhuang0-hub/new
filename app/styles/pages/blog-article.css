@@ -2184,7 +2184,7 @@
   margin-bottom: 16px;
   font-size: clamp(26px, 2.2vw, 32px);
   line-height: 1.22;
-  text-wrap: balance;
+  text-wrap: wrap;
 }
 
 #years-of-service-lapel-pins .blog-article-main > h3 {
