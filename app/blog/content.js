@@ -253,12 +253,12 @@ export const blogHtml = String.raw`
               <span class="blog-feature-link">Read More</span>
             </div>
           </a>
-          <a class="blog-feature-card" href="/blog/custom-christmas-ornaments-guide" data-card-image-fit="full" data-blog-category="Holidays" aria-label="Read How to Choose Custom Metal Christmas Ornaments for Corporate Gifts and Events">
-            <img src="/assets/images/custom-christmas-ornaments-corporate-gifts.webp" width="1600" height="900" alt="Custom metal Christmas ornaments for corporate gifts and holiday events">
+          <a class="blog-feature-card" href="/blog/custom-christmas-ornaments-guide" data-card-image-fit="full" data-blog-category="Holidays" aria-label="Read How to Choose Custom Metal Christmas Ornaments">
+            <img src="/assets/images/custom-christmas-ornaments-corporate-gifts.webp" width="1600" height="900" alt="Tree, snowflake, snowman and bauble ornaments with burgundy and gold-colored ribbon loops">
             <div class="blog-feature-body">
               <div class="blog-feature-meta"><span>Holidays</span><span>Buyer Guide</span></div>
-              <h2>How to Choose Custom Metal Christmas Ornaments for Corporate Gifts and Events</h2>
-              <p>Compare design, finishes, hanging and packaging before preparing a bulk ornament order.</p>
+              <h2>How to Choose Custom Metal Christmas Ornaments</h2>
+              <p>Plan custom metal Christmas ornaments for retail, fundraising and gifts. Compare design versions, hanging options and packaging before requesting a quote.</p>
               <span class="blog-feature-link">Read More</span>
             </div>
           </a>
