@@ -585,37 +585,32 @@ const blogArticleData = {
     hideFooterInquiry: true,
   },
   "custom-turkey-trot-medals-guide": {
-    title: "Custom Turkey Trot Medals: Race Director Planning Guide",
-    headline: "Custom Turkey Trot Medals: A Planning Guide for Race Directors",
+    title: "Custom Turkey Trot Medals: One Design or Separate Versions?",
+    headline: "How to Choose Turkey Trot Medals for a 5K and Kids’ Run",
     description:
-      "Plan custom turkey trot medals for your 5K and kids’ run. Compare medal versions, sponsor logo placement, artwork approval and delivery checkpoints.",
+      "Compare shared and separate Turkey Trot medal designs for your 5K and kids’ run. Review wording, ribbon options and cost differences before requesting a quote.",
     image: "/assets/images/custom-turkey-trot-medals-guide.webp",
     author: "Sunny Huang",
     authorType: "Person",
     datePublished: "2026-09-15",
-    dateModified: "2026-09-15",
+    dateModified: "2026-10-19",
     schemaType: "BlogPosting",
     hideFooterInquiry: true,
     faq: [
       {
-        question: "Can a small community race order custom medals?",
+        question: "Can a small community Turkey Trot order custom medals?",
         answer:
-          "Yes. Unique Pin offers custom medals with no minimum order quantity. For designs requiring a custom mold, smaller orders typically carry a higher tooling cost per medal. Share your quantities and specifications for a quote.",
+          "Send the quantity for each version so the design and order requirements can be reviewed together. For designs requiring a custom mold, the tooling charge is spread across fewer pieces in a smaller order, which can increase the cost per medal. Ask for the complete quotation before deciding between shared and separate versions.",
       },
       {
-        question: "Can we start with an event logo or a sketch?",
+        question: "Can we increase the quantity after approving the order?",
         answer:
-          "Yes. Unique Pin provides free design assistance and a digital proof. Include event wording, race categories, sponsor requirements, and ribbon preferences so the proposed design reflects the order.",
+          "Contact the supplier before promising extra medals. Whether the quantity can be increased depends on the production stage, additional quantity and required arrival date. If another production batch is needed, its price and delivery schedule must be confirmed separately.",
       },
       {
-        question: "Can we request a physical sample?",
+        question: "Can we request a quote before the design is finished?",
         answer:
-          "A physical sample can be arranged. Specify whether you also need the proposed ribbon and packaging included; sample costs and lead time depend on the requirements.",
-      },
-      {
-        question: "When should we order Turkey Trot medals?",
-        answer:
-          "Begin when your event requirements are clear enough to discuss. Agree on a schedule working backward from the required arrival date, including approvals, any sample review, production, and shipping.",
+          "Yes. Start with your event logo or reference image, estimated quantities, required wording and arrival date. Identify anything still undecided. The quotation should state the specifications it assumes, with any later design changes reviewed before production.",
       },
     ],
   },

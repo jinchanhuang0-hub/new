@@ -172,12 +172,12 @@ export const blogHtml = String.raw`
           <a class="blog-feature-card" href="/blog/custom-western-belt-buckles-women-retail-guide" data-blog-category="Custom Belt Buckle" aria-label="Read Custom Western Belt Buckles for Women: A Retail Buying Guide">
             <img src="/assets/images/custom-western-belt-buckles-women-collection.webp" width="1600" height="900" alt="Three western belt buckle concepts arranged for a women’s retail collection">
             <div class="blog-feature-body"><div class="blog-feature-meta"><span>Custom Belt Buckle</span></div><h2>Custom Western Belt Buckles for Women: A Retail Buying Guide</h2><p>Planning a women’s western buckle collection? Work through belt compatibility, style quantities, sample approval and packaging before placing your first order.</p><span class="blog-feature-link">Read More</span></div></a>
-          <a class="blog-feature-card" href="/blog/custom-turkey-trot-medals-guide" data-blog-category="Custom Medals,Holidays" aria-label="Read Custom Turkey Trot Medals: A Planning Guide for Race Directors">
-            <img src="/assets/images/custom-turkey-trot-medals-guide.webp" width="1600" height="900" alt="Turkey Trot medal concepts with navy and orange ribbons">
+          <a class="blog-feature-card" href="/blog/custom-turkey-trot-medals-guide" data-blog-category="Custom Medals,Holidays" aria-label="Read How to Choose Turkey Trot Medals for a 5K and Kids’ Run">
+            <img src="/assets/images/custom-turkey-trot-medals-guide.webp" width="1600" height="900" alt="Turkey-themed 5K finisher medal design with an olive-green and orange ribbon">
             <div class="blog-feature-body">
               <div class="blog-feature-meta"><span>Custom Medals</span><span>Holidays</span></div>
-              <h2>Custom Turkey Trot Medals: A Planning Guide for Race Directors</h2>
-              <p>Plan custom turkey trot medals for your 5K and kids’ run. Compare medal versions, sponsor logo placement, artwork approval and delivery checkpoints.</p>
+              <h2>How to Choose Turkey Trot Medals for a 5K and Kids’ Run</h2>
+              <p>Compare shared and separate Turkey Trot medal designs for your 5K and kids’ run. Review wording, ribbon options and cost differences before requesting a quote.</p>
               <span class="blog-feature-link">Read More</span>
             </div>
           </a>
