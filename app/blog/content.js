@@ -32,6 +32,7 @@ import { customCufflinksLogoLayoutArticleHtml } from "./customCufflinksLogoLayou
 import { customWoodenMedalDesignsArticleHtml } from "./customWoodenMedalDesigns";
 import { customGraduationMedalsSchoolAwardsArticleHtml } from "./customGraduationMedalsSchoolAwards";
 import { yearsOfServiceLapelPinsArticleHtml } from "./yearsOfServiceLapelPins";
+import { customChallengeCoinsCostArticleHtml } from "./customChallengeCoinsCost";
 
 
 export const metadata = {
@@ -70,6 +71,15 @@ export const blogHtml = String.raw`
           <button type="button" data-blog-category="Uncategorized">Uncategorized</button>
         </div>
         <div class="blog-card-grid">
+          <a class="blog-feature-card" href="/blog/custom-challenge-coins-cost" data-blog-category="Custom Coins" aria-label="Read Custom Challenge Coin Cost: One Design or Multiple Versions?">
+            <img src="/assets/images/custom-challenge-coin-front-and-reverse.webp" width="1672" height="941" title="Custom Challenge Coin Front and Reverse" alt="Concept views of a nickel-plated challenge coin with one-color enamel on the front and an uncolored metal reverse">
+            <div class="blog-feature-body">
+              <div class="blog-feature-meta"><span>Custom Coins</span><span>Cost &amp; Version Planning</span></div>
+              <h2>Custom Challenge Coin Cost: One Design or Multiple Versions?</h2>
+              <p>Planning 250 coins for several groups? Compare one shared design with multiple reverse versions, including production costs, mold fees and packaging alternatives.</p>
+              <span class="blog-feature-link">Read More</span>
+            </div>
+          </a>
           <a class="blog-feature-card" href="/blog/years-of-service-lapel-pins" data-card-image-fit="full" data-blog-category="Custom Lapel Pins" aria-label="Read Years of Service Lapel Pins: Should Every Milestone Look the Same?">
             <img src="/assets/images/years-of-service-lapel-pins-5-10-20.webp" width="1672" height="941" title="Years of Service Lapel Pins for 5, 10 and 20 Years" alt="Three coordinated company service lapel pins marked 5 YEARS, 10 YEARS and 20 YEARS with a matching corporate emblem.">
             <div class="blog-feature-body">
@@ -446,6 +456,7 @@ export const blogHtml = String.raw`
       </div>
     </section>
     ${customMetalKeychainMaterialsArticleHtml}
+    ${customChallengeCoinsCostArticleHtml}
     ${keychainAttachmentsGuideArticleHtml}
     ${customMetalKeychainSizeAttachmentGuideArticleHtml}
     ${memorialChallengeCoinsGuideArticleHtml}
