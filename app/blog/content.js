@@ -33,6 +33,7 @@ import { customWoodenMedalDesignsArticleHtml } from "./customWoodenMedalDesigns"
 import { customGraduationMedalsSchoolAwardsArticleHtml } from "./customGraduationMedalsSchoolAwards";
 import { yearsOfServiceLapelPinsArticleHtml } from "./yearsOfServiceLapelPins";
 import { customChallengeCoinsCostArticleHtml } from "./customChallengeCoinsCost";
+import { customHatPatchesLooseOrFinishedArticleHtml } from "./customHatPatchesLooseOrFinished";
 
 
 export const metadata = {
@@ -71,6 +72,15 @@ export const blogHtml = String.raw`
           <button type="button" data-blog-category="Uncategorized">Uncategorized</button>
         </div>
         <div class="blog-card-grid">
+          <a class="blog-feature-card" href="/blog/custom-hat-patches-loose-or-finished" data-card-image-fit="full" data-blog-category="Patches" aria-label="Read Custom Hat Patches: Should You Order Loose Patches or Finished Hats?">
+            <img src="/assets/images/custom-hat-patches-loose-vs-finished.webp" width="1672" height="941" title="Loose Hat Patches vs Finished Patch Hats" alt="Loose embroidered patch beside a blank cap and a matching cap with the patch attached">
+            <div class="blog-feature-body">
+              <div class="blog-feature-meta"><span>Custom Patches</span><span>Buyer Guide</span></div>
+              <h2>Custom Hat Patches: Should You Order Loose Patches or Finished Hats?</h2>
+              <p>Compare loose custom hat patches with finished patch hats. Check total costs, installation responsibilities, and delivery timing before placing a bulk order.</p>
+              <span class="blog-feature-link">Read More</span>
+            </div>
+          </a>
           <a class="blog-feature-card" href="/blog/custom-challenge-coins-cost" data-blog-category="Custom Coins" aria-label="Read Custom Challenge Coin Cost: One Design or Multiple Versions?">
             <img src="/assets/images/custom-challenge-coin-front-and-reverse.webp" width="1672" height="941" title="Custom Challenge Coin Front and Reverse" alt="Concept views of a nickel-plated challenge coin with one-color enamel on the front and an uncolored metal reverse">
             <div class="blog-feature-body">
@@ -2767,6 +2777,7 @@ export const blogHtml = String.raw`
     </article>
   ${customGraduationMedalsSchoolAwardsArticleHtml}
   ${yearsOfServiceLapelPinsArticleHtml}
+  ${customHatPatchesLooseOrFinishedArticleHtml}
 </main>
   ${footerHtml}`;
 

@@ -529,6 +529,22 @@
   object-position: center;
 }
 
+#custom-hat-patches-loose-or-finished .blog-article > .blog-article-natural-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+
+#custom-hat-patches-loose-or-finished .blog-article > .blog-article-natural-image img[src="/assets/images/embroidered-hat-patch-placement.webp"] {
+  aspect-ratio: 16 / 9;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
 #custom-challenge-coins-cost .blog-article > .blog-article-natural-image img {
   width: 100%;
   height: auto;

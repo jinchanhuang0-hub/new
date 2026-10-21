@@ -1,5 +1,6 @@
 import { blogArticles as existingBlogArticles, SITE_URL } from "../lib/siteRoutes";
 import { customChallengeCoinsCost } from "./customChallengeCoinsCost";
+import { customHatPatchesLooseOrFinished } from "./customHatPatchesLooseOrFinished";
 
 const yearsOfServiceLapelPins = {
   title: "Years of Service Pins: One Design or Different Tiers?",
@@ -98,6 +99,7 @@ const customGraduationMedalsSchoolAwards = {
 };
 
 export const blogArticles = {
+  "custom-hat-patches-loose-or-finished": customHatPatchesLooseOrFinished,
   "custom-challenge-coins-cost": customChallengeCoinsCost,
   "years-of-service-lapel-pins": yearsOfServiceLapelPins,
   "custom-graduation-medals-school-awards": customGraduationMedalsSchoolAwards,
