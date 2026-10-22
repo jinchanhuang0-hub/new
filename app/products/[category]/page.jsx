@@ -22,6 +22,7 @@ import { medalBacksides } from "../medalBacksides";
 import { medalLoops } from "../medalLoops";
 import { medalRibbons } from "../medalRibbons";
 import { coinArtworkComparison } from "../coinArtworkComparison";
+import { keychainArtworkComparison } from "../keychainArtworkComparison";
 import "../../styles/components/finish-gallery.css";
 import "../../styles/components/artwork-comparison.css";
 import {
@@ -128,6 +129,9 @@ export default async function ProductCategoryPage({ params, searchParams }) {
             ? renderArtworkComparison(medalArtworkComparison)
             : ""}`
     : "";
+  const keychainComparisonHtml = category === "custom-metal-keychains"
+    ? renderArtworkComparison(keychainArtworkComparison)
+    : "";
   const categoryFaqHtml = category === "custom-enamel-pins"
     ? renderProductFaq(enamelPinFaq)
     : category === "custom-challenge-coins"
@@ -189,7 +193,7 @@ export default async function ProductCategoryPage({ params, searchParams }) {
           {
             page: currentPage,
             pageSize: CATEGORY_PRODUCTS_PAGE_SIZE,
-            afterStyleGuide: `${categoryEnhancementHtml}${customerPhotoGalleryHtml}${categoryFaqHtml}`,
+            afterStyleGuide: `${categoryEnhancementHtml}${keychainComparisonHtml}${customerPhotoGalleryHtml}${categoryFaqHtml}`,
           },
         )}
       />

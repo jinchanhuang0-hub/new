@@ -18,6 +18,10 @@ export function renderArtworkComparison(options = {}) {
     finishedNoun: "finished pin",
     imageWidth: 1254,
     imageHeight: 1254,
+    artworkWidth: options.artworkWidth ?? options.imageWidth ?? 1254,
+    artworkHeight: options.artworkHeight ?? options.imageHeight ?? 1254,
+    finishedWidth: options.finishedWidth ?? options.imageWidth ?? 1254,
+    finishedHeight: options.finishedHeight ?? options.imageHeight ?? 1254,
     ...options,
   }).map(([key, value]) => [key, escapeHtml(value)]));
   return `<section class="artwork-comparison" id="${config.id}" aria-labelledby="${config.titleId}">
@@ -28,9 +32,9 @@ export function renderArtworkComparison(options = {}) {
         <p class="artwork-comparison-description">${config.description}</p>
       </header>
       <div class="artwork-comparison-stage is-loading" data-artwork-comparison data-finished-noun="${config.finishedNoun}" style="--comparison-position: 50%;">
-        <img class="artwork-comparison-image artwork-comparison-finished" src="${config.finishedImage}" width="${config.imageWidth}" height="${config.imageHeight}" loading="lazy" decoding="async" draggable="false" alt="${config.finishedAlt}" data-comparison-image="finished">
+        <img class="artwork-comparison-image artwork-comparison-finished" src="${config.finishedImage}" width="${config.finishedWidth}" height="${config.finishedHeight}" loading="lazy" decoding="async" draggable="false" alt="${config.finishedAlt}" data-comparison-image="finished">
         <div class="artwork-comparison-artwork-layer">
-          <img class="artwork-comparison-image" src="${config.artworkImage}" width="${config.imageWidth}" height="${config.imageHeight}" loading="lazy" decoding="async" draggable="false" alt="${config.artworkAlt}" data-comparison-image="artwork">
+          <img class="artwork-comparison-image" src="${config.artworkImage}" width="${config.artworkWidth}" height="${config.artworkHeight}" loading="lazy" decoding="async" draggable="false" alt="${config.artworkAlt}" data-comparison-image="artwork">
         </div>
         <span class="artwork-comparison-label artwork-comparison-label-artwork">ARTWORK</span>
         <span class="artwork-comparison-label artwork-comparison-label-finished">${config.finishedLabel}</span>
