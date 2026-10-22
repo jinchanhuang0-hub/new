@@ -2,6 +2,26 @@ import { blogArticles as existingBlogArticles, SITE_URL } from "../lib/siteRoute
 import { customChallengeCoinsCost } from "./customChallengeCoinsCost";
 import { customHatPatchesLooseOrFinished } from "./customHatPatchesLooseOrFinished";
 
+const customNavyBeltBucklesUniformKeepsakes = {
+  title: "Custom Navy Belt Buckles: Uniform Wear vs. Keepsakes",
+  headline: "Custom Navy Belt Buckles: Uniform Wear or Unit Keepsakes?",
+  description: "Buying custom Navy belt buckles? Compare uniform wear and unit keepsakes, including belt fit, insignia permissions and key requirements for bulk orders.",
+  author: "Sunny Huang",
+  authorType: "Person",
+  authorUrl: `${SITE_URL}/about/sunny-huang`,
+  datePublished: "2026-10-22",
+  dateModified: "2026-10-22",
+  schemaType: "BlogPosting",
+  image: "/assets/images/custom-navy-belt-buckle-unit-keepsake.webp",
+  hideFooterInquiry: true,
+  faq: [
+    { question: "Are custom Navy belt buckles automatically approved for uniform wear?", answer: "No. Suitability depends on the specific uniform, wearer and occasion. Navy-themed artwork alone does not establish approval." },
+    { question: "Will a custom Navy belt buckle fit any web belt?", answer: "Not necessarily. Check the actual belt’s width, thickness and fastening arrangement against the buckle’s rear attachment." },
+    { question: "Can commemorative Navy belt buckles also be worn?", answer: "Yes, if designed for wear and compatible with the belt. Display pieces should not be assumed wearable; uniform use requires separate confirmation." },
+    { question: "Do Army belt buckles follow the same requirements as Navy belt buckles?", answer: "Do not assume so. Check the applicable Army requirements for the intended uniform and occasion rather than applying Navy guidance." },
+  ],
+};
+
 const yearsOfServiceLapelPins = {
   title: "Years of Service Pins: One Design or Different Tiers?",
   headline: "Years of Service Lapel Pins: Should Every Milestone Look the Same?",
@@ -99,6 +119,7 @@ const customGraduationMedalsSchoolAwards = {
 };
 
 export const blogArticles = {
+  "custom-navy-belt-buckles-uniform-keepsakes": customNavyBeltBucklesUniformKeepsakes,
   "custom-hat-patches-loose-or-finished": customHatPatchesLooseOrFinished,
   "custom-challenge-coins-cost": customChallengeCoinsCost,
   "years-of-service-lapel-pins": yearsOfServiceLapelPins,

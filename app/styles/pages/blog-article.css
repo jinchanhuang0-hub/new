@@ -743,6 +743,41 @@
   overflow-x: auto;
 }
 
+#custom-navy-belt-buckles-uniform-keepsakes .blog-table-wrap {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+#custom-navy-belt-buckles-uniform-keepsakes .blog-article-header > .blog-article-hero-image img {
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: auto;
+  max-height: none;
+  padding: 0;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
+}
+
+#custom-navy-belt-buckles-uniform-keepsakes .blog-article > .blog-article-image {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+#custom-navy-belt-buckles-uniform-keepsakes .blog-article > .blog-article-image img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: none;
+  padding: 0;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+}
+
 #custom-western-belt-buckles-women-retail-guide .western-buckle-finish-image img,
 #custom-western-belt-buckles-women-retail-guide .western-buckle-sample-image img,
 #custom-western-belt-buckles-women-retail-guide .western-buckle-packaging-image img {

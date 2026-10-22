@@ -45,6 +45,7 @@ export const customBeltBuckleDesignGuideArticleHtml = String.raw`
             <li>What is the order quantity and deadline?</li>
           </ul>
           <p>These answers give the designer a working brief instead of only a logo file.</p>
+          <p>For Navy-themed projects, see our guide to <a href="/blog/custom-navy-belt-buckles-uniform-keepsakes">Navy belt buckles for uniforms and keepsakes</a> for use-specific purchasing considerations.</p>
 
           <h2 id="confirm-belt-specifications">2. Confirm the Belt Specifications</h2>
           <p>For a <a href="/products/custom-belt-buckles">custom belt buckle</a> with a plate buckle and hinge-and-hook attachment, the belt is part of the design decision. The hinge connects to the folded end of the belt, while the hook engages with a belt hole. Their spacing and position must work with the actual strap.</p>

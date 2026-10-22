@@ -34,6 +34,7 @@ import { customGraduationMedalsSchoolAwardsArticleHtml } from "./customGraduatio
 import { yearsOfServiceLapelPinsArticleHtml } from "./yearsOfServiceLapelPins";
 import { customChallengeCoinsCostArticleHtml } from "./customChallengeCoinsCost";
 import { customHatPatchesLooseOrFinishedArticleHtml } from "./customHatPatchesLooseOrFinished";
+import { customNavyBeltBucklesUniformKeepsakesArticleHtml } from "./customNavyBeltBucklesUniformKeepsakes";
 
 
 export const metadata = {
@@ -72,6 +73,10 @@ export const blogHtml = String.raw`
           <button type="button" data-blog-category="Uncategorized">Uncategorized</button>
         </div>
         <div class="blog-card-grid">
+          <a class="blog-feature-card" href="/blog/custom-navy-belt-buckles-uniform-keepsakes" data-blog-category="Custom Belt Buckle" aria-label="Read Custom Navy Belt Buckles: Uniform Wear or Unit Keepsakes?">
+            <img src="/assets/images/custom-navy-belt-buckle-unit-keepsake.webp" width="1043" height="587" title="Custom Navy Belt Buckle for Unit Keepsakes" alt="Front view of a Navy-themed commemorative belt buckle on a tabletop">
+            <div class="blog-feature-body"><div class="blog-feature-meta"><span>Custom Belt Buckle</span><span>Buyer Guide</span></div><h2>Custom Navy Belt Buckles: Uniform Wear or Unit Keepsakes?</h2><p>Compare uniform wear and unit keepsakes when ordering custom Navy belt buckles, with practical checks for belt fit, unit wording, dates and artwork permissions.</p><span class="blog-feature-link">Read More</span></div>
+          </a>
           <a class="blog-feature-card" href="/blog/custom-hat-patches-loose-or-finished" data-card-image-fit="full" data-blog-category="Patches" aria-label="Read Custom Hat Patches: Should You Order Loose Patches or Finished Hats?">
             <img src="/assets/images/custom-hat-patches-loose-vs-finished.webp" width="1672" height="941" title="Loose Hat Patches vs Finished Patch Hats" alt="Loose embroidered patch beside a blank cap and a matching cap with the patch attached">
             <div class="blog-feature-body">
@@ -472,6 +477,7 @@ export const blogHtml = String.raw`
     ${memorialChallengeCoinsGuideArticleHtml}
     ${patchShapesGuideArticleHtml}
     ${customBeltBuckleDesignGuideArticleHtml}
+    ${customNavyBeltBucklesUniformKeepsakesArticleHtml}
     ${customChristmasOrnamentsGuideArticleHtml}
     ${lapelPinAttachmentsGuideArticleHtml}
     ${corporateChallengeCoinsEmployeeRecognitionArticleHtml}
