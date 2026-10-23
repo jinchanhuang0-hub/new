@@ -716,8 +716,9 @@ export default function StaticPageEffects() {
       return inferredCategories.length ? inferredCategories : ["Uncategorized"];
     };
 
-    const blogGrid = document.querySelector(".blog-card-grid");
-    const blogCards = [...document.querySelectorAll(".blog-feature-card")];
+    const serverBlogGrid = document.querySelector('.blog-card-grid[data-server-paginated="true"]');
+    const blogGrid = serverBlogGrid ? null : document.querySelector(".blog-card-grid");
+    const blogCards = blogGrid ? [...blogGrid.querySelectorAll(".blog-feature-card")] : [];
     let activeBlogCategory = "All";
     let currentBlogPage = 1;
     let blogPagination = document.querySelector(".blog-pagination");
@@ -736,7 +737,7 @@ export default function StaticPageEffects() {
       )
     );
 
-    document.querySelectorAll(".blog-category-filter button").forEach((button) => {
+    if (!serverBlogGrid) document.querySelectorAll(".blog-category-filter button").forEach((button) => {
       const category = button.dataset.blogCategory || "All";
       const isPinnedCategory = button.dataset.blogCategoryPinned === "true";
       const shouldShow = category === "All" || isPinnedCategory || availableBlogCategories.has(category);
@@ -899,6 +900,14 @@ export default function StaticPageEffects() {
     const handleBlogCategoryClick = (event) => {
       const button = event.target.closest?.(".blog-category-filter button");
       if (!button) return;
+
+      if (serverBlogGrid) {
+        const category = button.dataset.blogCategory || "All";
+        const params = new URLSearchParams();
+        if (category !== "All") params.set("category", category);
+        window.location.assign(`/blog${params.size ? `?${params}` : ""}`);
+        return;
+      }
 
       document.querySelectorAll(".blog-category-filter button").forEach((categoryButton) => {
         categoryButton.classList.toggle("active", categoryButton === button);

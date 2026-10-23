@@ -567,15 +567,26 @@ const applyBlogIndexState = (
       const pageCount = Math.max(1, Math.ceil(matchingCards.length / itemsPerPage));
       const currentPage = Math.min(Math.max(Number(page) || 1, 1), pageCount);
       const startIndex = (currentPage - 1) * itemsPerPage;
-      const visibleCards = new Set(matchingCards.slice(startIndex, startIndex + itemsPerPage));
-      const renderedCards = cards.map((cardHtml) => (
-        visibleCards.has(cardHtml)
-          ? cardHtml
-          : cardHtml.replace('<a class="blog-feature-card"', '<a class="blog-feature-card" hidden')
-      ));
+      const renderedCards = matchingCards.slice(startIndex, startIndex + itemsPerPage);
+
+      const pageHref = (targetPage) => {
+        const params = new URLSearchParams();
+        if (selectedCategory !== "All") params.set("category", selectedCategory);
+        if (targetPage > 1) params.set("page", String(targetPage));
+        return `/blog${params.size ? `?${params}` : ""}`;
+      };
+      const pageLink = (targetPage, label) =>
+        `<a href="${pageHref(targetPage)}"${targetPage === currentPage ? ' class="active" aria-current="page"' : ""}>${label}</a>`;
+      const pagination = pageCount > 1
+        ? `<nav class="blog-pagination" aria-label="Blog pages">
+            ${currentPage > 1 ? pageLink(currentPage - 1, "Previous") : ""}
+            ${Array.from({ length: pageCount }, (_, index) => pageLink(index + 1, index + 1)).join("")}
+            ${currentPage < pageCount ? pageLink(currentPage + 1, "Next") : ""}
+          </nav>`
+        : "";
 
       const emptyState = `<p class="blog-empty-state"${matchingCards.length ? " hidden" : ""}>No articles found in this category.</p>`;
-      return `${opening}${renderedCards.join("\n          ")}${gridClosing}\n        ${emptyState}${sectionClosing}`;
+      return `${opening.replace('class="blog-card-grid"', 'class="blog-card-grid" data-server-paginated="true"')}${renderedCards.join("\n          ")}${gridClosing}\n        ${emptyState}${pagination}${sectionClosing}`;
     },
   );
 
