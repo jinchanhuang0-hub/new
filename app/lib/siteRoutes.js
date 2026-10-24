@@ -224,7 +224,6 @@ export const productItemCategoryKey = {
   "celtic-knot-antique-silver-belt-buckle": "buckles",
   "united-states-eagle-flag-belt-buckle": "buckles",
   "australia-horse-relief-belt-buckle": "buckles",
-  "kowow-star-enamel-belt-buckle": "buckles",
   "blue-knights-mc-antique-belt-buckle": "buckles",
   "sunflower-horse-western-belt-buckle": "buckles",
   "california-highway-patrol-western-belt-buckle": "buckles",
