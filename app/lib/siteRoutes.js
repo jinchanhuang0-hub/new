@@ -1216,37 +1216,34 @@ const blogArticleData = {
     ],
   },
   "how-custom-challenge-coins-are-made": {
-    title: "How Are Custom Challenge Coins Made? A Step-by-Step Manufacturing Guide",
+    title: "How Are Challenge Coins Made? Step-by-Step Process",
+    headline: "How Are Custom Challenge Coins Made?",
     description:
-      "Learn how custom challenge coins are made, from artwork and tooling to die-striking, finishing, color filling, quality inspection and shipment preparation.",
+      "See how custom challenge coins are made, from dies and metal forming to plating, enamel and inspection, plus what buyers should confirm before production.",
     datePublished: "2026-07-24",
-    dateModified: "2026-09-21",
+    dateModified: "2026-10-24",
     image: "/assets/images/blog-how-challenge-coins-made-card-v3.webp",
+    hideFooterInquiry: true,
     faq: [
       {
         question: "How long does it take to manufacture challenge coins?",
         answer:
-          "Manufacturing time depends on artwork approval, tooling complexity, quantity, finish, color work, packing method, and shipping route. Share the required delivery date at the first inquiry.",
-      },
-      {
-        question: "What artwork files should I submit?",
-        answer:
-          "Vector files such as AI, PDF, EPS, or SVG are helpful, but a logo, sketch, reference image, or clear concept can also be used for initial review.",
+          "Our reference lead times are 5–7 working days for samples and 12–15 working days for production. The start date and schedule are confirmed for each order based on its requirements, quantity and finish. Shipping time is confirmed separately.",
       },
       {
         question: "Can both sides of a challenge coin be customized?",
         answer:
-          "Yes. Many custom challenge coins use both front and back designs. The back side can include a motto, date, unit name, event name, serial number, QR code, or secondary logo.",
+          "Yes. The front and back can carry different artwork, wording or dates. Show both sides in the production proof and confirm their orientation, raised and recessed areas, and any color or engraving requirements.",
       },
       {
-        question: "What metals are challenge coins made from?",
+        question: "Can the design be changed after tooling starts?",
         answer:
-          "Common base metals include brass, iron and zinc alloy. The best choice depends on whether the design will be die-struck or die-cast, as well as its shape, relief depth, required weight and finish. Gold, silver, copper and black nickel often refer to plating rather than solid base metal.",
+          "Changes may still be possible, but their effect depends on what is being changed. Revisions to the outline or relief may require tooling adjustments or replacement tooling. Confirm any additional cost and schedule changes before proceeding.",
       },
       {
-        question: "What is the difference between die-struck and die-cast challenge coins?",
+        question: "Do all challenge coins need enamel color?",
         answer:
-          "Die-struck coins are formed by pressing engraved dies into a metal blank and are well suited to traditional shapes and crisp relief. Die-cast coins are formed in a casting mold and are often selected for deep 3D relief, cutouts and irregular shapes.",
+          "No. A challenge coin can use raised and recessed metal details with a selected plated finish, without enamel filling. Whether to add color depends on the artwork, contrast and intended appearance.",
       },
     ],
   },
