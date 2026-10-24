@@ -2464,3 +2464,9 @@
     text-align: center;
   }
 }
+
+#corporate-challenge-coins-employee-recognition .blog-table-wrap {
+  max-width: 100%;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+}

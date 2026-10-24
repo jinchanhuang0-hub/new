@@ -650,13 +650,39 @@ const blogArticleData = {
     title: "Corporate Challenge Coins for Employee Recognition",
     headline: "Corporate Challenge Coins: How to Build an Employee Recognition Program",
     description:
-      "Learn how to build a fair employee recognition program with corporate challenge coins, from award criteria and coin design to presentation and review.",
+      "Plan corporate challenge coins for employee awards, service milestones and team achievements. Compare shared designs, personalization, quantities and reorders.",
     author: "Sunny Huang",
     authorType: "Person",
     datePublished: "2026-09-04",
-    dateModified: "2026-09-04",
+    dateModified: "2026-10-24",
     image: "/assets/images/corporate-challenge-coins-employee-recognition.webp",
     schemaType: "BlogPosting",
+    inquiryHeading: "Request a Quote for Employee Recognition Coins",
+    inquiryDescription:
+      "Tell us what the coins will recognize, the estimated quantity, any personalization needs and the presentation date. Share your artwork or a reference image and the delivery destination. If the design or finish is still undecided, include what you already know so we can discuss suitable options.",
+    inquiryButtonLabel: "Request a Quote",
+    faq: [
+      {
+        question: "What should an employee recognition coin include?",
+        answer:
+          "Include a clear company or program identity and the achievement, value or milestone being recognized. Add a name, date or number only when it has a defined purpose. Keep longer explanations on a presentation card or accompanying message so the coin remains readable.",
+      },
+      {
+        question: "Should employee names go on the coin or a presentation card?",
+        answer:
+          "A personalized card can explain an individual contribution while allowing the coin design to remain reusable. Adding a name to the coin creates an individually assigned piece and requires confirmation of the recipient list, layout and suitable production method. Choose according to how the awards will be presented and managed.",
+      },
+      {
+        question: "Can one design be used for different awards or service milestones?",
+        answer:
+          "Yes. A program can retain a shared visual identity while using a card or selected design changes to distinguish awards. If award names or service years appear on the coin itself, confirm each version's artwork, quantity and production requirements before ordering.",
+      },
+      {
+        question: "How early should a company order recognition coins?",
+        answer:
+          "Our reference lead times are 5–7 working days for samples and 12–15 working days for production. Confirm the schedule for the specific order, allowing for internal approvals, recipient-list checks and shipping. The required arrival date and destination should be included in the initial brief.",
+      },
+    ],
   },
   "lapel-pin-attachments-guide": {
     title: "Lapel Pin Attachments: 12 Backings and Accessories Guide",

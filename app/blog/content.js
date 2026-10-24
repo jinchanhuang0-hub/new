@@ -265,7 +265,7 @@ export const blogHtml = String.raw`
             <div class="blog-feature-body">
               <div class="blog-feature-meta"><span>Custom Coins</span><span>Employee Recognition</span></div>
               <h2>Corporate Challenge Coins: How to Build an Employee Recognition Program</h2>
-              <p>Learn how to build a fair employee recognition program with corporate challenge coins, from award criteria and coin design to presentation and review.</p>
+              <p>Plan employee recognition coins by award type, shared design, personalization, quantities and reorders.</p>
               <span class="blog-feature-link">Read More</span>
             </div>
           </a>
