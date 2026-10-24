@@ -1222,6 +1222,7 @@ const blogArticleData = {
       "See how custom challenge coins are made, from dies and metal forming to plating, enamel and inspection, plus what buyers should confirm before production.",
     datePublished: "2026-07-24",
     dateModified: "2026-10-24",
+    hideModifiedDate: true,
     image: "/assets/images/blog-how-challenge-coins-made-card-v3.webp",
     hideFooterInquiry: true,
     faq: [

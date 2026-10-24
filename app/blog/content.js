@@ -1722,7 +1722,6 @@ export const blogHtml = String.raw`
           <p>Custom challenge coins are made by preparing production artwork, creating dies or a casting mold, forming the metal body, refining its surfaces and applying the selected finish. Coloring, curing, inspection and packaging follow as required. At Unique Pin, iron coins are commonly die-struck, while zinc-alloy coins are die-cast. The finishing sequence varies with the selected enamel process.</p>
           <figure class="blog-article-image blog-article-hero-image">
             <img src="/assets/images/blog-how-challenge-coins-made-hero.webp" width="1600" height="759" alt="Three finished custom challenge coins with blue, red and gold enamel details">
-            <figcaption>Finished coins can combine raised metal relief, plated surfaces and enamel color.</figcaption>
           </figure>
         </header>
 
