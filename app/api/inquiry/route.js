@@ -1,5 +1,6 @@
 import nodemailer from "nodemailer";
 import path from "node:path";
+import { randomUUID } from "node:crypto";
 
 export const runtime = "nodejs";
 
@@ -247,9 +248,11 @@ export async function POST(request) {
     });
   }
 
+  const inquiryId = randomUUID();
   const subjectProduct = fields.product || "Custom Metal Crafts";
   const subject = `New inquiry from ${fields.name} - ${subjectProduct}`;
   const rows = [
+    ["Inquiry ID", inquiryId],
     ["Name", fields.name],
     ["Email", fields.email],
     ["Country / Region", fields.country],
@@ -275,18 +278,22 @@ export async function POST(request) {
     .map(([label, value]) => `${label}: ${value}`)
     .join("\n");
 
-  await createTransporter().sendMail({
-    from: process.env.SMTP_FROM || process.env.SMTP_USER,
-    to: inquiryTo,
-    replyTo: fields.email,
-    subject,
-    text,
-    html: `
-      <h2 style="font-family:Arial,sans-serif;color:#0b356d;">New website inquiry</h2>
-      <table style="border-collapse:collapse;font-family:Arial,sans-serif;font-size:14px;color:#1d2a3a;">${htmlRows}</table>
-    `,
-    attachments,
-  });
+  try {
+    await createTransporter().sendMail({
+      from: process.env.SMTP_FROM || process.env.SMTP_USER,
+      to: inquiryTo,
+      replyTo: fields.email,
+      subject,
+      text,
+      html: `
+        <h2 style="font-family:Arial,sans-serif;color:#0b356d;">New website inquiry</h2>
+        <table style="border-collapse:collapse;font-family:Arial,sans-serif;font-size:14px;color:#1d2a3a;">${htmlRows}</table>
+      `,
+      attachments,
+    });
+  } catch {
+    return Response.json({ message: "Inquiry could not be sent. Please try again later." }, { status: 502 });
+  }
 
-  return Response.json({ message: "Inquiry sent successfully." });
+  return Response.json({ message: "Inquiry sent successfully.", success: true, inquiry_id: inquiryId });
 }

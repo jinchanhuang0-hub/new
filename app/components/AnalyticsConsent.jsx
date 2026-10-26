@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { isProductionAnalyticsEnvironment } from "../lib/analyticsGate.mjs";
 
 const CONSENT_KEY = "uccrafts_analytics_consent";
 const CONSENT_EVENT = "uccrafts:analytics-consent-changed";
@@ -29,7 +30,11 @@ const ensureDataLayer = () => {
 };
 
 const loadGoogleTagManager = () => {
-  if (window.__uccraftsGtmLoaded) return;
+  if (!isProductionAnalyticsEnvironment()) return;
+  if (window.__uccraftsGtmState) {
+    window.gtag?.("consent", "update", consentValues.granted);
+    return;
+  }
 
   ensureDataLayer();
   window.gtag("consent", "default", {
@@ -43,8 +48,13 @@ const loadGoogleTagManager = () => {
   script.async = true;
   script.src = `https://www.googletagmanager.com/gtm.js?id=${GTM_ID}`;
   script.dataset.uccraftsGtm = "true";
+  window.__uccraftsGtmState = "loading";
+  script.onload = () => { window.__uccraftsGtmState = "loaded"; };
+  script.onerror = () => {
+    script.remove();
+    window.__uccraftsGtmState = null;
+  };
   document.head.appendChild(script);
-  window.__uccraftsGtmLoaded = true;
 };
 
 const removeAnalyticsCookies = () => {
@@ -67,7 +77,10 @@ export default function AnalyticsConsent() {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    const savedChoice = window.localStorage.getItem(CONSENT_KEY);
+    let savedChoice;
+    try { savedChoice = window.localStorage.getItem(CONSENT_KEY); } catch { savedChoice = null; }
+    if (!window.__uccraftsAnalyticsChoice) window.__uccraftsAnalyticsChoice = savedChoice;
+    savedChoice = window.__uccraftsAnalyticsChoice;
     if (savedChoice === "granted" || savedChoice === "denied") {
       if (savedChoice === "granted") loadGoogleTagManager();
     } else {
@@ -92,13 +105,24 @@ export default function AnalyticsConsent() {
     };
 
     document.addEventListener("click", handleMapClick);
+    const handleStorage = (event) => {
+      if (event.key !== CONSENT_KEY) return;
+      window.__uccraftsAnalyticsChoice = event.newValue;
+      if (event.newValue === "granted") loadGoogleTagManager();
+      else if (window.gtag) window.gtag("consent", "update", consentValues.denied);
+      if (event.newValue !== "granted") removeAnalyticsCookies();
+      setIsOpen(event.newValue !== "granted" && event.newValue !== "denied");
+    };
+    window.addEventListener("storage", handleStorage);
     return () => {
       document.removeEventListener("click", handleMapClick);
+      window.removeEventListener("storage", handleStorage);
     };
   }, []);
 
   const saveChoice = (nextChoice) => {
-    window.localStorage.setItem(CONSENT_KEY, nextChoice);
+    window.__uccraftsAnalyticsChoice = nextChoice;
+    try { window.localStorage.setItem(CONSENT_KEY, nextChoice); } catch { /* Consent lasts for this page only. */ }
 
     if (nextChoice === "granted") {
       loadGoogleTagManager();

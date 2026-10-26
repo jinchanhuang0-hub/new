@@ -2,8 +2,8 @@
 
 import { useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
+import { canSendProductionAnalytics } from "../lib/analyticsGate.mjs";
 
-const CONSENT_KEY = "uccrafts_analytics_consent";
 const CONSENT_EVENT = "uccrafts:analytics-consent-changed";
 const PERFORMANCE_CATEGORY = "Performance";
 
@@ -11,14 +11,6 @@ const thresholds = {
   LCP: { good: 2500, poor: 4000 },
   CLS: { good: 0.1, poor: 0.25 },
   INP: { good: 200, poor: 500 },
-};
-
-const hasAnalyticsConsent = () => {
-  try {
-    return window.localStorage.getItem(CONSENT_KEY) === "granted";
-  } catch {
-    return false;
-  }
 };
 
 const classifyMetric = (name, value) => {
@@ -37,7 +29,7 @@ const getPagePath = () => {
 };
 
 const sendPerformanceEvent = (eventName, params) => {
-  if (!hasAnalyticsConsent() || typeof window.gtag !== "function") return false;
+  if (!canSendProductionAnalytics() || typeof window.gtag !== "function") return false;
 
   window.gtag("event", eventName, {
     event_category: PERFORMANCE_CATEGORY,
@@ -167,7 +159,7 @@ export default function PerformanceMetrics() {
     let retryCount = 0;
 
     const startMetrics = () => {
-      if (startedRef.current || !hasAnalyticsConsent()) return;
+      if (startedRef.current || !canSendProductionAnalytics()) return;
       if (typeof window.gtag !== "function") {
         if (retryCount < 20) {
           retryCount += 1;
