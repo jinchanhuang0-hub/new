@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { usePathname } from "next/navigation";
 import { BLOG_ITEMS_PER_PAGE } from "../blog/config";
 import { getCategoryPath } from "../lib/siteRoutes";
+import { submitInquiryForm } from "../lib/inquiryClient.mjs";
 
 export default function StaticPageEffects() {
   const pathname = usePathname();
@@ -616,59 +617,12 @@ export default function StaticPageEffects() {
     const getFormNotice = (form) => form.querySelector("[data-form-notice]")
       || form.closest(".contact-card, .product-inquiry-card, .contact-layout")?.querySelector("[data-form-notice]");
 
-    const handleInquirySubmit = async (event) => {
+    const handleInquirySubmit = (event) => {
       const inquiryForm = event.target.closest?.("[data-inquiry-form]");
       if (!inquiryForm) return;
 
       event.preventDefault();
-
-      const notice = getFormNotice(inquiryForm);
-      const submitButton = inquiryForm.querySelector('button[type="submit"]');
-      const originalButtonText = submitButton?.textContent;
-      const formData = new FormData(inquiryForm);
-
-      formData.set("pageUrl", window.location.href);
-      formData.set("pageTitle", document.title);
-
-      if (notice) {
-        notice.style.color = "var(--navy)";
-        notice.textContent = "Sending your inquiry...";
-      }
-      if (submitButton) {
-        submitButton.disabled = true;
-        submitButton.textContent = "Sending...";
-      }
-
-      try {
-        const response = await fetch("/api/inquiry", {
-          method: "POST",
-          body: formData,
-        });
-        const result = await response.json().catch(() => ({}));
-
-        if (!response.ok) {
-          throw new Error(response.status === 413
-            ? "Attachments must total 4 MB or less. Remove attachments and submit your inquiry again, then email the original design files to our sales team when they contact you."
-            : result.message || "Inquiry could not be sent. Please email ceo@chinauniquepin.com directly.");
-        }
-
-        if (notice) {
-          notice.style.color = "var(--navy)";
-          notice.textContent = "Thank you for your inquiry. Redirecting...";
-        }
-        inquiryForm.reset();
-        window.location.assign("/thank-you");
-      } catch (error) {
-        if (notice) {
-          notice.style.color = "#b42318";
-          notice.textContent = error.message || "Inquiry could not be sent. Please email ceo@chinauniquepin.com directly.";
-        }
-      } finally {
-        if (submitButton) {
-          submitButton.disabled = false;
-          submitButton.textContent = originalButtonText || "Get a Free Quote";
-        }
-      }
+      void submitInquiryForm(inquiryForm, { notice: getFormNotice(inquiryForm) });
     };
 
     document.addEventListener("submit", handleInquirySubmit);
