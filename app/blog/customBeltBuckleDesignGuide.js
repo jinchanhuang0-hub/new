@@ -1,203 +1,130 @@
+import { blogArticles } from "../lib/siteRoutes";
+
+const article = blogArticles["how-to-design-a-custom-belt-buckle"];
+const escapeHtml = (value) => value.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+export const customBeltBuckleDesignGuideTitleHtml = escapeHtml(article.title);
+export const customBeltBuckleDesignGuideExcerpt = escapeHtml(article.excerpt);
+
 export const customBeltBuckleDesignGuideArticleHtml = String.raw`
     <article id="how-to-design-a-custom-belt-buckle" class="section blog-article-section">
       <div class="blog-article-shell">
         <aside class="blog-article-toc" aria-label="Article contents">
           <strong>In This Guide</strong>
           <nav>
-            <a href="#define-the-use">Use</a>
-            <a href="#confirm-belt-specifications">Belt specifications</a>
-            <a href="#choose-size-and-shape">Size and shape</a>
-            <a href="#build-artwork-hierarchy">Artwork hierarchy</a>
-            <a href="#choose-2d-or-3d-relief">2D and 3D relief</a>
-            <a href="#select-the-metal-finish">Metal finish</a>
-            <a href="#decide-on-color">Color</a>
-            <a href="#review-the-hinge-and-hook">Hinge and hook</a>
-            <a href="#approve-the-digital-proof">Digital proof</a>
-            <a href="#from-artwork-to-finished-buckles">Production</a>
-            <a href="#what-to-send-for-a-quote">Quote checklist</a>
+            <a href="#define-the-use">Intended use</a>
+            <a href="#confirm-belt-specifications">Belt fit and dimensions</a>
+            <a href="#build-artwork-hierarchy">Artwork priorities</a>
+            <a href="#choose-2d-or-3d-relief">Relief, finish and color</a>
+            <a href="#prepare-artwork">Artwork files</a>
+            <a href="#approve-the-digital-proof">Approval and physical checks</a>
             <a href="#belt-buckle-faq">FAQ</a>
+            <a href="#what-to-send-for-a-quote">Discuss your design</a>
           </nav>
         </aside>
         <div class="container blog-article blog-article-with-toc">
           <header class="blog-article-header">
             <a class="blog-back-link" href="/blog">Back to Blog</a>
-            <h1>How to Design a Custom Belt Buckle: 9 Decisions Before Production</h1>
+            <h1>${customBeltBuckleDesignGuideTitleHtml}</h1>
             <figure class="blog-article-image blog-article-hero-image blog-article-natural-image blog-belt-buckle-hero-image">
-              <img src="/assets/images/custom-plate-belt-buckle-front.webp?v=20260828-cover" alt="Digital proof, back attachment and finished zinc alloy plate belt buckle" width="1600" height="900" fetchpriority="high" decoding="async">
-              <figcaption>A digital proof, back attachment and finished buckle make the production specification visible before approval.</figcaption>
+              <img src="/assets/images/custom-plate-belt-buckle-front.webp?v=20260828-cover" alt="Decorative plate buckle beside a design sheet showing front, back and side views" width="1600" height="900" fetchpriority="high" decoding="async">
+              <figcaption>Design illustration showing face artwork and rear attachment views; pictured dimensions are specific to the illustration.</figcaption>
             </figure>
-            <p>A custom belt buckle has two jobs. It carries the artwork people see, but it must also connect securely to the belt behind it. A design can look convincing from the front and still require changes if the size, weight or back attachment does not suit the intended strap.</p>
-            <p>To design a custom belt buckle, begin with its use and the belt specifications. Then confirm the buckle dimensions, artwork hierarchy, 2D or 3D relief, metal finish, color and hinge-and-hook attachment. Before production, review the front, back and dimensions together on a digital proof.</p>
-            <p>The nine decisions below provide a practical starting point for brands, distributors, event organizers and other buyers preparing a custom project.</p>
+            <p>A custom belt buckle project often starts with a logo or reference image. Before that idea becomes a production design, the buyer needs to decide what should stand out, how much information belongs on the face, and which belt the buckle must fit.</p>
+            <p>To design a custom belt buckle, establish its intended use and belt connection first. Then choose the dimensions, arrange the artwork by importance, and specify relief, finish and color. Review these details together before authorizing the agreed production stages.</p>
+            <p>This guide focuses on zinc alloy plate buckles for brands, distributors and event buyers working with a manufacturer.</p>
           </header>
 
-          <h2 id="define-the-use">1. Define How the Buckle Will Be Used</h2>
-          <p>The intended use affects almost every later decision. A retail fashion accessory, corporate award and event souvenir may carry similar artwork, but they do not have the same priorities.</p>
-          <p>A brand selling the buckle with a leather belt may focus on repeatable specifications, comfort and packaging. A recognition buckle may need a prominent title, recipient details and a clear visual hierarchy. An event organizer may need one design adapted for several categories or years.</p>
-          <p>Clarify the following before working on the layout:</p>
-          <ul class="blog-list">
-            <li>Who will receive or buy the buckle?</li>
-            <li>Will it be worn regularly or mainly displayed?</li>
-            <li>Is it supplied with a belt or as a separate buckle?</li>
-            <li>Does it belong to a series?</li>
-            <li>Will individual names or numbers be added?</li>
-            <li>What packaging is required?</li>
-            <li>What is the order quantity and deadline?</li>
-          </ul>
-          <p>These answers give the designer a working brief instead of only a logo file.</p>
-          <p>For Navy-themed projects, see our guide to <a href="/blog/custom-navy-belt-buckles-uniform-keepsakes">Navy belt buckles for uniforms and keepsakes</a> for use-specific purchasing considerations.</p>
+          <h2 id="define-the-use">Start with How the Buckle Will Be Used</h2>
+          <p>Use determines which information deserves space. A retail design may emphasize a recognizable shape, while an award needs its achievement to read clearly. Establish whether you are buying the buckle alone or coordinating it with a separately sourced belt.</p>
+          <div class="blog-table-wrap" tabindex="0" role="region" aria-label="Buckle design priorities by intended use">
+            <table class="blog-table">
+              <thead><tr><th scope="col">Intended use</th><th scope="col">What should stand out</th><th scope="col">What the buyer should consider</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Branded retail merchandise</th><td>Brand identity and overall shape</td><td>Wearing comfort, belt compatibility and consistency across the range</td></tr>
+                <tr><th scope="row">Event or competition awards</th><td>Award title, division or achievement</td><td>Clear distinctions between versions without crowding the face</td></tr>
+                <tr><th scope="row">Organization keepsakes</th><td>Organization name, commemorative theme or dates</td><td>Which information must remain on the product and whether it will be worn</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>Some projects also have use-specific requirements. Our guide to <a href="/blog/custom-navy-belt-buckles-uniform-keepsakes">Navy belt buckles for uniforms and keepsakes</a> explains that distinction for Navy-themed purchases.</p>
 
-          <h2 id="confirm-belt-specifications">2. Confirm the Belt Specifications</h2>
-          <p>For a <a href="/products/custom-belt-buckles">custom belt buckle</a> with a plate buckle and hinge-and-hook attachment, the belt is part of the design decision. The hinge connects to the folded end of the belt, while the hook engages with a belt hole. Their spacing and position must work with the actual strap.</p>
-          <p>Provide the belt width and thickness whenever possible. A photo of the front and back of the belt connection is also useful, particularly when an existing belt will be reused.</p>
-          <p>Do not rely on the phrase "standard belt." Belt construction varies, and the decorative face of the buckle can be wider than the connection area behind it. The critical measurement is the part of the strap that meets the attachment.</p>
-          <p>If the belt is being sourced from another supplier, share the approved buckle and belt specifications with both parties. This reduces the risk of receiving two individually correct components that do not fit each other.</p>
+          <h2 id="confirm-belt-specifications">Match the Buckle to the Actual Belt</h2>
+          <p>The face dimensions and rear connection dimensions serve different purposes. A larger decorative face does not mean the attachment accepts a wider belt. For a hinge-and-hook plate buckle, the hinge connects to the belt end while the hook engages a belt hole.</p>
+          <p>Provide the actual belt width and thickness at the connection, plus photos of the belt end and existing fastening arrangement. Mark the measurement locations; “standard belt” leaves too much undefined. The manufacturer uses this information to assess connection space, hinge position, hook orientation and rear clearance. Label measurements in inches or millimeters and keep the units explicit when sharing drawings between suppliers. A photograph without a scale can show the connection style, but should not be used to infer dimensions.</p>
+          <span id="review-the-hinge-and-hook" aria-hidden="true"></span>
           <figure class="blog-article-image blog-image-3x2 blog-belt-buckle-image">
-            <img src="/assets/images/plate-buckle-hinge-hook-structure.webp" alt="Front and back of a plate belt buckle with hinge and hook attachment" width="1200" height="800" loading="lazy" decoding="async">
-            <figcaption>The front and back show how the hinge, hook and available strap space must be checked against the intended belt.</figcaption>
+            <img src="/assets/images/plate-buckle-hinge-hook-structure.webp" alt="Front and reverse views of a decorative plate buckle, with a rear loop and projecting fastener" width="1200" height="800" loading="lazy" decoding="async">
+            <figcaption>Front and reverse views illustrate the distinction between the decorative face and rear connection.</figcaption>
           </figure>
+          <p>If the belt is not selected, record compatibility as unresolved. When sourcing the two components separately, give both suppliers the proposed connection details before either specification becomes fixed.</p>
+          <span id="choose-size-and-shape" aria-hidden="true"></span>
+          <p>Overall size also affects text space, weight and wearing comfort. Borders, curvature and relief influence how much of the face is usable. An actual-size paper outline helps judge visual proportions, but cannot establish finished weight, curvature or physical fit.</p>
 
-          <h2 id="choose-size-and-shape">3. Choose a Practical Size and Shape</h2>
-          <p>Custom zinc alloy plate buckles can be developed in oval, rectangular and other shaped outlines. The appropriate dimensions depend on the artwork, intended use and belt.</p>
-          <p>A larger face provides more room, but it also changes the weight and wearing experience. Thickness, relief and solid or open areas all contribute to the final result. A buckle intended as a large award piece does not need to follow the same proportions as one intended for everyday apparel.</p>
-          <p>Check three areas when setting the dimensions:</p>
-          <ol class="blog-list">
-            <li>The back connection must match the belt.</li>
-            <li>The face must provide enough usable space for the artwork.</li>
-            <li>The overall size and weight must suit the intended use.</li>
-          </ol>
-          <p>The outside dimensions are not the same as the usable artwork area. Borders, curved edges and relief can reduce the space available for text. Review the design at approximately its finished size rather than only as an enlarged screen image.</p>
+          <h2 id="build-artwork-hierarchy">Decide What People Need to Read First</h2>
+          <p>Choose the first message according to the purpose: a brand name, award title or commemorative theme. Separate essential wording from optional decoration. Names, organization names, years and the meaning of dates must be accurate; abbreviating or removing identifying text needs the buyer’s approval.</p>
+          <p>Review the layout at its intended finished size. Borders, relief and ornament occupy space that might otherwise hold lettering. If wording is crowded, shorten or relocate secondary content before shrinking every font.</p>
+          <h3 id="illustrative-layout-example">Illustrative Design Example: A Logo, Name, Year and Long Slogan</h3>
+          <p>In this illustrative example, a brand wants its logo, brand name, year and a long slogan on a buckle without changing the planned dimensions. This is a layout exercise, not a documented customer project.</p>
+          <div class="blog-table-wrap" tabindex="0" role="region" aria-label="Illustrative artwork layout options">
+            <table class="blog-table">
+              <thead><tr><th scope="col">Layout option</th><th scope="col">What it achieves</th><th scope="col">What still needs review</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Keep everything on the front</th><td>Preserves all requested information together</td><td>Whether the wording remains readable at the intended size</td></tr>
+                <tr><th scope="row">Keep the logo, brand name and year on the front</th><td>Gives the main identity more space</td><td>Whether the slogan can move to a backing card or box</td></tr>
+                <tr><th scope="row">Move selected wording to the reverse</th><td>Reduces competition for space on the face</td><td>Whether the rear attachment leaves a suitable marking area</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>The purchasing purpose determines what must stay on the metal. A short-term event slogan could go on packaging; reverse engraving depends on the attachment and available marking area. Record the chosen layout so deleted wording is not reintroduced later without reassessing the design.</p>
 
-          <h2 id="build-artwork-hierarchy">4. Build a Clear Artwork Hierarchy</h2>
-          <p>A buckle does not need to reproduce every element from a poster, badge or event graphic. Metal designs are usually easier to understand when the information has a clear order.</p>
-          <p>Start with the main symbol or logo. Then decide which name, title or event information must be read first. Dates, category details and decorative textures should support that message rather than compete with it.</p>
-          <p>A useful hierarchy is:</p>
-          <ul class="blog-list">
-            <li>Main logo or symbol</li>
-            <li>Primary name or award title</li>
-            <li>Supporting event or organization information</li>
-            <li>Date, number or short secondary text</li>
-            <li>Border and decorative detail</li>
-          </ul>
-          <p>Small text, fine lines and tightly packed elements may need adjustment during artwork preparation. This is not necessarily a change to the identity of the design. It is part of converting flat artwork into raised, recessed, engraved and colored metal areas.</p>
-          <p>When submitting artwork, send the highest-quality logo, sketch or reference available. A rough concept is still useful if it clearly shows the intended subject and required wording.</p>
-
-          <h2 id="choose-2d-or-3d-relief">5. Decide Between 2D and 3D Relief</h2>
-          <p>A 2D design uses defined raised and recessed levels. This works well for logos, borders, lettering and graphic elements that need clear separation. Soft enamel can be added to selected recessed areas when color is part of the design.</p>
-          <p>A 3D design uses gradual changes in height to form rounded or sculpted surfaces. It can suit animals, faces, landscapes and organic motifs where contour matters more than flat separation.</p>
-          <p>Neither option is automatically better. The decision should follow the artwork.</p>
-          <p>Many buckles use both approaches. A 3D central subject can be combined with a 2D border and lettering. Laser engraving can add selected names, numbering or fine surface information where appropriate. Open areas can also become part of the design, but the remaining structure must still support the buckle and its attachment.</p>
-          <p>The digital proof should make each level understandable. If the buyer cannot tell which areas are raised, recessed, colored or engraved, the production specification is not yet clear enough.</p>
+          <h2 id="choose-2d-or-3d-relief">Choose Relief, Finish and Color Around the Artwork</h2>
+          <p>2D relief gives lettering, borders and graphics defined raised and recessed levels. 3D relief suits subjects needing rounded contours or sculpted forms. A 3D center can accompany 2D lettering, subject to review of the actual artwork and separation between elements.</p>
           <figure class="blog-article-image blog-image-3x2 blog-belt-buckle-image">
-            <img src="/assets/images/2d-vs-3d-custom-belt-buckle.webp" alt="2D and 3D relief compared on custom zinc alloy belt buckles" width="1200" height="800" loading="lazy" decoding="async">
-            <figcaption>Defined 2D levels suit clear logos and lettering, while 3D relief creates rounded sculptural forms.</figcaption>
+            <img src="/assets/images/2d-vs-3d-custom-belt-buckle.webp" alt="Three decorative buckles featuring raised lettering, a sculpted horse head and a monogram" width="1200" height="800" loading="lazy" decoding="async">
+            <figcaption>Lettering and sculpted subjects call for different relief treatments.</figcaption>
           </figure>
-
-          <h2 id="select-the-metal-finish">6. Select the Metal Finish</h2>
-          <p>The confirmed base material for this product is zinc alloy. Its appearance can be changed through plating and surface treatment.</p>
-          <p>Available directions may include:</p>
-          <ul class="blog-list">
-            <li>Polished gold-tone, silver-tone or copper-tone finishes</li>
-            <li>Antique gold, antique silver or antique copper</li>
-            <li>Black nickel or gunmetal</li>
-            <li>Matte surface effects</li>
-          </ul>
-          <p>A polished finish reflects more light and can create a bright, clean appearance. A matte effect reduces strong reflections. An antique finish usually creates darker recessed areas, helping relief and texture appear more distinct.</p>
-          <p>Finish names describe appearance; they should not be confused with the base material. For example, an antique brass appearance does not necessarily mean the buckle is made from solid brass. Product descriptions, quotations and approvals should distinguish zinc alloy from the selected plating or finish.</p>
-          <p>When comparing finishes, use the same artwork where possible. Looking at unrelated buckle designs makes it harder to understand how the surface treatment changes contrast.</p>
+          <span id="select-the-metal-finish" aria-hidden="true"></span>
+          <p>Specify zinc alloy as the base material separately from plating, antique treatment or a matte effect. Gold-tone and antique finish names describe appearance, not solid precious metal. Polished surfaces reflect more light; darker recesses in an antique treatment can emphasize relief. Compare finishes on similar artwork to judge contrast. A finish that emphasizes the central motif may also change how easily small lettering reads.</p>
           <figure class="blog-article-image blog-image-3x2 blog-belt-buckle-image">
-            <img src="/assets/images/custom-belt-buckle-finishes.webp" alt="Polished antique matte and gunmetal finishes on zinc alloy belt buckles" width="1200" height="800" loading="lazy" decoding="async">
-            <figcaption>Comparing the same artwork makes it easier to see how each finish changes contrast and character.</figcaption>
+            <img src="/assets/images/custom-belt-buckle-finishes.webp" alt="Six rectangular buckles with matching eagle artwork in gold-colored, silver-colored and darker finishes" width="1200" height="800" loading="lazy" decoding="async">
+            <figcaption>Matching artwork illustrates how surface color and contrast change the appearance.</figcaption>
           </figure>
+          <span id="decide-on-color" aria-hidden="true"></span>
+          <p>Use color to support brand recognition or highlight an important element, rather than filling every space. Identify colored and exposed-metal areas and provide color references. Gradients and photographic detail cannot be treated directly as solid enamel sections; they may need adaptation.</p>
+          <p>Explore <a href="/products/custom-belt-buckles">custom belt buckle options</a> with these artwork requirements in mind.</p>
 
-          <h2 id="decide-on-color">7. Decide Whether to Add Color</h2>
-          <p>Soft enamel can separate logos, borders and other clearly defined areas. It is particularly useful when color is necessary for brand recognition, event categories or a coordinated merchandise range.</p>
-          <p>Not every area needs color. Leaving selected parts as exposed metal can preserve contrast and keep the design from becoming visually crowded. Antique finishes can also provide depth without adding multiple enamel colors.</p>
-          <p>Before approval, confirm:</p>
-          <ul class="blog-list">
-            <li>Which areas remain metal</li>
-            <li>Which recessed areas receive color</li>
-            <li>The intended color references</li>
-            <li>Whether the same colors apply across all order versions</li>
-            <li>Whether engraving or numbering changes between pieces</li>
-          </ul>
-          <p>Gradients, photographic imagery and very fine color transitions do not translate in the same way as solid enamel sections. Artwork may need to be simplified or adapted to the selected process.</p>
+          <h2 id="prepare-artwork">Prepare Artwork Without Guessing Production Details</h2>
+          <p>Send a clear original logo, exact wording, and any sketch or reference photo. Explain whether each reference illustrates shape, color, finish or the complete layout. For multiple versions, label the shared elements and the text or artwork that changes. For an award series, distinguish a division title that changes between groups from a recipient name that changes on every piece. This helps the manufacturer assess whether the variations belong in the molded design or a separate marking step.</p>
+          <p>You do not need to guess relief depth, attachment dimensions or minimum lettering size. Describe the intended result and any fixed requirements. The manufacturer can evaluate production details and identify where the artwork needs adjustment.</p>
 
-          <h2 id="review-the-hinge-and-hook">8. Review the Hinge-and-Hook Attachment</h2>
-          <p>The back of the buckle is not a secondary detail. For the confirmed plate buckle construction, the hinge-and-hook system determines how the product attaches and closes.</p>
-          <p>The digital proof should show the back attachment, not only the decorative face. Check:</p>
+          <h2 id="approve-the-digital-proof">Separate Artwork Approval from Physical Checks</h2>
+          <p>A digital proof records the proposed design and specifications. Use one consolidated design review:</p>
           <ul class="blog-list">
-            <li>Hinge position and direction</li>
-            <li>Hook position and orientation</li>
-            <li>Space available for the belt</li>
-            <li>Compatibility with the supplied strap width and thickness</li>
-            <li>Clearance behind the decorative plate</li>
-            <li>Any back engraving or identification</li>
+            <li>Confirm wording, dates and the information hierarchy.</li>
+            <li>Check overall dimensions and the rear attachment specification.</li>
+            <li>Identify raised, recessed, colored and engraved areas.</li>
+            <li>Confirm the base material, finish and any version differences.</li>
           </ul>
-          <p>If a physical sample is produced, test it with the intended belt. A sample may involve additional cost, and its timing depends on the design and required processes. Photos or video can support remote review, but the confirmation method should be agreed before bulk production.</p>
-          <p>Where a sample is approved, the bulk order should follow the confirmed design and specifications. Any requested change after approval needs to be assessed before production continues.</p>
-
-          <h2 id="approve-the-digital-proof">9. Approve the Complete Digital Proof</h2>
-          <p>The proof is the point where the design becomes a production specification. It should show enough information for the buyer to understand what will be made.</p>
-          <p>Review:</p>
-          <ul class="blog-list">
-            <li>Front artwork</li>
-            <li>Back attachment</li>
-            <li>Finished width and height</li>
-            <li>Relief levels</li>
-            <li>Plating and surface effect</li>
-            <li>Metal and enamel areas</li>
-            <li>Engraved information</li>
-            <li>Spelling and dates</li>
-            <li>Open or cutout areas</li>
-            <li>Packaging requirements</li>
-          </ul>
-          <p>At Unique Pin, production begins after the customer approves the digital proof. Revisions can be made before production, so this is the correct stage to resolve unclear text, proportions, finishes or attachment details.</p>
-          <p>Do not approve the project based only on an attractive front-view rendering. The front, back, dimensions and belt connection belong to the same product.</p>
+          <p>A rendering cannot prove actual weight, surface appearance or belt fit. If the order includes a physical sample, agree what it will verify and how approval will be recorded. Where needed, assess the sample with the intended belt. Sample fees, revisions and timing follow the quotation.</p>
           <figure class="blog-article-image blog-image-3x2 blog-belt-buckle-image">
-            <img src="/assets/images/belt-buckle-proof-to-product.webp" alt="Custom belt buckle digital proof compared with the finished product" width="1200" height="800" loading="lazy" decoding="async">
-            <figcaption>The approved proof defines the design and finish, while the finished metal reflects real lighting and production texture.</figcaption>
+            <img src="/assets/images/belt-buckle-proof-to-product.webp" alt="Two views of the same decorative buckle design with flatter and more contrasted surface treatments" width="1200" height="800" loading="lazy" decoding="async">
+            <figcaption>Illustrative appearance comparison; a rendering does not verify a physical sample’s finish or fit.</figcaption>
           </figure>
-
-          <h2 id="from-artwork-to-finished-buckles">From Approved Artwork to Finished Buckles</h2>
-          <p>After approval, a zinc alloy buckle order may move through mold preparation, die casting, polishing, plating and the selected finishing steps. Soft enamel filling or laser engraving is completed where specified. The products then proceed through quality inspection and packaging.</p>
-          <p>The exact sequence can vary when an order combines different effects. Timing should therefore be evaluated from the approved design, quantity, sample requirements, packaging and destination instead of being presented as one universal lead time.</p>
-          <p>Packaging options can range from protective individual packing to velvet pouches or presentation boxes. The appropriate choice depends on whether the buckle is being shipped as a component, sold as retail merchandise or presented as an award or corporate gift.</p>
-          <figure class="blog-article-image blog-image-3x2 blog-belt-buckle-image">
-            <img src="/assets/images/custom-belt-buckle-packaging.webp" alt="Custom belt buckle packaging with pouch and presentation box options" width="1200" height="800" loading="lazy" decoding="async">
-            <figcaption>Packaging can be selected for bulk components, retail merchandise, corporate gifts or award presentation.</figcaption>
-          </figure>
-
-          <h2 id="what-to-send-for-a-quote">What to Send for a Custom Belt Buckle Quote</h2>
-          <p>A complete request helps the artwork and quotation process move more efficiently. Send:</p>
-          <ul class="blog-list">
-            <li>Logo, sketch or reference image</li>
-            <li>Intended buckle dimensions or belt specifications</li>
-            <li>Belt width and thickness</li>
-            <li>Quantity</li>
-            <li>Preferred 2D, 3D, enamel or engraved effects</li>
-            <li>Preferred plating and finish</li>
-            <li>Packaging requirements</li>
-            <li>Required delivery date</li>
-            <li>Destination country and postal code</li>
-          </ul>
-          <p>If some design choices are still open, explain the intended use and provide the belt information. The artwork team can then suggest a workable direction for the custom belt buckle and prepare a digital proof for review.</p>
+          <span id="from-artwork-to-finished-buckles" aria-hidden="true"></span>
+          <p>Authorization to prepare a mold or sample is separate from approval for bulk production. The bulk order follows the agreed final approved materials. Changes after approval require a new assessment of the affected specifications and schedule.</p>
 
           <h2 id="belt-buckle-faq">Frequently Asked Questions</h2>
           <div class="blog-faq">
-            <details open><summary><h3>How do I design a custom belt buckle?</h3></summary><p>Begin with the intended use and belt specifications. Then confirm the size, artwork hierarchy, relief, finish, color and back attachment before approving the digital proof.</p></details>
-            <details><summary><h3>How can I make sure the buckle fits my belt?</h3></summary><p>Provide the belt width, thickness and photos of its connection area. The hinge, hook and available clearance should be reviewed against those specifications.</p></details>
-            <details><summary><h3>Is 2D or 3D better for a logo buckle?</h3></summary><p>2D relief usually suits clean logos, lettering and defined color areas. 3D relief is useful for rounded, sculptural subjects. A combined design may work when the central motif needs depth but the wording needs clear levels.</p></details>
-            <details><summary><h3>Can the buckle combine enamel and an antique finish?</h3></summary><p>Yes, a design can use soft enamel in selected areas while retaining an antique metal effect elsewhere, subject to artwork review. The proof should clearly identify colored and exposed metal areas.</p></details>
-            <details><summary><h3>Can I order a sample before bulk production?</h3></summary><p>A physical sample can be produced, and photos or video may be provided for review. Sample cost and timing depend on the design and should be confirmed with the quotation.</p></details>
+            ${article.faq.map((item, index) => `<details${index === 0 ? " open" : ""}><summary><h3>${escapeHtml(item.question)}</h3></summary><p>${escapeHtml(item.answer)}</p></details>`).join("\n            ")}
           </div>
 
           <section class="blog-article-cta">
             <div class="blog-cta-copy">
-              <h2>Ready to Review Your Belt Buckle Idea?</h2>
-              <p>Send your logo or sketch, belt width and thickness, preferred size, quantity, finish, packaging requirements, deadline and destination country or postal code. We can provide design guidance, prepare a free digital proof, assess a sample where needed and provide a production quote after the specifications are reviewed.</p>
+              <h2 id="what-to-send-for-a-quote">Discuss Your Belt Buckle Design</h2>
+              <p>Send Unique Pin your logo or reference image, intended use, estimated quantity and required delivery date. If the buckle will accompany an existing belt, include its measurements and connection photos.</p>
+              <p>You can begin with undecided details. Tell us what is fixed and where you need guidance so we can assess the design and prepare a quotation.</p>
             </div>
-            <div class="blog-cta-actions"><a class="btn btn-yellow" href="/contact">Request a Belt Buckle Quote</a><a class="btn btn-primary" href="/products/custom-belt-buckles">Custom Belt Buckles</a></div>
+            <div class="blog-cta-actions"><a class="btn btn-yellow" href="/contact">Request a Quote</a></div>
           </section>
         </div>
       </div>

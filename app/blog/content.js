@@ -3,7 +3,7 @@ import { footerHtml } from "../components/footerHtml";
 import { siteHeaderHtml } from "../components/siteHeaderHtml";
 import { customMetalKeychainMaterialsArticleHtml } from "./customMetalKeychainMaterials";
 import { customMetalKeychainSizeAttachmentGuideArticleHtml } from "./customMetalKeychainSizeAttachmentGuide";
-import { customBeltBuckleDesignGuideArticleHtml } from "./customBeltBuckleDesignGuide";
+import { customBeltBuckleDesignGuideArticleHtml, customBeltBuckleDesignGuideTitleHtml, customBeltBuckleDesignGuideExcerpt } from "./customBeltBuckleDesignGuide";
 import { keychainAttachmentsGuideArticleHtml } from "./keychainAttachmentsGuide";
 import { memorialChallengeCoinsGuideArticleHtml } from "./memorialChallengeCoinsGuide";
 import { patchShapesGuideArticleHtml } from "./patchShapesGuide";
@@ -287,12 +287,12 @@ export const blogHtml = String.raw`
               <span class="blog-feature-link">Read More</span>
             </div>
           </a>
-          <a class="blog-feature-card" href="/blog/how-to-design-a-custom-belt-buckle" data-blog-category="Custom Belt Buckle" aria-label="Read How to Design a Custom Belt Buckle: 9 Decisions Before Production">
-            <img src="/assets/images/custom-plate-belt-buckle-front.webp?v=20260828-cover" width="1600" height="900" alt="Digital proof, back attachment and finished zinc alloy plate belt buckle">
+          <a class="blog-feature-card" href="/blog/how-to-design-a-custom-belt-buckle" data-blog-category="Custom Belt Buckle" aria-label="Read ${customBeltBuckleDesignGuideTitleHtml}">
+            <img src="/assets/images/custom-plate-belt-buckle-front.webp?v=20260828-cover" width="1600" height="900" alt="Decorative plate buckle beside a design sheet showing front, back and side views">
             <div class="blog-feature-body">
               <div class="blog-feature-meta"><span>Custom Belt Buckle</span><span>Design Guide</span></div>
-              <h2>How to Design a Custom Belt Buckle: 9 Decisions Before Production</h2>
-              <p>Prepare a belt buckle project by confirming the belt, dimensions, relief, finish, color and hinge-and-hook attachment.</p>
+              <h2>${customBeltBuckleDesignGuideTitleHtml}</h2>
+              <p>${customBeltBuckleDesignGuideExcerpt}</p>
               <span class="blog-feature-link">Read More</span>
             </div>
           </a>
