@@ -69,9 +69,6 @@ export const blogHtml = String.raw`
           <button type="button" data-blog-category="Patches" data-blog-category-pinned="true">Patches</button>
           <button type="button" data-blog-category="Others" data-blog-category-pinned="true">Others</button>
           <button type="button" data-blog-category="Holidays" data-blog-category-pinned="true">Holidays</button>
-          <button type="button" data-blog-category="Custom Lanyards">Custom Lanyards</button>
-          <button type="button" data-blog-category="Custom Poker Chips">Custom Poker Chips</button>
-          <button type="button" data-blog-category="Uncategorized">Uncategorized</button>
         </div>
         <div class="blog-card-grid">
           <a class="blog-feature-card" href="/blog/woven-vs-embroidered-patches" data-blog-category="Patches" aria-label="Read Woven vs Embroidered Patches: What If Your Logo Has Small Text?">
