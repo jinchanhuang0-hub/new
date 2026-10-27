@@ -217,3 +217,44 @@
   transform: none;
   transition: none;
 }
+
+/* Give the keychain labels room and let the six material samples use the full row. */
+#keychain-fabrication-options .finish-gallery-tab { white-space: nowrap; }
+#keychain-fabrication-options .finish-gallery-subheading p { white-space: normal; }
+#keychain-fabrication-options #keychain-fabrication-options-grid .finish-gallery-media,
+#keychain-fabrication-options #keychain-attachments-grid .finish-gallery-media {
+  aspect-ratio: 1;
+}
+
+#keychain-fabrication-options #keychain-attachments-grid .finish-gallery-media {
+  aspect-ratio: 6 / 5;
+}
+
+@media (min-width: 1200px) {
+  #keychain-fabrication-options .finish-gallery-tabs {
+    grid-template-columns: 220px minmax(0, 1fr);
+    width: calc(65% + 252px);
+  }
+  #keychain-fabrication-options .finish-gallery-tabs:has(#keychain-materials-tab[aria-selected="true"]) {
+    width: calc(72% + 252px);
+  }
+}
+
+@media (min-width: 1024px) {
+  #keychain-fabrication-options .finish-gallery-grid[data-desktop-columns="6"] {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+  #keychain-fabrication-options .finish-gallery-grid[data-desktop-columns="5"] {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  #keychain-fabrication-options .finish-gallery-tablist {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  #keychain-fabrication-options .finish-gallery-tablist { grid-template-columns: 1fr; }
+}

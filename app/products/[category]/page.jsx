@@ -23,6 +23,9 @@ import { medalLoops } from "../medalLoops";
 import { medalRibbons } from "../medalRibbons";
 import { coinArtworkComparison } from "../coinArtworkComparison";
 import { keychainArtworkComparison } from "../keychainArtworkComparison";
+import { keychainMaterials } from "../keychainMaterials";
+import { keychainAttachments } from "../keychainAttachments";
+import { keychainPackaging } from "../keychainPackaging";
 import "../../styles/components/finish-gallery.css";
 import "../../styles/components/artwork-comparison.css";
 import {
@@ -49,6 +52,7 @@ const fabricationOptionsCategories = new Set([
   "custom-belt-buckles",
   "custom-golf-accessories",
   "custom-bottle-openers",
+  "custom-metal-keychains",
 ]);
 
 export const dynamicParams = false;
@@ -113,13 +117,15 @@ export default async function ProductCategoryPage({ params, searchParams }) {
       : [];
   const categoryEnhancementHtml = fabricationOptionsCategories.has(category)
     ? `${renderFinishGallery(
-        platingFinishes,
+        category === "custom-metal-keychains" ? keychainMaterials : platingFinishes,
         category === "custom-enamel-pins"
           ? [pinAttachments, pinBacksides, pinPackaging]
           : category === "custom-challenge-coins"
             ? [coinEdges, coinPackaging]
             : category === "custom-medals"
               ? [medalBacksides, medalLoops, medalRibbons, medalPackaging]
+              : category === "custom-metal-keychains"
+                ? [keychainAttachments, keychainPackaging]
               : [],
       )}${category === "custom-enamel-pins"
         ? renderArtworkComparison()
