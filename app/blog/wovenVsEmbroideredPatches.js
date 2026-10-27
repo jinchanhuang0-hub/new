@@ -51,7 +51,6 @@ export const wovenVsEmbroideredPatchesArticleHtml = String.raw`
       <p>Woven designs use interlaced fine threads, which generally allow finer lettering and narrower lines than standard embroidery. When reviewing <a href="/products/custom-patches">custom patch options</a>, consider whether that smoother appearance suits the garment and the brand’s visual identity.</p>
       <figure class="blog-article-image blog-article-natural-image">
         <img src="/assets/images/woven-patch-small-lettering-detail.webp" width="1672" height="941" loading="lazy" decoding="async" title="Small Lettering on a Woven Patch" alt="Close-up of small lettering and woven thread detail on a patch.">
-        <figcaption>A close-up of a woven patch shows letter shapes, spacing, and the surrounding woven surface for artwork evaluation.</figcaption>
       </figure>
       <p>Woven construction cannot make unlimited information readable within a small area. Dense lettering, weak contrast, and an overcrowded layout can still create problems. Review the whole patch as well as any close-up: a letter visible under magnification may be difficult to recognize when the garment is worn.</p>
 
@@ -59,7 +58,6 @@ export const wovenVsEmbroideredPatchesArticleHtml = String.raw`
       <p>Embroidery remains a strong choice when raised texture contributes to the intended appearance and the main emblem and lettering are sufficiently bold. A jacket badge built around a prominent symbol and short wordmark may suit embroidery without needing every decorative line reproduced.</p>
       <figure class="blog-article-image blog-article-natural-image">
         <img src="/assets/images/embroidered-patch-raised-texture-detail.webp" width="1672" height="941" loading="lazy" decoding="async" title="Raised Texture on an Embroidered Patch" alt="Angled close-up of lettering and raised stitches on an embroidered patch.">
-        <figcaption>A close-up of an embroidered patch shows the textured surface around its lettering and emblem. The photograph illustrates the appearance a buyer may want to retain.</figcaption>
       </figure>
       <p>The presence of a small tagline does not automatically disqualify the design. What matters is whether the required wording can remain readable within an acceptable layout.</p>
       <p>If the customer prefers a textured surface, establish how much flexibility exists in the dimensions and secondary artwork. Changes to an established wordmark need particular care: a clearer but substantially altered logo may not meet the brand’s requirements.</p>
