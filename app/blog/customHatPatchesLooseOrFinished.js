@@ -8,7 +8,7 @@ export const customHatPatchesLooseOrFinished = {
   authorType: "Person",
   authorUrl: `${SITE_URL}/about/sunny-huang`,
   datePublished: "2026-10-21",
-  dateModified: "2026-10-21",
+  dateModified: "2026-10-27",
   schemaType: "BlogPosting",
   hideFooterInquiry: true,
   image: "/assets/images/custom-hat-patches-loose-vs-finished.webp",
@@ -51,17 +51,17 @@ export const customHatPatchesLooseOrFinishedArticleHtml = String.raw`
           <header class="blog-article-header">
             <a class="blog-back-link" href="/blog">Back to Blog</a>
             <h1>Custom Hat Patches: Should You Order Loose Patches or Finished Hats?</h1>
+            <figure class="blog-article-image blog-article-hero-image blog-article-natural-image">
+              <img src="/assets/images/custom-hat-patches-loose-vs-finished.webp" width="1672" height="941" fetchpriority="high" decoding="async" title="Loose Hat Patches vs Finished Patch Hats" alt="Loose embroidered patch beside a blank cap and a matching cap with the patch attached" aria-describedby="hat-patch-image-description">
+              <span id="hat-patch-image-description" hidden>A side-by-side comparison of a loose embroidered patch beside a blank cap and a matching cap with the patch attached, illustrating the difference between patch-only and finished-hat orders.</span>
+              <figcaption>Loose patch and attached-patch examples. Unique Pin supplies the patches; customers arrange hats and installation.</figcaption>
+            </figure>
             <p>A branded-cap order may start with hats already in stock, a decorator you already work with, or just a logo and a deadline. Those starting points help determine whether buying custom hat patches separately is practical or whether a finished-hat order is easier to manage.</p>
-            <p><strong>Choose loose patches when you can arrange suitable hats and installation. Consider finished patch hats when you want a supplier to coordinate both. Compare the complete cost and the date the hats must be ready to use.</strong></p>
             <p>Unique Pin supplies loose <a href="https://uccrafts.com/products/custom-patches">custom patches for hats</a> in embroidered, woven, and printed styles. Customers arrange the hats and installation.</p>
+            <div class="blog-quick-answer"><strong>Quick Answer</strong><p>Choose loose patches when you can arrange suitable hats and installation. Consider finished patch hats when you want a supplier to coordinate both. Compare the complete cost and the date the hats must be ready to use.</p></div>
           </header>
-          <figure class="blog-article-image blog-article-hero-image blog-article-natural-image">
-            <img src="/assets/images/custom-hat-patches-loose-vs-finished.webp" width="1672" height="941" fetchpriority="high" decoding="async" title="Loose Hat Patches vs Finished Patch Hats" alt="Loose embroidered patch beside a blank cap and a matching cap with the patch attached" aria-describedby="hat-patch-image-description">
-            <span id="hat-patch-image-description" hidden>A side-by-side comparison of a loose embroidered patch beside a blank cap and a matching cap with the patch attached, illustrating the difference between patch-only and finished-hat orders.</span>
-            <figcaption>Loose patch and attached-patch examples. Unique Pin supplies the patches; customers arrange hats and installation.</figcaption>
-          </figure>
           <details class="blog-mobile-toc">
-            <summary>Table of Contents</summary>
+            <summary>In This Guide</summary>
             <nav>${hatPatchContents}</nav>
           </details>
 
@@ -146,11 +146,10 @@ export const customHatPatchesLooseOrFinishedArticleHtml = String.raw`
           <div class="blog-faq">
             ${customHatPatchesLooseOrFinished.faq.map((item, index) => `<details${index === 0 ? " open" : ""}><summary><h3 id="hat-patch-question-${index + 1}">${item.question}</h3></summary><p>${index === 2 ? item.answer.replace("patch shape and dimensions", '<a href="https://uccrafts.com/blog/patch-shapes-guide">patch shape and dimensions</a>') : item.answer}</p></details>`).join("\n            ")}
           </div>
-          <hr>
-          <div class="blog-article-cta">
-            <div class="blog-cta-copy"><p>Send your artwork, quantity, hat details, any backing requirements, and required patch arrival date. Let us know whether you already have an installer. Your quotation will identify included items, additional charges, and the order total.</p></div>
+          <section class="blog-article-cta">
+            <div class="blog-cta-copy"><h2>Planning Your Loose Hat Patch Order?</h2><p>Send your artwork, quantity, hat details, any backing requirements, and required patch arrival date. Let us know whether you already have an installer. Your quotation will identify included items, additional charges, and the order total.</p></div>
             <div class="blog-cta-actions"><a class="btn btn-yellow" href="https://uccrafts.com/contact">Request a Loose Patch Quote</a></div>
-          </div>
+          </section>
         </div>
       </div>
     </article>`;

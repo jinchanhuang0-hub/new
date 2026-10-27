@@ -778,6 +778,29 @@
   object-fit: contain;
 }
 
+#woven-vs-embroidered-patches .blog-article-header > .blog-article-hero-image img,
+#custom-hat-patches-loose-or-finished .blog-article-header > .blog-article-hero-image img {
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: auto;
+  max-height: none;
+  padding: 0;
+  aspect-ratio: 1672 / 941;
+  object-fit: cover;
+}
+
+#woven-vs-embroidered-patches .blog-article > .blog-article-natural-image img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: none;
+  padding: 0;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+
 #custom-western-belt-buckles-women-retail-guide .western-buckle-finish-image img,
 #custom-western-belt-buckles-women-retail-guide .western-buckle-sample-image img,
 #custom-western-belt-buckles-women-retail-guide .western-buckle-packaging-image img {

@@ -380,6 +380,17 @@ const withBlogArticleDefaults = (article) => {
 export const buildBlogAuthorSchema = () => ({ ...DEFAULT_BLOG_AUTHOR_SCHEMA });
 
 const blogArticleData = {
+  "woven-vs-embroidered-patches": {
+    title: "Woven vs Embroidered Patches: Small Text & Logos",
+    headline: "Woven vs Embroidered Patches: What If Your Logo Has Small Text?",
+    description:
+      "Compare woven vs embroidered patches for small text and detailed logos. Learn when to enlarge, simplify or change patch type for your branded apparel order.",
+    datePublished: "2026-10-27",
+    dateModified: "2026-10-27",
+    schemaType: "BlogPosting",
+    image: "/assets/images/woven-vs-embroidered-patches-featured.webp",
+    hideFooterInquiry: true,
+  },
   "custom-cufflinks-logo-layout": {
     title: "Custom Cufflinks: Logo Layout, Shape and Fit on the Cuff",
     headline: "Custom Cufflinks: How Your Logo Works on the Cuff",
@@ -796,7 +807,7 @@ const blogArticleData = {
     author: "Sunny Huang",
     authorType: "Person",
     datePublished: "2026-08-27",
-    dateModified: "2026-08-27",
+    dateModified: "2026-10-27",
     schemaType: "BlogPosting",
     faq: [
       {
@@ -1368,7 +1379,7 @@ export const blogArticles = Object.fromEntries(
     schemaType: "BlogPosting",
     image: "/assets/images/embroidered-patches-pilot-order.webp",
     datePublished: "2026-09-12",
-    dateModified: "2026-09-12",
+    dateModified: "2026-10-27",
   }],
   ["custom-medal-design-proof-checklist", {
     title: "Custom Medal Design: Artwork Approval Checklist",

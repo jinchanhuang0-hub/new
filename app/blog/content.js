@@ -7,6 +7,7 @@ import { customBeltBuckleDesignGuideArticleHtml, customBeltBuckleDesignGuideTitl
 import { keychainAttachmentsGuideArticleHtml } from "./keychainAttachmentsGuide";
 import { memorialChallengeCoinsGuideArticleHtml } from "./memorialChallengeCoinsGuide";
 import { patchShapesGuideArticleHtml } from "./patchShapesGuide";
+import { wovenVsEmbroideredPatchesArticleHtml } from "./wovenVsEmbroideredPatches";
 import { customChristmasOrnamentsGuideArticleHtml } from "./customChristmasOrnamentsGuide";
 import { lapelPinAttachmentsGuideArticleHtml } from "./lapelPinAttachmentsGuide";
 import { corporateChallengeCoinsEmployeeRecognitionArticleHtml } from "./corporateChallengeCoinsEmployeeRecognition";
@@ -73,6 +74,15 @@ export const blogHtml = String.raw`
           <button type="button" data-blog-category="Uncategorized">Uncategorized</button>
         </div>
         <div class="blog-card-grid">
+          <a class="blog-feature-card" href="/blog/woven-vs-embroidered-patches" data-blog-category="Patches" aria-label="Read Woven vs Embroidered Patches: What If Your Logo Has Small Text?">
+            <img src="/assets/images/woven-vs-embroidered-patches-featured.webp" width="1672" height="941" title="Woven and Embroidered Patch Samples" alt="Woven and embroidered patch samples side by side on a wooden worktable">
+            <div class="blog-feature-body">
+              <div class="blog-feature-meta"><span>Custom Patches</span><span>Buyer Guide</span></div>
+              <h2>Woven vs Embroidered Patches: What If Your Logo Has Small Text?</h2>
+              <p>Compare woven and embroidered patches for logos with small text, and decide whether to adjust the artwork, enlarge the patch, or change the finish.</p>
+              <span class="blog-feature-link">Read More</span>
+            </div>
+          </a>
           <a class="blog-feature-card" href="/blog/custom-navy-belt-buckles-uniform-keepsakes" data-blog-category="Custom Belt Buckle" aria-label="Read Custom Navy Belt Buckles: Uniform Wear or Unit Keepsakes?">
             <img src="/assets/images/custom-navy-belt-buckle-unit-keepsake.webp" width="1043" height="587" title="Custom Navy Belt Buckle for Unit Keepsakes" alt="Front view of a Navy-themed commemorative belt buckle on a tabletop">
             <div class="blog-feature-body"><div class="blog-feature-meta"><span>Custom Belt Buckle</span><span>Buyer Guide</span></div><h2>Custom Navy Belt Buckles: Uniform Wear or Unit Keepsakes?</h2><p>Compare uniform wear and unit keepsakes when ordering custom Navy belt buckles, with practical checks for belt fit, unit wording, dates and artwork permissions.</p><span class="blog-feature-link">Read More</span></div>
@@ -476,6 +486,7 @@ export const blogHtml = String.raw`
     ${customMetalKeychainSizeAttachmentGuideArticleHtml}
     ${memorialChallengeCoinsGuideArticleHtml}
     ${patchShapesGuideArticleHtml}
+    ${wovenVsEmbroideredPatchesArticleHtml}
     ${customBeltBuckleDesignGuideArticleHtml}
     ${customNavyBeltBucklesUniformKeepsakesArticleHtml}
     ${customChristmasOrnamentsGuideArticleHtml}
