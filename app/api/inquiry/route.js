@@ -1,10 +1,12 @@
 import nodemailer from "nodemailer";
 import path from "node:path";
+import { randomUUID } from "node:crypto";
 
 export const runtime = "nodejs";
 
 const inquiryTo = process.env.INQUIRY_TO || "ceo@chinauniquepin.com";
-const maxAttachmentBytes = 10 * 1024 * 1024;
+const maxTotalAttachmentBytes = 4 * 1024 * 1024;
+const attachmentSizeMessage = "Attachments must total 4 MB or less. Remove attachments and submit your inquiry again, then email the original design files to our sales team when they contact you.";
 const rateLimitWindowMs = 10 * 60 * 1000;
 const rateLimitMaxRequests = 5;
 const rateLimitStore = globalThis.__uniquePinInquiryRateLimit || new Map();
@@ -155,9 +157,9 @@ export async function POST(request) {
   }
 
   const contentLength = Number(request.headers.get("content-length") || 0);
-  if (contentLength > 4 * 1024 * 1024 + 128 * 1024) {
+  if (contentLength > maxTotalAttachmentBytes + 128 * 1024) {
     return Response.json(
-      { message: "Attachments must total 4 MB or less. Please compress your files." },
+      { message: attachmentSizeMessage },
       { status: 413 },
     );
   }
@@ -214,18 +216,11 @@ export async function POST(request) {
       { status: 400 },
     );
   }
-  if (uploads.reduce((total, upload) => total + upload.size, 0) > 4 * 1024 * 1024) {
-    return Response.json({ message: "Attachments must total 4 MB or less. Please compress your files." }, { status: 413 });
+  if (uploads.reduce((total, upload) => total + upload.size, 0) > maxTotalAttachmentBytes) {
+    return Response.json({ message: attachmentSizeMessage }, { status: 413 });
   }
   const attachments = [];
   for (const upload of uploads) {
-    if (upload.size > maxAttachmentBytes) {
-      return Response.json(
-        { message: "Uploaded file is larger than 10MB. Please send a smaller file." },
-        { status: 400 },
-      );
-    }
-
     const originalName = upload.name || "";
     const extension = path.extname(originalName).toLowerCase();
     const rule = uploadRules[extension];
@@ -253,9 +248,11 @@ export async function POST(request) {
     });
   }
 
+  const inquiryId = randomUUID();
   const subjectProduct = fields.product || "Custom Metal Crafts";
   const subject = `New inquiry from ${fields.name} - ${subjectProduct}`;
   const rows = [
+    ["Inquiry ID", inquiryId],
     ["Name", fields.name],
     ["Email", fields.email],
     ["Country / Region", fields.country],
@@ -281,18 +278,22 @@ export async function POST(request) {
     .map(([label, value]) => `${label}: ${value}`)
     .join("\n");
 
-  await createTransporter().sendMail({
-    from: process.env.SMTP_FROM || process.env.SMTP_USER,
-    to: inquiryTo,
-    replyTo: fields.email,
-    subject,
-    text,
-    html: `
-      <h2 style="font-family:Arial,sans-serif;color:#0b356d;">New website inquiry</h2>
-      <table style="border-collapse:collapse;font-family:Arial,sans-serif;font-size:14px;color:#1d2a3a;">${htmlRows}</table>
-    `,
-    attachments,
-  });
+  try {
+    await createTransporter().sendMail({
+      from: process.env.SMTP_FROM || process.env.SMTP_USER,
+      to: inquiryTo,
+      replyTo: fields.email,
+      subject,
+      text,
+      html: `
+        <h2 style="font-family:Arial,sans-serif;color:#0b356d;">New website inquiry</h2>
+        <table style="border-collapse:collapse;font-family:Arial,sans-serif;font-size:14px;color:#1d2a3a;">${htmlRows}</table>
+      `,
+      attachments,
+    });
+  } catch {
+    return Response.json({ message: "Inquiry could not be sent. Please try again later." }, { status: 502 });
+  }
 
-  return Response.json({ message: "Inquiry sent successfully." });
+  return Response.json({ message: "Inquiry sent successfully.", success: true, inquiry_id: inquiryId });
 }

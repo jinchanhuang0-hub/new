@@ -224,7 +224,6 @@ export const productItemCategoryKey = {
   "celtic-knot-antique-silver-belt-buckle": "buckles",
   "united-states-eagle-flag-belt-buckle": "buckles",
   "australia-horse-relief-belt-buckle": "buckles",
-  "kowow-star-enamel-belt-buckle": "buckles",
   "blue-knights-mc-antique-belt-buckle": "buckles",
   "sunflower-horse-western-belt-buckle": "buckles",
   "california-highway-patrol-western-belt-buckle": "buckles",
@@ -381,6 +380,77 @@ const withBlogArticleDefaults = (article) => {
 export const buildBlogAuthorSchema = () => ({ ...DEFAULT_BLOG_AUTHOR_SCHEMA });
 
 const blogArticleData = {
+  "woven-vs-embroidered-patches": {
+    title: "Woven vs Embroidered Patches: Small Text & Logos",
+    headline: "Woven vs Embroidered Patches: What If Your Logo Has Small Text?",
+    description:
+      "Compare woven vs embroidered patches for small text and detailed logos. Learn when to enlarge, simplify or change patch type for your branded apparel order.",
+    datePublished: "2026-10-27",
+    dateModified: "2026-10-27",
+    schemaType: "BlogPosting",
+    image: "/assets/images/woven-vs-embroidered-patches-featured.webp",
+    hideFooterInquiry: true,
+  },
+  "custom-cufflinks-logo-layout": {
+    title: "Custom Cufflinks: Logo Layout, Shape and Fit on the Cuff",
+    headline: "Custom Cufflinks: How Your Logo Works on the Cuff",
+    description:
+      "Explore custom cufflink shapes, logo layouts and rear fittings. See how lettering and design work on a shirt cuff for corporate gifts and branded accessories.",
+    datePublished: "2026-10-13",
+    dateModified: "2026-10-13",
+    image: "/assets/images/custom-cufflinks-letter-face-shaped-design.webp",
+    schemaType: "BlogPosting",
+    hideFooterInquiry: true,
+  },
+  "custom-pet-tags": {
+    title: "Custom Pet Tags: Bulk Personalization for Pet Brands",
+    headline: "Custom Pet Tags: One Brand Design, Different Pet Details",
+    description:
+      "Plan custom pet tags with one brand design and different names, phone numbers or QR codes. Review layouts, finishes and bulk order data before requesting a quote.",
+    author: "Sunny Huang",
+    authorType: "Person",
+    authorUrl: DEFAULT_BLOG_AUTHOR_SCHEMA.url,
+    datePublished: "2026-10-09",
+    dateModified: "2026-10-09",
+    image: "/assets/images/custom-pet-tags-different-names.webp",
+    schemaType: "BlogPosting",
+    hideFooterInquiry: true,
+  },
+  "custom-metal-bookmarks-buying-guide": {
+    title: "Custom Metal Bookmarks: Design & Bulk Buying Guide",
+    headline: "How to Choose Custom Metal Bookmarks for Retail and Branded Gifts",
+    description:
+      "Choosing custom metal bookmarks for retail or branded gifts? Compare formats, thickness, artwork, packaging and sample checks before placing a bulk order.",
+    author: "Sunny Huang",
+    authorType: "Person",
+    datePublished: "2026-10-08",
+    dateModified: "2026-10-08",
+    image: "/assets/images/custom-metal-bookmarks-buying-guide.webp",
+    schemaType: "BlogPosting",
+    hideFooterInquiry: true,
+    faq: [
+      {
+        question: "Can one metal bookmark combine printing and cutouts?",
+        answer:
+          "You can request both. Identify the printed and open areas separately, and have the supplier assess print placement around openings before confirming the combination.",
+      },
+      {
+        question: "Can I use the same artwork on both sides?",
+        answer:
+          "Yes, subject to process suitability. Define the orientation when the bookmark is turned over, and confirm that the quoted price includes the requested treatment on both sides.",
+      },
+      {
+        question: "Can a small trial order use the same design as a later bulk order?",
+        answer:
+          "It can use the approved design and specifications. Keep the version reference, record changes and reconfirm pricing; trial and bulk orders may have different unit and setup costs.",
+      },
+      {
+        question: "What if I have artwork but no final size or material?",
+        answer:
+          "Send the intended use, target book dimensions and appearance references. Ask for options, then agree on the specifications before production.",
+      },
+    ],
+  },
   "custom-bottle-opener-keychains-event-order-guide": {
     title: "Custom Bottle Opener Keychains: Event Ordering Guide",
     headline: "Custom Bottle Opener Keychains: Planning an Event Giveaway Order",
@@ -525,37 +595,32 @@ const blogArticleData = {
     hideFooterInquiry: true,
   },
   "custom-turkey-trot-medals-guide": {
-    title: "Custom Turkey Trot Medals: Race Director Planning Guide",
-    headline: "Custom Turkey Trot Medals: A Planning Guide for Race Directors",
+    title: "Custom Turkey Trot Medals: One Design or Separate Versions?",
+    headline: "How to Choose Turkey Trot Medals for a 5K and Kids’ Run",
     description:
-      "Plan custom turkey trot medals for your 5K and kids’ run. Compare medal versions, sponsor logo placement, artwork approval and delivery checkpoints.",
+      "Compare shared and separate Turkey Trot medal designs for your 5K and kids’ run. Review wording, ribbon options and cost differences before requesting a quote.",
     image: "/assets/images/custom-turkey-trot-medals-guide.webp",
     author: "Sunny Huang",
     authorType: "Person",
     datePublished: "2026-09-15",
-    dateModified: "2026-09-15",
+    dateModified: "2026-10-19",
     schemaType: "BlogPosting",
     hideFooterInquiry: true,
     faq: [
       {
-        question: "Can a small community race order custom medals?",
+        question: "Can a small community Turkey Trot order custom medals?",
         answer:
-          "Yes. Unique Pin offers custom medals with no minimum order quantity. For designs requiring a custom mold, smaller orders typically carry a higher tooling cost per medal. Share your quantities and specifications for a quote.",
+          "Send the quantity for each version so the design and order requirements can be reviewed together. For designs requiring a custom mold, the tooling charge is spread across fewer pieces in a smaller order, which can increase the cost per medal. Ask for the complete quotation before deciding between shared and separate versions.",
       },
       {
-        question: "Can we start with an event logo or a sketch?",
+        question: "Can we increase the quantity after approving the order?",
         answer:
-          "Yes. Unique Pin provides free design assistance and a digital proof. Include event wording, race categories, sponsor requirements, and ribbon preferences so the proposed design reflects the order.",
+          "Contact the supplier before promising extra medals. Whether the quantity can be increased depends on the production stage, additional quantity and required arrival date. If another production batch is needed, its price and delivery schedule must be confirmed separately.",
       },
       {
-        question: "Can we request a physical sample?",
+        question: "Can we request a quote before the design is finished?",
         answer:
-          "A physical sample can be arranged. Specify whether you also need the proposed ribbon and packaging included; sample costs and lead time depend on the requirements.",
-      },
-      {
-        question: "When should we order Turkey Trot medals?",
-        answer:
-          "Begin when your event requirements are clear enough to discuss. Agree on a schedule working backward from the required arrival date, including approvals, any sample review, production, and shipping.",
+          "Yes. Start with your event logo or reference image, estimated quantities, required wording and arrival date. Identify anything still undecided. The quotation should state the specifications it assumes, with any later design changes reviewed before production.",
       },
     ],
   },
@@ -596,13 +661,39 @@ const blogArticleData = {
     title: "Corporate Challenge Coins for Employee Recognition",
     headline: "Corporate Challenge Coins: How to Build an Employee Recognition Program",
     description:
-      "Learn how to build a fair employee recognition program with corporate challenge coins, from award criteria and coin design to presentation and review.",
+      "Plan corporate challenge coins for employee awards, service milestones and team achievements. Compare shared designs, personalization, quantities and reorders.",
     author: "Sunny Huang",
     authorType: "Person",
     datePublished: "2026-09-04",
-    dateModified: "2026-09-04",
+    dateModified: "2026-10-24",
     image: "/assets/images/corporate-challenge-coins-employee-recognition.webp",
     schemaType: "BlogPosting",
+    inquiryHeading: "Request a Quote for Employee Recognition Coins",
+    inquiryDescription:
+      "Tell us what the coins will recognize, the estimated quantity, any personalization needs and the presentation date. Share your artwork or a reference image and the delivery destination. If the design or finish is still undecided, include what you already know so we can discuss suitable options.",
+    inquiryButtonLabel: "Request a Quote",
+    faq: [
+      {
+        question: "What should an employee recognition coin include?",
+        answer:
+          "Include a clear company or program identity and the achievement, value or milestone being recognized. Add a name, date or number only when it has a defined purpose. Keep longer explanations on a presentation card or accompanying message so the coin remains readable.",
+      },
+      {
+        question: "Should employee names go on the coin or a presentation card?",
+        answer:
+          "A personalized card can explain an individual contribution while allowing the coin design to remain reusable. Adding a name to the coin creates an individually assigned piece and requires confirmation of the recipient list, layout and suitable production method. Choose according to how the awards will be presented and managed.",
+      },
+      {
+        question: "Can one design be used for different awards or service milestones?",
+        answer:
+          "Yes. A program can retain a shared visual identity while using a card or selected design changes to distinguish awards. If award names or service years appear on the coin itself, confirm each version's artwork, quantity and production requirements before ordering.",
+      },
+      {
+        question: "How early should a company order recognition coins?",
+        answer:
+          "Our reference lead times are 5–7 working days for samples and 12–15 working days for production. Confirm the schedule for the specific order, allowing for internal approvals, recipient-list checks and shipping. The required arrival date and destination should be included in the initial brief.",
+      },
+    ],
   },
   "lapel-pin-attachments-guide": {
     title: "Lapel Pin Attachments: 12 Backings and Accessories Guide",
@@ -639,80 +730,67 @@ const blogArticleData = {
     ],
   },
   "custom-christmas-ornaments-guide": {
-    title: "Custom Christmas Ornaments for Corporate Gifts and Events",
-    headline: "Custom Christmas Ornaments for Corporate Gifts, Holiday Events and Seasonal Merchandise",
+    title: "Custom Metal Christmas Ornaments: Bulk Buying Guide",
+    headline: "How to Choose Custom Metal Christmas Ornaments",
     description:
-      "Plan custom metal Christmas ornaments for corporate gifts, employee recognition, holiday events and seasonal merchandise. Explore design, packaging and ordering options.",
+      "Plan custom metal Christmas ornaments for retail, fundraising and gifts. Compare design versions, hanging options and packaging before requesting a quote.",
     image: "/assets/images/custom-christmas-ornaments-corporate-gifts.webp",
     author: "Sunny Huang",
     authorType: "Person",
     datePublished: "2026-09-01",
-    dateModified: "2026-09-01",
+    dateModified: "2026-10-19",
     schemaType: "BlogPosting",
     faq: [
       {
-        question: "What makes a good corporate Christmas ornament?",
+        question: "Can one ornament design be used with different packaging?",
         answer:
-          "A good corporate ornament has a clear purpose, a design that reflects the occasion or brand, and packaging appropriate for the recipient. It does not need to be overly detailed to feel meaningful.",
+          "One shared ornament design can be proposed with different packaging combinations. List the quantity for each combination and confirm that the hanger, card or insert fits the selected pack. Ask the quotation to identify packaging and assembly costs separately where applicable.",
       },
       {
-        question: "Can custom Christmas ornaments include a company logo?",
+        question: "Can names or years vary across the order?",
         answer:
-          "Yes. A logo can be used as a central element, incorporated into a custom shape or paired with restrained seasonal graphics. The final approach should keep small details legible.",
+          "Separate changes shared by a batch from details that vary on every piece. Provide the proposed text, location and quantity for each version. The production or decoration method, setup requirements and approval process must be reviewed before individual personalization is confirmed.",
       },
       {
-        question: "What hanging options are available for metal Christmas ornaments?",
+        question: "Can I request a quote before the design is finished?",
         answer:
-          "Common options include ribbon loops, cords, small metal hanging rings and keychain-style split rings. Choose based on whether the item is intended for display, gifting or everyday use.",
-      },
-      {
-        question: "Can ornaments be packed for employee or client gifts?",
-        answer:
-          "Yes. Options may include protective bags, backing cards, velvet pouches and presentation boxes. The packaging should be selected according to quantity, budget and presentation needs.",
-      },
-      {
-        question: "What information is needed for a custom ornament quote?",
-        answer:
-          "Provide artwork or a reference, quantity, size, finish, hanging option, packaging needs, required delivery date and shipping destination. These details allow for a more accurate recommendation and quotation.",
+          "Yes. Send the intended use, estimated quantity, a logo or reference image, delivery destination and required arrival date. Mark undecided details clearly so the quotation can state its assumptions and identify what needs approval before production.",
       },
     ],
   },
   "how-to-design-a-custom-belt-buckle": {
-    title: "How to Design a Custom Belt Buckle: 9 Key Decisions",
-    headline: "How to Design a Custom Belt Buckle: 9 Decisions Before Production",
+    title: "How to Design a Custom Belt Buckle: Size, Artwork & Fit",
+    headline: "How to Design a Custom Belt Buckle: Size, Artwork & Fit",
     description:
-      "Learn how to design a custom belt buckle by confirming the belt, size, zinc alloy relief, finish, color and hinge-and-hook attachment.",
+      "Plan a custom belt buckle with practical guidance on artwork, dimensions, belt fit, metal finishes and proof details for brands, distributors and event buyers.",
+    excerpt:
+      "Practical guidance on belt buckle dimensions, artwork priorities, relief, finishes and belt compatibility for custom manufacturing projects.",
     image: "/assets/images/custom-plate-belt-buckle-front.webp",
     author: "Sunny Huang",
     authorType: "Person",
     datePublished: "2026-08-28",
-    dateModified: "2026-08-28",
+    dateModified: "2026-10-26",
     schemaType: "BlogPosting",
     faq: [
       {
-        question: "How do I design a custom belt buckle?",
+        question: "Can I start with a sketch or reference photo?",
         answer:
-          "Begin with the intended use and belt specifications. Then confirm the size, artwork hierarchy, relief, finish, color and back attachment before approving the digital proof.",
+          "Yes. Provide the sketch or image with the exact wording and a note identifying the features you want to retain. A reference can begin the discussion, although dimensions, artwork details and the attachment may still need clarification.",
       },
       {
-        question: "How can I make sure the buckle fits my belt?",
+        question: "How do I know whether the buckle will fit my belt?",
         answer:
-          "Provide the belt width, thickness and photos of its connection area. The hinge, hook and available clearance should be reviewed against those specifications.",
+          "Provide the actual belt measurements and photographs of its connection. Review them against the proposed rear attachment. Where compatibility remains uncertain, assess the intended belt and buckle together before confirming fit.",
       },
       {
-        question: "Is 2D or 3D better for a logo buckle?",
+        question: "Can I combine 2D lettering with a 3D design?",
         answer:
-          "2D relief usually suits clean logos, lettering and defined color areas. 3D relief is useful for rounded, sculptural subjects. A combined design may work when the central motif needs depth but the wording needs clear levels.",
+          "Yes, subject to artwork review. Defined lettering can accompany a sculpted central image. The layout needs enough separation for both to remain understandable, and the proof should identify the different relief treatments.",
       },
       {
-        question: "Can the buckle combine enamel and an antique finish?",
+        question: "Can I review a physical sample before bulk production?",
         answer:
-          "Yes, a design can use soft enamel in selected areas while retaining an antique metal effect elsewhere, subject to artwork review. The proof should clearly identify colored and exposed metal areas.",
-      },
-      {
-        question: "Can I order a sample before bulk production?",
-        answer:
-          "A physical sample can be produced, and photos or video may be provided for review. Sample cost and timing depend on the design and should be confirmed with the quotation.",
+          "A physical sample can be arranged. Confirm its cost, timing and review method with the quotation. If sample approval is part of the order, make that stage explicit before authorizing bulk production.",
       },
     ],
   },
@@ -729,7 +807,7 @@ const blogArticleData = {
     author: "Sunny Huang",
     authorType: "Person",
     datePublished: "2026-08-27",
-    dateModified: "2026-08-27",
+    dateModified: "2026-10-27",
     schemaType: "BlogPosting",
     faq: [
       {
@@ -986,22 +1064,22 @@ const blogArticleData = {
     title: "Metal Keychain Size Guide: Dimensions and Thickness",
     headline: "Custom Metal Keychain Size, Thickness and Measurement Guide",
     description:
-      "Compare metal keychain sizes in mm, body thickness and finished length, with practical checks for artwork, connection points, hardware and samples.",
+      "Learn how to specify metal keychain body dimensions, thickness, finished length and attachment-hole fit in mm and inches for accurate sourcing and sampling.",
     author: "Sunny Huang",
     authorType: "Person",
     datePublished: "2026-08-17",
-    dateModified: "2026-09-21",
+    dateModified: "2026-10-10",
     image: "/assets/images/custom-metal-keychain-size-attachment-guide.webp",
     faq: [
       {
         question: "What is the standard size of a custom metal keychain?",
         answer:
-          "Published supplier options span roughly 19–76 mm for some custom enamel keychains, but those options are not a universal standard or an industry average. Use the planning ranges above as comparison points, then confirm body dimensions separately from the overall finished length.",
+          "There is no universal standard or reliable industry average for a custom metal keychain. Choose body dimensions that keep the artwork readable at actual size, then state whether each value describes a diameter, body length and width, or the overall assembled length.",
       },
       {
         question: "How thick should a metal keychain be?",
         answer:
-          "Some flat stamped or enamel designs may be discussed at approximately 1.5-2.0 mm during early quotation. That reference does not apply to every design. Die-cast, deep-relief, 3D, bottle-opener and moving structures may need a different body thickness after artwork review.",
+          "Thickness depends on the body dimensions, metal, openings, connection point and construction. Flat, sculpted, functional and moving designs should not share an assumed value. Ask the supplier to recommend body thickness after artwork review and specify maximum relief height separately.",
       },
       {
         question: "What is the difference between body size and finished length?",
@@ -1009,9 +1087,9 @@ const blogArticleData = {
           "Body size describes the custom metal component. Overall finished length is the end-to-end length of the complete assembled keychain in an agreed position, including rings, chains, hooks or clasps. Record both separately on the quotation or approval drawing.",
       },
       {
-        question: "Which keychain attachment is the most practical?",
+        question: "How do I choose a keychain hole size?",
         answer:
-          "A split ring is often practical for direct key attachment, while a lobster clasp or swivel hook can be easier for bags and removable merchandise. The best choice depends on handling, orientation, appearance, package size and the complete assembly.",
+          "Match the hole inside diameter to the connector wire diameter and connection method, then check whether the connector can be inserted, closed and rotated without binding. Also review the metal around the hole and the direction the assembled body hangs. A hole larger than the wire is not, by itself, proof of fit or strength.",
       },
       {
         question: "Should buyers approve a physical sample before mass production?",
@@ -1172,37 +1250,35 @@ const blogArticleData = {
     ],
   },
   "how-custom-challenge-coins-are-made": {
-    title: "How Are Custom Challenge Coins Made? A Step-by-Step Manufacturing Guide",
+    title: "How Are Challenge Coins Made? Step-by-Step Process",
+    headline: "How Are Custom Challenge Coins Made?",
     description:
-      "Learn how custom challenge coins are made, from artwork and tooling to die-striking, finishing, color filling, quality inspection and shipment preparation.",
+      "See how custom challenge coins are made, from dies and metal forming to plating, enamel and inspection, plus what buyers should confirm before production.",
     datePublished: "2026-07-24",
-    dateModified: "2026-09-21",
+    dateModified: "2026-10-24",
+    hideModifiedDate: true,
     image: "/assets/images/blog-how-challenge-coins-made-card-v3.webp",
+    hideFooterInquiry: true,
     faq: [
       {
         question: "How long does it take to manufacture challenge coins?",
         answer:
-          "Manufacturing time depends on artwork approval, tooling complexity, quantity, finish, color work, packing method, and shipping route. Share the required delivery date at the first inquiry.",
-      },
-      {
-        question: "What artwork files should I submit?",
-        answer:
-          "Vector files such as AI, PDF, EPS, or SVG are helpful, but a logo, sketch, reference image, or clear concept can also be used for initial review.",
+          "Our reference lead times are 5–7 working days for samples and 12–15 working days for production. The start date and schedule are confirmed for each order based on its requirements, quantity and finish. Shipping time is confirmed separately.",
       },
       {
         question: "Can both sides of a challenge coin be customized?",
         answer:
-          "Yes. Many custom challenge coins use both front and back designs. The back side can include a motto, date, unit name, event name, serial number, QR code, or secondary logo.",
+          "Yes. The front and back can carry different artwork, wording or dates. Show both sides in the production proof and confirm their orientation, raised and recessed areas, and any color or engraving requirements.",
       },
       {
-        question: "What metals are challenge coins made from?",
+        question: "Can the design be changed after tooling starts?",
         answer:
-          "Common base metals include brass, iron and zinc alloy. The best choice depends on whether the design will be die-struck or die-cast, as well as its shape, relief depth, required weight and finish. Gold, silver, copper and black nickel often refer to plating rather than solid base metal.",
+          "Changes may still be possible, but their effect depends on what is being changed. Revisions to the outline or relief may require tooling adjustments or replacement tooling. Confirm any additional cost and schedule changes before proceeding.",
       },
       {
-        question: "What is the difference between die-struck and die-cast challenge coins?",
+        question: "Do all challenge coins need enamel color?",
         answer:
-          "Die-struck coins are formed by pressing engraved dies into a metal blank and are well suited to traditional shapes and crisp relief. Die-cast coins are formed in a casting mold and are often selected for deep 3D relief, cutouts and irregular shapes.",
+          "No. A challenge coin can use raised and recessed metal details with a selected plated finish, without enamel filling. Whether to add color depends on the artwork, contrast and intended appearance.",
       },
     ],
   },
@@ -1303,7 +1379,7 @@ export const blogArticles = Object.fromEntries(
     schemaType: "BlogPosting",
     image: "/assets/images/embroidered-patches-pilot-order.webp",
     datePublished: "2026-09-12",
-    dateModified: "2026-09-12",
+    dateModified: "2026-10-27",
   }],
   ["custom-medal-design-proof-checklist", {
     title: "Custom Medal Design: Artwork Approval Checklist",

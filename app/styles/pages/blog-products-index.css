@@ -382,6 +382,9 @@
 
 .blog-pagination button,
 .blog-pagination a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   min-width: 42px;
   height: 42px;
   padding: 0 15px;
@@ -390,6 +393,7 @@
   background: #fff;
   color: var(--navy);
   font-weight: 900;
+  text-decoration: none;
   cursor: pointer;
   box-shadow: 0 10px 22px rgba(11, 47, 99, 0.06);
   transition: border-color 180ms ease, background 180ms ease, color 180ms ease, box-shadow 180ms ease;
@@ -1743,5 +1747,3 @@
     font-size: 14px;
   }
 }
-
-.blog-pagination a { display: inline-flex; align-items: center; justify-content: center; text-decoration: none; }

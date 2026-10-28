@@ -3,10 +3,11 @@ import { footerHtml } from "../components/footerHtml";
 import { siteHeaderHtml } from "../components/siteHeaderHtml";
 import { customMetalKeychainMaterialsArticleHtml } from "./customMetalKeychainMaterials";
 import { customMetalKeychainSizeAttachmentGuideArticleHtml } from "./customMetalKeychainSizeAttachmentGuide";
-import { customBeltBuckleDesignGuideArticleHtml } from "./customBeltBuckleDesignGuide";
+import { customBeltBuckleDesignGuideArticleHtml, customBeltBuckleDesignGuideTitleHtml, customBeltBuckleDesignGuideExcerpt } from "./customBeltBuckleDesignGuide";
 import { keychainAttachmentsGuideArticleHtml } from "./keychainAttachmentsGuide";
 import { memorialChallengeCoinsGuideArticleHtml } from "./memorialChallengeCoinsGuide";
 import { patchShapesGuideArticleHtml } from "./patchShapesGuide";
+import { wovenVsEmbroideredPatchesArticleHtml } from "./wovenVsEmbroideredPatches";
 import { customChristmasOrnamentsGuideArticleHtml } from "./customChristmasOrnamentsGuide";
 import { lapelPinAttachmentsGuideArticleHtml } from "./lapelPinAttachmentsGuide";
 import { corporateChallengeCoinsEmployeeRecognitionArticleHtml } from "./corporateChallengeCoinsEmployeeRecognition";
@@ -26,6 +27,15 @@ import {
 import { typesOfBottleOpenersForBrandedMerchandiseArticleHtml } from "./typesOfBottleOpenersForBrandedMerchandise";
 import { customBottleOpenerKeychainsEventOrderGuideArticleHtml } from "./customBottleOpenerKeychainsEventOrderGuide";
 import { customMetalFridgeMagnetsMuseumSouvenirShopArticleHtml } from "./customMetalFridgeMagnetsMuseumSouvenirShop";
+import { customMetalBookmarksBuyingGuideArticleHtml } from "./customMetalBookmarksBuyingGuide";
+import { customPetTagsArticleHtml } from "./customPetTags";
+import { customCufflinksLogoLayoutArticleHtml } from "./customCufflinksLogoLayout";
+import { customWoodenMedalDesignsArticleHtml } from "./customWoodenMedalDesigns";
+import { customGraduationMedalsSchoolAwardsArticleHtml } from "./customGraduationMedalsSchoolAwards";
+import { yearsOfServiceLapelPinsArticleHtml } from "./yearsOfServiceLapelPins";
+import { customChallengeCoinsCostArticleHtml } from "./customChallengeCoinsCost";
+import { customHatPatchesLooseOrFinishedArticleHtml } from "./customHatPatchesLooseOrFinished";
+import { customNavyBeltBucklesUniformKeepsakesArticleHtml } from "./customNavyBeltBucklesUniformKeepsakes";
 
 
 export const metadata = {
@@ -59,11 +69,93 @@ export const blogHtml = String.raw`
           <button type="button" data-blog-category="Patches" data-blog-category-pinned="true">Patches</button>
           <button type="button" data-blog-category="Others" data-blog-category-pinned="true">Others</button>
           <button type="button" data-blog-category="Holidays" data-blog-category-pinned="true">Holidays</button>
-          <button type="button" data-blog-category="Custom Lanyards">Custom Lanyards</button>
-          <button type="button" data-blog-category="Custom Poker Chips">Custom Poker Chips</button>
-          <button type="button" data-blog-category="Uncategorized">Uncategorized</button>
         </div>
         <div class="blog-card-grid">
+          <a class="blog-feature-card" href="/blog/woven-vs-embroidered-patches" data-blog-category="Patches" aria-label="Read Woven vs Embroidered Patches: What If Your Logo Has Small Text?">
+            <img src="/assets/images/woven-vs-embroidered-patches-featured.webp" width="1672" height="941" title="Woven and Embroidered Patch Samples" alt="Woven and embroidered patch samples side by side on a wooden worktable">
+            <div class="blog-feature-body">
+              <div class="blog-feature-meta"><span>Custom Patches</span><span>Buyer Guide</span></div>
+              <h2>Woven vs Embroidered Patches: What If Your Logo Has Small Text?</h2>
+              <p>Compare woven and embroidered patches for logos with small text, and decide whether to adjust the artwork, enlarge the patch, or change the finish.</p>
+              <span class="blog-feature-link">Read More</span>
+            </div>
+          </a>
+          <a class="blog-feature-card" href="/blog/custom-navy-belt-buckles-uniform-keepsakes" data-blog-category="Custom Belt Buckle" aria-label="Read Custom Navy Belt Buckles: Uniform Wear or Unit Keepsakes?">
+            <img src="/assets/images/custom-navy-belt-buckle-unit-keepsake.webp" width="1043" height="587" title="Custom Navy Belt Buckle for Unit Keepsakes" alt="Front view of a Navy-themed commemorative belt buckle on a tabletop">
+            <div class="blog-feature-body"><div class="blog-feature-meta"><span>Custom Belt Buckle</span><span>Buyer Guide</span></div><h2>Custom Navy Belt Buckles: Uniform Wear or Unit Keepsakes?</h2><p>Compare uniform wear and unit keepsakes when ordering custom Navy belt buckles, with practical checks for belt fit, unit wording, dates and artwork permissions.</p><span class="blog-feature-link">Read More</span></div>
+          </a>
+          <a class="blog-feature-card" href="/blog/custom-hat-patches-loose-or-finished" data-card-image-fit="full" data-blog-category="Patches" aria-label="Read Custom Hat Patches: Should You Order Loose Patches or Finished Hats?">
+            <img src="/assets/images/custom-hat-patches-loose-vs-finished.webp" width="1672" height="941" title="Loose Hat Patches vs Finished Patch Hats" alt="Loose embroidered patch beside a blank cap and a matching cap with the patch attached">
+            <div class="blog-feature-body">
+              <div class="blog-feature-meta"><span>Custom Patches</span><span>Buyer Guide</span></div>
+              <h2>Custom Hat Patches: Should You Order Loose Patches or Finished Hats?</h2>
+              <p>Compare loose custom hat patches with finished patch hats. Check total costs, installation responsibilities, and delivery timing before placing a bulk order.</p>
+              <span class="blog-feature-link">Read More</span>
+            </div>
+          </a>
+          <a class="blog-feature-card" href="/blog/custom-challenge-coins-cost" data-blog-category="Custom Coins" aria-label="Read Custom Challenge Coin Cost: One Design or Multiple Versions?">
+            <img src="/assets/images/custom-challenge-coin-front-and-reverse.webp" width="1672" height="941" title="Custom Challenge Coin Front and Reverse" alt="Concept views of a nickel-plated challenge coin with one-color enamel on the front and an uncolored metal reverse">
+            <div class="blog-feature-body">
+              <div class="blog-feature-meta"><span>Custom Coins</span><span>Cost &amp; Version Planning</span></div>
+              <h2>Custom Challenge Coin Cost: One Design or Multiple Versions?</h2>
+              <p>Planning 250 coins for several groups? Compare one shared design with multiple reverse versions, including production costs, mold fees and packaging alternatives.</p>
+              <span class="blog-feature-link">Read More</span>
+            </div>
+          </a>
+          <a class="blog-feature-card" href="/blog/years-of-service-lapel-pins" data-card-image-fit="full" data-blog-category="Custom Lapel Pins" aria-label="Read Years of Service Lapel Pins: Should Every Milestone Look the Same?">
+            <img src="/assets/images/years-of-service-lapel-pins-5-10-20.webp" width="1672" height="941" title="Years of Service Lapel Pins for 5, 10 and 20 Years" alt="Three coordinated company service lapel pins marked 5 YEARS, 10 YEARS and 20 YEARS with a matching corporate emblem.">
+            <div class="blog-feature-body">
+              <div class="blog-feature-meta"><span>Custom Lapel Pins</span><span>Employee Recognition</span></div>
+              <h2>Years of Service Lapel Pins: Should Every Milestone Look the Same?</h2>
+              <p>Compare milestone pin designs, replacement and collection options, and annual planning for employee service awards.</p>
+              <span class="blog-feature-link">Read More</span>
+            </div>
+          </a>
+          <a class="blog-feature-card" href="/blog/custom-wooden-medal-designs" data-blog-category="Custom Medals" aria-label="Read One Logo, Three Custom Wooden Medal Designs">
+            <img src="/assets/images/four-wooden-event-medal-design-concepts.webp" width="1672" height="941" title="Illustrative Wooden Medal Designs for Different Events" alt="Four wooden medal design concepts for trail running, swimming, cycling and city running, with matching ribbons">
+            <div class="blog-feature-body">
+              <div class="blog-feature-meta"><span>Custom Medals</span><span>Design Comparison</span></div>
+              <h2>One Logo, Three Custom Wooden Medal Designs</h2>
+              <p>Compare three ways to adapt an event logo for a wooden medal, with practical guidance on color, layered construction and finished feel.</p>
+              <span class="blog-feature-link">Read More</span>
+            </div>
+          </a>
+          <a class="blog-feature-card" href="/blog/custom-graduation-medals-school-awards" data-blog-category="Custom Medals" aria-label="Read Custom Graduation Medals: One for Every Graduate or Separate Honors?">
+            <img src="/assets/images/custom-graduation-medal-school-honor-awards.webp" width="1672" height="941" title="Custom Graduation Medals for School and Honor Awards" alt="Four custom graduation medal concepts showing one shared graduate medal and three distinct school honor awards">
+            <div class="blog-feature-body">
+              <div class="blog-feature-meta"><span>Custom Medals</span><span>School Recognition</span></div>
+              <h2>Custom Graduation Medals: One for Every Graduate or Separate Honors?</h2>
+              <p>Should schools give every graduate a medal or reserve them for special honors? Compare recognition models, award designs and quantities for a graduation ceremony.</p>
+              <span class="blog-feature-link">Read More</span>
+            </div>
+          </a>
+          <a class="blog-feature-card" href="/blog/custom-cufflinks-logo-layout" data-card-image-fit="full" data-blog-category="Others" aria-label="Read Custom Cufflinks: How Your Logo Works on the Cuff">
+            <img src="/assets/images/custom-cufflinks-letter-face-shaped-design.webp" width="1600" height="900" title="Custom Cufflinks: Letter Faces and Shaped Designs" alt="Round letter cufflinks beside skull-shaped cufflinks, showing two approaches to the decorative face and outline">
+            <div class="blog-feature-body">
+              <div class="blog-feature-meta"><span>Others</span><span>Logo Layout Guide</span></div>
+              <h2>Custom Cufflinks: How Your Logo Works on the Cuff</h2>
+              <p>Explore custom cufflink shapes, logo layouts and rear fittings. See how lettering and design work on a shirt cuff for corporate gifts and branded accessories.</p>
+              <span class="blog-feature-link">Read More</span>
+            </div>
+          </a>
+          <a class="blog-feature-card" href="/blog/custom-pet-tags" data-card-image-fit="full" data-blog-category="Others" aria-label="Read Custom Pet Tags: One Brand Design, Different Pet Details">
+            <img src="/assets/images/custom-pet-tags-different-names.webp" width="1672" height="941" title="Custom Pet Tags with Different Names" alt="Three matching bone-shaped pet tags with the same brand design and the names Bella, Max and Luna.">
+            <div class="blog-feature-body">
+              <div class="blog-feature-meta"><span>Others</span><span>Personalization Guide</span></div>
+              <h2>Custom Pet Tags: One Brand Design, Different Pet Details</h2>
+              <p>Plan a bulk pet tag order with shared brand artwork, individual names and phone numbers, printed QR codes, and a clear personalization data sheet.</p>
+              <span class="blog-feature-link">Read More</span>
+            </div>
+          </a>
+          <a class="blog-feature-card" href="/blog/custom-metal-bookmarks-buying-guide" data-card-image-fit="full" data-blog-category="Others" aria-label="Read How to Choose Custom Metal Bookmarks for Retail and Branded Gifts">
+            <img src="/assets/images/custom-metal-bookmarks-buying-guide.webp" width="1536" height="1024" title="Custom Metal Bookmarks for Retail and Branded Gifts" alt="Flat and top-decorated metal bookmarks beside a paperback and backing card">
+            <div class="blog-feature-body">
+              <div class="blog-feature-meta"><span>Others</span><span>Buyer Guide</span></div>
+              <h2>How to Choose Custom Metal Bookmarks for Retail and Branded Gifts</h2>
+              <p>Compare bookmark formats, dimensions, artwork processes and packaging before ordering custom metal bookmarks for retail or branded gifts.</p>
+              <span class="blog-feature-link">Read More</span>
+            </div>
+          </a>
           <a class="blog-feature-card" href="/blog/custom-bottle-opener-keychains-event-order-guide" data-card-image-fit="full" data-blog-category="Bottle Openers" aria-label="Read Custom Bottle Opener Keychains: Planning an Event Giveaway Order">
             <img src="/assets/images/custom-bottle-opener-keychains-event-giveaways.webp" width="1536" height="1024" title="Custom Bottle Opener Keychains for Event Giveaways" alt="Custom metal bottle opener keychains beside backing cards and an event gift bag">
             <div class="blog-feature-body">
@@ -112,12 +204,12 @@ export const blogHtml = String.raw`
           <a class="blog-feature-card" href="/blog/custom-western-belt-buckles-women-retail-guide" data-blog-category="Custom Belt Buckle" aria-label="Read Custom Western Belt Buckles for Women: A Retail Buying Guide">
             <img src="/assets/images/custom-western-belt-buckles-women-collection.webp" width="1600" height="900" alt="Three western belt buckle concepts arranged for a women’s retail collection">
             <div class="blog-feature-body"><div class="blog-feature-meta"><span>Custom Belt Buckle</span></div><h2>Custom Western Belt Buckles for Women: A Retail Buying Guide</h2><p>Planning a women’s western buckle collection? Work through belt compatibility, style quantities, sample approval and packaging before placing your first order.</p><span class="blog-feature-link">Read More</span></div></a>
-          <a class="blog-feature-card" href="/blog/custom-turkey-trot-medals-guide" data-blog-category="Custom Medals,Holidays" aria-label="Read Custom Turkey Trot Medals: A Planning Guide for Race Directors">
-            <img src="/assets/images/custom-turkey-trot-medals-guide.webp" width="1600" height="900" alt="Turkey Trot medal concepts with navy and orange ribbons">
+          <a class="blog-feature-card" href="/blog/custom-turkey-trot-medals-guide" data-blog-category="Custom Medals,Holidays" aria-label="Read How to Choose Turkey Trot Medals for a 5K and Kids’ Run">
+            <img src="/assets/images/custom-turkey-trot-medals-guide.webp" width="1600" height="900" alt="Turkey-themed 5K finisher medal design with an olive-green and orange ribbon">
             <div class="blog-feature-body">
               <div class="blog-feature-meta"><span>Custom Medals</span><span>Holidays</span></div>
-              <h2>Custom Turkey Trot Medals: A Planning Guide for Race Directors</h2>
-              <p>Plan custom turkey trot medals for your 5K and kids’ run. Compare medal versions, sponsor logo placement, artwork approval and delivery checkpoints.</p>
+              <h2>How to Choose Turkey Trot Medals for a 5K and Kids’ Run</h2>
+              <p>Compare shared and separate Turkey Trot medal designs for your 5K and kids’ run. Review wording, ribbon options and cost differences before requesting a quote.</p>
               <span class="blog-feature-link">Read More</span>
             </div>
           </a>
@@ -180,7 +272,7 @@ export const blogHtml = String.raw`
             <div class="blog-feature-body">
               <div class="blog-feature-meta"><span>Custom Coins</span><span>Employee Recognition</span></div>
               <h2>Corporate Challenge Coins: How to Build an Employee Recognition Program</h2>
-              <p>Learn how to build a fair employee recognition program with corporate challenge coins, from award criteria and coin design to presentation and review.</p>
+              <p>Plan employee recognition coins by award type, shared design, personalization, quantities and reorders.</p>
               <span class="blog-feature-link">Read More</span>
             </div>
           </a>
@@ -193,21 +285,21 @@ export const blogHtml = String.raw`
               <span class="blog-feature-link">Read More</span>
             </div>
           </a>
-          <a class="blog-feature-card" href="/blog/custom-christmas-ornaments-guide" data-card-image-fit="full" data-blog-category="Holidays" aria-label="Read Custom Christmas Ornaments for Corporate Gifts, Holiday Events and Seasonal Merchandise">
-            <img src="/assets/images/custom-christmas-ornaments-corporate-gifts.webp" width="1600" height="900" alt="Custom metal Christmas ornaments for corporate gifts and holiday events">
+          <a class="blog-feature-card" href="/blog/custom-christmas-ornaments-guide" data-card-image-fit="full" data-blog-category="Holidays" aria-label="Read How to Choose Custom Metal Christmas Ornaments">
+            <img src="/assets/images/custom-christmas-ornaments-corporate-gifts.webp" width="1600" height="900" alt="Tree, snowflake, snowman and bauble ornaments with burgundy and gold-colored ribbon loops">
             <div class="blog-feature-body">
               <div class="blog-feature-meta"><span>Holidays</span><span>Buyer Guide</span></div>
-              <h2>Custom Christmas Ornaments for Corporate Gifts, Holiday Events and Seasonal Merchandise</h2>
-              <p>Plan custom metal Christmas ornaments for employee gifts, client keepsakes, holiday events, retail merchandise and fundraisers.</p>
+              <h2>How to Choose Custom Metal Christmas Ornaments</h2>
+              <p>Plan custom metal Christmas ornaments for retail, fundraising and gifts. Compare design versions, hanging options and packaging before requesting a quote.</p>
               <span class="blog-feature-link">Read More</span>
             </div>
           </a>
-          <a class="blog-feature-card" href="/blog/how-to-design-a-custom-belt-buckle" data-blog-category="Custom Belt Buckle" aria-label="Read How to Design a Custom Belt Buckle: 9 Decisions Before Production">
-            <img src="/assets/images/custom-plate-belt-buckle-front.webp?v=20260828-cover" width="1600" height="900" alt="Digital proof, back attachment and finished zinc alloy plate belt buckle">
+          <a class="blog-feature-card" href="/blog/how-to-design-a-custom-belt-buckle" data-blog-category="Custom Belt Buckle" aria-label="Read ${customBeltBuckleDesignGuideTitleHtml}">
+            <img src="/assets/images/custom-plate-belt-buckle-front.webp?v=20260828-cover" width="1600" height="900" alt="Decorative plate buckle beside a design sheet showing front, back and side views">
             <div class="blog-feature-body">
               <div class="blog-feature-meta"><span>Custom Belt Buckle</span><span>Design Guide</span></div>
-              <h2>How to Design a Custom Belt Buckle: 9 Decisions Before Production</h2>
-              <p>Prepare a belt buckle project by confirming the belt, dimensions, relief, finish, color and hinge-and-hook attachment.</p>
+              <h2>${customBeltBuckleDesignGuideTitleHtml}</h2>
+              <p>${customBeltBuckleDesignGuideExcerpt}</p>
               <span class="blog-feature-link">Read More</span>
             </div>
           </a>
@@ -328,12 +420,12 @@ export const blogHtml = String.raw`
               <span class="blog-feature-link">Read More</span>
             </div>
           </a>
-          <a class="blog-feature-card" href="/blog/how-custom-challenge-coins-are-made" data-blog-category="Custom Coins" aria-label="Read How Custom Challenge Coins Are Made">
+          <a class="blog-feature-card" href="/blog/how-custom-challenge-coins-are-made" data-blog-category="Custom Coins" aria-label="Read How Are Challenge Coins Made? Step-by-Step Process">
             <img src="/assets/images/blog-how-challenge-coins-made-card-v3.webp" width="1200" height="720" alt="three custom challenge coins with blue red and gold enamel finishes">
             <div class="blog-feature-body">
               <div class="blog-feature-meta"><span>Custom Coins</span><span>Manufacturing Guide</span></div>
-              <h2>How Are Custom Challenge Coins Made? A Step-by-Step Manufacturing Guide</h2>
-              <p>Learn the custom challenge coin manufacturing process from artwork proofing and tooling to finishing, inspection and shipment preparation.</p>
+              <h2>How Are Challenge Coins Made? Step-by-Step Process</h2>
+              <p>See how custom challenge coins are made, from dies and metal forming to plating, enamel and inspection, plus what buyers should confirm before production.</p>
               <span class="blog-feature-link">Read More</span>
             </div>
           </a>
@@ -386,11 +478,14 @@ export const blogHtml = String.raw`
       </div>
     </section>
     ${customMetalKeychainMaterialsArticleHtml}
+    ${customChallengeCoinsCostArticleHtml}
     ${keychainAttachmentsGuideArticleHtml}
     ${customMetalKeychainSizeAttachmentGuideArticleHtml}
     ${memorialChallengeCoinsGuideArticleHtml}
     ${patchShapesGuideArticleHtml}
+    ${wovenVsEmbroideredPatchesArticleHtml}
     ${customBeltBuckleDesignGuideArticleHtml}
+    ${customNavyBeltBucklesUniformKeepsakesArticleHtml}
     ${customChristmasOrnamentsGuideArticleHtml}
     ${lapelPinAttachmentsGuideArticleHtml}
     ${corporateChallengeCoinsEmployeeRecognitionArticleHtml}
@@ -407,6 +502,10 @@ export const blogHtml = String.raw`
     ${typesOfBottleOpenersForBrandedMerchandiseArticleHtml}
     ${customBottleOpenerKeychainsEventOrderGuideArticleHtml}
     ${customMetalFridgeMagnetsMuseumSouvenirShopArticleHtml}
+    ${customMetalBookmarksBuyingGuideArticleHtml}
+    ${customPetTagsArticleHtml}
+    ${customCufflinksLogoLayoutArticleHtml}
+    ${customWoodenMedalDesignsArticleHtml}
     <article id="military-challenge-coin-traditions" class="section blog-article-section">
       <div class="blog-article-shell">
         <aside class="blog-article-toc" aria-label="Article contents">
@@ -1612,191 +1711,149 @@ export const blogHtml = String.raw`
           <nav>
             <a href="#coin-production-overview">Process overview</a>
             <a href="#coin-production-materials">Materials</a>
-            <a href="#coin-production-design">Design</a>
-            <a href="#coin-production-specifications">Specifications</a>
-            <a href="#coin-production-proof">Digital proof</a>
-            <a href="#coin-production-tooling">Tooling</a>
-            <a href="#coin-production-forming">Forming</a>
+            <a href="#coin-production-preparation">Artwork and proof</a>
+            <a href="#coin-production-tooling">Step 1: Tooling</a>
+            <a href="#coin-production-forming">Step 2: Metal forming</a>
             <a href="#coin-factory-video">Factory video</a>
-            <a href="#coin-production-finishing">Finishing</a>
-            <a href="#coin-production-color">Plating and color</a>
-            <a href="#coin-production-curing">Curing</a>
-            <a href="#coin-production-inspection">Inspection</a>
-            <a href="#coin-production-packaging">Packaging</a>
-            <a href="#coin-production-methods">Production methods</a>
+            <a href="#coin-production-refining">Step 3: Surface refining</a>
+            <a href="#coin-production-finishes">Step 4: Plating and enamel</a>
+            <a href="#coin-production-inspection">Step 5: Inspection</a>
+            <a href="#coin-production-packaging">Step 6: Packing</a>
             <a href="#coin-production-faq">FAQ</a>
-            <a href="#coin-production-conclusion">Conclusion</a>
+            <a href="#coin-production-quote">Request a quote</a>
           </nav>
         </aside>
         <div class="container blog-article blog-article-with-toc">
         <header class="blog-article-header">
           <a class="blog-back-link" href="/blog">Back to Blog</a>
           <h1>How Are Custom Challenge Coins Made?</h1>
-          <p><strong>The short answer:</strong> challenge coins are commonly produced by preparing the artwork, creating a die or mold, forming the metal blank, polishing, plating, adding enamel or other finishes when required, inspecting and packaging. The exact process varies with the design, material, relief and finish.</p>
-          <p>Custom challenge coins are made through a controlled manufacturing process that turns a logo, badge, sketch, or idea into a finished metal coin. For buyers, the useful part is not only knowing the steps. It is knowing which details must be confirmed before tooling starts, because unclear artwork, weak relief, color mistakes, and late packaging changes can all affect the final order.</p>
-          <p>For related buying decisions, review our <a href="/blog/2d-vs-3d-challenge-coins">2D vs 3D challenge coin comparison</a>, <a href="/products/custom-challenge-coins">custom challenge coins</a> page, <a href="/blog/custom-metal-crafts-guide">custom metal crafts guide</a>, and <a href="/blog/custom-medals-vs-challenge-coins">custom medals vs challenge coins</a> comparison.</p>
+          <p>Custom challenge coins are made by preparing production artwork, creating dies or a casting mold, forming the metal body, refining its surfaces and applying the selected finish. Coloring, curing, inspection and packaging follow as required. At Unique Pin, iron coins are commonly die-struck, while zinc-alloy coins are die-cast. The finishing sequence varies with the selected enamel process.</p>
           <figure class="blog-article-image blog-article-hero-image">
-            <img src="/assets/images/blog-how-challenge-coins-made-hero.webp" width="1600" height="759" alt="three custom challenge coins with blue red and gold enamel finishes">
-            <figcaption>Finished custom challenge coins can combine raised metal relief, enamel color and antique finishes.</figcaption>
+            <img src="/assets/images/blog-how-challenge-coins-made-hero.webp" width="1600" height="759" alt="Three finished custom challenge coins with blue, red and gold enamel details">
           </figure>
         </header>
 
-        <h2 id="coin-production-overview">How Are Challenge Coins Made?</h2>
-        <p>Custom challenge coins move through ten main production stages, but the exact forming method depends on the base metal, shape, relief depth and approved artwork.</p>
-        <div class="blog-table-wrap" tabindex="0" role="region" aria-label="Ten-stage challenge coin manufacturing overview">
+        <h2 id="coin-production-overview">Challenge Coin Manufacturing Process at a Glance</h2>
+        <p>The steps below follow the coin from approved artwork to a packed order. Forming and finishing details depend on the chosen material and design.</p>
+        <div class="blog-table-wrap" tabindex="0" role="region" aria-label="Challenge coin manufacturing process overview">
           <table class="blog-table">
-            <thead><tr><th scope="col">Stage</th><th scope="col">What happens</th><th scope="col">What the buyer confirms</th></tr></thead>
+            <thead><tr><th scope="col">Stage</th><th scope="col">What happens</th></tr></thead>
             <tbody>
-              <tr><td>1. Design submission</td><td>Logo, text or reference artwork is reviewed</td><td>Intended use and required details</td></tr>
-              <tr><td>2. Specifications</td><td>Size, thickness, shape and quantity are confirmed</td><td>Final dimensions and order requirements</td></tr>
-              <tr><td>3. Digital proof</td><td>Production artwork defines raised, recessed and colored areas</td><td>Spelling, layout, colors and alignment</td></tr>
-              <tr><td>4. Tooling</td><td>An engraved die or casting mold is prepared</td><td>Relief depth and manufacturability</td></tr>
-              <tr><td>5. Metal forming</td><td>The coin is die-struck or die-cast</td><td>Base metal and production method</td></tr>
-              <tr><td>6. Trimming and polishing</td><td>Rough edges and surface marks are removed</td><td>Edge and surface requirements</td></tr>
-              <tr><td>7. Plating and color</td><td>Metal finish, enamel or printing is applied</td><td>Finish and Pantone references</td></tr>
-              <tr><td>8. Curing and final polishing</td><td>Color is hardened and the surface is finished</td><td>Expected surface appearance</td></tr>
-              <tr><td>9. Quality inspection</td><td>Size, alignment, color and finish are checked</td><td>Approved proof and QC requirements</td></tr>
-              <tr><td>10. Packaging and shipping</td><td>Coins are packed for distribution or presentation</td><td>Packaging, labels and deadline</td></tr>
+              <tr><td>Preparation</td><td>Artwork, dimensions, finish and the production proof are reviewed.</td></tr>
+              <tr><td>Step 1: Tooling</td><td>Dies or a casting mold translate the approved design into a forming tool.</td></tr>
+              <tr><td>Step 2: Metal forming</td><td>The coin body is die-struck or die-cast.</td></tr>
+              <tr><td>Step 3: Surface refining</td><td>Edges and surfaces are trimmed and prepared for the finish.</td></tr>
+              <tr><td>Step 4: Plating and enamel</td><td>The selected finish and any color are applied in the appropriate sequence.</td></tr>
+              <tr><td>Step 5: Inspection</td><td>Finished coins are checked against the agreed artwork and specifications.</td></tr>
+              <tr><td>Step 6: Packing</td><td>Coins are protected and packed for delivery or presentation.</td></tr>
             </tbody>
           </table>
         </div>
 
         <h2 id="coin-production-materials">What Are Challenge Coins Made Of?</h2>
-        <p>Most custom challenge coins use a base metal such as brass, iron or zinc alloy. Brass and iron are commonly associated with die-struck designs, while zinc alloy is often die-cast for deep 3D relief, cutouts and custom shapes. Gold, silver, copper and black nickel usually describe the plated finish rather than the coin&rsquo;s solid base metal.</p>
-        <div class="blog-table-wrap" tabindex="0" role="region" aria-label="Challenge coin base metal comparison">
+        <p>Unique Pin commonly uses iron and zinc alloy for challenge coins. Copper or brass can also be considered when a project calls for them. The material, outline, relief and construction are reviewed together; no single diameter or relief style automatically dictates one process.</p>
+        <div class="blog-table-wrap" tabindex="0" role="region" aria-label="Challenge coin material and forming options">
           <table class="blog-table">
-            <thead><tr><th scope="col">Base metal</th><th scope="col">Typical process</th><th scope="col">Suitable for</th><th scope="col">Buyer consideration</th></tr></thead>
+            <thead><tr><th scope="col">Base metal</th><th scope="col">Production approach</th><th scope="col">Design consideration</th></tr></thead>
             <tbody>
-              <tr><td>Brass</td><td>Die striking</td><td>Traditional shapes, crisp relief and a heavier feel</td><td>Usually increases weight and material cost</td></tr>
-              <tr><td>Iron</td><td>Stamping or die striking</td><td>Straightforward 2D designs and cost-sensitive orders</td><td>Confirm plating and corrosion protection</td></tr>
-              <tr><td>Zinc alloy</td><td>Die casting</td><td>Deep 3D relief, cutouts and irregular shapes</td><td>Suitable for complex forms and custom outlines</td></tr>
+              <tr><td>Iron</td><td>Commonly die-struck at Unique Pin</td><td>Review lettering, relief and edge details against the proposed tool.</td></tr>
+              <tr><td>Zinc alloy</td><td>Commonly die-cast at Unique Pin</td><td>Can be selected for particular relief, shape, size or structural requirements.</td></tr>
+              <tr><td>Copper or brass</td><td>Confirm the forming route for the project</td><td>Consider when the product specification calls for these materials.</td></tr>
             </tbody>
           </table>
         </div>
+        <p>The base metal is different from the surface finish. A gold- or silver-colored coin usually refers to its plating, not a solid precious-metal body. See our <a href="/products/custom-challenge-coins">custom challenge coins</a> page for product options.</p>
 
-        <h2 id="coin-production-design">Step 1 - Submit Your Design or Idea</h2>
-        <p>The process starts when the customer sends a logo, badge, sketch, text, reference image, or rough concept. Some buyers already have a clean vector file. Others begin with a screenshot, department emblem, event name, or hand-drawn idea that needs to be rebuilt before production.</p>
-        <p>At this stage, a custom challenge coin manufacturer is not simply redrawing a file. The artwork must be adjusted for raised metal lines, recessed color areas, coin edge, back-side layout, tooling depth, and the selected metal finish.</p>
-        <p>The application also matters. A military recognition coin, police department coin, corporate anniversary coin, and collector coin may need different choices for finish, presentation box, color contrast, and delivery timing. A coin used at a formal ceremony, for example, usually needs more attention to box presentation and surface consistency than a simple giveaway order. For service recognition projects, review <a href="/blog/military-challenge-coin-traditions">military challenge coin traditions and etiquette</a> before finalizing the presentation plan.</p>
+        <h2 id="coin-production-preparation">Before Manufacturing: Artwork, Specifications and Proof Approval</h2>
+        <p>Prepare both sides of the artwork with the wording, dates, logos and intended orientation. Confirm the diameter, thickness, quantity and edge requirements. Mark which areas should be raised metal, recessed metal or filled with color, and identify the requested plating and color references.</p>
+        <p>Review small lettering and narrow gaps at the intended physical size. The production proof should show the front and back, placement of details, dimensions and finish notes so the factory can assess how the design translates into tooling.</p>
+        <p>A digital proof confirms the layout, wording, dimensions and placement of raised, recessed and colored areas. It does not fully reproduce metal reflections, actual relief, weight or color appearance. Where a physical sample is provided, review those characteristics against the agreed specifications before proceeding.</p>
         <figure class="blog-article-image blog-article-contain-image">
-          <img src="/assets/images/blog-challenge-coin-artwork-proof.webp" width="1067" height="1474" loading="lazy" decoding="async" alt="custom challenge coin artwork proof prepared on design software before production">
-          <figcaption>Production artwork should define the coin size, front and back design, color references, finish and manufacturing notes before tooling begins.</figcaption>
+          <img src="/assets/images/blog-challenge-coin-artwork-proof.webp" width="1067" height="1474" loading="lazy" decoding="async" alt="Custom challenge coin production artwork shown in design software">
+          <figcaption>The production proof records artwork, dimensions, color placement and finish notes before tooling.</figcaption>
         </figure>
 
-        <h2 id="coin-production-specifications">Step 2 - Confirm Size, Thickness and Specifications</h2>
-        <p>Before digital proofing, the main specifications need to be fixed. Common challenge coin sizes are usually around 1.5 to 2.5 inches, with 1.75 inches and 2 inches being practical choices for many projects. Larger coins can show more detail, but they also use more metal and increase shipping weight.</p>
-        <p>Thickness affects both cost and perceived quality. The order confirmation should also cover 2D or 3D design, one-sided or double-sided artwork, color filling, metal finish, edge style, numbering, and presentation option. These details make the quotation more accurate and reduce the risk of changes after tooling has started.</p>
-        <p>For export orders, it is useful to keep these specifications in the quotation or production confirmation. A small difference in thickness, finish, or presentation box can change the unit cost, carton volume, and final delivery plan. Clear specifications also give the factory a stable standard for sample checking and mass production inspection.</p>
-
-        <h2 id="coin-production-proof">Step 3 - Create and Approve the Digital Proof</h2>
-        <p>After the specifications are clear, the factory prepares a digital proof. This proof shows how the custom challenge coin will be produced, including the front design, back design, size, metal finish, color references, edge style, and any special details.</p>
-        <p>Proof approval is the point where small problems are still easy to correct. Check spelling, dates, logo position, text readability, Pantone references, border balance, front and back alignment, and final size. Small text or thin lines may need adjustment before tooling begins.</p>
-        <p>If a design includes fine badge details, curved text, gradients, QR codes, or photo-like artwork, the manufacturer should explain whether color filling, printing, 2D relief, or 3D relief is more practical.</p>
-        <p>A useful production proof should also show which areas are raised metal, which areas are recessed, and where enamel or printing will be applied. This helps the buyer approve the real manufacturing structure instead of looking only at a flat graphic image.</p>
-
-        <h2 id="coin-production-tooling">Step 4 &ndash; Create the Die or Casting Mold</h2>
-        <p>Once the digital proof is approved, the factory prepares the production tooling. Die-struck coins require engraved production dies, while die-cast coins require a casting mold. The material, shape, relief depth and structure determine which tooling is appropriate.</p>
-        <p>Tooling development may involve CNC engraving or other precision equipment. Complex shapes, deep 3D relief, cutout areas, multiple levels, or detailed artwork take more time to convert into a workable production structure.</p>
-        <p>Structural changes after tooling starts may require an adjustment or replacement tool, which can add cost and delay the schedule. This is why proof review should be treated as a production decision, not only a visual check.</p>
-        <p>For designs with deep relief or very small lettering, the tooling review should focus on practical readability. A coin may look dramatic in a rendering, but the die still needs to allow clean metal flow, stable edges, and details that can survive polishing and surface finishing.</p>
+        <h2 id="coin-production-tooling">Step 1: Create the Dies or Casting Mold</h2>
+        <p>The forming tool carries the coin outline, lettering, raised relief and recessed details into metal. Die striking uses engraved dies; die casting uses a casting mold. The approved artwork determines what the tool must reproduce.</p>
+        <p>Die striking and die casting use different tooling. A change in the forming method requires a tooling review rather than simply reusing the existing tool. Changes to the outline or relief after tooling begins may also affect tooling cost and the production schedule.</p>
         <figure class="blog-article-image">
-          <img src="/assets/images/blog-challenge-coin-mold-making.webp" width="1200" height="900" loading="lazy" decoding="async" alt="technician inspecting engraved challenge coin production tooling">
-          <figcaption>Production tooling controls the final relief, lettering, recessed areas and edge detail of a custom challenge coin.</figcaption>
+          <img src="/assets/images/blog-challenge-coin-mold-making.webp" width="1200" height="900" loading="lazy" decoding="async" alt="Technician reviewing engraved production tooling for a challenge coin">
+          <figcaption>Tooling establishes the coin's outline, text, relief and recessed areas.</figcaption>
         </figure>
 
-        <h2 id="coin-production-forming">Step 5 &ndash; Form the Coin: Die Striking or Die Casting</h2>
-        <p>Challenge coins are commonly produced by die-striking or die-casting. The right method depends on the design, metal material, shape, relief depth, budget, and how the coin needs to feel in hand.</p>
-        <p>Die-struck challenge coins are formed by pressing engraved dies into a metal blank. This method is suitable for traditional shapes with clean relief and crisp metal detail.</p>
-        <p>Die-cast challenge coins are formed by injecting molten metal into a casting mold. Zinc alloy is often selected when a design needs deep 3D relief, cutouts or an irregular outline. The final effect still depends on the artwork, tooling and finishing.</p>
+        <h2 id="coin-production-forming">Step 2: Form the Metal Coin</h2>
+        <p>For a die-struck iron coin, engraved dies press the design into a metal blank to create raised and recessed features. For a die-cast zinc-alloy coin, metal is formed in a casting mold. The choice depends on the material and the proposed outline, relief and structure.</p>
+        <p>Neither method is limited to a fixed 2D or 3D look. Relief depth and detail need to be reviewed with the chosen tooling and finish. For design examples, see <a href="/blog/2d-vs-3d-challenge-coins">2D vs 3D challenge coins</a>.</p>
         <figure class="blog-article-image">
-          <img src="/assets/images/blog-challenge-coin-die-striking.webp" width="1200" height="1177" loading="lazy" decoding="async" alt="die striking equipment used in custom challenge coin production">
-          <figcaption>Die-striking uses pressure and tooling to form raised and recessed coin details before finishing.</figcaption>
+          <img src="/assets/images/blog-challenge-coin-die-striking.webp" width="1200" height="1177" loading="lazy" decoding="async" alt="Die-striking equipment used to form metal relief">
+          <figcaption>Die striking presses the design into a metal blank before refining and finishing.</figcaption>
         </figure>
 
         <section aria-labelledby="coin-factory-video">
-          <h2 id="coin-factory-video">Inside Our Challenge Coin Factory</h2>
-          <p>Watch a real production video from Unique Pin&rsquo;s factory. The footage provides a closer look at our metal craft manufacturing environment and complements the step-by-step process explained in this guide.</p>
+          <h3 id="coin-factory-video">Inside Unique Pin&rsquo;s Metal Gifts Factory</h3>
           <div class="challenge-coin-factory-video">
-            <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F897164166385988%3Flocale%3Dzh_CN&amp;show_text=false&amp;width=560" title="Real challenge coin factory production video from Unique Pin" width="560" height="315" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>
-            <p>If the video is unavailable in your region or browser, <a href="https://www.facebook.com/reel/897164166385988?locale=zh_CN" target="_blank" rel="noopener noreferrer">watch it on Facebook</a>.</p>
+            <video controls playsinline preload="metadata" aria-label="Unique Pin factory and metal gifts overview video">
+              <source src="/assets/videos/company-overview.mp4?v=20260819-lfs-fix" type="video/mp4">
+            </video>
+            <p>This 34-second video introduces Unique Pin&rsquo;s factory in Zhongshan, China, with views of the workshop, staff at work and finished metal gifts. It provides context for the manufacturing stages described in this guide.</p>
           </div>
         </section>
 
-        <h2 id="coin-production-finishing">Step 6 - Trimming, Polishing and Edge Finishing</h2>
-        <p>After the coin body is formed, excess metal and rough edges are removed. Trimming and polishing help the coin reach its final shape before surface finishing. Edge options may include plain edge, rope edge, reeded edge, wave edge, diamond-cut edge, edge text, or numbering.</p>
-        <p>A clean edge makes the coin feel more professional in hand and helps the finished product match the approved proof.</p>
+        <h2 id="coin-production-refining">Step 3: Trim and Refine the Surface</h2>
+        <p>After forming, the coin is trimmed and rough edges or burrs are removed. Surface refining prepares the raised areas, recesses and edges for the specified finish. The amount of finishing depends on the shape and relief.</p>
+        <p>Check that edge details remain comfortable to handle and that lettering and relief are still legible after surface work. Polishing should support the intended finish without removing important design detail.</p>
 
-        <h2 id="coin-production-color">Step 7 - Plating and Enamel Coloring</h2>
-        <p>Plating gives the coin its visible metal tone. Common options include gold, silver, copper, bronze, black nickel, antique gold, antique silver, and antique bronze. Antique finishes are often used for 3D challenge coins because they highlight depth and relief. Bright gold or silver can look clean and formal, while black nickel creates strong contrast with bright colors.</p>
-        <p>After plating, color may be added to recessed areas. Soft enamel is widely used for colorful challenge coins, while hard enamel can create a smoother surface. For gradients, photos, or very fine details, printing may be more practical than enamel filling.</p>
-        <p>Metal finish and coloring should be checked under normal lighting because bright finishes and antique finishes can look different from digital previews. For brand or unit colors, Pantone references help reduce misunderstanding, but buyers should still allow a reasonable tolerance because metal, enamel, and screen colors do not behave exactly the same.</p>
+        <h2 id="coin-production-finishes">Step 4: Apply Plating and Enamel Finishes</h2>
+        <p>Plating creates the visible metal tone, including bright or antique effects. Enamel can add color where the design calls for it, while a metal-only coin can rely on raised and recessed detail. The sequence changes with the selected enamel process.</p>
+        <p>For our baked-enamel process, the formed and refined metal body is plated before color is applied and cured. In the smooth enamel process shown in our production workflow, color filling and surface leveling take place before plating. The exact sequence depends on the specified finish.</p>
+        <p>For smooth enamel, filling and leveling before plating does not mean curing is absent; the production steps and finish should be confirmed for that order. Compare the finished effect with the approved requirements and, where available, a physical sample.</p>
         <figure class="blog-article-image">
-          <img src="/assets/images/blog-challenge-coin-coloring.webp" width="1400" height="1050" loading="lazy" decoding="async" alt="factory enamel coloring process for custom challenge coins">
-          <figcaption>Coloring and finish choices affect color contrast, surface texture, durability and the final presentation of the coin.</figcaption>
+          <img src="/assets/images/blog-challenge-coin-coloring.webp" width="1400" height="1050" loading="lazy" decoding="async" alt="Enamel color being applied to a metal coin design">
+          <figcaption>Color placement and surface level vary with the specified enamel finish.</figcaption>
         </figure>
 
-        <h2 id="coin-production-curing">Step 8 - Baking and Final Polishing</h2>
-        <p>After enamel coloring, the coins may go through baking or curing so the color can harden properly. Without enough curing time, colored areas are more likely to mark during later polishing or handling.</p>
-        <p>Final polishing cleans the surface and improves appearance. Bright finishes need careful handling because small marks can be more visible, while antique finishes should keep darker recessed areas and clear raised details.</p>
-
-        <h2 id="coin-production-inspection">Step 9 - Quality Inspection</h2>
-        <p>Quality inspection should be done before packing and shipment. For export orders, it is usually cheaper to slow down at this stage than to discover surface defects or quantity errors after the cartons arrive.</p>
-        <p>Inspection usually includes size and thickness, artwork clarity, front and back alignment, color accuracy, finish consistency, surface scratches, edge smoothness, color overflow, packing accuracy, and quantity confirmation.</p>
-        <p>If the coins are for an event, ceremony, or official presentation, leave enough time for final inspection before shipment.</p>
-        <p>For bulk orders, inspection should include both appearance checks and packing checks. The factory should compare finished coins against the approved proof, review several cartons from the batch, and confirm that labels, quantities, and packing methods match the customer requirements.</p>
+        <h2 id="coin-production-inspection">Step 5: Check the Finished Coins</h2>
+        <p>Use the approved proof and agreed specifications as the reference for quality checks. The review should cover:</p>
+        <ul class="blog-list">
+          <li>Wording, dates, artwork and front-to-back orientation against the approved proof.</li>
+          <li>Diameter, thickness and special details against the agreed specifications.</li>
+          <li>Color, relief and surface effect against the agreed requirements and an approved physical sample, if provided.</li>
+          <li>Edges and surface condition against the agreed appearance requirements.</li>
+          <li>Quantity, grouping and labels against the order and packing instructions.</li>
+        </ul>
         <figure class="blog-article-image">
-          <img src="/assets/images/blog-challenge-coin-quality-inspection.webp" width="1200" height="1141" loading="lazy" decoding="async" alt="custom challenge coins being inspected before packaging">
-          <figcaption>Final inspection checks coin appearance, surface quality, color consistency, quantity and packing before shipment.</figcaption>
+          <img src="/assets/images/blog-challenge-coin-quality-inspection.webp" width="1200" height="1141" loading="lazy" decoding="async" alt="Finished challenge coins being reviewed before packing">
+          <figcaption>Inspection compares finished coins with the approved artwork and order requirements.</figcaption>
         </figure>
 
-        <h2 id="coin-production-packaging">Step 10 - Packaging and Shipping</h2>
-        <p>Packaging depends on how the coins will be used. Simple poly bags may be suitable for internal distribution or bulk handouts. Velvet pouches, acrylic capsules, paper boxes, or gift boxes are better for formal recognition, corporate gifts, collector coins, and retail products.</p>
-        <p>The packing method should be confirmed before mass production because it affects cost, carton size, and shipment planning. Retail orders may require barcode labels, SKU labels, backing cards, inner cartons, or specific export carton markings.</p>
-        <p>Production time depends on artwork approval, mold complexity, order quantity, finish, color work, packaging requirements, and factory schedule. If the order is tied to a ceremony, trade show, or launch date, share the deadline at the first inquiry.</p>
-        <p>Before shipping, the packing list, carton marks, gross weight, carton size, destination country, and delivery method should be checked. This step is simple, but it helps avoid shipment delays caused by missing labels, incorrect carton information, or unclear delivery instructions.</p>
+        <h2 id="coin-production-packaging">Step 6: Pack the Order for Delivery</h2>
+        <p>Coins should be protected so their finished surfaces do not rub against one another during handling and transport. Confirm whether the order needs individual sleeves, capsules, pouches or presentation boxes, along with any grouping and label requirements.</p>
+        <p>If the coins are needed for an event, share the required arrival date while planning the order. The production schedule and shipping time are confirmed separately; the reference manufacturing times are explained below.</p>
         <figure class="blog-article-image">
-          <img src="/assets/images/blog-challenge-coin-packaging-shipping.webp" width="1159" height="1357" loading="lazy" decoding="async" alt="export cartons prepared for custom challenge coin shipment">
-          <figcaption>Shipment preparation should confirm packing details, carton labels, quantity and delivery schedule before dispatch.</figcaption>
+          <img src="/assets/images/blog-challenge-coin-packaging-shipping.webp" width="1159" height="1357" loading="lazy" decoding="async" alt="Packed cartons prepared for shipment">
+          <figcaption>Packing should protect the finish and match the agreed quantities and labels.</figcaption>
         </figure>
-
-        <h2 id="coin-production-methods">Die-Struck vs Die-Cast Challenge Coins</h2>
-        <p>Both methods can produce professional results when the process matches the artwork. The table below gives a practical comparison before confirming production.</p>
-        <figure class="blog-article-image blog-article-contain-image">
-          <img src="/assets/images/blog-challenge-coin-2d-vs-3d.webp" width="1200" height="1200" loading="lazy" decoding="async" alt="2D and 3D custom challenge coin examples with different finishes">
-          <figcaption>2D and 3D challenge coin designs can use different finishes, relief depths, colors and edge treatments.</figcaption>
-        </figure>
-        <div class="blog-table-wrap">
-          <table class="blog-table">
-            <thead><tr><th>Item</th><th>Die-Struck Challenge Coins</th><th>Die-Cast Challenge Coins</th></tr></thead>
-            <tbody>
-              <tr><td>Best for</td><td>Traditional coins, badges, clean relief, text-based designs</td><td>Complex shapes, cutouts, deep 3D forms, irregular outlines</td></tr>
-              <tr><td>Appearance</td><td>Crisp metal relief and classic coin feel</td><td>Flexible shape and stronger sculpted effects</td></tr>
-              <tr><td>Detail style</td><td>Clear raised and recessed areas</td><td>More suitable for complex dimensional forms</td></tr>
-              <tr><td>Common use</td><td>Military coins, police coins, corporate recognition coins</td><td>Collector coins, shaped coins, 3D designs, specialty coins</td></tr>
-              <tr><td>Buyer note</td><td>Good for premium traditional presentation</td><td>Good when the design needs shape flexibility</td></tr>
-            </tbody>
-          </table>
-        </div>
 
         <h2 id="coin-production-faq">Frequently Asked Questions</h2>
         <h3>How long does it take to manufacture challenge coins?</h3>
-        <p>Manufacturing time depends on artwork approval, tooling complexity, quantity, finish, color work, packing method, and shipping route. Share the required delivery date at the first inquiry.</p>
-
-        <h3>What artwork files should I submit?</h3>
-        <p>Vector files such as AI, PDF, EPS, or SVG are helpful, but a logo, sketch, reference image, or clear concept can also be used for initial review.</p>
+        <p>Our reference lead times are 5–7 working days for samples and 12–15 working days for production. The start date and schedule are confirmed for each order based on its requirements, quantity and finish. Shipping time is confirmed separately.</p>
 
         <h3>Can both sides of a challenge coin be customized?</h3>
-        <p>Yes. Many custom challenge coins use both front and back designs. The back side can include a motto, date, unit name, event name, serial number, QR code, or secondary logo.</p>
+        <p>Yes. The front and back can carry different artwork, wording or dates. Show both sides in the production proof and confirm their orientation, raised and recessed areas, and any color or engraving requirements.</p>
 
-        <h3>What metals are challenge coins made from?</h3>
-        <p>Common base metals include brass, iron and zinc alloy. The best choice depends on whether the design will be die-struck or die-cast, as well as its shape, relief depth, required weight and finish. Gold, silver, copper and black nickel often refer to plating rather than solid base metal.</p>
+        <h3>Can the design be changed after tooling starts?</h3>
+        <p>Changes may still be possible, but their effect depends on what is being changed. Revisions to the outline or relief may require tooling adjustments or replacement tooling. Confirm any additional cost and schedule changes before proceeding.</p>
 
-        <h3>What is the difference between die-struck and die-cast challenge coins?</h3>
-        <p>Die-struck coins are formed by pressing engraved dies into a metal blank and are well suited to traditional shapes and crisp relief. Die-cast coins are formed in a casting mold and are often selected for deep 3D relief, cutouts and irregular shapes.</p>
+        <h3>Do all challenge coins need enamel color?</h3>
+        <p>No. A challenge coin can use raised and recessed metal details with a selected plated finish, without enamel filling. Whether to add color depends on the artwork, contrast and intended appearance.</p>
 
-        <h2 id="coin-production-conclusion">Conclusion</h2>
-        <p>The strongest orders usually start with clear artwork, confirmed specifications, a careful proof review, the right production method, and agreed packing details before mass production. Those decisions help the finished coins match the intended application instead of simply looking acceptable in a digital preview.</p>
-
+        <section class="blog-article-cta" aria-labelledby="coin-production-quote">
+          <div class="blog-cta-copy">
+            <h2 id="coin-production-quote" class="blog-cta-title">Request a Quote for Custom Challenge Coins</h2>
+            <p>Share your artwork or reference image, estimated quantity, preferred size and required delivery date. Include the destination so we can review production and shipping requirements. If you have not selected a material or finish, we can discuss suitable options for your design.</p>
+          </div>
+          <div class="blog-cta-actions"><a class="btn btn-yellow" href="/contact">Request a Quote</a></div>
+        </section>
       </div>
       </div>
     </article>
@@ -2690,6 +2747,9 @@ export const blogHtml = String.raw`
         </div>
       </div>
     </article>
+  ${customGraduationMedalsSchoolAwardsArticleHtml}
+  ${yearsOfServiceLapelPinsArticleHtml}
+  ${customHatPatchesLooseOrFinishedArticleHtml}
 </main>
   ${footerHtml}`;
 

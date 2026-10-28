@@ -54,6 +54,13 @@
 }
 
 #artwork-to-finished-coin .artwork-comparison-stage { width: min(600px, 100%); }
+#artwork-to-finished-keychain .artwork-comparison-stage {
+  width: min(480px, 100%);
+  aspect-ratio: 3 / 4;
+}
+#artwork-to-finished-keychain .artwork-comparison-artwork-layer .artwork-comparison-image {
+  transform: translate(0.4%, -0.7%) scale(0.96);
+}
 #artwork-to-finished-medal .artwork-comparison-stage {
   width: min(488.8px, 94%);
   aspect-ratio: 4 / 5;

@@ -114,6 +114,7 @@ export const patchShapesGuideArticleHtml = String.raw`
           <h2 id="does-patch-material-limit-the-shape">Does Patch Material Limit the Shape?</h2>
           <p>Material affects how the outside contour and edge can be formed. Embroidered patches generally favor bold outlines that work with the proposed stitched or cut edge. Woven construction can carry finer flat artwork, but that does not make every exterior notch or projection practical; the perimeter still needs a workable cutting and finishing path. Molded PVC can form dimensional outlines, although its narrow extensions and tight recesses still require review as part of the complete molded shape.</p>
           <p>These are planning differences, not universal production rules. Feasibility varies with the manufacturer, material construction and artwork, so ask the supplier to confirm the outline and edge treatment together.</p>
+          <p>For logos that include a small tagline or narrow lettering, our guide to <a href="/blog/woven-vs-embroidered-patches">choosing woven or embroidered patches</a> explains how finished size and surface texture affect the choice.</p>
 
           <h2 id="common-patch-shape-mistakes">Common Patch Shape Mistakes</h2>
           <ul class="blog-list">

@@ -271,6 +271,105 @@
   outline-offset: 4px;
 }
 
+#custom-metal-bookmarks-buying-guide .blog-table-wrap {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+}
+
+#custom-metal-bookmarks-buying-guide .blog-table-wrap:focus-visible {
+  outline: 3px solid var(--yellow);
+  outline-offset: 4px;
+}
+
+#custom-metal-bookmarks-buying-guide .blog-article-header > .blog-article-hero-image img {
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: auto;
+  max-height: none;
+  padding: 0;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  object-position: center;
+}
+
+#custom-pet-tags .blog-article-header > .blog-article-hero-image img {
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: auto;
+  max-height: none;
+  padding: 0;
+  aspect-ratio: 1672 / 941;
+  object-fit: cover;
+  object-position: center;
+}
+
+#custom-pet-tags .pet-tag-front-back-image img,
+#custom-pet-tags .pet-tag-qr-review-image img,
+#custom-pet-tags .pet-tag-size-attachment-image img {
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: auto;
+  max-height: none;
+  padding: 0;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  object-position: center;
+}
+
+#custom-pet-tags .pet-tag-data-table-wrap {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+}
+
+#custom-pet-tags .pet-tag-data-table-wrap:focus-visible {
+  outline: 3px solid var(--yellow);
+  outline-offset: 4px;
+}
+
+#custom-pet-tags .pet-tag-data-table {
+  min-width: 980px;
+}
+
+#custom-pet-tags .pet-tag-data-table caption {
+  padding: 0 0 14px;
+  color: #344966;
+  font-size: 15px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+#custom-pet-tags .pet-tag-cta p {
+  margin: 0;
+}
+
+#custom-pet-tags .pet-tag-cta .btn {
+  margin-left: 8px;
+  white-space: normal;
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  #custom-pet-tags .blog-article p,
+  #custom-pet-tags .blog-faq p {
+    text-align: left;
+    text-align-last: auto;
+    hyphens: none;
+  }
+
+  #custom-pet-tags .pet-tag-cta .btn {
+    display: block;
+    width: 100%;
+    margin: 18px 0 0;
+  }
+}
+
 #keychain-attachments-guide .blog-article-header > .blog-article-hero-image.blog-article-natural-image {
   width: calc(100% + (2 * var(--article-pad)));
   max-width: none;
@@ -428,6 +527,51 @@
   aspect-ratio: 16 / 9;
   object-fit: cover;
   object-position: center;
+}
+
+#custom-hat-patches-loose-or-finished .blog-article > .blog-article-natural-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+
+#custom-hat-patches-loose-or-finished .blog-article > .blog-article-natural-image img[src="/assets/images/embroidered-hat-patch-placement.webp"] {
+  aspect-ratio: 16 / 9;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+#custom-challenge-coins-cost .blog-article > .blog-article-natural-image img {
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  max-height: none;
+  padding: 0;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+
+#custom-challenge-coins-cost .coin-cost-formula {
+  margin: 30px 0;
+  padding: 24px;
+  border: 1px solid #c5d3e9;
+  border-left: 4px solid var(--yellow);
+  border-radius: 8px;
+  background: #f7fbff;
+  overflow-wrap: anywhere;
+}
+
+#custom-challenge-coins-cost .coin-cost-formula p {
+  margin: 0 0 16px;
+  text-align: left;
+}
+
+#custom-challenge-coins-cost .coin-cost-formula p:last-child {
+  margin-bottom: 0;
 }
 
 #custom-christmas-ornaments-guide .blog-article > .blog-article-natural-image img {
@@ -599,6 +743,64 @@
   overflow-x: auto;
 }
 
+#custom-navy-belt-buckles-uniform-keepsakes .blog-table-wrap {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+#custom-navy-belt-buckles-uniform-keepsakes .blog-article-header > .blog-article-hero-image img {
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: auto;
+  max-height: none;
+  padding: 0;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
+}
+
+#custom-navy-belt-buckles-uniform-keepsakes .blog-article > .blog-article-image {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+#custom-navy-belt-buckles-uniform-keepsakes .blog-article > .blog-article-image img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: none;
+  padding: 0;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+}
+
+#woven-vs-embroidered-patches .blog-article-header > .blog-article-hero-image img,
+#custom-hat-patches-loose-or-finished .blog-article-header > .blog-article-hero-image img {
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: auto;
+  max-height: none;
+  padding: 0;
+  aspect-ratio: 1672 / 941;
+  object-fit: cover;
+}
+
+#woven-vs-embroidered-patches .blog-article > .blog-article-natural-image img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: none;
+  padding: 0;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+
 #custom-western-belt-buckles-women-retail-guide .western-buckle-finish-image img,
 #custom-western-belt-buckles-women-retail-guide .western-buckle-sample-image img,
 #custom-western-belt-buckles-women-retail-guide .western-buckle-packaging-image img {
@@ -640,6 +842,59 @@
 #custom-western-belt-buckles-women-retail-guide a:focus-visible,
 #custom-western-belt-buckles-women-retail-guide summary:focus-visible,
 #custom-western-belt-buckles-women-retail-guide .blog-table-wrap:focus-visible {
+  outline: 3px solid var(--yellow);
+  outline-offset: 4px;
+}
+
+#custom-cufflinks-logo-layout .custom-cufflinks-featured-image img,
+#custom-cufflinks-logo-layout .custom-cufflinks-face-example-image img,
+#custom-cufflinks-logo-layout .custom-cufflinks-wearing-image img,
+#custom-cufflinks-logo-layout .custom-cufflinks-rear-fitting-image img,
+#custom-cufflinks-logo-layout .custom-cufflinks-skull-comparison-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+}
+
+#custom-wooden-medal-designs .custom-wooden-medal-featured-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+}
+
+#custom-wooden-medal-designs .custom-wooden-medal-event-examples img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  aspect-ratio: 1672 / 941;
+  object-fit: contain;
+}
+
+#custom-wooden-medal-designs .custom-wooden-medal-detail-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  aspect-ratio: 3 / 2;
+  object-fit: contain;
+}
+
+#custom-cufflinks-logo-layout .custom-cufflinks-featured-image {
+  overflow: hidden;
+}
+
+#custom-cufflinks-logo-layout .custom-cufflinks-featured-image img {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+#custom-cufflinks-logo-layout .blog-table-wrap:focus-visible {
   outline: 3px solid var(--yellow);
   outline-offset: 4px;
 }
@@ -1476,7 +1731,7 @@
   margin: 24px auto 54px;
 }
 
-#how-custom-challenge-coins-are-made .challenge-coin-factory-video iframe {
+#how-custom-challenge-coins-are-made .challenge-coin-factory-video video {
   display: block;
   width: 100%;
   height: auto;
@@ -1764,6 +2019,390 @@
   }
 }
 
+/* Custom graduation medals article layout and reading rhythm */
+#custom-graduation-medals-school-awards .blog-article-shell {
+  grid-template-columns: minmax(180px, 204px) minmax(0, 900px);
+  gap: clamp(28px, 3.2vw, 48px);
+  max-width: 1260px;
+  padding: 0 28px;
+}
+
+#custom-graduation-medals-school-awards .blog-article-toc {
+  padding: 18px 14px 18px 18px;
+  border: 1px solid rgba(197, 211, 233, 0.82);
+  border-left: 3px solid var(--yellow);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.78);
+}
+
+#custom-graduation-medals-school-awards .blog-article-with-toc,
+#custom-graduation-medals-school-awards .blog-article-header,
+#custom-graduation-medals-school-awards .blog-article-main {
+  width: 100%;
+  max-width: 900px;
+}
+
+#custom-graduation-medals-school-awards .blog-article-header {
+  --article-pad: clamp(24px, 3.2vw, 40px);
+  padding-top: 36px;
+  padding-bottom: 14px;
+}
+
+#custom-graduation-medals-school-awards .blog-article h1 {
+  max-width: 100%;
+  font-size: clamp(34px, 3vw, 42px);
+  line-height: 1.12;
+  text-wrap: balance;
+}
+
+#custom-graduation-medals-school-awards .blog-article-header p,
+#custom-graduation-medals-school-awards .blog-article-main > p,
+#custom-graduation-medals-school-awards .blog-list li {
+  text-align: left;
+  text-align-last: auto;
+  hyphens: none;
+  overflow-wrap: break-word;
+}
+
+#custom-graduation-medals-school-awards .blog-article-main > h2 {
+  margin-top: 46px;
+  margin-bottom: 16px;
+  font-size: clamp(26px, 2.2vw, 32px);
+  line-height: 1.22;
+  text-wrap: balance;
+}
+
+#custom-graduation-medals-school-awards .blog-article-main > h3 {
+  margin-top: 30px;
+  margin-bottom: 12px;
+  font-size: clamp(20px, 1.8vw, 24px);
+  line-height: 1.3;
+}
+
+/* Size the two long headings to the reading column, including tablet widths. */
+#custom-graduation-medals-school-awards .blog-article-main {
+  container-type: inline-size;
+}
+
+#custom-graduation-medals-school-awards #when-do-separate-honors-deserve-their-own-medals,
+#custom-graduation-medals-school-awards #three-graduation-award-models {
+  font-size: clamp(20px, 3.45cqw, 30px);
+  letter-spacing: -0.02em;
+  text-wrap: wrap;
+}
+
+#custom-graduation-medals-school-awards .blog-article-main > p {
+  margin-bottom: 18px;
+  line-height: 1.78;
+  font-weight: 400;
+}
+
+#custom-graduation-medals-school-awards .blog-article-main > p strong {
+  font-weight: inherit;
+}
+
+#custom-graduation-medals-school-awards .blog-article-main > .blog-article-cta {
+  margin-top: 42px;
+  margin-bottom: 30px;
+}
+
+#custom-graduation-medals-school-awards .blog-faq {
+  display: block;
+  width: 100%;
+  max-width: none;
+  margin: 20px 0 34px;
+  padding: 18px 22px 4px;
+  border: 1px solid rgba(197, 211, 233, 0.9);
+  border-left: 4px solid var(--yellow);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+#custom-graduation-medals-school-awards .blog-faq h3 {
+  width: 100%;
+  max-width: none;
+  margin: 0 0 6px;
+  padding: 0 0 0 12px;
+  font-size: 18px;
+  line-height: 1.45;
+  text-align: left;
+}
+
+#custom-graduation-medals-school-awards .blog-faq p {
+  width: 100%;
+  max-width: none;
+  margin: 0 0 18px;
+  padding: 0 0 0 12px;
+  font-size: 16px;
+  line-height: 1.7;
+  text-align: left;
+  text-align-last: auto;
+  hyphens: none;
+}
+
+@media (max-width: 1100px) {
+  #custom-graduation-medals-school-awards .blog-article-shell {
+    max-width: 960px;
+    padding: 0 24px;
+  }
+
+  #custom-graduation-medals-school-awards .blog-article-with-toc,
+  #custom-graduation-medals-school-awards .blog-article-header,
+  #custom-graduation-medals-school-awards .blog-article-main {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  #custom-graduation-medals-school-awards .blog-article-shell {
+    padding: 0 16px;
+  }
+
+  #custom-graduation-medals-school-awards .blog-mobile-toc {
+    margin-bottom: 26px;
+  }
+
+  #custom-graduation-medals-school-awards .blog-article-header {
+    --article-pad: 20px;
+    padding-top: 24px;
+  }
+
+  #custom-graduation-medals-school-awards .blog-article-main > h2 {
+    margin-top: 36px;
+  }
+
+  #custom-graduation-medals-school-awards .blog-faq {
+    padding: 16px 14px 2px;
+  }
+
+  #custom-graduation-medals-school-awards .blog-faq h3,
+  #custom-graduation-medals-school-awards .blog-faq p {
+    padding-left: 8px;
+  }
+}
+
+#custom-graduation-medals-school-awards .blog-article-header > .blog-article-hero-image {
+  width: calc(100% + (2 * var(--article-pad)));
+  max-width: none;
+  margin: 26px calc(var(--article-pad) * -1) 22px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+#custom-graduation-medals-school-awards .blog-article-header > .blog-article-hero-image img {
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: auto;
+  max-height: none;
+  padding: 0;
+  aspect-ratio: auto 1672 / 941;
+  object-fit: contain;
+  object-position: center;
+}
+
+#custom-graduation-medals-school-awards .blog-article-main .blog-article-image {
+  width: 100%;
+  max-width: 100%;
+}
+
+#custom-graduation-medals-school-awards .blog-article-main .blog-article-image img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: none;
+  padding: 0;
+  aspect-ratio: auto 1672 / 941;
+  object-fit: contain;
+}
+
+#custom-graduation-medals-school-awards + .related-blogs .related-blog-media {
+  aspect-ratio: auto;
+}
+
+#custom-graduation-medals-school-awards + .related-blogs .related-blog-media img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+#custom-graduation-medals-school-awards .blog-article-header > .blog-article-hero-image figcaption {
+  padding: 10px 14px;
+  background: #f5f8fd;
+  color: #52647c;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+/* Match the service pin article to the preceding graduation article. */
+#years-of-service-lapel-pins .blog-article-shell {
+  grid-template-columns: minmax(180px, 204px) minmax(0, 900px);
+  gap: clamp(28px, 3.2vw, 48px);
+  max-width: 1260px;
+  padding: 0 28px;
+}
+
+#years-of-service-lapel-pins .blog-article-toc {
+  padding: 18px 14px 18px 18px;
+  border: 1px solid rgba(197, 211, 233, 0.82);
+  border-left: 3px solid var(--yellow);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.78);
+}
+
+#years-of-service-lapel-pins .blog-article-with-toc,
+#years-of-service-lapel-pins .blog-article-header,
+#years-of-service-lapel-pins .blog-article-main {
+  width: 100%;
+  max-width: 900px;
+}
+
+#years-of-service-lapel-pins .blog-article-header {
+  --article-pad: clamp(24px, 3.2vw, 40px);
+  padding-top: 36px;
+  padding-bottom: 14px;
+}
+
+#years-of-service-lapel-pins .blog-article h1 {
+  max-width: 100%;
+  font-size: clamp(34px, 3vw, 42px);
+  line-height: 1.12;
+  text-wrap: balance;
+}
+
+#years-of-service-lapel-pins .blog-article-header p,
+#years-of-service-lapel-pins .blog-article-main > p,
+#years-of-service-lapel-pins .blog-list li {
+  text-align: left;
+  text-align-last: auto;
+  hyphens: none;
+  overflow-wrap: break-word;
+}
+
+#years-of-service-lapel-pins .blog-article-main > h2 {
+  margin-top: 46px;
+  margin-bottom: 16px;
+  font-size: clamp(26px, 2.2vw, 32px);
+  line-height: 1.22;
+  text-wrap: wrap;
+}
+
+#years-of-service-lapel-pins .blog-article-main > h3 {
+  margin-top: 30px;
+  margin-bottom: 12px;
+  font-size: clamp(20px, 1.8vw, 24px);
+  line-height: 1.3;
+}
+
+#years-of-service-lapel-pins .blog-article-main > p {
+  margin-bottom: 18px;
+  line-height: 1.78;
+  font-weight: 400;
+}
+
+#years-of-service-lapel-pins .blog-article-main > .blog-article-cta {
+  margin-top: 42px;
+  margin-bottom: 30px;
+}
+
+#years-of-service-lapel-pins .blog-faq {
+  display: block;
+  width: 100%;
+  max-width: none;
+  margin: 20px 0 34px;
+  padding: 18px 22px 4px;
+  border: 1px solid rgba(197, 211, 233, 0.9);
+  border-left: 4px solid var(--yellow);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+#years-of-service-lapel-pins .blog-faq h3 {
+  width: 100%;
+  max-width: none;
+  margin: 0 0 6px;
+  padding: 0 0 0 12px;
+  font-size: 18px;
+  line-height: 1.45;
+  text-align: left;
+}
+
+#years-of-service-lapel-pins .blog-faq p {
+  width: 100%;
+  max-width: none;
+  margin: 0 0 18px;
+  padding: 0 0 0 12px;
+  font-size: 16px;
+  line-height: 1.7;
+  text-align: left;
+  text-align-last: auto;
+  hyphens: none;
+}
+
+#years-of-service-lapel-pins .blog-article-header > .blog-article-hero-image {
+  width: calc(100% + (2 * var(--article-pad)));
+  max-width: none;
+  margin: 26px calc(var(--article-pad) * -1) 22px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+#years-of-service-lapel-pins .blog-article-header > .blog-article-hero-image img {
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: auto;
+  max-height: none;
+  padding: 0;
+  aspect-ratio: auto 1672 / 941;
+  object-fit: contain;
+  object-position: center;
+}
+
+@media (max-width: 1100px) {
+  #years-of-service-lapel-pins .blog-article-shell {
+    max-width: 960px;
+    padding: 0 24px;
+  }
+
+  #years-of-service-lapel-pins .blog-article-with-toc,
+  #years-of-service-lapel-pins .blog-article-header,
+  #years-of-service-lapel-pins .blog-article-main {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  #years-of-service-lapel-pins .blog-article-shell {
+    padding: 0 16px;
+  }
+
+  #years-of-service-lapel-pins .blog-mobile-toc {
+    margin-bottom: 26px;
+  }
+
+  #years-of-service-lapel-pins .blog-article-header {
+    --article-pad: 20px;
+    padding-top: 24px;
+  }
+
+  #years-of-service-lapel-pins .blog-article-main > h2 {
+    margin-top: 36px;
+  }
+
+  #years-of-service-lapel-pins .blog-faq {
+    padding: 16px 14px 2px;
+  }
+
+  #years-of-service-lapel-pins .blog-faq h3,
+  #years-of-service-lapel-pins .blog-faq p {
+    padding-left: 8px;
+  }
+}
+
 @media (max-width: 640px) {
   .topbar .container {
     max-width: calc(100vw - 28px);
@@ -1847,4 +2486,10 @@
     white-space: normal;
     text-align: center;
   }
+}
+
+#corporate-challenge-coins-employee-recognition .blog-table-wrap {
+  max-width: 100%;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
 }

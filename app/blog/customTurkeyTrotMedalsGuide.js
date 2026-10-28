@@ -7,32 +7,32 @@ const turkeyTrotImages = {
     width: 1600,
     height: 900,
     className: "blog-article-hero-image blog-article-natural-image",
-    alt: "Turkey Trot medal concepts with navy and orange ribbons",
-    caption: "Design concepts showing a shared medal with different ribbons for two race categories.",
+    alt: "Turkey-themed 5K finisher medal design with an olive-green and orange ribbon",
+    caption: "Illustrative 5K medal concept. Distance-specific wording makes this version suitable for the named race.",
   },
   ribbonVersions: {
     src: "/assets/images/turkey-trot-medal-ribbon-versions.webp",
     width: 1600,
     height: 900,
     className: "blog-article-natural-image blog-image-16x9 turkey-trot-ribbon-versions-image",
-    alt: "Matching turkey medal designs with two different ribbon colors",
-    caption: "Illustrative ribbon variations; the order should identify the intended recipient group for each version.",
+    alt: "Two Turkey Trot medal design concepts with patterned and plain orange ribbons",
+    caption: "Illustrative design concepts showing changes to ribbon artwork and medal colors.",
   },
   sponsorPlacement: {
     src: "/assets/images/turkey-trot-medal-sponsor-placement.webp",
     width: 1600,
     height: 900,
     className: "blog-article-natural-image blog-image-16x9 turkey-trot-sponsor-placement-image",
-    alt: "Concept medal front and reverse beside a ribbon with placeholder symbols",
-    caption: "Illustrative medal and ribbon layout; sponsor placement must match the agreed requirements.",
+    alt: "Front and reverse views of a Turkey Trot medal concept with an autumn-patterned ribbon",
+    caption: "Illustrative front and reverse layouts. Final sponsor artwork and placement must be agreed for the actual order.",
   },
   sorting: {
     src: "/assets/images/turkey-trot-medal-sorting.webp",
     width: 1600,
     height: 900,
     className: "blog-article-natural-image blog-image-16x9",
-    alt: "Two trays of turkey medals sorted by navy and orange ribbons",
-    caption: "Illustrative sorting setup for separate medal-and-ribbon versions before race-day distribution.",
+    alt: "Turkey Trot medal concepts sorted into 5K and 10K groups with orange and navy ribbons",
+    caption: "Illustrative 5K and 10K sorting example. Labels for your event should match its approved medal-and-ribbon versions.",
   },
 };
 
@@ -43,124 +43,105 @@ const renderConfiguredImage = (image, { priority = false } = {}) => {
   return String.raw`
             <figure class="blog-article-image ${image.className}">
               <img src="${image.src}" width="${image.width}" height="${image.height}" ${priority ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async" alt="${image.alt}">
+              <figcaption>${image.caption}</figcaption>
             </figure>`;
 };
+
+// Retain existing section IDs so links to the previous article keep working.
+const turkeyTrotContents = String.raw`
+            <a href="#decide-whether-the-5k-and-kids-run-need-different-medals">Can Your 5K and Kids’ Run Share One Medal Design?</a>
+            <a href="#how-do-medal-versions-affect-the-budget">How Do Medal Versions Affect the Budget?</a>
+            <a href="#confirm-quantities-for-each-medal-version">Confirm Who Receives Each Medal—and How Many</a>
+            <a href="#prepare-medals-for-the-finish-line-team">Check and Sort Each Version Before Race Day</a>
+            <a href="#choose-sponsor-logo-placement-before-finalizing-the-artwork">Choose Where Sponsor Logos Will Appear</a>
+            <a href="#set-artwork-approval-dates-from-your-required-delivery-date">Set the Order Schedule Around Your Required Arrival Date</a>
+            <a href="#frequently-asked-questions">Frequently Asked Questions</a>
+            <a href="#plan-your-turkey-trot-medal-order">Compare Options for Your Turkey Trot Medal Order</a>`;
 
 export const customTurkeyTrotMedalsGuideArticleHtml = String.raw`
     <article id="custom-turkey-trot-medals-guide" class="section blog-article-section">
       <div class="blog-article-shell">
         <aside class="blog-article-toc" aria-label="Article contents">
           <strong>In This Guide</strong>
-          <nav>
-            <a href="#start-with-your-race-categories-and-medal-policy">Race categories and medal policy</a>
-            <a href="#decide-whether-the-5k-and-kids-run-need-different-medals">Medal versions</a>
-            <a href="#choose-sponsor-logo-placement-before-finalizing-the-artwork">Sponsor placement</a>
-            <a href="#confirm-quantities-for-each-medal-version">Quantities</a>
-            <a href="#set-artwork-approval-dates-from-your-required-delivery-date">Approval dates</a>
-            <a href="#prepare-medals-for-the-finish-line-team">Finish-line preparation</a>
-            <a href="#frequently-asked-questions">FAQ</a>
-            <a href="#plan-your-turkey-trot-medal-order">Request a quote</a>
-          </nav>
+          <nav>${turkeyTrotContents}</nav>
         </aside>
         <div class="container blog-article blog-article-with-toc">
           <header class="blog-article-header">
             <a class="blog-back-link" href="/blog">Back to Blog</a>
-            <h1>Custom Turkey Trot Medals: A Planning Guide for Race Directors</h1>
+            <h1>How to Choose Turkey Trot Medals for a 5K and Kids’ Run</h1>
             ${renderConfiguredImage(turkeyTrotImages.hero, { priority: true })}
-            <p>A Turkey Trot can bring 5K runners, children in a short fun run, and accompanying adults through the same finish area. Your medal order needs to reflect who receives an award, which version they receive, and what your sponsors have been promised.</p>
-            <p>Before approving custom turkey trot medals, settle those choices alongside your required delivery date. A shared design may suit both races, while different ribbons can help volunteers distinguish them. Sponsor artwork and late registrations need their own deadlines. This guide walks race directors, nonprofit organizers, and their purchasing partners through those decisions.</p>
+            <p>Does your Turkey Trot need a different medal for the kids’ run, or can both groups receive the same design?</p>
+            <p>The answer starts with the wording. A medal marked “5K FINISHER” does not fit a shorter children’s race, even with a different ribbon. If the medal carries the event name and wording suitable for both groups, one shared design may work.</p>
+            <p>Compare that shared option with separate versions before approving the artwork. The choice affects more than appearance: it changes what needs to be quoted, how quantities are recorded, and which medal-and-ribbon combinations your team must distribute.</p>
           </header>
 
           <div class="blog-article-main">
             <details class="blog-mobile-toc">
               <summary>Table of Contents</summary>
-              <nav>
-                <a href="#start-with-your-race-categories-and-medal-policy">Race categories and medal policy</a>
-                <a href="#decide-whether-the-5k-and-kids-run-need-different-medals">Medal versions</a>
-                <a href="#choose-sponsor-logo-placement-before-finalizing-the-artwork">Sponsor placement</a>
-                <a href="#confirm-quantities-for-each-medal-version">Quantities</a>
-                <a href="#set-artwork-approval-dates-from-your-required-delivery-date">Approval dates</a>
-                <a href="#prepare-medals-for-the-finish-line-team">Finish-line preparation</a>
-                <a href="#frequently-asked-questions">FAQ</a>
-                <a href="#plan-your-turkey-trot-medal-order">Request a quote</a>
-              </nav>
+              <nav>${turkeyTrotContents}</nav>
             </details>
 
-            <h2 id="start-with-your-race-categories-and-medal-policy">Start with Your Race Categories and Medal Policy</h2>
-            <p>Write down each event and its medal rule: 5K finishers, kids’ run participants, any eligible accompanying adults, and separate placement awards. A children’s fun run is a different event from an age division within the 5K; young runners may enter either.</p>
-            <p>Check what registration includes before estimating quantities. For example, <a href="https://www.turkeytrot.com/race-info">Dana Point’s 2026 Turkey Trot information</a> lists a kids’ one-mile event and an Adult Gobble Buddy option that includes a finisher medal. That is one organizer’s policy, but it illustrates why counting children alone could miss eligible recipients.</p>
-            <p>Keep your own rules consistent across registration information, purchasing records, and volunteer instructions. If your race also recognizes overall or age-group winners, plan those awards separately. Our guide to <a href="/blog/finisher-medals-vs-placement-medals">finisher medals and placement awards</a> explains the distinction.</p>
-
-            <h2 id="decide-whether-the-5k-and-kids-run-need-different-medals">Decide Whether the 5K and Kids’ Run Need Different Medals</h2>
-            <p>Start with the wording on the medal. A shared turkey design can work across events if its text applies to everyone receiving it. A medal marked only “5K” would misrepresent a shorter kids’ run, even with a different ribbon.</p>
-            <p>Compare these approaches before requesting artwork:</p>
-            <div class="blog-table-wrap">
+            <h2 id="decide-whether-the-5k-and-kids-run-need-different-medals">Can Your 5K and Kids’ Run Share One Medal Design?</h2>
+            <p>Start with the information that must appear on each award. The event name and turkey artwork may stay the same, while the distance or recipient group changes. Decide whether that difference needs to appear on the metal itself or can be shown on the ribbon.</p>
+            <p>A shared design works only when its wording and physical specifications suit both groups. If the children’s event needs a different size, weight or ribbon arrangement, review it as a separate option rather than assuming a smaller version of the adult medal will be suitable.</p>
+            <div class="blog-table-wrap" tabindex="0" role="region" aria-label="Medal and ribbon version comparison">
               <table class="blog-table">
-                <thead><tr><th scope="col">Approach</th><th scope="col">When it makes sense</th><th scope="col">What to confirm</th></tr></thead>
+                <thead><tr><th scope="col">Option</th><th scope="col">Medal and ribbon arrangement</th><th scope="col">When it fits</th><th scope="col">What to confirm</th></tr></thead>
                 <tbody>
-                  <tr><td>Shared medal with different ribbons</td><td>Both events share an identity and suitable medal wording</td><td>Ribbon text, colors, and quantities for each group</td></tr>
-                  <tr><td>Related designs with different event wording</td><td>Each group needs its distance or event name on the medal</td><td>Separate proofs and any tooling or decoration changes</td></tr>
-                  <tr><td>Separate kids’ run medal</td><td>The children’s event needs its own theme or physical specifications</td><td>Medal dimensions, weight, edges, and ribbon measurements</td></tr>
+                  <tr><td>Shared medal, different ribbons</td><td>Shared medal wording, with group details on the ribbons</td><td>Both groups can use the same metal design and specifications</td><td>Ribbon artwork, assembly quantities and whether the metal components can be shared</td></tr>
+                  <tr><td>Shared outline, different medal wording</td><td>Related designs with group-specific wording on the metal</td><td>The distance or event category must appear on the medal itself</td><td>How the wording is produced and whether separate tooling or decoration is needed</td></tr>
+                  <tr><td>Separate kids’ run version</td><td>Different artwork, wording or physical specifications</td><td>The children’s event needs its own complete award</td><td>Medal size, weight, edges, ribbon dimensions and the assembled sample</td></tr>
                 </tbody>
               </table>
             </div>
+            <p>For an illustrative community event with a 5K and a one-mile kids’ run, the organizer could keep the same event name and turkey artwork on both medals. If both groups receive a finisher award, the distance could appear on the ribbon while the medal uses shared wording.</p>
+            <p>If the organizer wants “5K FINISHER” and “KIDS’ RUN” on the metal itself, those become separate artwork versions. They may still share an outline, but the supplier must check how the lettering will be produced before confirming tooling and price.</p>
+            <p>Review our <a href="/products/custom-medals">custom medal examples and options</a> and <a href="/blog/how-to-choose-custom-medal-ribbons">medal ribbon options</a>.</p>
             ${renderConfiguredImage(turkeyTrotImages.ribbonVersions)}
-            <p>For a children’s version, review the complete medal and ribbon together. Clarify whether a ribbon measurement means its total unfolded length or its hanging length. If weight, feel, or fit matters, discuss a physical sample instead of relying entirely on a drawing.</p>
-            <p>Ask for the price difference between the options using the same quantities and quote inclusions. Sharing artwork does not establish that every version uses the same tooling. Give each option a clear name so the quotation, proof, and packing instructions refer to the same item.</p>
 
-            <h2 id="choose-sponsor-logo-placement-before-finalizing-the-artwork">Choose Sponsor Logo Placement Before Finalizing the Artwork</h2>
-            <p>Bring the sponsorship commitments into the design discussion early. Confirm the promised location, the correct logo file, and the person authorized to approve its use. “Include our sponsor” leaves too much unresolved.</p>
-            <p>Consider each surface in terms of the space and visibility it offers:</p>
+            <h2 id="how-do-medal-versions-affect-the-budget">How Do Medal Versions Affect the Budget?</h2>
+            <p>Ask for the shared-medal option and the separate-version option to be quoted using the same quantity for each race group. Keep other specifications comparable, and identify any differences in size, finish, ribbon or packaging.</p>
+            <p>The useful question is how much the version change adds to the complete order. Does it require different metal artwork, another decoration step, or only a ribbon change? Confirm that distinction before assuming one option saves tooling costs.</p>
+            <p>Check that both quotations cover the same agreed items, including ribbons, assembly, packaging and delivery. If the children’s version needs different physical specifications, list those changes separately so the price difference remains understandable.</p>
+
+            <div id="start-with-your-race-categories-and-medal-policy" aria-hidden="true"></div>
+            <h2 id="confirm-quantities-for-each-medal-version">Confirm Who Receives Each Medal—and How Many</h2>
+            <p>Record one order line for each medal-and-ribbon combination. Keep finisher medals separate from overall or age-group awards, and count recipients according to the event’s published rules. Our guide to <a href="/blog/finisher-medals-vs-placement-medals">finisher medals and placement awards</a> explains the distinction.</p>
+            <p>Accompanying adults are worth checking separately. <a href="https://www.turkeytrot.com/race-info">Dana Point’s 2026 race information</a> states that registered Adult Gobble Buddies receive a finisher medal alongside their race bib. That is one event’s policy, not a rule for every Turkey Trot, but it shows why counting children alone can miss eligible recipients.</p>
+            <p>If registration remains open, explain how expected late entries are included in the forecast. Record reserves separately and avoid adding the same allowance twice. Use our <a href="/blog/how-many-race-medals-to-order">race medal quantity planning guide</a> for the detailed calculation.</p>
+
+            <h3 id="prepare-medals-for-the-finish-line-team">Check and Sort Each Version Before Race Day</h3>
+            <p>When the shipment arrives, compare the medal wording, ribbon combinations and quantities with the approved order. Label each group with words or pictures as well as colors. Keep placement awards and reserve stock separate, and assign one person to handle shortages or replacements.</p>
+            ${renderConfiguredImage(turkeyTrotImages.sorting)}
+
+            <h2 id="choose-sponsor-logo-placement-before-finalizing-the-artwork">Choose Where Sponsor Logos Will Appear</h2>
+            <p>Check the sponsorship agreement before deciding where a logo belongs. The front, back and ribbon offer different visibility, and they are not interchangeable.</p>
             <ul class="blog-list">
-              <li><strong>Medal front:</strong> Check whether the sponsor mark can remain readable alongside the event name and artwork. Reduce decorative detail before shrinking essential lettering beyond usefulness.</li>
-              <li><strong>Medal back:</strong> This can preserve room for the event design on the front, but the sponsor will not appear in a photograph showing only that front.</li>
-              <li><strong>Printed ribbon:</strong> Review logo size, repetition, and orientation on both the flat layout and the assembled view. Check positions near folds and the attachment.</li>
-              <li><strong>Presentation card:</strong> Use this when it matches the agreed sponsorship benefit. A card does not automatically replace a promised medal logo.</li>
+              <li><strong>Medal front:</strong> Keep the event name and award wording readable alongside the sponsor mark.</li>
+              <li><strong>Medal back:</strong> This leaves more space for the event design on the front, but the logo will not appear in a photograph showing only that front.</li>
+              <li><strong>Printed ribbon:</strong> Review the logo on the assembled medal as well as the flat layout, especially near folds and the attachment.</li>
             </ul>
-            <p>Review logos at their intended reproduction size. If a detailed mark needs simplifying, obtain the sponsor’s agreement before approving the change.</p>
-            <p>Set a deadline for sponsor feedback. If another sponsor joins after approval, first establish which items can still change and whether the proposed placement meets the new agreement. Avoid promising a late ribbon change before its production schedule has been checked.</p>
+            <p>A presentation card can carry sponsor information when that matches the agreement, but it does not automatically replace a promised medal logo. Confirm the artwork and approval contact before production; a late sponsor change needs a separate cost and timing check.</p>
             ${renderConfiguredImage(turkeyTrotImages.sponsorPlacement)}
 
-            <h2 id="confirm-quantities-for-each-medal-version">Confirm Quantities for Each Medal Version</h2>
-            <p>Use one order line for each medal-and-ribbon combination. Record eligible recipients, separately promised recipients, and reserves with a stated purpose. Even identical metal pieces need separate assembly counts when their ribbons differ.</p>
-            <p>If registration remains open, document how the forecast includes expected late entries. Do not add the same allowance twice. Consider whether accompanying adults, volunteers, or sponsor representatives receive medals under your policy, and count them only where appropriate.</p>
-            <p>A single spare percentage cannot explain every event’s uncertainty. Separate extra stock for late entries, handling damage, or promised replacements so the reasoning remains visible. Our <a href="/blog/how-many-race-medals-to-order">race medal quantity guide</a> provides a fuller planning method.</p>
-            <p>Before approving quantities, agree on what happens if entries exceed the available awards. Confirm whether a further order is feasible before offering it as a remedy.</p>
-            <p>Keep the quote comparison complete. Ask whether each price includes tooling, ribbons, assembly, packaging, and shipping to your destination. If you are working within a fixed event budget, compare those totals before adding decorative upgrades. A lower medal price may cover a different set of services.</p>
-
-            <h2 id="set-artwork-approval-dates-from-your-required-delivery-date">Set Artwork Approval Dates from Your Required Delivery Date</h2>
-            <p>Tell the supplier when the medals must physically reach your team. Allow time for counting, sorting, and moving them to the venue. If awards are included in advance packet pickup, that earlier handout determines your deadline.</p>
-            <p>Build the schedule backward from the required arrival date, including artwork development and revisions, any physical sampling, bulk production, transit, and contingency time. Specify whether quoted durations use working or calendar days and what approval starts each stage. Production time alone does not establish an arrival date.</p>
-            <p>Before authorizing mold making, resolve the following:</p>
-            <ol class="blog-list">
-              <li>Event names, distances, and any year or date shown.</li>
-              <li>Medal dimensions, material, decoration methods, and finish.</li>
-              <li>Sponsor placement and approval of the supplied logo.</li>
-              <li>Ribbon dimensions, wording, orientation, and attachment.</li>
-              <li>The exact drawing being approved and whether quantities are final or subject to an agreed deadline.</li>
-            </ol>
-            <p>Identify one person who collects feedback and sends the final approval. Attach or reply to the specific drawing; “the latest version” can become unclear in a long email thread.</p>
-            <p>A digital proof communicates the proposed design and specifications. If physical sampling is part of the order, schedule its review before bulk production. Design approval, quantity confirmation, and approval to proceed with bulk production may be separate checkpoints. After any approval, ask the supplier to assess whether a proposed change affects tooling, completed work, cost, or the delivery schedule before treating the revision as accepted. Use our <a href="/blog/custom-medal-design-proof-checklist">medal artwork approval checklist</a> for the detailed review.</p>
-
-            <h2 id="prepare-medals-for-the-finish-line-team">Prepare Medals for the Finish-Line Team</h2>
-            <p>Request packing that follows your version list. When cartons arrive, compare their contents with the order and check medal wording, ribbon combinations, quantities, and visible condition. Set aside anything requiring follow-up before distributing stock to volunteers.</p>
-            <p>Prepare a simple reference sheet showing each medal-and-ribbon combination beside its eligible group. Use names or pictures alongside colors, and store placement awards separately from finisher medals.</p>
-            <p>Brief volunteers on accompanying adults, runners who entered more than one event, and any other exceptions in your policy. Assign one person to manage reserve stock and record shortages or replacements. Those instructions connect the purchasing plan to what happens at the finish line.</p>
-            ${renderConfiguredImage(turkeyTrotImages.sorting)}
+            <h2 id="set-artwork-approval-dates-from-your-required-delivery-date">Set the Order Schedule Around Your Required Arrival Date</h2>
+            <p>Give the supplier the date the medals must reach your team, together with the delivery postcode and estimated quantity. If medals are needed for packet pickup before race day, use that earlier deadline. Leave time to count and sort the shipment before distribution.</p>
+            <p>Ask for a schedule that separates artwork revisions, any physical sample review, bulk production and transport. Confirm whether each duration uses working or calendar days, what approval starts production, and when ribbon artwork and quantities must be final.</p>
+            <p>If the schedule is tight, ask which design and delivery options remain feasible before approving artwork or promising medals to participants. Additional quantities, sponsor changes or a second production batch need a separate timing check.</p>
+            <p>Use our <a href="/blog/custom-medal-design-proof-checklist">medal artwork approval checklist</a> for the detailed review of wording, specifications and ribbon assembly.</p>
 
             <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
             <div class="blog-faq">
-              <details open><summary><h3>Can a small community race order custom medals?</h3></summary><p>Yes. Unique Pin offers <a href="/products/custom-medals">custom medals</a> with no minimum order quantity. For designs requiring a custom mold, smaller orders typically carry a higher tooling cost per medal. Share your quantities and specifications for a quote.</p></details>
-              <details><summary><h3>Can we start with an event logo or a sketch?</h3></summary><p>Yes. Unique Pin provides free design assistance and a digital proof. Include event wording, race categories, sponsor requirements, and ribbon preferences so the proposed design reflects the order.</p></details>
-              <details><summary><h3>Can we request a physical sample?</h3></summary><p>A physical sample can be arranged. Specify whether you also need the proposed ribbon and packaging included; sample costs and lead time depend on the requirements.</p></details>
-              <details><summary><h3>When should we order Turkey Trot medals?</h3></summary><p>Begin when your event requirements are clear enough to discuss. Agree on a schedule working backward from the required arrival date, including approvals, any sample review, production, and shipping.</p></details>
+              <details open><summary><h3>Can a small community Turkey Trot order custom medals?</h3></summary><p>Send the quantity for each version so the design and order requirements can be reviewed together. For designs requiring a custom mold, the tooling charge is spread across fewer pieces in a smaller order, which can increase the cost per medal. Ask for the complete quotation before deciding between shared and separate versions.</p></details>
+              <details><summary><h3>Can we increase the quantity after approving the order?</h3></summary><p>Contact the supplier before promising extra medals. Whether the quantity can be increased depends on the production stage, additional quantity and required arrival date. If another production batch is needed, its price and delivery schedule must be confirmed separately.</p></details>
+              <details><summary><h3>Can we request a quote before the design is finished?</h3></summary><p>Yes. Start with your event logo or reference image, estimated quantities, required wording and arrival date. Identify anything still undecided. The quotation should state the specifications it assumes, with any later design changes reviewed before production.</p></details>
             </div>
 
             <section class="blog-article-cta blog-inquiry-cta turkey-trot-inquiry" aria-labelledby="plan-your-turkey-trot-medal-order">
               <div>
-                <h2 id="plan-your-turkey-trot-medal-order" class="blog-cta-title">Plan Your Turkey Trot Medal Order</h2>
-                <p>Send your race date, required delivery date, delivery destination, and estimated quantities for each medal-and-ribbon combination, including the 5K, kids’ run, and any separately eligible groups or reserves. Add your event artwork, sponsor requirements, and preferred medal and ribbon details. Our team can review the specifications and prepare a quote for your custom turkey trot medals.</p>
-                <p><strong>Free design assistance · No minimum order quantity</strong></p>
+                <h2 id="plan-your-turkey-trot-medal-order" class="blog-cta-title">Compare Options for Your Turkey Trot Medal Order</h2>
+                <p>Not sure whether to use one medal design or separate versions? Send your event logo or reference image, estimated quantity for each race group, required arrival date, and delivery country or ZIP code.</p>
+                <p>Tell us what wording each group needs and which details are still undecided. We can review the shared-design and separate-version options and prepare a quote based on the agreed specifications.</p>
               </div>
               <div class="blog-cta-actions">
                 <a class="btn btn-yellow" href="/contact">Request a Medal Quote</a>

@@ -22,6 +22,10 @@ import { medalBacksides } from "../medalBacksides";
 import { medalLoops } from "../medalLoops";
 import { medalRibbons } from "../medalRibbons";
 import { coinArtworkComparison } from "../coinArtworkComparison";
+import { keychainArtworkComparison } from "../keychainArtworkComparison";
+import { keychainMaterials } from "../keychainMaterials";
+import { keychainAttachments } from "../keychainAttachments";
+import { keychainPackaging } from "../keychainPackaging";
 import "../../styles/components/finish-gallery.css";
 import "../../styles/components/artwork-comparison.css";
 import {
@@ -48,6 +52,7 @@ const fabricationOptionsCategories = new Set([
   "custom-belt-buckles",
   "custom-golf-accessories",
   "custom-bottle-openers",
+  "custom-metal-keychains",
 ]);
 
 export const dynamicParams = false;
@@ -112,13 +117,15 @@ export default async function ProductCategoryPage({ params, searchParams }) {
       : [];
   const categoryEnhancementHtml = fabricationOptionsCategories.has(category)
     ? `${renderFinishGallery(
-        platingFinishes,
+        category === "custom-metal-keychains" ? keychainMaterials : platingFinishes,
         category === "custom-enamel-pins"
           ? [pinAttachments, pinBacksides, pinPackaging]
           : category === "custom-challenge-coins"
             ? [coinEdges, coinPackaging]
             : category === "custom-medals"
               ? [medalBacksides, medalLoops, medalRibbons, medalPackaging]
+              : category === "custom-metal-keychains"
+                ? [keychainAttachments, keychainPackaging]
               : [],
       )}${category === "custom-enamel-pins"
         ? renderArtworkComparison()
@@ -127,6 +134,9 @@ export default async function ProductCategoryPage({ params, searchParams }) {
           : category === "custom-medals"
             ? renderArtworkComparison(medalArtworkComparison)
             : ""}`
+    : "";
+  const keychainComparisonHtml = category === "custom-metal-keychains"
+    ? renderArtworkComparison(keychainArtworkComparison)
     : "";
   const categoryFaqHtml = category === "custom-enamel-pins"
     ? renderProductFaq(enamelPinFaq)
@@ -189,7 +199,7 @@ export default async function ProductCategoryPage({ params, searchParams }) {
           {
             page: currentPage,
             pageSize: CATEGORY_PRODUCTS_PAGE_SIZE,
-            afterStyleGuide: `${categoryEnhancementHtml}${customerPhotoGalleryHtml}${categoryFaqHtml}`,
+            afterStyleGuide: `${categoryEnhancementHtml}${keychainComparisonHtml}${customerPhotoGalleryHtml}${categoryFaqHtml}`,
           },
         )}
       />

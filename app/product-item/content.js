@@ -2000,20 +2000,6 @@ export const productItems = {
     quoteProduct: "Belt Buckles",
     lead: "This rectangular Australia horse belt buckle uses deep relief, antique silver plating and western border details. It fits tourism gifts, equestrian events, western wear and retail accessories."
   },
-  "kowow-star-enamel-belt-buckle": {
-    title: "KOWOW Star Enamel Belt Buckle",
-    image: "assets/images/type-buckles-kowow-star-enamel.jpg",
-    alt: "KOWOW star enamel belt buckle",
-    categoryLabel: "Belt Buckles",
-    categoryHref: "/products/custom-belt-buckles",
-    material: "Zinc alloy",
-    process: "Die casting",
-    sku: "UP-BUCKLE-017",
-    usage: "Team gifts, clubs, retail accessories",
-    categories: "Belt Buckles, Enamel Buckles",
-    quoteProduct: "Belt Buckles",
-    lead: "This shaped enamel belt buckle features star artwork, polished plating and a custom logo layout. It is a strong choice for team gifts, clubs, branded merchandise and retail belt collections."
-  },
   "blue-knights-mc-antique-belt-buckle": {
     title: "Blue Knights MC Antique Belt Buckle",
     image: "assets/images/type-buckles-blue-knights-mc.jpg",
