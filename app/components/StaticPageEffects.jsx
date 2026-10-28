@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { usePathname } from "next/navigation";
 import { BLOG_ITEMS_PER_PAGE } from "../blog/config";
 import { getCategoryPath } from "../lib/siteRoutes";
+import { submitInquiryForm } from "../lib/inquiryClient.mjs";
 
 export default function StaticPageEffects() {
   const pathname = usePathname();
@@ -196,15 +197,16 @@ export default function StaticPageEffects() {
       if (!gallery) return () => {};
 
       const carousel = gallery.querySelector("[data-customer-gallery-carousel]");
+      const stage = gallery.querySelector("[data-customer-gallery-stage]");
       const dataElement = gallery.querySelector("[data-customer-gallery-data]");
-      const mainImage = gallery.querySelector("[data-customer-gallery-main-image]");
       const caption = gallery.querySelector("[data-customer-gallery-caption]");
       const count = gallery.querySelector("[data-customer-gallery-count]");
       const status = gallery.querySelector("[data-customer-gallery-status]");
       const prevButton = gallery.querySelector("[data-customer-gallery-prev]");
       const nextButton = gallery.querySelector("[data-customer-gallery-next]");
-      const previewButtons = [...gallery.querySelectorAll("[data-customer-gallery-preview]")];
-      if (!carousel || !dataElement || !mainImage || !caption || !count || !prevButton || !nextButton) return () => {};
+      const playButton = gallery.querySelector("[data-customer-gallery-play]");
+      const photoButtons = [...gallery.querySelectorAll("[data-customer-gallery-photo]")];
+      if (!carousel || !stage || !dataElement || !caption || !count || !prevButton || !nextButton || !photoButtons.length) return () => {};
 
       let photos = [];
       try {
@@ -216,128 +218,87 @@ export default function StaticPageEffects() {
 
       const reducedMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)");
       const mainImageSizes = "(max-width: 767px) calc(100vw - 32px), (max-width: 1199px) 56vw, 620px";
-      const imageLoads = new Map();
       let currentIndex = 0;
       let touchStartX = 0;
-      let isLoading = false;
-      let destroyed = false;
-      let preloadObserver;
+      let autoRotationPaused = Boolean(reducedMotion?.matches);
+      let autoRotationTimer;
 
-      const getPreviewIndexes = (index = currentIndex) => [-2, -1, 1, 2]
-        .map((offset) => (index + offset + photos.length) % photos.length)
-        .filter((photoIndex, position, indexes) => photoIndex !== index && indexes.indexOf(photoIndex) === position);
-
-      const preloadImage = (photo, isMain = false) => {
-        const key = `${isMain ? "main" : "preview"}:${photo.id || photo.src}`;
-        if (imageLoads.has(key)) return imageLoads.get(key);
-
-        const image = new Image();
-        image.decoding = "async";
-        const load = new Promise((resolve) => {
-          const finish = () => resolve();
-          image.addEventListener("load", finish, { once: true });
-          image.addEventListener("error", finish, { once: true });
-          if (isMain) {
-            image.srcset = photo.srcSet || "";
-            image.sizes = mainImageSizes;
-          }
-          image.src = isMain ? photo.src : photo.thumbSrc;
-          if (image.complete) finish();
-        }).then(() => image.decode?.().catch(() => {}));
-
-        imageLoads.set(key, load);
-        return load;
+      const slotClassFor = (index) => {
+        const offset = (index - currentIndex + photos.length) % photos.length;
+        if (offset === 0) return "is-current";
+        if (offset === 1) return "is-next";
+        if (offset === 2) return "is-next-far";
+        if (offset === photos.length - 1) return "is-prev";
+        if (offset === photos.length - 2) return "is-prev-far";
+        return "is-offstage";
       };
 
-      const preloadState = (index) => Promise.all([
-        preloadImage(photos[index], true),
-        ...getPreviewIndexes(index).map((previewIndex) => preloadImage(photos[previewIndex])),
-      ]);
-
-      const warmNearbyPhotos = (index) => {
-        [-2, -1, 1, 2].forEach((offset) => {
-          const nearbyIndex = (index + offset + photos.length) % photos.length;
-          preloadImage(photos[nearbyIndex], true);
-          preloadImage(photos[nearbyIndex]);
-        });
-      };
-
-      const setImage = (image, photo, isMain = false) => {
-        image.src = isMain ? photo.src : photo.thumbSrc;
-        if (isMain) {
-          image.srcset = photo.srcSet;
-          image.sizes = mainImageSizes;
-          image.alt = photo.alt;
-          image.width = photo.width;
-          image.height = photo.height;
-          image.style.objectPosition = photo.objectPosition || "center";
-        } else {
-          image.removeAttribute("srcset");
-          image.removeAttribute("sizes");
-          image.alt = "";
-          image.width = photo.thumbWidth;
-          image.height = photo.thumbHeight;
-          image.style.objectPosition = photo.objectPosition || "center";
+      const syncAutoRotation = () => {
+        window.clearInterval(autoRotationTimer);
+        if (!playButton) return;
+        playButton.setAttribute("aria-pressed", String(autoRotationPaused));
+        playButton.setAttribute("aria-label", `${autoRotationPaused ? "Resume" : "Pause"} automatic photo rotation`);
+        const label = playButton.querySelector("[data-customer-gallery-play-label]");
+        if (label) label.textContent = autoRotationPaused ? "Play" : "Pause";
+        if (!autoRotationPaused && photos.length > 1) {
+          autoRotationTimer = window.setInterval(() => showPhoto(currentIndex + 1, false), 5000);
         }
       };
 
       const render = (announce = false) => {
         const photo = photos[currentIndex];
-        setImage(mainImage, photo, true);
         caption.textContent = photo.categoryLabel || "";
-        count.textContent = `Photo ${currentIndex + 1} of ${photos.length}`;
-
-        const indexes = getPreviewIndexes();
-        previewButtons.forEach((button, slot) => {
-          const index = indexes[slot];
-          button.hidden = index === undefined;
-          if (index === undefined) return;
-          const previewPhoto = photos[index];
+        count.textContent = `${String(currentIndex + 1).padStart(2, "0")} / ${String(photos.length).padStart(2, "0")}`;
+        photoButtons.forEach((button, index) => {
+          const item = photos[index];
+          const isCurrent = index === currentIndex;
+          const image = button.querySelector("img");
+          button.classList.remove("is-current", "is-next", "is-next-far", "is-prev", "is-prev-far", "is-offstage");
+          button.classList.add(slotClassFor(index));
           button.dataset.photoIndex = String(index);
-          button.setAttribute("aria-label", `Show ${previewPhoto.alt} as the main photo`);
-          setImage(button.querySelector("img"), previewPhoto);
+          button.setAttribute("aria-label", `${isCurrent ? "Current photo: " : "Show "}${item.alt}${isCurrent ? "" : " as the main photo"}`);
+          button.setAttribute("aria-current", String(isCurrent));
+          button.tabIndex = isCurrent ? 0 : -1;
+          if (isCurrent) {
+            image.srcset = item.srcSet || "";
+            image.sizes = mainImageSizes;
+            image.src = item.src;
+            image.alt = item.alt;
+            image.width = item.width;
+            image.height = item.height;
+          } else {
+            image.removeAttribute("srcset");
+            image.removeAttribute("sizes");
+            image.src = item.thumbSrc;
+            image.alt = "";
+            image.width = item.thumbWidth;
+            image.height = item.thumbHeight;
+          }
+          image.style.objectFit = item.objectFit || "cover";
+          image.style.objectPosition = item.objectPosition || "center";
+          image.style.background = item.background || "#eef2f7";
         });
-
         if (announce && status) status.textContent = `${photo.categoryLabel || "Customer photo"}, photo ${currentIndex + 1} of ${photos.length}.`;
       };
 
-      const setBusy = (busy) => {
-        carousel.toggleAttribute("aria-busy", busy);
-        carousel.classList.toggle("is-changing", busy && !reducedMotion?.matches);
-        prevButton.disabled = busy || photos.length <= 1;
-        nextButton.disabled = busy || photos.length <= 1;
-        previewButtons.forEach((button) => {
-          button.disabled = busy;
-        });
-      };
-
-      const showPhoto = async (index, announce = true) => {
-        const nextIndex = (index + photos.length) % photos.length;
-        if (isLoading || nextIndex === currentIndex) return;
-
-        isLoading = true;
-        setBusy(true);
-        await preloadState(nextIndex);
-        if (destroyed) return;
-
-        currentIndex = nextIndex;
+      const showPhoto = (index, announce = true) => {
+        currentIndex = (index + photos.length) % photos.length;
         render(announce);
-        await new Promise((resolve) => window.requestAnimationFrame(() => window.requestAnimationFrame(resolve)));
-        if (destroyed) return;
-
-        isLoading = false;
-        setBusy(false);
-        warmNearbyPhotos(currentIndex);
+        syncAutoRotation();
       };
 
       const handleClick = (event) => {
-        const preview = event.target.closest?.("[data-customer-gallery-preview]");
-        if (preview) {
-          showPhoto(Number(preview.dataset.photoIndex) || 0);
+        const photoButton = event.target.closest?.("[data-customer-gallery-photo]");
+        if (photoButton) {
+          showPhoto(Number(photoButton.dataset.photoIndex) || 0);
           return;
         }
         if (event.target.closest?.("[data-customer-gallery-prev]")) showPhoto(currentIndex - 1);
         if (event.target.closest?.("[data-customer-gallery-next]")) showPhoto(currentIndex + 1);
+        if (event.target.closest?.("[data-customer-gallery-play]")) {
+          autoRotationPaused = !autoRotationPaused;
+          syncAutoRotation();
+        }
       };
 
       const handleTouchStart = (event) => {
@@ -363,21 +324,10 @@ export default function StaticPageEffects() {
       carousel.addEventListener("keydown", handleKeyDown);
 
       render();
-      setBusy(false);
-      if ("IntersectionObserver" in window) {
-        preloadObserver = new IntersectionObserver((entries) => {
-          if (!entries.some((entry) => entry.isIntersecting)) return;
-          warmNearbyPhotos(currentIndex);
-          preloadObserver.disconnect();
-        }, { rootMargin: "600px 0px" });
-        preloadObserver.observe(gallery);
-      } else {
-        warmNearbyPhotos(currentIndex);
-      }
+      syncAutoRotation();
 
       return () => {
-        destroyed = true;
-        preloadObserver?.disconnect();
+        window.clearInterval(autoRotationTimer);
         gallery.removeEventListener("click", handleClick);
         carousel.removeEventListener("touchstart", handleTouchStart);
         carousel.removeEventListener("touchend", handleTouchEnd);
@@ -667,59 +617,12 @@ export default function StaticPageEffects() {
     const getFormNotice = (form) => form.querySelector("[data-form-notice]")
       || form.closest(".contact-card, .product-inquiry-card, .contact-layout")?.querySelector("[data-form-notice]");
 
-    const handleInquirySubmit = async (event) => {
+    const handleInquirySubmit = (event) => {
       const inquiryForm = event.target.closest?.("[data-inquiry-form]");
       if (!inquiryForm) return;
 
       event.preventDefault();
-
-      const notice = getFormNotice(inquiryForm);
-      const submitButton = inquiryForm.querySelector('button[type="submit"]');
-      const originalButtonText = submitButton?.textContent;
-      const formData = new FormData(inquiryForm);
-
-      formData.set("pageUrl", window.location.href);
-      formData.set("pageTitle", document.title);
-
-      if (notice) {
-        notice.style.color = "var(--navy)";
-        notice.textContent = "Sending your inquiry...";
-      }
-      if (submitButton) {
-        submitButton.disabled = true;
-        submitButton.textContent = "Sending...";
-      }
-
-      try {
-        const response = await fetch("/api/inquiry", {
-          method: "POST",
-          body: formData,
-        });
-        const result = await response.json().catch(() => ({}));
-
-        if (!response.ok) {
-          throw new Error(response.status === 413
-            ? "Attachments must total 4 MB or less. Remove attachments and submit your inquiry again, then email the original design files to our sales team when they contact you."
-            : result.message || "Inquiry could not be sent. Please email ceo@chinauniquepin.com directly.");
-        }
-
-        if (notice) {
-          notice.style.color = "var(--navy)";
-          notice.textContent = "Thank you for your inquiry. Redirecting...";
-        }
-        inquiryForm.reset();
-        window.location.assign("/thank-you");
-      } catch (error) {
-        if (notice) {
-          notice.style.color = "#b42318";
-          notice.textContent = error.message || "Inquiry could not be sent. Please email ceo@chinauniquepin.com directly.";
-        }
-      } finally {
-        if (submitButton) {
-          submitButton.disabled = false;
-          submitButton.textContent = originalButtonText || "Get a Free Quote";
-        }
-      }
+      void submitInquiryForm(inquiryForm, { notice: getFormNotice(inquiryForm) });
     };
 
     document.addEventListener("submit", handleInquirySubmit);
@@ -767,8 +670,9 @@ export default function StaticPageEffects() {
       return inferredCategories.length ? inferredCategories : ["Uncategorized"];
     };
 
-    const blogGrid = document.querySelector(".blog-card-grid");
-    const blogCards = [...document.querySelectorAll(".blog-feature-card")];
+    const serverBlogGrid = document.querySelector('.blog-card-grid[data-server-paginated="true"]');
+    const blogGrid = serverBlogGrid ? null : document.querySelector(".blog-card-grid");
+    const blogCards = blogGrid ? [...blogGrid.querySelectorAll(".blog-feature-card")] : [];
     let activeBlogCategory = "All";
     let currentBlogPage = 1;
     let blogPagination = document.querySelector(".blog-pagination");
@@ -787,7 +691,7 @@ export default function StaticPageEffects() {
       )
     );
 
-    document.querySelectorAll(".blog-category-filter button").forEach((button) => {
+    if (!serverBlogGrid) document.querySelectorAll(".blog-category-filter button").forEach((button) => {
       const category = button.dataset.blogCategory || "All";
       const isPinnedCategory = button.dataset.blogCategoryPinned === "true";
       const shouldShow = category === "All" || isPinnedCategory || availableBlogCategories.has(category);
@@ -950,6 +854,14 @@ export default function StaticPageEffects() {
     const handleBlogCategoryClick = (event) => {
       const button = event.target.closest?.(".blog-category-filter button");
       if (!button) return;
+
+      if (serverBlogGrid) {
+        const category = button.dataset.blogCategory || "All";
+        const params = new URLSearchParams();
+        if (category !== "All") params.set("category", category);
+        window.location.assign(`/blog${params.size ? `?${params}` : ""}`);
+        return;
+      }
 
       document.querySelectorAll(".blog-category-filter button").forEach((categoryButton) => {
         categoryButton.classList.toggle("active", categoryButton === button);

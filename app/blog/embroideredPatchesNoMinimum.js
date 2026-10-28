@@ -50,7 +50,7 @@ export const embroideredPatchesNoMinimumArticleHtml = String.raw`
 <li>Quantity per design, packaging needs, and required arrival date.</li>
 </ul>
 <p>Review the logo at its intended finished size. Small lettering, narrow gaps, and fine outlines may need adjustment when translated into stitches. Ask the supplier to flag details that could lose clarity before approving the proof.</p>
-<p>If your clothing range uses several logo sizes, review the smallest version first. A mark that reads clearly across a jacket back may need simpler artwork on a chest patch. If essential detail cannot be retained, discuss a larger patch or another construction, such as woven patches.</p>
+<p>If your clothing range uses several logo sizes, review the smallest version first. A mark that reads clearly across a jacket back may need simpler artwork on a chest patch. When fine lettering creates a problem at the intended size, compare <a href="/blog/woven-vs-embroidered-patches">woven vs embroidered patches for small text</a> to assess whether approved artwork changes, a larger patch, or a different construction better suits the logo.</p>
 <p>Use the <a href="https://uccrafts.com/blog/patch-shapes-guide">patch shapes guide</a> to narrow the outline and border choice. Record the selected version so an earlier proof is not accidentally used for sampling.</p>
 <h2 id="test-patch-samples-on-the-actual-garments">Test Patch Samples on the Actual Garments</h2>
 <p>Evaluate custom embroidered patch samples on the same garment model and fabric intended for the finished order. Look at the placement while the garment is worn, not only while it lies flat. Check nearby seams, pockets, folds, and areas that stretch during movement.</p>

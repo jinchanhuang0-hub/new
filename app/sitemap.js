@@ -1,12 +1,12 @@
 import {
-  blogArticles,
   getCategoryPath,
   productCategories,
   productItemCategoryKey,
   SITE_URL,
 } from "./lib/siteRoutes";
+import { blogArticles } from "./blog/articles";
 
-import { productLastModified } from "./lib/productDates";
+import { productLastModified, categoryLastModified, catalogLastModified } from "./lib/productDates";
 
 const CONTENT_LAST_MODIFIED = new Date("2026-08-22T00:00:00.000Z");
 
@@ -18,13 +18,15 @@ const getProductLastModified = (slug) => productLastModified[slug]
 // A listing changes when products are added or their displayed content changes.
 const getCategoryLastModified = (categoryKey) => new Date(Math.max(
   CONTENT_LAST_MODIFIED.getTime(),
+  ...(categoryLastModified[categoryKey] ? [Date.parse(categoryLastModified[categoryKey])] : []),
   ...Object.entries(productItemCategoryKey)
     .filter(([, key]) => key === categoryKey)
     .map(([slug]) => getProductLastModified(slug).getTime()),
 ));
 
 const getCatalogLastModified = () => new Date(Math.max(
-  ...Object.keys(productCategories).map((key) => getCategoryLastModified(key).getTime()),
+  Date.parse(catalogLastModified),
+  ...Object.keys(productItemCategoryKey).map((slug) => getProductLastModified(slug).getTime()),
 ));
 
 const getArticleLastModified = (article) => {

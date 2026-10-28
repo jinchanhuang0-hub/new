@@ -1,0 +1,17 @@
+export const keychainArtworkComparison = {
+  id: "artwork-to-finished-keychain",
+  titleId: "keychain-artwork-comparison-title",
+  kicker: "FROM ARTWORK TO FINISHED KEYCHAIN",
+  title: "See your keychain design take shape.",
+  description: "Compare the line artwork with the finished keychain to see how the castle shape, lettering and details take form.",
+  artworkImage: "/assets/images/keychain-artwork-comparison/castle-fireworks-keychain-line-art.png",
+  finishedImage: "/assets/images/keychain-artwork-comparison/castle-fireworks-gold-keychain.png",
+  artworkAlt: "Black line drawing of a castle and fireworks keychain with MAGIC and OFYPO lettering",
+  finishedAlt: "Gold-tone castle and fireworks keychain with MAGIC and OFYPO lettering",
+  finishedLabel: "FINISHED KEYCHAIN",
+  finishedNoun: "finished keychain",
+  artworkWidth: 1086,
+  artworkHeight: 1448,
+  finishedWidth: 1086,
+  finishedHeight: 1448,
+};

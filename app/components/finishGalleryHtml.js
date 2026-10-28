@@ -26,17 +26,19 @@ const renderFabricationOptionSection = (
 
 // Match the site's server-rendered HTML sections; keep every fabrication grid in SSR.
 export function renderFinishGallery(
-  { id, title, description, subheading, subdescription, items },
+  { id, title, description, subheading, subdescription, items,
+    primarySectionId, primaryImageScale = "cropped", primaryDesktopColumns },
   additionalSections = [],
 ) {
   const sections = [
     {
-      id: `${id}-plating-options`,
+      id: primarySectionId || `${id}-plating-options`,
       gridId: `${id}-grid`,
       title: subheading,
       description: subdescription,
       items,
-      imageScale: "cropped",
+      imageScale: primaryImageScale,
+      desktopColumns: primaryDesktopColumns,
     },
     ...additionalSections,
   ];

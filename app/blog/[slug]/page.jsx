@@ -9,11 +9,11 @@ import JsonLd from "../../components/JsonLd";
 import { blogHtml } from "../content";
 import { buildBlogArticleHtml } from "../../lib/htmlSections";
 import {
-  blogArticles,
   buildBlogAuthorSchema,
   normalizeSiteHtml,
   SITE_URL,
 } from "../../lib/siteRoutes";
+import { blogArticles } from "../articles";
 
 export const dynamicParams = false;
 

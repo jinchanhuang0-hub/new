@@ -5,15 +5,14 @@ export const corporateChallengeCoinsEmployeeRecognitionArticleHtml = String.raw`
           <strong>In This Guide</strong>
           <nav>
             <a href="#what-are-corporate-challenge-coins">Corporate coins</a>
+            <a href="#why-use-coins-for-employee-recognition">Why use coins</a>
             <a href="#step-1-decide-what-the-program-will-recognize">Recognition purpose</a>
-            <a href="#step-2-set-rules-employees-can-understand">Fair rules</a>
+            <a href="#step-2-set-rules-employees-can-understand">Program rules</a>
             <a href="#step-3-choose-a-structure-that-fits-the-achievement">Program structure</a>
             <a href="#step-4-turn-the-recognition-story-into-a-coin-design">Coin design</a>
             <a href="#step-5-plan-the-presentation-not-just-the-product">Presentation</a>
-            <a href="#step-6-plan-quantities-personalization-and-reorders">Quantities</a>
+            <a href="#step-6-plan-quantities-personalization-and-reorders">Quantities and reorders</a>
             <a href="#step-7-pilot-and-review-the-program">Pilot and review</a>
-            <a href="#common-mistakes-to-avoid">Mistakes</a>
-            <a href="#a-practical-starting-point">Starting point</a>
             <a href="#frequently-asked-questions">FAQ</a>
           </nav>
         </aside>
@@ -23,130 +22,86 @@ export const corporateChallengeCoinsEmployeeRecognitionArticleHtml = String.raw`
             <h1>Corporate Challenge Coins: How to Build an Employee Recognition Program</h1>
             <figure class="blog-article-image blog-article-hero-image blog-article-natural-image">
               <img src="/assets/images/corporate-challenge-coins-employee-recognition.webp" width="1600" height="900" style="object-fit: cover; object-position: center;" alt="Manager presenting a corporate challenge coin during employee recognition">
-              <figcaption>A recognition coin gains meaning from the achievement, the explanation and the way it is presented.</figcaption>
+              <figcaption>A coin can accompany a specific explanation of the achievement being recognized.</figcaption>
             </figure>
-            <p>Corporate challenge coins can give employee recognition a physical form, but the coin is only one part of the program. The meaning comes from what the organization recognizes, how consistently it applies the rules and how the award is presented.</p>
-            <p><strong>The short answer:</strong> Start by defining a specific achievement, behavior or milestone. Set clear eligibility and approval rules, decide whether recognition is for individuals or teams, and then design the coin around that purpose. Plan the presentation, quantity and recordkeeping before placing the order. A well-designed coin can preserve the story of an achievement; it cannot make vague or unfair recognition meaningful.</p>
+            <p>Corporate challenge coins can mark employee achievements, service milestones and team contributions. A useful program connects each coin to a clear reason for recognition and a consistent way of selecting and acknowledging recipients.</p>
+            <p><strong>The short answer:</strong> Define the recognition purpose and basic eligibility rules, choose the design and any variable details, plan the presentation, and calculate quantities by award type. Keep artwork, recipient records and reorder specifications together so the program can continue consistently.</p>
           </header>
 
           <h2 id="what-are-corporate-challenge-coins">What Are Corporate Challenge Coins?</h2>
-          <p>Corporate challenge coins are custom metal coins used by companies to mark achievements, service milestones, leadership contributions, completed projects or shared organizational events. They are associated with service and membership traditions, but a corporate program does not need to copy military language or ceremony.</p>
-          <p>Unlike a general promotional giveaway, an employee recognition coin should have a defined reason for being awarded. The recipient should be able to explain what the coin represents, who presented it and what they did to earn it. That context is more important than adding an expensive finish or filling every part of the design with text.</p>
-          <p>A coin can serve as a symbolic award, but it should complement&mdash;not replace&mdash;fair compensation, useful feedback, development opportunities or appropriate performance management.</p>
+          <p>Corporate challenge coins are custom metal coins carrying a company, team or program identity. Companies may use them to recognize an achievement, welcome a new employee, mark a service milestone or commemorate a shared event. An achievement award needs a clear reason for recognition; a welcome coin does not need to be presented as a performance award.</p>
+
+          <h2 id="why-use-coins-for-employee-recognition">Why Use Coins for Employee Recognition?</h2>
+          <p>A coin gives a contribution or milestone a physical reminder and can carry a consistent company or program symbol. A short presentation message, personalized card or conversation can explain why the recipient is being recognized without crowding that explanation onto the metal. Coins are one way to recognize people; the experience also depends on the criteria, the presentation and employees&rsquo; preferences.</p>
 
           <h2 id="step-1-decide-what-the-program-will-recognize">Step 1: Decide What the Program Will Recognize</h2>
-          <p>Do not begin with artwork. Write one sentence explaining the program&rsquo;s purpose. It might:</p>
+          <p>Before finalizing the artwork, define what the coin will represent. Existing brand artwork can still be used once the recognition purpose is clear. Possible occasions include:</p>
           <ul class="blog-list">
-            <li>recognize a documented example of a company value;</li>
-            <li>mark a service milestone;</li>
-            <li>thank a team after a defined project;</li>
-            <li>recognize mentoring, customer service or process improvement; or</li>
-            <li>acknowledge a verified preventive safety action.</li>
+            <li>a documented example of a company value;</li>
+            <li>a service milestone;</li>
+            <li>completion of a defined project or a team contribution;</li>
+            <li>mentoring, customer service or process improvement; or</li>
+            <li>a verified preventive safety action.</li>
           </ul>
-          <p>Keep each category specific enough that employees understand what qualifies. &ldquo;Excellence&rdquo; is difficult to judge on its own; a documented action gives managers and employees something observable.</p>
-          <p>Safety recognition needs particular care. Rewarding only an incident-free period may discourage reporting. Consider verified preventive actions, training or hazard identification instead.</p>
+          <p>A label such as &ldquo;excellence&rdquo; or &ldquo;leadership&rdquo; needs an observable contribution behind it. For safety recognition, focusing only on an incident-free period may discourage reporting; a verified preventive action is a more specific occasion to consider.</p>
 
           <h2 id="step-2-set-rules-employees-can-understand">Step 2: Set Rules Employees Can Understand</h2>
-          <p>Recognition loses credibility when the criteria change between teams or depend entirely on which manager notices the work. Before launch, document:</p>
-          <ol class="blog-list">
-            <li>Who is eligible, including different locations and work patterns.</li>
-            <li>Who may nominate and what evidence is required.</li>
-            <li>Who approves an award and handles conflicts of interest.</li>
-            <li>When awards are reviewed or presented.</li>
-            <li>Whether the same award can be received more than once.</li>
-          </ol>
-          <p>A short nomination form may record the employee, value or milestone, action and date. The same basic standard should apply across departments.</p>
-          <p>Gallup and Workhuman identify five qualities of effective recognition: it should be fulfilling, authentic, equitable, embedded in the culture and personalized. Their <a href="https://assets.ctfassets.net/hff6luki1ys4/5nwydjKPnj5NnpfLy5TOF8/16c6b644e203e1a2ab139bb12bd16822/unleashing-the-human-element-at-work-transforming-workplaces-through-recognition-2.pdf" target="_blank" rel="noopener noreferrer">workplace-recognition research</a> concerns recognition broadly, not coins specifically, but the framework is useful here. A polished object will not compensate for favoritism, an impersonal presentation or criteria that employees cannot see.</p>
+          <p>Record who is eligible, who may nominate, who approves, when the award is presented and whether someone may receive the same award again. Apply the same basic criteria across departments, locations and work patterns so less-visible contributions can be considered. A short nomination record can capture the contribution and date without creating a large HR process.</p>
+          <p>The <a href="https://assets.ctfassets.net/hff6luki1ys4/5nwydjKPnj5NnpfLy5TOF8/16c6b644e203e1a2ab139bb12bd16822/unleashing-the-human-element-at-work-transforming-workplaces-through-recognition-2.pdf" target="_blank" rel="noopener noreferrer">2022 Gallup and Workhuman workplace-recognition report</a> discusses recognition broadly, not the effects of challenge coins. Its discussion of equitable and personalized recognition is useful when setting program rules. In this research, personalized recognition refers to how appreciation fits the individual. It does not mean that every award must carry an engraved name.</p>
 
           <h2 id="step-3-choose-a-structure-that-fits-the-achievement">Step 3: Choose a Structure That Fits the Achievement</h2>
-          <p>The program may use one coin or a small, controlled series:</p>
+          <p>A program can use one shared design, selected variations or separate award versions. Decide what belongs on every coin and what must change for a particular occasion.</p>
           <div class="blog-table-wrap">
             <table class="blog-table">
-              <thead>
-                <tr><th>Program type</th><th>Suitable coin structure</th><th>Important control</th></tr>
-              </thead>
+              <thead><tr><th>Recognition occasion</th><th>Shared information</th><th>Details that may vary</th><th>Confirm before ordering</th></tr></thead>
               <tbody>
-                <tr><td>Values-based recognition</td><td>One design per selected value</td><td>Define observable examples for each value</td></tr>
-                <tr><td>Service milestones</td><td>Consistent design with year differences</td><td>Verify employment dates before ordering personalized pieces</td></tr>
-                <tr><td>Project completion</td><td>Project identity on one side and company identity on the other</td><td>State what counts as project completion</td></tr>
-                <tr><td>Team recognition</td><td>Shared design for all eligible team members</td><td>Include less-visible contributors, locations and shifts</td></tr>
-                <tr><td>Leadership or mentoring</td><td>Award tied to documented contributions</td><td>Do not confuse seniority with demonstrated behavior</td></tr>
+                <tr><td>Values-based recognition</td><td>Company or program identity</td><td>Value name and contribution description</td><td>Whether distinct coin versions are needed or a card or presentation message can explain the difference</td></tr>
+                <tr><td>Service milestones</td><td>Company identity and series design</td><td>Service years, such as five or ten; optional name or award year</td><td>Distinguish years of service, award year and company anniversary</td></tr>
+                <tr><td>Project completion</td><td>Company identity</td><td>Project name and completion date</td><td>Project wording, completion point and recipient group</td></tr>
+                <tr><td>Team recognition</td><td>Team or project design</td><td>Department or location when it serves a clear purpose</td><td>Whether support roles, remote staff and shift workers are included</td></tr>
+                <tr><td>Leadership or mentoring</td><td>Recognition-program identity</td><td>Award name or contribution description</td><td>What is being recognized and whether the detail belongs on the coin or in the accompanying message</td></tr>
               </tbody>
             </table>
           </div>
-          <p>Avoid too many categories at launch. A pilot with one or two award types is easier to explain and review.</p>
           <figure class="blog-article-image blog-image-16x9">
-            <img src="/assets/images/employee-recognition-challenge-coin-series.webp" width="1200" height="675" loading="lazy" decoding="async" style="height: auto; aspect-ratio: 16 / 9; max-height: none;" alt="Coordinated employee recognition challenge coin series for company programs">
-            <figcaption>A controlled series can share one program identity while using small design changes for different awards.</figcaption>
+            <img src="/assets/images/employee-recognition-challenge-coin-series.webp" width="1200" height="675" loading="lazy" decoding="async" style="height: auto; aspect-ratio: 16 / 9; max-height: none;" alt="Illustrative employee recognition challenge coin series with coordinated designs">
+            <figcaption>A coordinated visual identity can be used across different recognition occasions.</figcaption>
           </figure>
 
           <h2 id="step-4-turn-the-recognition-story-into-a-coin-design">Step 4: Turn the Recognition Story Into a Coin Design</h2>
-          <p>A practical two-sided layout is:</p>
+          <p>The front can carry one dominant company or program emblem; the back can identify the achievement, value or milestone. Keep the most important wording readable at the finished size. The <a href="/blog/challenge-coin-size-guide">challenge coin size and thickness guide</a> helps when checking lettering and overall proportions.</p>
+          <p>Flat logos, clear lettering and separated colors may suit 2D relief; a sculpted subject may benefit from 3D relief. Compare the options in the <a href="/blog/2d-vs-3d-challenge-coins">2D vs 3D challenge coin guide</a>. Choose the finish and packaging with the presentation method in mind, then review both sides together at actual scale.</p>
           <ul class="blog-list">
-            <li><strong>Front:</strong> company or program identity, with one dominant emblem.</li>
-            <li><strong>Back:</strong> the recognized value, milestone, project or short message.</li>
-            <li><strong>Optional details:</strong> year, department, sequential number or recipient name when the program requires them.</li>
+            <li><strong>Shared coin with a personalized card:</strong> Keep the coin reusable and explain the individual contribution on a card. Match each card to its intended recipient.</li>
+            <li><strong>Shared artwork with personalization on the coin:</strong> A name, date or number may be possible if the design has a suitable location and production method. Confirm the finish, recipient list and proof approval point before ordering.</li>
+            <li><strong>Separate versions for different awards:</strong> Use this when the award itself needs to appear on the coin. Review artwork and planned quantity for each version and keep its version record.</li>
           </ul>
-          <p>Keep essential wording readable at the finished size. Long mission statements, multiple logos and detailed illustrations compete for space. Decide which element must be seen first.</p>
-          <p>Flat logos, lettering and separated brand colors often work well in 2D, while portraits, buildings or sculpted subjects may justify 3D relief. The <a href="/blog/2d-vs-3d-challenge-coins">2D vs 3D challenge coin guide</a> explains that choice in detail. If size is undecided, review the <a href="/blog/challenge-coin-size-guide">challenge coin size and thickness guide</a> and print the proof at actual scale before approving it.</p>
-          <p>Finish and packaging should follow the presentation method. Bright plating can suit a modern brand, while an antique finish may make recessed relief easier to see. A pouch supports simple distribution; a fitted box may suit a formal award. These are choices, not fixed rules.</p>
           <figure class="blog-article-image blog-image-16x9">
-            <img src="/assets/images/corporate-coin-design-and-presentation-review.webp?v=20260904-no-border" width="1200" height="675" loading="lazy" decoding="async" style="height: auto; aspect-ratio: 16 / 9; max-height: none; object-fit: contain; object-position: center;" alt="Front and back corporate challenge coin design reviewed with presentation packaging">
-            <figcaption>Review the message, both sides and the packaging together before approving the program coin.</figcaption>
+            <img src="/assets/images/corporate-coin-design-and-presentation-review.webp?v=20260904-no-border" width="1200" height="675" loading="lazy" decoding="async" style="height: auto; aspect-ratio: 16 / 9; max-height: none; object-fit: contain; object-position: center;" alt="Illustrative front and back corporate coin design shown with presentation packaging">
+            <figcaption>Review the message, both sides and the packaging together.</figcaption>
           </figure>
 
           <h2 id="step-5-plan-the-presentation-not-just-the-product">Step 5: Plan the Presentation, Not Just the Product</h2>
-          <p>A short presentation note should answer:</p>
-          <ul class="blog-list">
-            <li>What did the employee or team do?</li>
-            <li>Why did it matter?</li>
-            <li>What does the coin&rsquo;s symbol represent?</li>
-          </ul>
-          <p>Public recognition is not automatically better. Some employees value a team announcement; others prefer a private conversation. Ask about preferences when possible, especially before using photographs or social media. Include remote, shift-based and on-site employees in the same program logic.</p>
+          <p>A brief presentation note should explain what the employee or team did, why it mattered and what the coin&rsquo;s design represents. Some recipients prefer a team announcement; others prefer a private conversation. Ask about preferences when possible, especially before sharing photographs or posting on social media.</p>
+          <p>Plan how remote, shift-based and on-site recipients will receive the coin and its accompanying message so the reason for recognition is clear in each setting.</p>
 
           <h2 id="step-6-plan-quantities-personalization-and-reorders">Step 6: Plan Quantities, Personalization and Reorders</h2>
-          <p>Separate standard stock from personalized pieces. Reusable coins can be tracked as inventory; names, dates or serial numbers require an accurate recipient list and another proof check.</p>
-          <p>Before requesting a quote, prepare:</p>
-          <ul class="blog-list">
-            <li>purpose and recipient group;</li>
-            <li>front and back artwork or a design brief;</li>
-            <li>names, dates, numbers and verified spelling;</li>
-            <li>diameter, thickness, finish and packaging preferences;</li>
-            <li>estimated quantity and possible reorders;</li>
-            <li>required arrival date and destination.</li>
-          </ul>
-          <p>Keep the approved artwork, specification and version history together if the design may return next year. UCCrafts&rsquo; guide to <a href="/blog/how-custom-challenge-coins-are-made">how custom challenge coins are made</a> shows where approval and production checks fit into the wider process.</p>
+          <p>Estimate quantities by expected awards, the issuing rules and the number of versions, rather than by total headcount alone. If one person receives different awards, whether they receive a coin for each depends on the program rules; do not remove that person from the count automatically.</p>
+          <p><strong>Illustrative example:</strong> A round plans 12 values-recognition coins, eight five-year service coins and four ten-year service coins. If each recognition receives one coin, the planned issue quantity is 24 coins (12 + 8 + 4). This counts awards, not unique employees. Check suitable existing stock and any additional spare needs separately.</p>
+          <p>Track reusable stock, fixed-year versions and pieces already personalized for individuals separately. Only remaining stock that still fits the award and its wording should be used in a later round. For every version, keep its approved artwork, specifications, planned quantity and order record. A personalized order also needs a named recipient-list version and a clear approval point.</p>
+          <p>For a reorder, retain the approved artwork, specifications and a physical reference if available. Review any changes before production; appearance across separate batches should be checked against the agreed requirements rather than assumed identical. The guide to <a href="/blog/how-custom-challenge-coins-are-made">how custom challenge coins are made</a> explains where proof and production checks fit.</p>
+          <p>For a quote, share the award purpose, artwork or reference image, quantity by version, personalization needs, preferred size and finish, packaging, required arrival date and destination.</p>
 
           <h2 id="step-7-pilot-and-review-the-program">Step 7: Pilot and Review the Program</h2>
-          <p>Run a limited pilot before building a large series. After the first cycle, review operational evidence rather than judging the program by the ceremony alone.</p>
-          <p>Useful questions include:</p>
-          <ul class="blog-list">
-            <li>Were the criteria understood and supported by specific evidence?</li>
-            <li>Were departments, shifts and locations represented fairly?</li>
-            <li>Were quantities, names and delivery details accurate?</li>
-            <li>Did managers present and record awards consistently?</li>
-          </ul>
-          <p>Participation and distribution patterns can reveal gaps, but they do not prove that the coin changed engagement, productivity or retention. Combine program records with employee feedback and existing HR measures.</p>
-
-          <h2 id="common-mistakes-to-avoid">Common Mistakes to Avoid</h2>
-          <ul class="blog-list">
-            <li><strong>Using an earned coin as a generic giveaway.</strong> If there is no qualifying achievement, describe it as a commemorative or company coin.</li>
-            <li><strong>Writing vague criteria.</strong> Terms such as &ldquo;excellence&rdquo; and &ldquo;leadership&rdquo; need observable examples.</li>
-            <li><strong>Recognizing only visible work.</strong> Remote teams, shifts and support roles are easily missed when recognition depends on executive visibility.</li>
-            <li><strong>Overcrowding the artwork.</strong> Put detailed program rules in a card, intranet page or presentation note.</li>
-            <li><strong>Promising an outcome.</strong> No physical award guarantees motivation, loyalty or performance.</li>
-            <li><strong>Ordering before approval.</strong> Confirm every name, date and specification on the digital proof.</li>
-          </ul>
-
-          <h2 id="a-practical-starting-point">A Practical Starting Point</h2>
-          <p>The strongest employee recognition challenge coins are attached to a clear decision: what is being recognized, why it matters and how the recipient was selected. Establish those rules first. Then use the coin&rsquo;s two sides, relief, color and presentation to preserve that story in a compact form.</p>
-          <p>If your organization is planning a service, values, project or leadership program, prepare the purpose, audience, quantity, artwork and presentation date before contacting a supplier. You can then review available <a href="/products/custom-challenge-coins">custom challenge coin options</a> against the actual needs of the program instead of choosing specifications in isolation.</p>
+          <p>A limited first round can reveal whether employees understand the criteria and whether eligible people across roles and locations are being considered. Review recipient lists, version assignments, quantities and delivery details, along with how the awards were presented and recorded. A pilot does not imply a particular minimum order or a free sample.</p>
+          <p>Use the review to improve the next round&rsquo;s rules and order records. Distribution counts alone do not show that retention or performance changed. If you are choosing a design for a first round or a future series, review <a href="/products/custom-challenge-coins">custom challenge coin options</a> against the program&rsquo;s actual needs.</p>
 
           <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
           <div class="blog-faq">
-            <details open><summary><h3>What should an employee recognition challenge coin include?</h3></summary><p>Include a clear company or program identity and the specific value, achievement or milestone being recognized. A year, department, recipient name or serial number can be added when it has a defined role. Avoid long text that will be difficult to read at the finished size.</p></details>
-            <details><summary><h3>Are corporate challenge coins a replacement for bonuses or other awards?</h3></summary><p>No. They are symbolic recognition items. Organizations should decide separately how coins relate to compensation, benefits, formal performance awards and local employment or tax requirements.</p></details>
-            <details><summary><h3>How early should a company order recognition coins?</h3></summary><p>There is no universal lead time. It depends on artwork readiness, design complexity, proof revisions, quantity, finishing, packaging and shipping destination. Start from the required presentation date, request a project-specific schedule and leave time for internal approvals and delivery risk.</p></details>
+            <details open><summary><h3>What should an employee recognition coin include?</h3></summary><p>Include a clear company or program identity and the achievement, value or milestone being recognized. Add a name, date or number only when it has a defined purpose. Keep longer explanations on a presentation card or accompanying message so the coin remains readable.</p></details>
+            <details><summary><h3>Should employee names go on the coin or a presentation card?</h3></summary><p>A personalized card can explain an individual contribution while allowing the coin design to remain reusable. Adding a name to the coin creates an individually assigned piece and requires confirmation of the recipient list, layout and suitable production method. Choose according to how the awards will be presented and managed.</p></details>
+            <details><summary><h3>Can one design be used for different awards or service milestones?</h3></summary><p>Yes. A program can retain a shared visual identity while using a card or selected design changes to distinguish awards. If award names or service years appear on the coin itself, confirm each version&rsquo;s artwork, quantity and production requirements before ordering.</p></details>
+            <details><summary><h3>How early should a company order recognition coins?</h3></summary><p>Our reference lead times are 5–7 working days for samples and 12–15 working days for production. Confirm the schedule for the specific order, allowing for internal approvals, recipient-list checks and shipping. The required arrival date and destination should be included in the initial brief.</p></details>
           </div>
         </div>
       </div>
