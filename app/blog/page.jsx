@@ -45,6 +45,7 @@ export async function generateMetadata({ searchParams }) {
     ...baseMetadata,
     title: state.page > 1 ? `${baseMetadata.title} | Page ${state.page}` : baseMetadata.title,
     alternates: { canonical: getBlogUrl(state) },
+    robots: { index: state.category === "All", follow: true },
   };
 }
 
