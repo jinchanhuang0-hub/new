@@ -55,3 +55,13 @@ export const productLastModified = {
   "custom-white-drinking-game-dice-set": "2026-10-07",
   "custom-colorful-translucent-dice-set": "2026-10-07",
 };
+
+// Verified category-specific content changes, independent of product dates.
+export const categoryLastModified = {
+  medals: "2026-10-15", // 4ad2ae6: school awards procurement link.
+  buckles: "2026-10-24", // 35ad174: removed Kowow product from listing.
+  keychains: "2026-10-27", // 0a7617f: materials, attachments and packaging.
+};
+
+// Catalog membership changed; category-only copy does not update /products.
+export const catalogLastModified = "2026-10-24"; // 35ad174
