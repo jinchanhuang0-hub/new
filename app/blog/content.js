@@ -335,7 +335,7 @@ export const blogHtml = String.raw`
             <div class="blog-feature-body">
               <div class="blog-feature-meta"><span>Custom Medals</span><span>Race Awards</span></div>
               <h2>Finisher Medals vs Placement Medals: Race Award Guide</h2>
-              <p>Compare finisher, placement and age-group medals, then plan fair award categories and race-day distribution for 5Ks, marathons and sports events.</p>
+              <p>Finisher medals recognize completion; placement medals recognize results. Your race may need both, with different quantities and award categories.</p>
               <span class="blog-feature-link">Read More</span>
             </div>
           </a>
@@ -362,7 +362,7 @@ export const blogHtml = String.raw`
             <div class="blog-feature-body">
               <div class="blog-feature-meta"><span>Custom Keychains</span><span>Material Guide</span></div>
               <h2>Custom Metal Keychain Materials: Zinc Alloy vs Brass vs Stainless Steel vs Iron</h2>
-              <p>Compare four common metals by design flexibility, durability, finish, manufacturing process, application and budget.</p>
+              <p>Zinc alloy, brass, stainless steel and iron suit different keychain designs. Shape, surface detail and finish help determine which material fits your project.</p>
               <span class="blog-feature-link">Read More</span>
             </div>
           </a>
@@ -380,7 +380,7 @@ export const blogHtml = String.raw`
             <div class="blog-feature-body">
               <div class="blog-feature-meta"><span>Custom Keychains</span><span>Specification Guide</span></div>
               <h2>Custom Metal Keychain Size, Thickness and Measurement Guide</h2>
-              <p>Compare metal keychain body size, thickness, relief height, finished length and connection points before approving a sample or placing a bulk order.</p>
+              <p>A keychain’s body size is only part of its finished dimensions. Thickness, attachment holes and hardware also affect how it fits and hangs.</p>
               <span class="blog-feature-link">Read More</span>
             </div>
           </a>

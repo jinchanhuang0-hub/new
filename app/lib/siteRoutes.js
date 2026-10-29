@@ -1061,10 +1061,10 @@ const blogArticleData = {
     ],
   },
   "custom-metal-keychain-size-attachment-guide": {
-    title: "Metal Keychain Size Guide: Dimensions and Thickness",
+    title: "Metal Keychain Size Guide: Thickness & Hole Size",
     headline: "Custom Metal Keychain Size, Thickness and Measurement Guide",
     description:
-      "Learn how to specify metal keychain body dimensions, thickness, finished length and attachment-hole fit in mm and inches for accurate sourcing and sampling.",
+      "Metal keychain dimensions explained: body size, thickness, overall length and attachment-hole fit, with clear measurement guidance in millimeters and inches.",
     author: "Sunny Huang",
     authorType: "Person",
     datePublished: "2026-08-17",
