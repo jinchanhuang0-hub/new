@@ -1,6 +1,7 @@
 import { blogArticles as existingBlogArticles, SITE_URL } from "../lib/siteRoutes";
 import { customChallengeCoinsCost } from "./customChallengeCoinsCost";
 import { customHatPatchesLooseOrFinished } from "./customHatPatchesLooseOrFinished";
+import { breastCancerAwarenessPinsStyleGuide } from "./breastCancerAwarenessPinsStyleGuide";
 
 const customNavyBeltBucklesUniformKeepsakes = {
   title: "Custom Navy Belt Buckles: Uniform Wear vs. Keepsakes",
@@ -119,6 +120,7 @@ const customGraduationMedalsSchoolAwards = {
 };
 
 export const blogArticles = {
+  "breast-cancer-awareness-pins-style-guide": breastCancerAwarenessPinsStyleGuide,
   "custom-navy-belt-buckles-uniform-keepsakes": customNavyBeltBucklesUniformKeepsakes,
   "custom-hat-patches-loose-or-finished": customHatPatchesLooseOrFinished,
   "custom-challenge-coins-cost": customChallengeCoinsCost,

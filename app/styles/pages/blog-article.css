@@ -2493,3 +2493,19 @@
   overflow-x: auto;
   overscroll-behavior-inline: contain;
 }
+#breast-cancer-awareness-pins-style-guide .blog-article-header > .blog-article-hero-image {
+  width: calc(100% + (2 * var(--article-pad)));
+  max-width: none;
+  margin-left: calc(var(--article-pad) * -1);
+  margin-right: calc(var(--article-pad) * -1);
+  overflow: hidden;
+}
+
+#breast-cancer-awareness-pins-style-guide .blog-article-header > .blog-article-hero-image img {
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: auto;
+  max-height: none;
+  object-fit: cover;
+}

@@ -36,6 +36,7 @@ import { yearsOfServiceLapelPinsArticleHtml } from "./yearsOfServiceLapelPins";
 import { customChallengeCoinsCostArticleHtml } from "./customChallengeCoinsCost";
 import { customHatPatchesLooseOrFinishedArticleHtml } from "./customHatPatchesLooseOrFinished";
 import { customNavyBeltBucklesUniformKeepsakesArticleHtml } from "./customNavyBeltBucklesUniformKeepsakes";
+import { breastCancerAwarenessPinsStyleGuideArticleHtml } from "./breastCancerAwarenessPinsStyleGuide";
 
 
 export const metadata = {
@@ -71,6 +72,10 @@ export const blogHtml = String.raw`
           <button type="button" data-blog-category="Holidays" data-blog-category-pinned="true">Holidays</button>
         </div>
         <div class="blog-card-grid">
+          <a class="blog-feature-card" href="/blog/breast-cancer-awareness-pins-style-guide" data-card-image-fit="full" data-blog-category="Awareness" aria-label="Read Breast Cancer Awareness Pins: A Style Guide for Bulk Buyers">
+            <img src="/assets/images/breast-cancer-awareness-pins-pink-ribbon-design-comparison.webp" width="1672" height="941" title="Breast Cancer Awareness Pins: Pink Ribbon Design Comparison" alt="Four pink ribbon pins displayed side by side: plain, smaller plain, rhinestone, and a ribbon with HOPE lettering.">
+            <div class="blog-feature-body"><div class="blog-feature-meta"><span>Awareness</span><span>Buyer Guide</span></div><h2>Breast Cancer Awareness Pins: A Style Guide for Bulk Buyers</h2><p>The same pink ribbon can look different on a uniform or at an event. The right design depends on visibility, decoration, and the message it needs to carry.</p><span class="blog-feature-link">Read More</span></div>
+          </a>
           <a class="blog-feature-card" href="/blog/woven-vs-embroidered-patches" data-blog-category="Patches" aria-label="Read Woven vs Embroidered Patches: What If Your Logo Has Small Text?">
             <img src="/assets/images/woven-vs-embroidered-patches-featured.webp" width="1672" height="941" title="Woven and Embroidered Patch Samples" alt="Woven and embroidered patch samples side by side on a wooden worktable">
             <div class="blog-feature-body">
@@ -486,6 +491,7 @@ export const blogHtml = String.raw`
     ${wovenVsEmbroideredPatchesArticleHtml}
     ${customBeltBuckleDesignGuideArticleHtml}
     ${customNavyBeltBucklesUniformKeepsakesArticleHtml}
+    ${breastCancerAwarenessPinsStyleGuideArticleHtml}
     ${customChristmasOrnamentsGuideArticleHtml}
     ${lapelPinAttachmentsGuideArticleHtml}
     ${corporateChallengeCoinsEmployeeRecognitionArticleHtml}
@@ -1889,6 +1895,7 @@ export const blogHtml = String.raw`
 
         <h3>Event Preparation</h3>
         <p>For meetings, VIP gifts, club activities, or internal ceremonies, the buyer may only need a limited number of pins. In this case, low-quantity production can match the actual need without forcing unnecessary inventory.</p>
+        <p>For a breast cancer awareness event, choose <a href="/blog/breast-cancer-awareness-pins-style-guide">pink ribbon pin styles</a> around how the pins will be worn and whether they need an event name or logo.</p>
         <p>If the pins are for a fixed event date, the deadline should be shared at the first inquiry. Waiting until after proof approval to mention the event date can create unnecessary risk, especially when mold making, plating, packaging, and international shipping are all involved.</p>
 
         <h3>Retail Sample Review</h3>
@@ -2013,6 +2020,8 @@ export const blogHtml = String.raw`
           <li>For formal recognition, die-struck pins with gold, silver or antique plating can look cleaner and more professional.</li>
           <li>For complex artwork, printed pins or hybrid enamel plus printing may preserve small details better.</li>
         </ul>
+
+        <p>For breast cancer awareness projects, our <a href="/blog/breast-cancer-awareness-pins-style-guide">breast cancer awareness pin style guide</a> focuses on ribbon size, decoration, and branding for staff wear, giveaways, and fundraising.</p>
 
         <h2>Step 2: Prepare Artwork That Can Be Manufactured</h2>
         <p>Most buyers start with a logo, mascot, badge design, slogan or hand sketch. A manufacturer then converts it into production artwork. The production file should define the final shape, size, raised metal outlines, enamel colors, plating, back attachment and any special details. If Pantone matching is required, share the Pantone number rather than relying only on colors displayed on a screen.</p>
