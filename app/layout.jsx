@@ -1,5 +1,6 @@
 import JsonLd from "./components/JsonLd";
 import AnalyticsConsent from "./components/AnalyticsConsent";
+import InquiryAnalyticsEffects from "./components/InquiryAnalyticsEffects";
 import PerformanceMetrics from "./components/PerformanceMetrics";
 import Script from "next/script";
 import { SITE_URL } from "./lib/siteRoutes";
@@ -73,6 +74,7 @@ export default function RootLayout({ children }) {
         />
         {children}
         <AnalyticsConsent />
+        <InquiryAnalyticsEffects />
         <PerformanceMetrics />
         <a
           className="whatsapp-float"

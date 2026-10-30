@@ -1,23 +1,11 @@
 import { canSendProductionAnalytics } from "./analyticsGate.mjs";
+import {
+  inquiryPageType, inquiryFormId, inquiryHttpErrorCode,
+  reportInquirySubmitAttempt, reportInquiryError, reportInquiryValidationError,
+} from "./inquiryAnalytics.mjs";
 
 const pendingForms = new WeakSet();
 const reportedInquiryIds = new Set();
-
-const pageType = (pathname) => {
-  if (pathname.startsWith("/blog/")) return "blog";
-  if (pathname === "/contact") return "contact";
-  if (pathname.startsWith("/products/") || pathname.startsWith("/product-")) return "product";
-  return "other";
-};
-
-const formId = (form, pathname) => {
-  if (form.classList.contains("footer-quote-form")) return pathname.startsWith("/blog/") ? "blog_footer" : "site_footer";
-  if (form.closest("[data-product-inquiry-modal]")) return "product_modal";
-  if (pathname === "/contact") return "contact_main";
-  if (pathname === "/") return "home_main";
-  if (pathname.startsWith("/products/") || pathname.startsWith("/product-")) return "product_main";
-  return "other_main";
-};
 
 export const reportInquirySuccess = ({ inquiryId, form, pathname, navigate = () => window.location.assign("/thank-you") }) => {
   let navigated = false;
@@ -39,8 +27,8 @@ export const reportInquirySuccess = ({ inquiryId, form, pathname, navigate = () 
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
       event: "uccrafts_inquiry_success",
-      form_id: formId(form, pathname),
-      page_type: pageType(pathname),
+      form_id: inquiryFormId(form, pathname),
+      page_type: inquiryPageType(pathname),
       eventCallback: () => {
         window.clearTimeout(fallback);
         go();
@@ -60,23 +48,33 @@ export const submitInquiryForm = async (form, {
   errorColor = "#b42318",
 } = {}) => {
   if (pendingForms.has(form)) return;
+  // Native submit events already passed validation; also protect direct callers.
+  if (form.checkValidity && !form.checkValidity()) {
+    reportInquiryValidationError(form);
+    return;
+  }
   pendingForms.add(form);
   const originalButtonText = button?.textContent;
-  const data = new FormData(form);
-  // Query strings may contain personal information. The page path is enough for the email.
-  data.set("pageUrl", `${window.location.origin}${window.location.pathname}`);
-  data.set("pageTitle", document.title);
-  if (notice) {
-    notice.style.color = sendingColor;
-    notice.textContent = "Sending your inquiry...";
-  }
-  if (button) {
-    button.disabled = true;
-    button.textContent = "Sending...";
-  }
+  let errorCode = "preparation_failed";
 
   try {
+    const data = new FormData(form);
+    // Query strings may contain personal information. The page path is enough for the email.
+    data.set("pageUrl", `${window.location.origin}${window.location.pathname}`);
+    data.set("pageTitle", document.title);
+    if (notice) {
+      notice.style.color = sendingColor;
+      notice.textContent = "Sending your inquiry...";
+    }
+    if (button) {
+      button.disabled = true;
+      button.textContent = "Sending...";
+    }
+    // Exactly one attempt per validated request; the pending lock rejects repeats.
+    reportInquirySubmitAttempt(form);
+    errorCode = "network_error";
     const response = await fetch("/api/inquiry", { method: "POST", body: data });
+    errorCode = response.ok ? "invalid_confirmation" : inquiryHttpErrorCode(response.status);
     const result = await response.json().catch(() => ({}));
     if (!response.ok || result.success !== true || typeof result.inquiry_id !== "string" || !result.inquiry_id) {
       throw new Error(response.status === 413
@@ -100,6 +98,7 @@ export const submitInquiryForm = async (form, {
     }, { once: true });
     reportInquirySuccess({ inquiryId: result.inquiry_id, form, pathname: window.location.pathname });
   } catch (error) {
+    reportInquiryError(form, errorCode);
     pendingForms.delete(form);
     if (notice) {
       notice.style.color = errorColor;
