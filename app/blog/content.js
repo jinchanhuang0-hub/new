@@ -303,12 +303,12 @@ export const blogHtml = String.raw`
               <span class="blog-feature-link">Read More</span>
             </div>
           </a>
-          <a class="blog-feature-card" href="/blog/patch-shapes-guide" data-blog-category="Patches" aria-label="Read Patch Shapes Guide: How to Choose the Right Shape for a Custom Patch">
+          <a class="blog-feature-card" href="/blog/patch-shapes-guide" data-blog-category="Patches" aria-label="Read Patch Shapes: Choosing the Right Outline for Your Logo">
             <img src="/assets/images/patch-shapes-guide.webp" width="1600" height="900" alt="Round oval rectangular shield and custom patch shapes">
             <div class="blog-feature-body">
               <div class="blog-feature-meta"><span>Custom Patches</span><span>Patch Design Guide</span></div>
-              <h2>Patch Shapes Guide: How to Choose the Right Shape for a Custom Patch</h2>
-              <p>Compare round, oval, rectangular, shield and custom patch shapes by artwork, text, placement, size and border.</p>
+              <h2>Patch Shapes: Choosing the Right Outline for Your Logo</h2>
+              <p>A circular border can squeeze a long wordmark, while a wide rectangle may leave unnecessary space around a compact emblem. Use the artwork and garment position to narrow the outline before choosing the edge finish.</p>
               <span class="blog-feature-link">Read More</span>
             </div>
           </a>
@@ -2708,6 +2708,7 @@ export const blogHtml = String.raw`
 
         <h2 id="hats-and-caps">3. Hats and Caps</h2>
         <p>Baseball caps, trucker hats and beanies are popular choices for sports teams, outdoor brands, restaurants and merchandise sellers. Because the front panel is small and sometimes curved, a compact design with a clear outline usually works better than artwork containing extensive text.</p>
+        <p>For help matching the outline to your artwork and placement, see our <a href="/blog/patch-shapes-guide">patch shapes guide</a>.</p>
 
         <h2 id="backpacks-tote-bags-and-travel-gear">4. Backpacks, Tote Bags and Travel Gear</h2>
         <p>Backpacks and fabric bags give students, travelers and event participants a visible place to display school, destination or membership designs. Canvas and denim commonly support sewn patches. Coated, waterproof or heat-sensitive bags should be tested before using heat-applied backing.</p>

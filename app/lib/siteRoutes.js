@@ -795,10 +795,10 @@ const blogArticleData = {
     ],
   },
   "patch-shapes-guide": {
-    title: "Patch Shapes Guide: How to Choose the Best Custom Shape",
-    headline: "Patch Shapes Guide: How to Choose the Right Shape for a Custom Patch",
+    title: "Patch Shapes Guide: Round, Rectangle, Shield & Custom",
+    headline: "Patch Shapes: Choosing the Right Outline for Your Logo",
     description:
-      "Compare round, rectangular, shield, oval and custom patch shapes. Learn how artwork, placement, borders and size affect the best shape for your design.",
+      "Patch shape affects how much room your logo and lettering have. See which outlines suit your border, finished size and placement on hats, shirts or bags.",
     inquiryHeading: "Need Help Choosing a Shape for Your Custom Patch?",
     inquiryDescription:
       "Tell us what artwork or reference image is available, along with the intended placement, approximate dimensions, quantity and required delivery date. Include your preferred material and backing, if known, so we can review the outline and edge options.",
@@ -807,7 +807,7 @@ const blogArticleData = {
     author: "Sunny Huang",
     authorType: "Person",
     datePublished: "2026-08-27",
-    dateModified: "2026-10-27",
+    dateModified: "2026-10-30",
     schemaType: "BlogPosting",
     faq: [
       {
@@ -818,7 +818,7 @@ const blogArticleData = {
       {
         question: "What is the best shape for a custom patch?",
         answer:
-          "There is no single best shape. The right option depends on the artwork proportions, text, finished size, border and intended placement.",
+          "Use a rectangle or oval for a long name or horizontal wordmark, and a circle or shield for a compact emblem. Choose a custom outline when its silhouette makes the symbol recognizable, then check the finished size, border and placement.",
       },
       {
         question: "Can a patch follow the exact shape of my logo?",

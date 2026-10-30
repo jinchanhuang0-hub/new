@@ -126,6 +126,7 @@ export const customHatPatchesLooseOrFinishedArticleHtml = String.raw`
             </table>
           </div>
           <p>For sew-on patches, the buyer or decorator arranges stitching. Heat-activated backing needs application conditions compatible with the hat and equipment. With hook-and-loop patches, specify who supplies and attaches the receiving panel. Compatibility support from Unique Pin is arranged case by case.</p>
+          <p>When the hat panel limits the available height, compare <a href="/blog/patch-shapes-guide#choosing-a-shape-for-the-final-placement">patch shapes for hats</a> before settling on an outline.</p>
           <figure class="blog-article-image blog-article-natural-image">
             <img src="/assets/images/embroidered-hat-patch-placement.webp" width="1448" height="1086" loading="lazy" decoding="async" title="Embroidered Hat Patch Placement and Attachment" alt="Close-up of an embroidered patch attached to the front panel of a cap" aria-describedby="hat-patch-placement-description">
             <span id="hat-patch-placement-description" hidden>An embroidered patch attached to a cap, showing its size relative to the front panel, edge placement, and surrounding seams.</span>
@@ -144,7 +145,7 @@ export const customHatPatchesLooseOrFinishedArticleHtml = String.raw`
 
           <h2 id="hat-patch-faq">Frequently Asked Questions About Buying Hat Patches</h2>
           <div class="blog-faq">
-            ${customHatPatchesLooseOrFinished.faq.map((item, index) => `<details${index === 0 ? " open" : ""}><summary><h3 id="hat-patch-question-${index + 1}">${item.question}</h3></summary><p>${index === 2 ? item.answer.replace("patch shape and dimensions", '<a href="https://uccrafts.com/blog/patch-shapes-guide">patch shape and dimensions</a>') : item.answer}</p></details>`).join("\n            ")}
+            ${customHatPatchesLooseOrFinished.faq.map((item, index) => `<details${index === 0 ? " open" : ""}><summary><h3 id="hat-patch-question-${index + 1}">${item.question}</h3></summary><p>${item.answer}</p></details>`).join("\n            ")}
           </div>
           <section class="blog-article-cta">
             <div class="blog-cta-copy"><h2>Planning Your Loose Hat Patch Order?</h2><p>Send your artwork, quantity, hat details, any backing requirements, and required patch arrival date. Let us know whether you already have an installer. Your quotation will identify included items, additional charges, and the order total.</p></div>

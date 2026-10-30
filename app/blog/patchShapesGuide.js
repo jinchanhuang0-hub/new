@@ -22,13 +22,13 @@ export const patchShapesGuideArticleHtml = String.raw`
         <div class="container blog-article blog-article-with-toc">
           <header class="blog-article-header">
             <a class="blog-back-link" href="/blog">Back to Blog</a>
-            <h1>Patch Shapes Guide: How to Choose the Right Shape for a Custom Patch</h1>
+            <h1>Patch Shapes: Choosing the Right Outline for Your Logo</h1>
             <figure class="blog-article-image blog-article-hero-image blog-image-16x9">
               <img src="/assets/images/patch-shapes-guide.webp" width="1600" height="900" fetchpriority="high" decoding="async" alt="Round oval rectangular shield and custom patch shapes">
               <figcaption>The right patch shape balances the artwork, finished size, border and intended placement.</figcaption>
             </figure>
-            <p>Choosing a patch shape may look like a visual decision, but the outline affects artwork fit, text space, border choice and how the finished patch sits on a hat, sleeve, jacket or bag.</p>
-            <p>Common patch shapes include circles, ovals, squares, rectangles and shields. A patch can also follow a logo, mascot or product outline, but a custom silhouette is not automatically the better choice. The right shape keeps the design clear and suits the surface where it will be used.</p>
+            <p>Long names and horizontal wordmarks often fit rectangular or oval patches. Compact emblems can work inside circles or shields. A custom outline is useful when the silhouette helps people recognize a mascot or brand symbol.</p>
+            <p>Start with the artwork, then check the finished width and height, border and intended placement. A shape that works on a jacket back may need simplifying for a hat or sleeve. Small projections, deep notches and disconnected elements also need review at the proposed finished size.</p>
           </header>
 
           <h2 id="common-patch-shapes-at-a-glance">Common Patch Shapes at a Glance</h2>
@@ -36,12 +36,12 @@ export const patchShapesGuideArticleHtml = String.raw`
             <table class="blog-table">
               <thead><tr><th>Shape</th><th>Often works well for</th><th>Main consideration</th></tr></thead>
               <tbody>
-                <tr><td>Circle</td><td>Emblems, clubs, events and compact logos</td><td>Long horizontal text can become crowded</td></tr>
-                <tr><td>Oval</td><td>Wide logos, hat patches and name-based designs</td><td>Tall artwork may lose useful space</td></tr>
-                <tr><td>Square</td><td>Icons, modern branding and balanced graphics</td><td>Sharp corners may not suit every border</td></tr>
-                <tr><td>Rectangle</td><td>Names, wordmarks and uniform identification</td><td>Long patches need enough flat placement area</td></tr>
-                <tr><td>Shield</td><td>Schools, teams, recognition and group identity</td><td>Narrow points may need to be simplified</td></tr>
-                <tr><td>Custom outline</td><td>Mascots, product silhouettes and distinctive logos</td><td>Small projections and deep cut-ins may not reproduce clearly</td></tr>
+                <tr><td>Circle</td><td>Centered icon with short wording around or below it</td><td>Use an oval or rectangle if a long name crowds the border.</td></tr>
+                <tr><td>Oval</td><td>Horizontal wordmark with a compact icon</td><td>Rework a tall icon if the oval leaves too little vertical room.</td></tr>
+                <tr><td>Square</td><td>Balanced icon or stacked initials</td><td>Adjust the artwork if a wide name leaves unused corners or needs tiny letters.</td></tr>
+                <tr><td>Rectangle</td><td>Long name, wordmark or a horizontal icon-and-text layout</td><td>Try a compact outline if the required width exceeds the placement area.</td></tr>
+                <tr><td>Shield</td><td>Centered emblem with short text above or below</td><td>Keep lettering out of the narrow lower point or simplify the shield.</td></tr>
+                <tr><td>Custom outline</td><td>Recognizable mascot or symbol silhouette with a clear text area</td><td>Simplify small projections, deep notches or disconnected elements at finished size.</td></tr>
               </tbody>
             </table>
           </div>
@@ -76,18 +76,32 @@ export const patchShapesGuideArticleHtml = String.raw`
             <img src="/assets/images/standard-vs-custom-patch-shapes.webp" width="1200" height="800" loading="lazy" decoding="async" alt="Standard patch shapes compared with custom die-cut outlines">
             <figcaption>A custom outline is useful when the silhouette supports the design; a standard shape is often better for text and consistency.</figcaption>
           </figure>
-          <p>If the main job is to present a name, date or department information clearly—or to keep a product series consistent—compare regular shapes such as circles, ovals, rectangles and shields first. They provide predictable space for wording and a repeatable outside form.</p>
-          <p>Consider a custom outline when the silhouette itself helps people recognize a mascot, product or brand mark. In either case, check the proposed outline against the finished size and placement, then confirm that the selected edge treatment is suitable. Review finished <a href="/products/custom-patches">custom patches</a> when comparing outline and edge options.</p>
+          <p>Illustrative design comparison: a simple mountain icon with the name “RIDGE SUPPLY.” The wording and icon stay the same across these layout options. This example shows how the outer shape changes the available space; it is not a documented customer project.</p>
+          <div class="blog-table-wrap"><table class="blog-table">
+            <thead><tr><th>Outline option</th><th>What changes in the layout</th><th>What to check</th></tr></thead>
+            <tbody>
+              <tr><td>Circle</td><td>The mountain stays centered, while the name may need a curved baseline or a second line.</td><td>Check whether the full name remains readable without crowding the border.</td></tr>
+              <tr><td>Rounded rectangle</td><td>The name can run horizontally, with the mountain above or beside it.</td><td>Check the overall width against the garment area and avoid unnecessary empty space.</td></tr>
+              <tr><td>Simplified mountain outline</td><td>The silhouette becomes part of the design, with the name placed inside a supporting lower area.</td><td>Check narrow peaks, deep notches and the connection between the icon and lettering area.</td></tr>
+            </tbody>
+          </table></div>
+          <p>Choose the outline that preserves the information people need to read. A recognizable silhouette can justify a custom shape, but small decorative details do not all need to become part of the outside edge. Review finished <a href="/products/custom-patches">custom patches</a> when comparing outline and edge options.</p>
 
           <h2 id="how-shape-affects-the-patch-border">How Shape Affects the Patch Border</h2>
           <figure class="blog-article-image blog-image-3x2">
             <img src="/assets/images/patch-shapes-border-options.webp" width="1200" height="800" loading="lazy" decoding="async" alt="Merrowed and cut edge finishes on standard and custom patch shapes">
             <figcaption>Smooth outlines often suit raised merrowed borders, while intricate silhouettes may need a flatter cut edge.</figcaption>
           </figure>
-          <p>The shape and border should be selected together. A border is not just a decorative line added after artwork approval; it forms the finished edge.</p>
-          <p>A traditional merrowed border produces a thick, raised edge. It is generally best suited to smooth, regular outlines such as circles, ovals, squares, rectangles and simple shields.</p>
-          <p>More intricate silhouettes may use a flatter embroidered edge or a heat-cut or laser-cut finish, depending on the patch material and construction. These flatter edge methods can follow tighter curves without adding a heavy raised rim around every point.</p>
-          <p>Terminology and available finishing methods may vary between manufacturers, so buyers should confirm the proposed border on the digital proof instead of assuming every patch type supports the same edge treatment.</p>
+          <p>The border forms the finished edge, so evaluate it with the shape and material.</p>
+          <div class="blog-table-wrap"><table class="blog-table">
+            <thead><tr><th>Outline characteristic</th><th>Edge option</th><th>What to confirm</th></tr></thead>
+            <tbody>
+              <tr><td>Smooth, regular textile outline</td><td>A raised merrowed border is usually worth discussing.</td><td>Confirm the finished border on the proof.</td></tr>
+              <tr><td>Simple custom textile outline</td><td>A merrowed border may still be possible.</td><td>Review its curves and corners with the supplier.</td></tr>
+              <tr><td>Tight corners, deep notches or complex projections</td><td>Assess a flatter embroidered edge, heat cutting or laser cutting as distinct methods.</td><td>Confirm the method against material, finished size and construction.</td></tr>
+              <tr><td>Molded PVC outline</td><td>The edge is formed by molding, not textile merrowing.</td><td>Review narrow extensions and recesses in the complete mold design.</td></tr>
+            </tbody>
+          </table></div>
 
           <h2 id="choosing-a-shape-for-the-final-placement">Choosing a Shape for the Final Placement</h2>
           <figure class="blog-article-image blog-image-7x5">
@@ -98,6 +112,8 @@ export const patchShapesGuideArticleHtml = String.raw`
 
           <h3>Hats</h3>
           <p>The front panel of a hat is limited in height and width and may be curved. Compact ovals, rounded rectangles and simplified custom shapes are common choices. For an accurate review, buyers can provide the usable width and height of the front panel, plus a photo showing the hat style or actual placement area.</p>
+          <p>Illustrative placement check: if the usable area on a hat is 70 × 40 mm (about 2.76 × 1.57 in), a 60 mm round patch exceeds the available height. A 65 × 35 mm rounded rectangle falls within those dimensions on paper, but seams, curvature and access for attachment still need checking on the actual hat.</p>
+          <p>These dimensions are an example, not a standard hat-patch size. If your order includes hats as well as patches, confirm <a href="/blog/custom-hat-patches-loose-or-finished">whether you need loose patches or finished hats</a>.</p>
 
           <h3>Chest and Pocket Areas</h3>
           <p>Circles, small shields, squares and rectangles can all work on the chest. Name-based designs usually benefit from a horizontal layout. Check pockets, zippers, buttons and seams before confirming size.</p>
@@ -130,14 +146,12 @@ export const patchShapesGuideArticleHtml = String.raw`
           <h2 id="frequently-asked-questions-about-patch-shapes">Frequently Asked Questions About Patch Shapes</h2>
           <div class="blog-faq">
             <details open><summary><h3>What are the most common patch shapes?</h3></summary><p>Circle, oval, square, rectangle and shield are among the most common choices. Custom patches can also follow a simplified logo, mascot or product silhouette.</p></details>
-            <details><summary><h3>What is the best shape for a custom patch?</h3></summary><p>There is no single best shape. The right option depends on the artwork proportions, text, finished size, border and intended placement.</p></details>
+            <details><summary><h3>What is the best shape for a custom patch?</h3></summary><p>Use a rectangle or oval for a long name or horizontal wordmark, and a circle or shield for a compact emblem. Choose a custom outline when its silhouette makes the symbol recognizable, then check the finished size, border and placement.</p></details>
             <details><summary><h3>Can a patch follow the exact shape of my logo?</h3></summary><p>Often it can, but small projections, deep recesses and disconnected elements may need to be simplified or placed inside a supporting background shape.</p></details>
             <details><summary><h3>Which patch shapes work best on hats?</h3></summary><p>Compact ovals, rounded rectangles and simple custom shapes are useful starting points. The best choice depends on the hat panel, patch dimensions, material and backing.</p></details>
             <details><summary><h3>Can an irregular patch have a merrowed border?</h3></summary><p>Some smooth, simple custom outlines may support a merrowed border. Complex shapes with tight corners or deep cut-ins generally require a different edge treatment. The final choice should be confirmed from the actual artwork.</p></details>
           </div>
 
-          <h2 id="final-thoughts">Final Thoughts</h2>
-          <p>Treat shape, edge, material and placement as one specification, then review the proof at the intended finished size before approval.</p>
         </div>
       </div>
     </article>`;
