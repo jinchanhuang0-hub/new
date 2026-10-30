@@ -113,14 +113,14 @@ test("ordinary and blog submissions share a lock, success contract, and bounded 
     finish({ ok: true, json: async () => ({ success: true, inquiry_id: `id-${expectedId}` }) });
     await Promise.all([first, second]);
     assert.equal(fixture.resets, 1);
-    assert.equal(pushes.length, 1);
-    assert.equal(pushes[0].event, "uccrafts_inquiry_success");
-    assert.equal(pushes[0].form_id, expectedId);
-    assert.equal(pushes[0].page_type, footer ? "blog" : "contact");
-    assert.equal(pushes[0].inquiry_id, undefined);
+    assert.deepEqual(pushes.map((entry) => entry.event), ["uccrafts_inquiry_submit_attempt", "uccrafts_inquiry_success"]);
+    const success = pushes[1];
+    assert.equal(success.form_id, expectedId);
+    assert.equal(success.page_type, footer ? "blog" : "contact");
+    assert.equal(success.inquiry_id, undefined);
     await new Promise((resolve) => setTimeout(resolve, 810));
     assert.deepEqual(navigations, ["/thank-you"]);
-    pushes[0].eventCallback();
+    success.eventCallback();
     assert.deepEqual(navigations, ["/thank-you"]);
     dispatch("pagehide");
     assert.equal(fixture.button.disabled, false);
@@ -148,13 +148,17 @@ test("denied, preview, storage failure, failed request, and repeated callback ne
   await submitInquiryForm(fixture.form, { notice: fixture.notice });
   assert.equal(fixture.button.disabled, false);
   assert.equal(fixture.resets, 0);
-  assert.equal(pushes.length, 0);
+  assert.deepEqual(pushes.map((entry) => entry.event), ["uccrafts_inquiry_submit_attempt", "uccrafts_inquiry_submit_error"]);
+  assert.equal(pushes[1].error_code, "attachments_too_large");
   assert.equal(navigations.length, 0);
   globalThis.fetch = async () => ({ ok: true, json: async () => ({ success: true, inquiry_id: "retry-id" }) });
   await submitInquiryForm(fixture.form, { notice: fixture.notice });
   reportInquirySuccess({ inquiryId: "retry-id", form: fixture.form, pathname: "/contact", navigate: () => {} });
-  assert.equal(pushes.length, 1);
-  pushes[0].eventCallback();
+  assert.deepEqual(pushes.map((entry) => entry.event), [
+    "uccrafts_inquiry_submit_attempt", "uccrafts_inquiry_submit_error",
+    "uccrafts_inquiry_submit_attempt", "uccrafts_inquiry_success",
+  ]);
+  pushes[3].eventCallback();
 });
 
 test("blocked GTM and absent callback cannot prevent navigation", async () => {
