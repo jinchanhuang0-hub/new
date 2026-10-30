@@ -32,9 +32,9 @@ export const patchShapesGuideArticleHtml = String.raw`
           </header>
 
           <h2 id="common-patch-shapes-at-a-glance">Common Patch Shapes at a Glance</h2>
-          <div class="blog-table-wrap">
+          <div class="blog-table-wrap" role="region" aria-label="Common patch shapes and artwork fit" tabindex="0">
             <table class="blog-table">
-              <thead><tr><th>Shape</th><th>Often works well for</th><th>Main consideration</th></tr></thead>
+              <thead><tr><th scope="col">Shape</th><th scope="col">Often works well for</th><th scope="col">Main consideration</th></tr></thead>
               <tbody>
                 <tr><td>Circle</td><td>Centered icon with short wording around or below it</td><td>Use an oval or rectangle if a long name crowds the border.</td></tr>
                 <tr><td>Oval</td><td>Horizontal wordmark with a compact icon</td><td>Rework a tall icon if the oval leaves too little vertical room.</td></tr>
@@ -77,8 +77,8 @@ export const patchShapesGuideArticleHtml = String.raw`
             <figcaption>A custom outline is useful when the silhouette supports the design; a standard shape is often better for text and consistency.</figcaption>
           </figure>
           <p>Illustrative design comparison: a simple mountain icon with the name “RIDGE SUPPLY.” The wording and icon stay the same across these layout options. This example shows how the outer shape changes the available space; it is not a documented customer project.</p>
-          <div class="blog-table-wrap"><table class="blog-table">
-            <thead><tr><th>Outline option</th><th>What changes in the layout</th><th>What to check</th></tr></thead>
+          <div class="blog-table-wrap" role="region" aria-label="Same artwork in three patch outlines" tabindex="0"><table class="blog-table">
+            <thead><tr><th scope="col">Outline option</th><th scope="col">What changes in the layout</th><th scope="col">What to check</th></tr></thead>
             <tbody>
               <tr><td>Circle</td><td>The mountain stays centered, while the name may need a curved baseline or a second line.</td><td>Check whether the full name remains readable without crowding the border.</td></tr>
               <tr><td>Rounded rectangle</td><td>The name can run horizontally, with the mountain above or beside it.</td><td>Check the overall width against the garment area and avoid unnecessary empty space.</td></tr>
@@ -93,8 +93,8 @@ export const patchShapesGuideArticleHtml = String.raw`
             <figcaption>Smooth outlines often suit raised merrowed borders, while intricate silhouettes may need a flatter cut edge.</figcaption>
           </figure>
           <p>The border forms the finished edge, so evaluate it with the shape and material.</p>
-          <div class="blog-table-wrap"><table class="blog-table">
-            <thead><tr><th>Outline characteristic</th><th>Edge option</th><th>What to confirm</th></tr></thead>
+          <div class="blog-table-wrap" role="region" aria-label="Patch outlines and edge finishing options" tabindex="0"><table class="blog-table">
+            <thead><tr><th scope="col">Outline characteristic</th><th scope="col">Edge option</th><th scope="col">What to confirm</th></tr></thead>
             <tbody>
               <tr><td>Smooth, regular textile outline</td><td>A raised merrowed border is usually worth discussing.</td><td>Confirm the finished border on the proof.</td></tr>
               <tr><td>Simple custom textile outline</td><td>A merrowed border may still be possible.</td><td>Review its curves and corners with the supplier.</td></tr>
@@ -102,6 +102,7 @@ export const patchShapesGuideArticleHtml = String.raw`
               <tr><td>Molded PVC outline</td><td>The edge is formed by molding, not textile merrowing.</td><td>Review narrow extensions and recesses in the complete mold design.</td></tr>
             </tbody>
           </table></div>
+          <p>An embroidered border is stitched. Heat cutting and laser cutting trim the fabric and may be combined with a stitched border, but they are not interchangeable for every material. Ask the supplier to identify the proposed edge construction and confirm its suitability for the actual outline.</p>
 
           <h2 id="choosing-a-shape-for-the-final-placement">Choosing a Shape for the Final Placement</h2>
           <figure class="blog-article-image blog-image-7x5">
@@ -141,7 +142,7 @@ export const patchShapesGuideArticleHtml = String.raw`
 
           <h2 id="patch-shape-approval-checklist">Patch Shape Approval Checklist</h2>
           <p><strong>Before approving artwork:</strong> Check the final placement, finished width and height, actual cut outline, and any projections or gaps that may need simplification. View the proof at the intended finished size, review the text in relation to the edge, then confirm the edge treatment and backing or attachment method.</p>
-          <p><strong>When requesting a quote:</strong> Provide the available artwork or reference image, expected dimensions, preferred material or appearance, backing, quantity and target delivery date. You can compare <a href="/products/custom-patches">custom patch options</a> or <a href="/contact?product=Patches&amp;source=patch-shapes-guide">request a custom patch quote</a>; the inquiry form collects project details but does not upload attachments.</p>
+          <p id="final-thoughts"><strong>When requesting a quote:</strong> Provide the available artwork or reference image, expected dimensions, preferred material or appearance, backing, quantity and target delivery date. You can compare <a href="/products/custom-patches">custom patch options</a> or <a href="/contact?product=Patches&amp;source=patch-shapes-guide">request a custom patch quote</a>; the inquiry form collects project details but does not upload attachments.</p>
 
           <h2 id="frequently-asked-questions-about-patch-shapes">Frequently Asked Questions About Patch Shapes</h2>
           <div class="blog-faq">
