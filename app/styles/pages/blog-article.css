@@ -2529,6 +2529,15 @@
   background: #f5f8fd;
 }
 
+#how-to-wear-a-lapel-pin .lapel-pin-styles-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  aspect-ratio: 1376 / 768;
+  object-fit: contain;
+}
+
 #how-to-wear-a-lapel-pin .lapel-pin-photo-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));

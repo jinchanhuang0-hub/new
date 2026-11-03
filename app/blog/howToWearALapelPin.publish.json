@@ -50,24 +50,15 @@
       "alt": "One silver-tone butterfly clutch sits flat against the underside of a lifted navy lapel, just below the buttonhole stitching."
     },
     {
-      "file": "assets/lapel-pin-metal-butterfly-clutches.webp",
-      "sitePath": "/assets/images/lapel-pin-metal-butterfly-clutches.webp",
+      "file": "assets/three-lapel-pin-styles-front-back.jpg",
+      "sitePath": "/assets/images/three-lapel-pin-styles-front-back.jpg",
       "group": "fastening",
-      "role": "Left photo",
-      "width": 1113,
-      "height": 1113,
-      "title": "Metal butterfly clutches",
-      "alt": "Two short posts on the back of a gold-colored pin, with two detached metal butterfly clutches beside it."
-    },
-    {
-      "file": "assets/lapel-pin-rubber-clutches.webp",
-      "sitePath": "/assets/images/lapel-pin-rubber-clutches.webp",
-      "group": "fastening",
-      "role": "Right photo",
-      "width": 1113,
-      "height": 1113,
-      "title": "Rubber clutches",
-      "alt": "Back of a dark metal pin with two short posts and two black rubber clutches beside it."
+      "role": "Three pin styles, front and back",
+      "width": 1376,
+      "height": 768,
+      "title": "Three Lapel Pin Styles, Front and Back",
+      "alt": "Three lapel pins shown front and back, with metal and rubber clutches removed from the short posts and a cap beside the long stem.",
+      "description": "Each column shows the front and back of one pin. The ginkgo pin uses a metal butterfly clutch, the blue crescent pin uses a rubber clutch, and the brass-tone stick pin has a removable tip cap."
     },
     {
       "file": "assets/daisy-lapel-pin-on-denim.webp",
