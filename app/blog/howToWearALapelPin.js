@@ -62,7 +62,6 @@ export const howToWearALapelPinArticleHtml = String.raw`
           <p>At work, leave enough space between the pin and your name badge for guests to read your name.</p>
           <p>At a wedding, arrange the boutonniere and pocket square first. Place the pin where neither will cover it.</p>
           <p>On a denim jacket, lift the pocket flap and pin through the flap alone. Fasten the back, then check that the pocket opens freely.</p>
-          <figure class="blog-article-image blog-article-natural-image lapel-pin-square-photo"><img src="/assets/images/lapel-pin-denim-pocket-flap.webp" width="750" height="750" loading="lazy" decoding="async" title="Pin placement on a denim pocket" alt="Red-and-white pin beside the stitched buttonhole of a blue denim jacket pocket."><figcaption>Pin placement on a denim pocket</figcaption></figure>
 
           <h2 id="lapel-pin-faq">Frequently Asked Questions</h2>
           <div class="blog-faq">${howToWearALapelPin.faq.map((item, index) => `<details${index === 0 ? " open" : ""}><summary><h3>${item.question}</h3></summary><p>${item.answer}</p></details>`).join("")}</div>
