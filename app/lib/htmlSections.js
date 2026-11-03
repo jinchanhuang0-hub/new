@@ -492,16 +492,6 @@ const enhanceBlogArticleImages = (html) =>
     },
   );
 
-const getBlogAuthorAvatar = (article) => {
-  if (article?.authorType === "Organization" && article.author === "Unique Pin") {
-    return { src: "/assets/images/logo.png", className: "blog-brand-avatar" };
-  }
-  if (article?.author === "Sunny Huang") {
-    return { src: "/assets/images/sunny-huang-author-avatar.webp", className: "" };
-  }
-  return null;
-};
-
 const addBlogCardMeta = (html, articles = {}) =>
   html.replace(
     /(<a class="blog-feature-card" href="\/blog\/([^"#]+)"[\s\S]*?<p>[\s\S]*?<\/p>)\s*<span class="blog-feature-link">Read More<\/span>/g,
@@ -511,14 +501,10 @@ const addBlogCardMeta = (html, articles = {}) =>
 
       const author = article.author || "Sunny Huang";
       const date = article.datePublished || "";
-      const avatar = getBlogAuthorAvatar(article);
-      const authorAvatar = avatar
-        ? `<span class="blog-author-avatar ${avatar.className}"><img src="${avatar.src}" alt="" width="39" height="39"></span>`
-        : "";
 
       return `${cardContent}
               <div class="blog-feature-footer">
-                <span class="blog-feature-author">${authorAvatar}${author}</span>
+                <span class="blog-feature-author"><span class="blog-author-avatar"><img src="/assets/images/sunny-huang-author-avatar.webp" alt="" width="39" height="39"></span>${author}</span>
                 ${date ? `<time datetime="${date}">${formatArticleDate(date)}</time>` : ""}
               </div>
               <span class="blog-feature-link">Read More</span>`;
@@ -629,16 +615,15 @@ export const buildBlogIndexHtml = (html, articles = {}, initialState = {}) =>
 
 const addBlogArticleMeta = (articleHtml, articleMeta) => {
   const author = articleMeta?.author;
-  const authorUrl = articleMeta?.authorLink || articleMeta?.authorUrl;
+  const authorUrl = articleMeta?.authorUrl;
   const datePublished = articleMeta?.datePublished;
   const dateModified = articleMeta?.dateModified;
   const hideModifiedDate = articleMeta?.hideModifiedDate;
   if (!author && !datePublished) return articleHtml;
 
   const authorMarkup = authorUrl ? `<a href="${authorUrl}">${author}</a>` : author;
-  const avatar = getBlogAuthorAvatar(articleMeta);
-  const authorAvatar = avatar
-    ? `<img class="${avatar.className}" src="${avatar.src}" alt="" width="28" height="28">`
+  const authorAvatar = author === "Sunny Huang"
+    ? '<img src="/assets/images/sunny-huang-author-avatar.webp" alt="" width="28" height="28">'
     : "";
   const authorByline = `<span class="blog-article-author">${authorAvatar}By ${authorMarkup}</span>`;
 
