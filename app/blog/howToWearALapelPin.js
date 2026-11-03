@@ -39,7 +39,7 @@ export const howToWearALapelPinArticleHtml = String.raw`
           <p>The wearer’s left lapel is on your right when you face them.</p>
           <p>Find the lapel buttonhole above the breast pocket and hold the pin there with any lettering level. For a short-post pin, use the opening only if both the pin face and the fastened clutch are too wide to slip through.</p>
           <p>If the buttonhole is missing, sewn shut or too large, choose a flat spot where a pinhole is acceptable. Ask the shop before piercing a rented jacket. For delicate fabric, try a pin with a magnetic back or attach yours to a lanyard.</p>
-          <figure class="blog-article-image blog-article-natural-image lapel-pin-featured-image"><img src="/assets/images/lapel-pin-placement-and-clutch.webp" width="1600" height="900" loading="lazy" decoding="async" title="Lapel pin placement and short-post fastening" alt="Front view of a blazer showing a pin on the wearer’s left lapel, with a side view of the post and clutch."><figcaption>Lapel pin placement and short-post fastening.</figcaption></figure>
+          <figure class="blog-article-image blog-article-natural-image lapel-pin-featured-image"><img src="/assets/images/lapel-pin-on-navy-blazer.jpg" width="1376" height="768" loading="lazy" decoding="async" title="Lapel Pin Placement on the Wearer’s Left Lapel" alt="A red-and-gold pin on the wearer’s left lapel of a navy blazer, above the breast pocket."><figcaption>A lapel pin on the wearer’s left lapel, above the breast pocket.</figcaption></figure>
 
           <h2 id="how-to-put-on-a-lapel-pin">How to Put On a Lapel Pin</h2>
           <p>Lift the lapel away from the jacket body so the pin passes through the lapel alone.</p>

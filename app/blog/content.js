@@ -74,7 +74,7 @@ export const blogHtml = String.raw`
         </div>
         <div class="blog-card-grid">
           <a class="blog-feature-card" href="/blog/how-to-wear-a-lapel-pin" data-card-image-fit="full" data-blog-category="Custom Lapel Pins" aria-label="Read How to Wear a Lapel Pin on a Suit, Blazer or Shirt">
-            <img src="/assets/images/lapel-pin-placement-and-clutch.webp" width="1600" height="900" alt="Front view of a blazer showing a pin on the wearer’s left lapel, with a side view of the post and clutch.">
+            <img src="/assets/images/lapel-pin-on-navy-blazer.jpg" width="1376" height="768" alt="A red-and-gold pin on the wearer’s left lapel of a navy blazer, above the breast pocket.">
             <div class="blog-feature-body"><div class="blog-feature-meta"><span>Custom Lapel Pins</span><span>Wearing Guide</span></div><h2>How to Wear a Lapel Pin on a Suit, Blazer or Shirt</h2><p>A company pin can sit level on a blazer lapel yet pull a shirt collar down. When a wide logo tilts but the cloth stays flat, check whether the design is pivoting around a single post.</p><span class="blog-feature-link">Read More</span></div>
           </a>
           <a class="blog-feature-card" href="/blog/breast-cancer-awareness-pins-style-guide" data-card-image-fit="full" data-blog-category="Awareness" aria-label="Read Breast Cancer Awareness Pins: A Style Guide for Bulk Buyers">
