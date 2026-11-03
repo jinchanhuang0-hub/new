@@ -8,7 +8,7 @@
     "description": "A lapel pin sits high on your left lapel, near the buttonhole. On a shirt, choose a firm spot. If a wide logo tilts, check the fabric, post and clutch.",
     "excerpt": "A company pin can sit level on a blazer lapel yet pull a shirt collar down. When a wide logo tilts but the cloth stays flat, check whether the design is pivoting around a single post.",
     "category": "Custom Lapel Pins",
-    "image": "/assets/images/lapel-pin-clutch-on-navy-blazer.jpg",
+    "image": "/assets/images/lapel-pin-on-navy-blazer.jpg",
     "headings": [
       "Which Side Does a Lapel Pin Go On?",
       "How to Put On a Lapel Pin",
@@ -30,14 +30,24 @@
   },
   "images": [
     {
-      "file": "public/assets/images/lapel-pin-clutch-on-navy-blazer.jpg",
-      "sitePath": "/assets/images/lapel-pin-clutch-on-navy-blazer.jpg",
+      "file": "public/assets/images/lapel-pin-on-navy-blazer.jpg",
+      "sitePath": "/assets/images/lapel-pin-on-navy-blazer.jpg",
       "group": "placement",
-      "role": "Clutch photo",
+      "role": "Wearing photo",
       "width": 1376,
       "height": 768,
-      "title": "Lapel Pin Clutch Behind a Navy Blazer Lapel",
-      "alt": "Close-up of a hand lifting a navy blazer lapel to show a metal clutch behind the pin."
+      "title": "Lapel Pin Placement on the Wearer’s Left Lapel",
+      "alt": "A red-and-gold pin on the wearer’s left lapel of a navy blazer, above the breast pocket."
+    },
+    {
+      "file": "public/assets/images/lapel-pin-clutch-on-navy-blazer.jpg",
+      "sitePath": "/assets/images/lapel-pin-clutch-on-navy-blazer.jpg",
+      "group": "fastening",
+      "role": "Butterfly clutch behind the lapel",
+      "width": 1376,
+      "height": 768,
+      "title": "Butterfly Clutch Fastened Behind the Lapel",
+      "alt": "One silver-tone butterfly clutch sits flat against the underside of a lifted navy lapel, just below the buttonhole stitching."
     },
     {
       "file": "assets/lapel-pin-metal-butterfly-clutches.webp",
