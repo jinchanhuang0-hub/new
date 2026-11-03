@@ -97,6 +97,7 @@ export const lapelPinAttachmentsGuideArticleHtml = String.raw`
             <p>For corporate uniforms and employee recognition, the attachment should look appropriate on the garment and remain practical during normal wear. For retail and collectible projects, the buyer may care more about presentation, comfort, and whether the product can be displayed on a backing card. For events and giveaways, simple handling and easy distribution are often important. For formal gifts, Tie Tacks, Tie Pins, Stick Pins, and Cuff Links can create a more polished result.</p>
 
             <p>Pin size and shape matter too. A compact round pin may work well with one post and a standard clutch. A wider pin, an irregular outline, or a design that must remain upright may require a different back structure. In some applicable cases, two posts with two clutches can help control rotation and improve stability. This is not a universal rule; the correct structure should be confirmed from the actual artwork, dimensions, and use case.</p>
+            <p>Once you’ve chosen a fitting, see <a href="/blog/how-to-wear-a-lapel-pin">how to wear a lapel pin</a> on a jacket or shirt.</p>
 
             <figure class="blog-article-image blog-article-natural-image">
               <img src="/assets/images/lapel-pin-fasteners-by-use.webp?v=20260903-user-supplied" width="1200" height="675" loading="lazy" decoding="async" alt="Butterfly rubber magnetic and safety pin fasteners for custom lapel pins">

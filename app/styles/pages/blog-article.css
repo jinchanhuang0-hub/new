@@ -2509,3 +2509,67 @@
   max-height: none;
   object-fit: cover;
 }
+#how-to-wear-a-lapel-pin .blog-article-image:not(.lapel-pin-photo-pair):not(.lapel-pin-square-photo) img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+}
+
+#how-to-wear-a-lapel-pin .lapel-pin-featured-image {
+  width: 100%;
+  max-width: none;
+  margin: 36px 0 54px;
+}
+
+#how-to-wear-a-lapel-pin .lapel-pin-featured-image figcaption {
+  padding: 10px 14px;
+  background: #f5f8fd;
+}
+
+#how-to-wear-a-lapel-pin .lapel-pin-styles-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  aspect-ratio: 1376 / 768;
+  object-fit: contain;
+}
+
+#how-to-wear-a-lapel-pin .lapel-pin-photo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+#how-to-wear-a-lapel-pin .lapel-pin-photo-grid img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  aspect-ratio: 1;
+  object-fit: contain;
+}
+
+#how-to-wear-a-lapel-pin .lapel-pin-photo-grid span {
+  display: block;
+  padding-top: 8px;
+  text-align: center;
+}
+
+#how-to-wear-a-lapel-pin .blog-table-wrap {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+#how-to-wear-a-lapel-pin .blog-table {
+  min-width: 620px;
+}
+
+@media (max-width: 700px) {
+  #how-to-wear-a-lapel-pin .lapel-pin-photo-grid {
+    grid-template-columns: 1fr;
+  }
+}
