@@ -66,7 +66,7 @@ export const howToWearALapelPinArticleHtml = String.raw`
 
           <h2 id="lapel-pin-faq">Frequently Asked Questions</h2>
           <div class="blog-faq">${howToWearALapelPin.faq.map((item, index) => `<details${index === 0 ? " open" : ""}><summary><h3>${item.question}</h3></summary><p>${item.answer}</p></details>`).join("")}</div>
-          <section class="blog-article-cta lapel-pin-cta"><p>Ordering <a href="/products/custom-enamel-pins">custom enamel pins</a> for staff? <a href="/contact">Send your artwork and a uniform photo</a> for advice on backing and post placement.</p></section>
+          <p>Ordering <a href="/products/custom-enamel-pins">custom enamel pins</a> for staff? <a href="/contact">Send your artwork and a uniform photo</a> for advice on backing and post placement.</p>
         </div>
       </div>
     </article>`;
