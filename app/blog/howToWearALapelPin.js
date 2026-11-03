@@ -20,11 +20,11 @@ export const howToWearALapelPinArticleHtml = String.raw`
     <article id="how-to-wear-a-lapel-pin" class="section blog-article-section">
       <div class="blog-article-shell">
         <aside class="blog-article-toc" aria-label="Article contents"><strong>In This Guide</strong><nav>
-          <a href="#which-side-does-a-lapel-pin-go-on">Pin side</a>
-          <a href="#how-to-put-on-a-lapel-pin">Fastening</a>
+          <a href="#which-side-does-a-lapel-pin-go-on">Which side?</a>
+          <a href="#how-to-put-on-a-lapel-pin">Putting on a pin</a>
           <a href="#how-do-you-wear-a-lapel-pin-without-a-jacket">Without a jacket</a>
-          <a href="#why-does-a-wide-lapel-pin-turn">Wide pins</a>
-          <a href="#when-can-you-wear-a-lapel-pin">When to wear</a>
+          <a href="#why-does-a-wide-lapel-pin-turn">Keeping wide pins level</a>
+          <a href="#when-can-you-wear-a-lapel-pin">Where and when to wear</a>
           <a href="#lapel-pin-faq">FAQ</a>
         </nav></aside>
         <div class="container blog-article blog-article-with-toc">
@@ -33,13 +33,13 @@ export const howToWearALapelPinArticleHtml = String.raw`
             <h1>How to Wear a Lapel Pin on a Suit, Blazer or Shirt</h1>
             <p><strong>Quick Answer.</strong> On a suit jacket, wear a lapel pin high on your left lapel, usually near the buttonhole. Secure a short post with its clutch behind the lapel. For a long stick pin, guide the stem downward and cap the tip.</p>
           </header>
-          <details class="blog-mobile-toc"><summary>In This Guide</summary><nav><a href="#which-side-does-a-lapel-pin-go-on">Pin side</a><a href="#how-to-put-on-a-lapel-pin">Fastening</a><a href="#how-do-you-wear-a-lapel-pin-without-a-jacket">Without a jacket</a><a href="#why-does-a-wide-lapel-pin-turn">Wide pins</a><a href="#when-can-you-wear-a-lapel-pin">When to wear</a><a href="#lapel-pin-faq">FAQ</a></nav></details>
+          <details class="blog-mobile-toc"><summary>In This Guide</summary><nav><a href="#which-side-does-a-lapel-pin-go-on">Which side?</a><a href="#how-to-put-on-a-lapel-pin">Putting on a pin</a><a href="#how-do-you-wear-a-lapel-pin-without-a-jacket">Without a jacket</a><a href="#why-does-a-wide-lapel-pin-turn">Keeping wide pins level</a><a href="#when-can-you-wear-a-lapel-pin">Where and when to wear</a><a href="#lapel-pin-faq">FAQ</a></nav></details>
 
           <h2 id="which-side-does-a-lapel-pin-go-on">Which Side Does a Lapel Pin Go On?</h2>
           <p>The wearer’s left lapel is on your right when you face them.</p>
           <p>Find the lapel buttonhole above the breast pocket and hold the pin there with any lettering level. For a short-post pin, use the opening only if both the pin face and the fastened clutch are too wide to slip through.</p>
           <p>If the buttonhole is missing, sewn shut or too large, choose a flat spot where a pinhole is acceptable. Ask the shop before piercing a rented jacket. For delicate fabric, try a pin with a magnetic back or attach yours to a lanyard.</p>
-          <figure class="blog-article-image blog-article-natural-image"><img src="/assets/images/lapel-pin-placement-and-clutch.webp" width="1600" height="900" loading="lazy" decoding="async" title="Lapel pin placement and short-post fastening" alt="Front view of a blazer showing a pin on the wearer’s left lapel, with a side view of the post and clutch."><figcaption>Lapel pin placement and short-post fastening.</figcaption></figure>
+          <figure class="blog-article-image blog-article-natural-image lapel-pin-featured-image"><img src="/assets/images/lapel-pin-placement-and-clutch.webp" width="1600" height="900" loading="lazy" decoding="async" title="Lapel pin placement and short-post fastening" alt="Front view of a blazer showing a pin on the wearer’s left lapel, with a side view of the post and clutch."><figcaption>Lapel pin placement and short-post fastening.</figcaption></figure>
 
           <h2 id="how-to-put-on-a-lapel-pin">How to Put On a Lapel Pin</h2>
           <p>Lift the lapel away from the jacket body so the pin passes through the lapel alone.</p>
@@ -66,7 +66,7 @@ export const howToWearALapelPinArticleHtml = String.raw`
 
           <h2 id="lapel-pin-faq">Frequently Asked Questions</h2>
           <div class="blog-faq">${howToWearALapelPin.faq.map((item, index) => `<details${index === 0 ? " open" : ""}><summary><h3>${item.question}</h3></summary><p>${item.answer}</p></details>`).join("")}</div>
-          <p>Ordering <a href="/products/custom-enamel-pins">custom enamel pins</a> for staff? <a href="/contact">Send your artwork and a uniform photo</a> for advice on backing and post placement.</p>
+          <section class="blog-article-cta lapel-pin-cta"><p>Ordering <a href="/products/custom-enamel-pins">custom enamel pins</a> for staff? <a href="/contact">Send your artwork and a uniform photo</a> for advice on backing and post placement.</p></section>
         </div>
       </div>
     </article>`;

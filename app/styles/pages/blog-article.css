@@ -2518,6 +2518,29 @@
   object-fit: contain;
 }
 
+#how-to-wear-a-lapel-pin .lapel-pin-featured-image {
+  width: 100%;
+  max-width: none;
+  margin: 36px 0 54px;
+}
+
+#how-to-wear-a-lapel-pin .lapel-pin-featured-image figcaption {
+  padding: 10px 14px;
+  background: #f5f8fd;
+}
+
+#how-to-wear-a-lapel-pin .lapel-pin-cta {
+  display: block;
+  max-width: none;
+  margin: 56px 0 40px;
+  border-left: 6px solid var(--yellow);
+  background: #f5f8fd;
+}
+
+#how-to-wear-a-lapel-pin .lapel-pin-cta p {
+  margin: 0;
+}
+
 #how-to-wear-a-lapel-pin .lapel-pin-photo-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
