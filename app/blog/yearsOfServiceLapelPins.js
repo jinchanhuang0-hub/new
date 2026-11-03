@@ -121,6 +121,7 @@ export const yearsOfServiceLapelPinsArticleHtml = String.raw`
             </div>
             <p>The upgrade and collectible approaches can overlap. A company might issue new pins at five, ten, and twenty years, ask employees to wear only their most recent milestone, and encourage them to keep earlier awards.</p>
             <p>That distinction is particularly relevant for employees wearing pins on business jackets or uniforms. One visible service pin may suit the workplace better than several displayed together, while a collection can still preserve the employee's history with the company.</p>
+            <p>For everyday use, show recipients <a href="/blog/how-to-wear-a-lapel-pin">where to wear a service pin on a blazer</a> and how to keep the milestone number upright.</p>
             <p>For uniforms and jackets with different fabrics, our <a href="/blog/lapel-pin-attachments-guide">lapel pin attachment guide</a> covers the available backing options.</p>
             <figure class="blog-article-image blog-article-natural-image service-pin-upgrade-image">
               <img src="/assets/images/service-pin-upgrade-wear-and-keep.webp" width="1536" height="1024" loading="lazy" decoding="async" title="Wearing a Current Service Pin and Keeping an Earlier Award" alt="A 10-year service lapel pin worn on a business jacket beside a 5-year pin stored in a keepsake box.">

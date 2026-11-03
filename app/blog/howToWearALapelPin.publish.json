@@ -1,0 +1,127 @@
+{
+  "page": {
+    "slug": "how-to-wear-a-lapel-pin",
+    "path": "/blog/how-to-wear-a-lapel-pin",
+    "canonical": "https://uccrafts.com/blog/how-to-wear-a-lapel-pin",
+    "headline": "How to Wear a Lapel Pin on a Suit, Blazer or Shirt",
+    "title": "How to Wear a Lapel Pin With or Without a Jacket",
+    "description": "A lapel pin sits high on your left lapel, near the buttonhole. On a shirt, choose a firm spot. If a wide logo tilts, check the fabric, post and clutch.",
+    "excerpt": "A company pin can sit level on a blazer lapel yet pull a shirt collar down. When a wide logo tilts but the cloth stays flat, check whether the design is pivoting around a single post.",
+    "category": "Custom Lapel Pins",
+    "image": "/assets/images/lapel-pin-placement-and-clutch.webp",
+    "headings": [
+      "Which Side Does a Lapel Pin Go On?",
+      "How to Put On a Lapel Pin",
+      "How Do You Wear a Lapel Pin Without a Jacket?",
+      "Why Does a Wide Lapel Pin Turn Even When the Back Is Secure?",
+      "When Can You Wear a Lapel Pin?",
+      "Frequently Asked Questions"
+    ],
+    "faq": [
+      {
+        "question": "Can I wear more than one lapel pin?",
+        "answer": "Yes. On a casual jacket, space pins so each design shows and the backs don’t overlap. For uniforms, follow the dress code."
+      },
+      {
+        "question": "Can I use one lapel buttonhole for a two-post pin?",
+        "answer": "Only if both posts line up when the pin is level and both clutches sit flat without slipping through. A post outside the opening needs a separate pinhole."
+      }
+    ]
+  },
+  "images": [
+    {
+      "file": "assets/lapel-pin-placement-and-clutch.webp",
+      "sitePath": "/assets/images/lapel-pin-placement-and-clutch.webp",
+      "group": "placement",
+      "role": "Placement diagram",
+      "width": 1600,
+      "height": 900,
+      "title": "Lapel pin placement and short-post fastening",
+      "alt": "Front view of a blazer showing a pin on the wearer’s left lapel, with a side view of the post and clutch."
+    },
+    {
+      "file": "assets/lapel-pin-metal-butterfly-clutches.webp",
+      "sitePath": "/assets/images/lapel-pin-metal-butterfly-clutches.webp",
+      "group": "fastening",
+      "role": "Left photo",
+      "width": 1113,
+      "height": 1113,
+      "title": "Metal butterfly clutches",
+      "alt": "Two short posts on the back of a gold-colored pin, with two detached metal butterfly clutches beside it."
+    },
+    {
+      "file": "assets/lapel-pin-rubber-clutches.webp",
+      "sitePath": "/assets/images/lapel-pin-rubber-clutches.webp",
+      "group": "fastening",
+      "role": "Right photo",
+      "width": 1113,
+      "height": 1113,
+      "title": "Rubber clutches",
+      "alt": "Back of a dark metal pin with two short posts and two black rubber clutches beside it."
+    },
+    {
+      "file": "assets/daisy-lapel-pin-on-denim.webp",
+      "sitePath": "/assets/images/daisy-lapel-pin-on-denim.webp",
+      "group": "wide-pin",
+      "role": "Front",
+      "width": 750,
+      "height": 750,
+      "title": "Daisy pin on denim",
+      "alt": "White daisy pin with a yellow center and black lettering on light blue denim."
+    },
+    {
+      "file": "assets/daisy-lapel-pin-two-clutches.webp",
+      "sitePath": "/assets/images/daisy-lapel-pin-two-clutches.webp",
+      "group": "wide-pin",
+      "role": "Reverse",
+      "width": 750,
+      "height": 750,
+      "title": "Two spaced clutches on the reverse",
+      "alt": "Patterned back of a daisy-shaped pin with two metal butterfly clutches set apart."
+    },
+    {
+      "file": "assets/lapel-pin-denim-pocket-flap.webp",
+      "sitePath": "/assets/images/lapel-pin-denim-pocket-flap.webp",
+      "group": "occasions",
+      "role": "Pocket flap",
+      "width": 750,
+      "height": 750,
+      "title": "Pin placement on a denim pocket",
+      "alt": "Red-and-white pin beside the stitched buttonhole of a blue denim jacket pocket."
+    }
+  ],
+  "outboundInternalLinks": [
+    {
+      "anchor": "Two spaced posts",
+      "href": "/blog/lapel-pin-attachments-guide#how-to-choose-the-right-attachment"
+    },
+    {
+      "anchor": "custom enamel pins",
+      "href": "/products/custom-enamel-pins"
+    },
+    {
+      "anchor": "Send your artwork and a uniform photo",
+      "href": "/contact"
+    }
+  ],
+  "inboundInternalLinks": [
+    {
+      "from": "/blog/lapel-pin-attachments-guide",
+      "sourceFile": "app/blog/lapelPinAttachmentsGuide.js",
+      "sectionId": "how-to-choose-the-right-attachment",
+      "position": "After the paragraph that starts with “Pin size and shape matter too.” and before the next figure.",
+      "anchor": "how to wear a lapel pin",
+      "href": "/blog/how-to-wear-a-lapel-pin",
+      "html": "<p>Once you’ve chosen a fitting, see <a href=\"/blog/how-to-wear-a-lapel-pin\">how to wear a lapel pin</a> on a jacket or shirt.</p>"
+    },
+    {
+      "from": "/blog/years-of-service-lapel-pins",
+      "sourceFile": "app/blog/yearsOfServiceLapelPins.js",
+      "sectionId": "what-happens-to-an-employees-pin-at-the-next-milestone",
+      "position": "After the paragraph beginning “That distinction is particularly relevant for employees wearing pins on business jackets or uniforms.” and before “For uniforms and jackets with different fabrics”.",
+      "anchor": "where to wear a service pin on a blazer",
+      "href": "/blog/how-to-wear-a-lapel-pin",
+      "html": "<p>For everyday use, show recipients <a href=\"/blog/how-to-wear-a-lapel-pin\">where to wear a service pin on a blazer</a> and how to keep the milestone number upright.</p>"
+    }
+  ]
+}

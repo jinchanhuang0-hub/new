@@ -377,7 +377,11 @@ const withBlogArticleDefaults = (article) => {
   };
 };
 
-export const buildBlogAuthorSchema = () => ({ ...DEFAULT_BLOG_AUTHOR_SCHEMA });
+export const buildBlogAuthorSchema = (article) => ({
+  "@type": article?.authorType || DEFAULT_BLOG_AUTHOR_SCHEMA["@type"],
+  name: article?.author || DEFAULT_BLOG_AUTHOR_SCHEMA.name,
+  url: article?.authorUrl || DEFAULT_BLOG_AUTHOR_SCHEMA.url,
+});
 
 const blogArticleData = {
   "woven-vs-embroidered-patches": {

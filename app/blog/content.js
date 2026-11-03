@@ -37,6 +37,7 @@ import { customChallengeCoinsCostArticleHtml } from "./customChallengeCoinsCost"
 import { customHatPatchesLooseOrFinishedArticleHtml } from "./customHatPatchesLooseOrFinished";
 import { customNavyBeltBucklesUniformKeepsakesArticleHtml } from "./customNavyBeltBucklesUniformKeepsakes";
 import { breastCancerAwarenessPinsStyleGuideArticleHtml } from "./breastCancerAwarenessPinsStyleGuide";
+import { howToWearALapelPinArticleHtml } from "./howToWearALapelPin";
 
 
 export const metadata = {
@@ -72,6 +73,10 @@ export const blogHtml = String.raw`
           <button type="button" data-blog-category="Holidays" data-blog-category-pinned="true">Holidays</button>
         </div>
         <div class="blog-card-grid">
+          <a class="blog-feature-card" href="/blog/how-to-wear-a-lapel-pin" data-card-image-fit="full" data-blog-category="Custom Lapel Pins" aria-label="Read How to Wear a Lapel Pin on a Suit, Blazer or Shirt">
+            <img src="/assets/images/lapel-pin-placement-and-clutch.webp" width="1600" height="900" alt="Front view of a blazer showing a pin on the wearer’s left lapel, with a side view of the post and clutch.">
+            <div class="blog-feature-body"><div class="blog-feature-meta"><span>Custom Lapel Pins</span><span>Wearing Guide</span></div><h2>How to Wear a Lapel Pin on a Suit, Blazer or Shirt</h2><p>A company pin can sit level on a blazer lapel yet pull a shirt collar down. When a wide logo tilts but the cloth stays flat, check whether the design is pivoting around a single post.</p><span class="blog-feature-link">Read More</span></div>
+          </a>
           <a class="blog-feature-card" href="/blog/breast-cancer-awareness-pins-style-guide" data-card-image-fit="full" data-blog-category="Awareness" aria-label="Read Breast Cancer Awareness Pins: A Style Guide for Bulk Buyers">
             <img src="/assets/images/breast-cancer-awareness-pins-pink-ribbon-design-comparison.webp" width="1672" height="941" title="Breast Cancer Awareness Pins: Pink Ribbon Design Comparison" alt="Four pink ribbon pins displayed side by side: plain, smaller plain, rhinestone, and a ribbon with HOPE lettering.">
             <div class="blog-feature-body"><div class="blog-feature-meta"><span>Awareness</span><span>Buyer Guide</span></div><h2>Breast Cancer Awareness Pins: A Style Guide for Bulk Buyers</h2><p>The same pink ribbon can look different on a uniform or at an event. The right design depends on visibility, decoration, and the message it needs to carry.</p><span class="blog-feature-link">Read More</span></div>
@@ -492,6 +497,7 @@ export const blogHtml = String.raw`
     ${customBeltBuckleDesignGuideArticleHtml}
     ${customNavyBeltBucklesUniformKeepsakesArticleHtml}
     ${breastCancerAwarenessPinsStyleGuideArticleHtml}
+    ${howToWearALapelPinArticleHtml}
     ${customChristmasOrnamentsGuideArticleHtml}
     ${lapelPinAttachmentsGuideArticleHtml}
     ${corporateChallengeCoinsEmployeeRecognitionArticleHtml}
