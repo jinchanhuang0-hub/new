@@ -8,6 +8,7 @@ export const howToWearALapelPin = {
   author: "Unique Pin",
   authorType: "Organization",
   authorUrl: `${SITE_URL}/about`,
+  authorLink: "/about",
   datePublished: "2026-11-03",
   dateModified: "2026-11-03",
   schemaType: "BlogPosting",

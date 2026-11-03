@@ -629,7 +629,7 @@ export const buildBlogIndexHtml = (html, articles = {}, initialState = {}) =>
 
 const addBlogArticleMeta = (articleHtml, articleMeta) => {
   const author = articleMeta?.author;
-  const authorUrl = articleMeta?.authorUrl;
+  const authorUrl = articleMeta?.authorLink || articleMeta?.authorUrl;
   const datePublished = articleMeta?.datePublished;
   const dateModified = articleMeta?.dateModified;
   const hideModifiedDate = articleMeta?.hideModifiedDate;
