@@ -492,6 +492,16 @@ const enhanceBlogArticleImages = (html) =>
     },
   );
 
+const getBlogAuthorAvatar = (article) => {
+  if (article?.authorType === "Organization" && article.author === "Unique Pin") {
+    return { src: "/assets/images/logo.png", className: "blog-brand-avatar" };
+  }
+  if (article?.author === "Sunny Huang") {
+    return { src: "/assets/images/sunny-huang-author-avatar.webp", className: "" };
+  }
+  return null;
+};
+
 const addBlogCardMeta = (html, articles = {}) =>
   html.replace(
     /(<a class="blog-feature-card" href="\/blog\/([^"#]+)"[\s\S]*?<p>[\s\S]*?<\/p>)\s*<span class="blog-feature-link">Read More<\/span>/g,
@@ -501,10 +511,14 @@ const addBlogCardMeta = (html, articles = {}) =>
 
       const author = article.author || "Sunny Huang";
       const date = article.datePublished || "";
+      const avatar = getBlogAuthorAvatar(article);
+      const authorAvatar = avatar
+        ? `<span class="blog-author-avatar ${avatar.className}"><img src="${avatar.src}" alt="" width="39" height="39"></span>`
+        : "";
 
       return `${cardContent}
               <div class="blog-feature-footer">
-                <span class="blog-feature-author"><span class="blog-author-avatar"><img src="/assets/images/sunny-huang-author-avatar.webp" alt="" width="39" height="39"></span>${author}</span>
+                <span class="blog-feature-author">${authorAvatar}${author}</span>
                 ${date ? `<time datetime="${date}">${formatArticleDate(date)}</time>` : ""}
               </div>
               <span class="blog-feature-link">Read More</span>`;
@@ -622,8 +636,9 @@ const addBlogArticleMeta = (articleHtml, articleMeta) => {
   if (!author && !datePublished) return articleHtml;
 
   const authorMarkup = authorUrl ? `<a href="${authorUrl}">${author}</a>` : author;
-  const authorAvatar = author === "Sunny Huang"
-    ? '<img src="/assets/images/sunny-huang-author-avatar.webp" alt="" width="28" height="28">'
+  const avatar = getBlogAuthorAvatar(articleMeta);
+  const authorAvatar = avatar
+    ? `<img class="${avatar.className}" src="${avatar.src}" alt="" width="28" height="28">`
     : "";
   const authorByline = `<span class="blog-article-author">${authorAvatar}By ${authorMarkup}</span>`;
 

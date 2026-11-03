@@ -339,6 +339,16 @@
   object-fit: cover;
 }
 
+.blog-author-avatar.blog-brand-avatar {
+  background: #fff;
+}
+
+.blog-author-avatar.blog-brand-avatar img,
+.blog-article-author > img.blog-brand-avatar {
+  object-fit: contain;
+  background: #fff;
+}
+
 .blog-feature-footer time {
   flex: 0 0 auto;
   color: #52627a;
