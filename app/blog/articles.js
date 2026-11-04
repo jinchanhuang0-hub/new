@@ -3,6 +3,7 @@ import { customChallengeCoinsCost } from "./customChallengeCoinsCost";
 import { customHatPatchesLooseOrFinished } from "./customHatPatchesLooseOrFinished";
 import { breastCancerAwarenessPinsStyleGuide } from "./breastCancerAwarenessPinsStyleGuide";
 import { howToWearALapelPin } from "./howToWearALapelPin";
+import { customBeerTokensRedemptionValue } from "./customBeerTokensRedemptionValue";
 
 const customNavyBeltBucklesUniformKeepsakes = {
   title: "Custom Navy Belt Buckles: Uniform Wear vs. Keepsakes",
@@ -121,6 +122,7 @@ const customGraduationMedalsSchoolAwards = {
 };
 
 export const blogArticles = {
+  "custom-beer-tokens-redemption-value": customBeerTokensRedemptionValue,
   "how-to-wear-a-lapel-pin": howToWearALapelPin,
   "breast-cancer-awareness-pins-style-guide": breastCancerAwarenessPinsStyleGuide,
   "custom-navy-belt-buckles-uniform-keepsakes": customNavyBeltBucklesUniformKeepsakes,

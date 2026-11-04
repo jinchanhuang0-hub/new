@@ -38,6 +38,7 @@ import { customHatPatchesLooseOrFinishedArticleHtml } from "./customHatPatchesLo
 import { customNavyBeltBucklesUniformKeepsakesArticleHtml } from "./customNavyBeltBucklesUniformKeepsakes";
 import { breastCancerAwarenessPinsStyleGuideArticleHtml } from "./breastCancerAwarenessPinsStyleGuide";
 import { howToWearALapelPinArticleHtml } from "./howToWearALapelPin";
+import { customBeerTokensRedemptionValueArticleHtml, beerTokenImages } from "./customBeerTokensRedemptionValue";
 
 
 export const metadata = {
@@ -73,6 +74,10 @@ export const blogHtml = String.raw`
           <button type="button" data-blog-category="Holidays" data-blog-category-pinned="true">Holidays</button>
         </div>
         <div class="blog-card-grid">
+          <a class="blog-feature-card" href="/blog/custom-beer-tokens-redemption-value" data-card-image-fit="full" data-blog-category="Custom Coins" aria-label="Read Custom Beer Tokens: Fixed Serving or Credit Value?">
+            ${beerTokenImages.cover ? `<img src="${beerTokenImages.cover}" width="1600" height="900" title="Custom Beer Tokens: Serving and Credit Options" alt="Two metal beer tokens marked HALF PINT and £3 CREDIT on a taproom counter.">` : ""}
+            <div class="blog-feature-body"><div class="blog-feature-meta"><span>Custom Coins</span><span>Buyer Guide</span></div><h2>Custom Beer Tokens: Fixed Serving or Credit Value?</h2><p>A token marked “ONE BEER” can leave the serving open to interpretation. Define the offer before choosing the wording for your taproom’s metal tokens.</p><span class="blog-feature-link">Read More</span></div>
+          </a>
           <a class="blog-feature-card" href="/blog/how-to-wear-a-lapel-pin" data-card-image-fit="full" data-blog-category="Custom Lapel Pins" aria-label="Read How to Wear a Lapel Pin on a Suit, Blazer or Shirt">
             <img src="/assets/images/lapel-pin-on-navy-blazer.jpg" width="1376" height="768" alt="A red-and-gold pin on the wearer’s left lapel of a navy blazer, above the breast pocket.">
             <div class="blog-feature-body"><div class="blog-feature-meta"><span>Custom Lapel Pins</span><span>Wearing Guide</span></div><h2>How to Wear a Lapel Pin on a Suit, Blazer or Shirt</h2><p>A company pin can sit level on a blazer lapel yet pull a shirt collar down. When a wide logo tilts but the cloth stays flat, check whether the design is pivoting around a single post.</p><span class="blog-feature-link">Read More</span></div>
@@ -497,6 +502,7 @@ export const blogHtml = String.raw`
     ${customBeltBuckleDesignGuideArticleHtml}
     ${customNavyBeltBucklesUniformKeepsakesArticleHtml}
     ${breastCancerAwarenessPinsStyleGuideArticleHtml}
+    ${customBeerTokensRedemptionValueArticleHtml}
     ${howToWearALapelPinArticleHtml}
     ${customChristmasOrnamentsGuideArticleHtml}
     ${lapelPinAttachmentsGuideArticleHtml}
@@ -1240,6 +1246,7 @@ export const blogHtml = String.raw`
 
             <h2 id="size-and-artwork">Match Coin Size to the Artwork</h2>
             <p>The fastest check is to print the front and back proof at 100 percent scale. Do not approve only a large image on a monitor. At actual size, verify that names, dates, unit numbers and mottos remain readable and that important symbols are not competing with the border.</p>
+            <p>For taproom redemption projects, decide <a href="/blog/custom-beer-tokens-redemption-value">what each beer token covers</a> before sizing the artwork. The serving or credit value needs to remain clear alongside the venue name and logo.</p>
             <figure class="blog-article-image">
               <img src="/assets/images/blog-challenge-coin-actual-size-proof.webp" width="1600" height="900" loading="lazy" decoding="async" alt="challenge coin front back and thickness drawings reviewed at actual size with a metal ruler">
               <figcaption>Review both sides at actual production size before approving tooling.</figcaption>
@@ -1428,6 +1435,7 @@ export const blogHtml = String.raw`
           <li>whether a sculpted emblem can be separated from the flatter areas needed for essential wording.</li>
         </ul>
         <p>Do not assume that every small character can be manufactured clearly. If critical wording fails any of these checks, enlarge it, shorten it or move it to a less crowded area.</p>
+        <p>For metal tokens used to redeem drinks, agree on the <a href="/blog/custom-beer-tokens-redemption-value">beer token wording and redemption value</a> before shortening the text. Removing a qualifier can change what customers understand the token to include.</p>
 
         <h2 id="enamel-color">Which Style Works Better with Enamel Color?</h2>
         <p>A 2D coin is usually easier to combine with several enamel colors.</p>
