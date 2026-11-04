@@ -440,7 +440,7 @@ const enhanceBlogImageTag = (imgTag, { sizes, priority = false } = {}) =>
     }
 
     const existingSrcset = getHtmlAttr(nextAttrs, "srcset");
-    const canReplaceSrcset = !existingSrcset || existingSrcset.includes("/assets/images/");
+    const canReplaceSrcset = !getHtmlAttr(nextAttrs, "data-use-original") && (!existingSrcset || existingSrcset.includes("/assets/images/"));
     if (canReplaceSrcset) {
       const sourceWidth = Number.parseInt(getHtmlAttr(nextAttrs, "width"), 10);
       const srcset = buildBlogImageSrcset(src, sourceWidth);

@@ -75,7 +75,7 @@ export const blogHtml = String.raw`
         </div>
         <div class="blog-card-grid">
           <a class="blog-feature-card" href="/blog/custom-beer-tokens-redemption-value" data-card-image-fit="full" data-blog-category="Custom Coins" aria-label="Read Custom Beer Tokens: Fixed Serving or Credit Value?">
-            ${beerTokenImages.cover ? `<img src="${beerTokenImages.cover}" width="1600" height="900" title="Custom Beer Tokens: Serving and Credit Options" alt="Two metal beer tokens marked HALF PINT and £3 CREDIT on a taproom counter.">` : ""}
+            ${beerTokenImages.cover ? `<img src="${beerTokenImages.cover}" width="1600" height="900" data-use-original="true" title="Custom Beer Tokens: Serving and Credit Options" alt="Two metal beer tokens marked HALF PINT and £3 CREDIT on a taproom counter.">` : ""}
             <div class="blog-feature-body"><div class="blog-feature-meta"><span>Custom Coins</span><span>Buyer Guide</span></div><h2>Custom Beer Tokens: Fixed Serving or Credit Value?</h2><p>A token marked “ONE BEER” can leave the serving open to interpretation. Define the offer before choosing the wording for your taproom’s metal tokens.</p><span class="blog-feature-link">Read More</span></div>
           </a>
           <a class="blog-feature-card" href="/blog/how-to-wear-a-lapel-pin" data-card-image-fit="full" data-blog-category="Custom Lapel Pins" aria-label="Read How to Wear a Lapel Pin on a Suit, Blazer or Shirt">
