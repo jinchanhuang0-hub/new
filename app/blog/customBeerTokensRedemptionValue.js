@@ -9,7 +9,7 @@ const availableImage = (filename) =>
     : "";
 
 export const beerTokenImages = {
-  cover: availableImage("custom-beer-tokens-serving-credit.webp"),
+  cover: availableImage("custom-beer-tokens-serving-credit-v2.webp"),
   credit: availableImage("beer-token-credit-top-up-example.webp"),
   wording: availableImage("beer-token-front-back-wording-menu.webp"),
 };
