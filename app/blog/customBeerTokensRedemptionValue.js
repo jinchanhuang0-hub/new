@@ -14,7 +14,7 @@ export const beerTokenImages = {
   wording: availableImage("beer-token-front-back-wording-menu.webp"),
 };
 
-const renderFigure = (src, title, alt, caption, hero = false) =>
+const renderFigure = (src, title, alt, hero = false) =>
   src
     ? '<figure class="blog-article-image' +
       (hero ? ' blog-article-hero-image blog-article-natural-image' : '') +
@@ -22,7 +22,7 @@ const renderFigure = (src, title, alt, caption, hero = false) =>
       '" width="1600" height="900" loading="' + (hero ? 'eager' : 'lazy') +
       '" decoding="async" title="' + title +
       '" alt="' + alt +
-      '" style="height:auto;max-height:none;object-fit:contain"><figcaption>' + caption + '</figcaption></figure>'
+      '" style="height:auto;max-height:none;object-fit:contain"></figure>'
     : "";
 
 export const customBeerTokensRedemptionValue = {
@@ -156,18 +156,15 @@ export const customBeerTokensRedemptionValueArticleHtml = articleHtml
     beerTokenImages.cover,
     "Custom Beer Tokens: Serving and Credit Options",
     "Two metal beer tokens marked HALF PINT and £3 CREDIT on a taproom counter.",
-    "Illustrative metal token designs showing a half-pint serving and a £3 credit option. Each design needs an agreed drink selection and supporting redemption rules.",
     true,
   ))
   .replace("<!--BEER_TOKEN_CREDIT-->", renderFigure(
     beerTokenImages.credit,
     "Beer Token Credit and Top-Up Example",
     "A £3 credit token beside a £5 beer price and a £2 top-up note marked If permitted.",
-    "An illustrative £3 token applied towards an eligible £5 beer, leaving £2 to pay where the venue permits top-ups. This example does not establish a universal redemption policy.",
   ))
   .replace("<!--BEER_TOKEN_WORDING-->", renderFigure(
     beerTokenImages.wording,
     "Beer Token Wording: Front, Reverse and Menu",
     "A wooden VENUE NAME sample and a beer-mug-shaped HALF PINT token beside a redemption notice listing eligible house beers.",
-    "An illustrative layout pairing the venue name with a half-pint offer for selected house draught beers. The accompanying notice identifies the included beers and exclusions.",
   ));
