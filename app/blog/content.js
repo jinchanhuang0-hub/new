@@ -203,7 +203,7 @@ export const blogHtml = String.raw`
             <div class="blog-feature-body">
               <div class="blog-feature-meta"><span>Custom Medals</span><span>Ribbon Guide</span></div>
               <h2>How to Choose the Right Ribbon for Custom Medals</h2>
-              <p>Compare plain and heat-transfer medal ribbons, then choose colors, width, length and attachments for the complete award.</p>
+              <p>A ribbon can look correct in a flat proof yet place a sponsor logo inside a fold. Check its unfolded length, width and worn layout alongside the medal attachment.</p>
               <span class="blog-feature-link">Read More</span>
             </div>
           </a>
@@ -1070,6 +1070,7 @@ export const blogHtml = String.raw`
           <a id="ribbon-and-packaging"></a>
           <h2>Plan the Ribbon and Packaging Early</h2>
           <p>The ribbon is not just an accessory. It is a second branding surface. A printed ribbon can carry the race name, year, sponsor logo, event color or short phrase. Buyers should confirm width, length, material, print method and attachment style before production.</p>
+          <p>Our guide to <a href="/blog/how-to-choose-custom-medal-ribbons">choosing medal ribbons</a> explains how length, width, artwork direction and attachment fit affect the finished award.</p>
           <p>For events with several distances, ribbon variation can simplify distribution. One medal body with different colors can cover 5K, 10K, half marathon and full marathon categories while keeping the medal family consistent. In production review, check whether the ribbon is flat, V-folded, sewn, attached through two holes, connected with a ring, chain or cord, and whether the printed direction is correct when the medal is worn.</p>
           <p>Packaging should match delivery method. Finish-line distribution usually needs simple bags or organized trays. Virtual race shipping may require stronger protection. VIP awards, sponsor gifts or podium medals may use pouches or gift boxes. Before choosing a box, confirm medal diameter, thickness, folded ribbon size and whether each distance needs a separate label.</p>
 

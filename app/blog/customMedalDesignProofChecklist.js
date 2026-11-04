@@ -114,6 +114,7 @@ export const customMedalDesignProofChecklistArticleHtml = String.raw`
           <p>The ribbon in this example is specified as 900 mm in total unfolded length and 25 mm in width. The 900 mm figure is not the length hanging down from the wearer's neck. Keeping that distinction clear avoids approving a measurement you have interpreted differently.</p>
           <p>Look at the complete ribbon layout, including repeated wording, logos, and their direction. Then check the view showing the ribbon attached to the medal. Text that reads correctly on a flat strip still needs to face the intended way when worn.</p>
           <p>Confirm the attachment shown and how the ribbon meets the medal. If you cannot tell which side faces outward or where a logo sits near the attachment, ask for clarification before approving the layout.</p>
+          <p>If you are still choosing dimensions, our guide to <a href="/blog/how-to-choose-custom-medal-ribbons">medal ribbon length and width</a> explains the available options and how to interpret the measurements.</p>
 
           <h2 id="physical-sample">6. Decide whether you need a physical sample</h2>
           <p>We arrange physical sampling according to customer requirements; it is not an automatic step for every order. When a sample is made, customers may approve the sample through photographs, video, or examination of the physical sample after receiving it.</p>

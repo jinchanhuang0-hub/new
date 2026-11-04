@@ -526,32 +526,29 @@ const blogArticleData = {
     ],
   },
   "how-to-choose-custom-medal-ribbons": {
-    title: "Custom Medal Ribbons: Width, Colors & Printing Guide",
+    title: "Custom Medal Ribbons: Length, Width & Printing Guide",
     headline: "How to Choose the Right Ribbon for Custom Medals",
     description:
-      "Compare plain and heat-transfer custom medal ribbons, then choose colors, 25 or 30 mm widths, length and attachment for your medal order.",
+      "Custom medal ribbon sizes explained: 860 or 900 mm unfolded lengths, 25 or 30 mm widths, plus logo direction and attachment checks before bulk production.",
     author: DEFAULT_BLOG_AUTHOR_SCHEMA.name,
     authorType: DEFAULT_BLOG_AUTHOR_SCHEMA["@type"],
     authorUrl: DEFAULT_BLOG_AUTHOR_SCHEMA.url,
     datePublished: "2026-09-23",
-    dateModified: "2026-09-23",
+    dateModified: "2026-11-04",
     image: "/assets/images/custom-medal-with-ribbon-selection.webp",
     schemaType: "BlogPosting",
     faq: [
       {
-        question: "What is the most durable type of custom medal ribbon?",
-        answer:
-          "There is no reliable answer based only on whether a ribbon is plain or heat-transfer printed. How it performs depends on its construction, print requirements, connection and handling. If durability matters to your order, ask for a sample made to the proposed specification and check the print, edges and assembled connection for the intended use.",
+        question: "Should children use the same ribbon length as adults?",
+        answer: "Not automatically. Confirm the length with the wearers, intended medal position and assembled attachment. Age alone does not set a reliable ribbon length.",
       },
       {
-        question: "Is a 30 mm ribbon always better than a 25 mm ribbon?",
-        answer:
-          "No. A 30 mm ribbon gives artwork more width, but it may look too prominent with some medals. A 25 mm ribbon can work well for a plain color or compact design, provided the attachment fits and any text remains readable. Compare the two widths with your medal rather than applying a fixed diameter rule.",
+        question: "Will the ribbon color look identical to the medal enamel?",
+        answer: "Not necessarily. Fabric, print and enamel have different surfaces and reflections, so the same color reference may look different. Agree how critical colors will be checked.",
       },
       {
-        question: "Can I put sponsor logos on a heat-transfer medal ribbon?",
-        answer:
-          "Yes, subject to the logo’s detail and available space. Supply the original file and identify any required size or position. Ask to review the mark at the proposed ribbon width and in the assembled view, especially if it repeats close to a fold or connection.",
+        question: "Does a wider ribbon always make small logos easier to read?",
+        answer: "No. A 30 mm ribbon offers more layout space, but crowded artwork may still need fewer elements or a simpler logo.",
       },
     ],
   },

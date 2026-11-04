@@ -13,13 +13,14 @@ const renderFabricationOptionGrid = ({ id, items, imageScale = "cropped", deskto
       </ul>`;
 
 const renderFabricationOptionSection = (
-  { id, title, description, items, imageScale, gridId, desktopColumns },
+  { id, title, description, guide, items, imageScale, gridId, desktopColumns },
   { isTabbed = false, isActive = false } = {},
 ) => `
       <div class="finish-gallery-option-section" id="${escapeHtml(id)}-panel"${isTabbed ? ` role="tabpanel" aria-labelledby="${escapeHtml(id)}-tab" tabindex="0"${isActive ? "" : " hidden"}` : ` aria-labelledby="${escapeHtml(id)}-title"`}>
         <div class="finish-gallery-subheading">
           <h3 id="${escapeHtml(id)}-title"${isTabbed ? ` aria-label="${escapeHtml(title)}"` : ""}>${isTabbed ? "" : escapeHtml(title)}</h3>
           <p>${escapeHtml(description)}</p>
+          ${guide ? `<p>${escapeHtml(guide.prefix)} <a href="${escapeHtml(guide.href)}">${escapeHtml(guide.label)}</a>.</p>` : ""}
         </div>
         ${renderFabricationOptionGrid({ id: gridId || `${id}-grid`, items, imageScale, desktopColumns })}
       </div>`;

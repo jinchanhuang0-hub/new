@@ -11,6 +11,7 @@ export const medalRibbons = {
   id: "medal-ribbon",
   title: "Medal Ribbon",
   description: "Compare ribbon styles and color references; confirm final colors on a ribbon sample.",
+  guide: { href: "/blog/how-to-choose-custom-medal-ribbons", prefix: "For help with dimensions and artwork, see our", label: "ribbon size and printing guide" },
   imageScale: "natural",
   items: [
     ribbon("custom-ribbon", "Custom Ribbon", "Navy medal ribbon with white and gold stripes and Unique Pin branding"),
