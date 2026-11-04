@@ -1,6 +1,9 @@
 // Explicit content dates, never build timestamps. Update a slug only when its
 // product content changes materially; add every newly published product here.
 export const productLastModified = {
+  "blank-double-sided-coins-light-gold-brass-tone": "2026-11-04",
+  "custom-thanksgiving-5k-medal-antique-gold-finish": "2026-11-04",
+  "custom-5k-turkey-trot-medal-printed-ribbon": "2026-11-04",
   // Added in 97744e8 (35 products).
   "custom-colorful-hot-air-balloon-fridge-magnet": "2026-10-05",
   "custom-chevron-hot-air-balloon-fridge-magnet": "2026-10-05",

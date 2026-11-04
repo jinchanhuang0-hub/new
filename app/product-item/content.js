@@ -264,6 +264,22 @@ export const productItems = {
     quoteProduct: "Lapel Pins",
     lead: "This truck-shaped printed enamel pin combines detailed artwork with bright color accents. It is ideal for promotional campaigns, roadshow merchandise, souvenir programs and retail gift lines."
   },
+  "blank-double-sided-coins-light-gold-brass-tone": {
+    title: "Blank Double-Sided Coins with Light Gold Brass-Tone Finish",
+    seoTitle: "Blank Double-Sided Coins | Light Gold Brass-Tone Finish",
+    image: "assets/images/blank-double-sided-coins-light-gold-brass-tone.webp",
+    alt: "Two blank light gold coins with reeded edges, one on a clear acrylic stand and one leaning beside it on a white background.",
+    categoryLabel: "Challenge Coins",
+    categoryHref: "/products/custom-challenge-coins",
+    material: "Metal alloy",
+    process: "Brushed light gold brass-tone finish and reeded edge detailing",
+    sku: "UP-COIN-040",
+    usage: "Custom commemorative coins, branded tokens and event keepsakes",
+    categories: "Challenge Coins, Double Sided Coins, Blank Coins",
+    quoteProduct: "Challenge Coins",
+    lead: "These blank double-sided coins feature a light gold brass-tone finish, finely brushed faces and narrow raised rims. Reeded edges add a traditional coin detail, while the unmarked front and back provide space for personalized artwork. The subtle surface texture creates a soft metallic sheen.",
+    description: "For custom commemorative coins, branded tokens or event keepsakes, the two faces can accommodate different designs—for example, a logo on the front and a date or message on the reverse. Send your artwork, preferred diameter and thickness, order quantity and packaging requirements to discuss the specifications and suitable customization method."
+  },
   "victoria-police-st-michael-challenge-coin": {
     title: "Victoria Police St. Michael Challenge Coin",
     image: "assets/images/type-coins-victoria-police-st-michael.png",
@@ -781,6 +797,36 @@ export const productItems = {
     categories: "Challenge Coins, Antique Coins",
     quoteProduct: "Challenge Coins",
     lead: "These antique squadron coins combine military-style emblems with durable metal relief. They are suited for unit recognition, group identity, veteran gifts and official ceremonies."
+  },
+  "custom-thanksgiving-5k-medal-antique-gold-finish": {
+    title: "Custom Thanksgiving 5K Medal with Antique Gold Finish",
+    image: "assets/images/custom-thanksgiving-5k-medal-antique-gold.webp",
+    alt: "Antique gold-tone turkey-shaped 5K finisher medal with autumn-colored feathers and a harvest-print ribbon.",
+    categoryLabel: "Medals",
+    categoryHref: "/products/custom-medals",
+    material: "Zinc alloy",
+    process: "Die casting, antique gold-tone plating, color filling and printed ribbon assembly",
+    sku: "UP-MEDAL-045",
+    usage: "Community runs, school fundraisers, charity 5Ks and Thanksgiving finisher awards",
+    categories: "Medals, Thanksgiving Medals, Running Medals",
+    quoteProduct: "Medals",
+    lead: "This Thanksgiving 5K finisher medal features a turkey-shaped outline, an antique gold-tone finish and feather details in burgundy, orange and green. The central panel displays the event name, race distance, finisher wording and year, framed by small leaf and acorn accents. A harvest-print neck ribbon connects through metal rings above the medal, complementing its traditional autumn design.",
+    description: "For community runs, school fundraisers and charity 5Ks, the central panel can be customized around your event name and recognition message. Coordinate the ribbon artwork with your event colors, and specify any changes to the year or distance when planning repeat editions. Send your logo, required wording, order quantity and delivery date to discuss a custom version for your event."
+  },
+  "custom-5k-turkey-trot-medal-printed-ribbon": {
+    title: "Custom 5K Turkey Trot Medal with Printed Ribbon",
+    image: "assets/images/custom-5k-turkey-trot-medal-printed-ribbon.webp",
+    alt: "Gold-tone 5KM Turkey Trot medal featuring a running turkey in sneakers and a teal ribbon printed with autumn leaves.",
+    categoryLabel: "Medals",
+    categoryHref: "/products/custom-medals",
+    material: "Zinc alloy",
+    process: "Die casting, gold-tone plating, color filling and printed ribbon assembly",
+    sku: "UP-MEDAL-046",
+    usage: "Thanksgiving fun runs, seasonal finisher awards and 5K or 10K race events",
+    categories: "Medals, Turkey Trot Medals, Running Medals",
+    quoteProduct: "Medals",
+    lead: "Large “5KM” lettering on a navy base makes the race distance easy to identify on this custom Turkey Trot medal. A turkey in running shoes appears mid-stride above the lettering, with colorful tail feathers outlined in gold-tone metal. The teal printed ribbon features autumn leaves and running turkey motifs, passing directly through the medal’s integrated top slot.",
+    description: "The running design suits Thanksgiving fun runs and seasonal finisher awards where the race distance needs to stand out. For events offering both 5K and 10K races, distinct distance lettering and coordinated ribbon colors can help organizers separate award categories. Share your event branding, quantities for each distance and required arrival date to discuss a matching medal series."
   },
   "custom-christmas-tree-medal": {
     title: "Custom Christmas Tree Medal",
@@ -4318,7 +4364,7 @@ export const renderProductItemHtml = (item, currentSlug) => {
     .replace(/<span data-product-item-category>[^<]*<\/span>/g, `<span data-product-item-category>${safe.categoryLabel}</span>`)
     .replace(/<span data-product-item-title>[^<]*<\/span>/g, `<span data-product-item-title>${safe.title}</span>`)
     .replace(/<h1 data-product-item-title>[^<]*<\/h1>/g, `<h1 data-product-item-title>${safe.title}</h1>`)
-    .replace(/<p class="single-product-lead" data-product-item-lead>[\s\S]*?<\/p>/, `<p class="single-product-lead" data-product-item-lead>${safe.lead}</p>`)
+    .replace(/<p class="single-product-lead" data-product-item-lead>[\s\S]*?<\/p>/, `<p class="single-product-lead" data-product-item-lead>${safe.lead}</p>${safe.description ? `<p class="single-product-lead">${safe.description}</p>` : ""}`)
     .replace(/<span data-product-spec="material">[^<]*<\/span>/g, `<span data-product-spec="material">${safe.material}</span>`)
     .replace(/<span data-product-spec="process">[^<]*<\/span>/g, `<span data-product-spec="process">${displayProcess}</span>`)
     .replace(/<span data-product-spec="sku">[^<]*<\/span>/g, `<span data-product-spec="sku">${safe.sku}</span>`)

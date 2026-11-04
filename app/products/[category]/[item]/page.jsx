@@ -32,7 +32,7 @@ export async function generateMetadata({ params }) {
   if (!item || category !== expectedCategory) return {};
 
   return {
-    title: `${item.title} | Unique Pin`,
+    title: item.seoTitle || `${item.title} | Unique Pin`,
     description: getProductItemMetaDescription(item),
     alternates: {
       canonical: getProductPath(itemSlug, item),
