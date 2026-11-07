@@ -3,6 +3,8 @@ import { pinPackaging } from "./pinPackaging";
 export const coinPackaging = {
   ...pinPackaging,
   title: "Packaging Options",
+  description:
+    "Explore packaging options for presenting and protecting your custom challenge coins.",
   desktopColumns: 6,
   items: [
     ...pinPackaging.items,
