@@ -1,0 +1,82 @@
+.page { color:#17304a; background:#fff; font-family:Arial,sans-serif; line-height:1.6; min-height:100vh; overflow-wrap:anywhere; }
+.page * { box-sizing:border-box; }
+.header,.footer { max-width:1200px; margin:auto; padding:20px 24px; display:flex; align-items:center; justify-content:space-between; gap:20px; flex-wrap:wrap; }
+.header img { width:140px; max-width:45%; height:auto; object-fit:contain; }
+.hero,.section { max-width:1200px; margin:auto; padding:64px 24px; }
+.hero,.split { display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:center; }
+.hero h1 { font-size:clamp(2rem,5vw,4rem); line-height:1.1; max-width:18ch; }
+.eyebrow { text-transform:uppercase; letter-spacing:.12em; font-size:.8rem; }
+.button { display:inline-flex; min-height:48px; align-items:center; justify-content:center; padding:12px 24px; background:#173b5d; color:white; border:0; border-radius:5px; text-decoration:none; cursor:pointer; font:inherit; }
+.button:disabled { opacity:.6; cursor:wait; }
+.button:focus-visible,.page input:focus-visible,.page select:focus-visible,.page textarea:focus-visible,.page a:focus-visible { outline:3px solid #d99032; outline-offset:3px; }
+.placeholder,.image { width:100%; aspect-ratio:4/3; border-radius:8px; }
+.placeholder { display:grid; place-items:center; background:#edf1f4; border:1px dashed #a4b4c1; color:#536a7b; text-align:center; padding:20px; }
+.image { object-fit:contain; background:#edf1f4; }
+.grid .image { display:block; width:100%; aspect-ratio:1; height:auto; object-fit:contain; padding:0; border:0; border-radius:10px; background:#fff; box-shadow:0 0 20px 4px rgba(103,178,231,.24); }
+.bannerSection { position:relative; width:100%; margin:0 auto; overflow:hidden; background:#173654; }
+.bannerArtwork { position:relative; width:100%; margin:0 auto; }
+.bannerImage { display:block; width:100%; height:auto; }
+.bannerProducts { position:absolute; inset:0; width:100%; height:100%; pointer-events:none; mask-image:linear-gradient(to bottom,transparent 34%,#000 38%); }
+.badgeBackdrop { position:absolute; inset:0; width:100%; height:100%; pointer-events:none; mask-image:radial-gradient(ellipse 10% 26% at 56.5% 67%,#000 90%,transparent 100%); }
+.badgeShadow { position:absolute; left:51%; top:82%; width:11%; height:3%; border-radius:50%; background:rgba(0,0,0,.65); filter:blur(5px); pointer-events:none; }
+.rosemountBadge { position:absolute; left:50%; top:47%; width:13%; height:auto; pointer-events:none; filter:drop-shadow(0 4px 4px rgba(0,0,0,.5)); }
+.page .brandSection { background:#fff; padding:18px 0 12px; }
+.brandSection :global(.brand-heading) { margin-bottom:8px; padding:0 14px; }
+.brandSection h2 { font-size:clamp(20px,1.7vw,28px); }
+.brandSection :global(.brand-marquee-track) { gap:clamp(46.5px,5.32vw,87.8px); padding:0 clamp(28px,4.65vw,80px); }
+.brandSection :global(.brand-logo) { --brand-logo-scale:.644; min-width:clamp(114px,8.65vw,153px); min-height:0; height:94px; padding:0; }
+.bannerQuote,.bannerMore { position:absolute; top:30.5%; height:13%; min-height:44px; transform:translateY(-50%); }
+.bannerQuote { left:32.5%; width:17.5%; }
+.bannerMore { left:51.3%; width:17%; }
+.advantages,.grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:20px; }
+.grid { width:100%; margin:0 auto; gap:36px 56px; }
+.productSection { max-width:1300px; padding-top:28px; }
+.productHeading { text-align:center; color:var(--navy); font-size:1.5em; margin-block:.83em; }
+.grid article { min-width:0; font-size:.8em; }
+.grid article h3 { margin:12px 0 8px; }
+.grid article p { margin:0; }
+.companyVideo { display:block; width:100%; aspect-ratio:16/9; background:#111; border-radius:8px; }
+.companyActions { display:flex; gap:12px; flex-wrap:wrap; }
+.certSection { background:#f4f7fa; text-align:center; }
+.certGrid { display:grid; grid-template-columns:repeat(6,minmax(0,1fr)); gap:20px; align-items:start; }
+.certGrid figure { margin:0; min-width:0; font-weight:700; }
+.certGrid img { display:block; width:100%; height:200px; object-fit:contain; margin-bottom:8px; }
+.page :global(.reviews-section), .page :global(.customer-photo-gallery-section) { zoom:.8; width:100%; margin-inline:auto; }
+.page :global(.reviews-section) { zoom:.72; }
+.advantages > div { padding:20px; border:1px solid #d9e2e8; border-radius:8px; }
+.form { max-width:760px; display:grid; gap:16px; }
+.fields { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+.form label { display:grid; gap:6px; font-weight:600; min-width:0; }
+.form input,.form select,.form textarea { width:100%; min-width:0; min-height:48px; padding:10px; border:1px solid #9dadb8; border-radius:4px; font:inherit; background:white; color:#17304a; }
+.form input[type=file] { height:auto; }
+.srOnly { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+.form .uploadBox { position:relative; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:8px; min-height:110px; padding:16px; margin:8px 0; border:1px dashed #adc7df; border-radius:5px; text-align:center; cursor:pointer; }
+.uploadBox input { position:absolute; inset:0; width:100%; height:100%; opacity:0; cursor:pointer; }
+.uploadBox:focus-within { outline:3px solid #d99032; outline-offset:3px; }
+.uploadIcon { display:grid; place-items:center; width:36px; height:36px; border-radius:7px; color:white; background:#173b5d; font-size:24px; }
+.form p { margin:0; }
+.form .formNote { font-size:.8rem; line-height:1.5; }
+.form .button { justify-self:start; }
+.contactHeading { text-align:center; margin-bottom:36px; }
+.page [id="inquiry"] { scroll-margin-top:20px; }
+.contactLayout { display:grid; grid-template-columns: .9fr 1.1fr; gap:30px; align-items:start; }
+.contactSide { display:grid; gap:16px; }
+.contactCard,.mapCard { background:#fff; border:1px solid #d9e2eb; border-radius:9px; box-shadow:0 12px 32px rgba(23,48,74,.08); overflow:hidden; }
+.contactCard { padding:24px; }
+.contactMethods { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px; margin-bottom:24px; }
+.contactMethods a { display:grid; color:inherit; text-decoration:none; overflow-wrap:anywhere; }
+.catalogLink { display:inline-block; padding:10px 16px; border:1px solid #ccd9e7; border-radius:5px; text-decoration:none; color:#173b5d; font-weight:700; }
+.mapPanel { min-height:220px; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:24px; background:linear-gradient(135deg,#eaf4fa,#faf8e9); }
+.mapPanel p { max-width:320px; }
+.mapPanel iframe { width:100%; height:260px; border:0; }
+.mapCard > p { margin:0; padding:16px; font-size:.9rem; }
+.contactFormTitle { text-align:center; margin:0 0 24px; }
+.contactCard .form { max-width:none; }
+.contactCard .form .button { justify-self:stretch; }
+.footer { border-top:1px solid #d9e2e8; padding-bottom:100px; }
+.legalFooter { display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:10px 18px; padding:24px 72px; background:#0d3061; color:#fff; text-align:center; font-size:.8rem; }
+.legalFooter a { color:#f6c700; font-weight:700; text-decoration:none; }
+/* Keep the shared WhatsApp shortcut clear of form controls on this page. */
+@media(max-width:1200px) { .contactCard .form { margin-right:64px; } .contactCard .fields { grid-template-columns:1fr; } }
+@media(max-width:900px) { .grid,.advantages { grid-template-columns:repeat(2,minmax(0,1fr)); } .certGrid { grid-template-columns:repeat(3,minmax(0,1fr)); } }
+@media(max-width:600px) { .bannerSection { width:100%; } .bannerImage { width:100%; max-height:none; } .hero,.split,.grid,.advantages,.fields,.contactLayout { grid-template-columns:1fr; } .grid { width:100%; } .certGrid { grid-template-columns:repeat(2,minmax(0,1fr)); } .hero,.section { padding:40px 20px; } .header,.footer { padding-left:20px; padding-right:20px; } .footer { padding-bottom:100px; } }

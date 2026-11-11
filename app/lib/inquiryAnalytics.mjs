@@ -2,6 +2,7 @@ import { canSendProductionAnalytics } from "./analyticsGate.mjs";
 
 // These dimensions deliberately describe UI locations, never visitor input or URLs.
 export const inquiryPageType = (pathname) => {
+  if (pathname === "/lp/custom-metal-gifts" || pathname === "/lp/custom-metal-gifts/") return "custom_metal_gifts_lp";
   if (pathname.startsWith("/blog/")) return "blog";
   if (pathname === "/contact") return "contact";
   if (pathname.startsWith("/products/") || pathname.startsWith("/product-")) return "product";
@@ -9,6 +10,7 @@ export const inquiryPageType = (pathname) => {
 };
 
 export const inquiryFormId = (form, pathname) => {
+  if (pathname === "/lp/custom-metal-gifts" || pathname === "/lp/custom-metal-gifts/") return "custom_metal_gifts_lp_main";
   if (form.classList.contains("footer-quote-form")) return pathname.startsWith("/blog/") ? "blog_footer" : "site_footer";
   if (form.closest("[data-product-inquiry-modal]")) return "product_modal";
   if (pathname === "/contact") return "contact_main";

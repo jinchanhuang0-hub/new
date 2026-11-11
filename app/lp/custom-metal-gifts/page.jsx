@@ -1,0 +1,34 @@
+import { content } from './content';
+import Form from './Form';
+import Map from './Map';
+import StaticPage from '../../components/StaticPage';
+import { customerPhotoGalleryHtml } from '../../components/customerPhotoGalleryHtml';
+import { reviewHtml } from './reviews';
+import styles from './page.module.css';
+import banner from './banner-heading-optimized.webp';
+import cleanBanner from './banner-clean-optimized.webp';
+import rosemount from './banner-rosemount-optimized.webp';
+import originalBanner from './banner-new-optimized.webp';
+import fscCertificate from './certificate-fsc-2026.png';
+import iso9001Certificate from './certificate-iso9001-2026.png';
+import iso14001Certificate from './certificate-iso14001-2026.png';
+
+function Picture({ src, label }) { return src ? <img className={styles.image} src={src} alt={label} loading="lazy" decoding="async" /> : <div className={styles.placeholder} role="img" aria-label={label}>{label}</div>; }
+const brands = [
+  ['coca-cola.svg', 'Coca-Cola', ''], ['mcdonalds.svg', "McDonald's", 'logo-square'], ['disney.svg', 'Disney', ''],
+  ['pepsi.png', 'Pepsi', 'logo-square'], ['lego.svg', 'LEGO', 'logo-square'], ['starbucks.webp', 'Starbucks', 'logo-square'],
+  ['walmart.webp', 'Walmart', ''], ['mars.webp', 'Mars', ''], ['nike.svg', 'Nike', ''], ['adidas.svg', 'adidas', ''],
+  ['mercedes.webp', 'Mercedes-Benz', ''], ['bmw.webp', 'BMW', 'logo-square'], ['marvel.svg', 'MARVEL', ''],
+  ['kfc.webp', 'KFC', 'logo-square logo-kfc'], ['american-greetings.webp', 'American Greetings', 'logo-square logo-roomy'],
+  ['teal-s-logo.webp', 'Teal S brand', 'logo-square'], ['lions-international.webp', 'Lions International', 'logo-square'],
+  ['turbovets.webp', 'Turbovets Tech For Heroes', 'logo-wide'], ['nbc.svg', 'NBC', 'logo-square'],
+];
+export default function Page() { return <div className={styles.page}>
+  <main><section className={styles.bannerSection}><div className={styles.bannerArtwork}><img src={banner.src} className={styles.bannerImage} alt="Custom Lapel Pins, Challenge Coins, Medals and Belt Buckles. For brands, distributors, teams and events. Share your artwork or idea and estimated quantity for a quote. OEM/ODM, No MOQ, Free Artwork Support, Factory-Direct Quotes." /><img src={originalBanner.src} className={styles.bannerProducts} alt="" aria-hidden="true" /><img src={cleanBanner.src} className={styles.badgeBackdrop} alt="" aria-hidden="true" /><span className={styles.badgeShadow} aria-hidden="true" /><img src={rosemount.src} className={styles.rosemountBadge} alt="" aria-hidden="true" /><a className={styles.bannerQuote} href="#inquiry" aria-label="Get a Free Quote" /><a className={styles.bannerMore} href="/" aria-label="Visit Our Website" /></div></section>
+  <section className={`brand-carousel ${styles.brandSection}`} aria-label="Trusted brand section"><div className="brand-heading"><h2>Trusted by Global Brands</h2></div><div className="brand-marquee" aria-label="Trusted global brand logos"><div className="brand-marquee-track">{[...brands, ...brands].map(([file, name, extra], i) => <span className={`brand-logo ${extra}`} key={`${file}-${i}`} aria-hidden={i >= brands.length ? 'true' : undefined}><img src={`/assets/images/brands/${file}`} alt={`${name} logo`} /></span>)}</div></div></section>
+  <section className={`${styles.section} ${styles.productSection}`}><h1 className={styles.productHeading}>Custom Metal Products for Brands &amp; Events</h1><div className={styles.grid}>{content.products.map(p => <article key={p.title}><Picture src={p.image} label={`${p.title} product`} /><h3>{p.title}</h3><p>{p.description}</p></article>)}</div></section>
+  <section className={styles.section}><div className={styles.split}><video className={styles.companyVideo} controls playsInline preload="metadata" aria-label="Unique Pin company and product overview video"><source src="/assets/videos/company-overview.mp4?v=20260819-lfs-fix" type="video/mp4" /></video><div><p className={styles.eyebrow}>Custom Metal Gifts Manufacturer</p><h2>Meet Unique Pin</h2><p>Take a 34-second look inside our 6,000 m² factory in Zhongshan, China. With 34 production machines, our in-house team manages CNC engraving, die casting, polishing, plating, enamel coloring, inspection and packing.</p><p>We manufacture custom enamel pins, challenge coins, medals, keychains and belt buckles for distributors, brands, clubs and event organizers—from artwork proofing to global delivery.</p><div className={styles.companyActions}><a className={styles.button} href="/about">About Us</a><a className={styles.button} href="/products">View Products</a></div></div></div></section>
+  <section className={styles.certSection}><div className={styles.section}><h2>Certificates</h2><div className={styles.certGrid}>{[[iso9001Certificate.src,'ISO 9001'],[iso14001Certificate.src,'ISO 14001'],['/assets/images/cert-ce.webp','CE'],['/assets/images/cert-rohs.webp','RoHS'],[fscCertificate.src,'FSC'],['/assets/images/cert-smeta.webp','SMETA']].map(([src,label]) => <figure key={label}><img src={src} alt={`${label} certificate`} loading="lazy" /><figcaption>{label}</figcaption></figure>)}</div></div></section>
+  <StaticPage html={`${reviewHtml}${customerPhotoGalleryHtml}`} />
+  <section className={styles.section}><div className={styles.contactHeading}><h2>Contact Us</h2><p>Send your product details, artwork or deadline. Our team will reply with a clear custom quote.</p></div><div className={styles.contactLayout}><div className={styles.contactSide}><div className={styles.contactCard}><div className={styles.contactMethods}><a href="mailto:ceo@chinauniquepin.com"><strong>Mail</strong><span>ceo@chinauniquepin.com</span></a><a href="tel:+86076022831989"><strong>Phone</strong><span>+86 0760 22831989</span></a><a href="tel:+8618895316838"><strong>Mobile</strong><span>+86 18895316838</span></a><a href="https://api.whatsapp.com/send?phone=8618895316838" target="_blank" rel="noopener noreferrer"><strong>WhatsApp</strong><span>+86 18895316838</span></a></div><a className={styles.catalogLink} href="/assets/Uniquepin-Catalogue.pdf">Download Catalog</a></div><Map /></div><div className={styles.contactCard} id="inquiry"><h3 className={styles.contactFormTitle}>Get a Free Quote</h3><Form /></div></div></section></main>
+  <footer className={styles.legalFooter}><span>Copyright © 2026, Zhongshan Unique Metal Gift Co., Ltd. All rights reserved. Powered by UcCrafts.</span><a href="/privacy-policy">Privacy Policy</a><a href="/terms">Terms &amp; Conditions</a></footer></div>; }
