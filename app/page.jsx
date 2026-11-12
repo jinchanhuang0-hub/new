@@ -471,12 +471,12 @@ const html = String.raw`
           <h2>Certificates</h2>
         </div>
         <div class="cert-grid">
-          <figure class="cert" data-cert-lightbox-trigger data-cert-holder="Zhongshan Custom Crafts Co., Ltd." data-cert-scope="Production of hardware craft jewelry" data-cert-issuer="NQA" data-cert-number="132573" data-cert-dates="Issue date: 13 June 2023; Valid until: 13 June 2026" role="button" tabindex="0" aria-label="View ISO 9001 certificate">
-            <img src="assets/images/cert-iso9001.webp" alt="Unique Pin ISO9001 certificate">
+          <figure class="cert" data-cert-lightbox-trigger data-cert-holder="Guangdong Custom Cultural Creative Gifts Co., Ltd." data-cert-scope="Production of hardware craft jewelry" data-cert-issuer="NQA" data-cert-number="F01926000647R102" data-cert-dates="Issue date: 12 June 2026; Valid until: 11 June 2029" role="button" tabindex="0" aria-label="View ISO 9001 certificate">
+            <img src="assets/images/homepage-iso9001-2026.png" alt="Unique Pin ISO9001 certificate">
             <figcaption class="cert-name">ISO 9001</figcaption>
           </figure>
-          <figure class="cert" data-cert-lightbox-trigger data-cert-holder="Zhongshan Custom Crafts Co., Ltd." data-cert-scope="Production of hardware craft jewelry" data-cert-issuer="NQA" data-cert-number="132574" data-cert-dates="Issue date: 13 June 2023; Valid until: 13 June 2026" role="button" tabindex="0" aria-label="View ISO 14001 certificate">
-            <img src="assets/images/cert-iso14001.webp" alt="Unique Pin ISO14001 certificate">
+          <figure class="cert" data-cert-lightbox-trigger data-cert-holder="Guangdong Custom Cultural Creative Gifts Co., Ltd." data-cert-scope="Production of hardware craft jewelry" data-cert-issuer="NQA" data-cert-number="F01926E00343R102" data-cert-dates="Issue date: 12 June 2026; Valid until: 11 June 2029" role="button" tabindex="0" aria-label="View ISO 14001 certificate">
+            <img src="assets/images/homepage-iso14001-2026.png" alt="Unique Pin ISO14001 certificate">
             <figcaption class="cert-name">ISO 14001</figcaption>
           </figure>
           <figure class="cert" data-cert-lightbox-trigger data-cert-holder="Zhongshan Unique Metal Gift Co., Limited" data-cert-scope="Lapel pin conformity for EMC 2014/30/EU" data-cert-issuer="Shenzhen SIT Testing Technology Co., Ltd." data-cert-number="SIT240808160101E" data-cert-dates="Issue date: August 15, 2024; Expiry date: Not listed on certificate" role="button" tabindex="0" aria-label="View CE certificate">
@@ -487,8 +487,8 @@ const html = String.raw`
             <img src="assets/images/cert-rohs.webp" alt="Unique Pin RoHS certificate">
             <figcaption class="cert-name">RoHS</figcaption>
           </figure>
-          <figure class="cert" data-cert-lightbox-trigger data-cert-holder="Guangdong Custom Cultural Creative Gifts Co., Ltd." data-cert-scope="Secondary processing of FSC 100%, FSC Mix and FSC Recycled paper and pulp products" data-cert-issuer="AENOR International S.A.U." data-cert-number="AEN-COC-001214" data-cert-dates="First issued: 2023-08-10; Valid until: 2026-08-17" role="button" tabindex="0" aria-label="View FSC certificate">
-            <img src="assets/images/cert-fsc.webp" alt="Unique Pin FSC certificate">
+          <figure class="cert" data-cert-lightbox-trigger data-cert-holder="Guangdong Custom Cultural Creative Gifts Co., Ltd." data-cert-scope="Secondary processing of FSC 100%, FSC Mix and FSC Recycled paper and pulp products" data-cert-issuer="AENOR International S.A.U." data-cert-number="AEN-COC-001214" data-cert-dates="First issued: 2023-08-10; Last issued: 2026-08-18; Valid until: 2031-08-17" role="button" tabindex="0" aria-label="View FSC certificate">
+            <img src="assets/images/homepage-fsc-2026.png" alt="Unique Pin FSC certificate">
             <figcaption class="cert-name">FSC</figcaption>
           </figure>
           <figure class="cert" data-cert-lightbox-trigger data-cert-holder="Available in full audit report" data-cert-scope="Sedex Members Ethical Trade Audit Report" data-cert-issuer="SMETA / Sedex" data-cert-number="Available in full audit report" data-cert-dates="Version 7; audit dates available in full report" role="button" tabindex="0" aria-label="View SMETA certificate">
