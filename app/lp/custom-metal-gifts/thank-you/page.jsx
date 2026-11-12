@@ -1,2 +1,2 @@
-import styles from '../page.module.css';
-export default function ThankYou() { return <div className={styles.page}><header className={styles.header}><img src="/assets/images/logo.png" alt="Unique Pin" /></header><main className={styles.section}><h1>Thank you</h1><p>Your inquiry has been sent.</p></main><footer className={styles.footer}><span>Unique Pin</span><a href="/privacy-policy">Privacy Policy</a></footer></div>; }
+export { default } from '../../../thank-you/page';
+export const metadata = { title: 'Thank You | Unique Pin' };

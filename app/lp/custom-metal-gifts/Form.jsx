@@ -22,7 +22,7 @@ export default function Form() {
       timeout = setTimeout(() => controller.abort(), 30000);
       const response = await fetch('/api/inquiry', { method: 'POST', body: data, signal: controller.signal }); errorCode = response.ok ? 'invalid_confirmation' : inquiryHttpErrorCode(response.status); const result = await response.json().catch(() => ({}));
       if (!response.ok || result.success !== true || typeof result.inquiry_id !== 'string' || !result.inquiry_id) throw new Error(response.ok ? 'Confirmation was incomplete. Please contact us before submitting again.' : result.message || 'Unable to send. Please try again.');
-      setStatus('Inquiry sent. Redirecting...'); reportInquirySuccess({ inquiryId: result.inquiry_id, form, pathname: location.pathname });
+      setStatus('Inquiry sent. Redirecting...'); reportInquirySuccess({ inquiryId: result.inquiry_id, form, pathname: location.pathname, navigate: () => location.assign('/lp/custom-metal-gifts/thank-you') });
     } catch (error) { reportInquiryError(form, errorCode); setStatus(error.name === 'AbortError' ? 'The request timed out. Please contact us before submitting again.' : errorCode === 'network_error' ? 'Unable to connect. Please check your connection or contact us before submitting again.' : error.message || 'Unable to send. Please try again.'); lock.current = false; setBusy(false); } finally { clearTimeout(timeout); }
   }
   return <form className={styles.form} method="post" action="/api/inquiry" encType="multipart/form-data" onSubmit={submit} onInvalid={e => reportInquiryValidationError(e.currentTarget)}><div className={styles.fields}>
