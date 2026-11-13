@@ -96,3 +96,5 @@
   .mobileBannerContent .mobileBannerBenefits { margin-top:13px; font-size:clamp(.72rem,2.8vw,.9rem); }
 }
 @media (max-width:360px) { .mobileBannerContent { padding-top:16px; } .mobileBannerContent h1 { font-size:1.35rem; } .mobileBannerContent p { font-size:.8rem; } }
+
+@media (max-width:600px) { .page :global(.reviews-section) { zoom:1; } }
