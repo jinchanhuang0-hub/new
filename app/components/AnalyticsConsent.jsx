@@ -5,7 +5,7 @@ import { isProductionAnalyticsEnvironment } from "../lib/analyticsGate.mjs";
 
 const CONSENT_KEY = "uccrafts_analytics_consent";
 const CONSENT_EVENT = "uccrafts:analytics-consent-changed";
-const GTM_ID = "GTM-PVLJT85N";
+const GTM_IDS = ["GTM-PVLJT85N", "GTM-MN4R46T3"];
 
 const consentValues = {
   granted: {
@@ -31,30 +31,35 @@ const ensureDataLayer = () => {
 
 const loadGoogleTagManager = () => {
   if (!isProductionAnalyticsEnvironment()) return;
-  if (window.__uccraftsGtmState) {
-    window.gtag?.("consent", "update", consentValues.granted);
-    return;
-  }
 
   ensureDataLayer();
-  window.gtag("consent", "default", {
-    ...consentValues.denied,
-    wait_for_update: 500,
-  });
+  const states = window.__uccraftsGtmState || {};
+  if (!window.__uccraftsGtmState) {
+    window.gtag("consent", "default", {
+      ...consentValues.denied,
+      wait_for_update: 500,
+    });
+    window.gtag("js", new Date());
+  }
   window.gtag("consent", "update", consentValues.granted);
-  window.dataLayer.push({ "gtm.start": Date.now(), event: "gtm.js" });
+  window.__uccraftsGtmState = states;
 
-  const script = document.createElement("script");
-  script.async = true;
-  script.src = `https://www.googletagmanager.com/gtm.js?id=${GTM_ID}`;
-  script.dataset.uccraftsGtm = "true";
-  window.__uccraftsGtmState = "loading";
-  script.onload = () => { window.__uccraftsGtmState = "loaded"; };
-  script.onerror = () => {
-    script.remove();
-    window.__uccraftsGtmState = null;
-  };
-  document.head.appendChild(script);
+  GTM_IDS.forEach((id) => {
+    if (states[id]) return;
+    window.dataLayer.push({ "gtm.start": Date.now(), event: "gtm.js" });
+
+    const script = document.createElement("script");
+    script.async = true;
+    script.src = `https://www.googletagmanager.com/gtm.js?id=${id}`;
+    script.dataset.uccraftsGtm = id;
+    states[id] = "loading";
+    script.onload = () => { states[id] = "loaded"; };
+    script.onerror = () => {
+      script.remove();
+      delete states[id];
+    };
+    document.head.appendChild(script);
+  });
 };
 
 const removeAnalyticsCookies = () => {
