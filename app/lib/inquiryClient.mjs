@@ -20,6 +20,7 @@ export const reportInquirySuccess = ({ inquiryId, form, pathname, navigate = () 
     return;
   }
   reportedInquiryIds.add(inquiryId);
+  window.gtag?.("event", "conversion", { send_to: "AW-18191902935/UsHfCMCF0bcdENfRyeJD" });
 
   // GTM may never run (blocked, slow, or missing). Navigation is independent of its callback.
   const fallback = window.setTimeout(go, 800);

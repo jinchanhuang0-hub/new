@@ -42,6 +42,15 @@ const loadGoogleTagManager = () => {
     window.gtag("js", new Date());
   }
   window.gtag("consent", "update", consentValues.granted);
+  if (!window.__uccraftsAdsConfigured) {
+    const adsScript = document.createElement("script");
+    adsScript.async = true;
+    adsScript.src = "https://www.googletagmanager.com/gtag/js?id=AW-18191902935";
+    adsScript.dataset.uccraftsAdsTag = "true";
+    document.head.appendChild(adsScript);
+    window.gtag("config", "AW-18191902935");
+    window.__uccraftsAdsConfigured = true;
+  }
   window.__uccraftsGtmState = states;
 
   GTM_IDS.forEach((id) => {
