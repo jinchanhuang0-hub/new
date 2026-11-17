@@ -18,7 +18,7 @@ const html = String.raw`
         <p class="legal-kicker">Legal</p>
         <h1>Cookie Policy</h1>
         <p>Information about Analytics cookies and embedded third-party services on uccrafts.com.</p>
-        <p class="legal-updated">Effective date: August 3, 2026</p>
+        <p class="legal-updated">Effective date: November 17, 2026</p>
       </div>
     </section>
     <section class="legal-content">
@@ -38,7 +38,7 @@ const html = String.raw`
               <li><strong>Third-party map:</strong> Google Maps connects to Google only after you choose <strong>Load Google Map</strong> on the Contact page.</li>
               <li><strong>External links:</strong> WhatsApp and social-network services are not loaded as tracking tools by this website. Those providers may use cookies or similar technologies after you choose to visit their services.</li>
             </ul>
-            <p>We do not currently deploy a Google Ads tag or Meta Pixel through the website code or the published GTM container information reviewed for this policy.</p>
+            <p>With separate advertising-measurement consent, Google Ads (<code>AW-18191902935</code>) measures successful inquiries and their connection to ads. Google may use advertising cookies and online identifiers for this measurement. Personalized advertising remains disabled.</p>
           </section>
           <section id="cookie-table">
             <h2>2. Cookie and Storage Details</h2>
@@ -48,6 +48,8 @@ const html = String.raw`
                 <tbody>
                   <tr><td><code>_ga</code></td><td>Google Analytics</td><td>Distinguishes website visitors for Analytics measurement.</td><td>Typically up to 2 years</td></tr>
                   <tr><td><code>_ga_4BPKLZFWYH</code></td><td>Google Analytics</td><td>Maintains session state for the website's GA4 property.</td><td>Typically up to 2 years</td></tr>
+                  <tr><td><code>uccrafts_analytics_consent</code> / <code>uccrafts_ads_consent</code></td><td>uccrafts.com</td><td>Local storage that remembers your separate optional-tracking choices.</td><td>Until changed or cleared</td></tr>
+                  <tr><td><code>_gcl_*</code></td><td>Google Ads</td><td>Advertising attribution after advertising-measurement consent.</td><td>Varies by cookie and Google settings</td></tr>
                   <tr><td>Provider-controlled storage</td><td>Google Maps or an external service</td><td>May be used after you choose to load the map or after you leave this website for that provider.</td><td>Controlled by the relevant provider</td></tr>
                 </tbody>
               </table>
@@ -57,7 +59,7 @@ const html = String.raw`
           </section>
           <section id="cookie-control">
             <h2>3. Your Choices</h2>
-            <p>You can accept or reject Analytics when the privacy panel first appears. To reset that choice later, clear this website&apos;s cookies and local storage through your browser settings before revisiting the site. Rejecting or withdrawing Analytics consent does not prevent you from viewing products or submitting an inquiry.</p>
+            <p>The privacy panel offers <strong>Reject optional</strong>, <strong>Analytics only</strong>, and <strong>Accept Analytics &amp; Ads</strong>. Advertising permission is not inferred from a previous Analytics choice. Use <strong>Cookie settings</strong> to change or withdraw your choices at any time. Rejecting optional tracking does not prevent product browsing or inquiries.</p>
             <p>You can also inspect, block or delete individual cookies through your browser settings. Google Maps remains unloaded until you expressly choose to open it on the Contact page.</p>
           </section>
           <section>

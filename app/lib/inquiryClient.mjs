@@ -1,4 +1,4 @@
-import { canSendProductionAnalytics } from "./analyticsGate.mjs";
+import { canSendProductionAnalytics, hasAdvertisingConsent } from "./analyticsGate.mjs";
 import {
   inquiryPageType, inquiryFormId, inquiryHttpErrorCode,
   reportInquirySubmitAttempt, reportInquiryError, reportInquiryValidationError,
@@ -20,10 +20,27 @@ export const reportInquirySuccess = ({ inquiryId, form, pathname, navigate = () 
     return;
   }
   reportedInquiryIds.add(inquiryId);
-  window.gtag?.("event", "conversion", { send_to: "AW-18191902935/UsHfCMCF0bcdENfRyeJD" });
+  // The website owns Ads conversion reporting; do not enable a second GTM
+  // conversion tag for this same success event and destination.
+  const sendAds = hasAdvertisingConsent() && typeof window.gtag === "function";
+  let analyticsDone = false;
+  let adsDone = !sendAds;
+  const finish = () => {
+    if (analyticsDone && adsDone) { window.clearTimeout(fallback); go(); }
+  };
 
   // GTM may never run (blocked, slow, or missing). Navigation is independent of its callback.
-  const fallback = window.setTimeout(go, 800);
+  const fallback = window.setTimeout(go, sendAds ? 2000 : 800);
+  if (sendAds) {
+    try {
+      window.gtag("event", "conversion", {
+        send_to: "AW-18191902935/UsHfCMCF0bcdENfRyeJD",
+        transaction_id: inquiryId,
+        event_callback: () => { adsDone = true; finish(); },
+        event_timeout: 1800,
+      });
+    } catch { adsDone = true; }
+  }
   try {
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
@@ -31,8 +48,8 @@ export const reportInquirySuccess = ({ inquiryId, form, pathname, navigate = () 
       form_id: inquiryFormId(form, pathname),
       page_type: inquiryPageType(pathname),
       eventCallback: () => {
-        window.clearTimeout(fallback);
-        go();
+        analyticsDone = true;
+        finish();
       },
       eventTimeout: 750,
     });

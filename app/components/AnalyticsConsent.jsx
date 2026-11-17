@@ -1,11 +1,12 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { isProductionAnalyticsEnvironment } from "../lib/analyticsGate.mjs";
+import { isProductionAnalyticsEnvironment, hasAdvertisingConsent } from "../lib/analyticsGate.mjs";
 
 const CONSENT_KEY = "uccrafts_analytics_consent";
+const ADS_CONSENT_KEY = "uccrafts_ads_consent";
 const CONSENT_EVENT = "uccrafts:analytics-consent-changed";
-const GTM_IDS = ["GTM-PVLJT85N", "GTM-MN4R46T3"];
+const GTM_IDS = ["GTM-PVLJT85N"];
 
 const consentValues = {
   granted: {
@@ -41,8 +42,12 @@ const loadGoogleTagManager = () => {
     });
     window.gtag("js", new Date());
   }
-  window.gtag("consent", "update", consentValues.granted);
-  if (!window.__uccraftsAdsConfigured) {
+  window.gtag("consent", "update", {
+    ...consentValues.granted,
+    ad_storage: hasAdvertisingConsent() ? "granted" : "denied",
+    ad_user_data: hasAdvertisingConsent() ? "granted" : "denied",
+  });
+  if (hasAdvertisingConsent() && !window.__uccraftsAdsConfigured) {
     const adsScript = document.createElement("script");
     adsScript.async = true;
     adsScript.src = "https://www.googletagmanager.com/gtag/js?id=AW-18191902935";
@@ -71,10 +76,10 @@ const loadGoogleTagManager = () => {
   });
 };
 
-const removeAnalyticsCookies = () => {
+const removeAnalyticsCookies = (adsOnly = false) => {
   document.cookie.split(";").forEach((cookie) => {
     const name = cookie.split("=")[0]?.trim();
-    if (!name || !/^_ga(?:_|$)/.test(name)) return;
+    if (!name || !(adsOnly ? /^_gcl_/ : /^_(?:ga(?:_|$)|gcl_)/).test(name)) return;
 
     const hostParts = window.location.hostname.split(".");
     const domains = [window.location.hostname];
@@ -91,6 +96,7 @@ export default function AnalyticsConsent() {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
+    try { window.__uccraftsAdsChoice = window.localStorage.getItem(ADS_CONSENT_KEY); } catch {}
     let savedChoice;
     try { savedChoice = window.localStorage.getItem(CONSENT_KEY); } catch { savedChoice = null; }
     if (!window.__uccraftsAnalyticsChoice) window.__uccraftsAnalyticsChoice = savedChoice;
@@ -100,6 +106,10 @@ export default function AnalyticsConsent() {
     } else {
       setIsOpen(true);
     }
+    // Existing Analytics permission never implies advertising permission.
+    try {
+      if (!window.localStorage.getItem(ADS_CONSENT_KEY)) setIsOpen(true);
+    } catch { /* The next explicit choice is kept for this page only. */ }
 
     const handleMapClick = (event) => {
       const mapButton = event.target.closest?.("[data-load-google-map]");
@@ -120,7 +130,8 @@ export default function AnalyticsConsent() {
 
     document.addEventListener("click", handleMapClick);
     const handleStorage = (event) => {
-      if (event.key !== CONSENT_KEY) return;
+      if (event.key !== CONSENT_KEY && event.key !== ADS_CONSENT_KEY) return;
+      if (event.key === ADS_CONSENT_KEY) { window.location.reload(); return; }
       window.__uccraftsAnalyticsChoice = event.newValue;
       if (event.newValue === "granted") loadGoogleTagManager();
       else if (window.gtag) window.gtag("consent", "update", consentValues.denied);
@@ -134,7 +145,10 @@ export default function AnalyticsConsent() {
     };
   }, []);
 
-  const saveChoice = (nextChoice) => {
+  const saveChoice = (nextChoice, adsChoice = "denied") => {
+    const withdrawing = window.__uccraftsAdsChoice === "granted" && adsChoice !== "granted";
+    window.__uccraftsAdsChoice = adsChoice;
+    try { window.localStorage.setItem(ADS_CONSENT_KEY, adsChoice); } catch {}
     window.__uccraftsAnalyticsChoice = nextChoice;
     try { window.localStorage.setItem(CONSENT_KEY, nextChoice); } catch { /* Consent lasts for this page only. */ }
 
@@ -147,32 +161,38 @@ export default function AnalyticsConsent() {
 
     window.dispatchEvent(new CustomEvent(CONSENT_EVENT, { detail: { choice: nextChoice } }));
     setIsOpen(false);
+    if (withdrawing) { removeAnalyticsCookies(true); window.location.reload(); }
   };
 
   return (
     <>
+      {!isOpen && <button type="button" className="privacy-settings-button" onClick={() => setIsOpen(true)}>Cookie settings</button>}
       {isOpen && (
         <div className="privacy-consent" role="dialog" aria-labelledby="privacy-consent-title">
           <div className="privacy-consent-copy">
             <strong id="privacy-consent-title">We use cookies</strong>
             <p>
-              We use necessary storage to keep this website working. With your permission, we also use Google Analytics,
-              including Google Signals, to understand traffic and improve the website. You can reject Analytics without
-              affecting product pages or inquiry forms. Read our <a href="/privacy-policy">Privacy Policy</a>.
+              We use necessary storage to keep this website working. Optional Google Analytics, including Google Signals,
+              helps us understand traffic. Optional Google Ads measurement connects successful inquiries to ads.
+              Advertising measurement may use cookies and online identifiers; it does not send your inquiry text or artwork.
+              You can reject optional tracking without affecting inquiry forms. Read our <a href="/privacy-policy">Privacy Policy</a>.
             </p>
           </div>
           <div className="privacy-consent-actions">
             <button className="privacy-consent-reject" type="button" onClick={() => saveChoice("denied")}>
-              Reject Analytics
+              Reject optional
             </button>
             <button className="privacy-consent-accept" type="button" onClick={() => saveChoice("granted")}>
-              Accept Analytics
+              Analytics only
+            </button>
+            <button className="privacy-consent-accept" type="button" onClick={() => saveChoice("granted", "granted")}>
+              Accept Analytics &amp; Ads
             </button>
           </div>
           <button
             className="privacy-consent-dismiss"
             type="button"
-            aria-label="Reject Analytics and close"
+            aria-label="Reject optional tracking and close"
             onClick={() => saveChoice("denied")}
           >
             &times;
