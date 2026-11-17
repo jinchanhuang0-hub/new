@@ -18,3 +18,11 @@ export const hasAnalyticsConsent = () => {
 
 export const canSendProductionAnalytics = () =>
   isProductionAnalyticsEnvironment() && hasAnalyticsConsent();
+
+// Advertising is a separate opt-in; legacy analytics choices do not grant it.
+export const hasAdvertisingConsent = () => {
+  if (typeof window === "undefined") return false;
+  if (window.__uccraftsAdsChoice) return window.__uccraftsAdsChoice === "granted";
+  try { return window.localStorage.getItem("uccrafts_ads_consent") === "granted"; }
+  catch { return false; }
+};

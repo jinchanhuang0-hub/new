@@ -17,7 +17,7 @@ const html = String.raw`
       <div class="container">
         <h1>Privacy Policy</h1>
         <p>How Zhongshan Unique Metal Gift Co., Ltd. (中山市优尼可工艺品有限公司) handles personal information submitted through uccrafts.com.</p>
-        <p class="legal-updated">Effective date: August 3, 2026</p>
+        <p class="legal-updated">Effective date: November 17, 2026</p>
       </div>
     </section>
     <section class="legal-content">
@@ -48,7 +48,7 @@ const html = String.raw`
             <p>When you request a quote or contact us, we may collect your name, business email, country or region, phone or WhatsApp number, product type, quantity, project details, artwork files, page URL and page title.</p>
             <p>When you access the website, hosting and security systems may necessarily process technical information such as your IP address, request time, requested page, browser or device information, referral data, and security or error logs. This technical processing is used to deliver, secure and troubleshoot the website.</p>
             <p>With your permission, this website loads Google Tag Manager (<code>GTM-PVLJT85N</code>) and Google Analytics 4 using Google tag <code>G-4BPKLZFWYH</code>. Google Signals was enabled when this notice was reviewed on August 3, 2026. Before you accept Analytics, the website does not request the Google Tag Manager script. If accepted, these services may process page views, device and browser information, approximate location derived from IP address, referral information and online identifiers, and may read or set Analytics cookies.</p>
-            <p>The Contact page displays a Google Maps placeholder. The map connects to Google only after you choose <strong>Load Google Map</strong>. Google may then receive your IP address, browser or device information and referral data. We do not currently deploy a Google Ads tag or Meta Pixel through the website code or the published GTM container information reviewed for this notice.</p>
+            <p>The Contact page displays a Google Maps placeholder. The map connects to Google only after you choose <strong>Load Google Map</strong>. Google may then receive your IP address, browser or device information and referral data. With separate advertising-measurement consent, we load Google Ads (<code>AW-18191902935</code>) to measure successful inquiries attributable to advertising. This may process online identifiers, ad-click information and a random inquiry identifier used to prevent duplicate counting. Inquiry text and artwork are not included in the conversion event. We do not enable personalized advertising through this consent choice.</p>
           </section>
           <section id="privacy-use">
             <h2>3. How and Why We Use Information</h2>
@@ -56,7 +56,7 @@ const html = String.raw`
               <li><strong>Pre-contract steps and contract performance:</strong> respond to inquiries, review artwork, prepare samples and quotations, and manage resulting orders, production, shipping and after-sales support.</li>
               <li><strong>Legal obligations:</strong> keep records required for accounting, tax, customs, product compliance and dispute handling.</li>
               <li><strong>Legitimate interests:</strong> deliver and secure the website, diagnose errors, prevent abuse, maintain necessary business records and improve our B2B service, provided those interests are not overridden by your rights.</li>
-              <li><strong>Consent:</strong> load Google Analytics and Google Signals only after you accept Analytics. You can reset this choice by clearing this website&apos;s cookies and local storage in your browser.</li>
+              <li><strong>Consent:</strong> load Google Analytics and Google Signals after Analytics consent, and Google Ads measurement after separate advertising consent. Choose <strong>Cookie settings</strong> to change or withdraw your choices.</li>
             </ul>
             <p>Required form fields are needed so we can identify and respond to a quotation request. If you do not provide them, we may be unable to prepare or deliver a quotation. Phone, quantity, project details and artwork are optional unless they become necessary for a specific order.</p>
           </section>
@@ -69,7 +69,7 @@ const html = String.raw`
                 <tbody>
                   <tr><td>Vercel</td><td>Website hosting, delivery, security, technical logs and server-side website functions.</td><td>Server-side website functions are configured to execute in Washington, D.C., United States (<code>us-east-1 / iad1</code>). This function setting does not establish where CDN delivery, security processing, technical logs, backups or subprocessor data are stored or processed. Vercel may use other locations in its global infrastructure.</td></tr>
                   <tr><td>Alibaba Cloud enterprise email</td><td>SMTP delivery and mailbox storage for <a href="mailto:ceo@chinauniquepin.com">ceo@chinauniquepin.com</a>, including inquiry emails and submitted artwork. The enterprise email account is administered by Zhongshan Unique Metal Gift Co., Ltd. under its Chinese name, 中山市优尼可工艺品有限公司.</td><td>Alibaba Cloud infrastructure. The available records do not establish a single physical storage or backup location.</td></tr>
-                  <tr><td>Google</td><td>Google Tag Manager, Google Analytics 4, Google Signals and the embedded Google Map on the Contact page.</td><td>United States and other locations used by Google's global infrastructure. Google determines the precise processing and storage locations within its systems.</td></tr>
+                  <tr><td>Google</td><td>Google Tag Manager, Google Analytics 4, Google Signals, Google Ads measurement and the embedded Google Map on the Contact page.</td><td>United States and other locations used by Google's global infrastructure. Google determines the precise processing and storage locations within its systems.</td></tr>
                   <tr><td>Payment, freight, customs and production providers</td><td>Process a confirmed order and arrange delivery.</td><td>China, the destination country and relevant transit countries.</td></tr>
                 </tbody>
               </table>
@@ -80,7 +80,7 @@ const html = String.raw`
           <section id="privacy-retention">
             <h2>5. Retention, Security and Your Rights</h2>
             <p>The website inquiry endpoint does not intentionally write submissions to a separate customer inquiry database. It sends form submissions and artwork through Alibaba Cloud enterprise email to the designated business mailbox. Inquiry correspondence, submitted artwork and operational order records are normally retained for two years from the last substantive contact or completion of the relevant order, then deleted or securely disposed of. Information may be kept longer where an active customer relationship, unresolved claim, legal hold, or accounting, tax, customs or other legal requirement makes this necessary.</p>
-            <p>Where applicable law provides these rights, you may ask to access, correct, receive a portable copy of or delete your personal information, or object to or restrict certain processing. You may withdraw Analytics consent by clearing this website&apos;s cookies and local storage in your browser before revisiting the site. Contact us at <a href="mailto:ceo@chinauniquepin.com">ceo@chinauniquepin.com</a>. We may need to verify your identity and may retain records that are required for contractual, accounting or legal purposes.</p>
+            <p>Where applicable law provides these rights, you may ask to access, correct, receive a portable copy of or delete your personal information, or object to or restrict certain processing. You may withdraw optional tracking consent using <strong>Cookie settings</strong> on the website. You can also clear website cookies and local storage through your browser. Contact us at <a href="mailto:ceo@chinauniquepin.com">ceo@chinauniquepin.com</a>. We may need to verify your identity and may retain records that are required for contractual, accounting or legal purposes.</p>
             <p>We use access controls and reasonable technical and organizational safeguards, but no internet transmission can be guaranteed completely secure.</p>
           </section>
           <section id="privacy-other">
