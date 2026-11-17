@@ -1814,13 +1814,13 @@ export const productItems = {
     alt: "Tire wheel rim keychain",
     categoryLabel: "Keychains",
     categoryHref: "/products/custom-metal-keychains",
-    material: "Zinc alloy and rubber",
+    material: "Zinc alloy",
     process: "Die casting and assembly",
     sku: "UP-KEY-014",
     usage: "Automotive gifts, clubs, promotions",
     categories: "Keychains, Automotive Keychains",
     quoteProduct: "Keychains",
-    lead: "This tire wheel rim keychain uses a dimensional wheel design with rubber tire detail and metal hardware for automotive gifts, car clubs, dealership promotions and retail accessories."
+    lead: "This tire wheel rim keychain uses a dimensional wheel design and metal hardware for automotive gifts, car clubs, dealership promotions and retail accessories."
   },
   "black-braided-leather-loop-keychain": {
     title: "Black Braided Leather Loop Keychain",
