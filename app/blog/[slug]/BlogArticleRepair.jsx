@@ -172,12 +172,37 @@ const setupInlineYouTubeVideo = () => {
   return () => document.removeEventListener("click", handleVideoClick);
 };
 
+// URL fragments never reach the server. Resolve bookmarks after the article redirects.
+const migratedFragments = {
+  "custom-enamel-pins-low-moq-guide": {
+    "custom-enamel-pins-no-moq-guide": "custom-enamel-pins-low-moq-guide",
+  },
+  "custom-embroidered-patches-pilot-order-guide": {
+    "custom-embroidered-patches-no-minimum": "custom-embroidered-patches-pilot-order-guide",
+    "what-does-no-minimum-mean-for-custom-embroidered-patches": "how-many-patches-for-a-pilot-order",
+    "can-i-order-just-one-custom-embroidered-patch": "minimum-production-order-for-embroidered-patches",
+  },
+};
+
 export default function BlogArticleRepair({ slug }) {
   useEffect(() => {
     let cancelled = false;
     const blogReturnHref = applyBlogReturnLink();
     const cleanupAuthorProfileCard = setupAuthorProfileCard();
     const cleanupInlineYouTubeVideo = setupInlineYouTubeVideo();
+    const fragments = migratedFragments[slug];
+    const restoreBookmark = () => {
+      const oldId = window.location.hash.slice(1);
+      if (!fragments || !Object.hasOwn(fragments, oldId)) return;
+      const target = document.getElementById(fragments[oldId]);
+      if (!target) return;
+      window.history.replaceState(window.history.state, "", `#${target.id}`);
+      target.scrollIntoView();
+    };
+    if (fragments) {
+      restoreBookmark();
+      window.addEventListener("hashchange", restoreBookmark);
+    }
 
     const restoreArticleMain = async () => {
       const article = document.getElementById(slug);
@@ -195,6 +220,7 @@ export default function BlogArticleRepair({ slug }) {
         const restoredMain = doc.querySelector("main");
         if (restoredMain?.textContent?.trim().length > 100) {
           currentMain.replaceWith(document.importNode(restoredMain, true));
+          restoreBookmark();
           if (blogReturnHref) {
             document.querySelector(".blog-back-link")?.setAttribute("href", blogReturnHref);
           }
@@ -210,6 +236,7 @@ export default function BlogArticleRepair({ slug }) {
 
     return () => {
       cancelled = true;
+      if (fragments) window.removeEventListener("hashchange", restoreBookmark);
       cleanupAuthorProfileCard();
       cleanupInlineYouTubeVideo();
     };

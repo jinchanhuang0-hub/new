@@ -7,7 +7,7 @@ import { siteHeaderHtml } from "../components/siteHeaderHtml";
 export const metadata = {
   title: "FAQ | Custom Metal Crafts Questions | Unique Pin",
   description:
-    "Answers about custom metal crafts, artwork, materials, No MOQ orders, production, payment, packaging, shipping and after-sales service.",
+    "Answers about custom metal crafts, artwork, materials, low MOQ options, production, payment, packaging, shipping and after-sales service.",
   alternates: {
     canonical: "/faq",
   },
@@ -48,12 +48,12 @@ const faqGroups = [
   {
     id: "pricing-lead-time",
     title: "3. Pricing & Lead Time",
-    intro: "Quotation factors, samples, No MOQ orders and production timing.",
+    intro: "Quotation factors, samples, low MOQ options and production timing.",
     items: [
-      ["What is your MOQ?", "No MOQ. Flexible quantities are welcome, and mold fees and unit prices are calculated by project."],
+      ["What is your minimum order quantity?", "The minimum order is 10 pieces for custom belt buckles and 30 pieces for all other products. Mold fees and unit prices are calculated by project."],
       ["Do you offer better prices for bulk orders?", "Yes. Unit cost usually decreases as quantity increases because mold and setup costs are shared across more pieces. Mold fees and unit prices are calculated by project."],
       ["Are mold and setup fees included in the product price?", "Mold and setup fees depend on the product design and production requirements. For new custom designs, mold costs may apply. For repeat orders using existing molds, additional mold charges are usually not required."],
-      ["Can I order a small quantity first?", "Yes. We support trial orders and sample production to help customers evaluate product quality before placing larger orders."],
+      ["Can I order a small quantity first?", "Yes. Trial production orders start at 10 custom belt buckles or 30 pieces for all other products. If you need to check quality before production, ask about a pre-production sample when you request your quote."],
       ["How long does mass production take?", "Typical production takes about 15-25 days after sample or artwork approval. Complex 3D, dual-plating, special packaging or large orders may need more time."],
       ["Can urgent orders be expedited?", "We can review the schedule and prioritize urgent projects when production capacity allows. Share your event date as early as possible."]
     ]

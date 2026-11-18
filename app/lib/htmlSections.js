@@ -88,7 +88,7 @@ const categorySeoContent = {
               <strong>Useful buyer guides</strong>
               <a href="/blog/soft-enamel-vs-hard-enamel-pins">Soft vs Hard Enamel</a>
               <a href="/blog/how-to-make-your-own-custom-lapel-pins">How to Make Lapel Pins</a>
-              <a href="/blog/custom-enamel-pins-no-moq-guide">No MOQ Pin Orders</a>
+              <a href="/blog/custom-enamel-pins-low-moq-guide">Low MOQ Pin Orders</a>
             </div>
           </div>`,
   coins: String.raw`

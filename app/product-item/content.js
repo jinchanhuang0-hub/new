@@ -1,7 +1,7 @@
 import StaticPage from "../components/StaticPage";
 import { halloweenProducts } from "./halloweenProducts";
 import { footerHtml } from "../components/footerHtml";
-import { getProductPath } from "../lib/siteRoutes";
+import { getCategoryKeyForItem, getCategoryPath, getProductPath, productCategories, productItemCategoryKey } from "../lib/siteRoutes";
 import { compareProductEntriesBySkuDesc } from "../lib/productSorting";
 import { siteHeaderHtml } from "../components/siteHeaderHtml";
 import {
@@ -3961,12 +3961,13 @@ const html = String.raw`
             <div><strong>Material</strong><span data-product-spec="material">Zinc alloy</span></div>
             <div><strong>Product Process</strong><span data-product-spec="process">Die casting</span></div>
             <div><strong>SKU</strong><span data-product-spec="sku">UP-PIN-001</span></div>
+            <div><strong>MOQ</strong><span data-product-spec="moq">{{minimumQuantity}} pcs</span></div>
             <div><strong>Usage</strong><span data-product-spec="usage">Brand events, clubs, retail gifts</span></div>
             <div><strong>Categories</strong><span data-product-spec="categories">Lapel Pins, Soft Enamel Pins</span></div>
           </div>
           <a class="single-product-inquiry" href="/contact" data-product-inquiry-trigger data-product-inquiry-product="Lapel Pins">Request a Similar Custom Design</a>
           <div class="single-product-quote-benefits" aria-label="Quote benefits">
-            <div><span class="quote-benefit-icon quote-benefit-icon-moq" aria-hidden="true"></span><span>No MOQ</span></div>
+            <div><span class="quote-benefit-icon quote-benefit-icon-moq" aria-hidden="true"></span><span>Low MOQ</span></div>
             <div><span class="quote-benefit-icon quote-benefit-icon-design" aria-hidden="true"></span><span>FREE DESIGN</span></div>
             <div><span class="quote-benefit-icon quote-benefit-icon-factory" aria-hidden="true"></span><span>FACTORY DIRECT</span></div>
             <div><span class="quote-benefit-icon quote-benefit-icon-oem" aria-hidden="true"></span><span>OEM/ODM</span></div>
@@ -4016,7 +4017,7 @@ const html = String.raw`
       <div class="container">
         <div class="single-product-faq-heading"><span class="single-product-faq-icon" aria-hidden="true"></span><h2>Frequently Asked Questions</h2></div>
         <div class="single-product-faq-list">
-          <details><summary><span class="faq-plus" aria-hidden="true"></span><span>What is your MOQ?</span></summary><p>No MOQ. Flexible quantities are welcome, and mold fees and unit prices are calculated by project.</p></details>
+          <details><summary><span class="faq-plus" aria-hidden="true"></span><span>What is your minimum order quantity?</span></summary><p>The minimum order is {{minimumQuantity}} pieces. Mold fees and unit prices are calculated by project.</p></details>
           <details><summary><span class="faq-plus" aria-hidden="true"></span><span>Do you offer free art proofs?</span></summary><p>Yes. Every order includes a free digital art proof before production begins. You can request revisions until the design matches your vision. Production does not start until you approve the proof.</p></details>
           <details><summary><span class="faq-plus" aria-hidden="true"></span><span>What file formats do you accept?</span></summary><p>Vector files such as AI, PDF, EPS, CDR and SVG are best. High-resolution PNG, JPG and PSD files can also be used when vector artwork is not available.</p></details>
           <details><summary><span class="faq-plus" aria-hidden="true"></span><span>How to choose the suitable material?</span></summary><p>For designs that need a strong 3D effect, we usually recommend zinc alloy because it is easier to cast detailed raised shapes and dimensional surfaces. If your priority is reducing cost for a simple flat design, iron can be a more economical option.</p></details>
@@ -4348,11 +4349,28 @@ const buildRelatedProductsHtml = (currentSlug, item) => {
   }).join("");
 };
 
+// Older catalog records can carry only the display labels from the buckle taxonomy.
+const buckleCategoryLabels = new Set([
+  "belt buckles", "custom belt buckles", "antique buckles", "award buckles",
+  "club buckles", "enamel buckles", "fashion buckles", "festival buckles",
+  "logo buckles", "relief buckles", "western buckles",
+]);
+
 export const renderProductItemHtml = (item, currentSlug) => {
+  const bucklePath = getCategoryPath("buckles");
+  const labels = [item.categoryLabel, item.categories].flat().join(",").toLowerCase().split(",");
+  const isBeltBuckle = productItemCategoryKey[currentSlug] === "buckles" ||
+    getCategoryKeyForItem(item) === "buckles" || item.categoryHref === bucklePath ||
+    item.categoryHref?.startsWith(`${bucklePath}/`) ||
+    labels.some((label) => buckleCategoryLabels.has(label.trim()));
+  const minimumQuantity = isBeltBuckle ? 10 : 30;
+  const catalogKey = isBeltBuckle ? "buckles" : productItemCategoryKey[currentSlug];
+  const categoryLabel = item.categoryLabel || productCategories[catalogKey]?.label || "Products";
+  const categoryHref = item.categoryHref || (catalogKey ? getCategoryPath(catalogKey) : "/products");
   const safe = Object.fromEntries(
     Object.entries(item).map(([key, value]) => [key, escapeHtml(value)])
   );
-  const quoteProduct = item.quoteProduct || item.categoryLabel;
+  const quoteProduct = item.quoteProduct || categoryLabel;
   const quotePath = escapeHtml(`/contact?product=${encodeURIComponent(quoteProduct)}&item=${encodeURIComponent(item.title)}`);
   const solutionProfile = getCustomSolutionProfile(item);
   const procurementProfile = productProcurementProfiles[currentSlug];
@@ -4360,16 +4378,17 @@ export const renderProductItemHtml = (item, currentSlug) => {
 
   return html
     .replace(/^\s*<script type="application\/json" data-product-item-data>[\s\S]*?<\/script>\s*/, "")
-    .replace(/<a href="[^"]+" data-product-item-category-link>/, `<a href="${safe.categoryHref}" data-product-item-category-link>`)
-    .replace(/<span data-product-item-category>[^<]*<\/span>/g, `<span data-product-item-category>${safe.categoryLabel}</span>`)
+    .replace(/<a href="[^"]+" data-product-item-category-link>/, `<a href="${escapeHtml(categoryHref)}" data-product-item-category-link>`)
+    .replace(/<span data-product-item-category>[^<]*<\/span>/g, `<span data-product-item-category>${escapeHtml(categoryLabel)}</span>`)
     .replace(/<span data-product-item-title>[^<]*<\/span>/g, `<span data-product-item-title>${safe.title}</span>`)
     .replace(/<h1 data-product-item-title>[^<]*<\/h1>/g, `<h1 data-product-item-title>${safe.title}</h1>`)
     .replace(/<p class="single-product-lead" data-product-item-lead>[\s\S]*?<\/p>/, `<p class="single-product-lead" data-product-item-lead>${safe.lead}</p>${safe.description ? `<p class="single-product-lead">${safe.description}</p>` : ""}`)
     .replace(/<span data-product-spec="material">[^<]*<\/span>/g, `<span data-product-spec="material">${safe.material}</span>`)
     .replace(/<span data-product-spec="process">[^<]*<\/span>/g, `<span data-product-spec="process">${displayProcess}</span>`)
-    .replace(/<span data-product-spec="sku">[^<]*<\/span>/g, `<span data-product-spec="sku">${safe.sku}</span>`)
-    .replace(/<span data-product-spec="usage">[^<]*<\/span>/g, `<span data-product-spec="usage">${safe.usage}</span>`)
-    .replace(/<span data-product-spec="categories">[^<]*<\/span>/g, `<span data-product-spec="categories">${safe.categories}</span>`)
+    .replace(/<span data-product-spec="sku">[^<]*<\/span>/g, `<span data-product-spec="sku">${safe.sku || "—"}</span>`)
+    .replaceAll("{{minimumQuantity}}", String(minimumQuantity))
+    .replace(/<span data-product-spec="usage">[^<]*<\/span>/g, `<span data-product-spec="usage">${safe.usage || "—"}</span>`)
+    .replace(/<span data-product-spec="categories">[^<]*<\/span>/g, `<span data-product-spec="categories">${safe.categories || escapeHtml(categoryLabel)}</span>`)
     .replace(/<img([^>]*data-product-item-image[^>]*)>/g, (imageTag) => renderMobilePicture({
       image: item.image,
       alt: item.alt || item.title,

@@ -13,7 +13,7 @@ const keychainLinks = [
 const pinLinks = [
   { href: "/products/custom-enamel-pins", label: "custom enamel pin options", note: "review pin formats for a new project" },
   { href: "/blog/soft-enamel-vs-hard-enamel-pins", label: "soft vs hard enamel guide", note: "compare surface feel and finish" },
-  { href: "/blog/custom-enamel-pins-no-moq-guide", label: "custom pin inquiry guide", note: "prepare artwork and quantity details" },
+  { href: "/blog/custom-enamel-pins-low-moq-guide", label: "small-batch enamel pin order guide", note: "prepare artwork and quantity details" },
 ];
 
 const coinLinks = [

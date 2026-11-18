@@ -22,10 +22,23 @@ const legacyBlogRedirects = {
 const legacyPatchPath = "/products/custom-patchs";
 const canonicalPatchPath = "/products/custom-patches";
 
+const renamedPinImages = new Map([
+  ["/assets/images/blog-custom-enamel-pins-no-moq-products.png", "/assets/images/custom-baseball-enamel-pin-samples.png"],
+  ["/assets/images/blog-custom-enamel-pins-no-moq-detail-sample.jpg", "/assets/images/custom-enamel-pin-raised-metal-detail.jpg"],
+  ["/assets/images/blog-custom-enamel-pins-no-moq-artwork-proofing.jpg", "/assets/images/custom-enamel-pin-artwork-proofing.jpg"],
+]);
+
 export function middleware(request) {
   const url = request.nextUrl.clone();
   const { pathname, searchParams } = url;
   const normalizedPathname = pathname.replace(/\/$/, "") || "/";
+  const optimizedImage = normalizedPathname === "/_next/image";
+  const newImagePath = renamedPinImages.get(optimizedImage ? searchParams.get("url") : normalizedPathname);
+  if (newImagePath) {
+    if (optimizedImage) url.searchParams.set("url", newImagePath);
+    else url.pathname = newImagePath;
+    return NextResponse.redirect(url, 301);
+  }
   let destination;
   let clearSearch = false;
 
@@ -90,5 +103,12 @@ export function middleware(request) {
 }
 
 export const config = {
-  matcher: ["/((?!api/|_next/static|_next/image|assets/|favicon.ico).*)"],
+  matcher: [
+    "/((?!api/|_next/static|_next/image|assets/|favicon.ico).*)",
+    "/assets/images/blog-custom-enamel-pins-no-moq-:file",
+    {
+      source: "/_next/image",
+      has: [{ type: "query", key: "url", value: "/assets/images/blog-custom-enamel-pins-no-moq-.*" }],
+    },
+  ],
 };

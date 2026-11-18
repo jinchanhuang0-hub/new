@@ -118,7 +118,7 @@ export const lapelPinAttachmentsGuideArticleHtml = String.raw`
             <p>Clear approval at this stage reduces the risk of a pin that looks right from the front but does not perform as expected in use.</p>
 
             <h2 id="what-to-send-when-requesting-a-quote">What to Send When Requesting a Quote</h2>
-            <p>For a practical quote, provide your artwork or reference image, quantity, intended use, preferred attachment, finished size, target delivery date, and packaging preference. You can also <a href="https://uccrafts.com/blog/custom-enamel-pins-no-moq-guide">plan a small custom enamel pin order</a> before requesting a quote. If the pin will be worn on a specific uniform, jacket, tie, or other material, share that detail as well.</p>
+            <p>For a practical quote, provide your artwork or reference image, quantity, intended use, preferred attachment, finished size, target delivery date, and packaging preference. You can also <a href="https://uccrafts.com/blog/custom-enamel-pins-low-moq-guide">plan a small custom enamel pin order</a> before requesting a quote. If the pin will be worn on a specific uniform, jacket, tie, or other material, share that detail as well.</p>
 
             <p>A factory can then recommend whether the design is better suited to a standard clutch, magnet, tie accessory, safety pin, or another option from the lapel pin accessories range.</p>
 

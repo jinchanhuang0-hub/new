@@ -343,8 +343,8 @@ export default function StaticPageEffects() {
 
       const productMeta = {
         pins: {
-          title: "Custom Enamel Pins Manufacturer | OEM/ODM Factory, No MOQ",
-          description: "Order custom enamel pins from Unique Pin, a China OEM/ODM metal crafts manufacturer with free artwork design, No MOQ, fast sampling and strict QC. Mold fees and unit prices are calculated by project."
+          title: "Custom Enamel Pins Manufacturer | OEM/ODM Factory, Low MOQ",
+          description: "Order custom enamel pins from Unique Pin, a China OEM/ODM metal crafts manufacturer with free artwork design, a low MOQ, fast sampling and strict QC. Mold fees and unit prices are calculated by project."
         },
         coins: {
           title: "Custom Challenge Coins Manufacturer | OEM/ODM Metal Coins",

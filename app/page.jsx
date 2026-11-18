@@ -10,7 +10,7 @@ import "./styles/components/pin-product-faq.css";
 
 export const metadata = {
   title: "Custom Metal Gifts Manufacturer | Pins, Medals & Coins",
-  description: "Unique Pin provides OEM/ODM production backed by team experience since 2003, with free artwork support, No MOQ and in-house quality control. Mold fees and unit prices are calculated by project.",
+  description: "Unique Pin provides OEM/ODM production backed by team experience since 2003, with free artwork support, a low MOQ and in-house quality control. Mold fees and unit prices are calculated by project.",
   alternates: {
     canonical: "https://uccrafts.com/"
   }
@@ -52,7 +52,7 @@ const html = String.raw`
        
         <div class="hero-content">
           <h1><span class="hero-title-line">High-Quality Custom</span><span class="hero-title-line">Metal Gifts Manufacturer</span></h1>
-          <p>OEM/ODM production backed by team experience since 2003, with free artwork support, No MOQ and in-house quality control.</p>
+          <p>OEM/ODM production backed by team experience since 2003, with free artwork support, a low MOQ and in-house quality control.</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="/contact">Get a Free Quote</a>
             <a class="btn btn-outline" href="https://api.whatsapp.com/send?phone=8618895316838&amp;text=Hello%2C%20I%20am%20interested%20in%20your%20products.%20Please%20send%20me%20more%20details." target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
@@ -63,7 +63,7 @@ const html = String.raw`
               <div class="proof-item"><strong>Free Design</strong><span>Artwork &amp; Digital Proof Support</span></div>
             </div>
             <div class="proof-column">
-              <div class="proof-item"><strong>No MOQ</strong><span>Flexible Custom Orders</span></div>
+              <div class="proof-item"><strong>Low MOQ</strong><span>Flexible Custom Orders</span></div>
               <div class="proof-item"><strong>Affordable Prices</strong><span>Competitive Factory Price</span></div>
             </div>
           </div>
@@ -357,8 +357,8 @@ const html = String.raw`
           </div>
           <div class="why-item why-choice-card">
             <span class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 6c0-1.7 2.2-3 5-3s5 1.3 5 3-2.2 3-5 3-5-1.3-5-3z"/><path d="M7 6v6c0 1.7 2.2 3 5 3s5-1.3 5-3V6"/><path d="M7 12v6c0 1.7 2.2 3 5 3s5-1.3 5-3v-6"/></svg></span>
-            <strong>No MOQ</strong>
-            <p>Flexible quantities are welcome. Mold fees and unit prices are calculated by project.</p>
+            <strong>Low MOQ</strong>
+            <p>The minimum order is 10 pieces for custom belt buckles and 30 pieces for all other products. Mold fees and unit prices are calculated by project.</p>
           </div>
           <div class="why-item why-choice-card">
             <span class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3.5 20h17"/><path d="M5 20V9l7-4 7 4v11"/><path d="M8 20v-6h8v6"/><path d="M8.5 11h1.5"/><path d="M14 11h1.5"/><path d="M12 14v6"/><path d="M12 4V2.5"/><path d="M16.5 6.6 19 4.8"/><path d="M7.5 6.6 5 4.8"/></svg></span>

@@ -7,7 +7,7 @@ export const challengeCoinFaqOptions = {
 export const challengeCoinFaq = [
   {
     question: "Can I order custom challenge coins in small quantities?",
-    answer: "Yes. We offer custom challenge coins with no minimum order quantity, supporting small projects and bulk orders. For designs that require custom molds, tooling costs are spread across the order, so smaller quantities typically have a higher cost per coin.",
+    answer: "Yes. You can order as few as 30 custom challenge coins. For designs that require custom molds, tooling costs are spread across the order, so smaller quantities typically have a higher cost per coin.",
   },
   {
     question: "Can you customize coins in different shapes?",

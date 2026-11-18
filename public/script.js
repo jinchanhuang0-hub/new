@@ -332,11 +332,11 @@ const productDetailData = {
   },
   pins: {
     title: "Custom Enamel Pins Manufacturer",
-    pageTitle: "Custom Enamel Pins Manufacturer | OEM/ODM Factory, No MOQ",
+    pageTitle: "Custom Enamel Pins Manufacturer | OEM/ODM Factory, Low MOQ",
     name: "Custom Enamel Pins",
     image: "assets/images/product-pins.jpg",
     intro: "Custom soft enamel, hard enamel, die struck and printed pins for brands, events, schools and promotional campaigns.",
-    meta: "Order custom enamel pins from Unique Pin, a China OEM/ODM metal crafts manufacturer with free artwork design, No MOQ, fast sampling and strict QC. Mold fees and unit prices are calculated by project."
+    meta: "Order custom enamel pins from Unique Pin, a China OEM/ODM metal crafts manufacturer with free artwork design, a low MOQ, fast sampling and strict QC. Mold fees and unit prices are calculated by project."
   },
   medals: {
     title: "Custom Medals Manufacturer",
@@ -406,7 +406,7 @@ const productDetailData = {
     name: "Custom Tie Clips",
     image: "assets/images/product-tie-clips.jpg",
     intro: "Custom tie clips with logo engraving, enamel color, plating and gift packaging for corporate and uniform projects.",
-    meta: "Order custom tie clips with free artwork design, No MOQ, fast production and global delivery support. Mold fees and unit prices are calculated by project."
+    meta: "Order custom tie clips with free artwork design, a low MOQ, fast production and global delivery support. Mold fees and unit prices are calculated by project."
   }
 };
 
@@ -415,7 +415,7 @@ const productKey = productParams.get("product");
 const productData = productDetailData[productKey];
 
 if (productData && window.location.pathname.includes("product-detail")) {
-  document.title = productData.pageTitle || `${productData.title} | OEM/ODM Factory, No MOQ`;
+  document.title = productData.pageTitle || `${productData.title} | OEM/ODM Factory, Low MOQ`;
   const metaDescription = document.querySelector('meta[name="description"]');
   if (metaDescription) metaDescription.setAttribute("content", productData.meta);
 

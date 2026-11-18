@@ -12,6 +12,11 @@ const staticHtmlRedirects = [
   statusCode: 301,
 }));
 
+const articleMigrations = [
+  ["custom-enamel-pins-no-moq-guide", "custom-enamel-pins-low-moq-guide"],
+  ["custom-embroidered-patches-no-minimum", "custom-embroidered-patches-pilot-order-guide"],
+];
+
 const contentSecurityPolicyReportOnly = [
   "default-src 'self'",
   "base-uri 'self'",
@@ -107,6 +112,13 @@ const nextConfig = {
         statusCode: 301
       },
       ...staticHtmlRedirects,
+      ...articleMigrations.flatMap(([oldSlug, newSlug]) =>
+        ["/blog", "/blog.html"].map((prefix) => ({
+          source: `${prefix}/${oldSlug}`,
+          destination: `/blog/${newSlug}`,
+          statusCode: 301,
+        })),
+      ),
     ];
   }
 };

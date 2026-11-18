@@ -1,7 +1,7 @@
 export const homeFaqItems = [
   {
-    "question": "Do you have a minimum order quantity?",
-    "answer": "We offer custom metal products with no minimum order quantity, supporting small projects and bulk orders. Costs depend on the product and specifications. For designs requiring custom molds, smaller orders typically have a higher unit cost because tooling costs are spread across fewer pieces."
+    "question": "What is your minimum order quantity?",
+    "answer": "The minimum order is 10 pieces for custom belt buckles and 30 pieces for all other products. Costs depend on the product and specifications. For designs requiring custom molds, smaller orders typically have a higher unit cost because tooling costs are spread across fewer pieces."
   },
   {
     "question": "Can you help if I only have a logo or an idea?",

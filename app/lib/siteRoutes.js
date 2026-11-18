@@ -1286,13 +1286,13 @@ const blogArticleData = {
       },
     ],
   },
-  "custom-enamel-pins-no-moq-guide": {
-    title: "Custom Enamel Pins with No MOQ: A Complete Guide",
+  "custom-enamel-pins-low-moq-guide": {
+    title: "Custom Enamel Pins with a Low MOQ: A Complete Guide",
     description:
-      "Learn how No MOQ custom enamel pin orders work for samples, small batches and bulk orders, including artwork review, mold setup, unit cost, inspection and shipment preparation. Mold fees and unit prices are calculated by project.",
+      "Plan a low MOQ order starting at 30 enamel pins. Learn how artwork review, mold fees, unit costs and inspection affect your first run and a later bulk order.",
     datePublished: "2026-07-23",
     dateModified: "2026-07-23",
-    image: "/assets/images/blog-custom-enamel-pins-no-moq-products.png",
+    image: "/assets/images/custom-baseball-enamel-pin-samples.png",
   },
   "custom-metal-crafts-guide": {
     title: "Complete Guide to Custom Metal Crafts: From Design to Production",
@@ -1372,11 +1372,11 @@ export const blogArticles = Object.fromEntries(
     slug,
     withBlogArticleDefaults(article),
   ]),
-  ["custom-embroidered-patches-no-minimum", {
+  ["custom-embroidered-patches-pilot-order-guide", {
     inquiryHeading: "Ready to Start Your Custom Patch Project?",
-    title: "Custom Embroidered Patches with No Minimum: Pilot Guide",
-    headline: "Custom Embroidered Patches with No Minimum: A Pilot Order Guide",
-    description: "Plan custom embroidered patches with no minimum. Compare small-order costs, test samples on real garments, and prepare your approved design for bulk production.",
+    title: "Custom Embroidered Patches with a Low MOQ: Pilot Guide",
+    headline: "Custom Embroidered Patches with a Low MOQ: A Pilot Order Guide",
+    description: "Plan a low MOQ pilot run starting at 30 embroidered patches. Compare small-order costs, test samples on garments, and prepare your design for bulk production.",
     author: DEFAULT_BLOG_AUTHOR_SCHEMA.name,
     authorType: DEFAULT_BLOG_AUTHOR_SCHEMA["@type"],
     authorUrl: DEFAULT_BLOG_AUTHOR_SCHEMA.url,

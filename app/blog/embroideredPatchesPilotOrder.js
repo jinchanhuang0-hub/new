@@ -1,8 +1,8 @@
 // Based on the supplied manuscript, with user-approved audit corrections; publishing notes excluded.
-export const embroideredPatchesNoMinimumArticleHtml = String.raw`
-<article id="custom-embroidered-patches-no-minimum" class="section blog-article-section">
+export const embroideredPatchesPilotOrderArticleHtml = String.raw`
+<article id="custom-embroidered-patches-pilot-order-guide" class="section blog-article-section">
 <div class="blog-article-shell">
-<aside class="blog-article-toc" aria-label="Article contents"><strong>In This Guide</strong><nav><a href="#what-does-no-minimum-mean-for-custom-embroidered-patches">What Does “No Minimum” Mean for Custom Embroidered Patches?</a>
+<aside class="blog-article-toc" aria-label="Article contents"><strong>In This Guide</strong><nav><a href="#how-many-patches-for-a-pilot-order">How Many Patches Do You Need for a Pilot Order?</a>
 <a href="#define-what-your-pilot-order-needs-to-prove">Define What Your Pilot Order Needs to Prove</a>
 <a href="#prepare-artwork-and-specifications-for-a-small-batch">Prepare Artwork and Specifications for a Small Batch</a>
 <a href="#test-patch-samples-on-the-actual-garments">Test Patch Samples on the Actual Garments</a>
@@ -11,7 +11,7 @@ export const embroideredPatchesNoMinimumArticleHtml = String.raw`
 <a href="#frequently-asked-questions">Frequently Asked Questions</a>
 <a href="#request-a-small-batch-patch-quote">Request a Small-Batch Patch Quote</a></nav></aside>
 <div class="container blog-article">
-<details class="blog-mobile-toc"><summary>In This Guide</summary><nav><a href="#what-does-no-minimum-mean-for-custom-embroidered-patches">What Does “No Minimum” Mean for Custom Embroidered Patches?</a>
+<details class="blog-mobile-toc"><summary>In This Guide</summary><nav><a href="#how-many-patches-for-a-pilot-order">How Many Patches Do You Need for a Pilot Order?</a>
 <a href="#define-what-your-pilot-order-needs-to-prove">Define What Your Pilot Order Needs to Prove</a>
 <a href="#prepare-artwork-and-specifications-for-a-small-batch">Prepare Artwork and Specifications for a Small Batch</a>
 <a href="#test-patch-samples-on-the-actual-garments">Test Patch Samples on the Actual Garments</a>
@@ -19,13 +19,13 @@ export const embroideredPatchesNoMinimumArticleHtml = String.raw`
 <a href="#approve-the-final-sample-before-scaling-up">Approve the Final Sample Before Scaling Up</a>
 <a href="#frequently-asked-questions">Frequently Asked Questions</a>
 <a href="#request-a-small-batch-patch-quote">Request a Small-Batch Patch Quote</a></nav></details>
-<header class="blog-article-header"><a class="blog-back-link" href="/blog">Back to Blog</a><h1>Custom Embroidered Patches with No Minimum: A Pilot Order Guide</h1></header>
+<header class="blog-article-header"><a class="blog-back-link" href="/blog">Back to Blog</a><h1>Custom Embroidered Patches with a Low MOQ: A Pilot Order Guide</h1></header>
 <figure class="blog-article-image blog-article-hero-image patch-pilot-cover"><img src="/assets/images/embroidered-patches-pilot-order.webp" width="1600" height="900" loading="eager" fetchpriority="high" decoding="async" alt="Embroidered patch samples beside a navy uniform shirt and charcoal jacket"></figure>
-<p>Ordering custom embroidered patches with no minimum lets you start with the quantity your project needs. For a clothing brand, that might mean checking a new logo on a jacket. For a uniform supplier, it might mean preparing samples for a customer's approval before committing to a larger order.</p>
+<p>Our low MOQ lets you start a pilot run with 30 custom embroidered patches. For a clothing brand, that might mean checking a new logo on a jacket. For a uniform supplier, it might mean preparing samples for a customer's approval before committing to a larger order.</p>
 <p>A useful pilot order answers specific questions: Is the artwork readable? Does the patch sit properly on the garment? Is the attachment suitable for its care routine? What needs to change before production expands?</p>
 <p>This guide explains how to plan that first order, compare costs, and carry an approved design into bulk production.</p>
-<h2 id="what-does-no-minimum-mean-for-custom-embroidered-patches">What Does “No Minimum” Mean for Custom Embroidered Patches?</h2>
-<p>No minimum order quantity means you do not have to meet a fixed quantity threshold to place an order. However, the available specifications and total cost still need to be confirmed for your project.</p>
+<h2 id="how-many-patches-for-a-pilot-order">How Many Patches Do You Need for a Pilot Order?</h2>
+<p>Some embroidery services sell individual patches. Unique Pin’s production minimum is 30 patches. Ask for a quote that covers your backing, border and thread specifications.</p>
 <p>Machine embroidery uses a digitized stitch file containing machine-readable stitching instructions. Ask whether the supplier can reuse an approved file or needs to create or adjust one. Confirm whether file preparation, physical samples, and revisions are included in the quotation or charged separately.</p>
 <p>It helps to distinguish a digital proof, a physical sample, and a pilot order; these do not necessarily require three separate orders.</p>
 <ul class="blog-list">
@@ -90,12 +90,12 @@ export const embroideredPatchesNoMinimumArticleHtml = String.raw`
 <p>Resolve any remaining design or attachment issues before giving production approval. Ordering more pieces should not imply approval of an unresolved defect.</p>
 <p>For future reorders, reference the previous order and approved specification. Ask the supplier to flag material substitutions or production changes that could affect the result. When the bulk shipment arrives, compare it with the agreed reference. Check quantities, artwork versions, and backings against the order before distributing patches or attaching them to garments.</p>
 <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
-<h3 id="can-i-order-just-one-custom-embroidered-patch">Can I order just one custom embroidered patch?</h3>
-<p>A no-minimum service can accommodate a single-piece request, but confirm the selected construction, backing, and total price. A one-piece order may be useful for inspection; additional pieces may be needed for attachment testing and retaining a reference.</p>
+<h3 id="minimum-production-order-for-embroidered-patches">What is the smallest production order for embroidered patches?</h3>
+<p>Our minimum order is 30 patches. When allocating your pilot batch, set aside patches for inspection, attachment testing and an unused reference.</p>
 <h3 id="is-a-physical-sample-included-with-a-free-digital-proof">Is a physical sample included with a free digital proof?</h3>
 <p>Not necessarily. A digital proof and a physical sample are separate deliverables. Ask what the quoted service includes, whether sample shipping is additional, and how revisions are charged.</p>
 <h3 id="how-many-patches-should-i-order-for-a-pilot-run">How many patches should I order for a pilot run?</h3>
-<p>Base the quantity on the number of designs, garment types, approval recipients, and planned tests. Reserve an unused sample. There is no single pilot quantity that suits every apparel project.</p>
+<p>Start with at least 30 patches and plan quantities around the number of designs, garment types, approval recipients, and planned tests. Reserve an unused sample. There is no single pilot quantity that suits every apparel project.</p>
 <h3 id="will-a-repeat-order-match-the-first-batch-exactly">Will a repeat order match the first batch exactly?</h3>
 <p>An approved sample and recorded specifications provide a comparison reference, but they do not guarantee identical results across batches. Agree how dimensions, thread colors, and border appearance will be compared with the approved sample, including acceptable differences. Confirm any specification changes before a reorder proceeds.</p>
 <h2 id="request-a-small-batch-patch-quote">Request a Small-Batch Patch Quote</h2>

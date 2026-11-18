@@ -5,7 +5,7 @@ export const enamelPinFaq = [
   },
   {
     question: "Can I order a small quantity of custom enamel pins?",
-    answer: "Yes. We offer custom enamel pins with no minimum order quantity, supporting small projects as well as bulk orders. For designs that require a mold, tooling costs are spread across the order, so smaller quantities typically have a higher cost per pin.",
+    answer: "Yes. Our minimum order is 30 pins. For designs that require a mold, tooling costs are spread across the order, so smaller quantities typically have a higher cost per pin.",
   },
   {
     question: "How is the price of my custom pins calculated?",
