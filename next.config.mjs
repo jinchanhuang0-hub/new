@@ -64,6 +64,23 @@ const nextConfig = {
     deviceSizes: [640, 750, 828, 1080, 1200, 1600],
     imageSizes: [64, 96, 128, 256, 384],
   },
+  async rewrites() {
+    // Legacy source URLs must return image bytes so the CDN can resize old thumbnails.
+    return [
+      {
+        source: "/assets/images/blog-custom-enamel-pins-no-moq-products.png",
+        destination: "/assets/images/custom-baseball-enamel-pin-samples.png",
+      },
+      {
+        source: "/assets/images/blog-custom-enamel-pins-no-moq-detail-sample.jpg",
+        destination: "/assets/images/custom-enamel-pin-raised-metal-detail.jpg",
+      },
+      {
+        source: "/assets/images/blog-custom-enamel-pins-no-moq-artwork-proofing.jpg",
+        destination: "/assets/images/custom-enamel-pin-artwork-proofing.jpg",
+      },
+    ];
+  },
   async headers() {
     return [
       {
