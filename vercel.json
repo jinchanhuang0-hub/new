@@ -1,0 +1,71 @@
+{
+  "redirects": [
+    {
+      "source": "/_next/image",
+      "has": [
+        {
+          "type": "query",
+          "key": "url",
+          "value": "/assets/images/blog-custom-enamel-pins-no-moq-products\\.png"
+        },
+        {
+          "type": "query",
+          "key": "w",
+          "value": "(?<width>[0-9]+)"
+        },
+        {
+          "type": "query",
+          "key": "q",
+          "value": "(?<quality>[0-9]+)"
+        }
+      ],
+      "destination": "/_next/image?url=%2Fassets%2Fimages%2Fcustom-baseball-enamel-pin-samples.png&w=:width&q=:quality",
+      "statusCode": 301
+    },
+    {
+      "source": "/_next/image",
+      "has": [
+        {
+          "type": "query",
+          "key": "url",
+          "value": "/assets/images/blog-custom-enamel-pins-no-moq-detail-sample\\.jpg"
+        },
+        {
+          "type": "query",
+          "key": "w",
+          "value": "(?<width>[0-9]+)"
+        },
+        {
+          "type": "query",
+          "key": "q",
+          "value": "(?<quality>[0-9]+)"
+        }
+      ],
+      "destination": "/_next/image?url=%2Fassets%2Fimages%2Fcustom-enamel-pin-raised-metal-detail.jpg&w=:width&q=:quality",
+      "statusCode": 301
+    },
+    {
+      "source": "/_next/image",
+      "has": [
+        {
+          "type": "query",
+          "key": "url",
+          "value": "/assets/images/blog-custom-enamel-pins-no-moq-artwork-proofing\\.jpg"
+        },
+        {
+          "type": "query",
+          "key": "w",
+          "value": "(?<width>[0-9]+)"
+        },
+        {
+          "type": "query",
+          "key": "q",
+          "value": "(?<quality>[0-9]+)"
+        }
+      ],
+      "destination": "/_next/image?url=%2Fassets%2Fimages%2Fcustom-enamel-pin-artwork-proofing.jpg&w=:width&q=:quality",
+      "statusCode": 301
+    }
+  ]
+}
+
