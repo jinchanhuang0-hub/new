@@ -2,6 +2,7 @@ import { canSendProductionAnalytics } from "./analyticsGate.mjs";
 
 // These dimensions deliberately describe UI locations, never visitor input or URLs.
 export const inquiryPageType = (pathname) => {
+  if (pathname === "/custom-belt-buckles") return "custom_belt_buckles_lp";
   if (pathname === "/lp/custom-metal-gifts" || pathname === "/lp/custom-metal-gifts/") return "custom_metal_gifts_lp";
   if (pathname.startsWith("/blog/")) return "blog";
   if (pathname === "/contact") return "contact";
@@ -10,6 +11,7 @@ export const inquiryPageType = (pathname) => {
 };
 
 export const inquiryFormId = (form, pathname) => {
+  if (pathname === "/custom-belt-buckles") return "custom_belt_buckles_lp_main";
   if (pathname === "/lp/custom-metal-gifts" || pathname === "/lp/custom-metal-gifts/") return "custom_metal_gifts_lp_main";
   if (form.classList.contains("footer-quote-form")) return pathname.startsWith("/blog/") ? "blog_footer" : "site_footer";
   if (form.closest("[data-product-inquiry-modal]")) return "product_modal";
@@ -126,6 +128,14 @@ export const installInquiryAnalytics = (doc = document) => {
   const click = (event) => {
     const element = event.target.closest?.("a, button, input[type='submit'], input[type='image']");
     if (!element || element.disabled) return;
+    if (element.matches('[data-campaign-quote]')) {
+      pushEvent('uccrafts_consult_click', { form_id: inquiryFormId(null, window.location.pathname), page_type: inquiryPageType(window.location.pathname), cta_id: 'quote_hero', placement: 'hero' });
+      return;
+    }
+    if (element.matches('.whatsapp-float') && window.location.pathname === '/custom-belt-buckles') {
+      pushEvent('uccrafts_whatsapp_click', { page_type: inquiryPageType(window.location.pathname), placement: 'floating' });
+      return;
+    }
     const form = element.form || element.closest("[data-inquiry-form]");
     if (form?.matches("[data-inquiry-form]") && element.matches("button:not([type]), button[type='submit'], input[type='submit'], input[type='image']")) {
       reportInquirySubmitClick(form);

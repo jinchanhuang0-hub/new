@@ -1,0 +1,13 @@
+.hero { position:relative; min-height:450px; aspect-ratio:3/1; overflow:hidden; background:#286b86; color:#fff; }
+.hero picture { position:absolute; inset:0; }
+.hero picture img { position:absolute; inset:0; display:block; width:100%; height:100%; object-fit:cover; object-position:center; }
+.copy { position:relative; z-index:1; max-width:900px; margin:0 auto; padding:clamp(26px,2.5vw,36px) 24px 0; text-align:center; }
+.copy h1 { margin:0 auto 8px; font-size:clamp(1.6rem,2.5vw,2.7rem); line-height:1.13; white-space:nowrap; }
+.copy p { max-width:66ch; margin:0 auto 12px; font-size:clamp(.98rem,1.15vw,1.15rem); line-height:1.45; text-wrap:pretty; }
+.actions { display:flex; justify-content:center; gap:12px; flex-wrap:wrap; }
+.actions a { display:inline-flex; min-height:48px; align-items:center; justify-content:center; padding:10px 23px; border-radius:999px; background:#f6c700; color:#173654; font-weight:700; text-decoration:none; }
+.actions a + a { background:#fff; }
+.benefits { display:flex; justify-content:center; gap:10px 24px; margin:10px auto 0; color:#fff; font-size:.86rem; font-weight:700; }
+.benefits span + span::before { content:"·"; margin-right:24px; }
+@media(max-width:600px) { .hero { min-height:0; aspect-ratio:5/6; } .hero picture img { inset:0; width:100%; height:100%; object-fit:cover; } .copy { padding:10px 15px 0; } .copy h1 { max-width:18ch; margin-bottom:5px; font-size:clamp(1.35rem,6vw,1.75rem); white-space:normal; text-wrap:balance; } .copy p { max-width:38ch; margin-bottom:7px; font-size:clamp(.72rem,3vw,.88rem); line-height:1.25; } .actions { gap:8px; } .actions a { min-height:36px; padding:6px 12px; font-size:clamp(.72rem,3vw,.84rem); } .benefits { display:grid; grid-template-columns:max-content max-content; justify-content:center; gap:3px 5px; margin-top:7px; font-size:.7rem; line-height:1.2; text-align:center; } .benefits span:nth-child(1) { grid-area:1/1; } .benefits span:nth-child(2) { grid-area:2/1; } .benefits span:nth-child(3) { grid-area:1/2; } .benefits span:nth-child(4) { grid-area:2/2; } .benefits span + span::before { content:none; } .benefits span:nth-child(3)::before,.benefits span:nth-child(4)::before { content:"·"; margin-right:5px; } }
+@media(max-width:360px) { .copy { padding-top:9px; } .copy h1 { font-size:1.25rem; } .copy p { font-size:.7rem; } }
