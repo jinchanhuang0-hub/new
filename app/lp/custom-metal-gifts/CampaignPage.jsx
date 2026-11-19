@@ -26,9 +26,40 @@ const brands = [
   ['turbovets.webp', 'Turbovets Tech For Heroes', 'logo-wide'], ['nbc.svg', 'NBC', 'logo-square'],
 ];
 export default function CampaignPage({ campaign }) { return <div className={styles.page}>
-  <main><section className={heroStyles.hero}><picture><source media="(max-width: 600px)" srcSet={campaign.mobileImage} /><img src={campaign.desktopImage} alt={campaign.heroAlt} /></picture><div className={heroStyles.copy}><h1>{campaign.title}</h1><p>{campaign.description}</p><div className={heroStyles.actions}><a href="#inquiry" data-campaign-quote>Get a Free Quote</a><a href="/">Visit Our Website</a></div><div className={heroStyles.benefits}><span>OEM/ODM</span><span>No MOQ</span><span>Free Artwork Support</span><span>Factory-Direct Quotes</span></div></div></section>
+  <main>
+    <section className={campaign.heroContrast ? `${heroStyles.hero} ${heroStyles.heroWithContrast}` : heroStyles.hero}>
+      <picture>
+        <source media="(max-width: 600px)" srcSet={campaign.mobileImage} />
+        <img src={campaign.desktopImage} alt={campaign.heroAlt} />
+      </picture>
+      <div className={heroStyles.copy}>
+        <h1>{campaign.title}</h1>
+        <p>{campaign.description}</p>
+        <div className={heroStyles.actions}>
+          <a href="#inquiry" data-campaign-quote>Get a Free Quote</a>
+          <a href="/">Visit Our Website</a>
+        </div>
+        <div className={heroStyles.benefits}>
+          <span>OEM/ODM</span>
+          <span>{campaign.moqBenefit ?? 'No MOQ'}</span>
+          <span>Free Artwork Support</span>
+          <span>Factory-Direct Quotes</span>
+        </div>
+      </div>
+    </section>
   <section className={`brand-carousel ${styles.brandSection}`} aria-label="Trusted brand section"><div className="brand-heading"><h2>Trusted by Global Brands</h2></div><div className="brand-marquee" aria-label="Trusted global brand logos"><div className="brand-marquee-track">{[...brands, ...brands].map(([file, name, extra], i) => <span className={`brand-logo ${extra}`} key={`${file}-${i}`} aria-hidden={i >= brands.length ? 'true' : undefined}><img src={`/assets/images/brands/${file}`} alt={`${name} logo`} /></span>)}</div></div></section>
-  <section className={`${styles.section} ${styles.productSection}`}><h2 className={styles.productHeading}>{campaign.productHeading}</h2><div className={styles.grid}>{campaign.products.map(p => <article key={p.title}><Picture src={p.image} label={`${p.title} product`} /><h3>{p.title}</h3><p>{p.description}</p></article>)}</div></section>
+  <section className={`${styles.section} ${styles.productSection}`}>
+    <h2 className={styles.productHeading}>{campaign.productHeading}</h2>
+    <div className={campaign.productColumns === 5 ? `${styles.grid} ${styles.fiveColumnGrid}` : styles.grid}>
+      {campaign.products.map(({ title, image, alt, description }) => (
+        <article key={title}>
+          <Picture src={image} label={alt ?? `${title} product`} />
+          <h3>{title}</h3>
+          <p>{description}</p>
+        </article>
+      ))}
+    </div>
+  </section>
   <section className={styles.section}><div className={styles.split}><video className={styles.companyVideo} controls playsInline preload="metadata" aria-label="Unique Pin company and product overview video"><source src="/assets/videos/company-overview.mp4?v=20260819-lfs-fix" type="video/mp4" /></video><div><p className={styles.eyebrow}>Custom Metal Gifts Manufacturer</p><h2>Meet Unique Pin</h2><p>Take a 34-second look inside our 6,000 m² factory in Zhongshan, China. With 34 production machines, our in-house team manages CNC engraving, die casting, polishing, plating, enamel coloring, inspection and packing.</p><p>We manufacture custom enamel pins, challenge coins, medals, keychains and belt buckles for distributors, brands, clubs and event organizers—from artwork proofing to global delivery.</p><div className={styles.companyActions}><a className={styles.button} href="/about">About Us</a><a className={styles.button} href="/products">View Products</a></div></div></div></section>
   <section className={styles.certSection}><div className={styles.section}><h2>Certificates</h2><div className={styles.certGrid}>{[[iso9001Certificate.src,'ISO 9001'],[iso14001Certificate.src,'ISO 14001'],['/assets/images/cert-ce.webp','CE'],['/assets/images/cert-rohs.webp','RoHS'],[fscCertificate.src,'FSC'],['/assets/images/cert-smeta.webp','SMETA']].map(([src,label]) => <figure key={label}><img src={src} alt={`${label} certificate`} loading="lazy" /><figcaption>{label}</figcaption></figure>)}</div></div></section>
   <StaticPage html={`${reviewHtml}${customerPhotoGalleryHtml}`} />

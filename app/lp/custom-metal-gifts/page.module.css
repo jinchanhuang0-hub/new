@@ -30,6 +30,12 @@
 .bannerMore { left:51.3%; width:17%; }
 .advantages,.grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:20px; }
 .grid { width:100%; margin:0 auto; gap:36px 56px; }
+@media (min-width:901px) {
+  .fiveColumnGrid {
+    grid-template-columns:repeat(5,minmax(0,1fr));
+    column-gap:clamp(20px,3vw,42px);
+  }
+}
 .productSection { max-width:1300px; padding-top:28px; }
 .productHeading { text-align:center; color:var(--navy); font-size:1.5em; margin-block:.83em; }
 .grid article { min-width:0; font-size:.8em; }

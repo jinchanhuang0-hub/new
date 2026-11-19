@@ -62,6 +62,31 @@ test("all new events fail closed without consent or outside production", () => {
   assert.equal(pushes.length, 0);
 });
 
+test("challenge coin campaign identifies its form and records each campaign click once", () => {
+  const pathname = "/custom-challenge-coins";
+  const { pushes } = setup({ pathname });
+  const listeners = new Map();
+  const cleanup = installInquiryAnalytics({
+    addEventListener: (type, listener) => listeners.set(type, listener),
+    removeEventListener: (type) => listeners.delete(type),
+  });
+
+  for (const selector of ["[data-campaign-quote]", ".whatsapp-float"]) {
+    const element = { matches: (candidate) => candidate === selector };
+    listeners.get("click")({ target: { closest: () => element } });
+  }
+  reportInquirySubmitAttempt(fixture().form);
+
+  assert.equal(inquiryPageType(pathname), "custom_challenge_coins_lp");
+  assert.equal(inquiryFormId(null, pathname), "custom_challenge_coins_lp_main");
+  assert.deepEqual(pushes, [
+    { event: "uccrafts_consult_click", form_id: "custom_challenge_coins_lp_main", page_type: "custom_challenge_coins_lp", cta_id: "quote_hero", placement: "hero" },
+    { event: "uccrafts_whatsapp_click", page_type: "custom_challenge_coins_lp", placement: "floating" },
+    { event: "uccrafts_inquiry_submit_attempt", form_id: "custom_challenge_coins_lp_main", page_type: "custom_challenge_coins_lp" },
+  ]);
+  cleanup();
+});
+
 test("invalid fields coalesce once per validation round and never make a request", async () => {
   const { pushes } = setup();
   const { form } = fixture({ valid: false });
