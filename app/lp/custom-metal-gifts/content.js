@@ -1,4 +1,4 @@
-import pin from './product-pin-guitar-1000-q95.webp';
+import pin from './product-pin-cyclones-baseball.webp';
 import coin from './product-coin-scene-optimized.webp';
 import medal from './product-medal-new.jpg';
 import keychain from './product-keychains-group.png';
