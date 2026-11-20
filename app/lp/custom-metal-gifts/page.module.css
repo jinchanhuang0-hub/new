@@ -14,7 +14,31 @@
 .image { object-fit:contain; background:#edf1f4; }
 .grid .image { display:block; width:100%; aspect-ratio:1; height:auto; object-fit:contain; padding:0; border:0; border-radius:10px; background:#fff; box-shadow:0 0 20px 4px rgba(103,178,231,.24); }
 .bannerSection { position:relative; width:100%; margin:0 auto; overflow:hidden; background:#173654; }
-.bannerArtwork { position:relative; width:100%; margin:0 auto; }
+.bannerArtwork { position:relative; width:100%; margin:0 auto; container-type:inline-size; }
+.bannerMoq {
+  position:absolute;
+  left:34.6%;
+  top:88%;
+  width:8%;
+  height:6.5%;
+  display:grid;
+  place-items:center;
+  isolation:isolate;
+  color:#f7f8fa;
+  font:600 1.44cqw/1 Arial,sans-serif;
+  white-space:nowrap;
+}
+/* Match the floor at the height of the printed letters. */
+.bannerMoq::before {
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:-1;
+  background:linear-gradient(to bottom,#4c617a 0%,#495d76 18%,#40556d 48%,#394f67 76%,#344b63 100%);
+  mask-image:linear-gradient(to bottom,transparent,#000 18% 84%,transparent),
+             linear-gradient(to right,transparent,#000 10% 89%,transparent);
+  mask-composite:intersect;
+}
 .bannerImage { display:block; width:100%; height:auto; }
 .bannerProducts { position:absolute; inset:0; width:100%; height:100%; pointer-events:none; mask-image:linear-gradient(to bottom,transparent 34%,#000 38%); }
 .badgeBackdrop { position:absolute; inset:0; width:100%; height:100%; pointer-events:none; mask-image:radial-gradient(ellipse 10% 26% at 56.5% 67%,#000 90%,transparent 100%); }
