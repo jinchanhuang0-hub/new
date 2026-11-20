@@ -1,7 +1,7 @@
-import pin from './product-pin-cyclones-baseball.webp';
-import coin from './product-coin-scene-optimized.webp';
-import medal from './product-medal-new.jpg';
-import keychain from './product-keychains-group.png';
+import pin from './collection-lapel-pins.webp';
+import coin from './collection-challenge-coins.webp';
+import medal from './collection-medals.webp';
+import keychain from './collection-keychains.webp';
 // Replace the banner image URL, headline and description here.
 export const content = { title: 'Headline placeholder', description: 'Description placeholder', banner: '', advantages: ['Advantage 1', 'Advantage 2', 'Advantage 3', 'Advantage 4'],
   // Replace product image URLs, titles and descriptions here.
