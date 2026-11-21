@@ -4197,7 +4197,8 @@ const getCustomSolutionProfile = (item) => {
     };
   }
 
-  if (text.includes("uv printed") || text.includes("uv printing") || text.includes("full color printed")) {
+  const isLapelPin = productType === "Lapel Pins";
+  if (isLapelPin && includesAny(text, ["uv printed", "uv printing", "full color printed"])) {
     return {
       ...profile,
       material: `${item.material} or iron base with a smooth printable face.`,
@@ -4209,20 +4210,18 @@ const getCustomSolutionProfile = (item) => {
     };
   }
 
-  if (text.includes("soft pvc") || text.includes("pvc molding")) {
-    const isPvcLapelPin = productType === "Lapel Pins";
-
+  if (["Lapel Pins", "Keychains", "Fridge Magnets"].includes(productType) && includesAny(text, ["soft pvc", "pvc molding"])) {
     return {
       ...profile,
-      material: isPvcLapelPin
+      material: isLapelPin
         ? item.material
         : "Soft PVC or flexible rubber material matched to the design.",
-      process: isPvcLapelPin
+      process: isLapelPin
         ? item.process
         : "PVC molding, color filling and magnet or accessory assembly.",
       size: "Custom molded size based on character artwork and intended use.",
       thickness: "Custom molded thickness based on character relief and flexibility.",
-      accessories: isPvcLapelPin
+      accessories: isLapelPin
         ? "Pin attachment and backing card options confirmed on the approved proof."
         : "Magnet backing, key ring, hanging loop, backing card or retail package.",
       packaging: "OPP bag, backing card, retail card or gift packaging available.",
@@ -4231,7 +4230,7 @@ const getCustomSolutionProfile = (item) => {
     };
   }
 
-  if (text.includes("dog tag")) {
+  if (productType === "Others" && text.includes("dog tag")) {
     return {
       ...profile,
       material: item.material || "Stainless steel, brass, aluminum or zinc alloy selected by design.",
@@ -4240,6 +4239,14 @@ const getCustomSolutionProfile = (item) => {
       thickness: "Commonly 1.0-2.0 mm, adjusted for metal material, engraving depth and tag size.",
       accessories: "Split ring, chain, clasp, gift card or retail packaging options.",
       packaging: "OPP bag as standard; backing card, gift box or retail-ready packaging available."
+    };
+  }
+
+  if (!isLapelPin) {
+    return {
+      ...profile,
+      material: item.material || profile.material,
+      process: item.process || profile.process
     };
   }
 
