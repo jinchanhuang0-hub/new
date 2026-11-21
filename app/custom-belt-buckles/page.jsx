@@ -16,6 +16,7 @@ const campaign = {
   mobileImage: image('campaign-buckles-mobile.webp'),
   productHeading: 'Custom Belt Buckles for Brands, Clubs & Events',
   defaultProduct: 'Belt Buckles',
+  moqBenefit: 'Low MOQ',
   products: [
     { title: 'Custom Western Belt Buckles', image: image('belt-buckle-western.webp'), description: 'Western-inspired buckles for rodeos, ranches and apparel brands.' },
     { title: 'Custom Letter & Name Belt Buckles', image: image('belt-buckle-letter-name.webp'), description: 'Add names, initials or brand lettering to a custom buckle.' },
