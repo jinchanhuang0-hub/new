@@ -2,6 +2,7 @@
 import { useRef, useState } from 'react';
 import { reportInquirySuccess } from '../../lib/inquiryClient.mjs';
 import { reportInquirySubmitClick, reportInquirySubmitAttempt, reportInquiryError, reportInquiryValidationError, inquiryHttpErrorCode } from '../../lib/inquiryAnalytics.mjs';
+import { minimumOrder } from '../../lib/minimumOrder';
 import styles from './page.module.css';
 
 export default function Form({ defaultProduct = '' }) {
@@ -9,7 +10,8 @@ export default function Form({ defaultProduct = '' }) {
   const [files, setFiles] = useState([]);
   const [product, setProduct] = useState(defaultProduct);
   const isBeltBuckle = product === 'Belt Buckles';
-  const quantityLabel = isBeltBuckle ? 'Quantity (minimum 10 pcs)' : 'Quantity';
+  const minimumQuantity = isBeltBuckle ? minimumOrder.beltBuckles : minimumOrder.otherProducts;
+  const quantityLabel = product ? `Quantity (minimum ${minimumQuantity} pcs)` : 'Quantity';
   function addFiles(e) {
     const next = [...files, ...Array.from(e.target.files)]; e.target.value = '';
     if (next.length > 3 || next.reduce((n,f) => n + f.size, 0) > 4 * 1024 * 1024 || next.some(f => !/\.(jpe?g|png|pdf|ai|eps|psd|cdr)$/i.test(f.name))) { reportInquiryValidationError(e.target.form); setStatus('Choose up to 3 JPG, PNG, PDF, AI, EPS, PSD or CDR files, 4 MB total.'); return; }
@@ -33,8 +35,7 @@ export default function Form({ defaultProduct = '' }) {
     <label><span className={styles.srOnly}>Country / Region</span><input name="country" placeholder="Country / Region" required maxLength={120}/></label><label><span className={styles.srOnly}>Phone Number</span><input name="whatsapp" type="tel" placeholder="Phone Number" maxLength={80}/></label><label><span className={styles.srOnly}>Product Type</span><select name="product" required value={product} onChange={e => setProduct(e.target.value)}><option value="">Product Type</option>{['Fridge Magnets','Lapel Pins','Medals','Bottle Openers','Belt Buckles','Golf Accessories','Challenge Coins','Cufflinks & Tie Clips','Keychains','Patches','Others','Other'].map(x => <option key={x}>{x}</option>)}</select></label>
     <label>
       <span className={styles.srOnly}>{quantityLabel}</span>
-      <input name="quantity" placeholder={quantityLabel} type={isBeltBuckle ? 'number' : 'text'}
-        min={isBeltBuckle ? 10 : undefined} maxLength={isBeltBuckle ? undefined : 80} />
+      <input name="quantity" placeholder={quantityLabel} type="number" min={product ? minimumQuantity : undefined} />
     </label></div><label>What can we help you with?<textarea name="details" placeholder="Notes, Comments, etc." maxLength={5000} rows={2}/></label>
     <div><strong>Upload Artwork for a Free Proof</strong><label className={styles.uploadBox}><input name="artwork" type="file" multiple accept=".jpg,.jpeg,.png,.pdf,.ai,.eps,.psd,.cdr" aria-label="Upload artwork" aria-describedby="upload-help upload-status" onChange={addFiles} /><span aria-hidden="true" className={styles.uploadIcon}>↑</span><span>Upload artwork or reference files for a free proof</span></label><small id="upload-help">Add up to 3 files, together or one at a time. Maximum 4 MB combined. Uploads are optional. For larger files, submit your inquiry without attachments, then email the original design files to our sales team when they contact you. Accepted formats: JPG, PNG, PDF, AI, EPS, PSD, CDR.</small><div id="upload-status" aria-live="polite">{files.map((file,i) => <div key={`${file.name}-${i}`}>{file.name} <button type="button" onClick={() => setFiles(files.filter((_,index) => index !== i))} aria-label={`Remove ${file.name}`}>Remove</button></div>)}</div></div>
     <button className={styles.button} disabled={busy} type="submit" onClick={e => reportInquirySubmitClick(e.currentTarget.form)}>{busy ? 'Sending...' : 'Get a Free Quote'}</button><p className={styles.formNote}>We use the information you submit to respond to your inquiry. See our <a href="/privacy-policy">Privacy Policy</a>.</p><p role="status" aria-live="polite">{status}</p></form>;

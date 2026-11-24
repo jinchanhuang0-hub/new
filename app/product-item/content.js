@@ -1,3 +1,4 @@
+import { minimumOrder } from "../lib/minimumOrder";
 import StaticPage from "../components/StaticPage";
 import { halloweenProducts } from "./halloweenProducts";
 import { footerHtml } from "../components/footerHtml";
@@ -4370,7 +4371,7 @@ export const renderProductItemHtml = (item, currentSlug) => {
     getCategoryKeyForItem(item) === "buckles" || item.categoryHref === bucklePath ||
     item.categoryHref?.startsWith(`${bucklePath}/`) ||
     labels.some((label) => buckleCategoryLabels.has(label.trim()));
-  const minimumQuantity = isBeltBuckle ? 10 : 30;
+  const minimumQuantity = isBeltBuckle ? minimumOrder.beltBuckles : minimumOrder.otherProducts;
   const catalogKey = isBeltBuckle ? "buckles" : productItemCategoryKey[currentSlug];
   const categoryLabel = item.categoryLabel || productCategories[catalogKey]?.label || "Products";
   const categoryHref = item.categoryHref || (catalogKey ? getCategoryPath(catalogKey) : "/products");

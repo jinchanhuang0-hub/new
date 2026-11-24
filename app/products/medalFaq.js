@@ -7,7 +7,7 @@ export const medalFaqOptions = {
 export const medalFaq = [
   {
     question: "Can I order custom medals for a small event?",
-    answer: "Yes. Orders start at 30 medals for school events, club competitions and races. For designs requiring a custom mold, tooling costs are spread across the order, so smaller quantities typically have a higher cost per medal. Share your quantity and budget so we can suggest suitable options.",
+    answer: "Yes. Orders start at 50 medals for school events, club competitions and races. For designs requiring a custom mold, tooling costs are spread across the order, so smaller quantities typically have a higher cost per medal. Share your quantity and budget so we can suggest suitable options.",
   },
   {
     question: "Can your designers create a medal from my event logo or idea?",

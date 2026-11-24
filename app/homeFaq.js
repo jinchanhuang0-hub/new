@@ -1,7 +1,7 @@
 export const homeFaqItems = [
   {
     "question": "What is your minimum order quantity?",
-    "answer": "The minimum order is 10 pieces for custom belt buckles and 30 pieces for all other products. Costs depend on the product and specifications. For designs requiring custom molds, smaller orders typically have a higher unit cost because tooling costs are spread across fewer pieces."
+    "answer": "The minimum order is 30 pieces for custom belt buckles and 50 pieces for all other products. Costs depend on the product and specifications. For designs requiring custom molds, smaller orders typically have a higher unit cost because tooling costs are spread across fewer pieces."
   },
   {
     "question": "Can you help if I only have a logo or an idea?",

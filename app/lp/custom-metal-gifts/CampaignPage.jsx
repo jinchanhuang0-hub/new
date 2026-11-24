@@ -41,7 +41,7 @@ export default function CampaignPage({ campaign }) { return <div className={styl
         </div>
         <div className={heroStyles.benefits}>
           <span>OEM/ODM</span>
-          <span>{campaign.moqBenefit ?? 'No MOQ'}</span>
+          <span>{campaign.moqBenefit ?? 'Low MOQ'}</span>
           <span>Free Artwork Support</span>
           <span>Factory-Direct Quotes</span>
         </div>

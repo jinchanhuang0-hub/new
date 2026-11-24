@@ -242,7 +242,7 @@ export const blogHtml = String.raw`
             <div class="blog-feature-body">
               <div class="blog-feature-meta"><span>Custom Patches</span><span>Buyer Guide</span></div>
               <h2>Custom Embroidered Patches with a Low MOQ: A Pilot Order Guide</h2>
-              <p>Plan a low MOQ pilot run starting at 30 embroidered patches. Compare small-order costs, test samples on garments, and prepare your design for bulk production.</p>
+              <p>Plan a low MOQ pilot run starting at 50 embroidered patches. Compare small-order costs, test samples on garments, and prepare your design for bulk production.</p>
               <span class="blog-feature-link">Read More</span>
             </div>
           </a>
@@ -449,7 +449,7 @@ export const blogHtml = String.raw`
             <div class="blog-feature-body">
               <div class="blog-feature-meta"><span>Custom Lapel Pins</span><span>Buyer Guide</span></div>
               <h2>Custom Enamel Pins with a Low MOQ: A Complete Guide</h2>
-              <p>Plan a low MOQ order starting at 30 enamel pins, from proofing artwork and estimating mold fees to checking quality and preparing for shipment.</p>
+              <p>Plan a low MOQ order starting at 50 enamel pins, from proofing artwork and estimating mold fees to checking quality and preparing for shipment.</p>
               <span class="blog-feature-link">Read More</span>
             </div>
           </a>
@@ -1883,7 +1883,7 @@ export const blogHtml = String.raw`
         <header class="blog-article-header">
           <a class="blog-back-link" href="/blog">Back to Blog</a>
           <h1>Custom Enamel Pins with a Low MOQ: A Complete Guide</h1>
-          <p>A low MOQ of 30 enamel pins can be useful when you want to test a new design before placing a larger order. Brands, clubs, event organizers, artists, schools, and promotional product distributors often start with a small batch first. A small order can help you check the real pin size, enamel color, plating effect, attachment strength, and packaging presentation before scaling to bulk production.</p>
+          <p>A low MOQ of 50 enamel pins can be useful when you want to test a new design before placing a larger order. Brands, clubs, event organizers, artists, schools, and promotional product distributors often start with a small batch first. A small order can help you check the real pin size, enamel color, plating effect, attachment strength, and packaging presentation before scaling to bulk production.</p>
           <p>Even a short run requires the same setup as a larger custom order. A custom enamel pin still needs artwork review, production proofing, mold setup, plating, enamel filling, polishing, back attachment assembly, quality inspection, and shipment preparation. These steps are required even when the quantity is small.</p>
           <p>If you are still comparing product types, you can also review our <a href="/products/custom-enamel-pins">custom enamel pins manufacturer page</a> and <a href="/products">custom metal products overview</a> before finalizing the inquiry.</p>
           <figure class="blog-article-image blog-article-hero-image blog-article-contain-image">
@@ -1893,12 +1893,12 @@ export const blogHtml = String.raw`
         </header>
 
         <h2>What Does a Low MOQ Mean for Custom Enamel Pins?</h2>
-        <p>Some suppliers accept individual custom pin orders. At Unique Pin, the minimum production order is 30 enamel pins. A run of 30 can suit limited events, VIP gifts, artist merchandise, internal presentations or a small market launch.</p>
+        <p>Some suppliers accept individual custom pin orders. At Unique Pin, the minimum production order is 50 enamel pins. A run of 50 can suit limited events, VIP gifts, artist merchandise, internal presentations or a small market launch.</p>
         <p>In actual production, the main cost is not only the metal pin. A custom pin may need a mold, machine setup, plating setup, enamel color filling, drying, polishing, and final inspection. These steps take time whether the order is small or large.</p>
         <p>Because setup work is required for every custom project, mold fees and unit prices are calculated by project. Small orders usually have a higher unit cost than bulk orders, while larger quantities often become more efficient. If you already know your design, size, and target quantity, you can <a href="/contact">send your requirements</a> for a practical quotation.</p>
 
         <h2>How Flexible Order Sizes Work in Practice</h2>
-        <p>A pre-production sample lets you approve the artwork and finish before the production run. Production orders start at 30 pins. An event batch, a retail test order and a repeat bulk order may use the same artwork, but their inspection, packaging and delivery needs differ.</p>
+        <p>A pre-production sample lets you approve the artwork and finish before the production run. Production orders start at 50 pins. An event batch, a retail test order and a repeat bulk order may use the same artwork, but their inspection, packaging and delivery needs differ.</p>
         <p>For a sample or small batch, the priority is usually design confirmation: checking the real size, color separation, plating tone, and back attachment. For a larger order, the focus moves to stable color consistency, carton protection, batch inspection, and shipment timing. This is why a clear order size helps the factory recommend the most practical solution instead of treating every inquiry as a standard bulk order.</p>
 
         <h2>When Is a Small Custom Pin Order a Good Choice?</h2>
@@ -1991,7 +1991,7 @@ export const blogHtml = String.raw`
 
         <h2>FAQ</h2>
         <h3>What is the minimum order for custom enamel pins?</h3>
-        <p>Our minimum order is 30 pins. The design, mold requirements and production schedule affect the quote. Mold fees and unit prices are calculated by project because artwork proofing, setup, plating, and inspection still require time.</p>
+        <p>Our minimum order is 50 pins. The design, mold requirements and production schedule affect the quote. Mold fees and unit prices are calculated by project because artwork proofing, setup, plating, and inspection still require time.</p>
 
         <h3>Are small enamel pin orders good for product testing?</h3>
         <p>Yes. Small custom pin orders are useful for testing artwork, checking real color and plating effects, reviewing packaging, and preparing samples before a larger order. They are especially helpful for brands, artists, clubs, and distributors launching a new design.</p>
@@ -2000,7 +2000,7 @@ export const blogHtml = String.raw`
         <p>Soft enamel is often practical for colorful and cost-conscious projects. Hard enamel is better when the buyer wants a smooth, premium surface. Printed pins may be better for gradients, photos, QR codes, or very fine details that cannot be separated by raised metal lines.</p>
 
         <h2>Conclusion</h2>
-        <p>A low MOQ of 30 custom pins gives buyers more flexibility, especially when testing a new design or preparing a limited project. The key is to understand that custom production still requires professional artwork proofing, mold setup, process selection, quality control, packaging, and shipment inspection.</p>
+        <p>A low MOQ of 50 custom pins gives buyers more flexibility, especially when testing a new design or preparing a limited project. The key is to understand that custom production still requires professional artwork proofing, mold setup, process selection, quality control, packaging, and shipment inspection.</p>
         <p>A reliable manufacturer should help review whether your artwork is suitable for enamel production, explain the cost factors clearly, and inspect the finished pins before shipment. For the best result, send complete requirements early, including artwork, quantity, size, plating, attachment, packaging, destination country, and deadline.</p>
 
         <section class="blog-article-cta">
@@ -2085,7 +2085,7 @@ export const blogHtml = String.raw`
         </section>
 
         <h2>Step 5: Confirm the Minimum Order, Sample Lead Time and Production Time</h2>
-        <p>Our low MOQ lets you start with 30 custom pins and scale up for larger projects. For custom-molded products, mold fees and unit prices are calculated by project, and buyers should expect a sample approval step. Sample lead time is usually counted in business days after artwork confirmation, while mass production depends on quantity, finish and factory schedule. Urgent event orders should share the required delivery date at the first inquiry, not after the sample is approved.</p>
+        <p>Our low MOQ lets you start with 50 custom pins and scale up for larger projects. For custom-molded products, mold fees and unit prices are calculated by project, and buyers should expect a sample approval step. Sample lead time is usually counted in business days after artwork confirmation, while mass production depends on quantity, finish and factory schedule. Urgent event orders should share the required delivery date at the first inquiry, not after the sample is approved.</p>
         <p>A clear inquiry should include design file, size, quantity, pin type, plating, backing, packaging, destination country and deadline. These details help the factory quote accurately and avoid repeated clarification. If the buyer only asks for "custom pin price" without specifications, the quotation can only be rough.</p>
 
         <h2>Step 6: Review the Sample Before Mass Production</h2>
@@ -2119,7 +2119,7 @@ export const blogHtml = String.raw`
         <p>Soft enamel is often better suited to textured, colorful and cost-conscious projects. Hard enamel is usually better suited to smooth, premium and retail-oriented pins. The right choice depends on budget, application and desired finish.</p>
 
         <h3>What is the minimum order for custom lapel pins?</h3>
-        <p>Our minimum order is 30 pins. Design complexity, mold requirements, material choice and production schedule still affect the quote. Mold fees and unit prices are calculated by project.</p>
+        <p>Our minimum order is 50 pins. Design complexity, mold requirements, material choice and production schedule still affect the quote. Mold fees and unit prices are calculated by project.</p>
 
         <h3>What should I send to get an accurate quote?</h3>
         <p>Send artwork, target size, quantity, pin type, plating color, back attachment, packaging needs, destination country and deadline. If you are unsure, send a reference image and explain how the pins will be used.</p>
@@ -2223,7 +2223,7 @@ export const blogHtml = String.raw`
         <p>Quality control should include artwork review, pre-production confirmation, in-process inspection and final checking. Buyers should ask how the factory handles color matching, defective pieces, plating problems, packaging errors and pre-shipment inspection. Clear standards reduce disputes later.</p>
 
         <h3>Low MOQ and Lead Time</h3>
-        <p>Our minimum is 10 pieces for custom belt buckles and 30 pieces for all other products. For test runs and limited projects, lead time can vary by product type, mold complexity, quantity and finish. Mold fees and unit prices are calculated by project, and bulk pricing usually becomes more efficient at larger volumes. Always share the event date or launch deadline early so the supplier can plan production realistically.</p>
+        <p>Our minimum is 30 pieces for custom belt buckles and 50 pieces for all other products. For test runs and limited projects, lead time can vary by product type, mold complexity, quantity and finish. Mold fees and unit prices are calculated by project, and bulk pricing usually becomes more efficient at larger volumes. Always share the event date or launch deadline early so the supplier can plan production realistically.</p>
 
         <h3>Customization Ability</h3>
         <p>A good manufacturer should offer practical customization rather than only standard templates. Ask about metal options, plating, enamel types, printing, packaging, back attachments, ribbons, engraving and retail presentation. The more clearly options are explained, the easier it is to make a confident purchasing decision.</p>

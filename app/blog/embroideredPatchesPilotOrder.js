@@ -21,11 +21,11 @@ export const embroideredPatchesPilotOrderArticleHtml = String.raw`
 <a href="#request-a-small-batch-patch-quote">Request a Small-Batch Patch Quote</a></nav></details>
 <header class="blog-article-header"><a class="blog-back-link" href="/blog">Back to Blog</a><h1>Custom Embroidered Patches with a Low MOQ: A Pilot Order Guide</h1></header>
 <figure class="blog-article-image blog-article-hero-image patch-pilot-cover"><img src="/assets/images/embroidered-patches-pilot-order.webp" width="1600" height="900" loading="eager" fetchpriority="high" decoding="async" alt="Embroidered patch samples beside a navy uniform shirt and charcoal jacket"></figure>
-<p>Our low MOQ lets you start a pilot run with 30 custom embroidered patches. For a clothing brand, that might mean checking a new logo on a jacket. For a uniform supplier, it might mean preparing samples for a customer's approval before committing to a larger order.</p>
+<p>Our low MOQ lets you start a pilot run with 50 custom embroidered patches. For a clothing brand, that might mean checking a new logo on a jacket. For a uniform supplier, it might mean preparing samples for a customer's approval before committing to a larger order.</p>
 <p>A useful pilot order answers specific questions: Is the artwork readable? Does the patch sit properly on the garment? Is the attachment suitable for its care routine? What needs to change before production expands?</p>
 <p>This guide explains how to plan that first order, compare costs, and carry an approved design into bulk production.</p>
 <h2 id="how-many-patches-for-a-pilot-order">How Many Patches Do You Need for a Pilot Order?</h2>
-<p>Some embroidery services sell individual patches. Unique Pin’s production minimum is 30 patches. Ask for a quote that covers your backing, border and thread specifications.</p>
+<p>Some embroidery services sell individual patches. Unique Pin’s production minimum is 50 patches. Ask for a quote that covers your backing, border and thread specifications.</p>
 <p>Machine embroidery uses a digitized stitch file containing machine-readable stitching instructions. Ask whether the supplier can reuse an approved file or needs to create or adjust one. Confirm whether file preparation, physical samples, and revisions are included in the quotation or charged separately.</p>
 <p>It helps to distinguish a digital proof, a physical sample, and a pilot order; these do not necessarily require three separate orders.</p>
 <ul class="blog-list">
@@ -91,11 +91,11 @@ export const embroideredPatchesPilotOrderArticleHtml = String.raw`
 <p>For future reorders, reference the previous order and approved specification. Ask the supplier to flag material substitutions or production changes that could affect the result. When the bulk shipment arrives, compare it with the agreed reference. Check quantities, artwork versions, and backings against the order before distributing patches or attaching them to garments.</p>
 <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
 <h3 id="minimum-production-order-for-embroidered-patches">What is the smallest production order for embroidered patches?</h3>
-<p>Our minimum order is 30 patches. When allocating your pilot batch, set aside patches for inspection, attachment testing and an unused reference.</p>
+<p>Our minimum order is 50 patches. When allocating your pilot batch, set aside patches for inspection, attachment testing and an unused reference.</p>
 <h3 id="is-a-physical-sample-included-with-a-free-digital-proof">Is a physical sample included with a free digital proof?</h3>
 <p>Not necessarily. A digital proof and a physical sample are separate deliverables. Ask what the quoted service includes, whether sample shipping is additional, and how revisions are charged.</p>
 <h3 id="how-many-patches-should-i-order-for-a-pilot-run">How many patches should I order for a pilot run?</h3>
-<p>Start with at least 30 patches and plan quantities around the number of designs, garment types, approval recipients, and planned tests. Reserve an unused sample. There is no single pilot quantity that suits every apparel project.</p>
+<p>Start with at least 50 patches and plan quantities around the number of designs, garment types, approval recipients, and planned tests. Reserve an unused sample. There is no single pilot quantity that suits every apparel project.</p>
 <h3 id="will-a-repeat-order-match-the-first-batch-exactly">Will a repeat order match the first batch exactly?</h3>
 <p>An approved sample and recorded specifications provide a comparison reference, but they do not guarantee identical results across batches. Agree how dimensions, thread colors, and border appearance will be compared with the approved sample, including acceptable differences. Confirm any specification changes before a reorder proceeds.</p>
 <h2 id="request-a-small-batch-patch-quote">Request a Small-Batch Patch Quote</h2>

@@ -358,7 +358,7 @@ const html = String.raw`
           <div class="why-item why-choice-card">
             <span class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 6c0-1.7 2.2-3 5-3s5 1.3 5 3-2.2 3-5 3-5-1.3-5-3z"/><path d="M7 6v6c0 1.7 2.2 3 5 3s5-1.3 5-3V6"/><path d="M7 12v6c0 1.7 2.2 3 5 3s5-1.3 5-3v-6"/></svg></span>
             <strong>Low MOQ</strong>
-            <p>The minimum order is 10 pieces for custom belt buckles and 30 pieces for all other products. Mold fees and unit prices are calculated by project.</p>
+            <p>The minimum order is 30 pieces for custom belt buckles and 50 pieces for all other products. Mold fees and unit prices are calculated by project.</p>
           </div>
           <div class="why-item why-choice-card">
             <span class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3.5 20h17"/><path d="M5 20V9l7-4 7 4v11"/><path d="M8 20v-6h8v6"/><path d="M8.5 11h1.5"/><path d="M14 11h1.5"/><path d="M12 14v6"/><path d="M12 4V2.5"/><path d="M16.5 6.6 19 4.8"/><path d="M7.5 6.6 5 4.8"/></svg></span>

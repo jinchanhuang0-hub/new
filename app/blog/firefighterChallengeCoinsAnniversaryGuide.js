@@ -159,7 +159,7 @@ export const firefighterChallengeCoinsAnniversaryGuideArticleHtml = String.raw`
 
             <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
             <div class="blog-faq">
-              <details open><summary><h3>Can a small volunteer department place an order?</h3></summary><p>Yes. Unique Pin accepts orders starting at 30 custom challenge coins. When custom tooling is needed, a small order spreads that cost across fewer pieces, which can increase the cost per coin.</p></details>
+              <details open><summary><h3>Can a small volunteer department place an order?</h3></summary><p>Yes. Unique Pin accepts orders starting at 50 custom challenge coins. When custom tooling is needed, a small order spreads that cost across fewer pieces, which can increase the cost per coin.</p></details>
               <details><summary><h3>Can we start without finished artwork?</h3></summary><p>Yes. Unique Pin provides free design assistance and a digital proof. Send your logo, sketch or reference images with the exact wording and anniversary dates you want reviewed.</p></details>
               <details><summary><h3>Should every coin carry a member's name?</h3></summary><p>Add names only if each coin needs to identify its recipient. A shared anniversary design can cover several recipient groups, while a separate card carries a personal message. If names go on the coins, confirm the production method and final name list before approval.</p></details>
             </div>

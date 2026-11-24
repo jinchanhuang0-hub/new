@@ -82,7 +82,7 @@ const html = String.raw`
                 <option>Lapel Pins</option>
                 <option>Medals</option>
                 <option>Bottle Openers</option>
-                <option>Belt Buckles</option>
+                <option value="Belt Buckles">Belt Buckles</option>
                 <option>Golf Accessories</option>
                 <option>Challenge Coins</option>
                 <option>Cufflinks & Tie Clips</option>
@@ -92,7 +92,7 @@ const html = String.raw`
                 <option>Other</option>
               </select>
               <label class="sr-only" for="contact-inquiry-quantity">Quantity</label>
-              <input id="contact-inquiry-quantity" type="text" name="quantity" placeholder="Quantity">
+              <input id="contact-inquiry-quantity" type="number" name="quantity" placeholder="Quantity">
             </div>
             <div class="form-field form-field-full">
               <label for="details">What can we help you with?</label>

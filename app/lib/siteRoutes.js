@@ -1289,7 +1289,7 @@ const blogArticleData = {
   "custom-enamel-pins-low-moq-guide": {
     title: "Custom Enamel Pins with a Low MOQ: A Complete Guide",
     description:
-      "Plan a low MOQ order starting at 30 enamel pins. Learn how artwork review, mold fees, unit costs and inspection affect your first run and a later bulk order.",
+      "Plan a low MOQ order starting at 50 enamel pins. Learn how artwork review, mold fees, unit costs and inspection affect your first run and a later bulk order.",
     datePublished: "2026-07-23",
     dateModified: "2026-07-23",
     image: "/assets/images/custom-baseball-enamel-pin-samples.png",
@@ -1376,7 +1376,7 @@ export const blogArticles = Object.fromEntries(
     inquiryHeading: "Ready to Start Your Custom Patch Project?",
     title: "Custom Embroidered Patches with a Low MOQ: Pilot Guide",
     headline: "Custom Embroidered Patches with a Low MOQ: A Pilot Order Guide",
-    description: "Plan a low MOQ pilot run starting at 30 embroidered patches. Compare small-order costs, test samples on garments, and prepare your design for bulk production.",
+    description: "Plan a low MOQ pilot run starting at 50 embroidered patches. Compare small-order costs, test samples on garments, and prepare your design for bulk production.",
     author: DEFAULT_BLOG_AUTHOR_SCHEMA.name,
     authorType: DEFAULT_BLOG_AUTHOR_SCHEMA["@type"],
     authorUrl: DEFAULT_BLOG_AUTHOR_SCHEMA.url,

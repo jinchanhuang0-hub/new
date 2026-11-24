@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import { minimumOrder } from "../lib/minimumOrder";
 import { usePathname } from "next/navigation";
 import { BLOG_ITEMS_PER_PAGE } from "../blog/config";
 import { getCategoryPath } from "../lib/siteRoutes";
@@ -146,6 +147,18 @@ export default function StaticPageEffects() {
     };
 
     const cleanupAuthorProfileCard = setupAuthorProfileCard();
+
+    const contactProduct = document.getElementById("contact-inquiry-product");
+    const contactQuantity = document.getElementById("contact-inquiry-quantity");
+    const updateContactQuantity = () => {
+      if (!contactProduct || !contactQuantity) return;
+      const minimum = contactProduct.value === "Belt Buckles" ? minimumOrder.beltBuckles : minimumOrder.otherProducts;
+      const label = contactProduct.value ? `Quantity (minimum ${minimum} pcs)` : "Quantity";
+      contactQuantity.min = contactProduct.value ? String(minimum) : "";
+      contactQuantity.placeholder = label;
+      contactQuantity.labels[0].textContent = label;
+    };
+    contactProduct?.addEventListener("change", updateContactQuantity);
 
     const setupInquiryCtaAnimation = () => {
       const ctaBlocks = Array.from(document.querySelectorAll("[data-inquiry-cta]"));
@@ -613,6 +626,7 @@ export default function StaticPageEffects() {
     };
 
     prefillInquiryFormsFromUrl();
+    updateContactQuantity();
 
     const getFormNotice = (form) => form.querySelector("[data-form-notice]")
       || form.closest(".contact-card, .product-inquiry-card, .contact-layout")?.querySelector("[data-form-notice]");
@@ -1116,6 +1130,7 @@ export default function StaticPageEffects() {
 
     return () => {
       cleanupAuthorProfileCard();
+      contactProduct?.removeEventListener("change", updateContactQuantity);
       cleanupInquiryCtaAnimation();
       cleanupCustomerPhotoGallery();
       document.removeEventListener("click", handleBlogCardClick);

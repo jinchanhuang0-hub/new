@@ -80,7 +80,7 @@ export const halloweenEnamelPinsArticleHtml = String.raw`
 <p>Before authorizing production, make sure the quotation, approved artwork, and quantity breakdown describe the same collection.</p>
 <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
 <h3 id="can-i-start-with-a-small-order">Can I start with a small order?</h3>
-<p>Yes. The minimum order is 30 <a href="https://uccrafts.com/products/custom-enamel-pins">custom enamel pins</a>. For designs requiring tooling, compare the complete project cost: spreading a mold charge across fewer pieces can increase the effective cost per pin.</p>
+<p>Yes. The minimum order is 50 <a href="https://uccrafts.com/products/custom-enamel-pins">custom enamel pins</a>. For designs requiring tooling, compare the complete project cost: spreading a mold charge across fewer pieces can increase the effective cost per pin.</p>
 <h3 id="do-all-designs-need-the-same-quantity">Do all designs need the same quantity?</h3>
 <p>Specify the quantity required for each design and ask the supplier to quote that breakdown. Do not assume equal quantities are necessary, or that a combined total automatically determines pricing for every style.</p>
 <h3 id="can-i-reorder-one-design-later">Can I reorder one design later?</h3>

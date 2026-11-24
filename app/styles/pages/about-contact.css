@@ -1397,6 +1397,10 @@ body.is-video-lightbox-open {
   gap: 14px;
 }
 
+#contact-inquiry-quantity::placeholder {
+  font-size: 14px;
+}
+
 .form input,
 .form select,
 .form textarea {
