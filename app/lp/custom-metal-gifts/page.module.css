@@ -61,7 +61,26 @@
   }
 }
 .productSection { max-width:1300px; padding-top:28px; }
+.productInquiry {
+  margin-top:clamp(28px,4vw,48px);
+  padding:clamp(20px,3vw,32px);
+  background:#f4f7fa;
+  border-radius:10px;
+  text-align:center;
+}
+.productInquiry h3 { margin:0; font-size:clamp(1.15rem,2vw,1.5rem); line-height:1.25; text-wrap:balance; }
+.productInquiry p { max-width:66ch; margin:10px auto 18px; }
+.productInquiry .button { border-radius:999px; background:#f6c700; color:#173654; font-weight:700; }
 .productHeading { text-align:center; color:var(--navy); font-size:1.5em; margin-block:.83em; }
+@media (max-width:600px) {
+  .medalProductHeading {
+    margin:0 auto 18px;
+    font-size:clamp(1rem, 5.1vw, 1.5rem);
+    line-height:1.25;
+    letter-spacing:-.015em;
+  }
+  .medalProductHeading + .grid article { text-align:center; }
+}
 .grid article { min-width:0; font-size:.8em; }
 .grid article h3 { margin:12px 0 8px; }
 .grid article p { margin:0; }

@@ -2,6 +2,7 @@ import { canSendProductionAnalytics } from "./analyticsGate.mjs";
 
 const campaignPageTypes = new Map([
   ["/custom-belt-buckles", "custom_belt_buckles_lp"],
+  ["/custom-medals", "custom_medals_lp"],
   ["/custom-challenge-coins", "custom_challenge_coins_lp"],
 ]);
 
