@@ -44,6 +44,9 @@
 @media(max-width:360px) { .copy { padding-top:9px; } .copy h1 { font-size:1.25rem; } .copy p { font-size:.7rem; } }
 
 @media (max-width:600px) {
+  .heroWithContrast .copy h1 {
+    max-width:25ch;
+  }
   .medalHero .copy {
     padding:10px 12px 0;
   }

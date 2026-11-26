@@ -68,6 +68,7 @@ export default function CampaignPage({ campaign }) {
   {!campaign.brandsAfterVideo && brandSection}
   <section className={`${styles.section} ${styles.productSection}`}>
     <h2 className={campaign.medalHero ? `${styles.productHeading} ${styles.medalProductHeading}` : styles.productHeading}>{campaign.productHeading}</h2>
+    {campaign.productSubtitle && <p className={styles.productSubtitle}>{campaign.productSubtitle}</p>}
     <div className={campaign.productColumns === 5 ? `${styles.grid} ${styles.fiveColumnGrid}` : styles.grid}>
       {campaign.products.map(({ title, image, alt, description }) => (
         <article key={title}>

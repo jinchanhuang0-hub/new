@@ -33,27 +33,28 @@ const featuredCoins = [
   {
     slug: 'marine-corps-forces-north-challenge-coin',
     title: 'Custom Military Challenge Coins',
-    description: 'Pair your unit insignia with a motto, deployment date or service milestone on the reverse.',
+    description: 'Put your unit insignia on the front and your motto, deployment date or mission artwork on the back.',
   },
   {
     slug: 'cocoa-fire-department-challenge-coin',
-    title: 'Custom Fire & EMS Challenge Coins',
-    description: 'Feature your fire or EMS emblem on one side and a station number, crew name or anniversary on the other.',
+    title: 'Custom Fire & EMS Coins',
+    description: 'Pair your department emblem on the front with your station number or crew name on the back.',
   },
   {
-    slug: 'victoria-police-st-michael-challenge-coin',
-    title: 'Custom Law Enforcement Challenge Coins',
-    description: 'Place a police badge or sheriff’s star on the front and your department or specialty unit emblem on the reverse.',
+    image: '/assets/images/campaign-law-enforcement-coins.png',
+    alt: 'Assorted challenge coins with an eagle emblem, a SEAL Team coin and an Air Force coin in a blue presentation case',
+    title: 'Custom Law Enforcement Coins',
+    description: 'Feature your department badge on the front and your unit insignia or a dedication on the back.',
   },
   {
     slug: 'jennifer-jo-cobb-racing-challenge-coin',
-    title: 'Custom Sports Team & Tournament Challenge Coins',
-    description: 'Put your team logo on the front and commemorate a tournament, championship or season on the reverse.',
+    title: 'Custom Sports Challenge Coins',
+    description: 'Show your team or race logo on the front and add the event name, date or race number on the back.',
   },
   {
     slug: '40-years-port-authority-challenge-coin',
     title: 'Custom Corporate Challenge Coins',
-    description: 'Pair your company logo with a work anniversary, team achievement or employee award on the reverse.',
+    description: 'Feature your company logo on the front and mark a service anniversary or team achievement on the back.',
   },
 ];
 
@@ -62,17 +63,24 @@ const campaign = {
   description,
   heroAlt,
   heroContrast: true,
+  brandsAfterVideo: true,
   moqBenefit: 'Low MOQ',
   desktopImage,
   mobileImage: '/assets/images/campaign-challenge-coins-mobile.webp',
-  productHeading: 'Double-Sided Challenge Coins for Brands, Clubs & Events',
+  productHeading: 'Custom Double-Sided Challenge Coins',
+  productSubtitle: 'Customise both sides with your logo, artwork and wording. Explore design ideas for your unit, team or company.',
   productColumns: 5,
+  productInquiry: {
+    heading: 'How many double-sided challenge coins do you need, and when do you need them?',
+    description: 'Share your estimated quantity, delivery postcode and required delivery date. If you have artwork for either side of your coin, attach it to your inquiry.',
+    button: 'Get a Custom Coin Quote',
+  },
   defaultProduct: 'Challenge Coins',
-  products: featuredCoins.map(({ slug, title, description }) => {
+  products: featuredCoins.map(({ slug, ...card }) => {
+    if (card.image) return card;
     const product = productItems[slug];
     return {
-      title,
-      description,
+      ...card,
       image: `/${product.image}`,
       alt: `Front and reverse of the ${product.alt}`,
     };

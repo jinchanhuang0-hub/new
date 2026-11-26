@@ -72,6 +72,7 @@
 .productInquiry p { max-width:66ch; margin:10px auto 18px; }
 .productInquiry .button { border-radius:999px; background:#f6c700; color:#173654; font-weight:700; }
 .productHeading { text-align:center; color:var(--navy); font-size:1.5em; margin-block:.83em; }
+.productSubtitle { max-width:66ch; margin:0 auto 24px; text-align:center; text-wrap:balance; }
 @media (max-width:600px) {
   .medalProductHeading {
     margin:0 auto 18px;
