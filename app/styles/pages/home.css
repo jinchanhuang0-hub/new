@@ -519,12 +519,10 @@
 }
 
 .brand-carousel {
+  zoom: 0.8;
   position: relative;
   margin-top: -1px;
-  background:
-    radial-gradient(ellipse at 50% -8%, rgba(243, 198, 0, 0.18), rgba(243, 198, 0, 0.08) 22%, rgba(255, 255, 255, 0) 52%),
-    linear-gradient(180deg, rgba(255, 250, 225, 0.72) 0%, rgba(255, 255, 255, 0.96) 30%, #fff 70%),
-    #fff;
+  background: #fff;
   padding: 55px 0 40px;
   overflow: hidden;
 }
@@ -751,9 +749,10 @@
 }
 
 .home-products-grid {
-  max-width: 1280px;
+  width: 90%;
+  max-width: 1152px;
   margin: 0 auto;
-  gap: 30px;
+  gap: 27px;
 }
 
 .product-showcase-section {
@@ -1071,6 +1070,7 @@
 }
 
 .home-product-card {
+  zoom: 0.9;
   position: relative;
   cursor: pointer;
   display: flex;
@@ -1088,7 +1088,8 @@
 
 .home-product-card img {
   height: 270px;
-  padding: 18px 24px;
+  /* Remove space around the artwork to preserve its size in the smaller card. */
+  padding: 5px max(0px, calc(26.67px - 5.56%));
   border-radius: 18px 18px 0 0;
   background: #fff;
 }
@@ -1558,8 +1559,8 @@ body.quote-modal-open {
   body:has(main > .hero) .home-products-grid,
   body:has(main > .hero) .cert-grid { display: flex; grid-template-columns: none; gap: 10px; width: calc(100% + 16px); margin-right: -16px; padding: 0 16px 6px 0; overflow-x: auto; overscroll-behavior-inline: contain; scroll-snap-type: x proximity; -webkit-overflow-scrolling: touch; }
   body:has(main > .hero) .home-product-card { flex: 0 0 166px; height: 198px; border-radius: 12px; scroll-snap-align: start; box-shadow: 0 9px 20px rgba(11, 47, 99, 0.09); }
-  body:has(main > .hero) .home-product-card img { height: 88px; padding: 8px 12px; border-radius: 12px 12px 0 0; }
-  body:has(main > .hero) .home-product-card .body { padding: 12px 12px 10px; }
+  body:has(main > .hero) .home-product-card img { height: 88px; padding: 4px 12px; border-radius: 12px 12px 0 0; }
+  body:has(main > .hero) .home-product-card .body { padding: 6px 10px; }
   body:has(main > .hero) .home-product-card .body::before { left: 12px; width: 38px; height: 2px; }
   body:has(main > .hero) .home-product-card h3 { margin: 0 0 5px; font-size: 16px; line-height: 1.25; }
   body:has(main > .hero) .home-product-card p { font-size: 10.5px; line-height: 1.35; }

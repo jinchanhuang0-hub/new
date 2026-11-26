@@ -71,55 +71,6 @@ const html = String.raw`
       </div>
     </section>
 
-    <section class="brand-carousel" aria-label="Trusted brand section">
-      <div class="brand-heading">
-        <span class="brand-kicker" aria-hidden="true"></span>
-        <h2>Trusted by Global Brands</h2>
-      </div>
-      <div class="brand-marquee" aria-label="Trusted global brand logos">
-        <div class="brand-marquee-track">
-          <span class="brand-logo"><img src="assets/images/brands/coca-cola.svg" alt="Coca-Cola logo"></span>
-          <span class="brand-logo logo-square"><img src="assets/images/brands/mcdonalds.svg" alt="McDonald's logo"></span>
-          <span class="brand-logo"><img src="assets/images/brands/disney.svg" alt="Disney logo"></span>
-          <span class="brand-logo logo-square"><img src="assets/images/brands/pepsi.png" alt="Pepsi logo"></span>
-          <span class="brand-logo logo-square"><img src="assets/images/brands/lego.svg" alt="LEGO logo"></span>
-          <span class="brand-logo logo-square"><img src="assets/images/brands/starbucks.webp" alt="Starbucks logo"></span>
-          <span class="brand-logo"><img src="assets/images/brands/walmart.webp" alt="Walmart logo"></span>
-          <span class="brand-logo"><img src="assets/images/brands/mars.webp" alt="Mars logo"></span>
-          <span class="brand-logo"><img src="assets/images/brands/nike.svg" alt="Nike logo"></span>
-          <span class="brand-logo"><img src="assets/images/brands/adidas.svg" alt="adidas logo"></span>
-          <span class="brand-logo"><img src="assets/images/brands/mercedes.webp" alt="Mercedes-Benz logo"></span>
-          <span class="brand-logo logo-square"><img src="assets/images/brands/bmw.webp" alt="BMW logo"></span>
-          <span class="brand-logo"><img src="assets/images/brands/marvel.svg" alt="MARVEL logo"></span>
-          <span class="brand-logo logo-square logo-kfc"><img src="assets/images/brands/kfc.webp" alt="KFC logo"></span>
-          <span class="brand-logo logo-square logo-roomy"><img src="assets/images/brands/american-greetings.webp" alt="American Greetings logo"></span>
-          <span class="brand-logo logo-square"><img src="assets/images/brands/teal-s-logo.webp" alt="Teal S brand logo"></span>
-          <span class="brand-logo logo-square"><img src="assets/images/brands/lions-international.webp" alt="Lions International logo"></span>
-          <span class="brand-logo logo-wide"><img src="assets/images/brands/turbovets.webp" alt="Turbovets Tech For Heroes logo"></span>
-          <span class="brand-logo logo-square"><img src="assets/images/brands/nbc.svg" alt="NBC logo"></span>
-          <span class="brand-logo"><img src="assets/images/brands/coca-cola.svg" alt="Coca-Cola logo"></span>
-          <span class="brand-logo logo-square"><img src="assets/images/brands/mcdonalds.svg" alt="McDonald's logo"></span>
-          <span class="brand-logo"><img src="assets/images/brands/disney.svg" alt="Disney logo"></span>
-          <span class="brand-logo logo-square"><img src="assets/images/brands/pepsi.png" alt="Pepsi logo"></span>
-          <span class="brand-logo logo-square"><img src="assets/images/brands/lego.svg" alt="LEGO logo"></span>
-          <span class="brand-logo logo-square"><img src="assets/images/brands/starbucks.webp" alt="Starbucks logo"></span>
-          <span class="brand-logo"><img src="assets/images/brands/walmart.webp" alt="Walmart logo"></span>
-          <span class="brand-logo"><img src="assets/images/brands/mars.webp" alt="Mars logo"></span>
-          <span class="brand-logo"><img src="assets/images/brands/nike.svg" alt="Nike logo"></span>
-          <span class="brand-logo"><img src="assets/images/brands/adidas.svg" alt="adidas logo"></span>
-          <span class="brand-logo"><img src="assets/images/brands/mercedes.webp" alt="Mercedes-Benz logo"></span>
-          <span class="brand-logo logo-square"><img src="assets/images/brands/bmw.webp" alt="BMW logo"></span>
-          <span class="brand-logo"><img src="assets/images/brands/marvel.svg" alt="MARVEL logo"></span>
-          <span class="brand-logo logo-square logo-kfc"><img src="assets/images/brands/kfc.webp" alt="KFC logo"></span>
-          <span class="brand-logo logo-square logo-roomy"><img src="assets/images/brands/american-greetings.webp" alt="American Greetings logo"></span>
-          <span class="brand-logo logo-square"><img src="assets/images/brands/teal-s-logo.webp" alt="Teal S brand logo"></span>
-          <span class="brand-logo logo-square"><img src="assets/images/brands/lions-international.webp" alt="Lions International logo"></span>
-          <span class="brand-logo logo-wide"><img src="assets/images/brands/turbovets.webp" alt="Turbovets Tech For Heroes logo"></span>
-          <span class="brand-logo logo-square"><img src="assets/images/brands/nbc.svg" alt="NBC logo"></span>
-        </div>
-      </div>
-    </section>
-
     <section class="section product-showcase-section">
       <div class="container">
         <div class="section-head product-heading">
@@ -238,6 +189,26 @@ const html = String.raw`
       </div>
     </section>
 
+    <section class="section home-company-section" aria-labelledby="home-company-title">
+      <div class="container home-company-layout">
+        <div class="home-company-media">
+          <video class="home-company-video" controls playsinline preload="metadata" aria-label="Unique Pin company and product overview video">
+            <source src="/assets/videos/company-overview.mp4?v=20260819-lfs-fix" type="video/mp4">
+          </video>
+        </div>
+        <div class="home-company-copy">
+          <span class="home-company-eyebrow">Custom Metal Gifts Manufacturer</span>
+          <h2 id="home-company-title">Meet Unique Pin</h2>
+          <p>Take a 34-second look inside our 6,000 m² factory in Zhongshan, China. With 34 production machines, our in-house team manages CNC engraving, die casting, polishing, plating, enamel coloring, inspection and packing.</p>
+          <p>We manufacture custom enamel pins, challenge coins, medals, keychains and belt buckles for distributors, brands, clubs and event organizers-from artwork proofing to global delivery.</p>
+          <div class="home-company-actions">
+            <a class="btn btn-primary" href="/about">About Us</a>
+            <a class="btn btn-outline" href="/products">View Products</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <div class="product-inquiry-modal" data-product-inquiry-modal hidden>
       <div class="product-inquiry-dialog" role="dialog" aria-modal="true" aria-labelledby="home-quote-title">
         <button class="product-inquiry-close" type="button" aria-label="Close inquiry form" data-product-inquiry-close>&times;</button>
@@ -341,6 +312,55 @@ const html = String.raw`
       </div>
     </section>
 
+    <section class="brand-carousel" aria-label="Trusted brand section">
+      <div class="brand-heading">
+        <span class="brand-kicker" aria-hidden="true"></span>
+        <h2>Trusted by Global Brands</h2>
+      </div>
+      <div class="brand-marquee" aria-label="Trusted global brand logos">
+        <div class="brand-marquee-track">
+          <span class="brand-logo"><img src="assets/images/brands/coca-cola.svg" alt="Coca-Cola logo"></span>
+          <span class="brand-logo logo-square"><img src="assets/images/brands/mcdonalds.svg" alt="McDonald's logo"></span>
+          <span class="brand-logo"><img src="assets/images/brands/disney.svg" alt="Disney logo"></span>
+          <span class="brand-logo logo-square"><img src="assets/images/brands/pepsi.png" alt="Pepsi logo"></span>
+          <span class="brand-logo logo-square"><img src="assets/images/brands/lego.svg" alt="LEGO logo"></span>
+          <span class="brand-logo logo-square"><img src="assets/images/brands/starbucks.webp" alt="Starbucks logo"></span>
+          <span class="brand-logo"><img src="assets/images/brands/walmart.webp" alt="Walmart logo"></span>
+          <span class="brand-logo"><img src="assets/images/brands/mars.webp" alt="Mars logo"></span>
+          <span class="brand-logo"><img src="assets/images/brands/nike.svg" alt="Nike logo"></span>
+          <span class="brand-logo"><img src="assets/images/brands/adidas.svg" alt="adidas logo"></span>
+          <span class="brand-logo"><img src="assets/images/brands/mercedes.webp" alt="Mercedes-Benz logo"></span>
+          <span class="brand-logo logo-square"><img src="assets/images/brands/bmw.webp" alt="BMW logo"></span>
+          <span class="brand-logo"><img src="assets/images/brands/marvel.svg" alt="MARVEL logo"></span>
+          <span class="brand-logo logo-square logo-kfc"><img src="assets/images/brands/kfc.webp" alt="KFC logo"></span>
+          <span class="brand-logo logo-square logo-roomy"><img src="assets/images/brands/american-greetings.webp" alt="American Greetings logo"></span>
+          <span class="brand-logo logo-square"><img src="assets/images/brands/teal-s-logo.webp" alt="Teal S brand logo"></span>
+          <span class="brand-logo logo-square"><img src="assets/images/brands/lions-international.webp" alt="Lions International logo"></span>
+          <span class="brand-logo logo-wide"><img src="assets/images/brands/turbovets.webp" alt="Turbovets Tech For Heroes logo"></span>
+          <span class="brand-logo logo-square"><img src="assets/images/brands/nbc.svg" alt="NBC logo"></span>
+          <span class="brand-logo"><img src="assets/images/brands/coca-cola.svg" alt="Coca-Cola logo"></span>
+          <span class="brand-logo logo-square"><img src="assets/images/brands/mcdonalds.svg" alt="McDonald's logo"></span>
+          <span class="brand-logo"><img src="assets/images/brands/disney.svg" alt="Disney logo"></span>
+          <span class="brand-logo logo-square"><img src="assets/images/brands/pepsi.png" alt="Pepsi logo"></span>
+          <span class="brand-logo logo-square"><img src="assets/images/brands/lego.svg" alt="LEGO logo"></span>
+          <span class="brand-logo logo-square"><img src="assets/images/brands/starbucks.webp" alt="Starbucks logo"></span>
+          <span class="brand-logo"><img src="assets/images/brands/walmart.webp" alt="Walmart logo"></span>
+          <span class="brand-logo"><img src="assets/images/brands/mars.webp" alt="Mars logo"></span>
+          <span class="brand-logo"><img src="assets/images/brands/nike.svg" alt="Nike logo"></span>
+          <span class="brand-logo"><img src="assets/images/brands/adidas.svg" alt="adidas logo"></span>
+          <span class="brand-logo"><img src="assets/images/brands/mercedes.webp" alt="Mercedes-Benz logo"></span>
+          <span class="brand-logo logo-square"><img src="assets/images/brands/bmw.webp" alt="BMW logo"></span>
+          <span class="brand-logo"><img src="assets/images/brands/marvel.svg" alt="MARVEL logo"></span>
+          <span class="brand-logo logo-square logo-kfc"><img src="assets/images/brands/kfc.webp" alt="KFC logo"></span>
+          <span class="brand-logo logo-square logo-roomy"><img src="assets/images/brands/american-greetings.webp" alt="American Greetings logo"></span>
+          <span class="brand-logo logo-square"><img src="assets/images/brands/teal-s-logo.webp" alt="Teal S brand logo"></span>
+          <span class="brand-logo logo-square"><img src="assets/images/brands/lions-international.webp" alt="Lions International logo"></span>
+          <span class="brand-logo logo-wide"><img src="assets/images/brands/turbovets.webp" alt="Turbovets Tech For Heroes logo"></span>
+          <span class="brand-logo logo-square"><img src="assets/images/brands/nbc.svg" alt="NBC logo"></span>
+        </div>
+      </div>
+    </section>
+
     ${customerPhotoGalleryHtml}
 
     <section class="section section-soft why-choice-section">
@@ -379,26 +399,6 @@ const html = String.raw`
             <span class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 5 6v6c0 4.4 2.9 7.4 7 9 4.1-1.6 7-4.6 7-9V6z"/><path d="m8.5 12.4 2.2 2.2 4.8-5"/></svg></span>
             <strong>Quality-First Guarantee</strong>
             <p class="why-copy-two-lines">Careful inspection from production to delivery.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section home-company-section" aria-labelledby="home-company-title">
-      <div class="container home-company-layout">
-        <div class="home-company-media">
-          <video class="home-company-video" controls playsinline preload="metadata" aria-label="Unique Pin company and product overview video">
-            <source src="/assets/videos/company-overview.mp4?v=20260819-lfs-fix" type="video/mp4">
-          </video>
-        </div>
-        <div class="home-company-copy">
-          <span class="home-company-eyebrow">Custom Metal Gifts Manufacturer</span>
-          <h2 id="home-company-title">Meet Unique Pin</h2>
-          <p>Take a 34-second look inside our 6,000 m² factory in Zhongshan, China. With 34 production machines, our in-house team manages CNC engraving, die casting, polishing, plating, enamel coloring, inspection and packing.</p>
-          <p>We manufacture custom enamel pins, challenge coins, medals, keychains and belt buckles for distributors, brands, clubs and event organizers-from artwork proofing to global delivery.</p>
-          <div class="home-company-actions">
-            <a class="btn btn-primary" href="/about">About Us</a>
-            <a class="btn btn-outline" href="/products">View Products</a>
           </div>
         </div>
       </div>
