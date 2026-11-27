@@ -91,8 +91,7 @@
 .certGrid { display:grid; grid-template-columns:repeat(6,minmax(0,1fr)); gap:20px; align-items:start; }
 .certGrid figure { margin:0; min-width:0; font-weight:700; }
 .certGrid img { display:block; width:100%; height:200px; object-fit:contain; margin-bottom:8px; }
-.page :global(.reviews-section), .page :global(.customer-photo-gallery-section) { zoom:.8; width:100%; margin-inline:auto; }
-.page :global(.reviews-section) { zoom:.72; }
+.page :global(.customer-photo-gallery-section) { zoom:.8; width:100%; margin-inline:auto; }
 .advantages > div { padding:20px; border:1px solid #d9e2e8; border-radius:8px; }
 .form { max-width:760px; display:grid; gap:16px; }
 .fields { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
@@ -146,5 +145,3 @@
   .mobileBannerContent .mobileBannerBenefits { margin-top:13px; font-size:clamp(.72rem,2.8vw,.9rem); }
 }
 @media (max-width:360px) { .mobileBannerContent { padding-top:16px; } .mobileBannerContent h1 { font-size:1.35rem; } .mobileBannerContent p { font-size:.8rem; } }
-
-@media (max-width:600px) { .page :global(.reviews-section) { zoom:1; } }
