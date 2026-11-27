@@ -1,6 +1,7 @@
 import nodemailer from "nodemailer";
 import path from "node:path";
 import { randomUUID } from "node:crypto";
+import { coinSourceMailFields } from "../../lib/coinInquirySource.mjs";
 
 export const runtime = "nodejs";
 
@@ -249,10 +250,12 @@ export async function POST(request) {
   }
 
   const inquiryId = randomUUID();
+  const source = coinSourceMailFields(formData, fields.pageUrl);
   const subjectProduct = fields.product || "Custom Metal Crafts";
   const subject = `New inquiry from ${fields.name} - ${subjectProduct}`;
   const rows = [
     ["Inquiry ID", inquiryId],
+    ...(source ? [["Submitted (UTC)", new Date().toISOString()], ["询盘来源", source.summary]] : []),
     ["Name", fields.name],
     ["Email", fields.email],
     ["Country / Region", fields.country],
@@ -284,6 +287,7 @@ export async function POST(request) {
       to: inquiryTo,
       replyTo: fields.email,
       subject,
+      headers: source?.headers,
       text,
       html: `
         <h2 style="font-family:Arial,sans-serif;color:#0b356d;">New website inquiry</h2>
