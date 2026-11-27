@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
+import { updateCoinInquirySource } from "../lib/coinInquirySource.mjs";
 import { isProductionAnalyticsEnvironment, hasAdvertisingConsent } from "../lib/analyticsGate.mjs";
 
 const CONSENT_KEY = "uccrafts_analytics_consent";
@@ -94,6 +96,13 @@ const removeAnalyticsCookies = (adsOnly = false) => {
 
 export default function AnalyticsConsent() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
+
+  useEffect(() => {
+    updateCoinInquirySource();
+    window.addEventListener("pageshow", updateCoinInquirySource);
+    return () => window.removeEventListener("pageshow", updateCoinInquirySource);
+  }, [pathname]);
 
   useEffect(() => {
     try { window.__uccraftsAdsChoice = window.localStorage.getItem(ADS_CONSENT_KEY); } catch {}
@@ -152,6 +161,7 @@ export default function AnalyticsConsent() {
     window.__uccraftsAnalyticsChoice = nextChoice;
     try { window.localStorage.setItem(CONSENT_KEY, nextChoice); } catch { /* Consent lasts for this page only. */ }
 
+    updateCoinInquirySource();
     if (nextChoice === "granted") {
       loadGoogleTagManager();
     } else {

@@ -1,4 +1,5 @@
 import { canSendProductionAnalytics, hasAdvertisingConsent } from "./analyticsGate.mjs";
+import { appendCoinInquirySource } from "./coinInquirySource.mjs";
 import {
   inquiryPageType, inquiryFormId, inquiryHttpErrorCode,
   reportInquirySubmitAttempt, reportInquiryError, reportInquiryValidationError,
@@ -77,6 +78,7 @@ export const submitInquiryForm = async (form, {
 
   try {
     const data = new FormData(form);
+    appendCoinInquirySource(data);
     // Query strings may contain personal information. The page path is enough for the email.
     data.set("pageUrl", `${window.location.origin}${window.location.pathname}`);
     data.set("pageTitle", document.title);

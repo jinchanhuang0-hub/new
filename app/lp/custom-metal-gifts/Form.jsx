@@ -1,6 +1,7 @@
 'use client';
 import { useRef, useState } from 'react';
 import { reportInquirySuccess } from '../../lib/inquiryClient.mjs';
+import { appendCoinInquirySource } from '../../lib/coinInquirySource.mjs';
 import { reportInquirySubmitClick, reportInquirySubmitAttempt, reportInquiryError, reportInquiryValidationError, inquiryHttpErrorCode } from '../../lib/inquiryAnalytics.mjs';
 import { minimumOrder } from '../../lib/minimumOrder';
 import styles from './page.module.css';
@@ -23,6 +24,7 @@ export default function Form({ defaultProduct = '' }) {
     if (files.length > 3 || files.reduce((n,f) => n + f.size, 0) > 4 * 1024 * 1024 || files.some(f => !/\.(jpe?g|png|pdf|ai|eps|psd|cdr)$/i.test(f.name))) { setStatus('Choose up to 3 JPG, PNG, PDF, AI, EPS, PSD or CDR files, 4 MB total.'); return; }
     lock.current = true; setBusy(true); setStatus('Sending...'); let errorCode = 'preparation_failed'; const controller = new AbortController(); let timeout;
     try { const data = new FormData(form); data.delete('artwork'); files.forEach(file => data.append('artwork', file)); data.set('pageUrl', location.origin + location.pathname); data.set('pageTitle', document.title);
+      appendCoinInquirySource(data);
       reportInquirySubmitAttempt(form); errorCode = 'network_error';
       timeout = setTimeout(() => controller.abort(), 30000);
       const response = await fetch('/api/inquiry', { method: 'POST', body: data, signal: controller.signal }); errorCode = response.ok ? 'invalid_confirmation' : inquiryHttpErrorCode(response.status); const result = await response.json().catch(() => ({}));
