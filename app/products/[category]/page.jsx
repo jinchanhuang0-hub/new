@@ -4,7 +4,7 @@ import StaticPage from "../../components/StaticPage";
 import { renderFinishGallery } from "../../components/finishGalleryHtml";
 import { renderArtworkComparison } from "../../components/artworkComparisonHtml";
 import { renderProductFaq } from "../../components/productFaqHtml";
-import { customerPhotoGalleryHtml } from "../../components/customerPhotoGalleryHtml";
+import { buyerReviewsHtml } from "../../components/buyerReviewsHtml";
 import { enamelPinFaq } from "../enamelPinFaq";
 import { medalFaq, medalFaqOptions } from "../medalFaq";
 import { medalArtworkComparison } from "../medalArtworkComparison";
@@ -199,7 +199,7 @@ export default async function ProductCategoryPage({ params, searchParams }) {
           {
             page: currentPage,
             pageSize: CATEGORY_PRODUCTS_PAGE_SIZE,
-            afterStyleGuide: `${categoryEnhancementHtml}${keychainComparisonHtml}${customerPhotoGalleryHtml}${categoryFaqHtml}`,
+            afterStyleGuide: `${categoryEnhancementHtml}${keychainComparisonHtml}${buyerReviewsHtml}${categoryFaqHtml}`,
           },
         )}
       />
